@@ -57,3 +57,45 @@ export function website(): Record<string, unknown> {
     publisher: { '@id': `${SITE.url}/#organization` },
   }
 }
+
+export function breadcrumb(items: { name: string; path: string }[]): Record<string, unknown> {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: items.map((it, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      name: it.name,
+      item: `${SITE.url}${it.path}`,
+    })),
+  }
+}
+
+export function touristTrip(t: {
+  name: string
+  description: string
+  path: string
+  days?: { name: string; description?: string }[]
+}): Record<string, unknown> {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'TouristTrip',
+    name: t.name,
+    description: t.description,
+    url: `${SITE.url}${t.path}`,
+    provider: { '@id': `${SITE.url}/#organization` },
+    ...(t.days
+      ? {
+          itinerary: {
+            '@type': 'ItemList',
+            numberOfItems: t.days.length,
+            itemListElement: t.days.map((d, i) => ({
+              '@type': 'ListItem',
+              position: i + 1,
+              item: { '@type': 'TouristAttraction', name: d.name, ...(d.description ? { description: d.description } : {}) },
+            })),
+          },
+        }
+      : {}),
+  }
+}

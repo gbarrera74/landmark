@@ -1398,3 +1398,50 @@ select.ilm-input { appearance: none; -webkit-appearance: none; cursor: pointer;
 .lmh-utility-contact a:hover { color: var(--lm-secondary-soft); }
 .lmh-utility-contact svg { width: 14px; height: 14px; opacity: 0.85; flex-shrink: 0; }
 @media (max-width: 980px) { .lmh-utility { display: none; } }
+
+/* ═════════════════════════════════════════════
+   DESTINATION + ITINERARY PAGES  (lm-)
+═════════════════════════════════════════════ */
+
+/* trip cards reuse .ilm-post; add relative wrapper for the duration badge */
+.lm-trip-media { position: relative; }
+
+/* Itinerary two-column layout */
+.lm-itin-grid { display: grid; grid-template-columns: 1fr 340px; gap: 48px; align-items: start; }
+.lm-itin-side { position: sticky; top: calc(var(--lm-header-h) + 16px); display: flex; flex-direction: column; gap: 20px; }
+.lm-summary-card { background: var(--lm-white); border: 1px solid var(--lm-line); border-radius: var(--lm-radius); padding: 26px 26px 28px; box-shadow: var(--lm-shadow); }
+.lm-summary-title { font-size: 19px; margin-bottom: 16px; }
+.lm-summary-list { margin: 0 0 22px; display: flex; flex-direction: column; }
+.lm-summary-list > div { display: flex; align-items: baseline; justify-content: space-between; gap: 14px; padding: 11px 0; border-bottom: 1px solid var(--lm-line); }
+.lm-summary-list > div:last-child { border-bottom: none; }
+.lm-summary-list dt { font-family: var(--font-head); font-size: 12px; font-weight: 700; letter-spacing: 0.5px; text-transform: uppercase; color: var(--lm-ink-muted); margin: 0; }
+.lm-summary-list dd { margin: 0; font-family: var(--font-head); font-weight: 600; font-size: 14.5px; color: var(--lm-primary-900); text-align: right; }
+.lm-summary-cta { width: 100%; }
+.lm-summary-link { display: inline-flex; align-items: center; gap: 6px; margin-top: 14px; font-family: var(--font-head); font-weight: 700; font-size: 13.5px; color: var(--lm-primary-700); }
+.lm-summary-link svg { width: 15px; height: 15px; }
+.lm-tip-card { background: linear-gradient(150deg, var(--lm-primary-900), var(--lm-primary-700)); color: rgba(255,255,255,0.9); border-radius: var(--lm-radius); padding: 26px; }
+.lm-tip-card .ile-eyebrow { color: var(--lm-secondary-soft); }
+.lm-tip-card h3 { color: #fff; font-size: 20px; margin: 8px 0 10px; }
+.lm-tip-card p { font-size: 14px; line-height: 1.7; }
+
+/* Tabs */
+.lm-tabs { display: flex; gap: 4px; border-bottom: 2px solid var(--lm-line); margin-bottom: 30px; flex-wrap: wrap; }
+.lm-tab { position: relative; background: none; border: none; cursor: pointer; font-family: var(--font-head); font-weight: 700; font-size: 15.5px; color: var(--lm-ink-muted); padding: 12px 20px; border-radius: 10px 10px 0 0; transition: color 0.2s ease, background 0.2s ease; }
+.lm-tab:hover { color: var(--lm-primary-700); background: var(--lm-cream); }
+.lm-tab.is-active { color: var(--lm-primary); }
+.lm-tab.is-active::after { content: ''; position: absolute; left: 0; right: 0; bottom: -2px; height: 3px; background: var(--lm-primary); border-radius: 3px; }
+.lm-tabpanel[hidden] { display: none; }
+
+/* Day-by-day timeline (reuses .ilp-timeline / .ilp-step) */
+.lm-itin-note { font-size: 13.5px; color: var(--lm-ink-muted); font-style: italic; margin-bottom: 24px; }
+.lm-day-timeline { max-width: none; margin: 0; }
+.lm-day-timeline .ilp-step { padding-bottom: 30px; }
+.lm-day-acts { list-style: none; padding: 0; margin: 10px 0 0; display: flex; flex-direction: column; gap: 9px; }
+.lm-day-acts li { position: relative; padding-left: 26px; font-size: 15px; line-height: 1.6; color: var(--lm-ink); }
+.lm-day-acts li::before { content: ''; position: absolute; left: 0; top: 3px; width: 16px; height: 16px; border-radius: 50%; background: var(--lm-secondary) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='10' fill='none' stroke='white' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='2 6 5 9 10 3'/%3E%3C/svg%3E") center/10px no-repeat; }
+.lm-sample-note { background: var(--lm-cream); border-left: 3px solid var(--lm-secondary); padding: 14px 18px; border-radius: 8px; font-size: 14.5px !important; color: var(--lm-ink-muted) !important; line-height: 1.7; }
+
+@media (max-width: 900px) {
+  .lm-itin-grid { grid-template-columns: 1fr; gap: 36px; }
+  .lm-itin-side { position: static; }
+}

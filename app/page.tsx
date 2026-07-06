@@ -3,6 +3,7 @@ import Link from 'next/link'
 import HomeHeroSlider from '@/components/home/HomeHeroSlider'
 import ReviewsCarousel from '@/components/home/ReviewsCarousel'
 import BrochurePopup from '@/components/home/BrochurePopup'
+import BrochureBand from '@/components/BrochureBand'
 import { SITE } from '@/lib/seo/schemas'
 
 const ArrowR = (
@@ -302,19 +303,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Brochure band */}
-      <section className="lm-brochure" aria-labelledby="broch-h">
-        <div className="ile-container lm-brochure-inner">
-          <div className="lm-brochure-copy">
-            <h2 id="broch-h">Download our Free Brochure</h2>
-            <p>Our new 2025-26 brochure highlights what we believe, what we offer, and where we can take your group.</p>
-            <Link href="/brochure/" className="ile-btn ile-btn--gold">Access Here</Link>
-          </div>
-          <div className="lm-brochure-cover">
-            <img src="/images/landmark/brochure-cover.png" alt="Landmark Educational Tours 2025-26 brochure cover" loading="lazy" />
-          </div>
-        </div>
-      </section>
+      <BrochureBand />
 
       <BrochurePopup />
     </>
