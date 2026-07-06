@@ -1,9 +1,9 @@
 import type { MetadataRoute } from 'next'
 
-const SITE_URL = (process.env.SITE_URL ?? 'https://irishlifeexperience.com').replace(/\/$/, '')
+const SITE_URL = (process.env.SITE_URL ?? 'https://landmarkeducationaltours.com').replace(/\/$/, '')
 const PRODUCTION_ORIGINS = new Set([
-  'https://irishlifeexperience.com',
-  'https://www.irishlifeexperience.com',
+  'https://landmarkeducationaltours.com',
+  'https://www.landmarkeducationaltours.com',
 ])
 
 export default function robots(): MetadataRoute.Robots {

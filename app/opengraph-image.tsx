@@ -1,17 +1,18 @@
 import { ImageResponse } from 'next/og'
 
-export const alt = 'Irish Life Experience — A 25-Day Irish Summer for High Schoolers'
+export const alt = 'Landmark Educational Tours — Educational Travel, Built for You'
 export const size = { width: 1200, height: 630 }
 export const contentType = 'image/png'
 
 export default function OpengraphImage() {
+  const needle = { position: 'absolute' as const, background: '#F2A94B', borderRadius: 4, display: 'flex' }
   return new ImageResponse(
     (
       <div
         style={{
           width: '100%',
           height: '100%',
-          background: 'linear-gradient(135deg, #0C2812 0%, #16401F 55%, #1F5A2A 100%)',
+          background: 'linear-gradient(135deg, #241109 0%, #8E2D0A 58%, #B4470F 100%)',
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'center',
@@ -22,29 +23,28 @@ export default function OpengraphImage() {
           fontFamily: 'sans-serif',
         }}
       >
-        {/* gold glow */}
+        {/* amber glow */}
         <div
           style={{
             position: 'absolute',
             top: -240,
-            right: -240,
+            right: -220,
             width: 700,
             height: 700,
             borderRadius: '50%',
-            background: 'radial-gradient(circle, rgba(243,200,32,0.22), transparent 70%)',
+            background: 'radial-gradient(circle, rgba(226,132,19,0.30), transparent 70%)',
             display: 'flex',
           }}
         />
-        {/* shamrock */}
-        <div style={{ position: 'relative', width: 130, height: 130, display: 'flex' }}>
-          <div style={{ position: 'absolute', width: 54, height: 54, background: '#F3C820', borderRadius: '50%', left: 38, top: 6, display: 'flex' }} />
-          <div style={{ position: 'absolute', width: 54, height: 54, background: '#F3C820', borderRadius: '50%', left: 6, top: 46, display: 'flex' }} />
-          <div style={{ position: 'absolute', width: 54, height: 54, background: '#F3C820', borderRadius: '50%', left: 70, top: 46, display: 'flex' }} />
-          <div style={{ position: 'absolute', width: 10, height: 42, background: '#F3C820', borderRadius: 4, left: 60, top: 82, transform: 'rotate(-6deg)', display: 'flex' }} />
+        {/* compass mark */}
+        <div style={{ position: 'relative', width: 132, height: 132, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+          <div style={{ position: 'absolute', width: 104, height: 104, borderRadius: '50%', border: '5px solid #F2A94B', display: 'flex' }} />
+          <div style={{ ...needle, width: 7, height: 132, left: 62.5, top: 0 }} />
+          <div style={{ ...needle, width: 132, height: 7, left: 0, top: 62.5 }} />
         </div>
-        <div style={{ fontSize: 86, fontWeight: 700, letterSpacing: -1.5, marginTop: 36, textAlign: 'center', display: 'flex' }}>Irish Life Experience</div>
-        <div style={{ fontSize: 34, color: '#F8DB6B', marginTop: 18, textAlign: 'center', maxWidth: 940, display: 'flex' }}>A 25-Day Irish Summer for High Schoolers</div>
-        <div style={{ fontSize: 22, color: 'rgba(255,255,255,0.72)', marginTop: 40, letterSpacing: 4, textTransform: 'uppercase', display: 'flex' }}>Waterford · Dublin · Galway</div>
+        <div style={{ fontSize: 80, fontWeight: 800, letterSpacing: -1.5, marginTop: 40, textAlign: 'center', display: 'flex' }}>Landmark Educational Tours</div>
+        <div style={{ fontSize: 36, color: '#F2A94B', marginTop: 18, textAlign: 'center', maxWidth: 960, display: 'flex' }}>Educational Travel, Built for You</div>
+        <div style={{ fontSize: 21, color: 'rgba(255,255,255,0.72)', marginTop: 42, letterSpacing: 4, textTransform: 'uppercase', display: 'flex' }}>Student Field Trips · Across the U.S. &amp; Beyond</div>
       </div>
     ),
     { ...size }
