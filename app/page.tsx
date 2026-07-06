@@ -50,6 +50,19 @@ const DESTINATIONS = [
   { name: 'Atlanta', href: '/usa-trips/atlanta/', img: '/images/landmark/atlanta-skyline.jpg' },
 ]
 
+// New: international educational journeys (global expansion)
+const INTERNATIONAL = [
+  { name: 'Italy', href: '/international/italy/', img: '/images/landmark/intl-italy.webp' },
+  { name: 'France', href: '/international/france/', img: '/images/landmark/intl-france.jpg' },
+  { name: 'England', href: '/international/england/', img: '/images/landmark/intl-england.webp' },
+  { name: 'Ireland', href: '/international/ireland/', img: '/images/landmark/intl-ireland.jpg' },
+  { name: 'Norway', href: '/international/norway/', img: '/images/landmark/intl-norway.webp' },
+  { name: 'Europe', href: '/international/', img: '/images/landmark/intl-europe.webp' },
+  { name: 'Costa Rica', href: '/international/costa-rica/', img: '/images/landmark/intl-costa-rica.webp' },
+  { name: 'Japan', href: '/international/japan/', img: '/images/landmark/intl-japan.webp' },
+  { name: 'South Korea', href: '/international/south-korea/', img: '/images/landmark/intl-south-korea.webp' },
+]
+
 const THEMED_P1 =
   'Landmark Educational Tours offers immersive student group travel experiences that bring history, culture, and educational tours to life. With expertly crafted school trip itineraries to top destinations like Washington, DC, New York City, and Boston, students engage in hands-on learning while exploring iconic landmarks, historic sites, and unique attractions. Our educational travel programs spark curiosity, expand knowledge, and create unforgettable memories for school groups and student travelers. We understand how important each educational field trip is for the chaperones and students. Each part of these experiences demands expert knowledge and age-specific insight. Landmark Educational Tours is excited to provide you with both benefits on one of our field trips for schools. Book your educational tour today!'
 
@@ -181,6 +194,28 @@ export default function Home() {
           </div>
           <div className="ile-center lm-after-grid">
             <Link href="/destinations/" className="ile-btn ile-btn--ghost">More Destinations</Link>
+          </div>
+        </div>
+      </section>
+
+      {/* International destinations (global expansion) */}
+      <section className="ile-section ile-section--cream-deep" aria-labelledby="intl-h">
+        <div className="ile-container">
+          <div className="ile-center lm-narrow">
+            <span className="ile-eyebrow">New · Around the Globe</span>
+            <h2 id="intl-h" className="lm-h2-amber">INTERNATIONAL DESTINATIONS</h2>
+            <p className="ile-lead lm-center-lead">Landmark now takes students beyond the U.S. — immersive, safe, and fully customized educational journeys across Europe, Asia, and Central America.</p>
+          </div>
+          <div className="lm-intl-grid">
+            {INTERNATIONAL.map((d) => (
+              <Link href={d.href} className="lm-dest" key={d.name} aria-label={`${d.name} educational tours`}>
+                <img src={d.img} alt="" loading="lazy" />
+                <span className="lm-dest-label">{d.name} <span aria-hidden="true">→</span></span>
+              </Link>
+            ))}
+          </div>
+          <div className="ile-center lm-after-grid">
+            <Link href="/international/" className="ile-btn ile-btn--ghost">Explore All International Trips</Link>
           </div>
         </div>
       </section>

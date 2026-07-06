@@ -1272,6 +1272,11 @@ select.ilm-input { appearance: none; -webkit-appearance: none; cursor: pointer;
 }
 .lm-dest:hover .lm-dest-label { background: var(--lm-primary-700); }
 
+/* ── International destinations grid (3-up) ── */
+.lm-intl-grid { margin-top: 48px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+@media (max-width: 980px) { .lm-intl-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 620px) { .lm-intl-grid { grid-template-columns: 1fr; } }
+
 /* ── Themed Travel tiles (3-up, taller label) ── */
 .lm-theme-grid { margin-top: 44px; }
 .lm-theme { position: relative; display: block; height: 340px; border-radius: var(--lm-radius); overflow: hidden; box-shadow: var(--lm-shadow); }

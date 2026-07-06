@@ -11,21 +11,27 @@ type Slide = {
   href: string
 }
 
-/* Verbatim hero copy from the live homepage. Backgrounds use authentic Landmark
-   destination photography (the live theme's generic stock fjord/lake images were
-   replaced — easily reverted if literal parity is preferred). */
+/* Global-forward hero: Landmark's expansion beyond U.S. field trips into
+   international educational journeys, with the U.S. business still featured. */
 const SLIDES: Slide[] = [
   {
-    img: '/images/landmark/hero-dc-mlk.jpg',
+    img: '/images/landmark/intl-italy.webp',
     title: 'Educational Travel, Built for You.',
-    sub: 'Now Booking Private Group Tours 2026-2027',
+    sub: 'Safe, custom student journeys — across the U.S., Europe, Asia & beyond.',
     cta: 'Start Planning Now!',
     href: '/get-a-quote/',
   },
   {
-    img: '/images/landmark/hero-nyc.jpg',
-    title: 'Trip Planning Starts Now',
-    sub: 'Embark with Landmark Educational Tours',
+    img: '/images/landmark/intl-europe.webp',
+    title: 'The World Is Their Classroom.',
+    sub: 'Now journeying beyond the U.S. — Italy, France, Ireland, Japan, South Korea & more.',
+    cta: 'Explore Destinations',
+    href: '/destinations/',
+  },
+  {
+    img: '/images/landmark/hero-dc-mlk.jpg',
+    title: 'Where History Comes Alive.',
+    sub: 'From Washington, D.C. to Tokyo, we design every detail around your students.',
     cta: 'Plan Your Trip',
     href: '/get-a-quote/',
   },

@@ -56,10 +56,16 @@ const NAV: NavItem[] = [
       {
         title: 'International',
         links: [
-          { label: 'Canada', href: '/international/canada/' },
-          { label: 'Costa Rica', href: '/international/costa-rica/' },
-          { label: 'Norway', href: '/international/norway/' },
           { label: 'Italy', href: '/international/italy/' },
+          { label: 'France', href: '/international/france/' },
+          { label: 'England', href: '/international/england/' },
+          { label: 'Ireland', href: '/international/ireland/' },
+          { label: 'Norway', href: '/international/norway/' },
+          { label: 'Europe', href: '/international/' },
+          { label: 'Costa Rica', href: '/international/costa-rica/' },
+          { label: 'Japan', href: '/international/japan/' },
+          { label: 'South Korea', href: '/international/south-korea/' },
+          { label: 'Canada', href: '/international/canada/' },
           { label: 'View all international →', href: '/international/' },
         ],
       },
@@ -195,7 +201,7 @@ export default function Header() {
                             <div key={g.title} className="ileh-mega-col">
                               {g.title && <h5>{g.title}</h5>}
                               {g.links.map((l) => (
-                                <Link key={l.href} href={l.href} className={isChildActive(l.href) ? 'is-active' : ''}>{l.label}</Link>
+                                <Link key={l.label} href={l.href} className={isChildActive(l.href) ? 'is-active' : ''}>{l.label}</Link>
                               ))}
                             </div>
                           ))}
@@ -254,7 +260,7 @@ export default function Header() {
                       <div key={g.title} className="ileh-m-subgroup">
                         {g.title && <h6>{g.title}</h6>}
                         {g.links.map((l) => (
-                          <Link key={l.href} href={l.href} className={isChildActive(l.href) ? 'is-active' : ''} onClick={() => setMobileOpen(false)}>{l.label}</Link>
+                          <Link key={l.label} href={l.href} className={isChildActive(l.href) ? 'is-active' : ''} onClick={() => setMobileOpen(false)}>{l.label}</Link>
                         ))}
                       </div>
                     ))
