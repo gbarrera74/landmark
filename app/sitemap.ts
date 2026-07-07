@@ -15,6 +15,9 @@ const SITE_URL = (process.env.SITE_URL ?? 'https://landmarkeducationaltours.com'
  */
 const ROUTES: { path: string; priority: number; changeFrequency: 'weekly' | 'monthly' }[] = [
   { path: '/', priority: 1, changeFrequency: 'weekly' },
+  { path: '/usa-trips/washington-d-c/', priority: 0.8, changeFrequency: 'monthly' },
+  { path: '/usa-trips/washington-d-c/8th-grade-washington-dc-trip-itinerary/', priority: 0.7, changeFrequency: 'monthly' },
+  { path: '/international/italy/', priority: 0.8, changeFrequency: 'monthly' },
 ]
 
 export default function sitemap(): MetadataRoute.Sitemap {

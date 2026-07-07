@@ -74,7 +74,7 @@ export default function HomeHeroSlider() {
           className={`lm-hero-slide${i === active ? ' is-active' : ''}`}
           role="group"
           aria-roledescription="slide"
-          aria-label={`${i + 1} of ${SLIDES.length}`}
+          aria-label={`${s.title} (${i + 1} of ${SLIDES.length})`}
           aria-hidden={i !== active}
         >
           {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -88,7 +88,7 @@ export default function HomeHeroSlider() {
           />
           <div className="ilm-hero-inner">
             <div className="ilm-hero-content">
-              <h1>{s.title}</h1>
+              <p className="lm-hero-title">{s.title}</p>
               <p className="ilm-hero-sub">{s.sub}</p>
               <div className="ilm-hero-actions">
                 <Link href={s.href} className="ile-btn ile-btn--primary" tabIndex={i === active ? 0 : -1}>
@@ -107,13 +107,12 @@ export default function HomeHeroSlider() {
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="9 18 15 12 9 6" /></svg>
       </button>
 
-      <div className="lm-hero-dots" role="tablist" aria-label="Choose slide">
+      <div className="lm-hero-dots" aria-label="Choose slide">
         {SLIDES.map((_, i) => (
           <button
             key={i}
-            role="tab"
-            aria-selected={i === active}
             aria-label={`Go to slide ${i + 1}`}
+            aria-current={i === active ? 'true' : undefined}
             className={`lm-hero-dot${i === active ? ' is-active' : ''}`}
             onClick={() => go(i)}
           />

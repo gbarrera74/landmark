@@ -235,7 +235,8 @@ export default function Header() {
 
           <button
             className={`ileh-burger${mobileOpen ? ' is-open' : ''}`}
-            aria-label="Toggle menu"
+            aria-label={mobileOpen ? 'Close menu' : 'Open menu'}
+            aria-controls="ileh-mobile-nav"
             aria-expanded={mobileOpen}
             onClick={() => setMobileOpen((v) => !v)}
           >
@@ -244,7 +245,7 @@ export default function Header() {
         </div>
       </div>
 
-      <div className={`ileh-mobile${mobileOpen ? ' is-open' : ''}`}>
+      <div id="ileh-mobile-nav" className={`ileh-mobile${mobileOpen ? ' is-open' : ''}`}>
         {NAV.map((item) => {
           const active = isItemActive(item)
           const hasSub = !!(item.groups || item.children)

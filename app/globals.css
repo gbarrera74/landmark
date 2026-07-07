@@ -1217,7 +1217,7 @@ select.ilm-input { appearance: none; -webkit-appearance: none; cursor: pointer;
     linear-gradient(0deg, rgba(36,17,9,0.55) 0%, transparent 42%);
 }
 .lm-hero-slide .ilm-hero-inner { position: relative; z-index: 2; }
-.lm-hero-slide h1 {
+.lm-hero-slide h1, .lm-hero-slide .lm-hero-title {
   color: #fff;
   font-size: clamp(40px, 6.4vw, 76px);
   line-height: 1.04;
@@ -1422,6 +1422,10 @@ select.ilm-input { appearance: none; -webkit-appearance: none; cursor: pointer;
 
 /* trip cards reuse .ilm-post; add relative wrapper for the duration badge */
 .lm-trip-media { position: relative; }
+
+/* International destination pages: amber accents instead of rust (subtle US-vs-abroad cue) */
+.lm-intl .lm-tour-badge { background: var(--lm-secondary); color: var(--lm-primary-900); }
+.lm-intl .ilp-step-num { background: var(--lm-secondary); color: var(--lm-primary-900); box-shadow: 0 8px 18px -8px rgba(226, 132, 19, 0.7); }
 
 /* Itinerary two-column layout */
 .lm-itin-grid { display: grid; grid-template-columns: 1fr 340px; gap: 48px; align-items: start; }

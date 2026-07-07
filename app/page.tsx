@@ -11,7 +11,7 @@ const ArrowR = (
 )
 
 const TOP_TOURS_INTRO =
-  'Discover unforgettable student group travel with Landmark Educational Tours! Explore the historic landmarks of Washington, DC, the cultural vibrancy of New York City, and Boston’s colonial heritage through expertly designed educational tours. From iconic monuments and inspiring museums to Broadway shows and historic trails, our student trips combine hands-on learning, adventure, and fun. Let us create a seamless travel experience that inspires and educates your students. With Landmark Educational Tours, you can book an educational field trip that inspires each student long-term. Book your school trip today!'
+  'Explore Washington, D.C.’s monuments, New York City’s museums and Broadway stages, and Boston’s colonial trails — expertly designed student trips that blend hands-on learning, adventure, and fun.'
 
 const TOP_TOURS = [
   {
@@ -124,7 +124,7 @@ const FEATURED = [
 ]
 
 const POSTS_INTRO =
-  'Explore our latest educational travel blog posts for exciting updates, expert tips, and destination highlights to make your next school trip unforgettable. Discover student travel itineraries, educational tour planning advice, and insider guides designed to inspire your next student group adventure. Stay informed and get inspired for your upcoming journey!'
+  'Expert tips, destination guides, and itinerary ideas to help you plan an unforgettable student trip.'
 
 const POSTS = [
   { title: 'Colonial Williamsburg Field Trip', href: '/colonial-williamsburg-field-trip/', img: '/images/landmark/jamestown-settlement-va.jpg', alt: 'Jamestown Settlement in Virginia' },
@@ -237,12 +237,11 @@ export default function Home() {
       </section>
 
       {/* Themed Travel */}
-      <section className="ile-section ile-section--cream-deep" aria-labelledby="themed-h">
+      <section className="ile-section ile-section--cream" aria-labelledby="themed-h">
         <div className="ile-container">
           <div className="ile-center lm-narrow">
             <span className="ile-eyebrow">EMBARK WITH LANDMARK</span>
             <h2 id="themed-h" className="lm-h2-amber">THEMED TRAVEL</h2>
-            <p className="lm-sub-label">Customized and Personalized</p>
             <p className="ile-lead lm-center-lead">{THEMED_INTRO}</p>
             <div className="lm-after-grid" style={{ marginTop: 8 }}>
               <Link href="/get-a-quote/" className="ile-btn ile-btn--primary">Plan A Trip</Link>
@@ -296,7 +295,7 @@ export default function Home() {
 
       {/* Trustindex reviews */}
       <section className="ile-section ile-section--white" aria-labelledby="reviews-h">
-        <div className="ile-container ile-center"><h2 id="reviews-h">What Travelers Say About Us</h2></div>
+        <div className="ile-container ile-center"><h2 id="reviews-h" className="lm-h2-amber">WHAT TRAVELERS SAY</h2></div>
         <div className="ile-container">
           <ReviewsCarousel variant="reviews" items={REVIEWS} />
         </div>
