@@ -63,11 +63,8 @@ const INTERNATIONAL = [
   { name: 'South Korea', href: '/international/south-korea/', img: '/images/landmark/intl-south-korea.webp' },
 ]
 
-const THEMED_P1 =
-  'Landmark Educational Tours offers immersive student group travel experiences that bring history, culture, and educational tours to life. With expertly crafted school trip itineraries to top destinations like Washington, DC, New York City, and Boston, students engage in hands-on learning while exploring iconic landmarks, historic sites, and unique attractions. Our educational travel programs spark curiosity, expand knowledge, and create unforgettable memories for school groups and student travelers. We understand how important each educational field trip is for the chaperones and students. Each part of these experiences demands expert knowledge and age-specific insight. Landmark Educational Tours is excited to provide you with both benefits on one of our field trips for schools. Book your educational tour today!'
-
-const THEMED_P2 =
-  'Experience the ultimate in educational student travel with Landmark Educational Tours! Our Washington, D.C. STEM and AP History school trips offer students engaging experiences through interactive museums, hands-on STEM activities, and historical site tours. Immerse in language and culture on our Quebec City French immersion trip, featuring guided French-speaking tours, cultural workshops, and unique local experiences. For aspiring performers, our Performing Arts NYC Tour includes top Broadway shows, backstage tours of Radio City Music Hall, and an unforgettable deep dive into the world of theater. Plan your school trip today for an enriching, educational adventure!'
+const THEMED_INTRO =
+  'From STEM and civics in Washington, D.C. to French immersion in Quebec City and the Broadway stage in New York, every Landmark theme is crafted around your subject and your students — hands-on, age-appropriate, and unforgettable.'
 
 const THEMED = [
   { location: 'Washington, D.C.', theme: 'AP History', img: '/images/landmark/fdr-memorial-dc.jpg', href: '/usa-trips/washington-d-c/4-day-washington-dc-school-trip/' },
@@ -143,11 +140,30 @@ export default function Home() {
     <>
       <HomeHeroSlider />
 
-      {/* Intro */}
+      {/* Welcome intro */}
       <section className="ile-section ile-section--white ile-section--tight" aria-labelledby="intro-h">
-        <div className="ile-container ile-center">
-          <span className="ile-eyebrow">EXPLORE GREAT PLACES</span>
+        <div className="ile-container ile-center lm-narrow">
+          <span className="ile-eyebrow">Explore Great Places</span>
           <h1 id="intro-h" className="lm-h2-amber">EDUCATIONAL FIELD TRIPS</h1>
+          <p className="ile-lead lm-center-lead">Landmark designs safe, fully-customized educational journeys — from the monuments of Washington, D.C. to the streets of Rome and Kyoto — built around your students, your curriculum, and your budget.</p>
+          <ul className="lm-welcome-pills">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="6" /><path d="M8.2 13.5 7 22l5-3 5 3-1.2-8.5" /></svg>
+              SYTA Member
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><line x1="4" y1="21" x2="4" y2="14" /><line x1="4" y1="10" x2="4" y2="3" /><line x1="12" y1="21" x2="12" y2="12" /><line x1="12" y1="8" x2="12" y2="3" /><line x1="20" y1="21" x2="20" y2="16" /><line x1="20" y1="12" x2="20" y2="3" /><line x1="1" y1="14" x2="7" y2="14" /><line x1="9" y1="8" x2="15" y2="8" /><line x1="17" y1="16" x2="23" y2="16" /></svg>
+              Fully Customizable
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" /><polyline points="9 12 11 14 15 10" /></svg>
+              Safe &amp; Supervised
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9" /><polyline points="12 7 12 12 15 14" /></svg>
+              24/7 On-Trip Support
+            </li>
+          </ul>
         </div>
       </section>
 
@@ -227,8 +243,7 @@ export default function Home() {
             <span className="ile-eyebrow">EMBARK WITH LANDMARK</span>
             <h2 id="themed-h" className="lm-h2-amber">THEMED TRAVEL</h2>
             <p className="lm-sub-label">Customized and Personalized</p>
-            <p className="ile-lead lm-center-lead">{THEMED_P1}</p>
-            <p className="ile-lead lm-center-lead">{THEMED_P2}</p>
+            <p className="ile-lead lm-center-lead">{THEMED_INTRO}</p>
             <div className="lm-after-grid" style={{ marginTop: 8 }}>
               <Link href="/get-a-quote/" className="ile-btn ile-btn--primary">Plan A Trip</Link>
             </div>
