@@ -1670,3 +1670,9 @@ select.ilm-input { appearance: none; -webkit-appearance: none; cursor: pointer;
 .lm-accred-grid--districts .lm-accred-id { font-size: 11px; }
 @media (max-width: 900px) { .lm-accred-grid { grid-template-columns: repeat(2, 1fr); } .lm-accred-grid--districts { grid-template-columns: repeat(3, 1fr); } }
 @media (max-width: 560px) { .lm-accred-grid, .lm-accred-grid--districts { grid-template-columns: repeat(2, 1fr); } }
+
+/* Private per-school registration funnels (/register/) */
+.lm-register-hero { background: linear-gradient(135deg, var(--lm-primary) 0%, var(--lm-primary-900) 100%); }
+.lm-register-hero-cta { margin-top: 22px; }
+.lm-register-help { margin-top: 14px; font-size: 14px; color: var(--lm-muted, #6b5b53); }
+.lm-register-help a { color: var(--lm-primary); font-weight: 600; }

@@ -12,7 +12,8 @@ export default function robots(): MetadataRoute.Robots {
     return { rules: { userAgent: '*', disallow: '/' } }
   }
   return {
-    rules: { userAgent: '*', allow: '/' },
+    // /register/ = private per-school funnels, intentionally noindexed.
+    rules: { userAgent: '*', allow: '/', disallow: ['/register/'] },
     sitemap: `${SITE_URL}/sitemap.xml`,
     host: SITE_URL,
   }
