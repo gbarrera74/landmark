@@ -71,7 +71,7 @@ const THEMED_INTRO =
 
 const THEMED = [
   { location: 'Washington, D.C.', theme: 'AP History', img: '/images/landmark/fdr-memorial-dc.jpg', href: '/usa-trips/washington-dc/4-day-washington-dc-school-trip/' },
-  { location: 'Quebec City, Canada', theme: 'French Immersion', img: '/images/landmark/quebec-city-french-immersion-bridge.jpg', href: '/canada/quebec-city-5-day-itinerary/' },
+  { location: 'Quebec City, Canada', theme: 'French Immersion', img: '/images/landmark/quebec-city-french-immersion-bridge.jpg', href: '/canada/quebec-city/5-day-quebec-city-itinerary/' },
   { location: 'New York City, New York', theme: 'Performing Arts', img: '/images/landmark/murray-high-school-nyc.jpg', href: '/usa-trips/new-york-city/nyc-performing-arts-tour/' },
 ]
 
@@ -109,9 +109,9 @@ const POSTS_INTRO =
   'Expert tips, destination guides, and itinerary ideas to help you plan an unforgettable student trip.'
 
 const POSTS = [
-  { title: 'Colonial Williamsburg Field Trip', href: '/colonial-williamsburg-field-trip/', img: '/images/landmark/jamestown-settlement-va.jpg', alt: 'Jamestown Settlement in Virginia' },
-  { title: 'Williamsburg School Trip', href: '/williamsburg-school-trip/', img: '/images/landmark/williamsburg-brick-building.jpg', alt: 'Historic brick building in Colonial Williamsburg' },
-  { title: 'Top 10 things to do on a Seattle Field Trip', href: '/top-10-things-to-do-on-a-seattle-field-trip/', img: '/images/landmark/seattle-skyline-sunset.jpg', alt: 'Seattle skyline at sunset' },
+  { title: 'Colonial Williamsburg Field Trip', href: '/blog/colonial-williamsburg-field-trip/', img: '/images/landmark/jamestown-settlement-va.jpg', alt: 'Jamestown Settlement in Virginia' },
+  { title: 'Williamsburg School Trip', href: '/blog/williamsburg-school-trip/', img: '/images/landmark/williamsburg-brick-building.jpg', alt: 'Historic brick building in Colonial Williamsburg' },
+  { title: 'Top 10 things to do on a Seattle Field Trip', href: '/blog/top-10-things-to-do-on-a-seattle-field-trip/', img: '/images/landmark/seattle-skyline-sunset.jpg', alt: 'Seattle skyline at sunset' },
 ]
 
 const MISSION =

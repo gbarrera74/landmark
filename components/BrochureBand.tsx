@@ -8,7 +8,7 @@ export default function BrochureBand() {
         <div className="lm-brochure-copy">
           <h2 id="brochure-band-h">Download our Free Brochure</h2>
           <p>Our new 2025-26 brochure highlights what we believe, what we offer, and where we can take your group.</p>
-          <Link href="/brochure/" className="ile-btn ile-btn--gold">Access Here</Link>
+          <Link href="/resources/" className="ile-btn ile-btn--gold">Access Here</Link>
         </div>
         <div className="lm-brochure-cover">
           {/* eslint-disable-next-line @next/next/no-img-element */}

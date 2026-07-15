@@ -51,7 +51,7 @@ export default function BrochurePopup() {
         <Image src="/images/landmark/b2s-promotion-logo.png" alt="" width={160} height={64} className="lm-popup-logo" />
         <h2 id="lm-popup-title">Download our free brochure</h2>
         <p>Our new 2025-26 brochure highlights what we believe, what we offer, and where we can take your group.</p>
-        <Link href="/brochure/" className="ile-btn ile-btn--gold" onClick={close}>
+        <Link href="/resources/" className="ile-btn ile-btn--gold" onClick={close}>
           Access Offer
         </Link>
       </div>
