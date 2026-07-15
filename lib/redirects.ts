@@ -406,4 +406,5 @@ export const WP_REDIRECTS: Redirect[] = [
   { source: "/weldon-valley-schools", destination: "/register/weldon-valley-schools/", permanent: true },
   { source: "/wheeler-high-school", destination: "/register/wheeler-high-school/", permanent: true },
   { source: "/wood-ridge-jr-sr-high-school", destination: "/register/wood-ridge-jr-sr-high-school/", permanent: true },
+  { source: "/allegany-limestone-8th-grade-trip-2027", destination: "/register/allegany-limestone-8th-grade-trip-2027/", permanent: true },
 ]
