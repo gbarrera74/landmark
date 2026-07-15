@@ -46,15 +46,15 @@ const NAV: NavItem[] = [
       {
         title: 'International',
         links: [
-          { label: 'Canada', href: '/international/canada/' },
-          { label: 'Italy', href: '/international/italy/' },
-          { label: 'Ireland', href: '/international/ireland/' },
-          { label: 'England', href: '/international/england/' },
-          { label: 'France', href: '/international/france/' },
-          { label: 'Norway', href: '/international/norway/' },
-          { label: 'Costa Rica', href: '/international/costa-rica/' },
-          { label: 'Japan', href: '/international/japan/' },
-          { label: 'South Korea', href: '/international/south-korea/' },
+          { label: 'Canada', href: '/canada/' },
+          { label: 'Italy', href: '/europe/italy/' },
+          { label: 'Ireland', href: '/europe/ireland/' },
+          { label: 'England', href: '/europe/england/' },
+          { label: 'France', href: '/europe/france/' },
+          { label: 'Norway', href: '/europe/norway/' },
+          { label: 'Costa Rica', href: '/central-south-america/costa-rica/' },
+          { label: 'Japan', href: '/asia/japan/' },
+          { label: 'South Korea', href: '/asia/south-korea/' },
         ],
       },
     ],
@@ -77,7 +77,7 @@ const NAV: NavItem[] = [
         links: [
           { label: 'Performing Arts', href: '/usa-trips/new-york-city/nyc-performing-arts-tour/' },
           { label: 'Spanish Immersion', href: '/usa-trips/chicago/chicago-spanish-immersion-school-trip/' },
-          { label: 'French Immersion', href: '/international/canada/quebec-city/' },
+          { label: 'French Immersion', href: '/canada/quebec-city/' },
         ],
       },
       {

@@ -60,10 +60,10 @@ const DESTINATIONS = [
 // photos (Colosseum · Bergen Bryggen · Costa Rica waterfall). Ireland has no student photo
 // (deferred by Ben) so it intentionally uses the live site's own Ireland hero image.
 const INTERNATIONAL = [
-  { name: 'Italy', href: '/international/italy/', img: '/images/landmark/intl-italy-group.jpg' },
-  { name: 'Ireland', href: '/international/ireland/', img: '/images/landmark/intl-ireland-live.jpg' },
-  { name: 'Norway', href: '/international/norway/', img: '/images/landmark/intl-norway-group.jpg' },
-  { name: 'Costa Rica', href: '/international/costa-rica/', img: '/images/landmark/intl-costa-rica-group.jpg' },
+  { name: 'Italy', href: '/europe/italy/', img: '/images/landmark/intl-italy-group.jpg' },
+  { name: 'Ireland', href: '/europe/ireland/', img: '/images/landmark/intl-ireland-live.jpg' },
+  { name: 'Norway', href: '/europe/norway/', img: '/images/landmark/intl-norway-group.jpg' },
+  { name: 'Costa Rica', href: '/central-south-america/costa-rica/', img: '/images/landmark/intl-costa-rica-group.jpg' },
 ]
 
 const THEMED_INTRO =
@@ -71,7 +71,7 @@ const THEMED_INTRO =
 
 const THEMED = [
   { location: 'Washington, D.C.', theme: 'AP History', img: '/images/landmark/fdr-memorial-dc.jpg', href: '/usa-trips/washington-dc/4-day-washington-dc-school-trip/' },
-  { location: 'Quebec City, Canada', theme: 'French Immersion', img: '/images/landmark/quebec-city-french-immersion-bridge.jpg', href: '/international/canada/quebec-city-5-day-itinerary/' },
+  { location: 'Quebec City, Canada', theme: 'French Immersion', img: '/images/landmark/quebec-city-french-immersion-bridge.jpg', href: '/canada/quebec-city-5-day-itinerary/' },
   { location: 'New York City, New York', theme: 'Performing Arts', img: '/images/landmark/murray-high-school-nyc.jpg', href: '/usa-trips/new-york-city/nyc-performing-arts-tour/' },
 ]
 
@@ -213,7 +213,7 @@ export default function Home() {
             ))}
           </div>
           <div className="ile-center lm-after-grid">
-            <Link href="/international/" className="ile-btn ile-btn--ghost">Explore All International Trips</Link>
+            <Link href="/destinations/" className="ile-btn ile-btn--ghost">Explore All International Trips</Link>
           </div>
         </div>
       </section>

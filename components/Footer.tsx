@@ -77,7 +77,7 @@ export default function Footer() {
             <Link href="/midwest/">Midwest</Link>
             <Link href="/southwest/">Southwest</Link>
             <Link href="/west-coast/">West Coast</Link>
-            <Link href="/international/">International</Link>
+            <Link href="/destinations/">International</Link>
           </div>
         </div>
 

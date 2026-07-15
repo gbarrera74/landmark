@@ -132,39 +132,39 @@ export default function Destinations() {
             <h2 id="international-h" className="lm-h2-amber">INTERNATIONAL</h2>
           </div>
           <div className="lm-intl-grid" style={{ marginTop: 8 }}>
-            <Link href="/international/canada/" className="lm-dest" key="Canada" aria-label="Canada educational tours">
+            <Link href="/canada/" className="lm-dest" key="Canada" aria-label="Canada educational tours">
               <img src="/images/landmark/canada-hero.jpg" alt="" loading="lazy" />
               <span className="lm-dest-label">Canada <span aria-hidden="true">&rarr;</span></span>
             </Link>
-            <Link href="/international/italy/" className="lm-dest" key="Italy" aria-label="Italy educational tours">
+            <Link href="/europe/italy/" className="lm-dest" key="Italy" aria-label="Italy educational tours">
               <img src="/images/landmark/intl-italy.webp" alt="" loading="lazy" />
               <span className="lm-dest-label">Italy <span aria-hidden="true">&rarr;</span></span>
             </Link>
-            <Link href="/international/costa-rica/" className="lm-dest" key="Costa Rica" aria-label="Costa Rica educational tours">
+            <Link href="/central-south-america/costa-rica/" className="lm-dest" key="Costa Rica" aria-label="Costa Rica educational tours">
               <img src="/images/landmark/intl-costa-rica.webp" alt="" loading="lazy" />
               <span className="lm-dest-label">Costa Rica <span aria-hidden="true">&rarr;</span></span>
             </Link>
-            <Link href="/international/norway/" className="lm-dest" key="Norway" aria-label="Norway educational tours">
+            <Link href="/europe/norway/" className="lm-dest" key="Norway" aria-label="Norway educational tours">
               <img src="/images/landmark/intl-norway.webp" alt="" loading="lazy" />
               <span className="lm-dest-label">Norway <span aria-hidden="true">&rarr;</span></span>
             </Link>
-            <Link href="/international/england/" className="lm-dest" key="England" aria-label="England educational tours">
+            <Link href="/europe/england/" className="lm-dest" key="England" aria-label="England educational tours">
               <img src="/images/landmark/intl-england.webp" alt="" loading="lazy" />
               <span className="lm-dest-label">England <span aria-hidden="true">&rarr;</span></span>
             </Link>
-            <Link href="/international/france/" className="lm-dest" key="France" aria-label="France educational tours">
+            <Link href="/europe/france/" className="lm-dest" key="France" aria-label="France educational tours">
               <img src="/images/landmark/intl-france.jpg" alt="" loading="lazy" />
               <span className="lm-dest-label">France <span aria-hidden="true">&rarr;</span></span>
             </Link>
-            <Link href="/international/ireland/" className="lm-dest" key="Ireland" aria-label="Ireland educational tours">
+            <Link href="/europe/ireland/" className="lm-dest" key="Ireland" aria-label="Ireland educational tours">
               <img src="/images/landmark/intl-ireland.jpg" alt="" loading="lazy" />
               <span className="lm-dest-label">Ireland <span aria-hidden="true">&rarr;</span></span>
             </Link>
-            <Link href="/international/japan/" className="lm-dest" key="Japan" aria-label="Japan educational tours">
+            <Link href="/asia/japan/" className="lm-dest" key="Japan" aria-label="Japan educational tours">
               <img src="/images/landmark/intl-japan.webp" alt="" loading="lazy" />
               <span className="lm-dest-label">Japan <span aria-hidden="true">&rarr;</span></span>
             </Link>
-            <Link href="/international/south-korea/" className="lm-dest" key="South Korea" aria-label="South Korea educational tours">
+            <Link href="/asia/south-korea/" className="lm-dest" key="South Korea" aria-label="South Korea educational tours">
               <img src="/images/landmark/intl-south-korea.webp" alt="" loading="lazy" />
               <span className="lm-dest-label">South Korea <span aria-hidden="true">&rarr;</span></span>
             </Link>

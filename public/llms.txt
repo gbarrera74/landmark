@@ -22,8 +22,8 @@ Key facts:
 - [All U.S. destinations](https://landmarkeducationaltours.com/usa-trips/)
 
 ## Destinations (International)
-- [Canada](https://landmarkeducationaltours.com/international/canada/) (Quebec City, Montreal, French immersion), [Italy](https://landmarkeducationaltours.com/international/italy/), [Costa Rica](https://landmarkeducationaltours.com/international/costa-rica/), [Norway](https://landmarkeducationaltours.com/international/norway/), [Ireland](https://landmarkeducationaltours.com/international/ireland/), [England](https://landmarkeducationaltours.com/international/england/), [France](https://landmarkeducationaltours.com/international/france/), [Japan](https://landmarkeducationaltours.com/international/japan/), [South Korea](https://landmarkeducationaltours.com/international/south-korea/)
-- [All international destinations](https://landmarkeducationaltours.com/international/)
+- [Canada](https://landmarkeducationaltours.com/canada/) (Quebec City, Montreal, French immersion), [Italy](https://landmarkeducationaltours.com/europe/italy/), [Costa Rica](https://landmarkeducationaltours.com/central-south-america/costa-rica/), [Norway](https://landmarkeducationaltours.com/europe/norway/), [Ireland](https://landmarkeducationaltours.com/europe/ireland/), [England](https://landmarkeducationaltours.com/europe/england/), [France](https://landmarkeducationaltours.com/europe/france/), [Japan](https://landmarkeducationaltours.com/asia/japan/), [South Korea](https://landmarkeducationaltours.com/asia/south-korea/)
+- [All international destinations](https://landmarkeducationaltours.com/destinations/)
 
 ## Trip themes
 - [Browse all themes](https://landmarkeducationaltours.com/themes/): HBCU campus tours, US history and civics, performing arts, Spanish and French immersion, African American history, Scouts, Yellowstone, and private-school programs
