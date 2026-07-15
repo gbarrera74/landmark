@@ -26,11 +26,11 @@ export default function Midwest() {
         <div className="ile-container">
           <div className="ile-center lm-narrow"><p className="ile-lead lm-center-lead">Big-city culture and island history in the American Midwest.</p></div>
           <div className="lm-dest-grid" style={{ marginTop: 8 }}>
-            <Link href="/usa-trips/chicago-tours/" className="lm-dest" key="Chicago, IL" aria-label="Chicago, IL educational tours">
+            <Link href="/usa-trips/chicago/" className="lm-dest" key="Chicago, IL" aria-label="Chicago, IL educational tours">
               <img src="/images/landmark/chicago-hero.jpg" alt="" loading="lazy" />
               <span className="lm-dest-label">Chicago, IL <span aria-hidden="true">&rarr;</span></span>
             </Link>
-            <Link href="/usa-trips/mackinac-island-tours/" className="lm-dest" key="Mackinac Island, MI" aria-label="Mackinac Island, MI educational tours">
+            <Link href="/usa-trips/mackinac-island/" className="lm-dest" key="Mackinac Island, MI" aria-label="Mackinac Island, MI educational tours">
               <img src="/images/landmark/mackinac-hero.jpg" alt="" loading="lazy" />
               <span className="lm-dest-label">Mackinac Island, MI <span aria-hidden="true">&rarr;</span></span>
             </Link>

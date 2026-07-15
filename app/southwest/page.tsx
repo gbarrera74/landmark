@@ -26,11 +26,11 @@ export default function Southwest() {
         <div className="ile-container">
           <div className="ile-center lm-narrow"><p className="ile-lead lm-center-lead">Spanish missions and desert landscapes in the Southwest.</p></div>
           <div className="lm-dest-grid" style={{ marginTop: 8 }}>
-            <Link href="/usa-trips/san-antonio-tours/" className="lm-dest" key="San Antonio, TX" aria-label="San Antonio, TX educational tours">
+            <Link href="/usa-trips/san-antonio/" className="lm-dest" key="San Antonio, TX" aria-label="San Antonio, TX educational tours">
               <img src="/images/landmark/san-antonio-hero.jpg" alt="" loading="lazy" />
               <span className="lm-dest-label">San Antonio, TX <span aria-hidden="true">&rarr;</span></span>
             </Link>
-            <Link href="/usa-trips/new-mexico-tours/" className="lm-dest" key="New Mexico" aria-label="New Mexico educational tours">
+            <Link href="/usa-trips/new-mexico/" className="lm-dest" key="New Mexico" aria-label="New Mexico educational tours">
               <img src="/images/landmark/new-mexico-hero.jpg" alt="" loading="lazy" />
               <span className="lm-dest-label">New Mexico <span aria-hidden="true">&rarr;</span></span>
             </Link>

@@ -26,7 +26,7 @@ const TOP_TOURS = [
     blurb: 'Get ready for an unforgettable journey through the history, landmarks, and legacy of Washington, D.C.!',
     img: '/images/landmark/mlk-memorial-washington-dc.jpg',
     alt: 'Martin Luther King Jr. Memorial in Washington, D.C.',
-    href: '/usa-trips/washington-d-c/8th-grade-washington-dc-trip-itinerary/',
+    href: '/usa-trips/washington-dc/8th-grade-washington-dc-trip-itinerary/',
   },
   {
     badge: '3D/2N',
@@ -35,7 +35,7 @@ const TOP_TOURS = [
     blurb: 'Immerse yourself in the vibrant world of art and creativity across New York City’s iconic galleries and museums!',
     img: '/images/landmark/broadway-sign-nyc.jpg',
     alt: 'Broadway signs in New York City',
-    href: '/usa-trips/new-york-city-tours/art-focused-tour-nyc/',
+    href: '/usa-trips/new-york-city/art-focused-tour-nyc/',
   },
   {
     badge: '3D/2N',
@@ -49,8 +49,8 @@ const TOP_TOURS = [
 ]
 
 const DESTINATIONS = [
-  { name: 'Washington, D.C.', href: '/usa-trips/washington-d-c/', img: '/images/landmark/fall-in-washington-dc.jpeg' },
-  { name: 'New York City', href: '/usa-trips/new-york-city-tours/', img: '/images/landmark/broadway-sign-nyc.jpg' },
+  { name: 'Washington, D.C.', href: '/usa-trips/washington-dc/', img: '/images/landmark/fall-in-washington-dc.jpeg' },
+  { name: 'New York City', href: '/usa-trips/new-york-city/', img: '/images/landmark/broadway-sign-nyc.jpg' },
   { name: 'Boston', href: '/usa-trips/boston/', img: '/images/landmark/ethical-culture-boston.jpg' },
   { name: 'Atlanta', href: '/usa-trips/atlanta/', img: '/images/landmark/atlanta-skyline.jpg' },
 ]
@@ -70,9 +70,9 @@ const THEMED_INTRO =
   'From STEM and civics in Washington, D.C. to French immersion in Quebec City and the Broadway stage in New York, every Landmark theme is crafted around your subject and your students: hands-on, age-appropriate, and unforgettable.'
 
 const THEMED = [
-  { location: 'Washington, D.C.', theme: 'AP History', img: '/images/landmark/fdr-memorial-dc.jpg', href: '/usa-trips/washington-d-c/4-day-washington-dc-school-trip/' },
+  { location: 'Washington, D.C.', theme: 'AP History', img: '/images/landmark/fdr-memorial-dc.jpg', href: '/usa-trips/washington-dc/4-day-washington-dc-school-trip/' },
   { location: 'Quebec City, Canada', theme: 'French Immersion', img: '/images/landmark/quebec-city-french-immersion-bridge.jpg', href: '/international/canada/quebec-city-5-day-itinerary/' },
-  { location: 'New York City, New York', theme: 'Performing Arts', img: '/images/landmark/murray-high-school-nyc.jpg', href: '/usa-trips/new-york-city-tours/nyc-performing-arts-tour/' },
+  { location: 'New York City, New York', theme: 'Performing Arts', img: '/images/landmark/murray-high-school-nyc.jpg', href: '/usa-trips/new-york-city/nyc-performing-arts-tour/' },
 ]
 
 const GALLERY = [

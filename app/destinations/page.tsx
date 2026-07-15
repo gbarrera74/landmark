@@ -28,11 +28,11 @@ export default function Destinations() {
             <h2 id="east-coast-h" className="lm-h2-amber">EAST COAST</h2>
           </div>
           <div className="lm-dest-grid" style={{ marginTop: 8 }}>
-            <Link href="/usa-trips/washington-d-c/" className="lm-dest" key="Washington, D.C." aria-label="Washington, D.C. educational tours">
+            <Link href="/usa-trips/washington-dc/" className="lm-dest" key="Washington, D.C." aria-label="Washington, D.C. educational tours">
               <img src="/images/landmark/dc-hero.jpg" alt="" loading="lazy" />
               <span className="lm-dest-label">Washington, D.C. <span aria-hidden="true">&rarr;</span></span>
             </Link>
-            <Link href="/usa-trips/new-york-city-tours/" className="lm-dest" key="New York, NY" aria-label="New York, NY educational tours">
+            <Link href="/usa-trips/new-york-city/" className="lm-dest" key="New York, NY" aria-label="New York, NY educational tours">
               <img src="/images/landmark/hero-nyc.jpg" alt="" loading="lazy" />
               <span className="lm-dest-label">New York, NY <span aria-hidden="true">&rarr;</span></span>
             </Link>
@@ -44,27 +44,27 @@ export default function Destinations() {
               <img src="/images/landmark/boston-skyline-hero.jpg" alt="" loading="lazy" />
               <span className="lm-dest-label">Boston, MA <span aria-hidden="true">&rarr;</span></span>
             </Link>
-            <Link href="/usa-trips/orlando-schooltrips/" className="lm-dest" key="Orlando, FL" aria-label="Orlando, FL educational tours">
+            <Link href="/usa-trips/orlando/" className="lm-dest" key="Orlando, FL" aria-label="Orlando, FL educational tours">
               <img src="/images/landmark/orlando-hero.jpg" alt="" loading="lazy" />
               <span className="lm-dest-label">Orlando, FL <span aria-hidden="true">&rarr;</span></span>
             </Link>
-            <Link href="/usa-trips/philadelphia-tours/" className="lm-dest" key="Philadelphia, PA" aria-label="Philadelphia, PA educational tours">
+            <Link href="/usa-trips/philadelphia/" className="lm-dest" key="Philadelphia, PA" aria-label="Philadelphia, PA educational tours">
               <img src="/images/landmark/philadelphia-hero.jpg" alt="" loading="lazy" />
               <span className="lm-dest-label">Philadelphia, PA <span aria-hidden="true">&rarr;</span></span>
             </Link>
-            <Link href="/usa-trips/williamsburg-tours/" className="lm-dest" key="Williamsburg, VA" aria-label="Williamsburg, VA educational tours">
+            <Link href="/usa-trips/williamsburg/" className="lm-dest" key="Williamsburg, VA" aria-label="Williamsburg, VA educational tours">
               <img src="/images/landmark/williamsburg-brick-building.jpg" alt="" loading="lazy" />
               <span className="lm-dest-label">Williamsburg, VA <span aria-hidden="true">&rarr;</span></span>
             </Link>
-            <Link href="/usa-trips/new-orleans-tours/" className="lm-dest" key="New Orleans, LA" aria-label="New Orleans, LA educational tours">
+            <Link href="/usa-trips/new-orleans/" className="lm-dest" key="New Orleans, LA" aria-label="New Orleans, LA educational tours">
               <img src="/images/landmark/new-orleans-hero.jpg" alt="" loading="lazy" />
               <span className="lm-dest-label">New Orleans, LA <span aria-hidden="true">&rarr;</span></span>
             </Link>
-            <Link href="/usa-trips/charleston-sc/" className="lm-dest" key="Charleston, SC" aria-label="Charleston, SC educational tours">
+            <Link href="/usa-trips/charleston/" className="lm-dest" key="Charleston, SC" aria-label="Charleston, SC educational tours">
               <img src="/images/landmark/charleston-hero.jpg" alt="" loading="lazy" />
               <span className="lm-dest-label">Charleston, SC <span aria-hidden="true">&rarr;</span></span>
             </Link>
-            <Link href="/usa-trips/savannah-tours/" className="lm-dest" key="Savannah, GA" aria-label="Savannah, GA educational tours">
+            <Link href="/usa-trips/savannah/" className="lm-dest" key="Savannah, GA" aria-label="Savannah, GA educational tours">
               <img src="/images/landmark/savannah-hero.jpg" alt="" loading="lazy" />
               <span className="lm-dest-label">Savannah, GA <span aria-hidden="true">&rarr;</span></span>
             </Link>
@@ -78,11 +78,11 @@ export default function Destinations() {
             <h2 id="midwest-h" className="lm-h2-amber">MIDWEST</h2>
           </div>
           <div className="lm-dest-grid" style={{ marginTop: 8 }}>
-            <Link href="/usa-trips/chicago-tours/" className="lm-dest" key="Chicago, IL" aria-label="Chicago, IL educational tours">
+            <Link href="/usa-trips/chicago/" className="lm-dest" key="Chicago, IL" aria-label="Chicago, IL educational tours">
               <img src="/images/landmark/chicago-hero.jpg" alt="" loading="lazy" />
               <span className="lm-dest-label">Chicago, IL <span aria-hidden="true">&rarr;</span></span>
             </Link>
-            <Link href="/usa-trips/mackinac-island-tours/" className="lm-dest" key="Mackinac Island, MI" aria-label="Mackinac Island, MI educational tours">
+            <Link href="/usa-trips/mackinac-island/" className="lm-dest" key="Mackinac Island, MI" aria-label="Mackinac Island, MI educational tours">
               <img src="/images/landmark/mackinac-hero.jpg" alt="" loading="lazy" />
               <span className="lm-dest-label">Mackinac Island, MI <span aria-hidden="true">&rarr;</span></span>
             </Link>
@@ -96,11 +96,11 @@ export default function Destinations() {
             <h2 id="southwest-h" className="lm-h2-amber">SOUTHWEST</h2>
           </div>
           <div className="lm-dest-grid" style={{ marginTop: 8 }}>
-            <Link href="/usa-trips/san-antonio-tours/" className="lm-dest" key="San Antonio, TX" aria-label="San Antonio, TX educational tours">
+            <Link href="/usa-trips/san-antonio/" className="lm-dest" key="San Antonio, TX" aria-label="San Antonio, TX educational tours">
               <img src="/images/landmark/san-antonio-hero.jpg" alt="" loading="lazy" />
               <span className="lm-dest-label">San Antonio, TX <span aria-hidden="true">&rarr;</span></span>
             </Link>
-            <Link href="/usa-trips/new-mexico-tours/" className="lm-dest" key="New Mexico" aria-label="New Mexico educational tours">
+            <Link href="/usa-trips/new-mexico/" className="lm-dest" key="New Mexico" aria-label="New Mexico educational tours">
               <img src="/images/landmark/new-mexico-hero.jpg" alt="" loading="lazy" />
               <span className="lm-dest-label">New Mexico <span aria-hidden="true">&rarr;</span></span>
             </Link>
@@ -114,7 +114,7 @@ export default function Destinations() {
             <h2 id="west-coast-h" className="lm-h2-amber">WEST COAST</h2>
           </div>
           <div className="lm-dest-grid" style={{ marginTop: 8 }}>
-            <Link href="/usa-trips/los-angeles-tours/" className="lm-dest" key="Los Angeles, CA" aria-label="Los Angeles, CA educational tours">
+            <Link href="/usa-trips/los-angeles/" className="lm-dest" key="Los Angeles, CA" aria-label="Los Angeles, CA educational tours">
               <img src="/images/landmark/los-angeles-hero.jpg" alt="" loading="lazy" />
               <span className="lm-dest-label">Los Angeles, CA <span aria-hidden="true">&rarr;</span></span>
             </Link>

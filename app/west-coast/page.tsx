@@ -26,7 +26,7 @@ export default function WestCoast() {
         <div className="ile-container">
           <div className="ile-center lm-narrow"><p className="ile-lead lm-center-lead">Entertainment, technology, and Pacific culture out West.</p></div>
           <div className="lm-dest-grid" style={{ marginTop: 8 }}>
-            <Link href="/usa-trips/los-angeles-tours/" className="lm-dest" key="Los Angeles, CA" aria-label="Los Angeles, CA educational tours">
+            <Link href="/usa-trips/los-angeles/" className="lm-dest" key="Los Angeles, CA" aria-label="Los Angeles, CA educational tours">
               <img src="/images/landmark/los-angeles-hero.jpg" alt="" loading="lazy" />
               <span className="lm-dest-label">Los Angeles, CA <span aria-hidden="true">&rarr;</span></span>
             </Link>
