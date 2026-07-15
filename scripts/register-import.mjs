@@ -41,7 +41,7 @@ const SLUGS = [
   'seaside-neighborhood-school', 'simon-fortin-quebec-school-trips', 'stagg-high-school',
   'upperman-high-school', 'warren-central-high-school', 'webster-central-schools',
   'weldon-valley-schools', 'wheeler-high-school', 'wood-ridge-jr-sr-high-school',
-  'allegany-limestone-8th-grade-trip-2027',
+  'allegany-limestone-8th-grade-trip-2027', 'soces',
 ]
 
 fs.mkdirSync(OUT_DIR, { recursive: true })

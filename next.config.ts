@@ -17,6 +17,10 @@ const nextConfig: NextConfig = {
     ],
   },
   async headers() {
+    // Only the real production origin is treated as production. Any other build
+    // (staging, previews, local) is non-production. Production MUST set
+    // SITE_URL=https://landmarkeducationaltours.com.
+    const isProd = (process.env.SITE_URL ?? '').replace(/\/$/, '') === 'https://landmarkeducationaltours.com';
     return [
       {
         // Migrated media is content-stable (new images get new filenames),
@@ -27,6 +31,13 @@ const nextConfig: NextConfig = {
           { key: 'Cache-Control', value: 'public, max-age=31536000, immutable' },
         ],
       },
+      // Fail-safe noindex: every non-production build gets a hard X-Robots-Tag
+      // noindex on ALL responses (stronger than robots.txt — keeps staging out
+      // of every search index even if it's crawled or linked).
+      ...(isProd ? [] : [{
+        source: '/:path*',
+        headers: [{ key: 'X-Robots-Tag', value: 'noindex, nofollow' }],
+      }]),
     ];
   },
 };

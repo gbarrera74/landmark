@@ -1,6 +1,8 @@
 import type { MetadataRoute } from 'next'
 
-const SITE_URL = (process.env.SITE_URL ?? 'https://landmarkeducationaltours.com').replace(/\/$/, '')
+// Fail-safe: default to an EMPTY origin so an unset SITE_URL is treated as
+// non-production (noindex). Production MUST set SITE_URL=https://landmarkeducationaltours.com.
+const SITE_URL = (process.env.SITE_URL ?? '').replace(/\/$/, '')
 const PRODUCTION_ORIGINS = new Set([
   'https://landmarkeducationaltours.com',
   'https://www.landmarkeducationaltours.com',

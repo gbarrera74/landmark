@@ -26,7 +26,9 @@ const GTM_ID = 'GTM-K6Z2H62D'
 const GA4_ID = 'G-D4LC281NP7'
 const ADS_ID = 'AW-395103468'
 const HS_PORTAL = '9241531'
-const PROD_HOSTS = /(^|\.)landmarkeducationaltours\.com$/
+// EXACT production origins only — a staging subdomain like
+// staging.landmarkeducationaltours.com must NOT fire production analytics/Ads.
+const PROD_HOSTS = /^(www\.)?landmarkeducationaltours\.com$/
 
 export default function TrackingScripts() {
   const [activated, setActivated] = useState(false)
