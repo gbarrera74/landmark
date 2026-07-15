@@ -345,7 +345,7 @@ p { margin: 0; }
 }
 .ileh-mega-inner { display: flex; gap: 30px; }
 .ileh-mega-col { min-width: 152px; }
-.ileh-mega-col h5 {
+.ileh-mega-col .ileh-mega-h {
   margin: 0 0 8px;
   font-family: var(--font-head);
   font-size: 12px;
@@ -375,7 +375,7 @@ p { margin: 0; }
 /* ── Mobile mega subgroups + room for the Destinations list ── */
 .ileh-m-group.is-open .ileh-m-sub { max-height: 1200px; }
 .ileh-m-subgroup { padding: 2px 0 6px; }
-.ileh-m-subgroup h6 {
+.ileh-m-subgroup .ileh-m-subh {
   margin: 10px 0 2px;
   font-family: var(--font-head);
   font-size: 11px;

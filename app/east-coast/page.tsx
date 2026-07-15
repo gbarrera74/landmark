@@ -3,7 +3,7 @@ import Link from 'next/link'
 import PageHero from '@/components/PageHero'
 import BrochureBand from '@/components/BrochureBand'
 import JsonLd from '@/lib/seo/JsonLd'
-import { breadcrumb } from '@/lib/seo/schemas'
+import { breadcrumb, itemList } from '@/lib/seo/schemas'
 
 const STEPS = [
   { title: 'Contact', body: 'Our Travel Consultants are waiting to build your next trip! Contact our office to get the process started.' },
@@ -100,6 +100,7 @@ export default function EastCoast() {
         { name: "Destinations", path: "/destinations/" },
         { name: "East Coast", path: "/east-coast/" },
       ])} />
+      <JsonLd data={itemList("East Coast student trip destinations", [{ name: "Washington, D.C.", path: "/usa-trips/washington-dc/" }, { name: "New York, NY", path: "/usa-trips/new-york-city/" }, { name: "Atlanta, GA", path: "/usa-trips/atlanta/" }, { name: "Boston, MA", path: "/usa-trips/boston/" }, { name: "Orlando, FL", path: "/usa-trips/orlando/" }, { name: "Philadelphia, PA", path: "/usa-trips/philadelphia/" }, { name: "Williamsburg, VA", path: "/usa-trips/williamsburg/" }, { name: "New Orleans, LA", path: "/usa-trips/new-orleans/" }, { name: "Charleston, SC", path: "/usa-trips/charleston/" }, { name: "Savannah, GA", path: "/usa-trips/savannah/" }])} />
     </>
   )
 }

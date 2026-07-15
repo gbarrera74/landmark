@@ -3,7 +3,7 @@ import Link from 'next/link'
 import PageHero from '@/components/PageHero'
 import BrochureBand from '@/components/BrochureBand'
 import JsonLd from '@/lib/seo/JsonLd'
-import { breadcrumb } from '@/lib/seo/schemas'
+import { breadcrumb, destinationGraph } from '@/lib/seo/schemas'
 
 const ArrowR = (
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" /></svg>
@@ -144,6 +144,7 @@ export default function Italy() {
         { name: 'Europe', path: '/europe/' },
         { name: 'Italy', path: '/europe/italy/' },
       ])} />
+      <JsonLd data={destinationGraph({ name: "Italy", description: `Customizable educational tours to Italy for students, Rome, Florence, Venice, and Pompeii. Guided, curriculum-aligned, and fully supported, from group flights to licensed local guides.`, path: "/europe/italy/", trips: TRIPS.map((t) => ({ name: t.title, path: t.href })) })} />
     </div>
   )
 }

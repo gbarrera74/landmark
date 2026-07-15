@@ -3,7 +3,7 @@ import Link from 'next/link'
 import PageHero from '@/components/PageHero'
 import BrochureBand from '@/components/BrochureBand'
 import JsonLd from '@/lib/seo/JsonLd'
-import { breadcrumb } from '@/lib/seo/schemas'
+import { breadcrumb, itemList } from '@/lib/seo/schemas'
 
 const STEPS = [
   { title: 'Contact', body: 'Our Travel Consultants are waiting to build your next trip! Contact our office to get the process started.' },
@@ -67,6 +67,7 @@ export default function Asia() {
         { name: "Destinations", path: "/destinations/" },
         { name: "Asia", path: "/asia/" },
       ])} />
+      <JsonLd data={itemList("Asia student trip destinations", [{ name: "Japan", path: "/asia/japan/" }, { name: "South Korea", path: "/asia/south-korea/" }])} />
     </>
   )
 }

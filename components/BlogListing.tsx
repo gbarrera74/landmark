@@ -3,7 +3,7 @@ import Link from 'next/link'
 import PageHero from '@/components/PageHero'
 import BrochureBand from '@/components/BrochureBand'
 import JsonLd from '@/lib/seo/JsonLd'
-import { breadcrumb } from '@/lib/seo/schemas'
+import { breadcrumb, itemList } from '@/lib/seo/schemas'
 import { getPage, getPageCount, formatDate, type PostCard } from '@/lib/blog'
 
 const ArrowR = (
@@ -68,6 +68,7 @@ export default function BlogListing({ page }: { page: number }) {
       </section>
       <BrochureBand />
       <JsonLd data={breadcrumb([{ name: 'Home', path: '/' }, { name: 'Blog', path: '/blog/' }])} />
+      <JsonLd data={itemList('Landmark Educational Tours blog', posts.map((p) => ({ name: p.title, path: `/blog/${p.slug}/` })))} />
     </>
   )
 }

@@ -3,7 +3,7 @@ import Link from 'next/link'
 import PageHero from '@/components/PageHero'
 import BrochureBand from '@/components/BrochureBand'
 import JsonLd from '@/lib/seo/JsonLd'
-import { breadcrumb } from '@/lib/seo/schemas'
+import { breadcrumb, destinationGraph } from '@/lib/seo/schemas'
 
 const ArrowR = (
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" /></svg>
@@ -114,6 +114,7 @@ export default function Boston() {
         { name: 'Destinations', path: '/destinations/' },
         { name: 'Boston', path: '/usa-trips/boston/' },
       ])} />
+      <JsonLd data={destinationGraph({ name: "Boston", description: `Customizable Boston field trips and student tours, the Freedom Trail, historic meeting houses, world-class universities, plus Salem and Newport add-ons. Safe, guided, and built around your curriculum.`, path: "/usa-trips/boston/", trips: TRIPS.map((t) => ({ name: t.title, path: t.href })) })} />
     </>
   )
 }

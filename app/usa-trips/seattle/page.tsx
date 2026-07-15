@@ -3,7 +3,7 @@ import Link from 'next/link'
 import PageHero from '@/components/PageHero'
 import BrochureBand from '@/components/BrochureBand'
 import JsonLd from '@/lib/seo/JsonLd'
-import { breadcrumb } from '@/lib/seo/schemas'
+import { breadcrumb, destinationGraph } from '@/lib/seo/schemas'
 
 const ArrowR = (
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" /></svg>
@@ -106,6 +106,7 @@ export default function Seattle() {
         { name: 'Destinations', path: '/destinations/' },
         { name: "Seattle", path: "/usa-trips/seattle/" },
       ])} />
+      <JsonLd data={destinationGraph({ name: "Seattle", description: `Customizable Seattle field trips and student tours: safe, guided, and built around your curriculum. Plan your Seattle educational trip with Landmark Educational Tours.`, path: "/usa-trips/seattle/", trips: TRIPS.map((t) => ({ name: t.title, path: t.href })) })} />
     </>
   )
 }

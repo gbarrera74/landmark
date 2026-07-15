@@ -3,7 +3,7 @@ import Link from 'next/link'
 import PageHero from '@/components/PageHero'
 import BrochureBand from '@/components/BrochureBand'
 import JsonLd from '@/lib/seo/JsonLd'
-import { breadcrumb } from '@/lib/seo/schemas'
+import { breadcrumb, itemList } from '@/lib/seo/schemas'
 
 const STEPS = [
   { title: 'Contact', body: 'Our Travel Consultants are waiting to build your next trip! Contact our office to get the process started.' },
@@ -68,6 +68,7 @@ export default function WestCoast() {
         { name: "Destinations", path: "/destinations/" },
         { name: "West Coast", path: "/west-coast/" },
       ])} />
+      <JsonLd data={itemList("West Coast student trip destinations", [{ name: "Los Angeles, CA", path: "/usa-trips/los-angeles/" }, { name: "Seattle, WA", path: "/usa-trips/seattle/" }])} />
     </>
   )
 }

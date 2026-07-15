@@ -187,7 +187,7 @@ export default function Header() {
                         <div className="ileh-mega-inner">
                           {item.groups.map((g) => (
                             <div key={g.title} className="ileh-mega-col">
-                              {g.title && <h5>{g.title}</h5>}
+                              {g.title && <p className="ileh-mega-h">{g.title}</p>}
                               {g.links.map((l) => (
                                 <Link key={l.label} href={l.href} className={isChildActive(l.href) ? 'is-active' : ''}>{l.label}</Link>
                               ))}
@@ -247,7 +247,7 @@ export default function Header() {
                 {item.groups
                   ? item.groups.map((g) => (
                       <div key={g.title} className="ileh-m-subgroup">
-                        {g.title && <h6>{g.title}</h6>}
+                        {g.title && <p className="ileh-m-subh">{g.title}</p>}
                         {g.links.map((l) => (
                           <Link key={l.label} href={l.href} className={isChildActive(l.href) ? 'is-active' : ''} onClick={() => setMobileOpen(false)}>{l.label}</Link>
                         ))}

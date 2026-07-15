@@ -3,7 +3,7 @@ import Link from 'next/link'
 import PageHero from '@/components/PageHero'
 import BrochureBand from '@/components/BrochureBand'
 import JsonLd from '@/lib/seo/JsonLd'
-import { breadcrumb } from '@/lib/seo/schemas'
+import { breadcrumb, itemList } from '@/lib/seo/schemas'
 
 const STEPS = [
   { title: 'Contact', body: 'Our Travel Consultants are waiting to build your next trip! Contact our office to get the process started.' },
@@ -68,6 +68,7 @@ export default function Southwest() {
         { name: "Destinations", path: "/destinations/" },
         { name: "Southwest", path: "/southwest/" },
       ])} />
+      <JsonLd data={itemList("Southwest student trip destinations", [{ name: "San Antonio, TX", path: "/usa-trips/san-antonio/" }, { name: "New Mexico", path: "/usa-trips/new-mexico/" }])} />
     </>
   )
 }

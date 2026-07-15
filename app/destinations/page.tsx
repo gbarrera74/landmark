@@ -3,7 +3,7 @@ import Link from 'next/link'
 import PageHero from '@/components/PageHero'
 import BrochureBand from '@/components/BrochureBand'
 import JsonLd from '@/lib/seo/JsonLd'
-import { breadcrumb } from '@/lib/seo/schemas'
+import { breadcrumb, itemList } from '@/lib/seo/schemas'
 
 const STEPS = [
   { title: 'Contact', body: 'Our Travel Consultants are waiting to build your next trip! Contact our office to get the process started.' },
@@ -201,6 +201,7 @@ export default function Destinations() {
         { name: "Home", path: "/" },
         { name: "Destinations", path: "/destinations/" },
       ])} />
+      <JsonLd data={itemList("Landmark Educational Tours destinations", [{ name: "Washington, D.C.", path: "/usa-trips/washington-dc/" }, { name: "New York, NY", path: "/usa-trips/new-york-city/" }, { name: "Atlanta, GA", path: "/usa-trips/atlanta/" }, { name: "Boston, MA", path: "/usa-trips/boston/" }, { name: "Orlando, FL", path: "/usa-trips/orlando/" }, { name: "Philadelphia, PA", path: "/usa-trips/philadelphia/" }, { name: "Williamsburg, VA", path: "/usa-trips/williamsburg/" }, { name: "New Orleans, LA", path: "/usa-trips/new-orleans/" }, { name: "Charleston, SC", path: "/usa-trips/charleston/" }, { name: "Savannah, GA", path: "/usa-trips/savannah/" }, { name: "Chicago, IL", path: "/usa-trips/chicago/" }, { name: "Mackinac Island, MI", path: "/usa-trips/mackinac-island/" }, { name: "San Antonio, TX", path: "/usa-trips/san-antonio/" }, { name: "New Mexico", path: "/usa-trips/new-mexico/" }, { name: "Los Angeles, CA", path: "/usa-trips/los-angeles/" }, { name: "Seattle, WA", path: "/usa-trips/seattle/" }, { name: "Canada", path: "/canada/" }, { name: "Italy", path: "/europe/italy/" }, { name: "Costa Rica", path: "/central-south-america/costa-rica/" }, { name: "Norway", path: "/europe/norway/" }, { name: "England", path: "/europe/england/" }, { name: "France", path: "/europe/france/" }, { name: "Ireland", path: "/europe/ireland/" }, { name: "Japan", path: "/asia/japan/" }, { name: "South Korea", path: "/asia/south-korea/" }])} />
     </>
   )
 }
