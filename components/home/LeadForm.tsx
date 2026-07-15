@@ -4,7 +4,7 @@ import { useState } from 'react'
 
 // NOTE: submission is not yet wired to a backend (HubSpot/email). For now it
 // validates client-side and shows a success state. Wire the POST handler before
-// launch — see POST-LAUNCH-BACKLOG.
+// launch, see POST-LAUNCH-BACKLOG.
 export default function LeadForm() {
   const [sent, setSent] = useState(false)
 
@@ -16,7 +16,7 @@ export default function LeadForm() {
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12" /></svg>
           </span>
           <h3>Go raibh maith agat!</h3>
-          <p>Thank you — your request is on its way. A member of our team will be in touch within 1–2 business days.</p>
+          <p>Thank you, your request is on its way. A member of our team will be in touch within 1–2 business days.</p>
         </div>
       </div>
     )
@@ -72,7 +72,7 @@ export default function LeadForm() {
         </div>
       </div>
 
-      {/* honeypot — bots fill hidden fields; humans never see it */}
+      {/* honeypot, bots fill hidden fields; humans never see it */}
       <input type="text" name="company" tabIndex={-1} autoComplete="off" aria-hidden="true" style={{ position: 'absolute', left: '-9999px', width: 1, height: 1, opacity: 0 }} />
 
       <button type="submit" className="ile-btn ile-btn--primary">Send My Request</button>

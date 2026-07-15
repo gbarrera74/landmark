@@ -11,47 +11,41 @@ const ArrowR = (
 )
 
 const DAYS = [
-  {
-    title: 'Day 1: Arrival & Smithsonian Museums',
-    acts: ['Travel to Washington, D.C.', 'Explore Smithsonian museums along the National Mall', 'Enjoy a Texas-style BBQ dinner', 'Hotel check-in with on-site security'],
-  },
-  {
-    title: 'Day 2: Arlington & National Landmarks',
-    acts: ['Breakfast at the hotel', 'Guided tour of Arlington National Cemetery (Changing of the Guard, Kennedy gravesite)', 'Visit the U.S. Capitol, Library of Congress, and National Archives Museum', 'Picnic lunch on the Capitol lawn', 'Evening memorial visits and dinner'],
-  },
-  {
-    title: 'Day 3: Mount Vernon & Departure',
-    acts: ['Breakfast at the hotel', 'Tour George Washington’s Mount Vernon Estate (mansion, gardens, and exhibits)', 'Lunch at Mount Vernon’s food court', 'Depart for home with dinner stop en route (at students’ expense)'],
-  },
+  { title: "Day 1: Arrival & Smithsonian Museums", acts: ["Travel to Washington, D.C.", "Explore Smithsonian museums along the National Mall", "Enjoy a Texas-style BBQ dinner", "Hotel check-in with on-site security"] },
+  { title: "Day 2: Arlington & National Landmarks", acts: ["Breakfast at the hotel", "Guided tour of Arlington National Cemetery (Changing of the Guard, Kennedy gravesite)", "Visit the U.S. Capitol, Library of Congress, and National Archives Museum", "Picnic lunch on the Capitol lawn", "Evening memorial visits and dinner"] },
+  { title: "Day 3: Mount Vernon & Departure", acts: ["Breakfast at the hotel", "Tour George Washington’s Mount Vernon Estate (mansion, gardens, and exhibits)", "Lunch at Mount Vernon’s food court", "Depart for home with dinner stop en route (at students’ expense)"] },
 ]
 
 const WHY = [
-  { label: 'Interactive Learning', text: 'Engage with history through guided tours and museum visits.' },
-  { label: 'Iconic Landmarks', text: 'Visit renowned sites like the U.S. Capitol, Lincoln Memorial, and Smithsonian Museums.' },
-  { label: 'Civic Understanding', text: 'Gain a deeper appreciation for democracy and government.' },
-  { label: 'Memorable Experiences', text: 'Create lifelong memories while exploring this historic city.' },
+  { label: "Interactive Learning", text: "Engage with history through guided tours and museum visits." },
+  { label: "Iconic Landmarks", text: "Visit renowned sites like the U.S. Capitol, Lincoln Memorial, and Smithsonian Museums." },
+  { label: "Civic Understanding", text: "Gain a deeper appreciation for democracy and government." },
+  { label: "Memorable Experiences", text: "Create lifelong memories while exploring this historic city." },
 ]
 
 const INCLUSIONS = [
-  ['Private Group Tour', 'Personalized experiences for your group only.'],
-  ['Custom Itinerary', 'Built around your educational goals and preferences.'],
-  ['Transportation', 'Safe, reliable, and comfortable travel.'],
-  ['Hotel Accommodations', 'Convenient and student-friendly lodging.'],
-  ['Attractions', 'Access to top-rated sites and experiences.'],
-  ['Meals', 'Delicious and well-balanced dining options.'],
-  ['Tour Manager', 'Professional support throughout your journey.'],
-  ['Restaurant & Driver Gratuities', 'Taken care of for your convenience.'],
+  ["Private Group Tour", "Personalized experiences for your group only."],
+  ["Custom Itinerary", "Built around your educational goals and preferences."],
+  ["Transportation", "Safe, reliable, and comfortable travel."],
+  ["Hotel Accommodations", "Convenient and student-friendly lodging."],
+  ["Attractions", "Access to top-rated sites and experiences."],
+  ["Meals", "Delicious and well-balanced dining options."],
+  ["Tour Manager", "Professional support throughout your journey."],
+  ["Restaurant & Driver Gratuities", "Taken care of for your convenience."],
 ]
 
 const RELATED = [
-  { title: '4 Day Washington, DC School Trip', img: '/images/landmark/fall-in-washington-dc.jpeg', href: '/usa-trips/washington-d-c/4-day-washington-dc-school-trip/' },
-  { title: 'African American History Washington, DC School Trip', img: '/images/landmark/dc-nmaahc.jpg', href: '/usa-trips/washington-d-c/african-american-history-dc-student-tour/' },
-  { title: 'Civics Washington, DC School Trip', img: '/images/landmark/thomas-jefferson-memorial.jpg', href: '/usa-trips/washington-d-c/washington-dc-civics-student-tour/' },
+  { title: "HBCU Campus Tours", img: "/images/landmark/dc-howard-university.jpg", href: "/usa-trips/washington-d-c/hbcu-campus-tours/" },
+  { title: "Class Trip Programs for Middle School Students", img: "/images/landmark/dc-capitol.jpg", href: "/usa-trips/washington-d-c/class-trip-programs-for-middle-school-students/" },
+  { title: "Civics Focused Washington, DC School Trip", img: "/images/landmark/thomas-jefferson-memorial.jpg", href: "/usa-trips/washington-d-c/washington-dc-civics-student-tour/" },
 ]
+
+const DESC_P1 = "Embark on an unforgettable three-day educational adventure in Washington, DC, designed specifically for 8th-grade students! Discover the rich history, iconic landmarks, and cultural treasures of the nation’s capital. From touring historic monuments and visiting world-famous museums to experiencing the heart of American democracy, this trip promises an immersive, hands-on learning experience that will leave students inspired and excited about history, government, and culture."
+const DESC_P2 = "An 8th grade trip to Washington, DC marks a turning point in a student’s academic journey. At this age, lessons about government and citizenship begin to feel personal. We specifically design our Washington, DC trip for 8th graders to support middle school curriculum, balancing structure, engagement, and age-appropriate exploration. Students experience guided tours of national memorials, interactive museum visits, and meaningful discussions about civic responsibility. We also thoughtfully plan evenings to keep energy high while maintaining safety and organization. Landmark Educational Tours collaborates closely with administrators to ensure smooth logistics and clear communication throughout the process. A Washington, DC trip for 8th graders is an important milestone that builds independence, strengthens friendships, and reinforces classroom learning in ways that resonate long after students return home."
 
 const sampleTab = (
   <>
-    <p className="lm-itin-note">*Customize and personalize your 8th grade Washington, DC trip itinerary with our team.</p>
+    <p className="lm-itin-note">*Customize and personalize your 8th Grade Washington, DC Trip Itinerary itinerary with our team.</p>
     <div className="ilp-timeline lm-day-timeline">
       {DAYS.map((d, i) => (
         <div className="ilp-step" key={d.title}>
@@ -71,57 +65,53 @@ const sampleTab = (
 const descriptionTab = (
   <div className="ilp-prose">
     <h2 style={{ marginTop: 0 }}>Explore the Ultimate 8th Grade Washington, D.C. Trip Itinerary</h2>
-    <p>
-      Embark on an unforgettable three-day educational adventure in Washington, DC, designed specifically for 8th-grade students! Discover the rich history, iconic landmarks, and cultural treasures of the nation’s capital. From touring historic monuments and visiting world-famous museums to experiencing the heart of American democracy, this trip promises an immersive, hands-on learning experience that will leave students inspired and excited about history, government, and culture.
-    </p>
-    <p>
-      An 8th grade trip to Washington, DC marks a turning point in a student’s academic journey. At this age, lessons about government and citizenship begin to feel personal. We specifically design our Washington, DC trip for 8th graders to support middle school curriculum, balancing structure, engagement, and age-appropriate exploration. Students experience guided tours of national memorials, interactive museum visits, and meaningful discussions about civic responsibility. We also thoughtfully plan evenings to keep energy high while maintaining safety and organization. Landmark Educational Tours collaborates closely with administrators to ensure smooth logistics and clear communication throughout the process. A Washington, DC trip for 8th graders is an important milestone that builds independence, strengthens friendships, and reinforces classroom learning in ways that resonate long after students return home.
-    </p>
-    <h3>Why Choose a Washington, DC Educational Tour?</h3>
+    <p>{DESC_P1}</p>
+    <p>{DESC_P2}</p>
+    <h3>Why Choose This Trip?</h3>
     <ul>
       {WHY.map((w) => (
         <li key={w.label}><strong>{w.label}:</strong> {w.text}</li>
       ))}
     </ul>
     <p className="lm-sample-note">
-      <em>Note: This is a SAMPLE itinerary provided for inspiration only. (Unless you love it!) Every trip we offer is fully customizable, ensuring a personalized experience tailored to your school’s educational goals.</em>
+      <em>Note: This is a SAMPLE itinerary provided for inspiration only. (Unless you love it!) Every trip we offer is fully customizable, ensuring a personalized experience tailored to your school&rsquo;s educational goals.</em>
     </p>
-    <Link href="/get-a-quote/" className="ile-btn ile-btn--primary">Plan Your Custom Washington, D.C. Trip Today</Link>
+    <Link href="/get-a-quote/" className="ile-btn ile-btn--primary">Plan Your Custom Trip Today</Link>
   </div>
 )
 
 const inclusionsTab = (
   <div className="ilp-infocard ilp-check">
-    <h3>Trip Inclusions — Tailored Just for You</h3>
+    <h3>Trip Inclusions: Tailored Just for You</h3>
     <p style={{ marginBottom: 20, color: 'var(--lm-ink-muted)', fontSize: 15, lineHeight: 1.7 }}>
-      Work with our expert Destination Landmark Specialist team to design a trip that fits your group’s unique needs! Our packages start fully customizable and typically include:
+      Work with our expert Destination Landmark Specialist team to design a trip that fits your group&rsquo;s unique needs! Our packages start fully customizable and typically include:
     </p>
     <ul>
       {INCLUSIONS.map(([label, text]) => (
-        <li key={label}><strong>{label}</strong> — {text}</li>
+        <li key={label}><strong>{label}</strong>: {text}</li>
       ))}
       <li><strong>&amp; More!</strong></li>
     </ul>
     <p style={{ marginTop: 20, color: 'var(--lm-ink-muted)', fontSize: 15, lineHeight: 1.7 }}>
-      You have the flexibility to include or exclude specific services based on your group’s preferences. While we recommend the value of an all-inclusive travel experience, the final decision is yours!
+      You have the flexibility to include or exclude specific services based on your group&rsquo;s preferences. While we recommend the value of an all-inclusive travel experience, the final decision is yours!
     </p>
     <Link href="/get-a-quote/" className="ile-btn ile-btn--primary" style={{ marginTop: 8 }}>Get a Custom Quote</Link>
   </div>
 )
 
-export default function EighthGradeDCItinerary() {
+export default function Itin_usa_trips__washington_d_c__8th_grade_washington_dc_trip_itinerary() {
   return (
     <>
       <PageHero
-        eyebrow="Washington, D.C. · 3 Days / 2 Nights"
-        title={<>Washington DC Trip for <em>8th Graders</em></>}
-        subtitle="A sample itinerary through the Smithsonian, Arlington National Cemetery, the U.S. Capitol, and Mount Vernon — fully customizable to your class."
-        image="/images/landmark/dc-war-memorial.jpg"
+        eyebrow="Washington, D.C. · 3 Day / 2 Night"
+        title={<>8th Grade Washington, DC Trip Itinerary</>}
+        subtitle="Give your 8th graders three days exploring the nation's capital, from Smithsonian museums and national memorials to Mount Vernon."
+        image="/images/landmark/mlk-memorial-washington-dc.jpg"
         breadcrumb={[
-          { label: 'Destinations', href: '/destinations/' },
-          { label: 'Washington, D.C.', href: '/usa-trips/washington-d-c/' },
-          { label: '8th Grade Itinerary' },
-        ]}
+        { label: "Destinations", href: "/destinations/" },
+        { label: "Washington, D.C.", href: "/usa-trips/washington-d-c/" },
+        { label: "8th Grade Washington, DC Trip Itinerary" },
+      ]}
       />
 
       <section className="ile-section ile-section--white">
@@ -140,9 +130,9 @@ export default function EighthGradeDCItinerary() {
             <div className="lm-summary-card">
               <h2 className="lm-summary-title">Trip Snapshot</h2>
               <dl className="lm-summary-list">
-                <div><dt>Duration</dt><dd>3 Days / 2 Nights</dd></div>
-                <div><dt>Destination</dt><dd>Washington, D.C.</dd></div>
-                <div><dt>Best for</dt><dd>Middle School · 8th Grade</dd></div>
+                <div><dt>Duration</dt><dd>3 Day / 2 Night</dd></div>
+                <div><dt>Destination</dt><dd>Washington, DC</dd></div>
+                <div><dt>Best for</dt><dd>8th Grade</dd></div>
                 <div><dt>Style</dt><dd>Private, fully customizable</dd></div>
               </dl>
               <Link href="/get-a-quote/" className="ile-btn ile-btn--primary lm-summary-cta">Get a Quote</Link>
@@ -164,7 +154,7 @@ export default function EighthGradeDCItinerary() {
           <div className="ile-center lm-narrow">
             <span className="ile-eyebrow">More Packages</span>
             <h2 id="related-h" className="lm-h2-amber">OTHER TRAVEL PACKAGES</h2>
-            <p className="ile-lead lm-center-lead">Discover customizable Washington, D.C. travel packages designed for educational tours, student groups, and more!</p>
+            <p className="ile-lead lm-center-lead">Discover more customizable Washington, D.C. travel packages designed for educational tours and student groups.</p>
           </div>
           <div className="ilp-grid-3">
             {RELATED.map((r) => (
@@ -183,16 +173,16 @@ export default function EighthGradeDCItinerary() {
       <BrochureBand />
 
       <JsonLd data={breadcrumb([
-        { name: 'Home', path: '/' },
-        { name: 'Destinations', path: '/destinations/' },
-        { name: 'Washington, D.C.', path: '/usa-trips/washington-d-c/' },
-        { name: 'Washington DC Trip for 8th Graders', path: '/usa-trips/washington-d-c/8th-grade-washington-dc-trip-itinerary/' },
+        { name: "Home", path: "/" },
+        { name: "Destinations", path: "/destinations/" },
+        { name: "Washington, D.C.", path: "/usa-trips/washington-d-c/" },
+        { name: "8th Grade Washington, DC Trip Itinerary", path: "/usa-trips/washington-d-c/8th-grade-washington-dc-trip-itinerary/" },
       ])} />
       <JsonLd data={touristTrip({
-        name: 'Washington DC Trip for 8th Graders',
-        description: 'A sample 3-day / 2-night 8th grade Washington, D.C. educational itinerary — Smithsonian museums, Arlington National Cemetery, the U.S. Capitol, and Mount Vernon.',
-        path: '/usa-trips/washington-d-c/8th-grade-washington-dc-trip-itinerary/',
-        days: DAYS.map((d) => ({ name: d.title, description: d.acts.join('; ') })),
+        name: "8th Grade Washington, DC Trip Itinerary",
+        description: "Give your 8th graders three days exploring the nation's capital, from Smithsonian museums and national memorials to Mount Vernon.",
+        path: "/usa-trips/washington-d-c/8th-grade-washington-dc-trip-itinerary/",
+        days: [{ name: "Day 1: Arrival & Smithsonian Museums", description: "Travel to Washington, D.C.; Explore Smithsonian museums along the National Mall; Enjoy a Texas-style BBQ dinner; Hotel check-in with on-site security" }, { name: "Day 2: Arlington & National Landmarks", description: "Breakfast at the hotel; Guided tour of Arlington National Cemetery (Changing of the Guard, Kennedy gravesite); Visit the U.S. Capitol, Library of Congress, and National Archives Museum; Picnic lunch on the Capitol lawn; Evening memorial visits and dinner" }, { name: "Day 3: Mount Vernon & Departure", description: "Breakfast at the hotel; Tour George Washington’s Mount Vernon Estate (mansion, gardens, and exhibits); Lunch at Mount Vernon’s food court; Depart for home with dinner stop en route (at students’ expense)" }],
       })} />
     </>
   )

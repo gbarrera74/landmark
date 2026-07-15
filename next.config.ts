@@ -1,7 +1,12 @@
 import type { NextConfig } from "next";
+import { WP_REDIRECTS } from "./lib/redirects";
 
 const nextConfig: NextConfig = {
   trailingSlash: true,
+  async redirects() {
+    // Old WordPress URLs -> new paths (cutover). See lib/redirects.ts.
+    return WP_REDIRECTS;
+  },
   images: {
     // trailingSlash:true rewrites /_next/image → /_next/image/, which breaks the
     // optimizer endpoint in the browser. Our media is pre-optimized (sized WebP/

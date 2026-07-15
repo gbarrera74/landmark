@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 
-// NOTE: not yet wired to a backend — shows a success state on submit.
+// NOTE: not yet wired to a backend, shows a success state on submit.
 // Wire the POST handler (email/HubSpot) before launch.
 export default function ContactForm() {
   const [sent, setSent] = useState(false)
@@ -15,7 +15,7 @@ export default function ContactForm() {
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12" /></svg>
           </span>
           <h3>Go raibh maith agat!</h3>
-          <p>Thanks for reaching out — we&apos;ll get back to you within 1–2 business days.</p>
+          <p>Thanks for reaching out, we&apos;ll get back to you within 1–2 business days.</p>
         </div>
       </div>
     )

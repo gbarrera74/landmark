@@ -1,6 +1,6 @@
 import { ImageResponse } from 'next/og'
 
-export const alt = 'Landmark Educational Tours — Educational Travel, Built for You'
+export const alt = 'Landmark Educational Tours | Educational Travel, Customized for You'
 export const size = { width: 1200, height: 630 }
 export const contentType = 'image/png'
 
@@ -43,7 +43,7 @@ export default function OpengraphImage() {
           <div style={{ ...needle, width: 132, height: 7, left: 0, top: 62.5 }} />
         </div>
         <div style={{ fontSize: 80, fontWeight: 800, letterSpacing: -1.5, marginTop: 40, textAlign: 'center', display: 'flex' }}>Landmark Educational Tours</div>
-        <div style={{ fontSize: 36, color: '#F2A94B', marginTop: 18, textAlign: 'center', maxWidth: 960, display: 'flex' }}>Educational Travel, Built for You</div>
+        <div style={{ fontSize: 36, color: '#F2A94B', marginTop: 18, textAlign: 'center', maxWidth: 960, display: 'flex' }}>Educational Travel, Customized for You</div>
         <div style={{ fontSize: 21, color: 'rgba(255,255,255,0.72)', marginTop: 42, letterSpacing: 4, textTransform: 'uppercase', display: 'flex' }}>Student Field Trips · Across the U.S. &amp; Beyond</div>
       </div>
     ),

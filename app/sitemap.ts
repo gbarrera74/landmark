@@ -1,31 +1,151 @@
 import type { MetadataRoute } from 'next'
+import { getIndex, getPageCount } from '@/lib/blog'
 
 const SITE_URL = (process.env.SITE_URL ?? 'https://landmarkeducationaltours.com').replace(/\/$/, '')
 
-/**
- * Only list routes that actually resolve to a real page. This grows one wave at
- * a time as pages are built, so the sitemap never advertises 404s.
- *
- * Planned additions (add as each is built):
- *   /destinations/ /east-coast/ /midwest/ /southwest/ /west-coast/ /international/
- *   /usa-trips/<city>/ + itineraries · /international/<country>/ + itineraries
- *   /themes/ · /about-landmark/ /accreditations-certifications/ /careers/
- *   /travel-safety-support/ · /resources/ /faq/ /testimonials/ /blog/ (+ posts)
- *   /get-a-quote/ /plan-a-trip/ /contact-us/ · /privacy-policy/
- */
+// Every built marketing route. Regenerate this list when pages are added/removed.
+// Blog URLs are appended dynamically from the local snapshot below.
 const ROUTES: { path: string; priority: number; changeFrequency: 'weekly' | 'monthly' }[] = [
-  { path: '/', priority: 1, changeFrequency: 'weekly' },
-  { path: '/usa-trips/washington-d-c/', priority: 0.8, changeFrequency: 'monthly' },
-  { path: '/usa-trips/washington-d-c/8th-grade-washington-dc-trip-itinerary/', priority: 0.7, changeFrequency: 'monthly' },
+  { path: '/', priority: 1.0, changeFrequency: 'weekly' },
+  { path: '/about-landmark/', priority: 0.7, changeFrequency: 'monthly' },
+  { path: '/accreditations-certifications/', priority: 0.7, changeFrequency: 'monthly' },
+  { path: '/careers/', priority: 0.7, changeFrequency: 'monthly' },
+  { path: '/contact-us/', priority: 0.7, changeFrequency: 'monthly' },
+  { path: '/destinations/', priority: 0.8, changeFrequency: 'weekly' },
+  { path: '/east-coast/', priority: 0.8, changeFrequency: 'weekly' },
+  { path: '/faq/', priority: 0.7, changeFrequency: 'monthly' },
+  { path: '/get-a-quote/', priority: 0.7, changeFrequency: 'monthly' },
+  { path: '/international/', priority: 0.8, changeFrequency: 'weekly' },
+  { path: '/international/canada/', priority: 0.8, changeFrequency: 'monthly' },
+  { path: '/international/canada/montreal/', priority: 0.6, changeFrequency: 'monthly' },
+  { path: '/international/canada/montreal/2-day-montreal-school-trip/', priority: 0.6, changeFrequency: 'monthly' },
+  { path: '/international/canada/montreal/3-day-montreal-school-trip/', priority: 0.6, changeFrequency: 'monthly' },
+  { path: '/international/canada/montreal/montreal-student-trip/', priority: 0.6, changeFrequency: 'monthly' },
+  { path: '/international/canada/quebec-city/', priority: 0.6, changeFrequency: 'monthly' },
+  { path: '/international/canada/quebec-city/3-day-quebec-city-itinerary/', priority: 0.6, changeFrequency: 'monthly' },
+  { path: '/international/canada/quebec-city/3-day-quebec-city-winter-itinerary/', priority: 0.6, changeFrequency: 'monthly' },
+  { path: '/international/canada/quebec-city/4-day-quebec-city-itinerary/', priority: 0.6, changeFrequency: 'monthly' },
+  { path: '/international/canada/quebec-city/4-day-quebec-city-winter-itinerary/', priority: 0.6, changeFrequency: 'monthly' },
+  { path: '/international/canada/quebec-city/5-day-quebec-city-itinerary/', priority: 0.6, changeFrequency: 'monthly' },
+  { path: '/international/canada/quebec-city/5-day-quebec-city-winter-itinerary/', priority: 0.6, changeFrequency: 'monthly' },
+  { path: '/international/costa-rica/', priority: 0.8, changeFrequency: 'monthly' },
+  { path: '/international/costa-rica/6-day-costa-rica-school-trip/', priority: 0.6, changeFrequency: 'monthly' },
+  { path: '/international/costa-rica/7-day-costa-rica-school-trip/', priority: 0.6, changeFrequency: 'monthly' },
+  { path: '/international/england/', priority: 0.8, changeFrequency: 'monthly' },
+  { path: '/international/france/', priority: 0.8, changeFrequency: 'monthly' },
+  { path: '/international/ireland/', priority: 0.8, changeFrequency: 'monthly' },
   { path: '/international/italy/', priority: 0.8, changeFrequency: 'monthly' },
+  { path: '/international/italy/classical-rome-ancient-history-tour/', priority: 0.6, changeFrequency: 'monthly' },
+  { path: '/international/italy/italian-language-culture-immersion/', priority: 0.6, changeFrequency: 'monthly' },
+  { path: '/international/italy/northern-italy-lakes-program/', priority: 0.6, changeFrequency: 'monthly' },
+  { path: '/international/italy/pompeii-naples-archaeology-trip/', priority: 0.6, changeFrequency: 'monthly' },
+  { path: '/international/italy/renaissance-florence-art-program/', priority: 0.6, changeFrequency: 'monthly' },
+  { path: '/international/italy/rome-florence-venice-grand-tour/', priority: 0.6, changeFrequency: 'monthly' },
+  { path: '/international/japan/', priority: 0.8, changeFrequency: 'monthly' },
+  { path: '/international/norway/', priority: 0.8, changeFrequency: 'monthly' },
+  { path: '/international/norway/10-day-norway-school-trip/', priority: 0.6, changeFrequency: 'monthly' },
+  { path: '/international/south-korea/', priority: 0.8, changeFrequency: 'monthly' },
+  { path: '/landmark-internship/', priority: 0.7, changeFrequency: 'monthly' },
+  { path: '/midwest/', priority: 0.8, changeFrequency: 'weekly' },
+  { path: '/plan-a-trip/', priority: 0.7, changeFrequency: 'monthly' },
+  { path: '/privacy-policy/', priority: 0.7, changeFrequency: 'monthly' },
+  { path: '/private-school-class-trips/', priority: 0.7, changeFrequency: 'monthly' },
+  { path: '/private-school-field-trip/', priority: 0.7, changeFrequency: 'monthly' },
+  { path: '/resources/', priority: 0.7, changeFrequency: 'monthly' },
+  { path: '/southwest/', priority: 0.8, changeFrequency: 'weekly' },
+  { path: '/testimonials/', priority: 0.7, changeFrequency: 'monthly' },
+  { path: '/themes/', priority: 0.8, changeFrequency: 'weekly' },
+  { path: '/travel-safety-support/', priority: 0.7, changeFrequency: 'monthly' },
+  { path: '/usa-trips/', priority: 0.8, changeFrequency: 'weekly' },
+  { path: '/usa-trips/atlanta/', priority: 0.8, changeFrequency: 'monthly' },
+  { path: '/usa-trips/atlanta/2-day-atlanta-school-trip/', priority: 0.6, changeFrequency: 'monthly' },
+  { path: '/usa-trips/atlanta/3-day-atlanta-field-trip/', priority: 0.6, changeFrequency: 'monthly' },
+  { path: '/usa-trips/atlanta/atlanta-and-alabama-hbcu-field-trip/', priority: 0.6, changeFrequency: 'monthly' },
+  { path: '/usa-trips/atlanta/atlantabeyond/', priority: 0.6, changeFrequency: 'monthly' },
+  { path: '/usa-trips/atlanta/hbcu-field-trip/', priority: 0.6, changeFrequency: 'monthly' },
+  { path: '/usa-trips/boston/', priority: 0.8, changeFrequency: 'monthly' },
+  { path: '/usa-trips/boston/3-day-boston-field-trip/', priority: 0.6, changeFrequency: 'monthly' },
+  { path: '/usa-trips/boston/6-day-boston-field-trip/', priority: 0.6, changeFrequency: 'monthly' },
+  { path: '/usa-trips/boston/boston-and-newport-school-trip/', priority: 0.6, changeFrequency: 'monthly' },
+  { path: '/usa-trips/boston/boston-and-salem-school-trip/', priority: 0.6, changeFrequency: 'monthly' },
+  { path: '/usa-trips/boston/boston-school-trip/', priority: 0.6, changeFrequency: 'monthly' },
+  { path: '/usa-trips/boston/historic-boston/', priority: 0.6, changeFrequency: 'monthly' },
+  { path: '/usa-trips/charleston-sc/', priority: 0.8, changeFrequency: 'monthly' },
+  { path: '/usa-trips/charleston-sc/charleston-field-trip/', priority: 0.6, changeFrequency: 'monthly' },
+  { path: '/usa-trips/charleston-sc/charleston-school-trip/', priority: 0.6, changeFrequency: 'monthly' },
+  { path: '/usa-trips/chicago-tours/', priority: 0.8, changeFrequency: 'monthly' },
+  { path: '/usa-trips/chicago-tours/chicago-spanish-immersion-school-trip/', priority: 0.6, changeFrequency: 'monthly' },
+  { path: '/usa-trips/chicago-tours/chicago-student-tour/', priority: 0.6, changeFrequency: 'monthly' },
+  { path: '/usa-trips/chicago-tours/the-windy-city-tour/', priority: 0.6, changeFrequency: 'monthly' },
+  { path: '/usa-trips/los-angeles-tours/', priority: 0.8, changeFrequency: 'monthly' },
+  { path: '/usa-trips/los-angeles-tours/los-angeles-field-trip/', priority: 0.6, changeFrequency: 'monthly' },
+  { path: '/usa-trips/los-angeles-tours/los-angeles-school-trip/', priority: 0.6, changeFrequency: 'monthly' },
+  { path: '/usa-trips/mackinac-island-tours/', priority: 0.8, changeFrequency: 'monthly' },
+  { path: '/usa-trips/mackinac-island-tours/mackinac-island-field-trip/', priority: 0.6, changeFrequency: 'monthly' },
+  { path: '/usa-trips/mackinac-island-tours/mackinac-island-school-trip/', priority: 0.6, changeFrequency: 'monthly' },
+  { path: '/usa-trips/new-mexico-tours/', priority: 0.8, changeFrequency: 'monthly' },
+  { path: '/usa-trips/new-mexico-tours/new-mexico-school-trip/', priority: 0.6, changeFrequency: 'monthly' },
+  { path: '/usa-trips/new-orleans-tours/', priority: 0.8, changeFrequency: 'monthly' },
+  { path: '/usa-trips/new-orleans-tours/3-day-new-orleans-school-trip/', priority: 0.6, changeFrequency: 'monthly' },
+  { path: '/usa-trips/new-orleans-tours/new-orleans-field-trip/', priority: 0.6, changeFrequency: 'monthly' },
+  { path: '/usa-trips/new-orleans-tours/new-orleans-student-tour/', priority: 0.6, changeFrequency: 'monthly' },
+  { path: '/usa-trips/new-york-city-tours/', priority: 0.8, changeFrequency: 'monthly' },
+  { path: '/usa-trips/new-york-city-tours/4-day-new-york-city-school-trip/', priority: 0.6, changeFrequency: 'monthly' },
+  { path: '/usa-trips/new-york-city-tours/5-day-new-york-city-field-trip/', priority: 0.6, changeFrequency: 'monthly' },
+  { path: '/usa-trips/new-york-city-tours/art-focused-tour-nyc/', priority: 0.6, changeFrequency: 'monthly' },
+  { path: '/usa-trips/new-york-city-tours/nyc-performing-arts-tour/', priority: 0.6, changeFrequency: 'monthly' },
+  { path: '/usa-trips/new-york-city-tours/nyc-student-trip/', priority: 0.6, changeFrequency: 'monthly' },
+  { path: '/usa-trips/new-york-city-tours/ymca-summer-camp/', priority: 0.6, changeFrequency: 'monthly' },
+  { path: '/usa-trips/orlando-schooltrips/', priority: 0.8, changeFrequency: 'monthly' },
+  { path: '/usa-trips/orlando-schooltrips/disney-educational-tours/', priority: 0.6, changeFrequency: 'monthly' },
+  { path: '/usa-trips/orlando-schooltrips/orlando-student-tour-extended/', priority: 0.6, changeFrequency: 'monthly' },
+  { path: '/usa-trips/orlando-schooltrips/orlando-student-tour/', priority: 0.6, changeFrequency: 'monthly' },
+  { path: '/usa-trips/philadelphia-tours/', priority: 0.8, changeFrequency: 'monthly' },
+  { path: '/usa-trips/philadelphia-tours/2-day-philadelphia-school-trip/', priority: 0.6, changeFrequency: 'monthly' },
+  { path: '/usa-trips/philadelphia-tours/historic-philadelphia-school-trip/', priority: 0.6, changeFrequency: 'monthly' },
+  { path: '/usa-trips/philadelphia-tours/philadelphia-student-tour/', priority: 0.6, changeFrequency: 'monthly' },
+  { path: '/usa-trips/san-antonio-tours/', priority: 0.8, changeFrequency: 'monthly' },
+  { path: '/usa-trips/san-antonio-tours/3-day-san-antonio-school-trip/', priority: 0.6, changeFrequency: 'monthly' },
+  { path: '/usa-trips/san-antonio-tours/intro-to-san-antonio-tour/', priority: 0.6, changeFrequency: 'monthly' },
+  { path: '/usa-trips/san-antonio-tours/san-antonio-field-trip/', priority: 0.6, changeFrequency: 'monthly' },
+  { path: '/usa-trips/savannah-tours/', priority: 0.8, changeFrequency: 'monthly' },
+  { path: '/usa-trips/savannah-tours/savannah-field-trip/', priority: 0.6, changeFrequency: 'monthly' },
+  { path: '/usa-trips/savannah-tours/savannah-school-trip/', priority: 0.6, changeFrequency: 'monthly' },
+  { path: '/usa-trips/seattle/', priority: 0.8, changeFrequency: 'monthly' },
+  { path: '/usa-trips/seattle/seattle-school-trip/', priority: 0.6, changeFrequency: 'monthly' },
+  { path: '/usa-trips/washington-d-c/', priority: 0.8, changeFrequency: 'monthly' },
+  { path: '/usa-trips/washington-d-c/2029-presidential-inauguration-class-trips/', priority: 0.6, changeFrequency: 'monthly' },
+  { path: '/usa-trips/washington-d-c/4-day-washington-dc-school-trip/', priority: 0.6, changeFrequency: 'monthly' },
+  { path: '/usa-trips/washington-d-c/5-day-washington-dc-school-trip/', priority: 0.6, changeFrequency: 'monthly' },
+  { path: '/usa-trips/washington-d-c/8th-grade-washington-dc-trip-itinerary/', priority: 0.6, changeFrequency: 'monthly' },
+  { path: '/usa-trips/washington-d-c/african-american-history-dc-student-tour/', priority: 0.6, changeFrequency: 'monthly' },
+  { path: '/usa-trips/washington-d-c/class-trip-programs-for-middle-school-students/', priority: 0.6, changeFrequency: 'monthly' },
+  { path: '/usa-trips/washington-d-c/hbcu-campus-tours/', priority: 0.6, changeFrequency: 'monthly' },
+  { path: '/usa-trips/washington-d-c/scouts/', priority: 0.6, changeFrequency: 'monthly' },
+  { path: '/usa-trips/washington-d-c/washington-dc-civics-student-tour/', priority: 0.6, changeFrequency: 'monthly' },
+  { path: '/usa-trips/williamsburg-tours/', priority: 0.8, changeFrequency: 'monthly' },
+  { path: '/usa-trips/williamsburg-tours/williamsburg-field-trip/', priority: 0.6, changeFrequency: 'monthly' },
+  { path: '/usa-trips/williamsburg-tours/williamsburg-school-trip/', priority: 0.6, changeFrequency: 'monthly' },
+  { path: '/west-coast/', priority: 0.8, changeFrequency: 'weekly' },
+  { path: '/yellowstone-national-park-field-trip/', priority: 0.7, changeFrequency: 'monthly' },
+  { path: '/yellowstone-national-park-school-trip/', priority: 0.7, changeFrequency: 'monthly' },
 ]
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date()
-  return ROUTES.map(({ path, priority, changeFrequency }) => ({
-    url: `${SITE_URL}${path}`,
-    lastModified: now,
-    changeFrequency,
-    priority,
+  const base: MetadataRoute.Sitemap = ROUTES.map(({ path, priority, changeFrequency }) => ({
+    url: `${SITE_URL}${path}`, lastModified: now, changeFrequency, priority,
   }))
+
+  const posts = getIndex()
+  const blog: MetadataRoute.Sitemap = [
+    { url: `${SITE_URL}/blog/`, lastModified: posts[0] ? new Date(posts[0].date) : now, changeFrequency: 'weekly', priority: 0.7 },
+    ...Array.from({ length: getPageCount() - 1 }, (_, i) => ({
+      url: `${SITE_URL}/blog/page/${i + 2}/`, lastModified: now, changeFrequency: 'weekly' as const, priority: 0.3,
+    })),
+    ...posts.map((p) => ({
+      url: `${SITE_URL}/blog/${p.slug}/`, lastModified: new Date(p.date), changeFrequency: 'monthly' as const, priority: 0.6,
+    })),
+  ]
+  return [...base, ...blog]
 }

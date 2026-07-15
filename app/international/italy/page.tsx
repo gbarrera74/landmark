@@ -10,29 +10,29 @@ const ArrowR = (
 )
 
 const INTRO_P1 =
-  'Italy is the original classroom. In Rome, students walk the Forum where the Republic was argued into being, stand inside the Colosseum, and trace the reach of an empire whose language, law, and architecture still shape the world they live in. Florence turns the Renaissance from a chapter heading into something they can see — Brunelleschi’s dome, Michelangelo’s David, the workshops where perspective and humanism were invented. In the ruins of Pompeii, a single afternoon collapses two thousand years, and history stops being abstract.'
+  'Italy is the original classroom. In Rome, students walk the Forum where the Republic was argued into being, stand inside the Colosseum, and trace the reach of an empire whose language, law, and architecture still shape the world they live in. Florence turns the Renaissance from a chapter heading into something they can see: Brunelleschi’s dome, Michelangelo’s David, the workshops where perspective and humanism were invented. In the ruins of Pompeii, a single afternoon collapses two thousand years, and history stops being abstract.'
 const INTRO_P2 =
-  'A Landmark educational tour to Italy is built for learning, not just sightseeing. Students practice Italian in the markets, sketch in the Uffizi, follow the canals of Venice by vaporetto, and connect what they read in class to what they can touch, hear, and taste. Our team handles every detail — flights, documentation, licensed local guides, safe accommodations, and curriculum-aligned programming — so teachers can focus on their students and their students can focus on Italy.'
+  'A Landmark educational tour to Italy is built for learning, not just sightseeing. Students practice Italian in the markets, sketch in the Uffizi, follow the canals of Venice by vaporetto, and connect what they read in class to what they can touch, hear, and taste. Our team handles every detail: flights, documentation, licensed local guides, safe accommodations, and curriculum-aligned programming, so teachers can focus on their students and their students can focus on Italy.'
 
 const TRIPS = [
-  { title: 'Classical Rome & Ancient History Tour', duration: '7 Day / 6 Night', blurb: 'The Colosseum, Roman Forum, Palatine Hill, and Vatican — antiquity made real for history and Latin students.', img: '/images/landmark/italy-rome.jpg', href: '/international/italy/classical-rome-ancient-history-tour/' },
-  { title: 'Renaissance Florence Art & History Program', duration: '6 Day / 5 Night', blurb: 'The Uffizi, the Duomo, and the Accademia — a hands-on study of Renaissance art, humanism, and innovation.', img: '/images/landmark/italy-florence.webp', href: '/international/italy/renaissance-florence-art-program/' },
-  { title: 'Rome, Florence & Venice Grand Tour', duration: '10 Day / 9 Night', blurb: 'Italy’s three essential cities in one itinerary — history, art, and language across the whole peninsula.', img: '/images/landmark/italy-venice.webp', href: '/international/italy/rome-florence-venice-grand-tour/' },
-  { title: 'Pompeii & the Bay of Naples Archaeology Trip', duration: '8 Day / 7 Night', blurb: 'Walk the excavated streets of Pompeii and take in the Amalfi Coast — ancient Roman daily life, uncovered.', img: '/images/landmark/intl-italy.webp', href: '/international/italy/pompeii-naples-archaeology-trip/' },
-  { title: 'Italian Language & Culture Immersion', duration: '9 Day / 8 Night', blurb: 'Conversational Italian in the field — markets, cafés, and hill towns, with guided cultural workshops.', img: '/images/landmark/italy-tuscany.webp', href: '/international/italy/italian-language-culture-immersion/' },
-  { title: 'Northern Italy & the Lakes Program', duration: '8 Day / 7 Night', blurb: 'Milan, Lake Como, and the Italian Lakes — art, geography, and Leonardo’s Last Supper.', img: '/images/landmark/italy-lakes.webp', href: '/international/italy/northern-italy-lakes-program/' },
+  { title: 'Classical Rome & Ancient History Tour', duration: '7 Day / 6 Night', blurb: 'The Colosseum, Roman Forum, Palatine Hill, and Vatican: antiquity made real for history and Latin students.', img: '/images/landmark/italy-rome.jpg', href: '/international/italy/classical-rome-ancient-history-tour/' },
+  { title: 'Renaissance Florence Art & History Program', duration: '6 Day / 5 Night', blurb: 'The Uffizi, the Duomo, and the Accademia: a hands-on study of Renaissance art, humanism, and innovation.', img: '/images/landmark/italy-florence.webp', href: '/international/italy/renaissance-florence-art-program/' },
+  { title: 'Rome, Florence & Venice Grand Tour', duration: '10 Day / 9 Night', blurb: 'Italy’s three essential cities in one itinerary: history, art, and language across the whole peninsula.', img: '/images/landmark/italy-venice.webp', href: '/international/italy/rome-florence-venice-grand-tour/' },
+  { title: 'Pompeii & the Bay of Naples Archaeology Trip', duration: '8 Day / 7 Night', blurb: 'Walk the excavated streets of Pompeii and take in the Amalfi Coast: ancient Roman daily life, uncovered.', img: '/images/landmark/intl-italy.webp', href: '/international/italy/pompeii-naples-archaeology-trip/' },
+  { title: 'Italian Language & Culture Immersion', duration: '9 Day / 8 Night', blurb: 'Conversational Italian in the field: markets, cafés, and hill towns, with guided cultural workshops.', img: '/images/landmark/italy-tuscany.webp', href: '/international/italy/italian-language-culture-immersion/' },
+  { title: 'Northern Italy & the Lakes Program', duration: '8 Day / 7 Night', blurb: 'Milan, Lake Como, and the Italian Lakes: art, geography, and Leonardo’s Last Supper.', img: '/images/landmark/italy-lakes.webp', href: '/international/italy/northern-italy-lakes-program/' },
 ]
 
 const HANDLED = [
-  { title: 'Flights & Logistics', text: 'Group air, airport transfers, and every connection booked and managed by our team — you arrive and travel as one.', icon: (<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M17.8 19.2 16 11l3.5-3.5a2.12 2.12 0 0 0-3-3L13 8 4.8 6.2a1 1 0 0 0-.9 1.7l5.1 3.4-2.6 2.6-2.1-.4a1 1 0 0 0-.9 1.6l2 2 2 2a1 1 0 0 0 1.6-.9l-.4-2.1 2.6-2.6 3.4 5.1a1 1 0 0 0 1.7-.9Z" /></svg>) },
+  { title: 'Flights & Logistics', text: 'Group air, airport transfers, and every connection booked and managed by our team: you arrive and travel as one.', icon: (<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M17.8 19.2 16 11l3.5-3.5a2.12 2.12 0 0 0-3-3L13 8 4.8 6.2a1 1 0 0 0-.9 1.7l5.1 3.4-2.6 2.6-2.1-.4a1 1 0 0 0-.9 1.6l2 2 2 2a1 1 0 0 0 1.6-.9l-.4-2.1 2.6-2.6 3.4 5.1a1 1 0 0 0 1.7-.9Z" /></svg>) },
   { title: 'Passports & Documentation', text: 'We guide students, parents, and chaperones through passports, entry requirements, and travel paperwork well ahead of departure.', icon: (<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" /><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z" /><circle cx="12" cy="9" r="2.5" /><path d="M9.5 15h5" /></svg>) },
   { title: 'Licensed Local Guides', text: 'Accredited English-speaking Italian guides bring each site to life with the context textbooks can’t provide.', icon: (<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" /><circle cx="9" cy="7" r="4" /><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" /></svg>) },
-  { title: '24/7 Global Support', text: 'A Landmark team member is reachable around the clock, across time zones, for the entire trip — before, during, and after.', icon: (<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M3 18v-6a9 9 0 0 1 18 0v6" /><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z" /></svg>) },
+  { title: '24/7 Global Support', text: 'A Landmark team member is reachable around the clock, across time zones, for the entire trip: before, during, and after.', icon: (<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M3 18v-6a9 9 0 0 1 18 0v6" /><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z" /></svg>) },
 ]
 
 const STEPS = [
-  { title: 'Contact', body: 'Our tour specialists are waiting to build your next trip! Contact our office to get the process started.' },
-  { title: 'Customize', body: 'Let our experienced staff help bring your ideas to life — timing, cities, guides, and activities tailored to your group.' },
+  { title: 'Contact', body: 'Our Travel Consultants are waiting to build your next trip! Contact our office to get the process started.' },
+  { title: 'Customize', body: 'Let our experienced staff help bring your ideas to life: timing, cities, guides, and activities tailored to your group.' },
   { title: 'Book the trip', body: 'Once you’re ready, we create a portal for every traveler to sign up. After that, let us lead the way and keep surprises off the itinerary.' },
 ]
 
@@ -42,7 +42,7 @@ export default function Italy() {
       <PageHero
         eyebrow="International · Italy"
         title={<>Educational Tours to <em>Italy</em></>}
-        subtitle="The original classroom — Rome, Florence, Venice, and Pompeii. Safe, guided, curriculum-aligned student journeys, handled end to end."
+        subtitle="The original classroom: Rome, Florence, Venice, and Pompeii. Safe, guided, curriculum-aligned student trips, handled end to end."
         image="/images/landmark/intl-italy.webp"
         breadcrumb={[
           { label: 'Destinations', href: '/destinations/' },

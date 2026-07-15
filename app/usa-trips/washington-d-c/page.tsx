@@ -27,7 +27,7 @@ const TRIPS = [
 ]
 
 const STEPS = [
-  { title: 'Contact', body: 'Our tour specialists are waiting to build your next trip! Contact our office to get the process started.' },
+  { title: 'Contact', body: 'Our Travel Consultants are waiting to build your next trip! Contact our office to get the process started.' },
   { title: 'Customize', body: 'Let our experienced staff help bring your ideas to life. We have expertise about timing, best places to stay, restaurants, and fun activities for your group size.' },
   { title: 'Book the trip', body: 'Once you are ready, we can create a portal for all travelers to access and sign up for the trip. After that, let us lead the way and keep surprises off of the itinerary.' },
 ]
@@ -38,7 +38,7 @@ export default function WashingtonDC() {
       <PageHero
         eyebrow="Washington, D.C. · Our Nation's Capital"
         title={<>Educational Trips to <em>Washington, DC</em></>}
-        subtitle="History where it began — customizable, safe, guided field trips across the National Mall, the Smithsonian museums, and the U.S. Capitol."
+        subtitle="History where it began: customizable, safe, guided field trips across the National Mall, the Smithsonian museums, and the U.S. Capitol."
         image="/images/landmark/dc-hero.jpg"
         breadcrumb={[{ label: 'Destinations', href: '/destinations/' }, { label: 'Washington, D.C.' }]}
       />
@@ -62,7 +62,7 @@ export default function WashingtonDC() {
           <div className="ile-center lm-narrow">
             <span className="ile-eyebrow">Tours &amp; Itineraries</span>
             <h2 id="dc-trips-h" className="lm-h2-amber">WASHINGTON, D.C. TRIPS</h2>
-            <p className="ile-lead lm-center-lead">Explore our most popular Washington, D.C. programs — every one fully customizable to your group, grade level, and budget.</p>
+            <p className="ile-lead lm-center-lead">Explore our most popular Washington, D.C. programs: every one fully customizable to your group, grade level, and budget.</p>
           </div>
           <div className="ilm-blog-grid">
             {TRIPS.map((t) => (

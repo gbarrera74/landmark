@@ -41,12 +41,12 @@ export default function Footer() {
   return (
     <footer className="ilef">
       <div className="ilef-cta-band">
-        <span className="ile-script">Educational Travel, Built for You</span>
+        <span className="ile-script">Educational Travel, Customized for You</span>
         <h2>Let&apos;s Plan Your Next Adventure</h2>
-        <p>Tell us your destination, dates, and group size — we&apos;ll build a safe, fully customized itinerary and a free quote, with a real person guiding you every step of the way.</p>
+        <p>Tell us your destination, dates, and group size, and we&apos;ll build a safe, fully customized itinerary and a free quote, with a real person guiding you every step of the way.</p>
         <div className="ilef-cta-actions">
           <Link href="/get-a-quote/" className="ile-btn ile-btn--gold">Get a Free Quote</Link>
-          <Link href="/contact-us/" className="ile-btn ile-btn--outline-light">Talk to a Specialist</Link>
+          <Link href="/contact-us/" className="ile-btn ile-btn--outline-light">Talk to a Travel Consultant</Link>
         </div>
       </div>
 
@@ -55,7 +55,7 @@ export default function Footer() {
           <Image className="ilef-logo" src="/images/landmark-logo.png" alt="Landmark Educational Tours" width={320} height={96} />
           <p className="ilef-about">
             Curated, safe, and fully customized educational field trips and student tours across the
-            United States and around the world — built around your students, your goals, and your budget.
+            United States and around the world, built around your students, your goals, and your budget.
           </p>
           <div className="ilef-contact">
             <span><IconPin /> {SITE.address.street}, {SITE.address.city}, {SITE.address.region} {SITE.address.postalCode}</span>

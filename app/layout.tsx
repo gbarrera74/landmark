@@ -3,6 +3,7 @@ import './globals.css'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import GoogleFonts from '@/components/GoogleFonts'
+import TrackingScripts from '@/components/TrackingScripts'
 import JsonLd from '@/lib/seo/JsonLd'
 import { organization, website } from '@/lib/seo/schemas'
 
@@ -27,14 +28,14 @@ export const metadata: Metadata = {
     locale: 'en_US',
     url: SITE_URL,
     siteName: 'Landmark Educational Tours',
-    title: 'Landmark Educational Tours | Educational Travel, Built for You',
+    title: 'Landmark Educational Tours | Educational Travel, Customized for You',
     description:
-      'Curated, safe, customized educational field trips and student tours across the U.S. and abroad — Educational Travel, Built for You.',
+      'Curated, safe, customized educational field trips and student tours across the U.S. and abroad. Educational Travel, Customized for You.',
     // OG image is auto-generated from app/opengraph-image.tsx
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Landmark Educational Tours | Educational Travel, Built for You',
+    title: 'Landmark Educational Tours | Educational Travel, Customized for You',
     description: 'Curated, safe, customized educational field trips and student tours across the U.S. and abroad.',
   },
   robots: isProduction
@@ -52,6 +53,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Header />
         {children}
         <Footer />
+        <TrackingScripts />
         <JsonLd data={organization()} />
         <JsonLd data={website()} />
       </body>

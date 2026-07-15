@@ -6,7 +6,7 @@ export const SITE = {
   shortName: 'Landmark',
   phone: '+1-888-886-2781',
   phoneDisplay: '888-886-2781',
-  email: 'info@landmarkeducationaltours.com',
+  email: 'Hello@landmarkeducationaltours.com',
   // California Seller of Travel registration (shown in footer)
   cst: '2168995-50',
   address: {

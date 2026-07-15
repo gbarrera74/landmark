@@ -2,11 +2,11 @@ import Link from 'next/link'
 import Compass from './Compass'
 
 export default function CtaBand({
-  eyebrow = 'Educational Travel, Built for You',
+  eyebrow = 'Educational Travel, Customized for You',
   title = 'Ready to Plan Your Next Trip?',
   text = 'Tell us where you want to go. We’ll craft a safe, custom itinerary built around your students, your goals, and your budget.',
   primary = { label: 'Get a Free Quote', href: '/get-a-quote/' },
-  secondary = { label: 'Talk to a Tour Specialist', href: '/contact-us/' },
+  secondary = { label: 'Talk to a Travel Consultant', href: '/contact-us/' },
 }: {
   eyebrow?: string
   title?: string

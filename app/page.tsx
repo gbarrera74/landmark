@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
+import type { Metadata } from 'next'
 import Link from 'next/link'
 import HomeHeroSlider from '@/components/home/HomeHeroSlider'
 import ReviewsCarousel from '@/components/home/ReviewsCarousel'
@@ -6,12 +7,16 @@ import BrochurePopup from '@/components/home/BrochurePopup'
 import BrochureBand from '@/components/BrochureBand'
 import { SITE } from '@/lib/seo/schemas'
 
+export const metadata: Metadata = {
+  alternates: { canonical: '/' },
+}
+
 const ArrowR = (
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" /></svg>
 )
 
 const TOP_TOURS_INTRO =
-  'Explore Washington, D.C.’s monuments, New York City’s museums and Broadway stages, and Boston’s colonial trails — expertly designed student trips that blend hands-on learning, adventure, and fun.'
+  'Explore Washington, D.C.’s monuments, New York City’s museums and Broadway stages, and Boston’s colonial trails: expertly designed student trips that blend hands-on learning, adventure, and fun.'
 
 const TOP_TOURS = [
   {
@@ -51,20 +56,18 @@ const DESTINATIONS = [
 ]
 
 // New: international educational journeys (global expansion)
+// One row (4) to match the USA row. Italy/Norway/Costa Rica use REAL Landmark student-group
+// photos (Colosseum · Bergen Bryggen · Costa Rica waterfall). Ireland has no student photo
+// (deferred by Ben) so it intentionally uses the live site's own Ireland hero image.
 const INTERNATIONAL = [
-  { name: 'Italy', href: '/international/italy/', img: '/images/landmark/intl-italy.webp' },
-  { name: 'France', href: '/international/france/', img: '/images/landmark/intl-france.jpg' },
-  { name: 'England', href: '/international/england/', img: '/images/landmark/intl-england.webp' },
-  { name: 'Ireland', href: '/international/ireland/', img: '/images/landmark/intl-ireland.jpg' },
-  { name: 'Norway', href: '/international/norway/', img: '/images/landmark/intl-norway.webp' },
-  { name: 'Europe', href: '/international/', img: '/images/landmark/intl-europe.webp' },
-  { name: 'Costa Rica', href: '/international/costa-rica/', img: '/images/landmark/intl-costa-rica.webp' },
-  { name: 'Japan', href: '/international/japan/', img: '/images/landmark/intl-japan.webp' },
-  { name: 'South Korea', href: '/international/south-korea/', img: '/images/landmark/intl-south-korea.webp' },
+  { name: 'Italy', href: '/international/italy/', img: '/images/landmark/intl-italy-group.jpg' },
+  { name: 'Ireland', href: '/international/ireland/', img: '/images/landmark/intl-ireland-live.jpg' },
+  { name: 'Norway', href: '/international/norway/', img: '/images/landmark/intl-norway-group.jpg' },
+  { name: 'Costa Rica', href: '/international/costa-rica/', img: '/images/landmark/intl-costa-rica-group.jpg' },
 ]
 
 const THEMED_INTRO =
-  'From STEM and civics in Washington, D.C. to French immersion in Quebec City and the Broadway stage in New York, every Landmark theme is crafted around your subject and your students — hands-on, age-appropriate, and unforgettable.'
+  'From STEM and civics in Washington, D.C. to French immersion in Quebec City and the Broadway stage in New York, every Landmark theme is crafted around your subject and your students: hands-on, age-appropriate, and unforgettable.'
 
 const THEMED = [
   { location: 'Washington, D.C.', theme: 'AP History', img: '/images/landmark/fdr-memorial-dc.jpg', href: '/usa-trips/washington-d-c/4-day-washington-dc-school-trip/' },
@@ -82,7 +85,7 @@ const GALLERY = [
 
 const PARTNERS = [
   { name: 'SYTA', logo: '/images/landmark/syta-logo.png' },
-  { name: 'Travel Insured International', logo: '/images/landmark/travel-insured-logo.png' },
+  { name: 'battleface Travel Insurance', logo: '/images/landmark/battleface-logo.png' },
   { name: 'Juniper Tours', logo: '/images/landmark/juniper-logo.png' },
   { name: 'Irish Life Experience', logo: '/images/landmark/irish-life-experience-logo.png' },
   { name: 'Ever Blue Expeditions', logo: '/images/landmark/everblue-tours-logo.png' },
@@ -100,27 +103,6 @@ const REVIEWS = [
   { name: 'Sarah James', text: `Michaela and Landmark Tours just planned the most beautiful week in Costa Rica for my students. The care and intention that was put into providing multiple excursions, great hotels, local food, bonding time for our kids, and so much more was beyond what I have ever experienced. Michaela and Tara from Landmark joined the tour as well as a local tour guide. Every child was well taken care of. Micahela knew all their names, helped foster friendships, and helped take care of their every need throughout the trip. This company is clearly built from a passion for traveling and hospitality as all details are thought about and if and when things don't go as planned, Michaela jumped in and made adjustments as needed. When traveling with large groups, there are a lot of uncontrollables with weather, sickness, tired kids, and more and I'd trust Michaela and her crew through it all. I give the highest recommendation to Michaela and Landmark Tours for every big group tour needed. From business vacations to large girls weekends and even larger school trips, she will customize a trip for you!` },
   { name: 'Raya Soberal', text: `We used this company for our school's 8th grade trip in May of 2023. We had not done this trip since before covid and were excited to be able to bring this back. This company went above and beyond to make this a wonderful experience for our kids and we couldnt have been happier. One special highlight of our trip was our tour guide Jonah! He was knowledgeable and so friendly. The planning process went so smoothly--even with some changes that occurred. In the end Savannah was wonderful to work with and Michaela was a lifesaver....especially when she was able to get us last minute into the Holocaust Museum when we didn't think we were going to be able to! We cant wait to take our kids again this upcoming year.` },
   { name: 'Jennifer Martinez', text: `I worked with Maya to plan a Black History/Culture Tour of Washington DC. I knew instantly that she was extremely knowledgeable in her field and was at the ready with any question I had. We worked closely together for a couple months and was very crucial in my decision to work with this company.` },
-]
-
-const FEATURED = [
-  {
-    quote: `My daughter's 8th grade class from Triton used Landmark for a trip to D.C. this spring. Everything from start to finish ran smoothly. My daughter and her friends had a fantastic time. They felt safe and had a blast! I definitely recommend using this company!`,
-    author: 'Julie Andrews',
-    role: 'Parent of student who traveled with Landmark Educational Tours',
-    avatar: '/images/landmark/fall-in-washington-dc.jpeg',
-  },
-  {
-    quote: `We have been using Landmark for 3 years now for our 8th grade DC field trip. They have been incredible to work with as they are organized, efficient, and professional. The Landmark team is excellent with communication and their staff is very friendly. We will continue to use Landmark for our future trips.`,
-    author: 'J.W.',
-    role: '8th Grade Teacher',
-    avatar: '/images/landmark/thomas-jefferson-memorial.jpg',
-  },
-  {
-    quote: `We took a group of about 50-8th grade students to DC for five days, and we had the best time! Our tour guide, Jonah, was informative, funny, and helpful. We can't wait to return with next year's 8th grade students!`,
-    author: 'J.M',
-    role: '8th Grade Teacher',
-    avatar: '/images/landmark/washington-monument-jill.webp',
-  },
 ]
 
 const POSTS_INTRO =
@@ -145,7 +127,7 @@ export default function Home() {
         <div className="ile-container ile-center lm-narrow">
           <span className="ile-eyebrow">Explore Great Places</span>
           <h1 id="intro-h" className="lm-h2-amber">EDUCATIONAL FIELD TRIPS</h1>
-          <p className="ile-lead lm-center-lead">Landmark designs safe, fully-customized educational journeys — from the monuments of Washington, D.C. to the streets of Rome and Kyoto — built around your students, your curriculum, and your budget.</p>
+          <p className="ile-lead lm-center-lead">Landmark designs safe, fully-customized educational trips, from the monuments of Washington, D.C. to the streets of Rome and Kyoto, built around your students, your curriculum, and your budget.</p>
           <ul className="lm-welcome-pills">
             <li>
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="6" /><path d="M8.2 13.5 7 22l5-3 5 3-1.2-8.5" /></svg>
@@ -220,7 +202,7 @@ export default function Home() {
           <div className="ile-center lm-narrow">
             <span className="ile-eyebrow">New · Around the Globe</span>
             <h2 id="intl-h" className="lm-h2-amber">INTERNATIONAL DESTINATIONS</h2>
-            <p className="ile-lead lm-center-lead">Landmark now takes students beyond the U.S. — immersive, safe, and fully customized educational journeys across Europe, Asia, and Central America.</p>
+            <p className="ile-lead lm-center-lead">Landmark now takes students beyond the U.S.: immersive, safe, and fully customized educational trips across Europe, Asia, and Central America.</p>
           </div>
           <div className="lm-intl-grid">
             {INTERNATIONAL.map((d) => (
@@ -301,15 +283,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Featured testimonials */}
-      <section className="ile-section ile-section--cream" aria-label="Featured testimonials from parents and teachers">
-        <div className="ile-container">
-          <ReviewsCarousel variant="featured" items={FEATURED} />
-        </div>
-      </section>
-
       {/* Recent posts */}
-      <section className="ile-section ile-section--white" aria-labelledby="posts-h">
+      <section className="ile-section ile-section--cream" aria-labelledby="posts-h">
         <div className="ile-container">
           <div className="ile-center lm-narrow">
             <span className="ile-eyebrow">FROM OUR BLOG</span>
@@ -331,21 +306,16 @@ export default function Home() {
       </section>
 
       {/* About Us */}
-      <section className="ile-section ile-section--cream" aria-labelledby="about-h">
+      <section className="ile-section ile-section--white" aria-labelledby="about-h">
         <div className="ile-container">
           <div className="ilm-intro-grid">
             <div className="ilm-intro-media">
-              <img src="/images/landmark/fall-in-washington-dc.jpeg" alt="Students on a Washington, D.C. educational field trip" />
+              <img src="/images/landmark/about-team.jpg" alt="The Landmark Educational Tours team" />
             </div>
             <div className="ilm-intro-body">
               <span className="ile-eyebrow">WHO WE ARE</span>
               <h2 id="about-h">About Us</h2>
               <p>{MISSION}</p>
-              <p className="lm-cred">
-                California Seller of Travel Registration: CST {SITE.cst}
-                <br />
-                Registered with the California Seller of Travel Program
-              </p>
               <Link href="/about-landmark/" className="ile-btn ile-btn--ghost">Learn More About Landmark</Link>
             </div>
           </div>

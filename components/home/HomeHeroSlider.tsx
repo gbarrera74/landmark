@@ -6,6 +6,7 @@ import Link from 'next/link'
 type Slide = {
   img: string
   title: string
+  accent: string
   sub: string
   cta: string
   href: string
@@ -15,22 +16,25 @@ type Slide = {
    international educational journeys, with the U.S. business still featured. */
 const SLIDES: Slide[] = [
   {
-    img: '/images/landmark/intl-italy.webp',
-    title: 'Educational Travel, Built for You.',
-    sub: 'Safe, custom student journeys — across the U.S., Europe, Asia & beyond.',
+    img: '/images/landmark/hero-dc-mlk.jpg',
+    title: 'Educational Travel,',
+    accent: 'Customized for You.',
+    sub: 'Safe, custom student trips across the U.S., Europe, Asia, and beyond.',
     cta: 'Start Planning Now!',
     href: '/get-a-quote/',
   },
   {
-    img: '/images/landmark/intl-europe.webp',
-    title: 'The World Is Their Classroom.',
-    sub: 'Now journeying beyond the U.S. — Italy, France, Ireland, Japan, South Korea & more.',
+    img: '/images/landmark/intl-italy.webp',
+    title: 'The World Is',
+    accent: 'Their Classroom.',
+    sub: 'Now journeying beyond the U.S.: Italy, France, Ireland, Japan, South Korea, and more.',
     cta: 'Explore Destinations',
     href: '/destinations/',
   },
   {
-    img: '/images/landmark/hero-dc-mlk.jpg',
-    title: 'Where History Comes Alive.',
+    img: '/images/landmark/intl-europe.webp',
+    title: 'Where History',
+    accent: 'Comes Alive.',
     sub: 'From Washington, D.C. to Tokyo, we design every detail around your students.',
     cta: 'Plan Your Trip',
     href: '/get-a-quote/',
@@ -74,7 +78,7 @@ export default function HomeHeroSlider() {
           className={`lm-hero-slide${i === active ? ' is-active' : ''}`}
           role="group"
           aria-roledescription="slide"
-          aria-label={`${s.title} (${i + 1} of ${SLIDES.length})`}
+          aria-label={`${s.title} ${s.accent} (${i + 1} of ${SLIDES.length})`}
           aria-hidden={i !== active}
         >
           {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -88,7 +92,7 @@ export default function HomeHeroSlider() {
           />
           <div className="ilm-hero-inner">
             <div className="ilm-hero-content">
-              <p className="lm-hero-title">{s.title}</p>
+              <p className="lm-hero-title">{s.title} <span className="lm-hero-accent">{s.accent}</span></p>
               <p className="ilm-hero-sub">{s.sub}</p>
               <div className="ilm-hero-actions">
                 <Link href={s.href} className="ile-btn ile-btn--primary" tabIndex={i === active ? 0 : -1}>
