@@ -16,7 +16,9 @@ export const metadata: Metadata = {
 
 export default function BlogIndex() {
   const cards = tagCards(getIndex())
-  const { destinations, types } = facetLists(cards)
+  // Only show chips with real depth (>= 5 posts); thinner destinations/types
+  // still appear under "All". Keeps the filter to ~14 useful chips, not 27.
+  const { destinations, types } = facetLists(cards, 5)
 
   return (
     <>
