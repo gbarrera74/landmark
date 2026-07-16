@@ -193,7 +193,7 @@ export const WP_REDIRECTS: Redirect[] = [
   { source: "/school-trip-destinations/boston/2-day-1-night-boston-school-trip", destination: "/usa-trips/boston/", permanent: true },
   { source: "/school-trip-destinations/boston/3-day-2-night-boston-school-trip", destination: "/usa-trips/boston/", permanent: true },
   { source: "/school-trip-destinations/seattle-school-trips", destination: "/usa-trips/seattle/", permanent: true },
-  { source: "/school-trip-destinations/washington-dc/stem-washington-dc-school-trips", destination: "/usa-trips/washington-dc/", permanent: true },
+  { source: "/school-trip-destinations/washington-dc/stem-washington-dc-school-trips", destination: "/usa-trips/washington-dc/stem-washington-dc-school-trip/", permanent: true },
   { source: "/school-trip-to-boston", destination: "/blog/school-trip-to-boston/", permanent: true },
   { source: "/school-trip-to-mackinaw-city", destination: "/blog/school-trip-to-mackinaw-city/", permanent: true },
   { source: "/school-trips-to-quebec-city", destination: "/blog/school-trips-to-quebec-city/", permanent: true },

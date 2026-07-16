@@ -18,7 +18,7 @@ const TRIPS = [
   { title: 'HBCU Campus Tours', duration: '7 Day / 6 Night', img: '/images/landmark/dc-howard-university.jpg', href: '/usa-trips/washington-dc/hbcu-campus-tours/' },
   { title: 'Class Trip Programs for Middle School Students', duration: '3 Day / 2 Night', img: '/images/landmark/dc-capitol.jpg', href: '/usa-trips/washington-dc/class-trip-programs-for-middle-school-students/' },
   { title: 'Civics Focused Washington, DC School Trip', duration: '3 Day / 2 Night', img: '/images/landmark/thomas-jefferson-memorial.jpg', href: '/usa-trips/washington-dc/washington-dc-civics-student-tour/' },
-  { title: 'STEM / STEAM Focused DC Trip', duration: '3 Day / 2 Night', img: '/images/landmark/dc-spy-museum.jpg', href: '/usa-trips/washington-dc/' },
+  { title: 'STEM / STEAM Focused DC Trip', duration: '3 Day / 2 Night', img: '/images/landmark/dc-spy-museum.jpg', href: '/usa-trips/washington-dc/stem-washington-dc-school-trip/' },
   { title: 'African American History Washington, DC School Trip', duration: '3 Day / 2 Night', img: '/images/landmark/dc-nmaahc.jpg', href: '/usa-trips/washington-dc/african-american-history-dc-student-tour/' },
   { title: '8th Grade Washington, DC Trip Itinerary', duration: '3 Day / 2 Night', img: '/images/landmark/mlk-memorial-washington-dc.jpg', href: '/usa-trips/washington-dc/8th-grade-washington-dc-trip-itinerary/' },
   { title: '4 Day Washington, DC School Trip', duration: '4 Day / 3 Night', img: '/images/landmark/fall-in-washington-dc.jpeg', href: '/usa-trips/washington-dc/4-day-washington-dc-school-trip/' },

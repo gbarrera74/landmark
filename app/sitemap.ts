@@ -124,6 +124,7 @@ const ROUTES: { path: string; priority: number; changeFrequency: 'weekly' | 'mon
   { path: '/usa-trips/washington-dc/class-trip-programs-for-middle-school-students/', priority: 0.6, changeFrequency: 'monthly' },
   { path: '/usa-trips/washington-dc/hbcu-campus-tours/', priority: 0.6, changeFrequency: 'monthly' },
   { path: '/usa-trips/washington-dc/scouts/', priority: 0.6, changeFrequency: 'monthly' },
+  { path: '/usa-trips/washington-dc/stem-washington-dc-school-trip/', priority: 0.6, changeFrequency: 'monthly' },
   { path: '/usa-trips/washington-dc/washington-dc-civics-student-tour/', priority: 0.6, changeFrequency: 'monthly' },
   { path: '/usa-trips/williamsburg/', priority: 0.8, changeFrequency: 'monthly' },
   { path: '/usa-trips/williamsburg/williamsburg-field-trip/', priority: 0.6, changeFrequency: 'monthly' },
