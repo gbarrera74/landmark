@@ -1676,3 +1676,9 @@ select.ilm-input { appearance: none; -webkit-appearance: none; cursor: pointer;
 .lm-register-hero-cta { margin-top: 22px; }
 .lm-register-help { margin-top: 14px; font-size: 14px; color: var(--lm-muted, #6b5b53); }
 .lm-register-help a { color: var(--lm-primary); font-weight: 600; }
+
+/* Blog "browse by topic" chips + category archives */
+.lm-blog-topics { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-bottom: 28px; }
+.lm-blog-topics-label { font-weight: 600; color: var(--lm-primary); margin-right: 4px; }
+.lm-blog-topic { display: inline-block; padding: 6px 14px; border-radius: 999px; background: #fff; border: 1px solid var(--lm-border, #e6ddd6); color: var(--lm-ink, #2a2320); font-size: 14px; font-weight: 500; text-decoration: none; transition: background .15s, color .15s, border-color .15s; }
+.lm-blog-topic:hover { background: var(--lm-primary); color: #fff; border-color: var(--lm-primary); }

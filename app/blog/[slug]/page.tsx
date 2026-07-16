@@ -6,7 +6,7 @@ import DOMPurify from 'isomorphic-dompurify'
 import BrochureBand from '@/components/BrochureBand'
 import JsonLd from '@/lib/seo/JsonLd'
 import { breadcrumb } from '@/lib/seo/schemas'
-import { getPost, getAllSlugs, getRelated, getAdjacent, formatDate } from '@/lib/blog'
+import { getPost, getAllSlugs, getRelated, getAdjacent, formatDate, categorySlug } from '@/lib/blog'
 
 const ArrowR = (
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" /></svg>
@@ -62,7 +62,9 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
           <nav className="lm-crumbs" aria-label="Breadcrumb">
             <Link href="/">Home</Link> <span>/</span> <Link href="/blog/">Blog</Link>
           </nav>
-          {category && <span className="lm-article-cat">{category}</span>}
+          {category && (categorySlug(category)
+            ? <Link href={`/blog/category/${categorySlug(category)}/`} className="lm-article-cat">{category}</Link>
+            : <span className="lm-article-cat">{category}</span>)}
           <h1>{post.title}</h1>
           <p className="lm-article-meta">
             <time dateTime={post.date}>{formatDate(post.date)}</time>

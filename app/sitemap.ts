@@ -142,6 +142,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const posts = getIndex()
   const blog: MetadataRoute.Sitemap = [
     { url: `${SITE_URL}/blog/`, lastModified: posts[0] ? new Date(posts[0].date) : now, changeFrequency: 'weekly', priority: 0.7 },
+    { url: `${SITE_URL}/blog/category/washington-dc/`, lastModified: now, changeFrequency: 'weekly' as const, priority: 0.5 },
+    { url: `${SITE_URL}/blog/category/quebec-city/`, lastModified: now, changeFrequency: 'weekly' as const, priority: 0.5 },
+    { url: `${SITE_URL}/blog/category/boston/`, lastModified: now, changeFrequency: 'weekly' as const, priority: 0.5 },
+    { url: `${SITE_URL}/blog/category/travel-tips/`, lastModified: now, changeFrequency: 'weekly' as const, priority: 0.5 },
+    { url: `${SITE_URL}/blog/category/new-york-city/`, lastModified: now, changeFrequency: 'weekly' as const, priority: 0.5 },
     ...Array.from({ length: getPageCount() - 1 }, (_, i) => ({
       url: `${SITE_URL}/blog/page/${i + 2}/`, lastModified: now, changeFrequency: 'weekly' as const, priority: 0.3,
     })),
