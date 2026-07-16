@@ -1682,3 +1682,19 @@ select.ilm-input { appearance: none; -webkit-appearance: none; cursor: pointer;
 .lm-blog-topics-label { font-weight: 600; color: var(--lm-primary); margin-right: 4px; }
 .lm-blog-topic { display: inline-block; padding: 6px 14px; border-radius: 999px; background: #fff; border: 1px solid var(--lm-border, #e6ddd6); color: var(--lm-ink, #2a2320); font-size: 14px; font-weight: 500; text-decoration: none; transition: background .15s, color .15s, border-color .15s; }
 .lm-blog-topic:hover { background: var(--lm-primary); color: #fff; border-color: var(--lm-primary); }
+
+/* Blog explorer — destination + trip-type filter on /blog/ */
+.lm-blog-explorer { margin-top: 4px; }
+.lm-filter-row { display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px 10px; margin-bottom: 14px; }
+.lm-filter-label { font-family: var(--font-head); font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--lm-primary); font-weight: 700; min-width: 92px; }
+.lm-filter-chips { display: flex; flex-wrap: wrap; gap: 8px; flex: 1; }
+.lm-chip { display: inline-flex; align-items: center; gap: 6px; padding: 6px 13px; border-radius: 999px; background: #fff; border: 1px solid var(--lm-border, #e6ddd6); color: var(--lm-ink, #2a2320); font-size: 13.5px; font-weight: 500; cursor: pointer; transition: background .15s, color .15s, border-color .15s; }
+.lm-chip:hover { border-color: var(--lm-primary); color: var(--lm-primary); }
+.lm-chip.is-active { background: var(--lm-primary); color: #fff; border-color: var(--lm-primary); }
+.lm-chip-count { font-size: 11px; opacity: .7; font-variant-numeric: tabular-nums; }
+.lm-chip.is-active .lm-chip-count { opacity: .85; }
+.lm-blog-count { margin: 18px 0 22px; color: var(--lm-muted, #6b5b53); font-size: 14px; }
+.lm-filter-clear { background: none; border: none; padding: 0; color: var(--lm-primary); font: inherit; font-weight: 600; cursor: pointer; text-decoration: underline; }
+.lm-blog-empty { padding: 40px 0; text-align: center; color: var(--lm-muted, #6b5b53); }
+.lm-blog-card.is-hidden { display: none; }
+@media (max-width: 640px) { .lm-filter-label { min-width: 100%; margin-bottom: 2px; } }
