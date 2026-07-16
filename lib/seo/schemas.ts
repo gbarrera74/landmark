@@ -123,6 +123,9 @@ export function destinationGraph(d: {
   image?: string
   trips: { name: string; path: string }[]
 }): Record<string, unknown> {
+  // Only list trips that actually have their own itinerary page (drop any card
+  // that links back to the hub itself, e.g. an offering with no dedicated page).
+  const trips = d.trips.filter((t) => t.path !== d.path)
   return {
     '@context': 'https://schema.org',
     '@graph': [
@@ -133,13 +136,12 @@ export function destinationGraph(d: {
         description: d.description,
         url: `${SITE.url}${d.path}`,
         ...(d.image ? { image: `${SITE.url}${d.image}` } : {}),
-        includesAttraction: d.trips.map((t) => ({ '@type': 'TouristAttraction', name: t.name })),
       },
       {
         '@type': 'ItemList',
         name: `${d.name} student trips`,
-        numberOfItems: d.trips.length,
-        itemListElement: d.trips.map((t, i) => ({
+        numberOfItems: trips.length,
+        itemListElement: trips.map((t, i) => ({
           '@type': 'ListItem',
           position: i + 1,
           name: t.name,
