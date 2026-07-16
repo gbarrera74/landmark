@@ -4,7 +4,7 @@ import PageHero from '@/components/PageHero'
 import BrochureBand from '@/components/BrochureBand'
 import JsonLd from '@/lib/seo/JsonLd'
 import { breadcrumb, itemList } from '@/lib/seo/schemas'
-import { getPage, getPageCount, getCategories, formatDate, type PostCard } from '@/lib/blog'
+import { getPage, getPageCount, formatDate, type PostCard } from '@/lib/blog'
 
 const ArrowR = (
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" /></svg>
@@ -60,14 +60,6 @@ export default function BlogListing({ page }: { page: number }) {
       />
       <section className="ile-section ile-section--cream">
         <div className="ile-container">
-          {page === 1 && getCategories().length > 0 && (
-            <nav className="lm-blog-topics" aria-label="Browse the blog by topic">
-              <span className="lm-blog-topics-label">Browse by topic:</span>
-              {getCategories().map((c) => (
-                <Link key={c.slug} href={`/blog/category/${c.slug}/`} className="lm-blog-topic">{c.name}</Link>
-              ))}
-            </nav>
-          )}
           <div className="lm-blog-grid-cards">
             {posts.map((p) => <Card key={p.slug} p={p} />)}
           </div>
