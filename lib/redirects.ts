@@ -60,7 +60,7 @@ export const WP_REDIRECTS: Redirect[] = [
   { source: "/colonial-williamsburg-field-trip", destination: "/blog/colonial-williamsburg-field-trip/", permanent: true },
   { source: "/costa-rica-school-trip", destination: "/blog/costa-rica-school-trip/", permanent: true },
   { source: "/costa-rica-stem-trip", destination: "/blog/costa-rica-stem-trip/", permanent: true },
-  { source: "/customizetrip", destination: "/plan-a-trip/", permanent: true },
+  { source: "/customizetrip", destination: "/get-a-quote/", permanent: true },
   { source: "/dc-hbcu-campus-tour-howard-university", destination: "/blog/dc-hbcu-campus-tour-howard-university/", permanent: true },
   { source: "/discover-the-beauty-and-history-of-the-jefferson-memorial-in-washington-dc", destination: "/blog/discover-the-beauty-and-history-of-the-jefferson-memorial-in-washington-dc/", permanent: true },
   { source: "/discover-the-best-of-downtown-washington-dc-from-iconic-landmarks-to-vibrant-nightlife", destination: "/blog/discover-the-best-of-downtown-washington-dc-from-iconic-landmarks-to-vibrant-nightlife/", permanent: true },
