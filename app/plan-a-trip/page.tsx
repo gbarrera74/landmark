@@ -25,7 +25,7 @@ export default function PlanATripPage() {
             </p>
           </div>
           <div style={{ marginTop: 36, maxWidth: 900, marginLeft: 'auto', marginRight: 'auto' }}>
-            <HubSpotMeetings />
+            <HubSpotMeetings slug="michaelaruffino/landmark" />
           </div>
         </div>
       </section>

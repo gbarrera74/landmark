@@ -1698,3 +1698,8 @@ select.ilm-input { appearance: none; -webkit-appearance: none; cursor: pointer;
 .lm-blog-empty { padding: 40px 0; text-align: center; color: var(--lm-muted, #6b5b53); }
 .lm-blog-card.is-hidden { display: none; }
 @media (max-width: 640px) { .lm-filter-label { min-width: 100%; margin-bottom: 2px; } }
+
+/* Homepage Google rating badge (matches AggregateRating schema) */
+.lm-review-rating { margin: 10px 0 0; font-size: 16px; color: var(--lm-ink, #2a2320); display: inline-flex; align-items: center; gap: 8px; flex-wrap: wrap; justify-content: center; }
+.lm-review-stars { color: var(--lm-secondary, #E28413); letter-spacing: 2px; font-size: 18px; }
+.lm-review-rating strong { font-size: 18px; color: var(--lm-primary); }

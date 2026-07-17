@@ -22,6 +22,9 @@ export const SITE = {
     linkedin: 'https://www.linkedin.com/company/landmarkeducationaltours/',
     tiktok: 'https://www.tiktok.com/@landmarkedutours',
   } as Record<string, string>,
+  // Real Google rating (2026). Displayed on-page so the AggregateRating markup
+  // matches visible content. Update both the number here and the on-page display.
+  reviews: { ratingValue: '4.8', reviewCount: '51' },
 }
 
 // Countries Landmark actually operates trips in — grounds `areaServed`.
@@ -74,6 +77,14 @@ export function organization(): Record<string, unknown> {
     },
     areaServed: SERVED_COUNTRIES.map((name) => ({ '@type': 'Country', name })),
     knowsAbout: KNOWS_ABOUT,
+    // Real Google review rating, displayed on-page (homepage reviews section).
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ratingValue: SITE.reviews.ratingValue,
+      reviewCount: SITE.reviews.reviewCount,
+      bestRating: '5',
+      worstRating: '1',
+    },
     // California Seller of Travel registration (real, shown in the footer).
     identifier: {
       '@type': 'PropertyValue',

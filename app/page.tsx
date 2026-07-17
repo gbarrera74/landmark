@@ -277,7 +277,13 @@ export default function Home() {
 
       {/* Trustindex reviews */}
       <section className="ile-section ile-section--white" aria-labelledby="reviews-h">
-        <div className="ile-container ile-center"><h2 id="reviews-h" className="lm-h2-amber">WHAT TRAVELERS SAY</h2></div>
+        <div className="ile-container ile-center">
+          <h2 id="reviews-h" className="lm-h2-amber">WHAT TRAVELERS SAY</h2>
+          <p className="lm-review-rating">
+            <span className="lm-review-stars" aria-hidden="true">★★★★★</span>
+            <strong>{SITE.reviews.ratingValue}</strong> out of 5 · {SITE.reviews.reviewCount} Google reviews
+          </p>
+        </div>
         <div className="ile-container">
           <ReviewsCarousel variant="reviews" items={REVIEWS} />
         </div>
