@@ -47,15 +47,23 @@ export default function HubSpotForm({
         formId,
         region,
         target: `#${targetId}`,
-        // Runs once the form's real HTML is in the DOM. We query the form from
-        // our own target container (rather than trust the callback arg, which
-        // is a jQuery object in some embed versions and a DOM node in others).
+        // New-editor forms render inside a same-origin iframe, so we skin the
+        // iframe's own document rather than page CSS. enhanceQuoteForm polls the
+        // container for the iframe + its populated form, so it's fine if this
+        // fires before the inner form exists. Guarded against double-invocation.
         onFormReady() {
           if (!sectioned) return
-          const formEl = document.getElementById(targetId)?.querySelector('form')
-          if (formEl) enhanceQuoteForm(formEl as HTMLFormElement)
+          const container = document.getElementById(targetId)
+          if (container) enhanceQuoteForm(container)
         },
       })
+      // Fallback: some embed versions don't fire onFormReady for iframe forms.
+      if (sectioned) {
+        window.setTimeout(() => {
+          const container = document.getElementById(targetId)
+          if (container) enhanceQuoteForm(container)
+        }, 800)
+      }
     }
 
     // Reuse the script if it's already on the page; otherwise inject it once.
