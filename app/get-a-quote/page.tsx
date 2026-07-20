@@ -1,5 +1,6 @@
 import PageHero from '@/components/PageHero'
 import HubSpotForm from '@/components/HubSpotForm'
+import HubSpotMeetings from '@/components/HubSpotMeetings'
 import JsonLd from '@/lib/seo/JsonLd'
 import { breadcrumb } from '@/lib/seo/schemas'
 
@@ -32,7 +33,20 @@ export default function GetAQuotePage() {
         </div>
       </section>
 
-      <section className="ile-section ile-section--cream" aria-labelledby="gq-trust-h">
+      <section className="ile-section ile-section--cream" aria-labelledby="gq-call-h">
+        <div className="ile-container">
+          <div className="ile-center lm-narrow">
+            <span className="ile-eyebrow">Prefer to talk it through?</span>
+            <h2 id="gq-call-h" className="lm-h2-amber">BOOK A CALL</h2>
+            <p className="ile-lead lm-center-lead">Rather start with a conversation? Schedule a quick call with a Landmark Travel Consultant and we&apos;ll help you plan your group&apos;s trip.</p>
+          </div>
+          <div className="lm-narrow" style={{ marginTop: 32 }}>
+            <HubSpotMeetings slug="michaelaruffino/landmark" />
+          </div>
+        </div>
+      </section>
+
+      <section className="ile-section ile-section--white" aria-labelledby="gq-trust-h">
         <div className="ile-container">
           <div className="ile-center lm-narrow">
             <span className="ile-eyebrow">Why Landmark</span>

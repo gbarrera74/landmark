@@ -47,8 +47,8 @@ export default function Orlando() {
         city="Orlando"
         lead={INTRO_P1}
         highlights={HIGHLIGHTS}
-        image="/images/landmark/orlando-1.jpg"
-        imageAlt="Orlando on a student educational tour"
+        image="/images/landmark/orlando-2.jpg"
+        imageAlt="A space shuttle launch at the Kennedy Space Center near Orlando"
         tripCount={TRIPS.length}
       />
 

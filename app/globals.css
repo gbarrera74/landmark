@@ -2202,3 +2202,23 @@ select.ilm-input { appearance: none; -webkit-appearance: none; cursor: pointer;
   .lm-dest-intro__media img { aspect-ratio: 16 / 10; }
   .lm-dest-intro__badge { left: 16px; bottom: 16px; }
 }
+
+/* ─────────────────────────────────────────────
+   TEAM GRID — click-to-open bios (About page)
+───────────────────────────────────────────── */
+.lm-team-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; align-items: start; margin-top: 10px; }
+.lm-team-card { border: 1px solid var(--lm-line); border-radius: var(--lm-radius-sm); background: var(--lm-white); overflow: hidden; transition: box-shadow 0.3s ease, border-color 0.2s ease; }
+.lm-team-card.is-open { box-shadow: var(--lm-shadow); border-color: var(--lm-secondary-soft); }
+.lm-team-head { width: 100%; display: flex; align-items: center; gap: 14px; padding: 15px 18px; background: none; border: none; cursor: pointer; text-align: left; }
+.lm-team-avatar { flex: none; width: 52px; height: 52px; border-radius: 50%; background: var(--lm-primary); color: #fff; display: flex; align-items: center; justify-content: center; font-family: var(--font-head); font-weight: 700; font-size: 17px; letter-spacing: 0.5px; overflow: hidden; }
+.lm-team-avatar img { width: 100%; height: 100%; object-fit: cover; }
+.lm-team-meta { flex: 1; display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.lm-team-meta strong { font-family: var(--font-head); font-size: 15.5px; color: var(--lm-primary-900); font-weight: 700; line-height: 1.2; }
+.lm-team-meta span { font-size: 13px; color: var(--lm-ink-muted); }
+.lm-team-chev { width: 20px; height: 20px; color: var(--lm-primary); flex: none; transition: transform 0.3s var(--lm-ease); }
+.lm-team-card.is-open .lm-team-chev { transform: rotate(180deg); }
+.lm-team-bio { display: grid; grid-template-rows: 0fr; transition: grid-template-rows 0.35s var(--lm-ease); }
+.lm-team-card.is-open .lm-team-bio { grid-template-rows: 1fr; }
+.lm-team-bio-inner { overflow: hidden; min-height: 0; }
+.lm-team-bio p { padding: 0 18px 18px 84px; font-size: 14px; line-height: 1.7; color: var(--lm-ink); margin: 0; }
+@media (max-width: 620px) { .lm-team-grid { grid-template-columns: 1fr; } .lm-team-bio p { padding-left: 18px; } }
