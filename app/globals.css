@@ -373,8 +373,7 @@ p { margin: 0; }
 .ileh-wrap.is-scrolled .ileh-logo img { filter: none; }
 .ilef-logo { filter: brightness(0) invert(1); }
 
-/* ── Mobile mega subgroups + room for the Destinations list ── */
-.ileh-m-group.is-open .ileh-m-sub { max-height: 1200px; }
+/* ── Mobile mega subgroups ── */
 .ileh-m-subgroup { padding: 2px 0 6px; }
 .ileh-m-subgroup .ileh-m-subh {
   margin: 10px 0 2px;
@@ -461,8 +460,11 @@ p { margin: 0; }
 }
 .ileh-m-parent svg { width: 18px; height: 18px; transition: transform 0.35s var(--lm-ease); }
 .ileh-m-group.is-open .ileh-m-parent svg { transform: rotate(180deg); }
-.ileh-m-sub { max-height: 0; overflow: hidden; transition: max-height 0.4s var(--lm-ease); padding-left: 14px; }
-.ileh-m-group.is-open .ileh-m-sub { max-height: 460px; }
+/* Grid accordion: animates to the sub-menu's NATURAL height, so no menu (e.g.
+   Destinations with 25 links) gets clipped — the whole mobile nav scrolls. */
+.ileh-m-sub { display: grid; grid-template-rows: 0fr; transition: grid-template-rows 0.4s var(--lm-ease); padding-left: 14px; }
+.ileh-m-group.is-open .ileh-m-sub { grid-template-rows: 1fr; }
+.ileh-m-sub-inner { overflow: hidden; min-height: 0; }
 .ileh-m-sub a {
   display: block; font-family: var(--font-body); font-size: 16px; font-weight: 600;
   color: var(--lm-ink-muted); padding: 10px 0;

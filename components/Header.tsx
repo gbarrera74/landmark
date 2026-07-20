@@ -256,18 +256,20 @@ export default function Header() {
                 <Chevron />
               </button>
               <div className="ileh-m-sub">
-                {item.groups
-                  ? item.groups.map((g) => (
-                      <div key={g.title} className="ileh-m-subgroup">
-                        {g.title && <p className="ileh-m-subh">{g.title}</p>}
-                        {g.links.map((l) => (
-                          <Link key={l.label} href={l.href} className={isChildActive(l.href) ? 'is-active' : ''} onClick={() => setMobileOpen(false)}>{l.label}</Link>
-                        ))}
-                      </div>
-                    ))
-                  : item.children!.map((c) => (
-                      <Link key={c.href} href={c.href} className={isChildActive(c.href) ? 'is-active' : ''} onClick={() => setMobileOpen(false)}>{c.label}</Link>
-                    ))}
+                <div className="ileh-m-sub-inner">
+                  {item.groups
+                    ? item.groups.map((g) => (
+                        <div key={g.title} className="ileh-m-subgroup">
+                          {g.title && <p className="ileh-m-subh">{g.title}</p>}
+                          {g.links.map((l) => (
+                            <Link key={l.label} href={l.href} className={isChildActive(l.href) ? 'is-active' : ''} onClick={() => setMobileOpen(false)}>{l.label}</Link>
+                          ))}
+                        </div>
+                      ))
+                    : item.children!.map((c) => (
+                        <Link key={c.href} href={c.href} className={isChildActive(c.href) ? 'is-active' : ''} onClick={() => setMobileOpen(false)}>{c.label}</Link>
+                      ))}
+                </div>
               </div>
             </div>
           ) : (
