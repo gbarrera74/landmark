@@ -7,13 +7,19 @@ import TrackingScripts from '@/components/TrackingScripts'
 import JsonLd from '@/lib/seo/JsonLd'
 import { organization, website } from '@/lib/seo/schemas'
 
-const SITE_URL = (process.env.SITE_URL ?? 'https://landmarkeducationaltours.com').replace(/\/$/, '')
+// Canonical/OG URLs always use the real prod domain, even on staging.
+// Use || (not ??) so an empty-string SITE_URL also falls back instead of
+// crashing new URL('') below; unset and real-URL behavior is unchanged.
+const SITE_URL = (process.env.SITE_URL || 'https://landmarkeducationaltours.com').replace(/\/$/, '')
 
 const PRODUCTION_ORIGINS = new Set([
   'https://landmarkeducationaltours.com',
   'https://www.landmarkeducationaltours.com',
 ])
-const isProduction = PRODUCTION_ORIGINS.has(SITE_URL)
+// Robots gate is FAIL-SAFE: read the raw env (NOT the prod-defaulted SITE_URL),
+// so an unset SITE_URL (staging) => non-production => noindex, matching
+// robots.ts + next.config's X-Robots-Tag. Prod must set SITE_URL explicitly.
+const isProduction = PRODUCTION_ORIGINS.has((process.env.SITE_URL ?? '').replace(/\/$/, ''))
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -50,8 +56,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <GoogleFonts />
+        <a href="#main-content" className="lm-skip-link">Skip to content</a>
         <Header />
-        {children}
+        <main id="main-content">{children}</main>
         <Footer />
         <TrackingScripts />
         <JsonLd data={organization()} />

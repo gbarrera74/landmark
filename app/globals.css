@@ -85,6 +85,26 @@ p { margin: 0; }
   border-radius: 4px;
 }
 
+/* Skip-to-content — hidden until keyboard focus */
+.lm-skip-link {
+  position: absolute;
+  left: 12px;
+  top: -60px;
+  z-index: 2000;
+  background: var(--lm-primary);
+  color: #fff;
+  font-family: var(--font-head);
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 10px 18px;
+  border-radius: var(--lm-radius-sm);
+  text-decoration: none;
+  transition: top 0.18s var(--lm-ease);
+}
+.lm-skip-link:focus {
+  top: 12px;
+}
+
 /* ─────────────────────────────────────────────
    LAYOUT PRIMITIVES
 ───────────────────────────────────────────── */
@@ -518,7 +538,7 @@ p { margin: 0; }
 .ilef-contact a:hover { color: var(--lm-secondary-soft); }
 .ilef-contact svg { width: 17px; height: 17px; color: var(--lm-primary); flex-shrink: 0; margin-top: 3px; }
 
-.ilef-col h4 {
+.ilef-col h3 {
   font-family: var(--font-head); font-size: 16px; font-weight: 700;
   color: #fff; margin-bottom: 18px; letter-spacing: 0.3px;
 }
@@ -997,6 +1017,7 @@ select.ilm-input { appearance: none; -webkit-appearance: none; cursor: pointer;
 .ilp-faq { max-width: 820px; margin: 0 auto; display: flex; flex-direction: column; gap: 14px; }
 .ilp-faq-item { background: var(--lm-white); border: 1px solid var(--lm-line); border-radius: 16px; overflow: hidden; transition: box-shadow 0.3s ease; }
 .ilp-faq-item.is-open { box-shadow: var(--lm-shadow); }
+.ilp-faq-h { margin: 0; font-size: inherit; line-height: normal; letter-spacing: normal; }
 .ilp-faq-q {
   width: 100%; display: flex; align-items: center; justify-content: space-between; gap: 18px;
   background: none; border: none; cursor: pointer; text-align: left;

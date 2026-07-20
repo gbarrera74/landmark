@@ -18,10 +18,12 @@ export default function FaqAccordion({ items }: { items: Faq[] }) {
     <div className="ilp-faq">
       {items.map((item, i) => (
         <div key={item.q} className={`ilp-faq-item${open === i ? ' is-open' : ''}`}>
-          <button className="ilp-faq-q" aria-expanded={open === i} onClick={() => setOpen(open === i ? null : i)}>
-            {item.q}
-            <Plus />
-          </button>
+          <h3 className="ilp-faq-h">
+            <button className="ilp-faq-q" aria-expanded={open === i} onClick={() => setOpen(open === i ? null : i)}>
+              {item.q}
+              <Plus />
+            </button>
+          </h3>
           <div className="ilp-faq-a">
             <div className="ilp-faq-a-inner">{item.a}</div>
           </div>

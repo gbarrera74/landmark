@@ -71,7 +71,7 @@ export default function Footer() {
         </div>
 
         <div className="ilef-col">
-          <h4>Destinations</h4>
+          <h3>Destinations</h3>
           <div className="ilef-links">
             <Link href="/east-coast/">East Coast</Link>
             <Link href="/midwest/">Midwest</Link>
@@ -82,7 +82,7 @@ export default function Footer() {
         </div>
 
         <div className="ilef-col">
-          <h4>Explore</h4>
+          <h3>Explore</h3>
           <div className="ilef-links">
             <Link href="/themes/">Themes</Link>
             <Link href="/plan-a-trip/">Plan a Trip</Link>
@@ -93,7 +93,7 @@ export default function Footer() {
         </div>
 
         <div className="ilef-col">
-          <h4>Company</h4>
+          <h3>Company</h3>
           <div className="ilef-links">
             <Link href="/about-landmark/">About Landmark</Link>
             <Link href="/accreditations-certifications/">Accreditations</Link>
