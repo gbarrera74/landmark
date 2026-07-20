@@ -80,11 +80,34 @@ html.lm-hsform,html.lm-hsform body{background:transparent!important;}
 .lm-hsform ul.inputs-list{list-style:none!important;margin:4px 0 0!important;padding:0!important;}
 .lm-hsform .hs-form-booleancheckbox-display,.lm-hsform .hs-form-radio-display{font-weight:400!important;font-size:14px!important;color:var(--lm-ink)!important;}
 
-/* multi-column rows + responsive */
-.lm-hsform fieldset.form-columns-2{display:grid!important;grid-template-columns:1fr 1fr!important;column-gap:16px!important;}
-.lm-hsform fieldset.form-columns-3{display:grid!important;grid-template-columns:1fr 1fr 1fr!important;column-gap:16px!important;}
+/* ---- Compact 2-column form layout ----
+   The 24-field form is a tall single column by default. Lay the whole form out
+   as a 2-column grid so single fields pair up (halving perceived length), while
+   name/email pairs, the section dividers, the notes textarea, the file upload
+   and the submit button each span the full width. */
+html.lm-hsform form.hs-form{display:grid!important;grid-template-columns:1fr 1fr!important;column-gap:18px!important;row-gap:15px!important;align-items:start!important;}
+html.lm-hsform form.hs-form>fieldset.form-columns-1{grid-column:span 1!important;margin:0!important;}
+html.lm-hsform form.hs-form>fieldset.form-columns-2,
+html.lm-hsform form.hs-form>fieldset.form-columns-3,
+html.lm-hsform form.hs-form>fieldset.form-columns-0,
+html.lm-hsform form.hs-form>.lm-hs-divider,
+html.lm-hsform form.hs-form>.hs_submit,
+html.lm-hsform form.hs-form>.hs-submit,
+html.lm-hsform form.hs-form>fieldset.form-columns-1:has(.hs-fieldtype-textarea),
+html.lm-hsform form.hs-form>fieldset.form-columns-1:has(.hs-fieldtype-file){grid-column:1 / -1!important;margin:0!important;}
+html.lm-hsform form.hs-form>.lm-hs-divider{margin:16px 0 2px!important;}
+html.lm-hsform form.hs-form>.lm-hs-divider:first-child{margin-top:0!important;}
+
+/* internal grid for the already-paired (name/email) + any 3-col rows */
+.lm-hsform fieldset.form-columns-2{display:grid!important;grid-template-columns:1fr 1fr!important;column-gap:18px!important;}
+.lm-hsform fieldset.form-columns-3{display:grid!important;grid-template-columns:1fr 1fr 1fr!important;column-gap:18px!important;}
 .lm-hsform fieldset.form-columns-2>.hs-form-field,.lm-hsform fieldset.form-columns-3>.hs-form-field{width:100%!important;float:none!important;padding:0!important;}
-@media (max-width:620px){.lm-hsform fieldset.form-columns-2,.lm-hsform fieldset.form-columns-3{grid-template-columns:1fr!important;row-gap:18px!important;}}
+
+/* single column on narrow screens */
+@media (max-width:640px){
+  html.lm-hsform form.hs-form{grid-template-columns:1fr!important;row-gap:16px!important;}
+  .lm-hsform fieldset.form-columns-2,.lm-hsform fieldset.form-columns-3{grid-template-columns:1fr!important;row-gap:16px!important;}
+}
 
 /* errors */
 .lm-hsform .hs-form-field.hs-error input.hs-input,.lm-hsform .hs-form-field.hs-error select.hs-input,.lm-hsform .hs-form-field.hs-error textarea.hs-input{border-color:var(--lm-err)!important;background:var(--lm-err-bg)!important;}

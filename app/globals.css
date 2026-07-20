@@ -2116,16 +2116,33 @@ select.ilm-input { appearance: none; -webkit-appearance: none; cursor: pointer;
 
 /* Upscaled destination-page intro: a prominent lead paragraph + a refined,
    muted supporting paragraph (tighter measure). Copy is unchanged (keeps SEO). */
-.ilp-prose--center { max-width: 724px; }
+/* Comfortable measure (~68 chars/line, NN/g's 50-75 sweet spot) instead of the
+   wide 724px slab. */
+.ilp-prose--center { max-width: 648px; }
+/* Editorial drop cap instead of an oversized full-paragraph lead. The PageHero
+   above already carries the short lead sentence, so the intro reads as calm,
+   well-measured body copy anchored by a magazine-style serif initial — not a
+   wall of 22px rust text. Pure CSS, applies to every .ilp-prose--center page,
+   every word of SEO copy preserved. (Grounded in EF / WorldStrides / ACIS /
+   Nielsen Norman research: elevate a short hook, never a 450-char paragraph.) */
 .ilp-prose--center > p:first-child {
-  font-size: clamp(19px, 2.05vw, 22px);
-  line-height: 1.62;
-  font-weight: 500;
-  letter-spacing: -0.008em;
-  color: var(--lm-primary-900);
+  font-size: 17px;
+  line-height: 1.85;
+  font-weight: 400;
+  color: var(--lm-ink);
+  margin-bottom: 24px;
+}
+.ilp-prose--center > p:first-child::first-letter {
+  font-family: var(--font-serif);
+  font-size: 4.1em;
+  float: left;
+  line-height: 0.78;
+  font-weight: 600;
+  color: var(--lm-primary);
+  margin: 8px 14px 0 0;
 }
 .ilp-prose--center > p:first-child + p {
   color: var(--lm-ink-muted, #5f544c);
-  font-size: 16px;
-  line-height: 1.8;
+  font-size: 16.5px;
+  line-height: 1.85;
 }
