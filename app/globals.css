@@ -1513,6 +1513,8 @@ select.ilm-input { appearance: none; -webkit-appearance: none; cursor: pointer;
   max-width: 640px;
   margin: 0 auto;
 }
+/* Wider card for the 24-field quote form so its 2-column layout has room. */
+.lm-form-card--quote { max-width: 940px; }
 .lm-form-card h2 { margin: 0 0 6px; }
 .lm-form-intro { color: var(--lm-ink-muted); font-size: 15.5px; line-height: 1.7; margin: 0 0 22px; }
 

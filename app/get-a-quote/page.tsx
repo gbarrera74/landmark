@@ -22,7 +22,7 @@ export default function GetAQuotePage() {
 
       <section className="ile-section ile-section--white">
         <div className="ile-container">
-          <div className="lm-form-card">
+          <div className="lm-form-card lm-form-card--quote">
             <h2 className="lm-h2-amber" style={{ textAlign: 'center' }}>REQUEST YOUR FREE QUOTE</h2>
             <p className="lm-form-intro" style={{ textAlign: 'center' }}>
               Tell us where you would like to go and a bit about your group. We will follow up with a customized quote and next steps.

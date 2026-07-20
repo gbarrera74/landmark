@@ -24,7 +24,6 @@ const DISTRICTS = [
   { name: 'Holyoke Public Schools', logo: '/images/landmark/district-holyoke.png', id: '34003' },
   { name: 'Oakland Unified School District', logo: '/images/landmark/district-oakland.png', id: '9314' },
   { name: 'Alliance College-Ready Public Schools', logo: '/images/landmark/district-alliance.png', id: '68985' },
-  { name: 'Chicago Public Schools', logo: '/images/landmark/district-chicago.png', id: '45957' },
   { name: 'Miami-Dade County Public Schools', logo: '/images/landmark/district-miami-dade.png', id: '6528841' },
 ]
 

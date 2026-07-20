@@ -30,7 +30,16 @@ html.lm-hsform,html.lm-hsform body{background:transparent!important;}
 
 /* hide the duplicate <h1> that repeats the page's own heading */
 .lm-hsform .hs-richtext:has(h1){display:none!important;}
-.lm-hsform legend.hs-field-desc{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important;}
+/* Field help-text (HubSpot .hs-field-desc) — these are Landmark's lead-qualifying
+   notes; show them as a small muted note under the label, above the input. */
+.lm-hsform .hs-field-desc,.lm-hsform legend.hs-field-desc{
+  display:block!important;position:static!important;width:auto!important;height:auto!important;
+  clip:auto!important;overflow:visible!important;white-space:normal!important;float:none!important;
+  font-family:var(--font-body)!important;font-size:12.5px!important;line-height:1.5!important;
+  font-weight:400!important;color:var(--lm-ink-muted)!important;margin:0 0 8px!important;padding:0!important;border:0!important;
+}
+.lm-hsform .hs-field-desc em{font-style:italic;}
+.lm-hsform .hs-field-desc strong{color:var(--lm-primary-900);font-weight:600;}
 
 /* section dividers (injected) */
 .lm-hsform .lm-hs-divider{margin:34px 0 18px!important;}
@@ -103,8 +112,11 @@ html.lm-hsform form.hs-form>.lm-hs-divider:first-child{margin-top:0!important;}
 .lm-hsform fieldset.form-columns-3{display:grid!important;grid-template-columns:1fr 1fr 1fr!important;column-gap:18px!important;}
 .lm-hsform fieldset.form-columns-2>.hs-form-field,.lm-hsform fieldset.form-columns-3>.hs-form-field{width:100%!important;float:none!important;padding:0!important;}
 
-/* single column on narrow screens */
-@media (max-width:640px){
+/* Single column on narrow screens. NOTE: this @media is evaluated against the
+   IFRAME's own width (~876px in the widened .lm-form-card--quote on desktop,
+   shrinking with the viewport), NOT the page width — so the breakpoint must sit
+   below the desktop iframe width or it collapses the grid on desktop too. */
+@media (max-width:600px){
   html.lm-hsform form.hs-form{grid-template-columns:1fr!important;row-gap:16px!important;}
   .lm-hsform fieldset.form-columns-2,.lm-hsform fieldset.form-columns-3{grid-template-columns:1fr!important;row-gap:16px!important;}
 }
