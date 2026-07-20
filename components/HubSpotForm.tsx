@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useRef, useId } from 'react'
+import { enhanceQuoteForm } from '@/lib/hubspotFormEnhance'
 
 // Renders a live HubSpot form via the official embed API (hbspt.forms.create).
 // We mirror the live site (which embeds the same forms) rather than re-implement
@@ -23,10 +24,13 @@ export default function HubSpotForm({
   portalId = '9241531',
   formId,
   region = 'na1',
+  sectioned = false,
 }: {
   portalId?: string
   formId: string
   region?: string
+  /** Break a long form into labeled "chapter" sections (quote form only). */
+  sectioned?: boolean
 }) {
   const uid = useId().replace(/[:]/g, '')
   const targetId = `hs-form-${uid}`
@@ -38,7 +42,20 @@ export default function HubSpotForm({
     function create() {
       if (cancelled || created.current || !window.hbspt) return
       created.current = true
-      window.hbspt.forms.create({ portalId, formId, region, target: `#${targetId}` })
+      window.hbspt.forms.create({
+        portalId,
+        formId,
+        region,
+        target: `#${targetId}`,
+        // Runs once the form's real HTML is in the DOM. We query the form from
+        // our own target container (rather than trust the callback arg, which
+        // is a jQuery object in some embed versions and a DOM node in others).
+        onFormReady() {
+          if (!sectioned) return
+          const formEl = document.getElementById(targetId)?.querySelector('form')
+          if (formEl) enhanceQuoteForm(formEl as HTMLFormElement)
+        },
+      })
     }
 
     // Reuse the script if it's already on the page; otherwise inject it once.
@@ -62,7 +79,7 @@ export default function HubSpotForm({
     }
 
     return () => { cancelled = true }
-  }, [portalId, formId, region, targetId])
+  }, [portalId, formId, region, targetId, sectioned])
 
   return (
     <div className="lm-hsform">

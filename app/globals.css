@@ -1530,63 +1530,438 @@ select.ilm-input { appearance: none; -webkit-appearance: none; cursor: pointer;
 .lm-contact-item a:hover { color: var(--lm-primary); }
 @media (max-width: 860px) { .lm-contact-grid { grid-template-columns: 1fr; gap: 32px; } .lm-form-card { padding: 26px 22px 28px; } }
 
-/* HubSpot form markup, restyled */
-.lm-hsform { min-height: 120px; }
-.lm-hsform .hs-form fieldset { max-width: none !important; margin-bottom: 4px; }
-.lm-hsform .hs-form-field { margin-bottom: 16px; }
-.lm-hsform .hs-form-field > label {
-  display: block; font-family: var(--font-head); font-weight: 600; font-size: 13.5px;
-  color: var(--lm-ink); margin-bottom: 7px; letter-spacing: 0.2px;
+/* ─────────────────────────────────────────────
+   LANDMARK EDUCATIONAL TOURS · HubSpot quote form
+   Editorial premium: restrained magazine luxury.
+   Scope: everything under .lm-hsform. Drop-in
+   replacement for the prior .lm-hsform rules in
+   app/globals.css.
+───────────────────────────────────────────── */
+
+.lm-hsform {
+  --lm-hs-radius: var(--lm-radius-sm);
+  --lm-hs-focus-ring: rgba(142, 45, 10, 0.18);
+  --lm-hs-error: #A3320F;
+  --lm-hs-error-bg: #FBEDE7;
+  position: relative;
+  min-height: 120px;
+  font-family: var(--font-body);
 }
-.lm-hsform .hs-form-required { color: var(--lm-primary); margin-left: 2px; }
+.lm-hsform *, .lm-hsform *::before, .lm-hsform *::after { box-sizing: border-box; }
+
+/* Reset the native <fieldset> chrome (default border/padding/margin) that
+   HubSpot leaves on every field group, and kill its inline max-width so our
+   own layout owns spacing. */
+.lm-hsform .hs-form fieldset {
+  max-width: none !important;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  min-inline-size: 0;
+}
+
+/* ---------- Duplicate heading ----------
+   hs-richtext renders an <h1>FREE Customized Group Trip Quote 💰:</h1>
+   that duplicates the page's own visible H2 above the form. It adds
+   nothing and would make a screen-reader user hear the same heading
+   announced twice back to back, so it is removed rather than merely
+   visually hidden. */
+.lm-hsform .hs-richtext:has(h1) { display: none; }
+@supports not selector(:has(h1)) {
+  .lm-hsform > .hs-form > .hs-richtext:first-child { display: none; }
+}
+
+/* Scoped + visually-hidden (not display:none) in case HubSpot ever
+   populates real assistive description text here. */
+.lm-hsform legend.hs-field-desc {
+  position: absolute; width: 1px; height: 1px;
+  padding: 0; margin: -1px; overflow: hidden;
+  clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0;
+}
+
+/* ---------- Vertical rhythm ----------
+   Each field (single or paired) lives in its own fieldset already —
+   space between fieldsets, not between the field wrappers inside. */
+.lm-hsform .hs-form fieldset + fieldset { margin-top: 20px; }
+.lm-hsform .hs-form-field { margin-bottom: 0; }
+
+/* ---------- Section dividers (optional JS hook) ----------
+   Injected by onFormReady to break the long form into calm, scannable
+   chapters — the core lever for cutting perceived length. Pure CSS
+   no-ops gracefully if the JS never runs; the form still reads fine
+   as one continuous list. */
+.lm-hsform .lm-hs-divider { margin: 34px 0 18px; }
+.lm-hsform .lm-hs-divider:first-child { margin-top: 0; }
+.lm-hsform .lm-hs-divider-eyebrow {
+  display: block;
+  font-family: var(--font-head);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  color: var(--lm-secondary);
+  margin-bottom: 5px;
+}
+.lm-hsform .lm-hs-divider-title {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 1.3;
+  color: var(--lm-primary-900);
+  margin: 0 0 12px;
+}
+.lm-hsform .lm-hs-divider-rule {
+  height: 1px;
+  background: var(--lm-line);
+}
+
+/* ---------- Labels ---------- */
+.lm-hsform .hs-form-field > label {
+  display: block;
+  font-family: var(--font-head);
+  font-weight: 600;
+  font-size: 13.5px;
+  color: var(--lm-ink);
+  margin-bottom: 7px;
+  letter-spacing: 0.15px;
+}
+.lm-hsform .hs-form-field.hs-error > label { color: var(--lm-hs-error); }
+.lm-hsform .hs-form-required {
+  color: var(--lm-secondary);
+  font-weight: 700;
+  margin-left: 3px;
+}
+
+/* ---------- Base control skin (text / select / textarea / date / number / phone) ---------- */
 .lm-hsform input.hs-input,
 .lm-hsform select.hs-input,
 .lm-hsform textarea.hs-input {
-  width: 100% !important; box-sizing: border-box;
-  font-family: var(--font-body); font-size: 15px; color: var(--lm-ink);
-  background: var(--lm-cream); border: 1px solid var(--lm-line); border-radius: 12px;
-  padding: 12px 14px; transition: border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+  width: 100% !important;
+  display: block;
+  font-family: var(--font-body);
+  font-size: 15px;
+  line-height: 1.4;
+  color: var(--lm-ink);
+  background: var(--lm-cream);
+  border: 1.5px solid var(--lm-line);
+  border-radius: var(--lm-hs-radius);
+  padding: 12px 14px;
+  min-height: 46px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+  -webkit-appearance: none;
+  appearance: none;
 }
-.lm-hsform textarea.hs-input { min-height: 120px; resize: vertical; }
+.lm-hsform input.hs-input::placeholder,
+.lm-hsform textarea.hs-input::placeholder {
+  color: var(--lm-ink-muted);
+  opacity: 0.8;
+}
+.lm-hsform input.hs-input:hover:not(:focus):not([disabled]),
+.lm-hsform select.hs-input:hover:not(:focus):not([disabled]),
+.lm-hsform textarea.hs-input:hover:not(:focus):not([disabled]) {
+  border-color: var(--lm-accent);
+}
+
+/* Focus — rust is the site's focus/selection color */
 .lm-hsform input.hs-input:focus,
 .lm-hsform select.hs-input:focus,
 .lm-hsform textarea.hs-input:focus {
-  outline: none; border-color: var(--lm-secondary); background: var(--lm-white);
-  box-shadow: 0 0 0 3px rgba(226, 132, 19, 0.16);
+  outline: none;
+  background: var(--lm-white);
+  border-color: var(--lm-primary);
+  box-shadow: 0 0 0 4px var(--lm-hs-focus-ring);
 }
-.lm-hsform .hs-input[type="checkbox"], .lm-hsform .hs-input[type="radio"] { width: auto !important; margin-right: 8px; }
+.lm-hsform input.hs-input:focus-visible,
+.lm-hsform select.hs-input:focus-visible,
+.lm-hsform textarea.hs-input:focus-visible {
+  outline: 2px solid var(--lm-primary);
+  outline-offset: 1px;
+}
+
+.lm-hsform textarea.hs-input { min-height: 130px; resize: vertical; line-height: 1.6; }
+.lm-hsform .hs-fieldtype-textarea textarea.hs-input { min-height: 150px; }
+
+/* ---------- Select: custom rust chevron ---------- */
+.lm-hsform select.hs-input {
+  padding-right: 40px;
+  cursor: pointer;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none'%3E%3Cpath d='M5.5 7.5L10 12l4.5-4.5' stroke='%238E2D0A' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+  background-size: 18px;
+}
+.lm-hsform select.hs-input:focus {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none'%3E%3Cpath d='M5.5 7.5L10 12l4.5-4.5' stroke='%235E1C05' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+}
+.lm-hsform select.hs-input::-ms-expand { display: none; }
+.lm-hsform select.hs-input:invalid,
+.lm-hsform select.hs-input option[value=""] { color: var(--lm-ink-muted); }
+
+/* ---------- Date field + popup ---------- */
+.lm-hsform input.hs-input.hs-fieldtype-date,
+.lm-hsform input.hs-input[type="text"].hs-dateinput {
+  padding-right: 42px;
+  cursor: pointer;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none'%3E%3Crect x='3.5' y='5' width='17' height='15' rx='2.5' stroke='%238E2D0A' stroke-width='1.6'/%3E%3Cpath d='M3.5 9.5h17' stroke='%238E2D0A' stroke-width='1.6'/%3E%3Cpath d='M8 3v3.2M16 3v3.2' stroke='%238E2D0A' stroke-width='1.6' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 13px center;
+  background-size: 18px;
+}
+.lm-hsform .hs-dateinput { position: relative; }
+.lm-hsform .hs-datepicker,
+.lm-hsform .pika-single {
+  font-family: var(--font-body) !important;
+  border: 1px solid var(--lm-line) !important;
+  border-radius: 14px !important;
+  box-shadow: var(--lm-shadow) !important;
+  background: var(--lm-white) !important;
+  padding: 10px !important;
+  margin-top: 6px !important;
+  overflow: hidden;
+  z-index: 20;
+}
+.lm-hsform .pika-lendar { width: 100% !important; }
+.lm-hsform .pika-label {
+  font-family: var(--font-head) !important;
+  font-weight: 700 !important;
+  color: var(--lm-primary-900) !important;
+  background: var(--lm-cream) !important;
+}
+.lm-hsform .pika-prev, .lm-hsform .pika-next { opacity: 0.6; border-radius: 8px; }
+.lm-hsform .pika-prev:hover, .lm-hsform .pika-next:hover { opacity: 1; background: var(--lm-cream-deep); }
+.lm-hsform .pika-table th { color: var(--lm-ink-muted) !important; font-weight: 600 !important; font-size: 11.5px !important; }
+.lm-hsform .pika-button {
+  border-radius: 8px !important;
+  font-family: var(--font-body) !important;
+  color: var(--lm-ink) !important;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+.lm-hsform .pika-button:hover { background: var(--lm-cream-deep) !important; color: var(--lm-primary-900) !important; box-shadow: none !important; }
+.lm-hsform .is-selected .pika-button { background: var(--lm-primary) !important; color: var(--lm-white) !important; box-shadow: none !important; }
+.lm-hsform .is-today .pika-button { color: var(--lm-primary) !important; font-weight: 800 !important; }
+
+/* ---------- File upload ---------- */
+.lm-hsform .hs-fieldtype-file .input {
+  border: 1.5px dashed var(--lm-line);
+  border-radius: var(--lm-hs-radius);
+  background: var(--lm-cream-deep);
+  padding: 14px;
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+.lm-hsform .hs-fieldtype-file .input:hover,
+.lm-hsform .hs-fieldtype-file .input:focus-within {
+  border-color: var(--lm-primary);
+  background: var(--lm-cream);
+}
+.lm-hsform input[type="file"].hs-input {
+  width: 100% !important;
+  min-height: 0;
+  border: none !important;
+  background: transparent !important;
+  padding: 2px !important;
+  font-size: 13.5px;
+  color: var(--lm-ink-muted);
+}
+.lm-hsform input[type="file"].hs-input::file-selector-button {
+  font-family: var(--font-head);
+  font-weight: 700;
+  font-size: 13px;
+  color: var(--lm-white);
+  background: var(--lm-primary);
+  border: none;
+  border-radius: 999px;
+  padding: 9px 18px;
+  margin-right: 12px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+.lm-hsform input[type="file"].hs-input:hover::file-selector-button { background: var(--lm-primary-700); }
+.lm-hsform input[type="file"].hs-input:focus-visible { outline: 2px solid var(--lm-primary); outline-offset: 2px; border-radius: 8px; }
+
+/* ---------- Checkbox / radio (defensive — none in the 24 fields today,
+   but keeps the form future-proof if one is added, e.g. legal consent) ---------- */
+.lm-hsform .hs-input[type="checkbox"],
+.lm-hsform .hs-input[type="radio"] {
+  width: 18px !important;
+  height: 18px;
+  min-height: 0;
+  margin: 2px 10px 0 0 !important;
+  accent-color: var(--lm-primary);
+  flex: none;
+}
 .lm-hsform ul.inputs-list { list-style: none; margin: 4px 0 0; padding: 0; }
-.lm-hsform ul.inputs-list li { margin-bottom: 6px; }
-.lm-hsform .hs-form-booleancheckbox-display, .lm-hsform .hs-form-radio-display { font-weight: 400; font-size: 14px; color: var(--lm-ink-muted); }
-.lm-hsform .hs-error-msg, .lm-hsform .hs-error-msgs label { color: #b3341a; font-size: 13px; }
-.lm-hsform .hs-richtext, .lm-hsform .legal-consent-container { font-size: 13px; color: var(--lm-ink-muted); line-height: 1.6; margin: 6px 0; }
-.lm-hsform .hs-richtext a, .lm-hsform .legal-consent-container a { color: var(--lm-primary); }
-.lm-hsform .hs-submit { margin-top: 20px; }
-.lm-hsform input.hs-button, .lm-hsform .hs-button {
-  display: inline-flex; align-items: center; justify-content: center;
-  font-family: var(--font-head); font-size: 15px; font-weight: 700; letter-spacing: 0.3px;
-  padding: 15px 34px; border-radius: 999px; border: 2px solid transparent; cursor: pointer;
-  background: var(--lm-primary); color: var(--lm-white);
-  box-shadow: 0 14px 30px -12px rgba(142, 45, 10, 0.7);
-  transition: background 0.3s ease, transform 0.35s var(--lm-ease), box-shadow 0.35s var(--lm-ease);
+.lm-hsform ul.inputs-list li { display: flex; align-items: flex-start; margin-bottom: 8px; }
+.lm-hsform .hs-form-booleancheckbox-display,
+.lm-hsform .hs-form-radio-display { font-weight: 400; font-size: 14px; color: var(--lm-ink); line-height: 1.5; }
+
+/* ---------- Multi-column rows + responsive collapse ---------- */
+.lm-hsform fieldset.form-columns-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 16px;
+}
+.lm-hsform fieldset.form-columns-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 16px;
+}
+.lm-hsform fieldset.form-columns-2 > .hs-form-field,
+.lm-hsform fieldset.form-columns-3 > .hs-form-field {
+  width: 100% !important;
+  float: none !important;
+  padding: 0 !important;
+}
+.lm-hsform fieldset.form-columns-2 .input,
+.lm-hsform fieldset.form-columns-3 .input,
+.lm-hsform fieldset.form-columns-1 .input { margin-right: 0 !important; }
+@media (max-width: 620px) {
+  .lm-hsform fieldset.form-columns-2,
+  .lm-hsform fieldset.form-columns-3 { grid-template-columns: 1fr; row-gap: 18px; }
+}
+
+/* ---------- Errors ---------- */
+.lm-hsform .hs-form-field.hs-error input.hs-input,
+.lm-hsform .hs-form-field.hs-error select.hs-input,
+.lm-hsform .hs-form-field.hs-error textarea.hs-input {
+  border-color: var(--lm-hs-error);
+  background: var(--lm-hs-error-bg);
+}
+.lm-hsform .hs-form-field.hs-error input.hs-input:focus,
+.lm-hsform .hs-form-field.hs-error select.hs-input:focus,
+.lm-hsform .hs-form-field.hs-error textarea.hs-input:focus {
+  box-shadow: 0 0 0 4px rgba(163, 50, 15, 0.16);
+}
+.lm-hsform .hs-error-msgs { list-style: none; margin: 6px 0 0; padding: 0; }
+.lm-hsform .hs-error-msgs label.hs-error-msg,
+.lm-hsform .hs-error-msg {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--lm-hs-error);
+  font-size: 12.5px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+.lm-hsform .hs-error-msgs label.hs-error-msg::before {
+  content: "!";
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+  width: 14px; height: 14px;
+  border-radius: 50%;
+  background: var(--lm-hs-error);
+  color: var(--lm-white);
+  font-size: 10px;
+  font-weight: 800;
+  line-height: 1;
+}
+.lm-hsform .hs_error_rollup { margin: 0 0 20px; }
+.lm-hsform .hs_error_rollup .hs-error-msgs {
+  background: var(--lm-hs-error-bg);
+  border: 1px solid rgba(163, 50, 15, 0.25);
+  border-left: 3px solid var(--lm-hs-error);
+  border-radius: var(--lm-hs-radius);
+  padding: 13px 15px;
+}
+.lm-hsform .hs_error_rollup .hs-error-msg { margin-bottom: 4px; }
+.lm-hsform .hs_error_rollup .hs-error-msg:last-child { margin-bottom: 0; }
+
+/* ---------- Legal / helper copy (not the duplicate H1 block) ---------- */
+.lm-hsform .legal-consent-container,
+.lm-hsform .hs-richtext:not(:has(h1)) {
+  font-size: 12.5px;
+  color: var(--lm-ink-muted);
+  line-height: 1.6;
+  margin: 16px 0 0;
+}
+.lm-hsform .legal-consent-container a,
+.lm-hsform .hs-richtext a { color: var(--lm-primary); text-decoration: underline; text-underline-offset: 2px; }
+.lm-hsform .legal-consent-container a:hover,
+.lm-hsform .hs-richtext a:hover { color: var(--lm-primary-700); }
+
+/* ---------- Submit ---------- */
+.lm-hsform .hs-submit { margin-top: 28px; }
+.lm-hsform .hs-submit .actions { display: flex; }
+.lm-hsform input.hs-button.primary.large {
   width: auto !important;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50px;
+  font-family: var(--font-head);
+  font-size: 15.5px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  color: var(--lm-white);
+  background: var(--lm-primary);
+  border: none;
+  border-radius: 999px;
+  padding: 15px 36px;
+  cursor: pointer;
+  box-shadow: 0 14px 30px -12px rgba(142, 45, 10, 0.5);
+  transition: background 0.3s ease, transform 0.3s var(--lm-ease), box-shadow 0.3s var(--lm-ease), opacity 0.2s ease;
 }
-.lm-hsform input.hs-button:hover, .lm-hsform .hs-button:hover {
-  background: var(--lm-primary-700); transform: translateY(-3px);
-  box-shadow: 0 20px 38px -12px rgba(94, 28, 5, 0.7);
+.lm-hsform input.hs-button.primary.large:hover {
+  background: var(--lm-primary-700);
+  transform: translateY(-2px);
+  box-shadow: var(--lm-shadow-lg);
 }
-.lm-hsform .submitted-message { font-size: 16px; color: var(--lm-ink); line-height: 1.7; padding: 8px 0; }
-.lm-hsform .hs-form .field.hs-form-field .input { margin-right: 0 !important; }
-/* Clean side-by-side fields (first/last name etc.) — replaces HubSpot's glitchy
-   float columns with a grid; collapses to one column on small screens. */
-.lm-hsform .form-columns-2 { display: grid; grid-template-columns: 1fr 1fr; column-gap: 16px; }
-.lm-hsform .form-columns-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; column-gap: 16px; }
-.lm-hsform .form-columns-2 > .hs-form-field,
-.lm-hsform .form-columns-3 > .hs-form-field { width: 100% !important; float: none !important; padding: 0 !important; }
-.lm-hsform .form-columns-2 .input,
-.lm-hsform .form-columns-3 .input { margin-right: 0 !important; }
-@media (max-width: 560px) {
-  .lm-hsform .form-columns-2, .lm-hsform .form-columns-3 { grid-template-columns: 1fr; }
+.lm-hsform input.hs-button.primary.large:active { transform: translateY(0); }
+.lm-hsform input.hs-button.primary.large:focus-visible { outline: 2px solid var(--lm-primary-900); outline-offset: 3px; }
+
+/* Disabled / loading — the loading class is toggled by the onFormReady
+   JS hook on submit (cosmetic only; HubSpot owns real validation). The
+   button's own .value text is swapped to "Submitting…" by that same JS,
+   since generated (::before/::after) content does not render on
+   <input> elements in any browser — a text + state-class approach is
+   the only reliable way to show progress on this control. */
+.lm-hsform input.hs-button.primary.large[disabled],
+.lm-hsform input.hs-button.primary.large.lm-hs-loading {
+  cursor: progress;
+  opacity: 0.7;
+  transform: none;
+  box-shadow: none;
+  background: var(--lm-primary-600);
+}
+.lm-hsform input.hs-button.primary.large.lm-hs-loading { animation: lm-hsform-pulse 1.1s ease-in-out infinite; }
+@keyframes lm-hsform-pulse { 0%, 100% { opacity: 0.7; } 50% { opacity: 0.92; } }
+
+.lm-hsform .submitted-message {
+  font-family: var(--font-body);
+  font-size: 16px;
+  color: var(--lm-ink);
+  line-height: 1.7;
+  padding: 8px 0;
+}
+.lm-hsform .submitted-message p:first-child {
+  font-family: var(--font-head);
+  font-weight: 700;
+  font-size: 19px;
+  color: var(--lm-primary-900);
+}
+
+/* ---------- Reduced motion ---------- */
+@media (prefers-reduced-motion: reduce) {
+  .lm-hsform input.hs-input,
+  .lm-hsform select.hs-input,
+  .lm-hsform textarea.hs-input,
+  .lm-hsform input.hs-button.primary.large,
+  .lm-hsform input.hs-button.primary.large.lm-hs-loading {
+    transition: none;
+    animation: none;
+  }
+}
+
+/* ---------- Small screens ---------- */
+@media (max-width: 480px) {
+  .lm-hsform input.hs-input,
+  .lm-hsform select.hs-input,
+  .lm-hsform textarea.hs-input { font-size: 16px; } /* prevents iOS zoom-on-focus */
+  .lm-hsform .lm-hs-divider-title { font-size: 17px; }
+  .lm-hsform input.hs-button.primary.large { width: 100% !important; }
+  .lm-hsform .hs-submit .actions { width: 100%; }
 }
 
 /* Meetings scheduler (direct iframe) */
