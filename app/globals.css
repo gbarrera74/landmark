@@ -276,7 +276,7 @@ p { margin: 0; }
   text-shadow: 0 1px 12px rgba(0,0,0,0.35);
 }
 .ileh-link svg { width: 13px; height: 13px; opacity: 0.7; transition: transform 0.3s var(--lm-ease); }
-.ileh-item:hover .ileh-link svg { transform: rotate(180deg); }
+.ileh-item.is-open .ileh-link svg { transform: rotate(180deg); }
 .ileh-wrap.is-scrolled .ileh-link { color: var(--lm-primary-900); text-shadow: none; }
 .ileh-link:hover { background: rgba(255,255,255,0.14); }
 .ileh-wrap.is-scrolled .ileh-link:hover { background: rgba(142, 45, 10,0.12); color: var(--lm-primary-700); }
@@ -296,13 +296,14 @@ p { margin: 0; }
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  transition: opacity 0.28s var(--lm-ease), transform 0.28s var(--lm-ease), visibility 0.28s;
+  /* No transition on the closed state -> closing is instant (prevents an
+     adjacent menu cross-fading over another). Fade-in lives on .is-open. */
 }
 .ileh-drop::before { content: ''; position: absolute; top: -12px; left: 0; right: 0; height: 12px; }
-.ileh-item:hover .ileh-drop,
-.ileh-item:focus-within .ileh-drop {
+.ileh-item.is-open .ileh-drop {
   opacity: 1; visibility: visible; pointer-events: auto;
   transform: translateX(-50%) translateY(0);
+  transition: opacity 0.18s var(--lm-ease), transform 0.18s var(--lm-ease);
 }
 .ileh-drop-link {
   display: block;
@@ -334,14 +335,14 @@ p { margin: 0; }
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  transition: opacity 0.28s var(--lm-ease), transform 0.28s var(--lm-ease), visibility 0.28s;
   z-index: 60;
+  /* Closing is instant (no transition on closed state); fade-in on .is-open. */
 }
 .ileh-mega::before { content: ''; position: absolute; top: -12px; left: 0; right: 0; height: 12px; }
-.ileh-item:hover .ileh-mega,
-.ileh-item:focus-within .ileh-mega {
+.ileh-item.is-open .ileh-mega {
   opacity: 1; visibility: visible; pointer-events: auto;
   transform: translateX(-50%) translateY(0);
+  transition: opacity 0.18s var(--lm-ease), transform 0.18s var(--lm-ease);
 }
 .ileh-mega-inner { display: flex; gap: 30px; }
 .ileh-mega-col { min-width: 152px; }

@@ -128,6 +128,10 @@ export default function Header() {
   const [scrolled, setScrolled] = useState(false)
   const [mobileOpen, setMobileOpen] = useState(false)
   const [openGroup, setOpenGroup] = useState<string | null>(null)
+  // Desktop mega-menu: exactly one open at a time (state-driven, not CSS :hover +
+  // :focus-within, which let a focused menu stay open while another is hovered).
+  const [openMenu, setOpenMenu] = useState<string | null>(null)
+  const closeMenu = (label: string) => setOpenMenu((cur) => (cur === label ? null : cur))
   const pathname = usePathname() ?? '/'
 
   const isItemActive = (item: NavItem): boolean =>
@@ -175,8 +179,16 @@ export default function Header() {
           <nav className="ileh-nav" aria-label="Primary">
             {NAV.map((item) => {
               const active = isItemActive(item)
+              const hasMenu = !!(item.groups || item.children)
               return (
-                <div key={item.label} className="ileh-item">
+                <div
+                  key={item.label}
+                  className={`ileh-item${hasMenu && openMenu === item.label ? ' is-open' : ''}`}
+                  onMouseEnter={hasMenu ? () => setOpenMenu(item.label) : undefined}
+                  onMouseLeave={hasMenu ? () => closeMenu(item.label) : undefined}
+                  onFocus={hasMenu ? () => setOpenMenu(item.label) : undefined}
+                  onBlur={hasMenu ? (e) => { if (!e.currentTarget.contains(e.relatedTarget as Node)) closeMenu(item.label) } : undefined}
+                >
                   {item.groups ? (
                     <>
                       <Link href={item.href} className={`ileh-link${active ? ' is-active' : ''}`}>
