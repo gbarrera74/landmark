@@ -2146,3 +2146,57 @@ select.ilm-input { appearance: none; -webkit-appearance: none; cursor: pointer;
   font-size: 16.5px;
   line-height: 1.85;
 }
+
+/* ─────────────────────────────────────────────
+   DESTINATION INTRO — editorial text + image spread
+   Replaces the lone centered text slab: a lead paragraph (drop cap) + a
+   scannable highlights list on one side, a framed photo with a data-driven
+   badge on the other. Structured + visual, per EF/WorldStrides/NN-g research.
+───────────────────────────────────────────── */
+.lm-dest-intro {
+  display: grid;
+  grid-template-columns: 1.02fr 0.98fr;
+  gap: clamp(32px, 4.5vw, 60px);
+  align-items: center;
+}
+.lm-dest-intro__copy { max-width: 600px; }
+.lm-dest-intro__copy .ile-eyebrow { display: block; margin-bottom: 14px; }
+.lm-dest-lead { margin: 0; }
+.lm-dest-lead p { font-size: 17px; line-height: 1.85; color: var(--lm-ink); margin: 0; }
+.lm-dest-lead p::first-letter {
+  font-family: var(--font-serif); font-size: 4em; float: left;
+  line-height: 0.78; font-weight: 600; color: var(--lm-primary); margin: 8px 13px 0 0;
+}
+.lm-dest-sub {
+  margin: 24px 0 15px; font-family: var(--font-head); font-weight: 600;
+  font-size: 14px; letter-spacing: 0.2px; color: var(--lm-primary-900);
+}
+.lm-dest-highlights { list-style: none; padding: 0; margin: 0 0 30px; display: grid; gap: 11px; }
+.lm-dest-highlights li {
+  position: relative; padding-left: 30px; font-size: 15.5px;
+  line-height: 1.5; color: var(--lm-ink);
+}
+.lm-dest-highlights li::before {
+  content: ''; position: absolute; left: 0; top: 1px; width: 19px; height: 19px; border-radius: 50%;
+  background: var(--lm-primary) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='11' height='11' fill='none' stroke='white' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='2 6 5 9 10 3'/%3E%3C/svg%3E") center/11px no-repeat;
+}
+.lm-dest-intro__media { position: relative; }
+.lm-dest-intro__media img {
+  width: 100%; aspect-ratio: 4 / 4.7; object-fit: cover; display: block;
+  border-radius: var(--lm-radius); box-shadow: var(--lm-shadow-lg);
+}
+.lm-dest-intro__badge {
+  position: absolute; left: -20px; bottom: 30px;
+  display: flex; align-items: center; gap: 12px;
+  background: var(--lm-white); border-radius: 16px;
+  box-shadow: var(--lm-shadow); padding: 13px 20px 13px 18px;
+  border: 1px solid var(--lm-line);
+}
+.lm-dest-intro__badge strong { font-family: var(--font-head); font-size: 30px; line-height: 1; color: var(--lm-primary); }
+.lm-dest-intro__badge span { font-size: 12.5px; line-height: 1.3; color: var(--lm-ink-muted); max-width: 92px; }
+@media (max-width: 900px) {
+  .lm-dest-intro { grid-template-columns: 1fr; gap: 34px; }
+  .lm-dest-intro__copy { max-width: none; }
+  .lm-dest-intro__media img { aspect-ratio: 16 / 10; }
+  .lm-dest-intro__badge { left: 16px; bottom: 16px; }
+}

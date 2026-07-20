@@ -11,8 +11,16 @@ const ArrowR = (
 
 const INTRO_P1 =
   "Discover the perfect blend of innovation, culture, and history with unforgettable Chicago educational tours designed to engage and inspire students at every level. Known for its iconic skyline and rich heritage, Chicago offers an immersive environment where classroom concepts come to life through real-world experiences. From the shores of Lake Michigan to its vibrant downtown streets, every moment presents an opportunity for meaningful learning."
-const INTRO_P2 =
-  "Our expertly planned student trips to Chicago provide access to some of the nation’s most renowned educational attractions. Students can explore interactive exhibits at the Museum of Science and Industry, uncover natural history at the Field Museum, or gain new perspectives at the Art Institute of Chicago. Architecture tours along the Chicago River reveal the city’s groundbreaking design legacy, while visits to historic neighborhoods highlight its cultural diversity and influence."
+
+// Scannable highlights drawn from the destination's renowned educational
+// attractions (keeps the SEO keywords, adds structure per NN/g's layer-cake).
+const HIGHLIGHTS = [
+  "Interactive exhibits at the Museum of Science and Industry",
+  "Natural history discoveries at the Field Museum",
+  "World-class works at the Art Institute of Chicago",
+  "Architecture boat tours along the Chicago River",
+  "Historic neighborhoods rich in culture and influence",
+]
 
 const TRIPS = [
   { title: "Chicago Student Tour", duration: "3 Day / 2 Night", img: '/images/landmark/chicago-1.jpg', href: "/usa-trips/chicago/chicago-student-tour/" },
@@ -40,12 +48,25 @@ export default function Chicago() {
       {/* Intro */}
       <section className="ile-section ile-section--white">
         <div className="ile-container">
-          <div className="ilp-prose ilp-prose--center">
-            <p>{INTRO_P1}</p>
-            <p>{INTRO_P2}</p>
-          </div>
-          <div className="ile-center" style={{ marginTop: 32 }}>
-            <Link href="/get-a-quote/" className="ile-btn ile-btn--primary">Start Planning Your Trip</Link>
+          <div className="lm-dest-intro">
+            <div className="lm-dest-intro__copy">
+              <span className="ile-eyebrow">Why Chicago</span>
+              <div className="lm-dest-lead">
+                <p>{INTRO_P1}</p>
+              </div>
+              <p className="lm-dest-sub">WHAT STUDENTS EXPLORE</p>
+              <ul className="lm-dest-highlights">
+                {HIGHLIGHTS.map((h) => <li key={h}>{h}</li>)}
+              </ul>
+              <Link href="/get-a-quote/" className="ile-btn ile-btn--primary">Start Planning Your Trip</Link>
+            </div>
+            <div className="lm-dest-intro__media">
+              <img src="/images/landmark/chicago-3.jpg" alt="Students on a Chicago educational tour" loading="lazy" />
+              <div className="lm-dest-intro__badge">
+                <strong>{TRIPS.length}</strong>
+                <span>curated itineraries</span>
+              </div>
+            </div>
           </div>
         </div>
       </section>
