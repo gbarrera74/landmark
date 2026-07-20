@@ -27,7 +27,7 @@ export default function GetAQuotePage() {
             <p className="lm-form-intro" style={{ textAlign: 'center' }}>
               Tell us where you would like to go and a bit about your group. We will follow up with a customized quote and next steps.
             </p>
-            <HubSpotForm formId="92cdbac9-6777-40bf-b36a-29c092b7bef5" />
+            <HubSpotForm formId="2bb4a315-aed5-475b-b26d-63619efafea7" />
           </div>
         </div>
       </section>

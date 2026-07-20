@@ -1556,6 +1556,17 @@ select.ilm-input { appearance: none; -webkit-appearance: none; cursor: pointer;
 }
 .lm-hsform .submitted-message { font-size: 16px; color: var(--lm-ink); line-height: 1.7; padding: 8px 0; }
 .lm-hsform .hs-form .field.hs-form-field .input { margin-right: 0 !important; }
+/* Clean side-by-side fields (first/last name etc.) — replaces HubSpot's glitchy
+   float columns with a grid; collapses to one column on small screens. */
+.lm-hsform .form-columns-2 { display: grid; grid-template-columns: 1fr 1fr; column-gap: 16px; }
+.lm-hsform .form-columns-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; column-gap: 16px; }
+.lm-hsform .form-columns-2 > .hs-form-field,
+.lm-hsform .form-columns-3 > .hs-form-field { width: 100% !important; float: none !important; padding: 0 !important; }
+.lm-hsform .form-columns-2 .input,
+.lm-hsform .form-columns-3 .input { margin-right: 0 !important; }
+@media (max-width: 560px) {
+  .lm-hsform .form-columns-2, .lm-hsform .form-columns-3 { grid-template-columns: 1fr; }
+}
 
 /* Meetings scheduler (direct iframe) */
 .lm-meetings { display: block; width: 100%; min-height: 700px; border: 0; border-radius: var(--lm-radius); background: var(--lm-white); box-shadow: var(--lm-shadow); }
