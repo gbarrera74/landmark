@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from 'next/link'
 import PageHero from '@/components/PageHero'
+import DestinationIntro from '@/components/DestinationIntro'
 import BrochureBand from '@/components/BrochureBand'
 import JsonLd from '@/lib/seo/JsonLd'
 import { breadcrumb, destinationGraph } from '@/lib/seo/schemas'
@@ -11,9 +12,13 @@ const ArrowR = (
 
 const INTRO_P1 =
   "Seattle tells a story of innovation, exploration, and natural wonder. Through our thoughtfully designed educational field trips in Seattle, students encounter the pioneering spirit of the tech industry alongside the rich maritime and cultural history of the Pacific Northwest. Visiting iconic landmarks becomes a catalyst for curiosity and hands-on discovery."
-const INTRO_P2 =
-  "Our educational tours in Seattle combine science, industry, and regional culture into a cohesive learning journey. From interactive exhibits at leading museums to guided visits at working waterfronts and historic markets, each moment invites students to think critically about innovation and the world around them. Landmark Educational Tours handles the coordination so that educators can focus on facilitating impactful learning experiences. Educational Trips in Seattle leave students inspired and ready to approach the future with curiosity, creativity, and confidence."
 
+const HIGHLIGHTS = [
+  "Interactive exhibits at leading museums",
+  "Working waterfronts and historic markets",
+  "Pacific Northwest maritime history",
+  "Innovation and the tech industry",
+]
 const TRIPS = [
   { title: "Seattle School Trip", duration: "4 Day / 3 Night", img: '/images/landmark/seattle-1.jpg', href: "/usa-trips/seattle/seattle-school-trip/" },
 ]
@@ -36,17 +41,14 @@ export default function Seattle() {
       />
 
       {/* Intro */}
-      <section className="ile-section ile-section--white">
-        <div className="ile-container">
-          <div className="ilp-prose ilp-prose--center">
-            <p>{INTRO_P1}</p>
-            <p>{INTRO_P2}</p>
-          </div>
-          <div className="ile-center" style={{ marginTop: 32 }}>
-            <Link href="/get-a-quote/" className="ile-btn ile-btn--primary">Start Planning Your Trip</Link>
-          </div>
-        </div>
-      </section>
+      <DestinationIntro
+        city="Seattle"
+        lead={INTRO_P1}
+        highlights={HIGHLIGHTS}
+        image="/images/landmark/seattle-1.jpg"
+        imageAlt="The Seattle skyline and waterfront"
+        tripCount={TRIPS.length}
+      />
 
       {/* Trips */}
       <section className="ile-section ile-section--cream" aria-labelledby="seattle-trips-h">

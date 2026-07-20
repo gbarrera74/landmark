@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from 'next/link'
 import PageHero from '@/components/PageHero'
+import DestinationIntro from '@/components/DestinationIntro'
 import BrochureBand from '@/components/BrochureBand'
 import JsonLd from '@/lib/seo/JsonLd'
 import { breadcrumb, destinationGraph } from '@/lib/seo/schemas'
@@ -11,9 +12,13 @@ const ArrowR = (
 
 const INTRO_P1 =
   "Educational trips to Charleston, SC offer students an unforgettable opportunity to experience history where it began. At Landmark Educational Tours, we design Charleston field trips that connect classroom lessons to powerful, real-world moments. From walking the historic streets of the French Quarter and exploring Fort Sumter to touring antebellum plantations along the coast, students will gain a deeper understanding of American history, culture, and the complexities of our nation’s past."
-const INTRO_P2 =
-  "Our team works closely with schools and administrators to plan every detail of the trip, providing a secure, well-organized, and meaningful experience suited to any grade level or group size. We manage the logistics, lodging, and guided programming so educators can devote their energy to what matters most, their students. Let us bring your curriculum to life with an educational trip to Charleston, SC that sparks curiosity, builds confidence, and fosters a lifelong love of learning."
 
+const HIGHLIGHTS = [
+  "The historic French Quarter",
+  "Fort Sumter and the Civil War",
+  "Antebellum plantations along the coast",
+  "American history and its complexities",
+]
 const TRIPS = [
   { title: "Charleston Field Trip", duration: "3 Day / 2 Night", img: '/images/landmark/charleston-1.jpg', href: "/usa-trips/charleston/charleston-field-trip/" },
   { title: "Charleston School Trip", duration: "2 Day / 1 Night", img: '/images/landmark/charleston-2.jpg', href: "/usa-trips/charleston/charleston-school-trip/" },
@@ -37,17 +42,14 @@ export default function Charleston() {
       />
 
       {/* Intro */}
-      <section className="ile-section ile-section--white">
-        <div className="ile-container">
-          <div className="ilp-prose ilp-prose--center">
-            <p>{INTRO_P1}</p>
-            <p>{INTRO_P2}</p>
-          </div>
-          <div className="ile-center" style={{ marginTop: 32 }}>
-            <Link href="/get-a-quote/" className="ile-btn ile-btn--primary">Start Planning Your Trip</Link>
-          </div>
-        </div>
-      </section>
+      <DestinationIntro
+        city="Charleston"
+        lead={INTRO_P1}
+        highlights={HIGHLIGHTS}
+        image="/images/landmark/charleston-1.jpg"
+        imageAlt="Historic Charleston, South Carolina"
+        tripCount={TRIPS.length}
+      />
 
       {/* Trips */}
       <section className="ile-section ile-section--cream" aria-labelledby="charleston-trips-h">

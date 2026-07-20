@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from 'next/link'
 import PageHero from '@/components/PageHero'
+import DestinationIntro from '@/components/DestinationIntro'
 import BrochureBand from '@/components/BrochureBand'
 import JsonLd from '@/lib/seo/JsonLd'
 import { breadcrumb, destinationGraph } from '@/lib/seo/schemas'
@@ -11,10 +12,12 @@ const ArrowR = (
 
 const INTRO_P1 =
   'Cobblestone streets. Revolutionary ideas. Academic excellence. An educational trip to Boston immerses students in the birthplace of American independence while connecting them to the future of higher education. Walking the Freedom Trail transforms history into something tangible and unforgettable.'
-const INTRO_P2 =
-  'We craft our student trips to Boston for engagement, not passive sightseeing. Students ask questions in historic meeting houses, stand where pivotal debates unfolded, and tour renowned universities that spark future aspirations. Landmark Educational Tours partners with schools to make sure every detail supports safety and curriculum objectives.'
-const INTRO_P3 =
-  'Boston offers a powerful blend of past and present, encouraging students to see themselves as part of an ongoing story. When learners return home, they carry perspective, confidence, and motivation. Book your educational trip to Boston today.'
+const HIGHLIGHTS = [
+  "Walking the historic Freedom Trail",
+  "Revolutionary-era meeting houses",
+  "Tours of renowned universities",
+  "Newport mansions and Salem, MA",
+]
 
 const TRIPS = [
   { title: '3 Day Boston Field Trip', duration: '3 Day / 2 Night', img: '/images/landmark/boston-duck-boat-tour.jpeg', href: '/usa-trips/boston/3-day-boston-field-trip/' },
@@ -43,18 +46,14 @@ export default function Boston() {
       />
 
       {/* Intro */}
-      <section className="ile-section ile-section--white">
-        <div className="ile-container">
-          <div className="ilp-prose ilp-prose--center">
-            <p>{INTRO_P1}</p>
-            <p>{INTRO_P2}</p>
-            <p>{INTRO_P3}</p>
-          </div>
-          <div className="ile-center" style={{ marginTop: 32 }}>
-            <Link href="/get-a-quote/" className="ile-btn ile-btn--primary">Start Planning Your Trip</Link>
-          </div>
-        </div>
-      </section>
+      <DestinationIntro
+        city="Boston"
+        lead={INTRO_P1}
+        highlights={HIGHLIGHTS}
+        image="/images/landmark/boston-old-state-house.jpg"
+        imageAlt="Boston's historic Old State House"
+        tripCount={TRIPS.length}
+      />
 
       {/* Trips */}
       <section className="ile-section ile-section--cream" aria-labelledby="bos-trips-h">

@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from 'next/link'
 import PageHero from '@/components/PageHero'
+import DestinationIntro from '@/components/DestinationIntro'
 import BrochureBand from '@/components/BrochureBand'
 import JsonLd from '@/lib/seo/JsonLd'
 import { breadcrumb, destinationGraph } from '@/lib/seo/schemas'
@@ -11,9 +12,13 @@ const ArrowR = (
 
 const INTRO_P1 =
   "Educational trips to Williamsburg, VA offer students an unforgettable opportunity to experience history where it began. At Landmark Educational Tours, we design Williamsburg field trips that connect classroom lessons to powerful, real-world moments. From walking the streets of Colonial Williamsburg and exploring historic trade shops to standing inside the Governor’s Palace, students will gain a deeper understanding of colonial life, self-governance, and the roots of American independence."
-const INTRO_P2 =
-  "Our team works hand-in-hand with schools and administrators to tailor every aspect of the trip, delivering a safe, well-organized, and impactful experience for groups of all grade levels and sizes. From travel logistics to lodging and structured programming, we take care of the details so educators can stay focused on what matters most: student learning. Let us bring your curriculum to life with an educational trip to Williamsburg, VA that sparks curiosity, builds confidence, and creates lasting memories."
 
+const HIGHLIGHTS = [
+  "The streets of Colonial Williamsburg",
+  "Historic colonial trade shops",
+  "Inside the Governor's Palace",
+  "Colonial life and self-governance",
+]
 const TRIPS = [
   { title: "Williamsburg School Trip", duration: "3 Day / 2 Night", img: '/images/landmark/williamsburg-1.jpg', href: "/usa-trips/williamsburg/williamsburg-school-trip/" },
   { title: "Williamsburg Field Trip", duration: "2 Day / 1 Night", img: '/images/landmark/williamsburg-2.jpg', href: "/usa-trips/williamsburg/williamsburg-field-trip/" },
@@ -37,17 +42,14 @@ export default function Williamsburg() {
       />
 
       {/* Intro */}
-      <section className="ile-section ile-section--white">
-        <div className="ile-container">
-          <div className="ilp-prose ilp-prose--center">
-            <p>{INTRO_P1}</p>
-            <p>{INTRO_P2}</p>
-          </div>
-          <div className="ile-center" style={{ marginTop: 32 }}>
-            <Link href="/get-a-quote/" className="ile-btn ile-btn--primary">Start Planning Your Trip</Link>
-          </div>
-        </div>
-      </section>
+      <DestinationIntro
+        city="Williamsburg"
+        lead={INTRO_P1}
+        highlights={HIGHLIGHTS}
+        image="/images/landmark/williamsburg-1.jpg"
+        imageAlt="Colonial Williamsburg's historic district"
+        tripCount={TRIPS.length}
+      />
 
       {/* Trips */}
       <section className="ile-section ile-section--cream" aria-labelledby="williamsburg-trips-h">

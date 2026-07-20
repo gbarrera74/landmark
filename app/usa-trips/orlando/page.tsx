@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from 'next/link'
 import PageHero from '@/components/PageHero'
+import DestinationIntro from '@/components/DestinationIntro'
 import BrochureBand from '@/components/BrochureBand'
 import JsonLd from '@/lib/seo/JsonLd'
 import { breadcrumb, destinationGraph } from '@/lib/seo/schemas'
@@ -11,9 +12,13 @@ const ArrowR = (
 
 const INTRO_P1 =
   "Orlando is a launchpad destination for imagination and innovation. Our educational tours in Orlando blend hands-on STEM learning, leadership development, and performance opportunities into one seamless experience. Students can explore engineering concepts in interactive workshops or step into behind-the-scenes programs that reveal how creativity meets technology."
-const INTRO_P2 =
-  "Unlike traditional Orlando field trips, we design each program around your school’s educational goals. Whether you’re inspiring future scientists, performers, or entrepreneurs, every activity has a distinct purpose. Landmark Educational Tours coordinates travel, accommodations, and daily schedules with precision, allowing teachers and chaperones to stay focused on student engagement. The result is an educational tour in Orlando that feels exciting, organized, and academically meaningful. Orlando becomes a place where students see what they’re capable of achieving."
 
+const HIGHLIGHTS = [
+  "Hands-on STEM engineering workshops",
+  "Behind-the-scenes creative programs",
+  "Leadership and performance opportunities",
+  "Where creativity meets technology",
+]
 const TRIPS = [
   { title: "Orlando Student Trip", duration: "3 Day / 2 Night", img: '/images/landmark/orlando-1.jpg', href: "/usa-trips/orlando/orlando-student-tour/" },
   { title: "Orlando Extended Student Tour", duration: "5 Day / 4 Night", img: '/images/landmark/orlando-2.jpg', href: "/usa-trips/orlando/orlando-student-tour-extended/" },
@@ -38,17 +43,14 @@ export default function Orlando() {
       />
 
       {/* Intro */}
-      <section className="ile-section ile-section--white">
-        <div className="ile-container">
-          <div className="ilp-prose ilp-prose--center">
-            <p>{INTRO_P1}</p>
-            <p>{INTRO_P2}</p>
-          </div>
-          <div className="ile-center" style={{ marginTop: 32 }}>
-            <Link href="/get-a-quote/" className="ile-btn ile-btn--primary">Start Planning Your Trip</Link>
-          </div>
-        </div>
-      </section>
+      <DestinationIntro
+        city="Orlando"
+        lead={INTRO_P1}
+        highlights={HIGHLIGHTS}
+        image="/images/landmark/orlando-1.jpg"
+        imageAlt="Orlando on a student educational tour"
+        tripCount={TRIPS.length}
+      />
 
       {/* Trips */}
       <section className="ile-section ile-section--cream" aria-labelledby="orlando-trips-h">

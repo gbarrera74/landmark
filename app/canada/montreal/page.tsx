@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from 'next/link'
 import PageHero from '@/components/PageHero'
+import DestinationIntro from '@/components/DestinationIntro'
 import BrochureBand from '@/components/BrochureBand'
 import JsonLd from '@/lib/seo/JsonLd'
 import { breadcrumb } from '@/lib/seo/schemas'
@@ -11,9 +12,13 @@ const ArrowR = (
 
 const INTRO_P1 =
   "Montreal blends European charm with modern creativity, from the cobblestones of Old Montreal to its museums, markets, and festivals. Students immerse themselves in French language and culture in one of North America's most vibrant bilingual cities."
-const INTRO_P2 =
-  "Every Montreal itinerary is fully customizable, from a quick two-day visit to a multi-day French-immersion program built around your group's curriculum and goals."
 
+const HIGHLIGHTS = [
+  "The cobblestones of Old Montreal",
+  "Museums, markets, and festivals",
+  "French-language immersion",
+  "A vibrant bilingual city",
+]
 const TRIPS = [
   { title: "2 Day Montreal School Trip", duration: "2 Day / 1 Night", img: "/images/landmark/montreal-1.jpg", href: "/canada/montreal/2-day-montreal-school-trip/" },
   { title: "3 Day Montreal School Trip", duration: "3 Day / 2 Night", img: "/images/landmark/montreal-2.jpg", href: "/canada/montreal/3-day-montreal-school-trip/" },
@@ -45,17 +50,14 @@ export default function Montreal() {
       />
 
       {/* Intro */}
-      <section className="ile-section ile-section--white">
-        <div className="ile-container">
-          <div className="ilp-prose ilp-prose--center">
-            <p>{INTRO_P1}</p>
-            <p>{INTRO_P2}</p>
-          </div>
-          <div className="ile-center" style={{ marginTop: 32 }}>
-            <Link href="/get-a-quote/" className="ile-btn ile-btn--primary">Start Planning Your Trip</Link>
-          </div>
-        </div>
-      </section>
+      <DestinationIntro
+        city="Montreal"
+        lead={INTRO_P1}
+        highlights={HIGHLIGHTS}
+        image="/images/landmark/montreal-hero.jpg"
+        imageAlt="Old Montreal's historic streets"
+        tripCount={TRIPS.length}
+      />
 
       {/* Trips */}
       <section className="ile-section ile-section--cream" aria-labelledby="montreal-trips-h">

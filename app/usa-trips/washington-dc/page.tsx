@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from 'next/link'
 import PageHero from '@/components/PageHero'
+import DestinationIntro from '@/components/DestinationIntro'
 import BrochureBand from '@/components/BrochureBand'
 import JsonLd from '@/lib/seo/JsonLd'
 import { breadcrumb, destinationGraph } from '@/lib/seo/schemas'
@@ -11,9 +12,14 @@ const ArrowR = (
 
 const INTRO_P1 =
   'Educational trips to Washington, DC offer students an unforgettable opportunity to experience history where it began. At Landmark Educational Tours, we design Washington DC field trips that connect classroom lessons to powerful, real-world moments. From walking the National Mall and exploring the Smithsonian museums to standing inside the US Capitol, students will gain a deeper understanding of democracy, leadership, and civic responsibility.'
-const INTRO_P2 =
-  'Our team partners closely with schools and administrators to customize every detail, ensuring a safe, seamless, and meaningful experience for a range of grades and class sizes. We handle logistics, accommodations, and guided programming so that educators can focus on student engagement. Let us transform your curriculum with an educational trip to Washington, DC that inspires curiosity, confidence, and lifelong learning.'
 
+const HIGHLIGHTS = [
+  "Walking the National Mall",
+  "The Smithsonian museums",
+  "Inside the U.S. Capitol",
+  "The Jefferson and MLK memorials",
+  "African American history at the NMAAHC",
+]
 const TRIPS = [
   { title: 'HBCU Campus Tours', duration: '7 Day / 6 Night', img: '/images/landmark/dc-howard-university.jpg', href: '/usa-trips/washington-dc/hbcu-campus-tours/' },
   { title: 'Class Trip Programs for Middle School Students', duration: '3 Day / 2 Night', img: '/images/landmark/dc-capitol.jpg', href: '/usa-trips/washington-dc/class-trip-programs-for-middle-school-students/' },
@@ -44,17 +50,14 @@ export default function WashingtonDC() {
       />
 
       {/* Intro */}
-      <section className="ile-section ile-section--white">
-        <div className="ile-container">
-          <div className="ilp-prose ilp-prose--center">
-            <p>{INTRO_P1}</p>
-            <p>{INTRO_P2}</p>
-          </div>
-          <div className="ile-center" style={{ marginTop: 32 }}>
-            <Link href="/get-a-quote/" className="ile-btn ile-btn--primary">Start Planning Your Trip</Link>
-          </div>
-        </div>
-      </section>
+      <DestinationIntro
+        city="Washington, D.C."
+        lead={INTRO_P1}
+        highlights={HIGHLIGHTS}
+        image="/images/landmark/dc-capitol.jpg"
+        imageAlt="The White House in Washington, D.C."
+        tripCount={TRIPS.length}
+      />
 
       {/* Trips */}
       <section className="ile-section ile-section--cream" aria-labelledby="dc-trips-h">

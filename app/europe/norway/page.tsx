@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from 'next/link'
 import PageHero from '@/components/PageHero'
+import DestinationIntro from '@/components/DestinationIntro'
 import BrochureBand from '@/components/BrochureBand'
 import JsonLd from '@/lib/seo/JsonLd'
 import { breadcrumb, destinationGraph } from '@/lib/seo/schemas'
@@ -11,9 +12,13 @@ const ArrowR = (
 
 const INTRO_P1 =
   "Educational Trips in Norway immerse students in a land shaped by dramatic natural beauty while connecting them to a culture built on exploration and environmental stewardship. Cruising through steep-walled fjords transforms geography into something tangible and unforgettable. We design our student trips to Norway for genuine engagement, not passive sightseeing. Students uncover the history of Viking seafarers, visit museums dedicated to Arctic exploration, and learn how the country leads the way in renewable energy and sustainable practices."
-const INTRO_P2 =
-  "Landmark Educational Tours partners with schools to make sure every detail supports safety and curriculum objectives. Norway offers a striking blend of natural wonder and forward-thinking culture, encouraging students to consider their own role in protecting the planet. When learners return home, they carry perspective, confidence, and motivation. Book your educational trip to Norway today."
 
+const HIGHLIGHTS = [
+  "Cruising steep-walled fjords",
+  "The history of Viking seafarers",
+  "Museums of Arctic exploration",
+  "A world leader in renewable energy",
+]
 const TRIPS = [
   { title: "10 Day Norway School Trip", duration: "10 Day / 9 Night", img: '/images/landmark/norway-1.jpg', href: "/europe/norway/10-day-norway-school-trip/" },
 ]
@@ -43,17 +48,14 @@ export default function Norway() {
       />
 
       {/* Intro */}
-      <section className="ile-section ile-section--white">
-        <div className="ile-container">
-          <div className="ilp-prose ilp-prose--center">
-            <p>{INTRO_P1}</p>
-            <p>{INTRO_P2}</p>
-          </div>
-          <div className="ile-center" style={{ marginTop: 32 }}>
-            <Link href="/get-a-quote/" className="ile-btn ile-btn--primary">Start Planning Your Trip</Link>
-          </div>
-        </div>
-      </section>
+      <DestinationIntro
+        city="Norway"
+        lead={INTRO_P1}
+        highlights={HIGHLIGHTS}
+        image="/images/landmark/norway-1.jpg"
+        imageAlt="A dramatic Norwegian fjord"
+        tripCount={TRIPS.length}
+      />
 
       {/* Trips */}
       <section className="ile-section ile-section--cream" aria-labelledby="norway-trips-h">

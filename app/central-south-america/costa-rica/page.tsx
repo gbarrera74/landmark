@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from 'next/link'
 import PageHero from '@/components/PageHero'
+import DestinationIntro from '@/components/DestinationIntro'
 import BrochureBand from '@/components/BrochureBand'
 import JsonLd from '@/lib/seo/JsonLd'
 import { breadcrumb, destinationGraph } from '@/lib/seo/schemas'
@@ -11,9 +12,13 @@ const ArrowR = (
 
 const INTRO_P1 =
   "Rainforest canopies. Volcanic landscapes. Sustainable living. Educational Trips to Costa Rica immerse students in one of the world's most biodiverse countries while connecting them to global conversations about conservation and environmental responsibility. Hiking through lush cloud forests transforms science into something tangible and unforgettable."
-const INTRO_P2 =
-  "We design our student trips to Costa Rica for genuine engagement, not passive sightseeing. Students explore active volcanoes, learn from local conservationists working to protect endangered ecosystems, and experience firsthand how a nation built its identity around sustainability. Landmark Educational Tours partners with schools to make sure every detail supports safety and curriculum objectives. Costa Rica offers a powerful blend of adventure and environmental education, encouraging students to see themselves as stewards of the natural world. When learners return home, they carry perspective, confidence, and motivation. Book your educational trip to Costa Rica today."
 
+const HIGHLIGHTS = [
+  "Hiking lush cloud forests",
+  "Active volcanoes up close",
+  "Learning from local conservationists",
+  "A nation built on sustainability",
+]
 const TRIPS = [
   { title: "7 Day Costa Rica School Trip", duration: "7 Day / 6 Night", img: '/images/landmark/costa-rica-1.jpg', href: "/central-south-america/costa-rica/7-day-costa-rica-school-trip/" },
   { title: "6 Day Costa Rica School Trip", duration: "6 Day / 5 Night", img: '/images/landmark/costa-rica-2.jpg', href: "/central-south-america/costa-rica/6-day-costa-rica-school-trip/" },
@@ -44,17 +49,14 @@ export default function CostaRica() {
       />
 
       {/* Intro */}
-      <section className="ile-section ile-section--white">
-        <div className="ile-container">
-          <div className="ilp-prose ilp-prose--center">
-            <p>{INTRO_P1}</p>
-            <p>{INTRO_P2}</p>
-          </div>
-          <div className="ile-center" style={{ marginTop: 32 }}>
-            <Link href="/get-a-quote/" className="ile-btn ile-btn--primary">Start Planning Your Trip</Link>
-          </div>
-        </div>
-      </section>
+      <DestinationIntro
+        city="Costa Rica"
+        lead={INTRO_P1}
+        highlights={HIGHLIGHTS}
+        image="/images/landmark/costa-rica-1.jpg"
+        imageAlt="Costa Rica's rainforest and volcanoes"
+        tripCount={TRIPS.length}
+      />
 
       {/* Trips */}
       <section className="ile-section ile-section--cream" aria-labelledby="costarica-trips-h">

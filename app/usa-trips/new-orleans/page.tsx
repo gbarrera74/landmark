@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from 'next/link'
 import PageHero from '@/components/PageHero'
+import DestinationIntro from '@/components/DestinationIntro'
 import BrochureBand from '@/components/BrochureBand'
 import JsonLd from '@/lib/seo/JsonLd'
 import { breadcrumb, destinationGraph } from '@/lib/seo/schemas'
@@ -11,9 +12,13 @@ const ArrowR = (
 
 const INTRO_P1 =
   "Educational trips in New Orleans offer students an unforgettable opportunity to experience history where it began. At Landmark Educational Tours, we design New Orleans field trips that connect classroom lessons to powerful, real-world moments. From walking the streets of the French Quarter and exploring the National WWII Museum to learning the roots of jazz along the riverfront, students will gain a deeper understanding of culture, resilience, and American history."
-const INTRO_P2 =
-  "Our team works closely with schools and administrators to shape every part of the journey, creating a safe, well-planned, and memorable experience for groups of all grade levels and sizes. We take care of the travel logistics, accommodations, and guided programming so educators can stay focused on what matters most, engaging their students. Let us bring your curriculum to life with an educational trip to New Orleans that inspires curiosity, confidence, and a lasting love of learning."
 
+const HIGHLIGHTS = [
+  "The historic French Quarter",
+  "The National WWII Museum",
+  "The roots of jazz along the riverfront",
+  "Culture, resilience, and history",
+]
 const TRIPS = [
   { title: "New Orleans Student Tour", duration: "2 Day / 1 Night", img: '/images/landmark/new-orleans-1.jpg', href: "/usa-trips/new-orleans/new-orleans-student-tour/" },
   { title: "3 Day New Orleans School Trip", duration: "3 Day / 2 Night", img: '/images/landmark/new-orleans-2.jpg', href: "/usa-trips/new-orleans/3-day-new-orleans-school-trip/" },
@@ -38,17 +43,14 @@ export default function NewOrleans() {
       />
 
       {/* Intro */}
-      <section className="ile-section ile-section--white">
-        <div className="ile-container">
-          <div className="ilp-prose ilp-prose--center">
-            <p>{INTRO_P1}</p>
-            <p>{INTRO_P2}</p>
-          </div>
-          <div className="ile-center" style={{ marginTop: 32 }}>
-            <Link href="/get-a-quote/" className="ile-btn ile-btn--primary">Start Planning Your Trip</Link>
-          </div>
-        </div>
-      </section>
+      <DestinationIntro
+        city="New Orleans"
+        lead={INTRO_P1}
+        highlights={HIGHLIGHTS}
+        image="/images/landmark/new-orleans-1.jpg"
+        imageAlt="The French Quarter in New Orleans"
+        tripCount={TRIPS.length}
+      />
 
       {/* Trips */}
       <section className="ile-section ile-section--cream" aria-labelledby="neworleans-trips-h">

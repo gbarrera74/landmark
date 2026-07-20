@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from 'next/link'
 import PageHero from '@/components/PageHero'
+import DestinationIntro from '@/components/DestinationIntro'
 import BrochureBand from '@/components/BrochureBand'
 import JsonLd from '@/lib/seo/JsonLd'
 import { breadcrumb, destinationGraph } from '@/lib/seo/schemas'
@@ -11,9 +12,14 @@ const ArrowR = (
 
 const INTRO_P1 =
   'Atlanta tells a story of resilience, leadership, and cultural influence. Through our thoughtfully designed educational field trips in Atlanta, students encounter the powerful legacy of the Civil Rights Movement and the voices that shaped social change. Visiting historic sites becomes a catalyst for meaningful dialogue and personal reflection.'
-const INTRO_P2 =
-  'Our educational tours in Atlanta combine history, innovation, and Southern culture into a cohesive learning journey. From interactive museum experiences to guided discussions at significant landmarks, each moment invites students to think critically about the world around them. Landmark Educational Tours handles the coordination so that educators can focus on facilitating impactful conversations. Field trips in Atlanta leave students empowered and ready to lead with empathy, courage, and awareness.'
 
+const HIGHLIGHTS = [
+  "The Civil Rights Movement's landmark sites",
+  "Guided discussions at historic landmarks",
+  "Interactive, hands-on museum experiences",
+  "HBCU campus visits",
+  "Southern history and culture",
+]
 const TRIPS = [
   { title: 'Atlanta & Beyond', duration: '3 Day / 2 Night', img: '/images/landmark/atlanta-skyline-night.jpg', href: '/usa-trips/atlanta/atlantabeyond/' },
   { title: '3 Day Atlanta Field Trip', duration: '3 Day / 2 Night', img: '/images/landmark/atlanta-aerial.jpg', href: '/usa-trips/atlanta/3-day-atlanta-field-trip/' },
@@ -40,17 +46,14 @@ export default function Atlanta() {
       />
 
       {/* Intro */}
-      <section className="ile-section ile-section--white">
-        <div className="ile-container">
-          <div className="ilp-prose ilp-prose--center">
-            <p>{INTRO_P1}</p>
-            <p>{INTRO_P2}</p>
-          </div>
-          <div className="ile-center" style={{ marginTop: 32 }}>
-            <Link href="/get-a-quote/" className="ile-btn ile-btn--primary">Start Planning Your Trip</Link>
-          </div>
-        </div>
-      </section>
+      <DestinationIntro
+        city="Atlanta"
+        lead={INTRO_P1}
+        highlights={HIGHLIGHTS}
+        image="/images/landmark/atlanta-skyline-night.jpg"
+        imageAlt="The Atlanta skyline at dusk"
+        tripCount={TRIPS.length}
+      />
 
       {/* Trips */}
       <section className="ile-section ile-section--cream" aria-labelledby="atl-trips-h">

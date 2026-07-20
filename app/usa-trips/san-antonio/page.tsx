@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from 'next/link'
 import PageHero from '@/components/PageHero'
+import DestinationIntro from '@/components/DestinationIntro'
 import BrochureBand from '@/components/BrochureBand'
 import JsonLd from '@/lib/seo/JsonLd'
 import { breadcrumb, destinationGraph } from '@/lib/seo/schemas'
@@ -11,9 +12,13 @@ const ArrowR = (
 
 const INTRO_P1 =
   "Educational trips in San Antonio offer students an unforgettable opportunity to experience history where it began. At Landmark Educational Tours, we design San Antonio field trips that connect classroom lessons to powerful, real-world moments. From walking the grounds of the Alamo and exploring the historic Spanish missions to strolling along the River Walk, students will gain a deeper understanding of Texas history, cultural heritage, and the fight for independence."
-const INTRO_P2 =
-  "Our team works hand-in-hand with schools and administrators to shape a trip that fits each group’s unique needs, delivering a safe, well-coordinated, and enriching experience for any grade level or class size. From arranging travel and lodging to structuring guided programming, we manage the details so educators can stay focused on connecting with their students. Let us bring your curriculum to life with an educational trip to San Antonio, TX that inspires curiosity, confidence, and a lasting love of learning."
 
+const HIGHLIGHTS = [
+  "The Alamo and its history",
+  "Historic Spanish colonial missions",
+  "Strolls along the River Walk",
+  "Texas independence and heritage",
+]
 const TRIPS = [
   { title: "Intro to San Antonio Tour", duration: "5 Day / 4 Night", img: '/images/landmark/san-antonio-1.jpg', href: "/usa-trips/san-antonio/intro-to-san-antonio-tour/" },
   { title: "3 Day San Antonio School Trip", duration: "3 Day / 2 Night", img: '/images/landmark/san-antonio-2.jpg', href: "/usa-trips/san-antonio/3-day-san-antonio-school-trip/" },
@@ -38,17 +43,14 @@ export default function SanAntonio() {
       />
 
       {/* Intro */}
-      <section className="ile-section ile-section--white">
-        <div className="ile-container">
-          <div className="ilp-prose ilp-prose--center">
-            <p>{INTRO_P1}</p>
-            <p>{INTRO_P2}</p>
-          </div>
-          <div className="ile-center" style={{ marginTop: 32 }}>
-            <Link href="/get-a-quote/" className="ile-btn ile-btn--primary">Start Planning Your Trip</Link>
-          </div>
-        </div>
-      </section>
+      <DestinationIntro
+        city="San Antonio"
+        lead={INTRO_P1}
+        highlights={HIGHLIGHTS}
+        image="/images/landmark/san-antonio-1.jpg"
+        imageAlt="The River Walk in San Antonio, Texas"
+        tripCount={TRIPS.length}
+      />
 
       {/* Trips */}
       <section className="ile-section ile-section--cream" aria-labelledby="sanantonio-trips-h">

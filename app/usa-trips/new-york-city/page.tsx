@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from 'next/link'
 import PageHero from '@/components/PageHero'
+import DestinationIntro from '@/components/DestinationIntro'
 import BrochureBand from '@/components/BrochureBand'
 import JsonLd from '@/lib/seo/JsonLd'
 import { breadcrumb, destinationGraph } from '@/lib/seo/schemas'
@@ -11,9 +12,14 @@ const ArrowR = (
 
 const INTRO_P1 =
   'Educational trips in NYC immerse students in culture, history, arts, and global influence that they’re unlikely to experience anywhere else. Landmark Educational Tours crafts dynamic school trips to New York that align with your academic goals while delivering unforgettable experiences. Students can explore Ellis Island, tour the United Nations, experience Broadway workshops, and stand in the heart of Wall Street.'
-const INTRO_P2 =
-  'We thoughtfully design each itinerary for middle and high school learners, combining structured educational programming with inspiring cultural exposure. We work closely with schools and districts to manage travel logistics, safety planning, and customized learning objectives. From STEM-focused tours to performing arts intensives, we turn big-city exploration into purposeful growth. Let us help your students explore a world of possibilities during an educational trip to NYC.'
 
+const HIGHLIGHTS = [
+  "Ellis Island and its immigration story",
+  "A guided tour of the United Nations",
+  "Broadway theater workshops",
+  "The heart of Wall Street",
+  "World-class museums and the arts",
+]
 const TRIPS = [
   { title: '4 Day New York City School Trip', duration: '4 Day / 3 Night', img: '/images/landmark/emms-nyc.jpg', href: '/usa-trips/new-york-city/4-day-new-york-city-school-trip/' },
   { title: '5 Day New York City Field Trip', duration: '5 Day / 4 Night', img: '/images/landmark/murray-high-school-nyc.jpg', href: '/usa-trips/new-york-city/5-day-new-york-city-field-trip/' },
@@ -41,17 +47,14 @@ export default function NewYorkCity() {
       />
 
       {/* Intro */}
-      <section className="ile-section ile-section--white">
-        <div className="ile-container">
-          <div className="ilp-prose ilp-prose--center">
-            <p>{INTRO_P1}</p>
-            <p>{INTRO_P2}</p>
-          </div>
-          <div className="ile-center" style={{ marginTop: 32 }}>
-            <Link href="/get-a-quote/" className="ile-btn ile-btn--primary">Start Planning Your Trip</Link>
-          </div>
-        </div>
-      </section>
+      <DestinationIntro
+        city="New York City"
+        lead={INTRO_P1}
+        highlights={HIGHLIGHTS}
+        image="/images/landmark/broadway-sign-nyc.jpg"
+        imageAlt="A Broadway theater marquee in New York City"
+        tripCount={TRIPS.length}
+      />
 
       {/* Trips */}
       <section className="ile-section ile-section--cream" aria-labelledby="nyc-trips-h">

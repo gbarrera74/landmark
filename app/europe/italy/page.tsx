@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from 'next/link'
 import PageHero from '@/components/PageHero'
+import DestinationIntro from '@/components/DestinationIntro'
 import BrochureBand from '@/components/BrochureBand'
 import JsonLd from '@/lib/seo/JsonLd'
 import { breadcrumb, destinationGraph } from '@/lib/seo/schemas'
@@ -11,9 +12,14 @@ const ArrowR = (
 
 const INTRO_P1 =
   'Italy is the original classroom. In Rome, students walk the Forum where the Republic was argued into being, stand inside the Colosseum, and trace the reach of an empire whose language, law, and architecture still shape the world they live in. Florence turns the Renaissance from a chapter heading into something they can see: Brunelleschi’s dome, Michelangelo’s David, the workshops where perspective and humanism were invented. In the ruins of Pompeii, a single afternoon collapses two thousand years, and history stops being abstract.'
-const INTRO_P2 =
-  'A Landmark educational tour to Italy is built for learning, not just sightseeing. Students practice Italian in the markets, sketch in the Uffizi, follow the canals of Venice by vaporetto, and connect what they read in class to what they can touch, hear, and taste. Our team handles every detail: flights, documentation, licensed local guides, safe accommodations, and curriculum-aligned programming, so teachers can focus on their students and their students can focus on Italy.'
 
+const HIGHLIGHTS = [
+  "The Roman Forum and the Colosseum",
+  "Florence's Renaissance masterpieces",
+  "The ruins of Pompeii",
+  "The Uffizi and the canals of Venice",
+  "Practicing Italian in the markets",
+]
 const TRIPS = [
   { title: 'Classical Rome & Ancient History Tour', duration: '7 Day / 6 Night', blurb: 'The Colosseum, Roman Forum, Palatine Hill, and Vatican: antiquity made real for history and Latin students.', img: '/images/landmark/italy-rome.jpg', href: '/europe/italy/classical-rome-ancient-history-tour/' },
   { title: 'Renaissance Florence Art & History Program', duration: '6 Day / 5 Night', blurb: 'The Uffizi, the Duomo, and the Accademia: a hands-on study of Renaissance art, humanism, and innovation.', img: '/images/landmark/italy-florence.webp', href: '/europe/italy/renaissance-florence-art-program/' },
@@ -52,17 +58,14 @@ export default function Italy() {
       />
 
       {/* Intro */}
-      <section className="ile-section ile-section--white">
-        <div className="ile-container">
-          <div className="ilp-prose ilp-prose--center">
-            <p>{INTRO_P1}</p>
-            <p>{INTRO_P2}</p>
-          </div>
-          <div className="ile-center" style={{ marginTop: 32 }}>
-            <Link href="/get-a-quote/" className="ile-btn ile-btn--primary">Start Planning Your Trip</Link>
-          </div>
-        </div>
-      </section>
+      <DestinationIntro
+        city="Italy"
+        lead={INTRO_P1}
+        highlights={HIGHLIGHTS}
+        image="/images/landmark/italy-rome.jpg"
+        imageAlt="Ancient Roman ruins in Rome, Italy"
+        tripCount={TRIPS.length}
+      />
 
       {/* Trips */}
       <section className="ile-section ile-section--cream" aria-labelledby="it-trips-h">

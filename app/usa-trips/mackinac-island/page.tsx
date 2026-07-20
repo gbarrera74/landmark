@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from 'next/link'
 import PageHero from '@/components/PageHero'
+import DestinationIntro from '@/components/DestinationIntro'
 import BrochureBand from '@/components/BrochureBand'
 import JsonLd from '@/lib/seo/JsonLd'
 import { breadcrumb, destinationGraph } from '@/lib/seo/schemas'
@@ -11,9 +12,14 @@ const ArrowR = (
 
 const INTRO_P1 =
   "Fudge shops. Horse-drawn carriages. Timeless natural beauty. An educational trip to Mackinac Island transports students back to a world without cars, immersing them in 18th-century history while surrounded by the stunning landscapes of the Great Lakes. Walking the grounds of Fort Mackinac transforms history into something tangible and unforgettable. Our educational trips in Mackinac Island, MI are built around discovery, not just observation. Students explore preserved forts, learn about the island's role in the fur trade and the War of 1812, and experience a slower pace of life that offers a striking contrast to the modern world."
-const INTRO_P2 =
-  "Landmark Educational Tours works alongside schools to ensure every detail aligns with safety standards and curriculum goals. Mackinac Island offers a rare chance for students to step outside their everyday routines and see history preserved in a truly unique setting. When learners return home, they carry perspective, curiosity, and a deeper appreciation for the past. Book your educational trip to Mackinac Island today."
 
+const HIGHLIGHTS = [
+  "The grounds of historic Fort Mackinac",
+  "The island's fur-trade heritage",
+  "The War of 1812's legacy",
+  "Horse-drawn carriages, no cars",
+  "Great Lakes natural beauty",
+]
 const TRIPS = [
   { title: "Mackinac Island School Trip", duration: "2 Day / 1 Night", img: '/images/landmark/mackinac-1.jpg', href: "/usa-trips/mackinac-island/mackinac-island-school-trip/" },
   { title: "Mackinac Island Field Trip", duration: "2 Day / 1 Night", img: '/images/landmark/mackinac-2.jpg', href: "/usa-trips/mackinac-island/mackinac-island-field-trip/" },
@@ -37,17 +43,14 @@ export default function MackinacIsland() {
       />
 
       {/* Intro */}
-      <section className="ile-section ile-section--white">
-        <div className="ile-container">
-          <div className="ilp-prose ilp-prose--center">
-            <p>{INTRO_P1}</p>
-            <p>{INTRO_P2}</p>
-          </div>
-          <div className="ile-center" style={{ marginTop: 32 }}>
-            <Link href="/get-a-quote/" className="ile-btn ile-btn--primary">Start Planning Your Trip</Link>
-          </div>
-        </div>
-      </section>
+      <DestinationIntro
+        city="Mackinac Island"
+        lead={INTRO_P1}
+        highlights={HIGHLIGHTS}
+        image="/images/landmark/mackinac-1.jpg"
+        imageAlt="Historic Fort Mackinac on Mackinac Island"
+        tripCount={TRIPS.length}
+      />
 
       {/* Trips */}
       <section className="ile-section ile-section--cream" aria-labelledby="mackinac-trips-h">

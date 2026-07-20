@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from 'next/link'
 import PageHero from '@/components/PageHero'
+import DestinationIntro from '@/components/DestinationIntro'
 import BrochureBand from '@/components/BrochureBand'
 import JsonLd from '@/lib/seo/JsonLd'
 import { breadcrumb } from '@/lib/seo/schemas'
@@ -11,9 +12,14 @@ const ArrowR = (
 
 const INTRO_P1 =
   "Quebec City is the only walled city north of Mexico, and its cobblestone streets, star-shaped Citadelle, and the towering Chateau Frontenac make history impossible to ignore. Students practice French, explore Old Quebec, and, in winter, experience the world-famous Carnival firsthand."
-const INTRO_P2 =
-  "Every Quebec City itinerary is fully customizable, with spring-to-fall and winter programs from three to five days built around your group's curriculum and goals."
 
+const HIGHLIGHTS = [
+  "The only walled city north of Mexico",
+  "The star-shaped Citadelle",
+  "The towering Château Frontenac",
+  "French practice in Old Quebec",
+  "The world-famous Winter Carnival",
+]
 const TRIPS = [
   { title: "3 Day Quebec City Trip Itinerary", duration: "3 Day / 2 Night", img: "/images/landmark/quebec-1.jpg", href: "/canada/quebec-city/3-day-quebec-city-itinerary/" },
   { title: "4 Day Quebec City Trip Itinerary", duration: "4 Day / 3 Night", img: "/images/landmark/quebec-1.jpg", href: "/canada/quebec-city/4-day-quebec-city-itinerary/" },
@@ -48,17 +54,14 @@ export default function QuebecCity() {
       />
 
       {/* Intro */}
-      <section className="ile-section ile-section--white">
-        <div className="ile-container">
-          <div className="ilp-prose ilp-prose--center">
-            <p>{INTRO_P1}</p>
-            <p>{INTRO_P2}</p>
-          </div>
-          <div className="ile-center" style={{ marginTop: 32 }}>
-            <Link href="/get-a-quote/" className="ile-btn ile-btn--primary">Start Planning Your Trip</Link>
-          </div>
-        </div>
-      </section>
+      <DestinationIntro
+        city="Quebec City"
+        lead={INTRO_P1}
+        highlights={HIGHLIGHTS}
+        image="/images/landmark/quebec-hero.jpg"
+        imageAlt="The Château Frontenac in Old Quebec City"
+        tripCount={TRIPS.length}
+      />
 
       {/* Trips */}
       <section className="ile-section ile-section--cream" aria-labelledby="quebec-trips-h">

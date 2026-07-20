@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from 'next/link'
 import PageHero from '@/components/PageHero'
+import DestinationIntro from '@/components/DestinationIntro'
 import BrochureBand from '@/components/BrochureBand'
 import JsonLd from '@/lib/seo/JsonLd'
 import { breadcrumb, destinationGraph } from '@/lib/seo/schemas'
@@ -11,9 +12,13 @@ const ArrowR = (
 
 const INTRO_P1 =
   "Step into the birthplace of American independence with a Philadelphia educational tour that transforms history into a powerful, immersive experience for students. As one of the nation’s most significant cities, Philadelphia offers a unique opportunity to walk the same streets as the Founding Fathers while engaging in meaningful, real-world learning. From iconic landmarks to interactive museums, every stop invites students to connect deeply with the stories that shaped the United States."
-const INTRO_P2 =
-  "Landmark Educational Tours carefully designs our Philadelphia educational travel experiences to bring classroom lessons to life across history, government, and culture. Stand inside Independence Hall where the Declaration of Independence was debated, see the Liberty Bell up close, and explore the Constitution Center for an in-depth look at the nation’s founding principles. Students can also visit historic districts, engage with curated exhibits, and gain a deeper appreciation for the people and events that defined early America."
 
+const HIGHLIGHTS = [
+  "Independence Hall, where the Declaration was debated",
+  "The Liberty Bell up close",
+  "The National Constitution Center",
+  "Historic districts and curated exhibits",
+]
 const TRIPS = [
   { title: "Philadelphia Student Tour", duration: "2 Day / 1 Night", img: '/images/landmark/philadelphia-1.jpg', href: "/usa-trips/philadelphia/philadelphia-student-tour/" },
   { title: "2 Day Philadelphia School Trip", duration: "2 Day / 1 Night", img: '/images/landmark/philadelphia-2.jpg', href: "/usa-trips/philadelphia/2-day-philadelphia-school-trip/" },
@@ -38,17 +43,14 @@ export default function Philadelphia() {
       />
 
       {/* Intro */}
-      <section className="ile-section ile-section--white">
-        <div className="ile-container">
-          <div className="ilp-prose ilp-prose--center">
-            <p>{INTRO_P1}</p>
-            <p>{INTRO_P2}</p>
-          </div>
-          <div className="ile-center" style={{ marginTop: 32 }}>
-            <Link href="/get-a-quote/" className="ile-btn ile-btn--primary">Start Planning Your Trip</Link>
-          </div>
-        </div>
-      </section>
+      <DestinationIntro
+        city="Philadelphia"
+        lead={INTRO_P1}
+        highlights={HIGHLIGHTS}
+        image="/images/landmark/philadelphia-1.jpg"
+        imageAlt="Independence Hall in Philadelphia"
+        tripCount={TRIPS.length}
+      />
 
       {/* Trips */}
       <section className="ile-section ile-section--cream" aria-labelledby="philadelphia-trips-h">

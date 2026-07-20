@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from 'next/link'
 import PageHero from '@/components/PageHero'
+import DestinationIntro from '@/components/DestinationIntro'
 import BrochureBand from '@/components/BrochureBand'
 import JsonLd from '@/lib/seo/JsonLd'
 import { breadcrumb, destinationGraph } from '@/lib/seo/schemas'
@@ -11,9 +12,13 @@ const ArrowR = (
 
 const INTRO_P1 =
   "Hollywood lights. Groundbreaking innovation. Creative ambition. Educational Trips to Los Angeles immerse students in the entertainment capital of the world while connecting them to the industries shaping tomorrow's media, technology, and storytelling. Walking through iconic studio lots transforms creativity into something tangible and unforgettable. We design our student trips to Los Angeles for genuine engagement, not passive sightseeing. Students go behind the scenes at working studios, explore renowned museums and cultural institutions, and tour respected universities that fuel their ambitions for the future."
-const INTRO_P2 =
-  "Landmark Educational Tours partners with schools to make sure every detail supports safety and curriculum objectives. Los Angeles offers a dynamic blend of entertainment, innovation, and opportunity, encouraging students to imagine their own place in a rapidly evolving world. When learners return home, they carry inspiration, confidence, and motivation. Book your educational trip to Los Angeles today."
 
+const HIGHLIGHTS = [
+  "Behind the scenes at working studios",
+  "Renowned museums and cultural institutions",
+  "Tours of respected universities",
+  "Media, technology, and storytelling",
+]
 const TRIPS = [
   { title: "Los Angeles School Trip", duration: "5 Day / 4 Night", img: '/images/landmark/los-angeles-1.jpg', href: "/usa-trips/los-angeles/los-angeles-school-trip/" },
   { title: "Los Angeles Field Trip", duration: "4 Day / 3 Night", img: '/images/landmark/los-angeles-2.jpg', href: "/usa-trips/los-angeles/los-angeles-field-trip/" },
@@ -37,17 +42,14 @@ export default function LosAngeles() {
       />
 
       {/* Intro */}
-      <section className="ile-section ile-section--white">
-        <div className="ile-container">
-          <div className="ilp-prose ilp-prose--center">
-            <p>{INTRO_P1}</p>
-            <p>{INTRO_P2}</p>
-          </div>
-          <div className="ile-center" style={{ marginTop: 32 }}>
-            <Link href="/get-a-quote/" className="ile-btn ile-btn--primary">Start Planning Your Trip</Link>
-          </div>
-        </div>
-      </section>
+      <DestinationIntro
+        city="Los Angeles"
+        lead={INTRO_P1}
+        highlights={HIGHLIGHTS}
+        image="/images/landmark/los-angeles-1.jpg"
+        imageAlt="Los Angeles on a student educational tour"
+        tripCount={TRIPS.length}
+      />
 
       {/* Trips */}
       <section className="ile-section ile-section--cream" aria-labelledby="losangeles-trips-h">

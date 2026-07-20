@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from 'next/link'
 import PageHero from '@/components/PageHero'
+import DestinationIntro from '@/components/DestinationIntro'
 import BrochureBand from '@/components/BrochureBand'
 import JsonLd from '@/lib/seo/JsonLd'
 import { breadcrumb, destinationGraph } from '@/lib/seo/schemas'
@@ -11,9 +12,13 @@ const ArrowR = (
 
 const INTRO_P1 =
   "Savannah, GA tells a story of history, elegance, and Southern heritage. Through our thoughtfully designed educational field trips in Savannah, students encounter the city’s rich past, from its role in colonial America to its enduring architecture and storytelling traditions. Visiting historic squares and landmark sites becomes a catalyst for meaningful dialogue and personal reflection."
-const INTRO_P2 =
-  "Our educational tours in Savannah blend history, culture, and hands-on discovery into one cohesive learning journey. Guided walks through cobblestone streets and visits to museums and historic homes give students the chance to engage directly with the past. Landmark Educational Tours takes care of the planning and logistics so educators can focus on guiding thoughtful conversations. Field trips in Savannah, GA leave students with a richer understanding of history and a stronger connection to the stories that shaped it."
 
+const HIGHLIGHTS = [
+  "Guided walks through historic squares",
+  "Cobblestone streets of the old city",
+  "Museums and preserved historic homes",
+  "Colonial-era architecture and stories",
+]
 const TRIPS = [
   { title: "Savannah Field Trip", duration: "3 Day / 2 Night", img: '/images/landmark/savannah-1.jpg', href: "/usa-trips/savannah/savannah-field-trip/" },
   { title: "Savannah School Trip", duration: "2 Day / 1 Night", img: '/images/landmark/savannah-2.jpg', href: "/usa-trips/savannah/savannah-school-trip/" },
@@ -37,17 +42,14 @@ export default function Savannah() {
       />
 
       {/* Intro */}
-      <section className="ile-section ile-section--white">
-        <div className="ile-container">
-          <div className="ilp-prose ilp-prose--center">
-            <p>{INTRO_P1}</p>
-            <p>{INTRO_P2}</p>
-          </div>
-          <div className="ile-center" style={{ marginTop: 32 }}>
-            <Link href="/get-a-quote/" className="ile-btn ile-btn--primary">Start Planning Your Trip</Link>
-          </div>
-        </div>
-      </section>
+      <DestinationIntro
+        city="Savannah"
+        lead={INTRO_P1}
+        highlights={HIGHLIGHTS}
+        image="/images/landmark/savannah-1.jpg"
+        imageAlt="Historic squares in Savannah, Georgia"
+        tripCount={TRIPS.length}
+      />
 
       {/* Trips */}
       <section className="ile-section ile-section--cream" aria-labelledby="savannah-trips-h">

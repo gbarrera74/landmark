@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from 'next/link'
 import PageHero from '@/components/PageHero'
+import DestinationIntro from '@/components/DestinationIntro'
 import BrochureBand from '@/components/BrochureBand'
 import JsonLd from '@/lib/seo/JsonLd'
 import { breadcrumb, destinationGraph } from '@/lib/seo/schemas'
@@ -46,30 +47,14 @@ export default function Chicago() {
       />
 
       {/* Intro */}
-      <section className="ile-section ile-section--white">
-        <div className="ile-container">
-          <div className="lm-dest-intro">
-            <div className="lm-dest-intro__copy">
-              <span className="ile-eyebrow">Why Chicago</span>
-              <div className="lm-dest-lead">
-                <p>{INTRO_P1}</p>
-              </div>
-              <p className="lm-dest-sub">WHAT STUDENTS EXPLORE</p>
-              <ul className="lm-dest-highlights">
-                {HIGHLIGHTS.map((h) => <li key={h}>{h}</li>)}
-              </ul>
-              <Link href="/get-a-quote/" className="ile-btn ile-btn--primary">Start Planning Your Trip</Link>
-            </div>
-            <div className="lm-dest-intro__media">
-              <img src="/images/landmark/chicago-3.jpg" alt="Students on a Chicago educational tour" loading="lazy" />
-              <div className="lm-dest-intro__badge">
-                <strong>{TRIPS.length}</strong>
-                <span>curated itineraries</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <DestinationIntro
+        city="Chicago"
+        lead={INTRO_P1}
+        highlights={HIGHLIGHTS}
+        image="/images/landmark/chicago-3.jpg"
+        imageAlt="The Chicago Theatre marquee on a Chicago educational tour"
+        tripCount={TRIPS.length}
+      />
 
       {/* Trips */}
       <section className="ile-section ile-section--cream" aria-labelledby="chicago-trips-h">
