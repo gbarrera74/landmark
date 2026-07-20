@@ -1706,3 +1706,19 @@ select.ilm-input { appearance: none; -webkit-appearance: none; cursor: pointer;
 .lm-review-rating { margin: 10px 0 0; font-size: 16px; color: var(--lm-ink, #2a2320); display: inline-flex; align-items: center; gap: 8px; flex-wrap: wrap; justify-content: center; }
 .lm-review-stars { color: var(--lm-secondary, #E28413); letter-spacing: 2px; font-size: 18px; }
 .lm-review-rating strong { font-size: 18px; color: var(--lm-primary); }
+
+/* Upscaled destination-page intro: a prominent lead paragraph + a refined,
+   muted supporting paragraph (tighter measure). Copy is unchanged (keeps SEO). */
+.ilp-prose--center { max-width: 724px; }
+.ilp-prose--center > p:first-child {
+  font-size: clamp(19px, 2.05vw, 22px);
+  line-height: 1.62;
+  font-weight: 500;
+  letter-spacing: -0.008em;
+  color: var(--lm-primary-900);
+}
+.ilp-prose--center > p:first-child + p {
+  color: var(--lm-ink-muted, #5f544c);
+  font-size: 16px;
+  line-height: 1.8;
+}
