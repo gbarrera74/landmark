@@ -54,8 +54,9 @@ export default function WashingtonDC() {
         city="Washington, D.C."
         lead={INTRO_P1}
         highlights={HIGHLIGHTS}
-        image="/images/landmark/dc-capitol.jpg"
-        imageAlt="The White House in Washington, D.C."
+        image="/images/landmark/dc-students.jpg"
+        wideImage
+        imageAlt="A Landmark student group on the lawn in front of the White House in Washington, D.C."
         tripCount={TRIPS.length}
       />
 

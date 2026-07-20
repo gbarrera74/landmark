@@ -2202,6 +2202,9 @@ select.ilm-input { appearance: none; -webkit-appearance: none; cursor: pointer;
   .lm-dest-intro__media img { aspect-ratio: 16 / 10; }
   .lm-dest-intro__badge { left: 16px; bottom: 16px; }
 }
+/* Landscape frame for group/student photos (placed after the media query so it
+   wins at every breakpoint, keeping the full width of a wide group shot). */
+.lm-dest-intro__media--wide img { aspect-ratio: 4 / 3; }
 
 /* ─────────────────────────────────────────────
    TEAM GRID — click-to-open bios (About page)

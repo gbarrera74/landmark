@@ -20,9 +20,9 @@ const HIGHLIGHTS = [
   "A vibrant bilingual city",
 ]
 const TRIPS = [
-  { title: "2 Day Montreal School Trip", duration: "2 Day / 1 Night", img: "/images/landmark/montreal-1.jpg", href: "/canada/montreal/2-day-montreal-school-trip/" },
-  { title: "3 Day Montreal School Trip", duration: "3 Day / 2 Night", img: "/images/landmark/montreal-2.jpg", href: "/canada/montreal/3-day-montreal-school-trip/" },
-  { title: "Montreal Student Trip", duration: "3 Day / 2 Night", img: "/images/landmark/montreal-hero.jpg", href: "/canada/montreal/montreal-student-trip/" },
+  { title: "2 Day Montreal School Trip", duration: "2 Day / 1 Night", img: "/images/landmark/montreal-olympic.jpg", href: "/canada/montreal/2-day-montreal-school-trip/" },
+  { title: "3 Day Montreal School Trip", duration: "3 Day / 2 Night", img: "/images/landmark/montreal-stpaul.jpg", href: "/canada/montreal/3-day-montreal-school-trip/" },
+  { title: "Montreal Student Trip", duration: "3 Day / 2 Night", img: "/images/landmark/montreal-skyline.jpg", href: "/canada/montreal/montreal-student-trip/" },
 ]
 
 const STEPS = [
@@ -53,8 +53,9 @@ export default function Montreal() {
         city="Montreal"
         lead={INTRO_P1}
         highlights={HIGHLIGHTS}
-        image="/images/landmark/montreal-hero.jpg"
-        imageAlt="Old Montreal's historic streets"
+        image="/images/landmark/montreal-students.jpg"
+        wideImage
+        imageAlt="A Landmark student group at the Mount Royal lookout above the Montreal skyline"
         tripCount={TRIPS.length}
       />
 

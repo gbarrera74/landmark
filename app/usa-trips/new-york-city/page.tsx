@@ -51,8 +51,9 @@ export default function NewYorkCity() {
         city="New York City"
         lead={INTRO_P1}
         highlights={HIGHLIGHTS}
-        image="/images/landmark/broadway-sign-nyc.jpg"
-        imageAlt="A Broadway theater marquee in New York City"
+        image="/images/landmark/nyc-students.jpg"
+        wideImage
+        imageAlt="A Landmark student group on the Brooklyn Bridge with the Manhattan skyline at night"
         tripCount={TRIPS.length}
       />
 

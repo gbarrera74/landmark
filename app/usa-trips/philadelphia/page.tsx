@@ -47,8 +47,9 @@ export default function Philadelphia() {
         city="Philadelphia"
         lead={INTRO_P1}
         highlights={HIGHLIGHTS}
-        image="/images/landmark/philadelphia-1.jpg"
-        imageAlt="Independence Hall in Philadelphia"
+        image="/images/landmark/philadelphia-students.jpg"
+        wideImage
+        imageAlt="A Landmark student group on a field trip in historic Philadelphia"
         tripCount={TRIPS.length}
       />
 

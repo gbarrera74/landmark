@@ -14,6 +14,7 @@ export default function DestinationIntro({
   imageAlt,
   tripCount,
   ctaHref = '/get-a-quote/',
+  wideImage = false,
 }: {
   city: string
   lead: string
@@ -22,6 +23,9 @@ export default function DestinationIntro({
   imageAlt: string
   tripCount: number
   ctaHref?: string
+  /** Use a landscape (4:3) frame instead of the default portrait one —
+   *  for group photos that would be badly side-cropped in the tall frame. */
+  wideImage?: boolean
 }) {
   return (
     <section className="ile-section ile-section--white">
@@ -44,7 +48,7 @@ export default function DestinationIntro({
             )}
             <Link href={ctaHref} className="ile-btn ile-btn--primary">Start Planning Your Trip</Link>
           </div>
-          <div className="lm-dest-intro__media">
+          <div className={`lm-dest-intro__media${wideImage ? ' lm-dest-intro__media--wide' : ''}`}>
             <img src={image} alt={imageAlt} loading="lazy" />
             {tripCount > 0 && (
               <div className="lm-dest-intro__badge">

@@ -50,8 +50,9 @@ export default function Atlanta() {
         city="Atlanta"
         lead={INTRO_P1}
         highlights={HIGHLIGHTS}
-        image="/images/landmark/atlanta-skyline-night.jpg"
-        imageAlt="The Atlanta skyline at dusk"
+        image="/images/landmark/atlanta-students.jpg"
+        wideImage
+        imageAlt="A Landmark student group at the World of Coca-Cola in Atlanta"
         tripCount={TRIPS.length}
       />
 

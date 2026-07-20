@@ -50,8 +50,9 @@ export default function Boston() {
         city="Boston"
         lead={INTRO_P1}
         highlights={HIGHLIGHTS}
-        image="/images/landmark/boston-old-state-house.jpg"
-        imageAlt="Boston's historic Old State House"
+        image="/images/landmark/boston-students.jpg"
+        wideImage
+        imageAlt="A Landmark student group by the Boston sign downtown"
         tripCount={TRIPS.length}
       />
 
