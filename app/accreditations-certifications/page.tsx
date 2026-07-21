@@ -1,16 +1,22 @@
 /* eslint-disable @next/next/no-img-element */
-import Link from 'next/link'
 import PageHero from '@/components/PageHero'
+import CtaBand from '@/components/CtaBand'
 import BrochureBand from '@/components/BrochureBand'
 import JsonLd from '@/lib/seo/JsonLd'
 import { breadcrumb } from '@/lib/seo/schemas'
 
-// Professional affiliations (logos + membership identifiers), mirrored 1:1 from the live site.
+const WHY = [
+  { title: 'Responsible Planning', text: 'Student travel programs are planned responsibly, start to finish.', icon: (<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M9 11l3 3L22 4" /><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11" /></svg>) },
+  { title: 'Financial Protection', text: 'Financial transactions are protected and transparent.', icon: (<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" /><path d="M9 12l2 2 4-4" /></svg>) },
+  { title: 'Vetted Safety', text: 'Safety protocols meet or exceed industry standards.', icon: (<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" /><polyline points="22 4 12 14.01 9 11.01" /></svg>) },
+  { title: 'Trusted Partner', text: 'Educators can confidently partner with a vetted travel provider.', icon: (<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" /><circle cx="9" cy="7" r="4" /><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" /></svg>) },
+]
+
 const AFFILIATIONS = [
-  { name: 'Student & Youth Travel Association (SYTA)', logo: '/images/landmark/accred-syta.png', id: 'Member #13443' },
-  { name: 'American Bus Association (ABA)', logo: '/images/landmark/accred-aba.png', id: 'Member #84360' },
-  { name: 'Better Business Bureau (BBB)', logo: '/images/landmark/accred-bbb.png', id: 'Business ID 544197' },
-  { name: 'International Air Transport Association (IATA)', logo: '/images/landmark/accred-iata.png', id: 'IATA Code 22576046' },
+  { name: 'Student & Youth Travel Association (SYTA)', logo: '/images/landmark/accred-syta.png', id: 'Member #13443', means: 'Upholding student-travel safety and business standards.' },
+  { name: 'American Bus Association (ABA)', logo: '/images/landmark/accred-aba.png', id: 'Member #84360', means: 'Motorcoach safety, compliance, and reliability.' },
+  { name: 'Better Business Bureau (BBB)', logo: '/images/landmark/accred-bbb.png', id: 'Business ID 544197', means: 'Accredited, transparent business conduct.' },
+  { name: 'International Air Transport Association (IATA)', logo: '/images/landmark/accred-iata.png', id: 'IATA Code 22576046', means: 'Licensed, secure group air ticketing.' },
 ]
 
 const DISTRICTS = [
@@ -35,84 +41,88 @@ export default function Accreditations() {
         image="/images/landmark/dc-hero.jpg"
         breadcrumb={[{ label: "Accreditations & Certifications" }]}
       />
-      <section className="ile-section ile-section--white">
-        <div className="ile-container ilp-prose ilp-prose--center lm-content-prose">
-            <p>Our professional affiliations and standards that support safe, responsible educational travel.</p>
-        </div>
-      </section>
-      <section className="ile-section ile-section--cream" aria-labelledby="accreditations-certifications-s0">
-        <div className="ile-container ilp-prose lm-content-prose">
-          <h2 id="accreditations-certifications-s0" className="lm-h2-amber">Why Accreditations Matter</h2>
-            <p>Educational group travel isn’t just about destinations, it’s about duty of care, student safety, and academic value. Our certifications and professional memberships help ensure that:</p>
-            <p>These affiliations aren’t logos for show, they represent ongoing compliance, ethical standards, and professional oversight.</p>
-            <ul className="lm-content-list">
-              <li>Student travel programs are planned responsibly</li>
-              <li>Financial transactions are protected and transparent</li>
-              <li>Safety protocols meet or exceed industry standards</li>
-              <li>Educators can confidently partner with a vetted travel provider</li>
-            </ul>
-        </div>
-      </section>
-      <section className="ile-section ile-section--white" aria-labelledby="accreditations-certifications-s1">
+
+      {/* Why accreditations matter */}
+      <section className="ile-section ile-section--white" aria-labelledby="accred-why-h">
         <div className="ile-container">
           <div className="ile-center lm-narrow">
-            <h2 id="accreditations-certifications-s1" className="lm-h2-amber">Our Accreditations &amp; Professional Affiliations</h2>
-            <p className="ile-lead lm-center-lead">Building a community that works with you and your group in mind.</p>
+            <span className="ile-eyebrow">Why it matters</span>
+            <h2 id="accred-why-h" className="lm-h2-amber">WHY ACCREDITATIONS MATTER</h2>
+            <p className="ile-lead lm-center-lead">Educational group travel isn&rsquo;t just about destinations — it&rsquo;s about duty of care, student safety, and academic value. Our certifications and professional memberships help ensure that:</p>
+          </div>
+          <div className="ilp-grid-4" style={{ marginTop: 44 }}>
+            {WHY.map((w) => (
+              <div className="ilm-card" key={w.title}>
+                <div className="ilm-card-ico">{w.icon}</div>
+                <h3>{w.title}</h3>
+                <p>{w.text}</p>
+              </div>
+            ))}
+          </div>
+          <div className="ile-center lm-narrow" style={{ marginTop: 32 }}>
+            <p className="ile-lead lm-center-lead">These affiliations aren&rsquo;t logos for show — they represent ongoing compliance, ethical standards, and professional oversight.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Professional affiliations */}
+      <section className="ile-section ile-section--cream" aria-labelledby="accred-affil-h">
+        <div className="ile-container">
+          <div className="ile-center lm-narrow">
+            <span className="ile-eyebrow">Professional affiliations</span>
+            <h2 id="accred-affil-h" className="lm-h2-amber">OUR ACCREDITATIONS &amp; MEMBERSHIPS</h2>
+            <p className="ile-lead lm-center-lead">Recognized industry credentials that schools and parents can independently verify.</p>
           </div>
           <div className="lm-accred-grid" style={{ marginTop: 40 }}>
             {AFFILIATIONS.map((a) => (
               <div className="lm-accred-item" key={a.name}>
                 <div className="lm-accred-logo"><img src={a.logo} alt={`${a.name} member logo`} loading="lazy" /></div>
                 <h3>{a.name}</h3>
-                {a.id && <p className="lm-accred-id">{a.id}</p>}
+                <p className="lm-accred-id">{a.id}</p>
+                <p className="lm-accred-means">{a.means}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
-      <section className="ile-section ile-section--cream" aria-labelledby="accreditations-certifications-s2">
+
+      {/* District partnerships */}
+      <section className="ile-section ile-section--white" aria-labelledby="accred-district-h">
         <div className="ile-container">
           <div className="ile-center lm-narrow">
-            <h2 id="accreditations-certifications-s2" className="lm-h2-amber">Landmark School District Accreditations</h2>
-            <p className="ile-lead lm-center-lead">Recognized partnerships and certifications that support safe, compliant, and educationally sound student travel.</p>
+            <span className="ile-eyebrow">Approved vendor</span>
+            <h2 id="accred-district-h" className="lm-h2-amber">SCHOOL DISTRICT PARTNERSHIPS</h2>
+            <p className="ile-lead lm-center-lead">Registered and approved to work with school districts across the country.</p>
           </div>
           <div className="lm-accred-grid lm-accred-grid--districts" style={{ marginTop: 40 }}>
             {DISTRICTS.map((d) => (
               <div className="lm-accred-item" key={d.name}>
                 <div className="lm-accred-logo"><img src={d.logo} alt={`${d.name} logo`} loading="lazy" /></div>
                 <h3>{d.name}</h3>
-                <p className="lm-accred-id">Accreditation #{d.id}</p>
+                <p className="lm-accred-id">Registration #{d.id}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
-      <section className="ile-section ile-section--white" aria-labelledby="accreditations-certifications-s3">
-        <div className="ile-container ilp-prose lm-content-prose">
-          <h2 id="accreditations-certifications-s3" className="lm-h2-amber">Trusted by Educators. Designed for Students.</h2>
-            <p>We work closely with teachers and group leaders to ensure each itinerary aligns with learning objectives while maintaining a high standard of care.</p>
 
+      {/* Trust close */}
+      <section className="ile-section ile-section--cream" aria-labelledby="accred-trust-h">
+        <div className="ile-container ile-center lm-narrow">
+          <span className="ile-eyebrow">Designed for students</span>
+          <h2 id="accred-trust-h" className="lm-h2-amber">TRUSTED BY EDUCATORS</h2>
+          <p className="ile-lead lm-center-lead">We work closely with teachers and group leaders to ensure each itinerary aligns with learning objectives while maintaining a high standard of care.</p>
         </div>
       </section>
-      <section className="ile-section ile-section--cream" aria-labelledby="accreditations-certifications-s4">
-        <div className="ile-container ilp-prose lm-content-prose">
-          <h2 id="accreditations-certifications-s4" className="lm-h2-amber">Planning an Educational Trip?</h2>
-            <p>If you’re evaluating travel providers for your next school or student group trip, we’re happy to answer questions about our credentials, planning process, or safety standards.</p>
 
-        </div>
-      </section>
-      <section className="ile-section ile-section--white" aria-labelledby="accreditations-certifications-s5">
-        <div className="ile-container ilp-prose lm-content-prose">
-          <h2 id="accreditations-certifications-s5" className="lm-h2-amber">Ready to Start Planning?</h2>
-            <p>Start planning Your Trip Today with a Landmark Travel Consultant to learn more about our programs!</p>
+      <CtaBand
+        eyebrow="Have questions?"
+        title="Questions about our credentials?"
+        text="We’re happy to walk your business office through our accreditations, planning process, and safety standards."
+        primary={{ label: 'Start Planning Your Trip', href: '/get-a-quote/' }}
+        secondary={{ label: 'Ask About Our Standards', href: '/contact-us/' }}
+      />
 
-        </div>
-      </section>
-      <section className="ile-section ile-section--cream">
-        <div className="ile-container ile-center">
-          <Link href="/get-a-quote/" className="ile-btn ile-btn--primary">Start Planning Your Trip</Link>
-        </div>
-      </section>
       <BrochureBand />
       <JsonLd data={breadcrumb([
         { name: "Home", path: "/" },

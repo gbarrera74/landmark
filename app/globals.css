@@ -2119,6 +2119,13 @@ select.ilm-input { appearance: none; -webkit-appearance: none; cursor: pointer;
 .lm-chip.is-active .lm-chip-count { opacity: .85; }
 .lm-chip.is-empty, .lm-chip:disabled { opacity: .35; cursor: not-allowed; }
 .lm-chip.is-empty:hover, .lm-chip:disabled:hover { border-color: var(--lm-border, #e6ddd6); color: var(--lm-ink, #2a2320); }
+
+/* Accreditation "what it means" line + careers job card */
+.lm-accred-means { font-size: 13px; color: var(--lm-ink-muted); margin-top: 6px; line-height: 1.5; }
+.lm-job-card { text-align: left; }
+.lm-job-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin-bottom: 12px; }
+.lm-job-head h3 { margin: 0; }
+.lm-job-badge { display: inline-flex; align-items: center; padding: 4px 12px; border-radius: 999px; background: var(--lm-primary); color: #fff; font-family: var(--font-head); font-weight: 600; font-size: 12px; letter-spacing: .02em; white-space: nowrap; }
 .lm-blog-count { margin: 18px 0 22px; color: var(--lm-muted, #6b5b53); font-size: 14px; }
 .lm-filter-clear { background: none; border: none; padding: 0; color: var(--lm-primary); font: inherit; font-weight: 600; cursor: pointer; text-decoration: underline; }
 .lm-blog-empty { padding: 40px 0; text-align: center; color: var(--lm-muted, #6b5b53); }
