@@ -55,6 +55,10 @@ export default function TravelSafety() {
               <li>Baggage Delay</li>
               <li>Accident &amp; Sickness</li>
             </ul>
+            <p style={{ marginTop: 24 }}>
+              <a href="https://robinassist.com/claims/LandmarkEducationalTours" target="_blank" rel="noopener noreferrer" className="ile-btn ile-btn--primary">File a Claim Online</a>
+            </p>
+            <p style={{ marginTop: 14, fontSize: 14, color: 'var(--lm-ink-muted)' }}>Questions about your plan? battleface support is available 24/7 at 855-998-2928 or usa@battleface.com.</p>
         </div>
       </section>
       <section className="ile-section ile-section--white">
