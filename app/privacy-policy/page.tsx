@@ -4,7 +4,7 @@ import { SITE } from '@/lib/seo/schemas'
 
 export const metadata: Metadata = {
   title: 'Privacy Policy',
-  description: 'How the Irish Life Experience collects, uses, and protects your personal information.',
+  description: 'How Landmark Educational Tours collects, uses, and protects your personal information.',
   robots: { index: false, follow: true },
 }
 
@@ -16,7 +16,7 @@ export default function PrivacyPage() {
         <div className="ile-container">
           <div className="ilp-prose ilp-prose--center">
             <p style={{ color: 'var(--lm-ink-muted)' }}>Last updated: {new Date().getFullYear()}</p>
-            <p>The Irish Life Experience (&ldquo;ILE,&rdquo; &ldquo;we,&rdquo; &ldquo;us&rdquo;) respects your privacy. This policy explains what information we collect, how we use it, and the choices you have.</p>
+            <p>Landmark Educational Tours (&ldquo;Landmark,&rdquo; &ldquo;we,&rdquo; &ldquo;us&rdquo;) respects your privacy. This policy explains what information we collect, how we use it, and the choices you have.</p>
 
             <h2>Information We Collect</h2>
             <p>When you submit a form, apply to the program, or contact us, we may collect information such as your name, email address, phone number, your student&apos;s grade and program year, and any details you choose to share. We also collect basic, non-identifying analytics about how visitors use our website.</p>
