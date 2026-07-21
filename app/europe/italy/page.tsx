@@ -104,7 +104,7 @@ export default function Italy() {
             <h2 id="it-handled-h" className="lm-h2-amber">INTERNATIONAL TRAVEL, HANDLED</h2>
             <p className="ile-lead lm-center-lead">Traveling abroad adds logistics a domestic trip never does. We take all of it off your plate.</p>
           </div>
-          <div className="ilp-grid-4" style={{ marginTop: 48 }}>
+          <div className="ilp-grid-3" style={{ marginTop: 48 }}>
             {HANDLED.map((h) => (
               <div className="ilm-card" key={h.title}>
                 <div className="ilm-card-ico">{h.icon}</div>
