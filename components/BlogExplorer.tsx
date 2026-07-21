@@ -37,17 +37,30 @@ function Card({ p, hidden }: { p: TaggedCard; hidden: boolean }) {
   )
 }
 
-function Chips({ label, facets, active, onPick }: { label: string; facets: (FacetTag & { count: number })[]; active: string | null; onPick: (slug: string | null) => void }) {
+function Chips({ label, facets, active, total, onPick }: { label: string; facets: (FacetTag & { count: number })[]; active: string | null; total: number; onPick: (slug: string | null) => void }) {
   return (
     <div className="lm-filter-row">
       <span className="lm-filter-label">{label}</span>
       <div className="lm-filter-chips">
-        <button type="button" className={`lm-chip${active === null ? ' is-active' : ''}`} onClick={() => onPick(null)} aria-pressed={active === null}>All</button>
-        {facets.map((f) => (
-          <button key={f.slug} type="button" className={`lm-chip${active === f.slug ? ' is-active' : ''}`} onClick={() => onPick(f.slug)} aria-pressed={active === f.slug}>
-            {f.name} <span className="lm-chip-count">{f.count}</span>
-          </button>
-        ))}
+        <button type="button" className={`lm-chip${active === null ? ' is-active' : ''}`} onClick={() => onPick(null)} aria-pressed={active === null}>
+          All <span className="lm-chip-count">{total}</span>
+        </button>
+        {facets.map((f) => {
+          const isActive = active === f.slug
+          const empty = f.count === 0 && !isActive
+          return (
+            <button
+              key={f.slug}
+              type="button"
+              className={`lm-chip${isActive ? ' is-active' : ''}${empty ? ' is-empty' : ''}`}
+              onClick={() => onPick(f.slug)}
+              aria-pressed={isActive}
+              disabled={empty}
+            >
+              {f.name} <span className="lm-chip-count">{f.count}</span>
+            </button>
+          )
+        })}
       </div>
     </div>
   )
@@ -61,13 +74,20 @@ export default function BlogExplorer({ cards, destinations, types }: { cards: Ta
   const pickDest = (s: string | null) => { setDest(s); setShown(STEP) }
   const pickType = (s: string | null) => { setType(s); setShown(STEP) }
 
+  // Facet counts reflect the OTHER active filter, so the numbers on the buttons
+  // show the true size of each combination as filters stack (and empty ones dim out).
+  const byType = cards.filter((c) => !type || c.type.includes(type))
+  const byDest = cards.filter((c) => !dest || c.dest.includes(dest))
+  const destFacets = destinations.map((f) => ({ ...f, count: byType.filter((c) => c.dest.includes(f.slug)).length }))
+  const typeFacets = types.map((f) => ({ ...f, count: byDest.filter((c) => c.type.includes(f.slug)).length }))
+
   const matched = cards.filter((c) => (!dest || c.dest.includes(dest)) && (!type || c.type.includes(type)))
   const visible = new Set(matched.slice(0, shown).map((c) => c.slug))
 
   return (
     <div className="lm-blog-explorer">
-      <Chips label="Destination" facets={destinations} active={dest} onPick={pickDest} />
-      <Chips label="Trip type" facets={types} active={type} onPick={pickType} />
+      <Chips label="Destination" facets={destFacets} active={dest} total={byType.length} onPick={pickDest} />
+      <Chips label="Trip type" facets={typeFacets} active={type} total={byDest.length} onPick={pickType} />
 
       <p className="lm-blog-count" aria-live="polite">
         Showing {Math.min(shown, matched.length)} of {matched.length} article{matched.length === 1 ? '' : 's'}
