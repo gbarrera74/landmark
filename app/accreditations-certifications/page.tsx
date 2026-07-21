@@ -8,8 +8,7 @@ import { breadcrumb } from '@/lib/seo/schemas'
 // Professional affiliations (logos + membership identifiers), mirrored 1:1 from the live site.
 const AFFILIATIONS = [
   { name: 'Student & Youth Travel Association (SYTA)', logo: '/images/landmark/accred-syta.png', id: 'Member #13443' },
-  { name: 'European Tourism Association (ETOA)', logo: '/images/landmark/accred-etoa.png', id: 'Member #84360' },
-  { name: 'American Bus Association (ABA)', logo: '/images/landmark/accred-aba.png', id: '' },
+  { name: 'American Bus Association (ABA)', logo: '/images/landmark/accred-aba.png', id: 'Member #84360' },
   { name: 'Travel Insured International', logo: '/images/landmark/accred-travel-insured.png', id: '' },
   { name: 'Better Business Bureau (BBB)', logo: '/images/landmark/accred-bbb.png', id: 'Business ID 544197' },
   { name: 'International Air Transport Association (IATA)', logo: '/images/landmark/accred-iata.png', id: 'IATA Code 22576046' },
