@@ -882,7 +882,7 @@ select.ilm-input { appearance: none; -webkit-appearance: none; cursor: pointer;
 /* ── Inner-page hero ── */
 .ilp-hero {
   position: relative;
-  min-height: 56vh;
+  min-height: 62vh;
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -1058,7 +1058,7 @@ select.ilm-input { appearance: none; -webkit-appearance: none; cursor: pointer;
 }
 @media (max-width: 560px) {
   .ilp-grid-3, .ilp-grid-2, .ilp-grid-4, .ilp-team-grid, .ilp-pricing, .ilp-stats { grid-template-columns: 1fr; }
-  .ilp-hero { min-height: 48vh; }
+  .ilp-hero { min-height: 54vh; }
 }
 
 /* ═════════════════════════════════════════════
