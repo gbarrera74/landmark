@@ -11,7 +11,7 @@ const ArrowR = (
 )
 
 const DAYS = [
-  { title: "Day 1: Arrival & Group Sit Down Dinner", acts: ["Travel Day to Costa Rica", "Meet USA Based Landmark Leader & Costa Rica Guide!", "Meet Motorcoach and Transfer to Dinner", "Dinner: Local Restaurant", "Check-in to Hotel Accommodations"] },
+  { title: "Day 1: Arrival & Group Sit Down Dinner", acts: ["Travel Day to Costa Rica", "Meet USA Based Landmark Leader & Costa Rica Tour Director!", "Meet Motorcoach and Transfer to Dinner", "Dinner: Local Restaurant", "Check-in to Hotel Accommodations"] },
   { title: "Day 2: Horseback Riding Tour & Volunteer Service at a Local School", acts: ["Breakfast at the hotel", "Horseback Riding Tour", "Sarapiqui River Rafting Tour", "Lunch: Local Restaurant", "Volunteer Service- Local School", "Dinner: Local Restaurant", "Transfer to Hotel Accommodations"] },
   { title: "Day 3: Arenal Lake Kayak Tour & Baldi Hot Springs", acts: ["Breakfast at the hotel", "Arenal Lake Kayak Tour", "Lunch: Local Restaurant", "Arenal Hanging Bridges Tour", "Evening at Baldi Hot Springs", "Dinner at Baldi Hot Springs", "Transfer to Hotel Accommodations"] },
   { title: "Day 4: Zipline Tour & Chocolate Tour", acts: ["Breakfast at the hotel", "Zipline Tour", "Lunch: Local Restaurant", "Chocolate Tour", "Dinner: Local Restaurant", "Transfer to Hotel Accommodations"] },
@@ -83,7 +83,7 @@ const inclusionsTab = (
   <div className="ilp-infocard ilp-check">
     <h3>Trip Inclusions: Tailored Just for You</h3>
     <p style={{ marginBottom: 20, color: 'var(--lm-ink-muted)', fontSize: 15, lineHeight: 1.7 }}>
-      Work with our expert Destination Landmark Specialist team to design a trip that fits your group&rsquo;s unique needs! Our packages start fully customizable and typically include:
+      Work with our expert team of Landmark Travel Consultants to design a trip that fits your group&rsquo;s unique needs! Our packages start fully customizable and typically include:
     </p>
     <ul>
       {INCLUSIONS.map(([label, text]) => (
@@ -183,7 +183,7 @@ export default function Itin_international__costa_rica__6_day_costa_rica_school_
         name: "6 Day Costa Rica School Trip",
         description: "Give students six days of rainforests, volcanoes, and coastlines with hands-on eco-adventures and cultural immersion across Costa Rica.",
         path: "/central-south-america/costa-rica/6-day-costa-rica-school-trip/",
-        days: [{ name: "Day 1: Arrival & Group Sit Down Dinner", description: "Travel Day to Costa Rica; Meet USA Based Landmark Leader & Costa Rica Guide!; Meet Motorcoach and Transfer to Dinner; Dinner: Local Restaurant; Check-in to Hotel Accommodations" }, { name: "Day 2: Horseback Riding Tour & Volunteer Service at a Local School", description: "Breakfast at the hotel; Horseback Riding Tour; Sarapiqui River Rafting Tour; Lunch: Local Restaurant; Volunteer Service- Local School; Dinner: Local Restaurant; Transfer to Hotel Accommodations" }, { name: "Day 3: Arenal Lake Kayak Tour & Baldi Hot Springs", description: "Breakfast at the hotel; Arenal Lake Kayak Tour; Lunch: Local Restaurant; Arenal Hanging Bridges Tour; Evening at Baldi Hot Springs; Dinner at Baldi Hot Springs; Transfer to Hotel Accommodations" }, { name: "Day 4: Zipline Tour & Chocolate Tour", description: "Breakfast at the hotel; Zipline Tour; Lunch: Local Restaurant; Chocolate Tour; Dinner: Local Restaurant; Transfer to Hotel Accommodations" }, { name: "Day 5: Surfing Classes & Sarchi Visit with Workshop", description: "Breakfast at the hotel; Surfing Classes; Lunch: Local Restaurant; Sarchi Visit with Workshop; Dinner: Local Restaurant; Transfer to Hotel Accommodations" }, { name: "Day 6: Departure", description: "Breakfast at the hotel; Transfer to the Airport; Sample Flight Departure Home" }],
+        days: [{ name: "Day 1: Arrival & Group Sit Down Dinner", description: "Travel Day to Costa Rica; Meet USA Based Landmark Leader & Costa Rica Tour Director!; Meet Motorcoach and Transfer to Dinner; Dinner: Local Restaurant; Check-in to Hotel Accommodations" }, { name: "Day 2: Horseback Riding Tour & Volunteer Service at a Local School", description: "Breakfast at the hotel; Horseback Riding Tour; Sarapiqui River Rafting Tour; Lunch: Local Restaurant; Volunteer Service- Local School; Dinner: Local Restaurant; Transfer to Hotel Accommodations" }, { name: "Day 3: Arenal Lake Kayak Tour & Baldi Hot Springs", description: "Breakfast at the hotel; Arenal Lake Kayak Tour; Lunch: Local Restaurant; Arenal Hanging Bridges Tour; Evening at Baldi Hot Springs; Dinner at Baldi Hot Springs; Transfer to Hotel Accommodations" }, { name: "Day 4: Zipline Tour & Chocolate Tour", description: "Breakfast at the hotel; Zipline Tour; Lunch: Local Restaurant; Chocolate Tour; Dinner: Local Restaurant; Transfer to Hotel Accommodations" }, { name: "Day 5: Surfing Classes & Sarchi Visit with Workshop", description: "Breakfast at the hotel; Surfing Classes; Lunch: Local Restaurant; Sarchi Visit with Workshop; Dinner: Local Restaurant; Transfer to Hotel Accommodations" }, { name: "Day 6: Departure", description: "Breakfast at the hotel; Transfer to the Airport; Sample Flight Departure Home" }],
       })} />
     </>
   )

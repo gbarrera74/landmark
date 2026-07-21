@@ -106,7 +106,7 @@ export default function Accreditations() {
       <section className="ile-section ile-section--white" aria-labelledby="accreditations-certifications-s5">
         <div className="ile-container ilp-prose lm-content-prose">
           <h2 id="accreditations-certifications-s5" className="lm-h2-amber">Ready to Start Planning?</h2>
-            <p>Start planning Your Trip Today with a Landmark Educational Tours specialist to learn more about our programs!</p>
+            <p>Start planning Your Trip Today with a Landmark Travel Consultant to learn more about our programs!</p>
 
         </div>
       </section>

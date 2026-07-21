@@ -44,7 +44,7 @@ export default function Resources() {
       <section className="ile-section ile-section--white" aria-labelledby="resources-s3">
         <div className="ile-container ilp-prose lm-content-prose">
           <h2 id="resources-s3" className="lm-h2-amber">Frequently Asked Questions</h2>
-            <p>You have questions, we’ve got answers. Our travel specialists have answers all of your burning questions to help prepare you for your upcoming trip.</p>
+            <p>You have questions, we’ve got answers. Our Travel Consultants have answers all of your burning questions to help prepare you for your upcoming trip.</p>
 
         </div>
       </section>

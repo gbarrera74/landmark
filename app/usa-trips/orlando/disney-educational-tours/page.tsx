@@ -33,7 +33,7 @@ const INCLUSIONS = [
 ]
 
 const RELATED = [
-  { title: "Orlando Student Trip", img: "/images/landmark/orlando-1.jpg", href: "/usa-trips/orlando/orlando-student-tour/" },
+  { title: "Orlando Student Trip", img: "/images/landmark/orlando-eye.jpg", href: "/usa-trips/orlando/orlando-student-tour/" },
   { title: "Orlando Extended Student Tour", img: "/images/landmark/orlando-2.jpg", href: "/usa-trips/orlando/orlando-student-tour-extended/" },
 ]
 
@@ -70,7 +70,7 @@ const inclusionsTab = (
   <div className="ilp-infocard ilp-check">
     <h3>Trip Inclusions: Tailored Just for You</h3>
     <p style={{ marginBottom: 20, color: 'var(--lm-ink-muted)', fontSize: 15, lineHeight: 1.7 }}>
-      Work with our expert Destination Landmark Specialist team to design a trip that fits your group&rsquo;s unique needs! Our packages start fully customizable and typically include:
+      Work with our expert team of Landmark Travel Consultants to design a trip that fits your group&rsquo;s unique needs! Our packages start fully customizable and typically include:
     </p>
     <ul>
       {INCLUSIONS.map(([label, text]) => (
@@ -92,7 +92,7 @@ export default function Itin_usa_trips__orlando_schooltrips__disney_educational_
         eyebrow="Orlando · 5 Day / 4 Night"
         title={<>Disney Educational Tour</>}
         subtitle="Spark curiosity at Walt Disney World with hands-on STEM workshops and behind-the-scenes learning built for student groups."
-        image="/images/landmark/orlando-3.jpg"
+        image="/images/landmark/orlando-skyline.jpg"
         breadcrumb={[
         { label: "Destinations", href: "/destinations/" },
         { label: "Orlando", href: "/usa-trips/orlando/" },

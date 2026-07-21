@@ -14,7 +14,7 @@ export default function HubSpotMeetings({
     <iframe
       className="lm-meetings"
       src={`https://meetings.hubspot.com/${slug}?embed=true`}
-      title="Book a call with a Landmark specialist"
+      title="Book a call with a Landmark Travel Consultant"
       loading="lazy"
     />
   )

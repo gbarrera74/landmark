@@ -37,8 +37,8 @@ const INCLUSIONS = [
 ]
 
 const RELATED = [
-  { title: "Orlando Student Trip", img: "/images/landmark/orlando-1.jpg", href: "/usa-trips/orlando/orlando-student-tour/" },
-  { title: "Disney Educational Tour", img: "/images/landmark/orlando-3.jpg", href: "/usa-trips/orlando/disney-educational-tours/" },
+  { title: "Orlando Student Trip", img: "/images/landmark/orlando-eye.jpg", href: "/usa-trips/orlando/orlando-student-tour/" },
+  { title: "Disney Educational Tour", img: "/images/landmark/orlando-skyline.jpg", href: "/usa-trips/orlando/disney-educational-tours/" },
 ]
 
 const DESC_P1 = "Experience the magic of Orlando, Florida, on an unforgettable five-day student adventure! With thrilling visits to Walt Disney World and Universal Studios, this itinerary blends excitement, entertainment, and education for a once-in-a-lifetime trip. From exploring iconic theme parks to immersive group activities, students will create memories that last forever."
@@ -83,7 +83,7 @@ const inclusionsTab = (
   <div className="ilp-infocard ilp-check">
     <h3>Trip Inclusions: Tailored Just for You</h3>
     <p style={{ marginBottom: 20, color: 'var(--lm-ink-muted)', fontSize: 15, lineHeight: 1.7 }}>
-      Work with our expert Destination Landmark Specialist team to design a trip that fits your group&rsquo;s unique needs! Our packages start fully customizable and typically include:
+      Work with our expert team of Landmark Travel Consultants to design a trip that fits your group&rsquo;s unique needs! Our packages start fully customizable and typically include:
     </p>
     <ul>
       {INCLUSIONS.map(([label, text]) => (

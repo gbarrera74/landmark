@@ -36,7 +36,7 @@ const INCLUSIONS = [
 
 const RELATED = [
   { title: "Orlando Extended Student Tour", img: "/images/landmark/orlando-2.jpg", href: "/usa-trips/orlando/orlando-student-tour-extended/" },
-  { title: "Disney Educational Tour", img: "/images/landmark/orlando-3.jpg", href: "/usa-trips/orlando/disney-educational-tours/" },
+  { title: "Disney Educational Tour", img: "/images/landmark/orlando-skyline.jpg", href: "/usa-trips/orlando/disney-educational-tours/" },
 ]
 
 const DESC_P1 = "Embark on an exciting three-day educational adventure in Orlando, designed to inspire students of all grade levels! Explore the magic of learning through visits to iconic attractions like Kennedy Space Center, Universal Studios, and Walt Disney World’s educational programs. From hands-on STEM activities and behind-the-scenes tours to discovering the creativity and innovation behind world-class entertainment, this trip promises an immersive, hands-on learning experience that will leave students inspired and excited about science, technology, and the arts."
@@ -81,7 +81,7 @@ const inclusionsTab = (
   <div className="ilp-infocard ilp-check">
     <h3>Trip Inclusions: Tailored Just for You</h3>
     <p style={{ marginBottom: 20, color: 'var(--lm-ink-muted)', fontSize: 15, lineHeight: 1.7 }}>
-      Work with our expert Destination Landmark Specialist team to design a trip that fits your group&rsquo;s unique needs! Our packages start fully customizable and typically include:
+      Work with our expert team of Landmark Travel Consultants to design a trip that fits your group&rsquo;s unique needs! Our packages start fully customizable and typically include:
     </p>
     <ul>
       {INCLUSIONS.map(([label, text]) => (
@@ -103,7 +103,7 @@ export default function Itin_usa_trips__orlando_schooltrips__orlando_student_tou
         eyebrow="Orlando · 3 Day / 2 Night"
         title={<>Orlando Student Trip</>}
         subtitle="Give your students three action packed days in Orlando exploring Disney, Universal Studios, and hands on STEM learning at the Kennedy Space Center."
-        image="/images/landmark/orlando-1.jpg"
+        image="/images/landmark/orlando-eye.jpg"
         breadcrumb={[
         { label: "Destinations", href: "/destinations/" },
         { label: "Orlando", href: "/usa-trips/orlando/" },

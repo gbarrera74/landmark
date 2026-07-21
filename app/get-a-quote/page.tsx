@@ -5,7 +5,7 @@ import JsonLd from '@/lib/seo/JsonLd'
 import { breadcrumb } from '@/lib/seo/schemas'
 
 const TRUST = [
-  { title: 'A real specialist, not a bot', text: 'A dedicated Landmark Travel Consultant builds your itinerary by hand around your group and curriculum.' },
+  { title: 'A real human, not a bot', text: 'A dedicated Landmark Travel Consultant builds your itinerary by hand around your group and curriculum.' },
   { title: 'Fully customizable', text: 'Every destination, date, grade level, and budget is tailored to your school. Nothing is off the shelf.' },
   { title: 'No obligation', text: 'Your quote is free. Review it, ask questions, and only move forward when the plan feels right.' },
 ]

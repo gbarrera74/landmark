@@ -12,7 +12,7 @@ const ArrowR = (
 
 const DAYS = [
   { title: "Day 1: Arrival & Independence Hall", acts: ["Travel to Philadelphia", "Arrival in Philly!", "Meet your Landmark Leaders!", "Boxed Lunch from Campo’s Philly Cheesesteaks", "Visit The Liberty Bell", "Visit the Independence Hall", "Admission to the Museum of the American Revolution", "Dinner and Games at Dave & Buster’s", "Check-in to Hotel Accommodations with onsite security"] },
-  { title: "Day 2: Franklin Institute & Departure", acts: ["Hotel Breakfast", "Guided Tour of University of Pennsylvania", "Visit The Franklin Institute", "Lunch Allocation- Reading Terminal Market", "Visit Betsy Ross House", "Visit the Eastern State Penitentiary: Guide-led Tour", "Photo Opportunity at the Rocky Statue", "Boxed sandwich dinner", "Depart for Home"] },
+  { title: "Day 2: Franklin Institute & Departure", acts: ["Hotel Breakfast", "Guided Tour of University of Pennsylvania", "Visit The Franklin Institute", "Lunch Allocation- Reading Terminal Market", "Visit Betsy Ross House", "Visit the Eastern State Penitentiary: Guided Tour", "Photo Opportunity at the Rocky Statue", "Boxed sandwich dinner", "Depart for Home"] },
 ]
 
 const WHY = [
@@ -80,7 +80,7 @@ const inclusionsTab = (
   <div className="ilp-infocard ilp-check">
     <h3>Trip Inclusions: Tailored Just for You</h3>
     <p style={{ marginBottom: 20, color: 'var(--lm-ink-muted)', fontSize: 15, lineHeight: 1.7 }}>
-      Work with our expert Destination Landmark Specialist team to design a trip that fits your group&rsquo;s unique needs! Our packages start fully customizable and typically include:
+      Work with our expert team of Landmark Travel Consultants to design a trip that fits your group&rsquo;s unique needs! Our packages start fully customizable and typically include:
     </p>
     <ul>
       {INCLUSIONS.map(([label, text]) => (
@@ -178,7 +178,7 @@ export default function Itin_usa_trips__philadelphia_tours__2_day_philadelphia_s
         name: "2 Day Philadelphia School Trip",
         description: "Spend two days exploring the birthplace of American democracy with iconic landmarks, world-class museums, and hands-on history for student groups.",
         path: "/usa-trips/philadelphia/2-day-philadelphia-school-trip/",
-        days: [{ name: "Day 1: Arrival & Independence Hall", description: "Travel to Philadelphia; Arrival in Philly!; Meet your Landmark Leaders!; Boxed Lunch from Campo’s Philly Cheesesteaks; Visit The Liberty Bell; Visit the Independence Hall; Admission to the Museum of the American Revolution; Dinner and Games at Dave & Buster’s; Check-in to Hotel Accommodations with onsite security" }, { name: "Day 2: Franklin Institute & Departure", description: "Hotel Breakfast; Guided Tour of University of Pennsylvania; Visit The Franklin Institute; Lunch Allocation- Reading Terminal Market; Visit Betsy Ross House; Visit the Eastern State Penitentiary: Guide-led Tour; Photo Opportunity at the Rocky Statue; Boxed sandwich dinner; Depart for Home" }],
+        days: [{ name: "Day 1: Arrival & Independence Hall", description: "Travel to Philadelphia; Arrival in Philly!; Meet your Landmark Leaders!; Boxed Lunch from Campo’s Philly Cheesesteaks; Visit The Liberty Bell; Visit the Independence Hall; Admission to the Museum of the American Revolution; Dinner and Games at Dave & Buster’s; Check-in to Hotel Accommodations with onsite security" }, { name: "Day 2: Franklin Institute & Departure", description: "Hotel Breakfast; Guided Tour of University of Pennsylvania; Visit The Franklin Institute; Lunch Allocation- Reading Terminal Market; Visit Betsy Ross House; Visit the Eastern State Penitentiary: Guided Tour; Photo Opportunity at the Rocky Statue; Boxed sandwich dinner; Depart for Home" }],
       })} />
     </>
   )

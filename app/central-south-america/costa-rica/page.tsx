@@ -52,8 +52,8 @@ export default function CostaRica() {
         city="Costa Rica"
         lead={INTRO_P1}
         highlights={HIGHLIGHTS}
-        image="/images/landmark/costa-rica-1.jpg"
-        imageAlt="Costa Rica's rainforest and volcanoes"
+        image="/images/landmark/intl-costa-rica-group.jpg"
+        imageAlt="A Landmark student group at a rainforest waterfall in Costa Rica"
         tripCount={TRIPS.length}
       />
 
