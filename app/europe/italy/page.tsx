@@ -21,6 +21,7 @@ const HIGHLIGHTS = [
   "Practicing Italian in the markets",
 ]
 const TRIPS = [
+  { title: '8 Day Italy School Trip', duration: '8 Day / 7 Night', blurb: 'Milan, Verona, Florence, Assisi, Rome, Pompeii, and the Vatican in one trip: our signature Italy itinerary for student groups.', img: '/images/landmark/italy-amalfi.jpg', href: '/europe/italy/8-day-italy-school-trip/' },
   { title: 'Classical Rome & Ancient History Tour', duration: '7 Day / 6 Night', blurb: 'The Colosseum, Roman Forum, Palatine Hill, and Vatican: antiquity made real for history and Latin students.', img: '/images/landmark/italy-rome.jpg', href: '/europe/italy/classical-rome-ancient-history-tour/' },
   { title: 'Renaissance Florence Art & History Program', duration: '6 Day / 5 Night', blurb: 'The Uffizi, the Duomo, and the Accademia: a hands-on study of Renaissance art, humanism, and innovation.', img: '/images/landmark/italy-florence.webp', href: '/europe/italy/renaissance-florence-art-program/' },
   { title: 'Rome, Florence & Venice Grand Tour', duration: '10 Day / 9 Night', blurb: 'Italy’s three essential cities in one itinerary: history, art, and language across the whole peninsula.', img: '/images/landmark/italy-venice.webp', href: '/europe/italy/rome-florence-venice-grand-tour/' },

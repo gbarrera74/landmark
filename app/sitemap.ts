@@ -37,6 +37,7 @@ const ROUTES: { path: string; priority: number; changeFrequency: 'weekly' | 'mon
   { path: '/europe/france/', priority: 0.8, changeFrequency: 'monthly' },
   { path: '/europe/ireland/', priority: 0.8, changeFrequency: 'monthly' },
   { path: '/europe/italy/', priority: 0.8, changeFrequency: 'monthly' },
+  { path: '/europe/italy/8-day-italy-school-trip/', priority: 0.6, changeFrequency: 'monthly' },
   { path: '/europe/italy/classical-rome-ancient-history-tour/', priority: 0.6, changeFrequency: 'monthly' },
   { path: '/europe/italy/italian-language-culture-immersion/', priority: 0.6, changeFrequency: 'monthly' },
   { path: '/europe/italy/northern-italy-lakes-program/', priority: 0.6, changeFrequency: 'monthly' },
