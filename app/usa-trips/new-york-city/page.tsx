@@ -42,7 +42,7 @@ export default function NewYorkCity() {
         eyebrow="New York City · The City That Never Sleeps"
         title={<>Educational Trips in <em>NYC</em></>}
         subtitle="Culture, history, arts, and global influence: customizable, safe school trips to New York City, from Ellis Island and the U.N. to Broadway workshops and Wall Street."
-        image="/images/landmark/hero-nyc.jpg"
+        image="/images/landmark/nyc-statue-liberty-hero.jpg"
         breadcrumb={[{ label: 'Destinations', href: '/destinations/' }, { label: 'New York City' }]}
       />
 
