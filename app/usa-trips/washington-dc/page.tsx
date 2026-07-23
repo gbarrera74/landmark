@@ -45,7 +45,7 @@ export default function WashingtonDC() {
         eyebrow="Washington, D.C. · Our Nation's Capital"
         title={<>Educational Trips to <em>Washington, DC</em></>}
         subtitle="History where it began: customizable, safe, guided field trips across the National Mall, the Smithsonian museums, and the U.S. Capitol."
-        image="/images/landmark/dc-hero.jpg"
+        image="/images/landmark/dc-capitol-hero.jpg"
         breadcrumb={[{ label: 'Destinations', href: '/destinations/' }, { label: 'Washington, D.C.' }]}
       />
 
