@@ -33,7 +33,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       type: 'article',
       images: post.hero ? [{ url: post.hero }] : undefined,
       publishedTime: post.date,
-      modifiedTime: post.modified,
+      modifiedTime: post.modified && post.modified >= post.date ? post.modified : post.date,
     },
   }
 }
@@ -41,7 +41,20 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 // Allow-listed already at import time; sanitize again here as defense-in-depth
 // (content originates from WordPress). Build-time only, so cost is irrelevant.
 const ALLOWED_TAGS = ['h2', 'h3', 'h4', 'p', 'a', 'ul', 'ol', 'li', 'strong', 'em', 'b', 'i', 'blockquote', 'figure', 'figcaption', 'img', 'br', 'hr']
-const ALLOWED_ATTR = ['href', 'rel', 'src', 'alt', 'loading']
+const ALLOWED_ATTR = ['href', 'rel', 'src', 'alt', 'loading', 'target']
+
+// Imported WP bodies link out to third parties (competitors, sister brands, etc.).
+// Add rel="nofollow noopener" to every EXTERNAL link so we don't pass SEO equity
+// offsite. Registered once at module load; applies to all blog posts + future imports.
+DOMPurify.addHook('afterSanitizeAttributes', (node) => {
+  if (node.tagName !== 'A') return
+  const href = node.getAttribute('href') || ''
+  const isExternal = /^https?:\/\//i.test(href) && !/^https?:\/\/(www\.)?landmarkeducationaltours\.com(\/|$)/i.test(href)
+  if (isExternal) {
+    node.setAttribute('rel', 'nofollow noopener noreferrer')
+    node.setAttribute('target', '_blank')
+  }
+})
 
 export default async function BlogPost({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params
@@ -127,7 +140,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
         description: post.seoDescription,
         image: post.hero ? `https://landmarkeducationaltours.com${post.hero}` : undefined,
         datePublished: post.date,
-        dateModified: post.modified,
+        dateModified: post.modified && post.modified >= post.date ? post.modified : post.date,
         author: { '@type': 'Organization', name: 'Landmark Educational Tours' },
         publisher: { '@type': 'Organization', name: 'Landmark Educational Tours' },
         mainEntityOfPage: `https://landmarkeducationaltours.com/blog/${slug}/`,

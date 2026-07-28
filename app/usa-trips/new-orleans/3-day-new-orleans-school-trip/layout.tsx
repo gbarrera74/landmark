@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: "3 Day New Orleans School Trip | New Orleans",
+  title: { absolute: "3 Day New Orleans School Trip | Landmark Educational Tours" },
   description:
     "A three day journey through New Orleans jazz, cemeteries, and Creole culture built for student groups of every grade. A customizable 3 Day / 2 Night Landmark educational itinerary.",
   alternates: { canonical: "/usa-trips/new-orleans/3-day-new-orleans-school-trip/" },

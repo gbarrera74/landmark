@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Educational Trips in NYC | New York City Field Trips',
+  title: { absolute: "Educational Trips in NYC | Landmark Educational Tours" },
   description:
     'Customizable New York City field trips and student tours, Ellis Island, the United Nations, Broadway workshops, Wall Street, and the world-class museums. Safe, guided, and built around your curriculum.',
   alternates: { canonical: '/usa-trips/new-york-city/' },

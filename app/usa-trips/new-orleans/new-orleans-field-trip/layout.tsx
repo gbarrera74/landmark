@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: "New Orleans Field Trip | New Orleans",
+  title: { absolute: "New Orleans Field Trip | Landmark Educational Tours" },
   description:
     "A four day educational journey through New Orleans culture, history, and HBCU campuses built for student groups. A customizable 4 Day / 3 Night Landmark educational itinerary.",
   alternates: { canonical: "/usa-trips/new-orleans/new-orleans-field-trip/" },

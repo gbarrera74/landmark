@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: "4 Day Washington, DC School Trip | Washington, D.C.",
+  title: { absolute: "4 Day Washington, DC School Trip | Landmark Educational Tours" },
   description:
     "Explore the nation's capital over four days of monuments, museums, and hands-on lessons in American history and government. A customizable 4 Day / 3 Night Landmark educational itinerary.",
   alternates: { canonical: "/usa-trips/washington-dc/4-day-washington-dc-school-trip/" },

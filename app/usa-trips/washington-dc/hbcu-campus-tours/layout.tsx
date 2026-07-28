@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: "HBCU Campus Tours | Washington, D.C.",
+  title: { absolute: "HBCU Campus Tours in Washington, DC | Landmark Educational Tours" },
   description:
     "Take students on a multi-day journey through historic HBCU campuses and the landmarks of the nation's capital. A customizable 7 Day / 6 Night Landmark educational itinerary.",
   alternates: { canonical: "/usa-trips/washington-dc/hbcu-campus-tours/" },

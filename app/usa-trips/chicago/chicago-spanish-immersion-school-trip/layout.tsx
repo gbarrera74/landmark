@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: "Chicago Spanish Immersion School Trip | Chicago",
+  title: { absolute: "Chicago Spanish Immersion School Trip | Landmark Educational Tours" },
   description:
     "A two-day Spanish immersion adventure through Chicago's vibrant Latino neighborhoods, cultural landmarks, and interactive language experiences for student groups. A customizable 3 Day / 2 Night Landmark educational itinerary.",
   alternates: { canonical: "/usa-trips/chicago/chicago-spanish-immersion-school-trip/" },

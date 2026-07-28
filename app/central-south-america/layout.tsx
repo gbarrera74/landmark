@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: "Central & South America Destinations",
+  title: { absolute: "Central & South America Destinations | Landmark Educational Tours" },
   description:
     "Educational tours to Central & South America for students, starting with Costa Rica. Safe, guided, curriculum-aligned, and fully customizable.",
   alternates: { canonical: "/central-south-america/" },

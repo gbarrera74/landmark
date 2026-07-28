@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: "Italian Language & Culture Immersion | Italy",
+  title: { absolute: "Italian Language & Culture Immersion | Landmark Educational Tours" },
   description:
     "Conversational Italian in the field: markets, cafés, and hill towns, with guided cultural workshops. A customizable 9 Day / 8 Night Landmark educational itinerary.",
   alternates: { canonical: "/europe/italy/italian-language-culture-immersion/" },

@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: "NYC Performing Arts Tour | New York City",
+  title: { absolute: "NYC Performing Arts Tour | Landmark Educational Tours" },
   description:
     "Immerse your student performers in the magic of Broadway with backstage access, hands-on workshops, and a world-class show in the heart of Times Square. A customizable 3 Day / 2 Night Landmark educational itinerary.",
   alternates: { canonical: "/usa-trips/new-york-city/nyc-performing-arts-tour/" },

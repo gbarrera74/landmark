@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: "Educational Tours to South Korea",
+  title: { absolute: "Educational Tours to South Korea | Landmark Educational Tours" },
   description:
     "Customizable South Korea educational tours and student trips: safe, guided, curriculum-aligned, and handled end to end. Plan your South Korea school trip with Landmark.",
   alternates: { canonical: "/asia/south-korea/" },

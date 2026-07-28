@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: "Educational Trips to Montreal",
+  title: { absolute: "Educational Trips to Montreal | Landmark Educational Tours" },
   description:
     "Customizable Montreal school trips and itineraries: Old Montreal, French immersion, museums, and culture. Safe, guided, curriculum-aligned student travel.",
   alternates: { canonical: "/canada/montreal/" },

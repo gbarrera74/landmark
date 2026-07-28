@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: "United States Destinations",
+  title: { absolute: "United States Destinations | Landmark Educational Tours" },
   description:
     "Educational field trips and student tours across the United States, organized by region: East Coast, Midwest, Southwest, and West Coast. Customizable and curriculum-aligned.",
   alternates: { canonical: "/usa-trips/" },

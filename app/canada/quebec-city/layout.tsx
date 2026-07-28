@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: "Educational Trips to Quebec City",
+  title: { absolute: "Educational Trips to Quebec City | Landmark Educational Tours" },
   description:
     "Customizable Quebec City school trips and itineraries: Old Quebec, French immersion, the Citadelle, and Winter Carnival. Safe, guided, curriculum-aligned student travel.",
   alternates: { canonical: "/canada/quebec-city/" },

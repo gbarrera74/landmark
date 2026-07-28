@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: "Mackinac Island School Trip | Mackinac Island",
+  title: { absolute: "Mackinac Island School Trip | Landmark Educational Tours" },
   description:
     "Explore historic Mackinac Island on a customizable educational field trip that connects students to real places and living traditions. A customizable 2 Day / 1 Night Landmark educational itinerary.",
   alternates: { canonical: "/usa-trips/mackinac-island/mackinac-island-school-trip/" },

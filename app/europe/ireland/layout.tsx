@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: "Educational Tours to Ireland",
+  title: { absolute: "Educational Tours to Ireland | Landmark Educational Tours" },
   description:
     "Customizable Ireland educational tours and student trips: safe, guided, curriculum-aligned, and handled end to end. Plan your Ireland school trip with Landmark.",
   alternates: { canonical: "/europe/ireland/" },
