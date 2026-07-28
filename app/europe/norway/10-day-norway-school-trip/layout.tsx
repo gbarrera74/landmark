@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: "10 Day Norway School Trip | Norway",
+  title: { absolute: "10 Day Norway School Trip | Landmark Educational Tours" },
   description:
     "Ten days across Oslo, Bergen, and Norway's fjords, where students explore Viking heritage, glaciers, and sustainability up close. A customizable 10 Day / 9 Night Landmark educational itinerary.",
   alternates: { canonical: "/europe/norway/10-day-norway-school-trip/" },

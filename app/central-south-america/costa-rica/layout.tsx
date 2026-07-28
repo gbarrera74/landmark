@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: "Educational Tours to Costa Rica",
+  title: { absolute: "Educational Tours to Costa Rica | Landmark Educational Tours" },
   description:
     "Customizable Costa Rica educational tours and student trips: safe, guided, curriculum-aligned, and handled end to end. Plan your Costa Rica school trip with Landmark.",
   alternates: { canonical: "/central-south-america/costa-rica/" },

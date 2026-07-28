@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: "3 Day Boston Field Trip | Boston",
+  title: { absolute: "3 Day Boston Field Trip | Landmark Educational Tours" },
   description:
     "Trace Boston's revolutionary roots across three days of hands-on history, iconic landmarks, and student-friendly exploration. A customizable 3 Day / 2 Night Landmark educational itinerary.",
   alternates: { canonical: "/usa-trips/boston/3-day-boston-field-trip/" },

@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Educational Trips to Boston | Boston Field Trips',
+  title: { absolute: "Educational Trips to Boston | Landmark Educational Tours" },
   description:
     'Customizable Boston field trips and student tours, the Freedom Trail, historic meeting houses, world-class universities, plus Salem and Newport add-ons. Safe, guided, and built around your curriculum.',
   alternates: { canonical: '/usa-trips/boston/' },

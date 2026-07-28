@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: "Savannah Field Trip | Savannah",
+  title: { absolute: "Savannah Field Trip | Landmark Educational Tours" },
   description:
     "Take students beyond the classroom with a customizable Savannah journey through preserved historic sites, guided tours, and hands on learning. A customizable 3 Day / 2 Night Landmark educational itinerary.",
   alternates: { canonical: "/usa-trips/savannah/savannah-field-trip/" },

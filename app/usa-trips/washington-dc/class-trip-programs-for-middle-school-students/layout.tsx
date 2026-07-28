@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: "Class Trip Programs for Middle School Students | Washington, D.C.",
+  title: { absolute: "Washington, DC Class Trip Programs for Middle School Students | Landmark Educational Tours" },
   description:
     "A three day educational journey through the nation's capital, blending iconic memorials, the U.S. Capitol, and Smithsonian museums for middle school groups. A customizable 3 Day / 2 Night Landmark educational itinerary.",
   alternates: { canonical: "/usa-trips/washington-dc/class-trip-programs-for-middle-school-students/" },

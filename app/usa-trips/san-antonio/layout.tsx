@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: "Educational Field Trips in San Antonio",
+  title: { absolute: "Educational Field Trips in San Antonio | Landmark Educational Tours" },
   description:
     "Customizable San Antonio field trips and student tours: safe, guided, and built around your curriculum. Plan your San Antonio educational trip with Landmark Educational Tours.",
   alternates: { canonical: "/usa-trips/san-antonio/" },

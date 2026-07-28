@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Educational Trips to Italy | Student Tours',
+  title: { absolute: "Educational Trips to Italy | Landmark Educational Tours" },
   description:
     'Customizable educational tours to Italy for students, Rome, Florence, Venice, and Pompeii. Guided, curriculum-aligned, and fully supported, from group flights to licensed local guides.',
   alternates: { canonical: '/europe/italy/' },

@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: "Educational Field Trips in New Mexico",
+  title: { absolute: "Educational Field Trips in New Mexico | Landmark Educational Tours" },
   description:
     "Customizable New Mexico field trips and student tours: safe, guided, and built around your curriculum. Plan your New Mexico educational trip with Landmark Educational Tours.",
   alternates: { canonical: "/usa-trips/new-mexico/" },
