@@ -409,4 +409,26 @@ export const WP_REDIRECTS: Redirect[] = [
   { source: "/allegany-limestone-8th-grade-trip-2027", destination: "/register/allegany-limestone-8th-grade-trip-2027/", permanent: true },
   { source: "/soces", destination: "/register/soces/", permanent: true },
   { source: "/blog/category/:path*", destination: "/blog/", permanent: true },
+  // --- Launch QC (post-cutover): thank-you stubs -> real page (were 410'd, breaking form redirects) ---
+  { source: "/thank-you-page", destination: "/thank-you/", permanent: true },
+  { source: "/thank-you-page-2", destination: "/thank-you/", permanent: true },
+  { source: "/thank-you-page-landmark-tours-plus", destination: "/thank-you/", permanent: true },
+  // --- Launch QC: broken internal blog links (old WP paths that 404'd) -> live pages ---
+  { source: "/contact", destination: "/contact-us/", permanent: true },
+  { source: "/charleston-sc", destination: "/usa-trips/charleston/", permanent: true },
+  { source: "/charleston-tours", destination: "/usa-trips/charleston/", permanent: true },
+  { source: "/savannah-tours", destination: "/usa-trips/savannah/", permanent: true },
+  { source: "/mackinac-island-tours", destination: "/usa-trips/mackinac-island/", permanent: true },
+  { source: "/new-mexico-tours", destination: "/usa-trips/new-mexico/", permanent: true },
+  { source: "/los-angeles-tours", destination: "/usa-trips/los-angeles/", permanent: true },
+  { source: "/williamsburg-tours", destination: "/usa-trips/williamsburg/", permanent: true },
+  { source: "/seattle", destination: "/usa-trips/seattle/", permanent: true },
+  { source: "/school-trip-destinations/washington-dc", destination: "/usa-trips/washington-dc/", permanent: true },
+  { source: "/usa-trips/new-york-city-tours/art-tour-nyc", destination: "/usa-trips/new-york-city/art-focused-tour-nyc/", permanent: true },
+  { source: "/usa-trips/new-york-city-tours/nyc-pa-tour", destination: "/usa-trips/new-york-city/nyc-performing-arts-tour/", permanent: true },
+  { source: "/international/canada/quebec-city-3day-itinerary", destination: "/canada/quebec-city/3-day-quebec-city-itinerary/", permanent: true },
+  { source: "/international/canada/quebec-city-4day-itinerary", destination: "/canada/quebec-city/4-day-quebec-city-itinerary/", permanent: true },
+  { source: "/3-day-toronto-itinerary", destination: "/canada/", permanent: true },
+  // --- Launch QC: old WP page with no redirect (404) ---
+  { source: "/educational-tours-to-los-angeles", destination: "/usa-trips/los-angeles/", permanent: true },
 ]

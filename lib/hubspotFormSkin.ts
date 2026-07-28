@@ -85,7 +85,7 @@ html.lm-hsform,html.lm-hsform body{background:transparent!important;}
 .lm-hsform input[type="file"].hs-input:hover::file-selector-button{background:var(--lm-primary-700)!important;}
 
 /* checkbox / radio (defensive) */
-.lm-hsform .hs-input[type="checkbox"],.lm-hsform .hs-input[type="radio"]{width:18px!important;height:18px!important;min-height:0!important;margin:2px 10px 0 0!important;accent-color:var(--lm-primary)!important;}
+.lm-hsform input.hs-input[type="checkbox"],.lm-hsform input.hs-input[type="radio"]{-webkit-appearance:auto!important;appearance:auto!important;width:18px!important;height:18px!important;min-height:0!important;padding:0!important;margin:2px 10px 0 0!important;accent-color:var(--lm-primary)!important;box-shadow:none!important;flex:none!important;background:none!important;}
 .lm-hsform ul.inputs-list{list-style:none!important;margin:4px 0 0!important;padding:0!important;}
 .lm-hsform .hs-form-booleancheckbox-display,.lm-hsform .hs-form-radio-display{font-weight:400!important;font-size:14px!important;color:var(--lm-ink)!important;}
 

@@ -48,7 +48,7 @@ export default function BrochurePopup() {
         <button ref={closeRef} className="lm-popup-close" aria-label="Close" onClick={close}>
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="18" y1="6" x2="6" y2="18" /><line x1="6" y1="6" x2="18" y2="18" /></svg>
         </button>
-        <Image src="/images/landmark/b2s-promotion-logo.png" alt="" width={160} height={64} className="lm-popup-logo" />
+        <Image src="/images/landmark/brochure-cover.png" alt="Landmark Educational Tours 2025–2026 travel brochure cover" width={150} height={194} className="lm-popup-cover" />
         <h2 id="lm-popup-title">Download our free brochure</h2>
         <p>Our new 2025-26 brochure highlights what we believe, what we offer, and where we can take your group.</p>
         <Link href="/resources/" className="ile-btn ile-btn--gold" onClick={close}>

@@ -5,7 +5,9 @@ import type { NextRequest } from 'next/server'
 // expired campaigns, thank-you/utility stubs). Return 410 Gone so search
 // engines deindex them fast — intentionally NOT redirected.
 // Next 16 "proxy" convention (formerly middleware).
-const GONE = new Set(["/boston-rebrand", "/new-york-city-rebrand", "/atlanta-rebrand", "/my-account", "/checkout", "/cart", "/shop", "/teacher-discovery-summit-quebec-city-april-2025", "/mafla-actfl-2024-conference-bag", "/mafla-actfl-2024", "/quebec-city-school-trip-promo-2024-2025", "/b2s-new", "/acis-test", "/thank-you-page-2", "/itinerary-trip-template", "/thank-you-page-landmark-tours-plus", "/thank-you-page"])
+// NOTE: thank-you stubs are NOT here — lead forms redirect there post-submit,
+// so they 301 to the real /thank-you/ page (see lib/redirects.ts) instead of 410.
+const GONE = new Set(["/boston-rebrand", "/new-york-city-rebrand", "/atlanta-rebrand", "/my-account", "/checkout", "/cart", "/shop", "/teacher-discovery-summit-quebec-city-april-2025", "/mafla-actfl-2024-conference-bag", "/mafla-actfl-2024", "/quebec-city-school-trip-promo-2024-2025", "/b2s-new", "/acis-test", "/itinerary-trip-template"])
 
 export function proxy(req: NextRequest) {
   const path = req.nextUrl.pathname.replace(/\/$/, '') || '/'
@@ -46,13 +48,7 @@ export const config = {
     "/b2s-new/",
     "/acis-test",
     "/acis-test/",
-    "/thank-you-page-2",
-    "/thank-you-page-2/",
     "/itinerary-trip-template",
     "/itinerary-trip-template/",
-    "/thank-you-page-landmark-tours-plus",
-    "/thank-you-page-landmark-tours-plus/",
-    "/thank-you-page",
-    "/thank-you-page/",
   ],
 }
