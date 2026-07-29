@@ -433,4 +433,9 @@ export const WP_REDIRECTS: Redirect[] = [
   { source: "/educational-tours-to-los-angeles", destination: "/usa-trips/los-angeles/", permanent: true },
   // Per-school registration funnel (rebuilt 2026-07-29)
   { source: "/bella-christian-academy", destination: "/register/bella-christian-academy/", permanent: true },
+  // Region hubs retired -> destinations index (2026-07-29)
+  { source: "/east-coast", destination: "/destinations/", permanent: true },
+  { source: "/west-coast", destination: "/destinations/", permanent: true },
+  { source: "/midwest", destination: "/destinations/", permanent: true },
+  { source: "/southwest", destination: "/destinations/", permanent: true },
 ]

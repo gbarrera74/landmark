@@ -73,10 +73,10 @@ export default function Footer() {
         <div className="ilef-col">
           <h3>Destinations</h3>
           <div className="ilef-links">
-            <Link href="/east-coast/">East Coast</Link>
-            <Link href="/midwest/">Midwest</Link>
-            <Link href="/southwest/">Southwest</Link>
-            <Link href="/west-coast/">West Coast</Link>
+            <Link href="/usa-trips/washington-dc/">Washington, D.C.</Link>
+            <Link href="/usa-trips/new-york-city/">New York City</Link>
+            <Link href="/usa-trips/boston/">Boston</Link>
+            <Link href="/destinations/">All Destinations</Link>
             <Link href="/destinations/">International</Link>
           </div>
         </div>
