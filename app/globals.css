@@ -2129,6 +2129,16 @@ select.ilm-input { appearance: none; -webkit-appearance: none; cursor: pointer;
 .lm-reg-am-contact a { color: var(--lm-primary); font-weight: 600; }
 .lm-register-hero-sub { color: rgba(255,255,255,0.92); font-size: 16px; margin-top: 4px; }
 
+/* Itinerary days: OPTIONAL points of interest — a menu of choices, visually
+   separated from the scheduled activities so families don't read them as
+   "all included" (Michaela's Norway feedback). */
+.lm-day-options { margin-top: 14px; padding: 14px 16px; background: var(--lm-cream, #fbf6f1); border-left: 3px solid var(--lm-secondary, #d98b3a); border-radius: 0 10px 10px 0; }
+.lm-day-options-label { margin: 0 0 9px; font-family: var(--font-head); font-weight: 700; font-size: 13.5px; color: var(--lm-primary); }
+.lm-day-options-label span { font-weight: 500; font-style: italic; color: var(--lm-ink-muted); }
+.lm-day-options ul { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 6px 18px; }
+.lm-day-options li { position: relative; padding-left: 16px; font-size: 14.5px; line-height: 1.55; color: var(--lm-ink); }
+.lm-day-options li::before { content: ''; position: absolute; left: 2px; top: 9px; width: 5px; height: 5px; border-radius: 50%; background: var(--lm-secondary, #d98b3a); }
+
 /* Register page — tabs, FAQ, packing list, account-manager photo, gallery */
 .lm-reg-tabs-wrap { margin-top: 22px; }
 .lm-reg-tabs-wrap .lm-tabs { margin-bottom: 24px; gap: 2px; }
