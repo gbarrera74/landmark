@@ -21,6 +21,10 @@ export type Registration = {
   deposit?: string
   enrollmentEnds?: string
   registrationOpens?: string
+  /** Cost per student, if the school publishes it (e.g. "$500.00"). */
+  costPerStudent?: string
+  /** Trip-highlight carousel — Briana's convention is 6 photos of the attractions. */
+  photos?: { src: string; alt: string }[]
   wpId?: number
   modified?: string | null
   importedAt?: string
@@ -29,6 +33,19 @@ export type Registration = {
 /** Derive the account manager's email from their first name. */
 export function accountManagerEmail(name: string): string {
   return `${name.trim().toLowerCase()}@landmarkeducationaltours.com`
+}
+
+/**
+ * Account-manager headshots. Add a file to /public/register/ and map it here to
+ * show a photo; anyone without one falls back to an initial avatar.
+ */
+const AM_PHOTOS: Record<string, string> = {
+  emily: '/register/EWilsonHeadshot-221x300.png',
+  // angela: '/register/<file>' — awaiting Angela's headshot from Briana
+}
+
+export function accountManagerPhoto(name: string): string | null {
+  return AM_PHOTOS[name.trim().toLowerCase()] ?? null
 }
 
 export function getRegistration(slug: string): Registration | null {
