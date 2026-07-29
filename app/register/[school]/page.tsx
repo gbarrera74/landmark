@@ -3,8 +3,10 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import DOMPurify from 'isomorphic-dompurify'
-import { getRegistration, getAllRegistrationSlugs } from '@/lib/register'
+import { getRegistration, getAllRegistrationSlugs, accountManagerEmail } from '@/lib/register'
 import { SITE } from '@/lib/seo/schemas'
+
+const BATTLEFACE_URL = 'https://www.battleface.com/en-us/'
 
 export function generateStaticParams() {
   return getAllRegistrationSlugs().map((school) => ({ school }))
@@ -33,6 +35,7 @@ export default async function RegisterPage({ params }: { params: Promise<{ schoo
   if (!reg) notFound()
 
   const clean = DOMPurify.sanitize(reg.bodyHtml, { ALLOWED_TAGS, ALLOWED_ATTR })
+  const amEmail = reg.accountManager ? accountManagerEmail(reg.accountManager) : null
 
   return (
     <>
@@ -44,25 +47,52 @@ export default async function RegisterPage({ params }: { params: Promise<{ schoo
           </nav>
           <span className="lm-article-cat">Private Trip Registration</span>
           <h1>{reg.title}</h1>
-          {reg.subtitle && <p className="lm-article-meta">{reg.subtitle}</p>}
-          <p className="lm-register-hero-cta">
-            <a href={reg.portal} className="ile-btn ile-btn--gold" target="_blank" rel="noopener noreferrer">Register for This Trip</a>
-          </p>
+          {reg.subtitle && <p className="lm-register-hero-sub">{reg.subtitle}</p>}
         </div>
       </header>
 
       <section className="ile-section ile-section--white">
-        <div className="ile-container lm-article-wrap">
-          <article className="lm-article" dangerouslySetInnerHTML={{ __html: clean }} />
+        <div className="ile-container lm-register-layout">
+          <main className="lm-register-main">
+            <span className="ile-eyebrow">Sample Itinerary</span>
+            <h2 className="lm-h2-amber">{reg.destination ? `${reg.destination} Itinerary` : 'Trip Itinerary'}</h2>
+            <article className="lm-article lm-register-body" dangerouslySetInnerHTML={{ __html: clean }} />
+          </main>
 
-          <div className="lm-article-cta">
-            <h3>Ready to secure your spot?</h3>
-            <p>Registration is first come, first served. Reserve your place on the trip through our secure travel portal.</p>
-            <a href={reg.portal} className="ile-btn ile-btn--primary" target="_blank" rel="noopener noreferrer">Register Now</a>
+          <aside className="lm-register-side">
+            <div className="lm-reg-card lm-reg-card--register">
+              <h3>Ready to Register?</h3>
+              <p>Secure your spot below — trips fill on a first-come, first-served basis.</p>
+              <dl className="lm-reg-facts">
+                <div><dt>Registration Opens</dt><dd>{reg.registrationOpens || 'TBD'}</dd></div>
+                <div><dt>Enrollment Ends</dt><dd>{reg.enrollmentEnds || 'TBD'}</dd></div>
+                <div><dt>Trip Deposit / Traveler</dt><dd>{reg.deposit || 'TBD'}</dd></div>
+              </dl>
+              <a href={reg.portal} className="ile-btn ile-btn--gold lm-reg-btn" target="_blank" rel="noopener noreferrer">Register Here</a>
+            </div>
+
+            {reg.accountManager && amEmail && (
+              <div className="lm-reg-card">
+                <h3>Meet Your Account Manager</h3>
+                <p className="lm-reg-am-name">{reg.accountManager}</p>
+                <p className="lm-reg-am-contact">
+                  <a href={`mailto:${amEmail}`}>{amEmail}</a>
+                  <br />
+                  <a href={`tel:${SITE.phone}`}>{SITE.phoneDisplay}</a>
+                </p>
+              </div>
+            )}
+
+            <div className="lm-reg-card lm-reg-card--protection">
+              <h3>Travel Protection</h3>
+              <p>Add a travel protection policy for extra peace of mind before you depart.</p>
+              <a href={BATTLEFACE_URL} className="ile-btn ile-btn--ghost lm-reg-btn" target="_blank" rel="noopener noreferrer">Purchase Coverage</a>
+            </div>
+
             <p className="lm-register-help">
               Questions? Call <a href={`tel:${SITE.phone}`}>{SITE.phoneDisplay}</a> or email <a href={`mailto:${SITE.email}`}>{SITE.email}</a>.
             </p>
-          </div>
+          </aside>
         </div>
       </section>
     </>
