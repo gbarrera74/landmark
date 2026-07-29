@@ -3,8 +3,10 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import DOMPurify from 'isomorphic-dompurify'
-import { getRegistration, getAllRegistrationSlugs, accountManagerEmail } from '@/lib/register'
+import { getRegistration, getAllRegistrationSlugs, accountManagerEmail, accountManagerPhoto } from '@/lib/register'
 import { SITE } from '@/lib/seo/schemas'
+import RegisterTabs from '@/components/RegisterTabs'
+import RegisterGallery from '@/components/RegisterGallery'
 
 const BATTLEFACE_URL = 'https://www.battleface.com/en-us/'
 
@@ -36,6 +38,7 @@ export default async function RegisterPage({ params }: { params: Promise<{ schoo
 
   const clean = DOMPurify.sanitize(reg.bodyHtml, { ALLOWED_TAGS, ALLOWED_ATTR })
   const amEmail = reg.accountManager ? accountManagerEmail(reg.accountManager) : null
+  const amPhoto = reg.accountManager ? accountManagerPhoto(reg.accountManager) : null
 
   return (
     <>
@@ -54,9 +57,14 @@ export default async function RegisterPage({ params }: { params: Promise<{ schoo
       <section className="ile-section ile-section--white">
         <div className="ile-container lm-register-layout">
           <main className="lm-register-main">
-            <span className="ile-eyebrow">Sample Itinerary</span>
-            <h2 className="lm-h2-amber">{reg.destination ? `${reg.destination} Itinerary` : 'Trip Itinerary'}</h2>
-            <article className="lm-article lm-register-body" dangerouslySetInnerHTML={{ __html: clean }} />
+            <span className="ile-eyebrow">Trip Details</span>
+            <h2 className="lm-h2-amber">{reg.destination ? `${reg.destination} Trip` : 'Your Trip'}</h2>
+            {reg.costPerStudent && (
+              <p className="lm-reg-cost">
+                For this trip, the cost per student is <strong>{reg.costPerStudent}</strong>.
+              </p>
+            )}
+            <RegisterTabs itineraryHtml={clean} portal={reg.portal} />
           </main>
 
           <aside className="lm-register-side">
@@ -72,10 +80,17 @@ export default async function RegisterPage({ params }: { params: Promise<{ schoo
             </div>
 
             {reg.accountManager && amEmail && (
-              <div className="lm-reg-card">
+              <div className="lm-reg-card lm-reg-card--am">
                 <h3>Meet Your Account Manager</h3>
+                {amPhoto ? (
+                  <img className="lm-reg-am-photo" src={amPhoto} alt={`${reg.accountManager}, Landmark account manager`} loading="lazy" />
+                ) : (
+                  <span className="lm-reg-am-initial" aria-hidden="true">{reg.accountManager.charAt(0)}</span>
+                )}
                 <p className="lm-reg-am-name">{reg.accountManager}</p>
                 <p className="lm-reg-am-contact">
+                  Contact {reg.accountManager} with any questions about your trip:
+                  <br />
                   <a href={`mailto:${amEmail}`}>{amEmail}</a>
                   <br />
                   <a href={`tel:${SITE.phone}`}>{SITE.phoneDisplay}</a>
@@ -95,6 +110,14 @@ export default async function RegisterPage({ params }: { params: Promise<{ schoo
           </aside>
         </div>
       </section>
+
+      {reg.photos && reg.photos.length > 0 && (
+        <section className="ile-section ile-section--cream">
+          <div className="ile-container">
+            <RegisterGallery photos={reg.photos} destination={reg.destination} />
+          </div>
+        </section>
+      )}
     </>
   )
 }

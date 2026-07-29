@@ -2128,6 +2128,45 @@ select.ilm-input { appearance: none; -webkit-appearance: none; cursor: pointer;
 .lm-reg-am-name { font-family: var(--font-head); font-weight: 700; font-size: 17px; color: var(--lm-ink) !important; margin-bottom: 4px; }
 .lm-reg-am-contact a { color: var(--lm-primary); font-weight: 600; }
 .lm-register-hero-sub { color: rgba(255,255,255,0.92); font-size: 16px; margin-top: 4px; }
+
+/* Register page — tabs, FAQ, packing list, account-manager photo, gallery */
+.lm-reg-tabs-wrap { margin-top: 22px; }
+.lm-reg-tabs-wrap .lm-tabs { margin-bottom: 24px; gap: 2px; }
+/* 6 tabs share a column narrowed by the sidebar — tighten so they stay on one row. */
+.lm-reg-tabs-wrap .lm-tab { padding: 11px 12px; font-size: 14px; white-space: nowrap; }
+@media (max-width: 1080px) { .lm-reg-tabs-wrap .lm-tab { font-size: 13.5px; padding: 10px 9px; } }
+.lm-reg-cost { margin-top: 10px; font-size: 15px; color: var(--lm-ink); }
+.lm-register-body ol { margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 12px; }
+.lm-register-body ol li { line-height: 1.65; padding-left: 4px; }
+.lm-register-body ol li::before { content: none; }
+.lm-reg-faq { display: flex; flex-direction: column; gap: 12px; }
+.lm-reg-faq-item { background: var(--lm-cream, #fbf6f1); border: 1px solid var(--lm-line, #ecdfd5); border-radius: 12px; padding: 16px 18px; }
+.lm-reg-faq-item summary { cursor: pointer; font-family: var(--font-head); font-weight: 700; font-size: 15.5px; color: var(--lm-ink); list-style: none; display: flex; justify-content: space-between; gap: 12px; align-items: center; }
+.lm-reg-faq-item summary::-webkit-details-marker { display: none; }
+.lm-reg-faq-item summary::after { content: '+'; font-size: 20px; color: var(--lm-primary); line-height: 1; }
+.lm-reg-faq-item[open] summary::after { content: '\2013'; }
+.lm-reg-faq-a { margin-top: 11px; font-size: 15px; line-height: 1.7; color: var(--lm-ink-muted); }
+.lm-reg-packing-img { display: block; width: 100%; max-width: 620px; margin: 0 auto; height: auto; border-radius: 12px; border: 1px solid var(--lm-line); }
+.lm-reg-card--am { text-align: center; }
+.lm-reg-am-photo { display: block; width: 116px; height: 116px; object-fit: cover; border-radius: 50%; margin: 4px auto 12px; border: 3px solid var(--lm-white); box-shadow: 0 6px 18px rgba(36,17,9,0.16); }
+.lm-reg-am-initial { display: flex; align-items: center; justify-content: center; width: 116px; height: 116px; margin: 4px auto 12px; border-radius: 50%; background: linear-gradient(135deg, var(--lm-primary) 0%, var(--lm-primary-900) 100%); color: #fff; font-family: var(--font-head); font-weight: 700; font-size: 42px; }
+.lm-reg-card--am .lm-reg-am-contact { font-size: 14px; line-height: 1.7; color: var(--lm-ink-muted); }
+.lm-reg-gallery { margin: 0; }
+.lm-reg-gallery-shell { position: relative; margin-top: 34px; }
+.lm-reg-gallery-track { display: flex; gap: 18px; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; padding: 4px; }
+.lm-reg-gallery-track::-webkit-scrollbar { display: none; }
+.lm-reg-slide { flex: 0 0 clamp(260px, 32%, 380px); scroll-snap-align: start; margin: 0; }
+.lm-reg-slide img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 14px; display: block; }
+.lm-reg-slide figcaption { margin-top: 9px; font-size: 13.5px; line-height: 1.5; color: var(--lm-ink-muted); }
+.lm-reg-gallery-nav { position: absolute; top: 34%; z-index: 3; width: 44px; height: 44px; border-radius: 50%; border: 1px solid var(--lm-line); background: var(--lm-white); color: var(--lm-primary); cursor: pointer; display: flex; align-items: center; justify-content: center; box-shadow: 0 6px 18px rgba(36,17,9,0.14); transition: background .2s ease, color .2s ease; }
+.lm-reg-gallery-nav:hover { background: var(--lm-primary); color: #fff; }
+.lm-reg-gallery-nav svg { width: 20px; height: 20px; }
+.lm-reg-gallery-nav.prev { left: -14px; }
+.lm-reg-gallery-nav.next { right: -14px; }
+@media (max-width: 700px) {
+  .lm-reg-gallery-nav { display: none; }
+  .lm-reg-slide { flex-basis: 82%; }
+}
 @media (max-width: 900px) {
   .lm-register-layout { grid-template-columns: 1fr; gap: 30px; }
   .lm-register-side { position: static; order: -1; }
