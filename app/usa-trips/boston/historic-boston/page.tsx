@@ -101,7 +101,7 @@ export default function Itin_usa_trips__boston__historic_boston() {
   return (
     <>
       <PageHero
-        eyebrow="Boston · 2 Day / 1 Night"
+        eyebrow="Boston · 3 Day / 2 Night"
         title={<>Historic Boston</>}
         subtitle="Walk the Freedom Trail and explore revolutionary landmarks on a three day Boston tour built for student groups."
         image="/images/landmark/boston-old-state-house.jpg"
@@ -128,7 +128,7 @@ export default function Itin_usa_trips__boston__historic_boston() {
             <div className="lm-summary-card">
               <h2 className="lm-summary-title">Trip Snapshot</h2>
               <dl className="lm-summary-list">
-                <div><dt>Duration</dt><dd>2 Day / 1 Night</dd></div>
+                <div><dt>Duration</dt><dd>3 Day / 2 Night</dd></div>
                 <div><dt>Destination</dt><dd>Boston, Massachusetts</dd></div>
                 <div><dt>Best for</dt><dd>All grade levels</dd></div>
                 <div><dt>Style</dt><dd>Private, fully customizable</dd></div>

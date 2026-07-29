@@ -100,7 +100,7 @@ export default function Itin_usa_trips__boston__boston_school_trip() {
   return (
     <>
       <PageHero
-        eyebrow="Boston · 3 Day / 2 Night"
+        eyebrow="Boston · 2 Day / 1 Night"
         title={<>Boston School Trip</>}
         subtitle="Walk the Freedom Trail, tour the USS Constitution, and bring the American Revolution to life for your students."
         image="/images/landmark/ethical-culture-boston.jpg"
@@ -127,7 +127,7 @@ export default function Itin_usa_trips__boston__boston_school_trip() {
             <div className="lm-summary-card">
               <h2 className="lm-summary-title">Trip Snapshot</h2>
               <dl className="lm-summary-list">
-                <div><dt>Duration</dt><dd>3 Day / 2 Night</dd></div>
+                <div><dt>Duration</dt><dd>2 Day / 1 Night</dd></div>
                 <div><dt>Destination</dt><dd>Boston, Massachusetts</dd></div>
                 <div><dt>Best for</dt><dd>All grade levels</dd></div>
                 <div><dt>Style</dt><dd>Private, fully customizable</dd></div>
