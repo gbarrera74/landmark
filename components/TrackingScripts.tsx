@@ -26,6 +26,7 @@ const GTM_ID = 'GTM-K6Z2H62D'
 const GA4_ID = 'G-D4LC281NP7'
 const ADS_ID = 'AW-395103468'
 const HS_PORTAL = '9241531'
+const UET_ID = '97193870' // Microsoft Advertising (Bing) UET
 // EXACT production origins only — a staging subdomain like
 // staging.landmarkeducationaltours.com must NOT fire production analytics/Ads.
 const PROD_HOSTS = /^(www\.)?landmarkeducationaltours\.com$/
@@ -103,6 +104,14 @@ export default function TrackingScripts() {
 
           {/* HubSpot tracking (hutk cookie for lead attribution) */}
           <Script id="hs-script-loader" strategy="lazyOnload" src={`https://js.hs-scripts.com/${HS_PORTAL}.js`} />
+
+          {/* Microsoft Advertising (Bing) UET tag */}
+          <Script id="bing-uet" strategy="lazyOnload">{`
+            (function(w,d,t,r,u){var f,n,i;w[u]=w[u]||[],f=function(){var o={ti:"${UET_ID}",enableAutoSpaTracking:true};o.q=w[u],w[u]=new UET(o),w[u].push("pageLoad")},n=d.createElement(t),n.src=r,n.async=1,n.onload=n.onreadystatechange=function(){var s=this.readyState;s&&s!=="loaded"&&s!=="complete"||(f(),n.onload=n.onreadystatechange=null)},i=d.getElementsByTagName(t)[0],i.parentNode.insertBefore(n,i)})(window,document,"script","//bat.bing.com/bat.js","uetq");
+          `}</Script>
+
+          {/* ClickCease — ad click-fraud protection (associates by domain) */}
+          <Script id="clickcease" strategy="lazyOnload" src="https://www.clickcease.com/monitor/stat.js" />
         </>
       )}
 
@@ -115,6 +124,13 @@ export default function TrackingScripts() {
           style={{ display: 'none', visibility: 'hidden' }}
           title="gtm"
         />
+      </noscript>
+      {/* ClickCease noscript fallback */}
+      <noscript>
+        <a href="https://www.clickcease.com" rel="nofollow">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="https://monitor.clickcease.com/stats/stats.aspx" alt="ClickCease" />
+        </a>
       </noscript>
     </>
   )
