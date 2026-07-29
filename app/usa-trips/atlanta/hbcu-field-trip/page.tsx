@@ -41,7 +41,7 @@ const RELATED = [
   { title: "2 Day Atlanta School Trip", img: "/images/landmark/atlanta-downtown.jpg", href: "/usa-trips/atlanta/2-day-atlanta-school-trip/" },
 ]
 
-const DESC_P1 = "Embark on an inspiring fill in days-day educational journey to explore the rich history and vibrant campuses of Historically Black Colleges and Universities (HBCUs)! Visit prestigious institutions such as Spelman College, Morehouse College, Morris Brown College, and others to experience their legacy of academic excellence and cultural impact. From learning about their pivotal role in the Civil Rights Movement to engaging in interactive campus tours and workshops, this trip promises an immersive, hands-on learning experience that will leave students motivated and empowered by the history, achievements, and future of HBCUs."
+const DESC_P1 = "Embark on an inspiring four day educational journey to explore the rich history and vibrant campuses of Historically Black Colleges and Universities (HBCUs)! Visit prestigious institutions such as Spelman College, Morehouse College, Morris Brown College, and others to experience their legacy of academic excellence and cultural impact. From learning about their pivotal role in the Civil Rights Movement to engaging in interactive campus tours and workshops, this trip promises an immersive, hands-on learning experience that will leave students motivated and empowered by the history, achievements, and future of HBCUs."
 
 const sampleTab = (
   <>
