@@ -26,7 +26,7 @@ export default function NewMexico() {
   return (
     <>
       <PageHero
-        eyebrow="New Mexico, NM · The Land of Enchantment"
+        eyebrow="Santa Fe, New Mexico · The Land of Enchantment"
         title={<>Educational Field Trips in <em>New Mexico</em></>}
         subtitle="Explore New Mexico with your students, where ancient pueblos, high-desert landscapes, and living Southwest traditions turn history and culture into hands-on learning."
         image="/images/landmark/new-mexico-hero.jpg"

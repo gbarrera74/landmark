@@ -102,7 +102,7 @@ export default function Itin_usa_trips__atlanta__atlanta_and_alabama_hbcu_field_
   return (
     <>
       <PageHero
-        eyebrow="Atlanta · 5 Day / 4 Night"
+        eyebrow="Atlanta · 4 Day / 3 Night"
         title={<>Atlanta &amp; AL HBCU Field Trip</>}
         subtitle="Explore historic HBCU campuses across Atlanta and Alabama on a four day journey through Civil Rights history and higher education."
         image="/images/landmark/hbcu-students-campus.jpg"
@@ -129,7 +129,7 @@ export default function Itin_usa_trips__atlanta__atlanta_and_alabama_hbcu_field_
             <div className="lm-summary-card">
               <h2 className="lm-summary-title">Trip Snapshot</h2>
               <dl className="lm-summary-list">
-                <div><dt>Duration</dt><dd>5 Day / 4 Night</dd></div>
+                <div><dt>Duration</dt><dd>4 Day / 3 Night</dd></div>
                 <div><dt>Destination</dt><dd>Atlanta and Alabama</dd></div>
                 <div><dt>Best for</dt><dd>All grade levels</dd></div>
                 <div><dt>Style</dt><dd>Private, fully customizable</dd></div>

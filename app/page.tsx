@@ -127,7 +127,7 @@ export default function Home() {
         <div className="ile-container ile-center lm-narrow">
           <span className="ile-eyebrow">Explore Great Places</span>
           <h1 id="intro-h" className="lm-h2-amber">EDUCATIONAL FIELD TRIPS</h1>
-          <p className="ile-lead lm-center-lead">Landmark designs safe, fully-customized educational trips, from the monuments of Washington, D.C. to the streets of Rome and Kyoto, built around your students, your curriculum, and your budget.</p>
+          <p className="ile-lead lm-center-lead">Landmark designs safe, fully-customized educational trips — from Washington, D.C. and New York City to Boston, Charleston, and beyond — built around your students, your curriculum, and your budget.</p>
           <ul className="lm-welcome-pills">
             <li>
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="6" /><path d="M8.2 13.5 7 22l5-3 5 3-1.2-8.5" /></svg>
