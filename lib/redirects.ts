@@ -431,4 +431,6 @@ export const WP_REDIRECTS: Redirect[] = [
   { source: "/3-day-toronto-itinerary", destination: "/canada/", permanent: true },
   // --- Launch QC: old WP page with no redirect (404) ---
   { source: "/educational-tours-to-los-angeles", destination: "/usa-trips/los-angeles/", permanent: true },
+  // Per-school registration funnel (rebuilt 2026-07-29)
+  { source: "/bella-christian-academy", destination: "/register/bella-christian-academy/", permanent: true },
 ]

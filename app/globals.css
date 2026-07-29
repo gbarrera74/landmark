@@ -2104,6 +2104,35 @@ select.ilm-input { appearance: none; -webkit-appearance: none; cursor: pointer;
 .lm-register-help { margin-top: 14px; font-size: 14px; color: var(--lm-muted, #6b5b53); }
 .lm-register-help a { color: var(--lm-primary); font-weight: 600; }
 
+/* Register page — two-column itinerary + register sidebar */
+.lm-register-layout { display: grid; grid-template-columns: minmax(0, 1fr) 340px; gap: 44px; align-items: start; }
+.lm-register-main .ile-eyebrow { display: block; }
+.lm-register-body { margin-top: 16px; }
+.lm-register-body h3 { margin: 28px 0 12px; font-size: 20px; color: var(--lm-primary); }
+.lm-register-body ul { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 10px; }
+.lm-register-body li { position: relative; padding-left: 20px; line-height: 1.6; color: var(--lm-ink); }
+.lm-register-body li::before { content: ''; position: absolute; left: 4px; top: 11px; width: 6px; height: 6px; border-radius: 50%; background: var(--lm-primary); }
+.lm-register-side { position: sticky; top: calc(var(--lm-header-h) + 20px); display: flex; flex-direction: column; gap: 18px; }
+.lm-reg-card { background: var(--lm-cream, #fbf6f1); border: 1px solid var(--lm-line, #ecdfd5); border-radius: 14px; padding: 22px; }
+.lm-reg-card h3 { font-size: 18px; margin-bottom: 8px; color: var(--lm-ink); }
+.lm-reg-card > p { font-size: 14px; line-height: 1.6; color: var(--lm-ink-muted, #6b5b53); }
+.lm-reg-card--register { background: linear-gradient(135deg, var(--lm-primary) 0%, var(--lm-primary-900) 100%); border: 0; }
+.lm-reg-card--register h3 { color: #fff; }
+.lm-reg-card--register > p { color: rgba(255,255,255,0.85); }
+.lm-reg-facts { margin: 16px 0 18px; display: flex; flex-direction: column; gap: 9px; }
+.lm-reg-facts div { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; padding-bottom: 9px; border-bottom: 1px solid rgba(255,255,255,0.18); }
+.lm-reg-facts div:last-child { border-bottom: 0; padding-bottom: 0; }
+.lm-reg-facts dt { font-size: 12.5px; color: rgba(255,255,255,0.82); }
+.lm-reg-facts dd { font-size: 14px; font-weight: 700; color: #fff; text-align: right; }
+.lm-reg-btn { width: 100%; justify-content: center; }
+.lm-reg-am-name { font-family: var(--font-head); font-weight: 700; font-size: 17px; color: var(--lm-ink) !important; margin-bottom: 4px; }
+.lm-reg-am-contact a { color: var(--lm-primary); font-weight: 600; }
+.lm-register-hero-sub { color: rgba(255,255,255,0.92); font-size: 16px; margin-top: 4px; }
+@media (max-width: 900px) {
+  .lm-register-layout { grid-template-columns: 1fr; gap: 30px; }
+  .lm-register-side { position: static; order: -1; }
+}
+
 /* Blog "browse by topic" chips + category archives */
 .lm-blog-topics { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-bottom: 28px; }
 .lm-blog-topics-label { font-weight: 600; color: var(--lm-primary); margin-right: 4px; }

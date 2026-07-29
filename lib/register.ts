@@ -14,9 +14,21 @@ export type Registration = {
   subtitle: string
   portal: string
   bodyHtml: string
+  destination?: string
+  dates?: string
+  /** Account manager first name; email is derived as <name>@landmarkeducationaltours.com */
+  accountManager?: string
+  deposit?: string
+  enrollmentEnds?: string
+  registrationOpens?: string
   wpId?: number
   modified?: string | null
   importedAt?: string
+}
+
+/** Derive the account manager's email from their first name. */
+export function accountManagerEmail(name: string): string {
+  return `${name.trim().toLowerCase()}@landmarkeducationaltours.com`
 }
 
 export function getRegistration(slug: string): Registration | null {
