@@ -51,7 +51,6 @@ const ROUTES: { path: string; priority: number; changeFrequency: 'weekly' | 'mon
   { path: '/plan-a-trip/', priority: 0.7, changeFrequency: 'monthly' },
   { path: '/privacy-policy/', priority: 0.7, changeFrequency: 'monthly' },
   { path: '/private-school-class-trips/', priority: 0.7, changeFrequency: 'monthly' },
-  { path: '/private-school-field-trip/', priority: 0.7, changeFrequency: 'monthly' },
   { path: '/resources/', priority: 0.7, changeFrequency: 'monthly' },
   { path: '/testimonials/', priority: 0.7, changeFrequency: 'monthly' },
   { path: '/themes/', priority: 0.8, changeFrequency: 'weekly' },

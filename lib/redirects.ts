@@ -174,6 +174,12 @@ export const WP_REDIRECTS: Redirect[] = [
   { source: "/philadelphia-historical-sites-for-students", destination: "/blog/philadelphia-historical-sites-for-students/", permanent: true },
   { source: "/pilsen-murals-walking-tour", destination: "/blog/pilsen-murals-walking-tour/", permanent: true },
   { source: "/plan-a-group-tour", destination: "/plan-a-trip/", permanent: true },
+  // /private-school-field-trip/ was a thinner duplicate of the class-trips page:
+  // 7 of its 14 sentences were verbatim copies and the rest were the same pitch
+  // reworded. Over 3 months it drew 0 clicks on 6 impressions (vs 92 for
+  // class-trips), so consolidating loses no traffic and stops the two pages
+  // splitting the same intent.
+  { source: "/private-school-field-trip", destination: "/private-school-class-trips/", permanent: true },
   { source: "/planatrip", destination: "/get-a-quote/", permanent: true },
   { source: "/planning-a-school-trip-to-washington-dc-post-pandemic", destination: "/blog/planning-a-school-trip-to-washington-dc-post-pandemic/", permanent: true },
   { source: "/pouding-chomeur", destination: "/blog/pouding-chomeur/", permanent: true },
