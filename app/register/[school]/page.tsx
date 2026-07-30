@@ -8,7 +8,7 @@ import { SITE } from '@/lib/seo/schemas'
 import RegisterTabs from '@/components/RegisterTabs'
 import RegisterGallery from '@/components/RegisterGallery'
 
-const BATTLEFACE_URL = 'https://www.battleface.com/en-us/'
+const BATTLEFACE_URL = 'https://app.battleface.com/en-us/guided-quote/country-of-residence?partner=1107'
 
 export function generateStaticParams() {
   return getAllRegistrationSlugs().map((school) => ({ school }))
