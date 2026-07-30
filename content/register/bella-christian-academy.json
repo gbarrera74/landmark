@@ -16,8 +16,24 @@
       "alt": "The downtown Los Angeles skyline, where the trip begins"
     },
     {
+      "src": "/images/landmark/la-hollywood-sign.jpg",
+      "alt": "The Hollywood sign above the palm-lined streets of Los Angeles"
+    },
+    {
       "src": "/images/landmark/los-angeles-1.jpg",
-      "alt": "The Griffith Observatory overlooking Los Angeles at dusk"
+      "alt": "The Griffith Observatory overlooking the city at dusk"
+    },
+    {
+      "src": "/images/landmark/la-art-museum.jpg",
+      "alt": "Students explore world-class museum galleries in Los Angeles"
+    },
+    {
+      "src": "/images/landmark/la-coast.jpg",
+      "alt": "The Southern California coastline and palm-lined boardwalk"
+    },
+    {
+      "src": "/images/landmark/los-angeles-2.jpg",
+      "alt": "The Santa Monica Pier on the Pacific shoreline"
     }
   ]
 }
