@@ -41,7 +41,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 // Allow-listed already at import time; sanitize again here as defense-in-depth
 // (content originates from WordPress). Build-time only, so cost is irrelevant.
 const ALLOWED_TAGS = ['h2', 'h3', 'h4', 'p', 'a', 'ul', 'ol', 'li', 'strong', 'em', 'b', 'i', 'blockquote', 'figure', 'figcaption', 'img', 'br', 'hr']
-const ALLOWED_ATTR = ['href', 'rel', 'src', 'alt', 'loading', 'target']
+// width/height are allowed so images can reserve space and avoid layout shift (CLS).
+const ALLOWED_ATTR = ['href', 'rel', 'src', 'alt', 'loading', 'target', 'width', 'height']
 
 // Imported WP bodies link out to third parties (competitors, sister brands, etc.).
 // Add rel="nofollow noopener" to every EXTERNAL link so we don't pass SEO equity
