@@ -117,9 +117,14 @@ function applySkin(iframe: HTMLIFrameElement, doc: Doc, form: HTMLFormElement) {
     if (typeof ResizeObserver !== 'undefined') {
       const ro = new ResizeObserver(syncHeight)
       ro.observe(doc.body)
-    } else {
-      window.setInterval(syncHeight, 500)
+      ro.observe(form)
     }
+    // HubSpot runs its own resizer and can overwrite our height right after we
+    // set it — a race that left the submit button clipped below the iframe's
+    // bottom edge. A cheap periodic re-assert makes the height self-correcting
+    // whoever wrote last, and also catches reflows ResizeObserver misses (font
+    // swap, validation messages appearing/disappearing).
+    window.setInterval(syncHeight, 500)
   } catch { /* an enhancement failure must never break the form */ }
 }
 
