@@ -112,7 +112,7 @@ export default function PrivateSchoolClass() {
         eyebrow="For Private & Independent Schools"
         title={<>Private School <em>Class Trips</em></>}
         subtitle="Landmark builds fully managed, completely custom class trips for private, faith-based, and independent schools across the country and abroad."
-        image="/images/landmark/private-school-students.jpg"
+        image="/images/landmark/philadelphia-students.jpg"
         breadcrumb={[{ label: 'Themes', href: '/themes/' }, { label: "Private School Class Trips" }]}
       />
       <section className="ile-section ile-section--white">

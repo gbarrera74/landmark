@@ -70,7 +70,7 @@ export default function PrivateSchoolField() {
         eyebrow="Embark with Landmark"
         title={<>Private School <em>Field Trip</em></>}
         subtitle="Take learning beyond the classroom with a private school field trip built around your students and your goals."
-        image="/images/landmark/private-school-students.jpg"
+        image="/images/landmark/atlanta-students.jpg"
         breadcrumb={[{ label: 'Themes', href: '/themes/' }, { label: "Private School Field Trip" }]}
       />
       <section className="ile-section ile-section--white">
