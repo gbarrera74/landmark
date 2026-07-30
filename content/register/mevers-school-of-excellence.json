@@ -13,27 +13,27 @@
   "deposit": "$50.00",
   "photos": [
     {
-      "src": "/register/21-1024x768.png",
+      "src": "/register/21-1024x768.webp",
       "alt": ""
     },
     {
-      "src": "/register/18-1024x768.png",
+      "src": "/register/18-1024x768.webp",
       "alt": ""
     },
     {
-      "src": "/register/17-1024x768.png",
+      "src": "/register/17-1024x768.webp",
       "alt": ""
     },
     {
-      "src": "/register/16-1024x768.png",
+      "src": "/register/16-1024x768.webp",
       "alt": ""
     },
     {
-      "src": "/register/22-1024x768.png",
+      "src": "/register/22-1024x768.webp",
       "alt": ""
     },
     {
-      "src": "/register/23-1024x768.png",
+      "src": "/register/23-1024x768.webp",
       "alt": ""
     }
   ],
