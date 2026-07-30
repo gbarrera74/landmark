@@ -45,7 +45,7 @@ export function accountManagerEmail(name: string): string {
  */
 const AM_PHOTOS: Record<string, string> = {
   emily: '/register/EWilsonHeadshot-221x300.png',
-  // angela: '/register/<file>' — awaiting Angela's headshot from Briana
+  angela: '/register/AngelaHeadshot-336x336.jpg',
 }
 
 export function accountManagerPhoto(name: string): string | null {
