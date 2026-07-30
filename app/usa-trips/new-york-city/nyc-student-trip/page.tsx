@@ -37,7 +37,7 @@ const INCLUSIONS = [
 const RELATED = [
   { title: "4 Day New York City School Trip", img: "/images/landmark/emms-nyc.jpg", href: "/usa-trips/new-york-city/4-day-new-york-city-school-trip/" },
   { title: "5 Day New York City Field Trip", img: "/images/landmark/murray-high-school-nyc.jpg", href: "/usa-trips/new-york-city/5-day-new-york-city-field-trip/" },
-  { title: "Art-Focused Tour of NYC", img: "/images/landmark/hero-nyc.jpg", href: "/usa-trips/new-york-city/art-focused-tour-nyc/" },
+  { title: "Art-Focused Tour of NYC", img: "/images/landmark/nyc-brooklyn-day.jpg", href: "/usa-trips/new-york-city/art-focused-tour-nyc/" },
 ]
 
 const DESC_P1 = "Embark on an unforgettable journey through the heart of New York City, designed specifically for students eager to experience the energy, culture, and iconic landmarks of the Big Apple! From the dazzling lights of Times Square to the breathtaking views atop the Empire State Building, this trip blends excitement, exploration, and education. With exclusive experiences like a backstage tour of Radio City Music Hall and a scenic Statue City Cruise, students will discover the magic that makes NYC one of the world’s most famous cities."

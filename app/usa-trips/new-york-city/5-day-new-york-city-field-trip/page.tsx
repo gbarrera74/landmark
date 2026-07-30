@@ -38,8 +38,8 @@ const INCLUSIONS = [
 
 const RELATED = [
   { title: "4 Day New York City School Trip", img: "/images/landmark/emms-nyc.jpg", href: "/usa-trips/new-york-city/4-day-new-york-city-school-trip/" },
-  { title: "Art-Focused Tour of NYC", img: "/images/landmark/hero-nyc.jpg", href: "/usa-trips/new-york-city/art-focused-tour-nyc/" },
-  { title: "NYC Performing Arts Tour", img: "/images/landmark/broadway-sign-nyc.jpg", href: "/usa-trips/new-york-city/nyc-performing-arts-tour/" },
+  { title: "Art-Focused Tour of NYC", img: "/images/landmark/nyc-brooklyn-day.jpg", href: "/usa-trips/new-york-city/art-focused-tour-nyc/" },
+  { title: "NYC Performing Arts Tour", img: "/images/landmark/nyc-radio-city.jpg", href: "/usa-trips/new-york-city/nyc-performing-arts-tour/" },
 ]
 
 const DESC_P1 = "Embark on an unforgettable five-day educational adventure in New York City, designed to inspire students of all grade levels! Explore the iconic highlights of the Big Apple, from the Statue of Liberty and Ellis Island to Central Park and Times Square. With visits to world-renowned museums, behind-the-scenes Broadway experiences, and opportunities to immerse in the city’s cultural and historical treasures, this trip promises an engaging, hands-on learning experience that will leave students excited about history, arts, and the vibrant energy of New York City."

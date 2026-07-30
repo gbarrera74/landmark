@@ -10,7 +10,7 @@ export default function BrochureBand() {
         </div>
         <div className="lm-brochure-cover">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/images/landmark/brochure-cover.png" alt="Landmark Educational Tours 2026-2027 travel brochure cover" loading="lazy" width={280} height={363} />
+          <img src="/images/landmark/brochure-cover-2027.png" alt="Landmark Educational Tours 2026-2027 travel brochure cover" loading="lazy" width={280} height={363} />
         </div>
       </div>
     </section>

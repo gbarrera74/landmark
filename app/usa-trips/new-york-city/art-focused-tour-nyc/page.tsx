@@ -37,7 +37,7 @@ const INCLUSIONS = [
 const RELATED = [
   { title: "4 Day New York City School Trip", img: "/images/landmark/emms-nyc.jpg", href: "/usa-trips/new-york-city/4-day-new-york-city-school-trip/" },
   { title: "5 Day New York City Field Trip", img: "/images/landmark/murray-high-school-nyc.jpg", href: "/usa-trips/new-york-city/5-day-new-york-city-field-trip/" },
-  { title: "NYC Performing Arts Tour", img: "/images/landmark/broadway-sign-nyc.jpg", href: "/usa-trips/new-york-city/nyc-performing-arts-tour/" },
+  { title: "NYC Performing Arts Tour", img: "/images/landmark/nyc-radio-city.jpg", href: "/usa-trips/new-york-city/nyc-performing-arts-tour/" },
 ]
 
 const DESC_P1 = "Immerse your students in the artistic heartbeat of New York City with an unforgettable, art-focused journey! From world-renowned museums to hands-on creative workshops, this trip is designed to inspire and ignite artistic passion. Explore legendary institutions, engage in exclusive experiences, and let NYC’s creative energy fuel your students’ imagination."

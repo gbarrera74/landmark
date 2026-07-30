@@ -37,7 +37,7 @@ const INCLUSIONS = [
 const RELATED = [
   { title: "4 Day New York City School Trip", img: "/images/landmark/emms-nyc.jpg", href: "/usa-trips/new-york-city/4-day-new-york-city-school-trip/" },
   { title: "5 Day New York City Field Trip", img: "/images/landmark/murray-high-school-nyc.jpg", href: "/usa-trips/new-york-city/5-day-new-york-city-field-trip/" },
-  { title: "Art-Focused Tour of NYC", img: "/images/landmark/hero-nyc.jpg", href: "/usa-trips/new-york-city/art-focused-tour-nyc/" },
+  { title: "Art-Focused Tour of NYC", img: "/images/landmark/nyc-brooklyn-day.jpg", href: "/usa-trips/new-york-city/art-focused-tour-nyc/" },
 ]
 
 const DESC_P1 = "Embark on an exciting three-day summer camp adventure in New York City, designed to inspire and engage students of all ages! Explore the vibrant energy of the Big Apple with visits to iconic landmarks such as Times Square, Central Park, and the Statue of Liberty. From hands-on workshops and cultural experiences to thrilling outdoor activities and team-building challenges, this immersive trip promises an unforgettable journey that will leave campers inspired, confident, and excited about adventure, learning, and personal growth in one of the world’s most dynamic cities."

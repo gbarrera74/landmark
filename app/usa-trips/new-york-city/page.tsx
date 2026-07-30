@@ -24,6 +24,9 @@ const TRIPS = [
   { title: '4 Day New York City School Trip', duration: '4 Day / 3 Night', img: '/images/landmark/emms-nyc.jpg', href: '/usa-trips/new-york-city/4-day-new-york-city-school-trip/' },
   { title: '5 Day New York City Field Trip', duration: '5 Day / 4 Night', img: '/images/landmark/murray-high-school-nyc.jpg', href: '/usa-trips/new-york-city/5-day-new-york-city-field-trip/' },
   { title: 'Art-Focused Tour of NYC', duration: '3 Day / 2 Night', img: '/images/landmark/nyc-times-square.jpg', href: '/usa-trips/new-york-city/art-focused-tour-nyc/' },
+  // Broadway shot is the aptest image for this trip and collides with nothing on
+  // this page (the hub hero is the Statue of Liberty). Pages whose HERO is that
+  // same photo use nyc-radio-city.jpg for this card instead.
   { title: 'NYC Performing Arts Tour', duration: '3 Day / 2 Night', img: '/images/landmark/broadway-sign-nyc.jpg', href: '/usa-trips/new-york-city/nyc-performing-arts-tour/' },
   { title: 'New York City Student Trip', duration: '3 Day / 2 Night', img: '/images/landmark/nyc-radio-city.jpg', href: '/usa-trips/new-york-city/nyc-student-trip/' },
   { title: 'YMCA Summer Camp', duration: 'Summer Program', img: '/images/landmark/nyc-brooklyn-day.jpg', href: '/usa-trips/new-york-city/ymca-summer-camp/' },
