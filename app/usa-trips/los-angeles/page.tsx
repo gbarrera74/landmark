@@ -46,8 +46,8 @@ export default function LosAngeles() {
         city="Los Angeles"
         lead={INTRO_P1}
         highlights={HIGHLIGHTS}
-        image="/images/landmark/los-angeles-1.jpg"
-        imageAlt="Los Angeles on a student educational tour"
+        image="/images/landmark/la-hollywood-sign.jpg"
+        imageAlt="The Hollywood sign above the palm-lined streets of Los Angeles"
         tripCount={TRIPS.length}
       />
 
