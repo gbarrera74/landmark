@@ -89,12 +89,6 @@ export default function Footer() {
             <Link href="/get-a-quote/">Get a Quote</Link>
             <Link href="/blog/">Blog</Link>
             <Link href="/faq/">FAQ</Link>
-            {/* The homepage brochure popup was removed (Michaela, 7/30), so the
-                footer now carries the brochure on every page. Direct link to the
-                PDF — no interstitial, no form. */}
-            <a href="/brochure/landmark-2026-2027-travel-brochure.pdf" target="_blank" rel="noopener noreferrer" download>
-              Download Brochure
-            </a>
           </div>
         </div>
 
