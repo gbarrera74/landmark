@@ -58,7 +58,10 @@ export default async function RegisterPage({ params }: { params: Promise<{ schoo
         <div className="ile-container lm-register-layout">
           <main className="lm-register-main">
             <span className="ile-eyebrow">Trip Details</span>
-            <h2 className="lm-h2-amber">{reg.destination ? `${reg.destination} Trip` : 'Your Trip'}</h2>
+            <h2 className={`lm-h2-amber${reg.introHeading ? ' lm-reg-welcome' : ''}`}>
+              {reg.introHeading || (reg.destination ? `${reg.destination} Trip` : 'Your Trip')}
+            </h2>
+            {reg.introText && <p className="lm-reg-intro">{reg.introText}</p>}
             {reg.costPerStudent && (
               <p className="lm-reg-cost">
                 For this trip, the cost per student is <strong>{reg.costPerStudent}</strong>.

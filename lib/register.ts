@@ -23,6 +23,10 @@ export type Registration = {
   registrationOpens?: string
   /** Cost per student, if the school publishes it (e.g. "$500.00"). */
   costPerStudent?: string
+  /** Welcome line, e.g. "<School>, get ready for an unforgettable ... adventure!" */
+  introHeading?: string
+  /** Supporting paragraph under the welcome line (body copy, not a heading). */
+  introText?: string
   /** Trip-highlight carousel — Briana's convention is 6 photos of the attractions. */
   photos?: { src: string; alt: string }[]
   wpId?: number
