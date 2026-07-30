@@ -43,7 +43,6 @@ const INCLUSIONS = [
   ["Meals", "Delicious and well-balanced dining options"],
   ["Tour Manager", "Professional support throughout your journey"],
   ["Restaurant & Driver Gratuities", "Taken care of for your convenience"],
-  ["& More!", ""],
 ]
 
 const DESC_P1 = "Fully-managed, completely custom educational travel for private, religious, prep, and independent schools, designed around your curriculum, your standards, and your families' expectations."

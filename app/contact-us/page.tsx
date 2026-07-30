@@ -15,7 +15,7 @@ export default function ContactUsPage() {
         eyebrow="We&rsquo;re Here to Help"
         title={<>Contact <em>Us</em></>}
         subtitle="Questions about a trip, a quote, or how it all works? Reach out and a real person will get back to you."
-        image="/images/landmark/about-team.jpg"
+        image="/images/landmark/boston-students.jpg"
         breadcrumb={[{ label: 'Contact Us' }]}
       />
 

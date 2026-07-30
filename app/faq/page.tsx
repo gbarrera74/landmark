@@ -36,7 +36,7 @@ export default function FAQ() {
         eyebrow="We're here to help"
         title={<>Frequently Asked <em>Questions</em></>}
         subtitle="Find answers about planning, traveling, and staying safe on your Landmark group tour."
-        image="/images/landmark/hero-nyc.jpg"
+        image="/images/landmark/dc-students.jpg"
         breadcrumb={[{ label: 'FAQ' }]}
       />
       <section className="ile-section ile-section--white">

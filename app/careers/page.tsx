@@ -25,7 +25,10 @@ export default function Careers() {
         eyebrow="Join Our team"
         title={<><em>Careers</em> at Landmark</>}
         subtitle="Explore our current openings and help us make educational travel possible for every student."
-        image="/images/landmark/chicago-hero.jpg"
+        image="/images/landmark/quebec-students.jpg"
+        // Group sits low in this frame; hold the crop down so the students
+        // are not clipped by the bottom edge of the hero band.
+        imagePosition="center 78%"
         breadcrumb={[{ label: "Careers" }]}
       />
 
