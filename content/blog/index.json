@@ -1,5 +1,17 @@
 [
   {
+    "slug": "top-10-places-to-visit-on-a-school-trip-to-washington-dc",
+    "title": "Washington, DC Field Trip Ideas: 20 Stops Teachers Actually Book",
+    "date": "2026-07-30T09:00:00",
+    "excerpt": "A teacher-tested list of Washington, DC field trip ideas: the monuments and free museums worth your limited hours, ideas by grade level, realistic costs, and how to pay for the trip.",
+    "hero": "/blog/dc/dc-8-2.webp",
+    "categories": [
+      "Washington, D.C.",
+      "Travel Tips"
+    ],
+    "readingMinutes": 11
+  },
+  {
     "slug": "5-day-los-angeles-school-trip",
     "title": "5 Day Los Angeles School Trip",
     "date": "2026-07-11T10:00:00",
@@ -1929,17 +1941,5 @@
       "Washington, D.C."
     ],
     "readingMinutes": 1
-  },
-  {
-    "slug": "top-10-places-to-visit-on-a-school-trip-to-washington-dc",
-    "title": "Washington, DC Field Trip Ideas: 20 Stops Teachers Actually Book",
-    "date": "2021-04-22T18:00:55",
-    "excerpt": "A teacher-tested list of Washington, DC field trip ideas: the monuments and free museums worth your limited hours, ideas by grade level, realistic costs, and how to pay for the trip.",
-    "hero": "/blog/dc/dc-8-2.webp",
-    "categories": [
-      "Washington, D.C.",
-      "Trip Planning"
-    ],
-    "readingMinutes": 11
   }
 ]
