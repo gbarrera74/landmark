@@ -1240,7 +1240,11 @@ select.ilm-input { appearance: none; -webkit-appearance: none; cursor: pointer;
 .lm-welcome-pills svg { width: 16px; height: 16px; color: var(--lm-primary); flex-shrink: 0; }
 
 /* ── Hero slider ── */
-.lm-hero { position: relative; min-height: 100svh; overflow: hidden; background: var(--lm-primary-900); }
+/* 86svh, not 100svh: a full-viewport hero gave no hint the page continued, so
+   visitors landing on the homepage did not realise they could scroll. Leaving a
+   sliver of the next section visible (plus the .ilm-scroll cue) reads as "there
+   is more below" without shrinking the hero enough to lose its impact. */
+.lm-hero { position: relative; min-height: 86svh; overflow: hidden; background: var(--lm-primary-900); }
 .lm-hero-slide {
   position: absolute; inset: 0; display: flex; align-items: center;
   opacity: 0; visibility: hidden;
@@ -1248,11 +1252,16 @@ select.ilm-input { appearance: none; -webkit-appearance: none; cursor: pointer;
 }
 .lm-hero-slide.is-active { opacity: 1; visibility: visible; }
 .lm-hero-slide > .ilm-hero-img { position: absolute; inset: 0; width: 100%; height: 100%; }
+/* Lightened per Michaela's review — the old scrim (0.90 → 0.10 plus a heavy
+   bottom wash) muddied the photography, and these are real student-group
+   photos worth seeing. The left end stays dark enough to carry white headline
+   text (which also has its own text-shadow); everything right of ~60% is now
+   close to the original image. */
 .lm-hero-slide::after {
   content: ''; position: absolute; inset: 0; z-index: 1;
   background:
-    linear-gradient(95deg, rgba(36,17,9,0.90) 0%, rgba(36,17,9,0.66) 38%, rgba(36,17,9,0.28) 68%, rgba(36,17,9,0.10) 100%),
-    linear-gradient(0deg, rgba(36,17,9,0.55) 0%, transparent 42%);
+    linear-gradient(95deg, rgba(36,17,9,0.80) 0%, rgba(36,17,9,0.52) 34%, rgba(36,17,9,0.16) 62%, rgba(36,17,9,0.02) 100%),
+    linear-gradient(0deg, rgba(36,17,9,0.42) 0%, transparent 30%);
 }
 .lm-hero-slide .ilm-hero-inner { position: relative; z-index: 2; }
 .lm-hero-slide h1, .lm-hero-slide .lm-hero-title {

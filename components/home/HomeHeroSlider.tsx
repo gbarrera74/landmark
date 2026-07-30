@@ -10,6 +10,13 @@ type Slide = {
   sub: string
   cta: string
   href: string
+  /**
+   * CSS object-position for this slide's photo. The hero crops to the viewport,
+   * so a single shared value cuts the subject out of some images — the MLK
+   * memorial shot is 4:3 and lost the statue's head off the top edge at the
+   * default `center`. Frame each photo on its own subject.
+   */
+  focus?: string
 }
 
 /* Global-forward hero: Landmark's expansion beyond U.S. field trips into
@@ -22,6 +29,12 @@ const SLIDES: Slide[] = [
     sub: 'Safe, custom student trips across the U.S., Europe, Asia, and beyond.',
     cta: 'Get a Quote',
     href: '/get-a-quote/',
+    // This 4:3 photo cannot fit entirely in the hero band: the statue's head
+    // (y~60) through the seated students (y~1120) needs ~1060px of a 929px
+    // band. Bias hard to the top so the memorial's head is kept whole and the
+    // trim comes off the pavement below the front row instead — Michaela's
+    // note was specifically that MLK was cut off.
+    focus: '60% 8%',
   },
   {
     img: '/images/landmark/intl-italy.webp',
@@ -89,6 +102,7 @@ export default function HomeHeroSlider() {
             aria-hidden="true"
             loading={i === 0 ? 'eager' : 'lazy'}
             fetchPriority={i === 0 ? 'high' : 'auto'}
+            style={s.focus ? { objectPosition: s.focus } : undefined}
           />
           <div className="ilm-hero-inner">
             <div className="ilm-hero-content">
@@ -121,6 +135,13 @@ export default function HomeHeroSlider() {
             onClick={() => go(i)}
           />
         ))}
+      </div>
+
+      {/* The hero filled the whole viewport with no cue that the page continued,
+          so visitors landing on the homepage did not realise they could scroll. */}
+      <div className="ilm-scroll" aria-hidden="true">
+        Scroll
+        <span />
       </div>
     </section>
   )

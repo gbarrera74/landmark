@@ -8,19 +8,32 @@ export default function PageHero({
   title,
   subtitle,
   image,
+  imagePosition,
   breadcrumb,
 }: {
   eyebrow?: string
   title: React.ReactNode
   subtitle?: React.ReactNode
   image?: string
+  /**
+   * CSS object-position for the hero photo. The hero crops a tall image down to
+   * a wide band, and the default centre crop cuts people's faces out of
+   * portrait-ish group shots. Pass e.g. "center 28%" to hold the subject.
+   */
+  imagePosition?: string
   breadcrumb?: Crumb[]
 }) {
   return (
     <section className={`ilp-hero${image ? ' ilp-hero--photo' : ''}`}>
       {image && (
         // eslint-disable-next-line @next/next/no-img-element
-        <img className="ilp-hero-img" src={image} alt="" aria-hidden="true" />
+        <img
+          className="ilp-hero-img"
+          src={image}
+          alt=""
+          aria-hidden="true"
+          style={imagePosition ? { objectPosition: imagePosition } : undefined}
+        />
       )}
       <div className="ilp-hero-inner">
         {breadcrumb && breadcrumb.length > 0 && (
