@@ -21,6 +21,13 @@ export type Post = PostCard & {
   seoTitle: string
   seoDescription: string
   html: string
+  /**
+   * Optional Q&A pairs. When present the post renders an FAQ section AND emits
+   * FAQPage structured data — the format Google's AI Overviews / AI Mode and
+   * other answer engines pull from, so it's worth adding to any post that
+   * answers real questions.
+   */
+  faqs?: { q: string; a: string }[]
 }
 
 let _index: PostCard[] | null = null
