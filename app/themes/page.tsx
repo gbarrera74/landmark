@@ -21,7 +21,7 @@ const THEMES = [
   { title: "Scouts", href: "/usa-trips/washington-dc/scouts/", img: "/images/landmark/dc-hero.jpg" },
   { title: "Yellowstone School Trip", href: "/yellowstone-national-park-school-trip/", img: "/images/landmark/yellowstone-grand-prismatic.jpg" },
   { title: "Yellowstone Field Trip", href: "/yellowstone-national-park-field-trip/", img: "/images/landmark/yellowstone-falls.jpg" },
-  { title: "Private School Trips", href: "/private-school-class-trips/", img: "/images/landmark/private-school-students.jpg" },
+  { title: "Private School Trips", href: "/private-school-class-trips/", img: "/images/landmark/philadelphia-students.jpg" },
 ]
 
 export default function Themes() {

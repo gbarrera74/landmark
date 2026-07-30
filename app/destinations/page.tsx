@@ -29,19 +29,19 @@ export default function Destinations() {
           </div>
           <div className="lm-dest-grid" style={{ marginTop: 8 }}>
             <Link href="/usa-trips/washington-dc/" className="lm-dest" key="Washington, D.C." aria-label="Washington, D.C. educational tours">
-              <img src="/images/landmark/dc-hero.jpg" alt="" loading="lazy" />
+              <img src="/images/landmark/dc-students.jpg" alt="" loading="lazy" />
               <span className="lm-dest-label">Washington, D.C. <span aria-hidden="true">&rarr;</span></span>
             </Link>
             <Link href="/usa-trips/new-york-city/" className="lm-dest" key="New York, NY" aria-label="New York, NY educational tours">
-              <img src="/images/landmark/hero-nyc.jpg" alt="" loading="lazy" />
+              <img src="/images/landmark/nyc-students.jpg" alt="" loading="lazy" />
               <span className="lm-dest-label">New York, NY <span aria-hidden="true">&rarr;</span></span>
             </Link>
             <Link href="/usa-trips/atlanta/" className="lm-dest" key="Atlanta, GA" aria-label="Atlanta, GA educational tours">
-              <img src="/images/landmark/atlanta-skyline.jpg" alt="" loading="lazy" />
+              <img src="/images/landmark/atlanta-students.jpg" alt="" loading="lazy" />
               <span className="lm-dest-label">Atlanta, GA <span aria-hidden="true">&rarr;</span></span>
             </Link>
             <Link href="/usa-trips/boston/" className="lm-dest" key="Boston, MA" aria-label="Boston, MA educational tours">
-              <img src="/images/landmark/boston-skyline-hero.jpg" alt="" loading="lazy" />
+              <img src="/images/landmark/boston-students.jpg" alt="" loading="lazy" />
               <span className="lm-dest-label">Boston, MA <span aria-hidden="true">&rarr;</span></span>
             </Link>
             <Link href="/usa-trips/orlando/" className="lm-dest" key="Orlando, FL" aria-label="Orlando, FL educational tours">
@@ -49,7 +49,7 @@ export default function Destinations() {
               <span className="lm-dest-label">Orlando, FL <span aria-hidden="true">&rarr;</span></span>
             </Link>
             <Link href="/usa-trips/philadelphia/" className="lm-dest" key="Philadelphia, PA" aria-label="Philadelphia, PA educational tours">
-              <img src="/images/landmark/philadelphia-hero.jpg" alt="" loading="lazy" />
+              <img src="/images/landmark/philadelphia-students.jpg" alt="" loading="lazy" />
               <span className="lm-dest-label">Philadelphia, PA <span aria-hidden="true">&rarr;</span></span>
             </Link>
             <Link href="/usa-trips/williamsburg/" className="lm-dest" key="Williamsburg, VA" aria-label="Williamsburg, VA educational tours">
@@ -133,7 +133,7 @@ export default function Destinations() {
           </div>
           <div className="lm-intl-grid" style={{ marginTop: 8 }}>
             <Link href="/canada/" className="lm-dest" key="Canada" aria-label="Canada educational tours">
-              <img src="/images/landmark/canada-hero.jpg" alt="" loading="lazy" />
+              <img src="/images/landmark/quebec-students.jpg" alt="" loading="lazy" />
               <span className="lm-dest-label">Canada <span aria-hidden="true">&rarr;</span></span>
             </Link>
             <Link href="/europe/italy/" className="lm-dest" key="Italy" aria-label="Italy educational tours">
