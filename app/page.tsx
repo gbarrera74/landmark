@@ -3,7 +3,6 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import HomeHeroSlider from '@/components/home/HomeHeroSlider'
 import ReviewsCarousel from '@/components/home/ReviewsCarousel'
-import BrochurePopup from '@/components/home/BrochurePopup'
 import BrochureBand from '@/components/BrochureBand'
 import { SITE } from '@/lib/seo/schemas'
 
@@ -334,8 +333,6 @@ export default function Home() {
       </section>
 
       <BrochureBand />
-
-      <BrochurePopup />
     </>
   )
 }
