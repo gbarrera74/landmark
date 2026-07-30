@@ -112,7 +112,7 @@ export default function TravelSafety() {
         eyebrow="Peace of mind"
         title="Travel with confidence"
         text="Let us handle the logistics and the duty of care so you can focus on the experience. Tell us about your group and we’ll build a safe, custom itinerary."
-        primary={{ label: 'Start Planning Your Trip', href: '/get-a-quote/' }}
+        primary={{ label: 'Get a Quote', href: '/get-a-quote/' }}
         secondary={{ label: 'Talk to Our Team', href: '/contact-us/' }}
       />
 

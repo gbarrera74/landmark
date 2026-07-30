@@ -20,7 +20,7 @@ const SLIDES: Slide[] = [
     title: 'Educational Travel,',
     accent: 'Customized for You.',
     sub: 'Safe, custom student trips across the U.S., Europe, Asia, and beyond.',
-    cta: 'Start Planning Now!',
+    cta: 'Get a Quote',
     href: '/get-a-quote/',
   },
   {
@@ -36,7 +36,7 @@ const SLIDES: Slide[] = [
     title: 'Where History',
     accent: 'Comes Alive.',
     sub: 'From Washington, D.C. to Tokyo, we design every detail around your students.',
-    cta: 'Plan Your Trip',
+    cta: 'Get a Quote',
     href: '/get-a-quote/',
   },
 ]

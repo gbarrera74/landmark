@@ -43,7 +43,7 @@ export default function WashingtonDC() {
     <>
       <PageHero
         eyebrow="Washington, D.C. · Our Nation's Capital"
-        title={<>Educational Trips to <em>Washington, DC</em></>}
+        title={<>Educational Field Trips in <em>Washington, DC</em></>}
         subtitle="History where it began: customizable, safe, guided field trips across the National Mall, the Smithsonian museums, and the U.S. Capitol."
         image="/images/landmark/dc-capitol-hero.jpg"
         breadcrumb={[{ label: 'Destinations', href: '/destinations/' }, { label: 'Washington, D.C.' }]}
@@ -106,7 +106,7 @@ export default function WashingtonDC() {
             ))}
           </div>
           <div className="ile-center lm-after-grid">
-            <Link href="/get-a-quote/" className="ile-btn ile-btn--primary">Start Planning Your Trip</Link>
+            <Link href="/get-a-quote/" className="ile-btn ile-btn--primary">Get a Quote</Link>
           </div>
         </div>
       </section>

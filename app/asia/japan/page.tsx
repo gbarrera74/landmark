@@ -45,7 +45,7 @@ export default function Japan() {
             <p>{INTRO_P2}</p>
           </div>
           <div className="ile-center" style={{ marginTop: 32 }}>
-            <Link href="/get-a-quote/" className="ile-btn ile-btn--primary">Start Planning Your Trip</Link>
+            <Link href="/get-a-quote/" className="ile-btn ile-btn--primary">Get a Quote</Link>
           </div>
         </div>
       </section>
@@ -88,7 +88,7 @@ export default function Japan() {
             ))}
           </div>
           <div className="ile-center lm-after-grid">
-            <Link href="/get-a-quote/" className="ile-btn ile-btn--primary">Start Planning Your Trip</Link>
+            <Link href="/get-a-quote/" className="ile-btn ile-btn--primary">Get a Quote</Link>
           </div>
         </div>
       </section>

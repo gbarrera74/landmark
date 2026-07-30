@@ -119,7 +119,7 @@ export default function Accreditations() {
         eyebrow="Have questions?"
         title="Questions about our credentials?"
         text="We’re happy to walk your business office through our accreditations, planning process, and safety standards."
-        primary={{ label: 'Start Planning Your Trip', href: '/get-a-quote/' }}
+        primary={{ label: 'Get a Quote', href: '/get-a-quote/' }}
         secondary={{ label: 'Ask About Our Standards', href: '/contact-us/' }}
       />
 
