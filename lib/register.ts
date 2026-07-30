@@ -44,8 +44,8 @@ export function accountManagerEmail(name: string): string {
  * show a photo; anyone without one falls back to an initial avatar.
  */
 const AM_PHOTOS: Record<string, string> = {
-  emily: '/register/EWilsonHeadshot-221x300.png',
-  angela: '/register/AngelaHeadshot-336x336.jpg',
+  emily: '/register/EWilsonHeadshot-221x300.webp',
+  angela: '/register/AngelaHeadshot-336x336.webp',
 }
 
 export function accountManagerPhoto(name: string): string | null {

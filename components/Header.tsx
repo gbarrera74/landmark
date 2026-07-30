@@ -109,6 +109,7 @@ const NAV: NavItem[] = [
       { label: 'FAQ', href: '/faq/' },
       { label: 'Testimonials', href: '/testimonials/' },
       { label: 'Plan a Trip', href: '/plan-a-trip/' },
+      { label: 'Privacy Policy', href: '/privacy-policy/' },
     ],
   },
 ]

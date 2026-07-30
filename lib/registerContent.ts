@@ -10,7 +10,7 @@
  */
 
 /** Packing-list infographic (shared image, snapshotted from the live site). */
-export const PACKING_LIST_IMAGE = '/register/Packling-List-for-Website-Trial.png'
+export const PACKING_LIST_IMAGE = '/register/Packling-List-for-Website-Trial.webp'
 export const PACKING_LIST_ALT =
   'Landmark Educational Tours packing list infographic — what to bring on your school trip'
 

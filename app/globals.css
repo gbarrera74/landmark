@@ -2104,6 +2104,14 @@ select.ilm-input { appearance: none; -webkit-appearance: none; cursor: pointer;
 .lm-register-help { margin-top: 14px; font-size: 14px; color: var(--lm-muted, #6b5b53); }
 .lm-register-help a { color: var(--lm-primary); font-weight: 600; }
 
+
+/* Resources page — the resource cards are whole-card links */
+.lm-res-card { display: flex; flex-direction: column; text-decoration: none; transition: transform .25s var(--lm-ease), box-shadow .25s var(--lm-ease), border-color .25s ease; }
+.lm-res-card:hover { transform: translateY(-4px); box-shadow: 0 16px 34px -18px rgba(36,17,9,.45); border-color: var(--lm-secondary, #d98b3a); }
+.lm-res-card h3 { color: var(--lm-ink); }
+.lm-res-card p { flex: 1 1 auto; }
+.lm-res-card .ilm-post-more { margin-top: 14px; }
+
 /* Register page — two-column itinerary + register sidebar */
 .lm-register-layout { display: grid; grid-template-columns: minmax(0, 1fr) 340px; gap: 44px; align-items: start; }
 .lm-register-main .ile-eyebrow { display: block; }
