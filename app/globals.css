@@ -2320,12 +2320,15 @@ select.ilm-input { appearance: none; -webkit-appearance: none; cursor: pointer;
 }
 .lm-dest-highlights { list-style: none; padding: 0; margin: 0 0 30px; display: grid; gap: 11px; }
 .lm-dest-highlights li {
-  position: relative; padding-left: 30px; font-size: 15.5px;
+  position: relative; padding-left: 20px; font-size: 15.5px;
   line-height: 1.5; color: var(--lm-ink);
 }
+/* Simple bullets, matching the itinerary lists — standardized sitewide so the
+   check-in-a-circle badge is gone everywhere (Ben, 7/30). */
 .lm-dest-highlights li::before {
-  content: ''; position: absolute; left: 0; top: 1px; width: 19px; height: 19px; border-radius: 50%;
-  background: var(--lm-primary) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='11' height='11' fill='none' stroke='white' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='2 6 5 9 10 3'/%3E%3C/svg%3E") center/11px no-repeat;
+  content: ''; position: absolute; left: 2px; top: 8px;
+  width: 6px; height: 6px; border-radius: 50%;
+  background: var(--lm-ink-muted);
 }
 .lm-dest-intro__media { position: relative; }
 .lm-dest-intro__media img {

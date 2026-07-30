@@ -37,8 +37,8 @@ const INCLUSIONS = [
 
 const RELATED = [
   { title: "5 Day New York City Field Trip", img: "/images/landmark/murray-high-school-nyc.jpg", href: "/usa-trips/new-york-city/5-day-new-york-city-field-trip/" },
-  { title: "Art-Focused Tour of NYC", img: "/images/landmark/hero-nyc.jpg", href: "/usa-trips/new-york-city/art-focused-tour-nyc/" },
-  { title: "NYC Performing Arts Tour", img: "/images/landmark/broadway-sign-nyc.jpg", href: "/usa-trips/new-york-city/nyc-performing-arts-tour/" },
+  { title: "Art-Focused Tour of NYC", img: "/images/landmark/nyc-brooklyn-day.jpg", href: "/usa-trips/new-york-city/art-focused-tour-nyc/" },
+  { title: "NYC Performing Arts Tour", img: "/images/landmark/nyc-radio-city.jpg", href: "/usa-trips/new-york-city/nyc-performing-arts-tour/" },
 ]
 
 const DESC_P1 = "Embark on an unforgettable four-day educational journey in New York City, designed to captivate students of all grade levels! Discover the energy and excitement of the Big Apple while exploring iconic landmarks like the Statue of Liberty, Times Square, and Rockefeller Center. From visiting world-class museums and engaging in interactive tours to experiencing the magic of Broadway and the cultural diversity of vibrant neighborhoods, this trip promises an immersive, hands-on learning experience that will leave students inspired and excited about history, art, and urban life."

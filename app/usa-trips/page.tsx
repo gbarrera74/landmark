@@ -33,7 +33,9 @@ export default function UnitedStates() {
               <span className="lm-dest-label">Washington, D.C. <span aria-hidden="true">&rarr;</span></span>
             </Link>
             <Link href="/usa-trips/new-york-city/" className="lm-dest" key="New York, NY" aria-label="New York, NY educational tours">
-              <img src="/images/landmark/hero-nyc.jpg" alt="" loading="lazy" />
+              {/* Was hero-nyc.jpg — the same photo as this page's own hero, so the
+                  Broadway shot appeared twice. Use the NYC hub's hero instead. */}
+              <img src="/images/landmark/nyc-statue-liberty-hero.jpg" alt="" loading="lazy" />
               <span className="lm-dest-label">New York, NY <span aria-hidden="true">&rarr;</span></span>
             </Link>
             <Link href="/usa-trips/atlanta/" className="lm-dest" key="Atlanta, GA" aria-label="Atlanta, GA educational tours">

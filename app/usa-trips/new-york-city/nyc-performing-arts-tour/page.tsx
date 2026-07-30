@@ -37,7 +37,7 @@ const INCLUSIONS = [
 const RELATED = [
   { title: "4 Day New York City School Trip", img: "/images/landmark/emms-nyc.jpg", href: "/usa-trips/new-york-city/4-day-new-york-city-school-trip/" },
   { title: "5 Day New York City Field Trip", img: "/images/landmark/murray-high-school-nyc.jpg", href: "/usa-trips/new-york-city/5-day-new-york-city-field-trip/" },
-  { title: "Art-Focused Tour of NYC", img: "/images/landmark/hero-nyc.jpg", href: "/usa-trips/new-york-city/art-focused-tour-nyc/" },
+  { title: "Art-Focused Tour of NYC", img: "/images/landmark/nyc-brooklyn-day.jpg", href: "/usa-trips/new-york-city/art-focused-tour-nyc/" },
 ]
 
 const DESC_P1 = "Embark on an unforgettable journey through the heart of New York City, designed specifically for students passionate about the performing arts! From an exclusive meet-and-greet with the Radio City Rockettes to hands-on Broadway workshops, this trip blends education, inspiration, and once-in-a-lifetime experiences. Whether exploring Fifth Avenue or watching a world-class Broadway performance, students will be immersed in the magic of NYC's legendary arts scene."
