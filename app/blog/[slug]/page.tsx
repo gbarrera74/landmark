@@ -78,7 +78,16 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
           {category && <span className="lm-article-cat">{category}</span>}
           <h1>{post.title}</h1>
           <p className="lm-article-meta">
-            <time dateTime={post.date}>{formatDate(post.date)}</time>
+            {/* Show the update date when a post has been substantially revised —
+                readers (and CTR) respond to freshness, and it stays honest about
+                the original publish date via the title attribute. */}
+            {post.modified && post.modified.slice(0, 10) > post.date.slice(0, 10) ? (
+              <time dateTime={post.modified} title={`Originally published ${formatDate(post.date)}`}>
+                Updated {formatDate(post.modified)}
+              </time>
+            ) : (
+              <time dateTime={post.date}>{formatDate(post.date)}</time>
+            )}
             <span aria-hidden="true">·</span>
             <span>{post.readingMinutes} min read</span>
           </p>
@@ -88,6 +97,20 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
       <section className="ile-section ile-section--white">
         <div className="ile-container lm-article-wrap">
           <article className="lm-article" dangerouslySetInnerHTML={{ __html: clean }} />
+
+          {post.faqs && post.faqs.length > 0 && (
+            <section className="lm-article-faq" aria-labelledby="post-faq-h">
+              <h2 id="post-faq-h">Frequently Asked Questions</h2>
+              <div className="lm-reg-faq">
+                {post.faqs.map((f) => (
+                  <details className="lm-reg-faq-item" key={f.q}>
+                    <summary>{f.q}</summary>
+                    <div className="lm-reg-faq-a" dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(f.a, { ALLOWED_TAGS, ALLOWED_ATTR }) }} />
+                  </details>
+                ))}
+              </div>
+            </section>
+          )}
 
           <div className="lm-article-cta">
             <h3>Ready to plan your group&rsquo;s trip?</h3>
@@ -145,6 +168,17 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
         publisher: { '@type': 'Organization', name: 'Landmark Educational Tours' },
         mainEntityOfPage: `https://landmarkeducationaltours.com/blog/${slug}/`,
       }} />
+      {post.faqs && post.faqs.length > 0 && (
+        <JsonLd data={{
+          '@context': 'https://schema.org',
+          '@type': 'FAQPage',
+          mainEntity: post.faqs.map((f) => ({
+            '@type': 'Question',
+            name: f.q,
+            acceptedAnswer: { '@type': 'Answer', text: f.a.replace(/<[^>]+>/g, '') },
+          })),
+        }} />
+      )}
     </>
   )
 }

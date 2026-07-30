@@ -438,4 +438,7 @@ export const WP_REDIRECTS: Redirect[] = [
   { source: "/west-coast", destination: "/destinations/", permanent: true },
   { source: "/midwest", destination: "/destinations/", permanent: true },
   { source: "/southwest", destination: "/destinations/", permanent: true },
+  // Cannibalization fix: thin DC duplicate consolidated into the flagship field-trip-ideas post (2026-07-30)
+  { source: "/blog/washington-dc-trip-8th-grade", destination: "/blog/top-10-places-to-visit-on-a-school-trip-to-washington-dc/", permanent: true },
+  { source: "/washington-dc-trip-8th-grade", destination: "/blog/top-10-places-to-visit-on-a-school-trip-to-washington-dc/", permanent: true },
 ]
