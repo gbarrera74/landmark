@@ -174,7 +174,7 @@ export const WP_REDIRECTS: Redirect[] = [
   { source: "/philadelphia-historical-sites-for-students", destination: "/blog/philadelphia-historical-sites-for-students/", permanent: true },
   { source: "/pilsen-murals-walking-tour", destination: "/blog/pilsen-murals-walking-tour/", permanent: true },
   { source: "/plan-a-group-tour", destination: "/plan-a-trip/", permanent: true },
-  { source: "/planatrip", destination: "/plan-a-trip/", permanent: true },
+  { source: "/planatrip", destination: "/get-a-quote/", permanent: true },
   { source: "/planning-a-school-trip-to-washington-dc-post-pandemic", destination: "/blog/planning-a-school-trip-to-washington-dc-post-pandemic/", permanent: true },
   { source: "/pouding-chomeur", destination: "/blog/pouding-chomeur/", permanent: true },
   { source: "/quebec-city-school-trip-promo", destination: "/canada/quebec-city/", permanent: true },
@@ -441,4 +441,13 @@ export const WP_REDIRECTS: Redirect[] = [
   // Cannibalization fix: thin DC duplicate consolidated into the flagship field-trip-ideas post (2026-07-30)
   { source: "/blog/washington-dc-trip-8th-grade", destination: "/blog/top-10-places-to-visit-on-a-school-trip-to-washington-dc/", permanent: true },
   { source: "/washington-dc-trip-8th-grade", destination: "/blog/top-10-places-to-visit-on-a-school-trip-to-washington-dc/", permanent: true },
+  // Campaign lead-form aliases: newsletters, blog CTAs and ads point at the old
+  // WordPress quote URLs. These MUST land on the lead form (/get-a-quote/), not
+  // the booking calendar. /planatripn was the old "FREE QUOTE" page and was 404ing.
+  { source: "/planatripn", destination: "/get-a-quote/", permanent: true },
+  { source: "/free-quote", destination: "/get-a-quote/", permanent: true },
+  { source: "/freequote", destination: "/get-a-quote/", permanent: true },
+  { source: "/request-a-quote", destination: "/get-a-quote/", permanent: true },
+  { source: "/quote", destination: "/get-a-quote/", permanent: true },
+  { source: "/get-a-free-quote", destination: "/get-a-quote/", permanent: true },
 ]
