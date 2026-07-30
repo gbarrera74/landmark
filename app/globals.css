@@ -941,10 +941,12 @@ select.ilm-input { appearance: none; -webkit-appearance: none; cursor: pointer;
 .ilp-prose h2 { font-size: clamp(24px,3vw,32px); margin-top: 44px; }
 .ilp-prose h3 { font-size: 21px; color: var(--lm-primary-700); margin-top: 32px; }
 .ilp-prose ul { list-style: none; padding: 0; display: flex; flex-direction: column; gap: 12px; }
-.ilp-prose ul li { position: relative; padding-left: 32px; font-size: 16px; line-height: 1.7; color: var(--lm-ink); }
+.ilp-prose ul li { position: relative; padding-left: 22px; font-size: 16px; line-height: 1.7; color: var(--lm-ink); }
+/* Simple bullets, matching .lm-day-acts and .ilp-check (Michaela, 7/30). */
 .ilp-prose ul li::before {
-  content: ''; position: absolute; left: 0; top: 3px; width: 20px; height: 20px; border-radius: 50%;
-  background: var(--lm-primary) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='none' stroke='white' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='2 6 5 9 10 3'/%3E%3C/svg%3E") center/12px no-repeat;
+  content: ''; position: absolute; left: 2px; top: 10px;
+  width: 6px; height: 6px; border-radius: 50%;
+  background: var(--lm-ink-muted);
 }
 .ilp-prose strong { color: var(--lm-primary-900); font-weight: 700; }
 
@@ -983,7 +985,16 @@ select.ilm-input { appearance: none; -webkit-appearance: none; cursor: pointer;
 .ilp-infocard h3 svg { width: 26px; height: 26px; }
 .ilp-infocard ul { list-style: none; padding: 0; display: flex; flex-direction: column; gap: 13px; }
 .ilp-infocard li { position: relative; padding-left: 30px; font-size: 15px; line-height: 1.6; color: var(--lm-ink); }
-.ilp-check li::before { content: ''; position: absolute; left: 0; top: 2px; width: 19px; height: 19px; border-radius: 50%; background: var(--lm-primary) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='11' height='11' fill='none' stroke='white' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='2 6 5 9 10 3'/%3E%3C/svg%3E") center/11px no-repeat; }
+/* Simple bullets, not the old orange check-in-a-circle (Michaela, 7/30 — she
+   did not like the orange check marks on the itinerary pages). The "not
+   included" list below intentionally KEEPS its cross badge: that mark carries
+   meaning a plain bullet would erase. */
+.ilp-check li { padding-left: 20px; }
+.ilp-check li::before {
+  content: ''; position: absolute; left: 2px; top: 9px;
+  width: 6px; height: 6px; border-radius: 50%;
+  background: var(--lm-ink-muted);
+}
 .ilp-cross li::before { content: ''; position: absolute; left: 0; top: 2px; width: 19px; height: 19px; border-radius: 50%; background: #C9722E url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='10' fill='none' stroke='white' stroke-width='3' stroke-linecap='round'%3E%3Cline x1='2' y1='2' x2='8' y2='8'/%3E%3Cline x1='8' y1='2' x2='2' y2='8'/%3E%3C/svg%3E") center/10px no-repeat; }
 
 /* ── Pricing card ── */
@@ -1240,7 +1251,11 @@ select.ilm-input { appearance: none; -webkit-appearance: none; cursor: pointer;
 .lm-welcome-pills svg { width: 16px; height: 16px; color: var(--lm-primary); flex-shrink: 0; }
 
 /* ── Hero slider ── */
-.lm-hero { position: relative; min-height: 100svh; overflow: hidden; background: var(--lm-primary-900); }
+/* 86svh, not 100svh: a full-viewport hero gave no hint the page continued, so
+   visitors landing on the homepage did not realise they could scroll. Leaving a
+   sliver of the next section visible (plus the .ilm-scroll cue) reads as "there
+   is more below" without shrinking the hero enough to lose its impact. */
+.lm-hero { position: relative; min-height: 86svh; overflow: hidden; background: var(--lm-primary-900); }
 .lm-hero-slide {
   position: absolute; inset: 0; display: flex; align-items: center;
   opacity: 0; visibility: hidden;
@@ -1248,11 +1263,16 @@ select.ilm-input { appearance: none; -webkit-appearance: none; cursor: pointer;
 }
 .lm-hero-slide.is-active { opacity: 1; visibility: visible; }
 .lm-hero-slide > .ilm-hero-img { position: absolute; inset: 0; width: 100%; height: 100%; }
+/* Lightened per Michaela's review — the old scrim (0.90 → 0.10 plus a heavy
+   bottom wash) muddied the photography, and these are real student-group
+   photos worth seeing. The left end stays dark enough to carry white headline
+   text (which also has its own text-shadow); everything right of ~60% is now
+   close to the original image. */
 .lm-hero-slide::after {
   content: ''; position: absolute; inset: 0; z-index: 1;
   background:
-    linear-gradient(95deg, rgba(36,17,9,0.90) 0%, rgba(36,17,9,0.66) 38%, rgba(36,17,9,0.28) 68%, rgba(36,17,9,0.10) 100%),
-    linear-gradient(0deg, rgba(36,17,9,0.55) 0%, transparent 42%);
+    linear-gradient(95deg, rgba(36,17,9,0.80) 0%, rgba(36,17,9,0.52) 34%, rgba(36,17,9,0.16) 62%, rgba(36,17,9,0.02) 100%),
+    linear-gradient(0deg, rgba(36,17,9,0.42) 0%, transparent 30%);
 }
 .lm-hero-slide .ilm-hero-inner { position: relative; z-index: 2; }
 .lm-hero-slide h1, .lm-hero-slide .lm-hero-title {
@@ -1504,8 +1524,15 @@ select.ilm-input { appearance: none; -webkit-appearance: none; cursor: pointer;
 .lm-day-timeline { max-width: none; margin: 0; }
 .lm-day-timeline .ilp-step { padding-bottom: 30px; }
 .lm-day-acts { list-style: none; padding: 0; margin: 10px 0 0; display: flex; flex-direction: column; gap: 9px; }
-.lm-day-acts li { position: relative; padding-left: 26px; font-size: 15px; line-height: 1.6; color: var(--lm-ink); }
-.lm-day-acts li::before { content: ''; position: absolute; left: 0; top: 3px; width: 16px; height: 16px; border-radius: 50%; background: var(--lm-secondary) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='10' fill='none' stroke='white' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='2 6 5 9 10 3'/%3E%3C/svg%3E") center/10px no-repeat; }
+.lm-day-acts li { position: relative; padding-left: 20px; font-size: 15px; line-height: 1.6; color: var(--lm-ink); }
+/* Simple bullets, not the old amber check-in-a-circle (Michaela, 7/30). These
+   are the day-by-day activity lists — the most prominent checkmarks on an
+   itinerary page. Matches .ilp-check above. */
+.lm-day-acts li::before {
+  content: ''; position: absolute; left: 2px; top: 9px;
+  width: 6px; height: 6px; border-radius: 50%;
+  background: var(--lm-ink-muted);
+}
 .lm-sample-note { background: var(--lm-cream); border-left: 3px solid var(--lm-secondary); padding: 14px 18px; border-radius: 8px; font-size: 14.5px !important; color: var(--lm-ink-muted) !important; line-height: 1.7; }
 
 @media (max-width: 900px) {

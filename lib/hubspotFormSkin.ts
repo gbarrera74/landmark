@@ -30,13 +30,38 @@ html.lm-hsform,html.lm-hsform body{background:transparent!important;}
 
 /* hide the duplicate <h1> that repeats the page's own heading */
 .lm-hsform .hs-richtext:has(h1){display:none!important;}
+
+/* ── Column alignment ──────────────────────────────────────────────────────
+   HubSpot emits the help-text <legend class="hs-field-desc"> BETWEEN the label
+   and the input, and only 9 of 27 fields have one (heights 19–281px). In the
+   2-column grid that pushed one column's input far below its neighbour's —
+   inputs were landing up to 158px out of line (Trip Start vs Trip Return, etc).
+
+   Fix: lay each field out as a flex column and order it label → input → help
+   text. Combined with the fixed 2-line label box below, every input now sits at
+   the SAME offset from its row's top, so the two columns line up exactly. The
+   help text keeps its full content, just below the field it describes (which is
+   also the more conventional spot for it). */
+.lm-hsform .hs-form-field{display:flex!important;flex-direction:column!important;}
+.lm-hsform .hs-form-field>label{order:1!important;}
+.lm-hsform .hs-form-field>.input{order:2!important;}
+.lm-hsform .hs-form-field>.hs-field-desc,.lm-hsform .hs-form-field>legend.hs-field-desc{order:3!important;}
+.lm-hsform .hs-form-field>.hs-error-msgs{order:4!important;}
+
+/* Reserve a uniform two-line label box so a wrapping label in one column can't
+   shove its input out of line with the single-line label beside it. Checkbox /
+   file rows are full-width, so they opt out and keep their natural height. */
+.lm-hsform .hs-form-field:not(.hs-fieldtype-booleancheckbox):not(.hs-fieldtype-file):not(.hs-fieldtype-textarea)>label{
+  min-height:36px!important;display:flex!important;align-items:flex-start!important;
+}
+
 /* Field help-text (HubSpot .hs-field-desc) — these are Landmark's lead-qualifying
-   notes; show them as a small muted note under the label, above the input. */
+   notes; shown as a small muted note directly under the input it belongs to. */
 .lm-hsform .hs-field-desc,.lm-hsform legend.hs-field-desc{
   display:block!important;position:static!important;width:auto!important;height:auto!important;
   clip:auto!important;overflow:visible!important;white-space:normal!important;float:none!important;
   font-family:var(--font-body)!important;font-size:12.5px!important;line-height:1.5!important;
-  font-weight:400!important;color:var(--lm-ink-muted)!important;margin:0 0 8px!important;padding:0!important;border:0!important;
+  font-weight:400!important;color:var(--lm-ink-muted)!important;margin:7px 0 0!important;padding:0!important;border:0!important;
 }
 .lm-hsform .hs-field-desc em{font-style:italic;}
 .lm-hsform .hs-field-desc strong{color:var(--lm-primary-900);font-weight:600;}
@@ -119,6 +144,12 @@ html.lm-hsform form.hs-form>.lm-hs-divider:first-child{margin-top:0!important;}
 @media (max-width:600px){
   html.lm-hsform form.hs-form{grid-template-columns:1fr!important;row-gap:16px!important;}
   .lm-hsform fieldset.form-columns-2,.lm-hsform fieldset.form-columns-3{grid-template-columns:1fr!important;row-gap:16px!important;}
+  /* One column means nothing to align against — drop the reserved label box so
+     single-line labels don't carry dead space on mobile. Selector must mirror
+     the :not() chain above or it loses on specificity (both are !important). */
+  .lm-hsform .hs-form-field:not(.hs-fieldtype-booleancheckbox):not(.hs-fieldtype-file):not(.hs-fieldtype-textarea)>label{
+    min-height:0!important;display:block!important;
+  }
 }
 
 /* errors */
