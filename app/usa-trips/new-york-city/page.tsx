@@ -40,7 +40,7 @@ export default function NewYorkCity() {
     <>
       <PageHero
         eyebrow="New York City · The City That Never Sleeps"
-        title={<>Educational Trips in <em>NYC</em></>}
+        title={<>Educational Field Trips in <em>New York City</em></>}
         subtitle="Culture, history, arts, and global influence: customizable, safe school trips to New York City, from Ellis Island and the U.N. to Broadway workshops and Wall Street."
         image="/images/landmark/nyc-statue-liberty-hero.jpg"
         breadcrumb={[{ label: 'Destinations', href: '/destinations/' }, { label: 'New York City' }]}
@@ -103,7 +103,7 @@ export default function NewYorkCity() {
             ))}
           </div>
           <div className="ile-center lm-after-grid">
-            <Link href="/get-a-quote/" className="ile-btn ile-btn--primary">Start Planning Your Trip</Link>
+            <Link href="/get-a-quote/" className="ile-btn ile-btn--primary">Get a Quote</Link>
           </div>
         </div>
       </section>

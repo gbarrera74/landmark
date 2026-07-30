@@ -45,7 +45,7 @@ export default function SouthKorea() {
             <p>{INTRO_P2}</p>
           </div>
           <div className="ile-center" style={{ marginTop: 32 }}>
-            <Link href="/get-a-quote/" className="ile-btn ile-btn--primary">Start Planning Your Trip</Link>
+            <Link href="/get-a-quote/" className="ile-btn ile-btn--primary">Get a Quote</Link>
           </div>
         </div>
       </section>
@@ -88,7 +88,7 @@ export default function SouthKorea() {
             ))}
           </div>
           <div className="ile-center lm-after-grid">
-            <Link href="/get-a-quote/" className="ile-btn ile-btn--primary">Start Planning Your Trip</Link>
+            <Link href="/get-a-quote/" className="ile-btn ile-btn--primary">Get a Quote</Link>
           </div>
         </div>
       </section>

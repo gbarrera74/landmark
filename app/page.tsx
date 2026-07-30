@@ -226,7 +226,7 @@ export default function Home() {
             <h2 id="themed-h" className="lm-h2-amber">THEMED TRAVEL</h2>
             <p className="ile-lead lm-center-lead">{THEMED_INTRO}</p>
             <div className="lm-after-grid" style={{ marginTop: 8 }}>
-              <Link href="/get-a-quote/" className="ile-btn ile-btn--primary">Plan A Trip</Link>
+              <Link href="/get-a-quote/" className="ile-btn ile-btn--primary">Get a Quote</Link>
             </div>
           </div>
           <div className="lm-tour-grid lm-theme-grid">

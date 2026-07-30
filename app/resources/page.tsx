@@ -65,7 +65,7 @@ export default function Resources() {
       <section className="ile-section ile-section--cream" aria-labelledby="resources-s6">
         <div className="ile-container ilp-prose lm-content-prose">
           <h2 id="resources-s6" className="lm-h2-amber">Brochure</h2>
-            <p>Check out our 2024 Travel Brochure! It is full of hidden goodies, tips, and all of our amazing destinations. Meet our team, learn about our company, and so much more.</p>
+            <p>Check out our 2025-26 Travel Brochure! It is full of hidden goodies, tips, and all of our amazing destinations. Meet our team, learn about our company, and so much more.</p>
 
         </div>
       </section>
@@ -78,7 +78,7 @@ export default function Resources() {
       </section>
       <section className="ile-section ile-section--cream">
         <div className="ile-container ile-center">
-          <Link href="/get-a-quote/" className="ile-btn ile-btn--primary">Start Planning Your Trip</Link>
+          <Link href="/get-a-quote/" className="ile-btn ile-btn--primary">Get a Quote</Link>
         </div>
       </section>
       <BrochureBand />

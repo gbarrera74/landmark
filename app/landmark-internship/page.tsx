@@ -43,7 +43,7 @@ export default function Internship() {
       </section>
       <section className="ile-section ile-section--white">
         <div className="ile-container ile-center">
-          <Link href="/get-a-quote/" className="ile-btn ile-btn--primary">Start Planning Your Trip</Link>
+          <Link href="/get-a-quote/" className="ile-btn ile-btn--primary">Get a Quote</Link>
         </div>
       </section>
       <BrochureBand />

@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from 'next/link'
 import PageHero from '@/components/PageHero'
+import DestinationIntro from '@/components/DestinationIntro'
 import BrochureBand from '@/components/BrochureBand'
 import JsonLd from '@/lib/seo/JsonLd'
 import { breadcrumb, destinationGraph } from '@/lib/seo/schemas'
@@ -10,7 +11,14 @@ const ArrowR = (
 )
 
 const INTRO_P1 =
-  ""
+  "New Mexico turns the Southwest into a living classroom. Students ride the Sandia Peak Tramway above Albuquerque, walk the adobe streets of Old Town, and trace Pueblo and Hispanic heritage through the Museum of Indian Arts & Culture — then tour university campuses and step inside Meow Wolf's House of Eternal Return. It is history, science, art, and college exploration in one high-desert itinerary, built around your group and your curriculum."
+
+const HIGHLIGHTS = [
+  "Sandia Peak Tramway and the high-desert landscape",
+  "Pueblo and Hispanic heritage in Old Town Albuquerque",
+  "The Museum of Indian Arts & Culture",
+  "College visits and immersive art at Meow Wolf",
+]
 
 const TRIPS = [
   { title: "New Mexico School Trip", duration: "4 Day / 3 Night", img: '/images/landmark/new-mexico-1.jpg', href: "/usa-trips/new-mexico/new-mexico-school-trip/" },
@@ -34,16 +42,14 @@ export default function NewMexico() {
       />
 
       {/* Intro */}
-      <section className="ile-section ile-section--white">
-        <div className="ile-container">
-          <div className="ilp-prose ilp-prose--center">
-            <p>{INTRO_P1}</p>
-          </div>
-          <div className="ile-center" style={{ marginTop: 32 }}>
-            <Link href="/get-a-quote/" className="ile-btn ile-btn--primary">Start Planning Your Trip</Link>
-          </div>
-        </div>
-      </section>
+      <DestinationIntro
+        city="Santa Fe &amp; Albuquerque"
+        lead={INTRO_P1}
+        highlights={HIGHLIGHTS}
+        image="/images/landmark/new-mexico-1.jpg"
+        imageAlt="Students exploring the high desert of New Mexico"
+        tripCount={TRIPS.length}
+      />
 
       {/* Trips */}
       <section className="ile-section ile-section--cream" aria-labelledby="newmexico-trips-h">
@@ -91,7 +97,7 @@ export default function NewMexico() {
             ))}
           </div>
           <div className="ile-center lm-after-grid">
-            <Link href="/get-a-quote/" className="ile-btn ile-btn--primary">Start Planning Your Trip</Link>
+            <Link href="/get-a-quote/" className="ile-btn ile-btn--primary">Get a Quote</Link>
           </div>
         </div>
       </section>

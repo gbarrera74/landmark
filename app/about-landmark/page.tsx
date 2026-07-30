@@ -157,7 +157,7 @@ export default function AboutLandmark() {
         eyebrow="Let’s get started"
         title="Ready to travel with Landmark?"
         text="Tell us about your group and goals, and a Landmark Travel Consultant will build a safe, custom itinerary from the ground up."
-        primary={{ label: 'Start Planning Your Trip', href: '/get-a-quote/' }}
+        primary={{ label: 'Get a Quote', href: '/get-a-quote/' }}
         secondary={{ label: 'Talk to a Consultant', href: '/contact-us/' }}
       />
 

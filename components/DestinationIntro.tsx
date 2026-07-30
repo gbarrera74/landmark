@@ -46,7 +46,7 @@ export default function DestinationIntro({
                 </ul>
               </>
             )}
-            <Link href={ctaHref} className="ile-btn ile-btn--primary">Start Planning Your Trip</Link>
+            <Link href={ctaHref} className="ile-btn ile-btn--primary">Get a Quote</Link>
           </div>
           <div className={`lm-dest-intro__media${wideImage ? ' lm-dest-intro__media--wide' : ''}`}>
             <img src={image} alt={imageAlt} loading="lazy" />

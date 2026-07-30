@@ -39,7 +39,7 @@ export default function Boston() {
     <>
       <PageHero
         eyebrow="Boston, MA · The Birthplace of American Independence"
-        title={<>Educational Trips to <em>Boston</em></>}
+        title={<>Educational Field Trips in <em>Boston</em></>}
         subtitle="Cobblestone streets, revolutionary ideas, and academic excellence: customizable, safe student trips along the Freedom Trail and through Boston's historic core."
         image="/images/landmark/boston-skyline-hero.jpg"
         breadcrumb={[{ label: 'Destinations', href: '/destinations/' }, { label: 'Boston' }]}
@@ -102,7 +102,7 @@ export default function Boston() {
             ))}
           </div>
           <div className="ile-center lm-after-grid">
-            <Link href="/get-a-quote/" className="ile-btn ile-btn--primary">Start Planning Your Trip</Link>
+            <Link href="/get-a-quote/" className="ile-btn ile-btn--primary">Get a Quote</Link>
           </div>
         </div>
       </section>
