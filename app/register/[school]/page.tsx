@@ -39,10 +39,17 @@ export default async function RegisterPage({ params }: { params: Promise<{ schoo
   const clean = DOMPurify.sanitize(reg.bodyHtml, { ALLOWED_TAGS, ALLOWED_ATTR })
   const amEmail = reg.accountManager ? accountManagerEmail(reg.accountManager) : null
   const amPhoto = reg.accountManager ? accountManagerPhoto(reg.accountManager) : null
+  // Fall back to the first carousel photo so every school page gets a real hero
+  // instead of a scrim over a flat gradient.
+  const heroImage = reg.heroImage || reg.photos?.[0]?.src || null
 
   return (
-    <>
-      <header className="lm-article-hero has-photo lm-register-hero">
+    <div className="lm-register-page">
+      <header className={`lm-article-hero lm-register-hero${heroImage ? ' has-photo' : ''}`}>
+        {heroImage && (
+          // eslint-disable-next-line @next/next/no-img-element
+          <img className="lm-article-hero-img" src={heroImage} alt="" aria-hidden="true" />
+        )}
         <div className="lm-article-hero-scrim" />
         <div className="ile-container lm-article-hero-inner">
           <nav className="lm-crumbs" aria-label="Breadcrumb">
@@ -121,6 +128,6 @@ export default async function RegisterPage({ params }: { params: Promise<{ schoo
           </div>
         </section>
       )}
-    </>
+    </div>
   )
 }
