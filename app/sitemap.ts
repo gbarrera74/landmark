@@ -49,7 +49,6 @@ const ROUTES: { path: string; priority: number; changeFrequency: 'weekly' | 'mon
   { path: '/asia/south-korea/', priority: 0.8, changeFrequency: 'monthly' },
   { path: '/landmark-internship/', priority: 0.7, changeFrequency: 'monthly' },
   { path: '/plan-a-trip/', priority: 0.7, changeFrequency: 'monthly' },
-  { path: '/privacy-policy/', priority: 0.7, changeFrequency: 'monthly' },
   { path: '/private-school-class-trips/', priority: 0.7, changeFrequency: 'monthly' },
   { path: '/resources/', priority: 0.7, changeFrequency: 'monthly' },
   { path: '/testimonials/', priority: 0.7, changeFrequency: 'monthly' },
@@ -139,9 +138,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const posts = getIndex()
   const blog: MetadataRoute.Sitemap = [
     { url: `${SITE_URL}/blog/`, lastModified: posts[0] ? new Date(posts[0].date) : now, changeFrequency: 'weekly', priority: 0.7 },
-    ...Array.from({ length: getPageCount() - 1 }, (_, i) => ({
-      url: `${SITE_URL}/blog/page/${i + 2}/`, lastModified: now, changeFrequency: 'weekly' as const, priority: 0.3,
-    })),
     ...posts.map((p) => ({
       url: `${SITE_URL}/blog/${p.slug}/`, lastModified: new Date(p.date), changeFrequency: 'monthly' as const, priority: 0.6,
     })),
