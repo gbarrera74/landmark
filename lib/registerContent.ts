@@ -17,7 +17,7 @@ export const PACKING_LIST_ALT =
 export const INCLUSIONS_HTML = `
 <p>Please refer to your trip organizer or sample itinerary for your group&rsquo;s specific inclusions.</p>
 <p>At Landmark Educational Tours, every school trip is thoughtfully designed to give students a meaningful, educational, and memorable experience. Each school chooses the inclusions that best fit their goals, schedule, and budget, which means trip details may vary from group to group. No matter what your school selects, all Landmark trips feature a well-planned itinerary, engaging attractions, and educational experiences that bring each destination to life.</p>
-<p>Your student will also be supported by a Landmark Tour Manager, who helps coordinate logistics and ensures the trip runs smoothly from start to finish.</p>
+<p>Your student will also be supported by a Landmark Tour Director, who helps coordinate logistics and ensures the trip runs smoothly from start to finish.</p>
 <p>Our team works closely with your school to design a trip that is safe, enriching, and enjoyable for every traveler. No matter the destination, Landmark Educational Tours is committed to delivering high-quality experiences that inspire learning beyond the classroom.</p>
 `
 
