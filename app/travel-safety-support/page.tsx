@@ -3,6 +3,7 @@ import PageHero from '@/components/PageHero'
 import CtaBand from '@/components/CtaBand'
 import BrochureBand from '@/components/BrochureBand'
 import JsonLd from '@/lib/seo/JsonLd'
+import { BATTLEFACE_QUOTE_URL, BATTLEFACE_CLAIM_URL } from '@/lib/partners'
 import { breadcrumb } from '@/lib/seo/schemas'
 
 const DIFFERENCE = [
@@ -99,8 +100,12 @@ export default function TravelSafety() {
               <p className="lm-sample-note" style={{ marginTop: 20 }}>
                 <em>Important Note/Disclaimer: This website and flyer contains highlights of the plans developed by battleface Insurance Services, LLC.</em>
               </p>
-              <p style={{ marginTop: 20 }}>
-                <a href="https://robinassist.com/claims/LandmarkEducationalTours" target="_blank" rel="noopener noreferrer" className="ile-btn ile-btn--primary">File a Claim Online</a>
+              {/* Buying coverage comes first: far more visitors need a quote than
+                  need to file a claim, and until now this page offered no way to
+                  purchase at all. The quote link carries Landmark's partner ID. */}
+              <p style={{ marginTop: 20, display: 'flex', gap: 12, flexWrap: 'wrap' }}>
+                <a href={BATTLEFACE_QUOTE_URL} target="_blank" rel="noopener noreferrer" className="ile-btn ile-btn--primary">Get a Coverage Quote</a>
+                <a href={BATTLEFACE_CLAIM_URL} target="_blank" rel="noopener noreferrer" className="ile-btn ile-btn--outline">File a Claim Online</a>
               </p>
               <p style={{ marginTop: 14, fontSize: 14, color: 'var(--lm-ink-muted)' }}>Questions about your plan? battleface support is available 24/7 at 855-998-2928 or usa@battleface.com.</p>
             </div>
