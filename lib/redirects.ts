@@ -179,6 +179,20 @@ export const WP_REDIRECTS: Redirect[] = [
   // reworded. Over 3 months it drew 0 clicks on 6 impressions (vs 92 for
   // class-trips), so consolidating loses no traffic and stops the two pages
   // splitting the same intent.
+  // Retired registration pages. These URLs went out in school emails and
+  // newsletters, so they redirect rather than 404. Simon Fortin was never a
+  // school -- it is a Quebec guide page that was swept into /register/ during the
+  // WordPress migration, so it goes to the Quebec City destination. The rest are
+  // trips that have already happened or were cancelled (Seaside).
+  { source: "/register/simon-fortin-quebec-school-trips", destination: "/canada/quebec-city/", permanent: true },
+  { source: "/register/stagg-high-school", destination: "/destinations/", permanent: true },
+  { source: "/register/pulliam-elementary-school", destination: "/destinations/", permanent: true },
+  { source: "/register/registration-eton-academy", destination: "/destinations/", permanent: true },
+  { source: "/register/east-northport-middle-school", destination: "/destinations/", permanent: true },
+  { source: "/register/mevers-school-of-excellence", destination: "/destinations/", permanent: true },
+  { source: "/register/bennett-venture-academy", destination: "/destinations/", permanent: true },
+  { source: "/register/alvin-college", destination: "/destinations/", permanent: true },
+  { source: "/register/seaside-neighborhood-school", destination: "/destinations/", permanent: true },
   { source: "/private-school-field-trip", destination: "/private-school-class-trips/", permanent: true },
   { source: "/planatrip", destination: "/get-a-quote/", permanent: true },
   { source: "/planning-a-school-trip-to-washington-dc-post-pandemic", destination: "/blog/planning-a-school-trip-to-washington-dc-post-pandemic/", permanent: true },
