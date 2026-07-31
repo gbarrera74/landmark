@@ -51,8 +51,10 @@ export default function RegisterGallery({
         <div className="lm-reg-gallery-track" ref={trackRef}>
           {photos.map((p) => (
             <figure className="lm-reg-slide" key={p.src}>
+              {/* No visible caption: these photos show the destination, not the
+                  school that is travelling, and a caption implied otherwise.
+                  alt text stays for screen readers. */}
               <img src={p.src} alt={p.alt} loading="lazy" />
-              {p.alt && <figcaption>{p.alt}</figcaption>}
             </figure>
           ))}
         </div>
