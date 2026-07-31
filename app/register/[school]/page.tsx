@@ -81,11 +81,17 @@ export default async function RegisterPage({ params }: { params: Promise<{ schoo
             <div className="lm-reg-card lm-reg-card--register">
               <h3>Ready to Register?</h3>
               <p>Secure your spot below — trips fill on a first-come, first-served basis.</p>
-              <dl className="lm-reg-facts">
-                <div><dt>Registration Opens</dt><dd>{reg.registrationOpens || 'TBD'}</dd></div>
-                <div><dt>Enrollment Ends</dt><dd>{reg.enrollmentEnds || 'TBD'}</dd></div>
-                <div><dt>Trip Deposit / Traveler</dt><dd>{reg.deposit || 'TBD'}</dd></div>
-              </dl>
+              {/* Each row is omitted when it has no value, rather than printing
+                  "TBD". A school can deliberately withhold a date (Rivers' account
+                  manager did not want the registration open date shown), and a
+                  placeholder reads as unfinished to the families using this page. */}
+              {(reg.registrationOpens || reg.enrollmentEnds || reg.deposit) && (
+                <dl className="lm-reg-facts">
+                  {reg.registrationOpens && <div><dt>Registration Opens</dt><dd>{reg.registrationOpens}</dd></div>}
+                  {reg.enrollmentEnds && <div><dt>Enrollment Ends</dt><dd>{reg.enrollmentEnds}</dd></div>}
+                  {reg.deposit && <div><dt>Trip Deposit / Traveler</dt><dd>{reg.deposit}</dd></div>}
+                </dl>
+              )}
               <a href={reg.portal} className="ile-btn ile-btn--gold lm-reg-btn" target="_blank" rel="noopener noreferrer">Register Here</a>
             </div>
 
