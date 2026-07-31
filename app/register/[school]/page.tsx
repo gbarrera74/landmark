@@ -7,8 +7,7 @@ import { getRegistration, getAllRegistrationSlugs, accountManagerEmail, accountM
 import { SITE } from '@/lib/seo/schemas'
 import RegisterTabs from '@/components/RegisterTabs'
 import RegisterGallery from '@/components/RegisterGallery'
-
-const BATTLEFACE_URL = 'https://app.battleface.com/en-us/guided-quote/country-of-residence?partner=1107'
+import { BATTLEFACE_QUOTE_URL } from '@/lib/partners'
 
 export function generateStaticParams() {
   return getAllRegistrationSlugs().map((school) => ({ school }))
@@ -117,7 +116,7 @@ export default async function RegisterPage({ params }: { params: Promise<{ schoo
             <div className="lm-reg-card lm-reg-card--protection">
               <h3>Travel Protection</h3>
               <p>Add a travel protection policy for extra peace of mind before you depart.</p>
-              <a href={BATTLEFACE_URL} className="ile-btn ile-btn--ghost lm-reg-btn" target="_blank" rel="noopener noreferrer">Purchase Coverage</a>
+              <a href={BATTLEFACE_QUOTE_URL} className="ile-btn ile-btn--ghost lm-reg-btn" target="_blank" rel="noopener noreferrer">Purchase Coverage</a>
             </div>
 
             <p className="lm-register-help">
