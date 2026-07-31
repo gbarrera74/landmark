@@ -11,7 +11,7 @@ const ArrowR = (
 )
 
 const DAYS = [
-  { title: "Day 1: Arrival & New England Aquarium", acts: ["Travel to Boston, MA", "Meet Your Landmark Tour Manager", "Visit the New England Aquarium", "Group sit-down dinner", "Check-in to Hotel Accommodations"] },
+  { title: "Day 1: Arrival & New England Aquarium", acts: ["Travel to Boston, MA", "Meet Your Landmark Tour Director", "Visit the New England Aquarium", "Group sit-down dinner", "Check-in to Hotel Accommodations"] },
   { title: "Day 2: Boston Tea Party Museum & Freedom Walking Tour", acts: ["Hotel Breakfast", "Visit the Boston Tea Party & Ships Museum", "Freedom Trail Walking Tour", "Lunch Voucher Provided", "Group sit-down dinner", "Evening Exploration of Boylston Street", "Return to Hotel Accommodations"] },
   { title: "Day 3: USS Constitution & Departure", acts: ["Hotel Breakfast", "Visit USS Constitution", "Visit the USS Constitution Museum or Plimoth Patuxet", "Boxed Sandwich Lunch", "Depart for Home"] },
 ]
@@ -30,7 +30,7 @@ const INCLUSIONS = [
   ["Hotel Accommodations", "Convenient and student-friendly lodging."],
   ["Attractions", "Access to top-rated sites and experiences."],
   ["Meals", "Delicious and well-balanced dining options."],
-  ["Tour Manager", "Professional support throughout your journey."],
+  ["Tour Director", "Professional support throughout your journey."],
   ["Restaurant & Driver Gratuities", "Taken care of for your convenience."],
 ]
 
@@ -180,7 +180,7 @@ export default function Itin_usa_trips__boston__historic_boston() {
         name: "Historic Boston",
         description: "Walk the Freedom Trail and explore revolutionary landmarks on a three day Boston tour built for student groups.",
         path: "/usa-trips/boston/historic-boston/",
-        days: [{ name: "Day 1: Arrival & New England Aquarium", description: "Travel to Boston, MA; Meet Your Landmark Tour Manager; Visit the New England Aquarium; Group sit-down dinner; Check-in to Hotel Accommodations" }, { name: "Day 2: Boston Tea Party Museum & Freedom Walking Tour", description: "Hotel Breakfast; Visit the Boston Tea Party & Ships Museum; Freedom Trail Walking Tour; Lunch Voucher Provided; Group sit-down dinner; Evening Exploration of Boylston Street; Return to Hotel Accommodations" }, { name: "Day 3: USS Constitution & Departure", description: "Hotel Breakfast; Visit USS Constitution; Visit the USS Constitution Museum or Plimoth Patuxet; Boxed Sandwich Lunch; Depart for Home" }],
+        days: [{ name: "Day 1: Arrival & New England Aquarium", description: "Travel to Boston, MA; Meet Your Landmark Tour Director; Visit the New England Aquarium; Group sit-down dinner; Check-in to Hotel Accommodations" }, { name: "Day 2: Boston Tea Party Museum & Freedom Walking Tour", description: "Hotel Breakfast; Visit the Boston Tea Party & Ships Museum; Freedom Trail Walking Tour; Lunch Voucher Provided; Group sit-down dinner; Evening Exploration of Boylston Street; Return to Hotel Accommodations" }, { name: "Day 3: USS Constitution & Departure", description: "Hotel Breakfast; Visit USS Constitution; Visit the USS Constitution Museum or Plimoth Patuxet; Boxed Sandwich Lunch; Depart for Home" }],
       })} />
     </>
   )

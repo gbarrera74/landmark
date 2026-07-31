@@ -31,7 +31,7 @@ const INCLUSIONS = [
   ["Hotel Accommodations", "Convenient and student-friendly lodging."],
   ["Attractions", "Access to top-rated sites and experiences."],
   ["Meals", "Delicious and well-balanced dining options."],
-  ["Tour Manager", "Professional support throughout your journey."],
+  ["Tour Director", "Professional support throughout your journey."],
   ["Restaurant & Driver Gratuities", "Taken care of for your convenience."],
   ["& More!", "You have the flexibility to include or exclude specific services based on your group’s preferences."],
 ]
