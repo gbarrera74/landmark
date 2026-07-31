@@ -29,6 +29,13 @@ export type Registration = {
   introText?: string
   /** Trip-highlight carousel — Briana's convention is 6 photos of the attractions. */
   photos?: { src: string; alt: string }[]
+  /**
+   * Full-bleed hero photo. The template always rendered the hero scrim and the
+   * `has-photo` class but never emitted an <img>, so every school page showed a
+   * scrim over a flat gradient. When this is unset the first carousel photo is
+   * used, so every page gets a real hero.
+   */
+  heroImage?: string
   wpId?: number
   modified?: string | null
   importedAt?: string

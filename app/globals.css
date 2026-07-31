@@ -2373,3 +2373,78 @@ select.ilm-input { appearance: none; -webkit-appearance: none; cursor: pointer;
 .lm-team-bio-inner { overflow: hidden; min-height: 0; }
 .lm-team-bio p { padding: 0 18px 18px 84px; font-size: 14px; line-height: 1.7; color: var(--lm-ink); margin: 0; }
 @media (max-width: 620px) { .lm-team-grid { grid-template-columns: 1fr; } .lm-team-bio p { padding-left: 18px; } }
+
+/* ─────────────────────────────────────────────────────────────────────────────
+   REGISTER PAGES — DARK THEME
+   Private per-school registration funnels get a dark treatment (Ben, 7/30) so
+   they read as a distinct, ticketed space rather than another marketing page.
+   Everything is scoped under .lm-register-page, so the rest of the site — which
+   stays light — is untouched. Applies to all 36 school pages at once, which is
+   the point: they must stay 1:1 cohesive.
+   ───────────────────────────────────────────────────────────────────────────── */
+.lm-register-page {
+  --reg-bg:        #241109;   /* page surface (matches --lm-ink-deep) */
+  --reg-bg-alt:    #1C0C05;   /* gallery band, a touch deeper */
+  --reg-surface:   rgba(255,255,255,0.045);
+  --reg-border:    rgba(255,255,255,0.11);
+  --reg-text:      rgba(255,255,255,0.80);
+  --reg-text-dim:  rgba(255,255,255,0.62);
+  --reg-heading:   #FFFFFF;
+}
+
+/* Section backgrounds */
+.lm-register-page .ile-section--white { background: var(--reg-bg); }
+.lm-register-page .ile-section--cream { background: var(--reg-bg-alt); }
+
+/* Body copy + headings */
+.lm-register-page .lm-register-main,
+.lm-register-page .lm-reg-cost { color: var(--reg-text); }
+.lm-register-page .lm-reg-intro { color: var(--reg-text-dim); }
+.lm-register-page .lm-article,
+.lm-register-page .lm-article p,
+.lm-register-page .lm-article li { color: var(--reg-text); }
+.lm-register-page .lm-article h2,
+.lm-register-page .lm-article h3,
+.lm-register-page .lm-article h4 { color: var(--reg-heading); }
+.lm-register-page .lm-article a { color: var(--lm-secondary-soft); }
+.lm-register-page .lm-article a:hover { color: var(--lm-secondary); }
+.lm-register-page .lm-article hr { border-top-color: var(--reg-border); }
+.lm-register-page .lm-article blockquote { color: var(--reg-text); border-left-color: var(--lm-secondary); }
+
+/* Tabs */
+.lm-register-page .lm-tabs { border-bottom-color: var(--reg-border); }
+.lm-register-page .lm-tab { color: var(--reg-text-dim); }
+.lm-register-page .lm-tab:hover { color: var(--lm-secondary-soft); background: rgba(255,255,255,0.05); }
+.lm-register-page .lm-tab.is-active { color: var(--lm-secondary); }
+.lm-register-page .lm-tab.is-active::after { background: var(--lm-secondary); }
+
+/* Sidebar cards. The "Ready to Register?" card keeps its rust gradient — it is
+   the primary CTA and already reads correctly on a dark page. */
+.lm-register-page .lm-reg-card { background: var(--reg-surface); border-color: var(--reg-border); }
+.lm-register-page .lm-reg-card h3 { color: var(--reg-heading); }
+.lm-register-page .lm-reg-card > p { color: var(--reg-text-dim); }
+.lm-register-page .lm-reg-card--register { background: linear-gradient(135deg, var(--lm-primary) 0%, var(--lm-primary-900) 100%); border: 0; }
+.lm-register-page .lm-reg-am-name { color: var(--reg-heading) !important; }
+.lm-register-page .lm-reg-card--am .lm-reg-am-contact { color: var(--reg-text-dim); }
+.lm-register-page .lm-reg-am-contact a { color: var(--lm-secondary-soft); }
+.lm-register-page .lm-reg-am-photo { border-color: rgba(255,255,255,0.22); }
+.lm-register-page .lm-register-help { color: var(--reg-text-dim); }
+.lm-register-page .lm-register-help a { color: var(--lm-secondary-soft); }
+
+/* FAQ + packing list inside the tabs */
+.lm-register-page .lm-reg-faq-item { background: var(--reg-surface); border-color: var(--reg-border); }
+.lm-register-page .lm-reg-faq-item summary { color: var(--reg-heading); }
+.lm-register-page .lm-reg-faq-item summary::after { color: var(--lm-secondary); }
+.lm-register-page .lm-reg-faq-a { color: var(--reg-text-dim); }
+.lm-register-page .lm-reg-packing-img { border-color: var(--reg-border); }
+
+/* Gallery */
+.lm-register-page .lm-reg-slide figcaption { color: var(--reg-text-dim); }
+.lm-register-page .lm-reg-gallery-nav {
+  background: rgba(255,255,255,0.08); border-color: var(--reg-border); color: #fff;
+}
+.lm-register-page .lm-reg-gallery-nav:hover { background: var(--lm-secondary); color: var(--lm-ink-deep); }
+
+/* Ghost button (Purchase Coverage) needs a light outline on dark */
+.lm-register-page .ile-btn--ghost { color: #fff; border-color: var(--reg-border); }
+.lm-register-page .ile-btn--ghost:hover { background: rgba(255,255,255,0.08); border-color: rgba(255,255,255,0.3); }
