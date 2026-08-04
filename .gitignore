@@ -53,3 +53,6 @@ REFERENCE-ILE-CONTENT.md
 
 # local Claude Code permissions (personal, not shared)
 .claude/settings.local.json
+
+# real-user 404 capture (server-local, never web-served)
+.404-log.jsonl
