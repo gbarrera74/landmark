@@ -1,10 +1,12 @@
 import Link from 'next/link'
+import NotFoundLogger from '@/components/NotFoundLogger'
 
 export const metadata = { title: 'Page Not Found' }
 
 export default function NotFound() {
   return (
     <main className="ilp-hero" style={{ minHeight: '80vh', textAlign: 'center' }}>
+      <NotFoundLogger />
       <div className="ilp-hero-inner">
         <span className="ile-eyebrow" style={{ justifyContent: 'center' }}>Error 404</span>
         <h1 style={{ marginTop: 10 }}>This Trip Took a <em>Wrong Turn</em></h1>
