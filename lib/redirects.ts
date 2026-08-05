@@ -470,4 +470,25 @@ export const WP_REDIRECTS: Redirect[] = [
   { source: "/request-a-quote", destination: "/get-a-quote/", permanent: true },
   { source: "/quote", destination: "/get-a-quote/", permanent: true },
   { source: "/get-a-free-quote", destination: "/get-a-quote/", permanent: true },
+
+  // --- Post-cutover archive + legacy-path sweep (2026-08-05) ---
+  // Caught by the 404 logger in its first 9 hours live: 33 real-user 404s, all
+  // WordPress URLs the generated map above doesn't cover. Verified against the
+  // live sitemap — none of these wildcards shadow a real route.
+  //
+  // WP taxonomy/date archives have no Next equivalent -> the blog index.
+  { source: "/tag/:path*", destination: "/blog/", permanent: true },
+  { source: "/:year(20\\d{2})/:path*", destination: "/blog/", permanent: true },
+
+  // Legacy trip paths — BOTH segments changed at cutover ("usa-trips-2" ->
+  // "usa-trips", "<city>-tours" -> "<city>"), which is why the generated rules
+  // miss them. Specific mappings first; the catch-all to the hub must stay last
+  // of the three (Next takes the first matching rule).
+  { source: "/usa-trips-2/seattle-tours", destination: "/usa-trips/seattle/", permanent: true },
+  { source: "/usa-trips/new-york-city-tours/intro-to-nyc", destination: "/usa-trips/new-york-city/", permanent: true },
+  { source: "/usa-trips-2/:path*", destination: "/usa-trips/", permanent: true },
+
+  // Never migrated — absent from both the sitemap and content/blog. Sending it
+  // to the blog index is damage control, not a restoration.
+  { source: "/retail-therapy-redefined-unveiling-new-york-citys-ultimate-shopping-destinations", destination: "/blog/", permanent: true },
 ]
