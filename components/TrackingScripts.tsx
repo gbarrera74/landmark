@@ -112,6 +112,35 @@ export default function TrackingScripts() {
 
           {/* ClickCease — ad click-fraud protection (associates by domain) */}
           <Script id="clickcease" strategy="lazyOnload" src="https://www.clickcease.com/monitor/stat.js" />
+
+          {/* ── HubSpot form submissions -> dataLayer ─────────────────────────
+              The GTM container (GTM-K6Z2H62D) already has a trigger waiting on a
+              custom event named exactly "hubspotFormSubmit". It fires the GA4
+              event tag and the Google Ads conversion (label Zbv3CIfA7Z4aEOyZs7wB).
+              Nothing on this site ever pushed that event, so form conversions
+              stopped being recorded at the 2026-07-28 cutover -- even though the
+              leads themselves kept reaching HubSpot normally.
+
+              HubSpot posts a message from its form embed on submit. This listens
+              for it and pushes the event GTM is already looking for. It covers
+              both form types in use -- the same-origin iframe on /get-a-quote/
+              and the inline embeds elsewhere -- because both emit the same
+              hsFormCallback message. */}
+          <Script id="hs-form-datalayer" strategy="afterInteractive">{`
+            (function(){
+              if (window.__lmHsFormBound) return;
+              window.__lmHsFormBound = true;
+              window.dataLayer = window.dataLayer || [];
+              window.addEventListener('message', function(e){
+                var d = e && e.data;
+                if (!d || d.type !== 'hsFormCallback' || d.eventName !== 'onFormSubmitted') return;
+                window.dataLayer.push({
+                  event: 'hubspotFormSubmit',
+                  hsFormId: (d.data && d.data.formGuid) || d.id || ''
+                });
+              });
+            })();
+          `}</Script>
         </>
       )}
 
