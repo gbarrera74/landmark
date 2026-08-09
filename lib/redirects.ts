@@ -491,4 +491,19 @@ export const WP_REDIRECTS: Redirect[] = [
   // Never migrated — absent from both the sitemap and content/blog. Sending it
   // to the blog index is damage control, not a restoration.
   { source: "/retail-therapy-redefined-unveiling-new-york-citys-ultimate-shopping-destinations", destination: "/blog/", permanent: true },
+
+  // --- Second post-cutover sweep (2026-08-09) ---
+  // /category/* was predicted in the first sweep but held back for lack of
+  // evidence. It has since become the site's most-hit 404 pattern (uncategorized,
+  // washington-d-c, and a /page/3/ variant), so it joins /tag/* on the blog index.
+  { source: "/category/:path*", destination: "/blog/", permanent: true },
+
+  // Legacy trip paths where BOTH segments changed at cutover. The city hubs and
+  // itinerary slugs still exist under the new taxonomy, so these map 1:1 rather
+  // than dumping on a hub — the :slug rules carry siblings we haven't seen yet.
+  { source: "/usa-trips/washington-d-c-tours/:slug", destination: "/usa-trips/washington-dc/:slug", permanent: true },
+  { source: "/usa-trips/washington-d-c-tours", destination: "/usa-trips/washington-dc/", permanent: true },
+  { source: "/usa-trips/new-york-tours/:path*", destination: "/usa-trips/new-york-city/", permanent: true },
+  { source: "/art-student-tour-of-nyc", destination: "/usa-trips/new-york-city/art-focused-tour-nyc/", permanent: true },
+  { source: "/discover/washington-dc-school-trip", destination: "/usa-trips/washington-dc/", permanent: true },
 ]
