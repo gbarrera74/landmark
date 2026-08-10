@@ -7,6 +7,26 @@ const nextConfig: NextConfig = {
     // Old WordPress URLs -> new paths (cutover). See lib/redirects.ts.
     return WP_REDIRECTS;
   },
+  async rewrites() {
+    // The HubSpot lead forms are configured to send people to
+    // /thank-you-page-2/ after submitting, and the Google Ads conversion is a
+    // GA4 key event (lp_thank_you_page) keyed on that thank-you page view.
+    //
+    // These used to be 301s to /thank-you/, which meant the browser never
+    // landed on the URL the form actually names -- GA4 recorded /thank-you/
+    // instead. A REWRITE serves the same page while leaving the URL alone, so
+    // what the marketer configured in HubSpot is what analytics sees. A
+    // conversion path should not contain a redirect.
+    //
+    // Safe to serve one page at several URLs here: /thank-you/ is
+    // `noindex, follow` and is not in the sitemap, so there is no duplicate
+    // content exposure.
+    return [
+      { source: '/thank-you-page/', destination: '/thank-you/' },
+      { source: '/thank-you-page-2/', destination: '/thank-you/' },
+      { source: '/thank-you-page-landmark-tours-plus/', destination: '/thank-you/' },
+    ];
+  },
   images: {
     // trailingSlash:true rewrites /_next/image → /_next/image/, which breaks the
     // optimizer endpoint in the browser. Our media is pre-optimized (sized WebP/

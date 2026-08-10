@@ -48,11 +48,12 @@ html.lm-hsform,html.lm-hsform body{background:transparent!important;}
 .lm-hsform .hs-form-field>.hs-field-desc,.lm-hsform .hs-form-field>legend.hs-field-desc{order:3!important;}
 .lm-hsform .hs-form-field>.hs-error-msgs{order:4!important;}
 
-/* Reserve a uniform two-line label box so a wrapping label in one column can't
-   shove its input out of line with the single-line label beside it. Checkbox /
-   file rows are full-width, so they opt out and keep their natural height. */
-.lm-hsform .hs-form-field:not(.hs-fieldtype-booleancheckbox):not(.hs-fieldtype-file):not(.hs-fieldtype-textarea)>label{
-  min-height:36px!important;display:flex!important;align-items:flex-start!important;
+/* Labels take their natural height. The form is a single column, so there is no
+   neighbouring field to align against -- a reserved label box would just be dead
+   space above every input. (This previously reserved 36px for the 2-column
+   layout; see the layout block below.) */
+.lm-hsform .hs-form-field>label{
+  min-height:0!important;display:block!important;
 }
 
 /* Field help-text (HubSpot .hs-field-desc) — these are Landmark's lead-qualifying
@@ -114,13 +115,15 @@ html.lm-hsform,html.lm-hsform body{background:transparent!important;}
 .lm-hsform ul.inputs-list{list-style:none!important;margin:4px 0 0!important;padding:0!important;}
 .lm-hsform .hs-form-booleancheckbox-display,.lm-hsform .hs-form-radio-display{font-weight:400!important;font-size:14px!important;color:var(--lm-ink)!important;}
 
-/* ---- Compact 2-column form layout ----
-   The 24-field form is a tall single column by default. Lay the whole form out
-   as a 2-column grid so single fields pair up (halving perceived length), while
-   name/email pairs, the section dividers, the notes textarea, the file upload
-   and the submit button each span the full width. */
-html.lm-hsform form.hs-form{display:grid!important;grid-template-columns:1fr 1fr!important;column-gap:18px!important;row-gap:15px!important;align-items:start!important;}
-html.lm-hsform form.hs-form>fieldset.form-columns-1{grid-column:span 1!important;margin:0!important;}
+/* ---- Single-column form layout ----
+   Reverted from the 2-column grid on 2026-08-10 at Landmark's request. Every
+   fieldset now occupies its own row, including the name/email pairs HubSpot
+   ships as form-columns-2, so the form reads as one continuous column at every
+   width. Keeping the grid (rather than reverting to HubSpot's float layout)
+   preserves the consistent row-gap and the full-width divider/submit handling
+   below. */
+html.lm-hsform form.hs-form{display:grid!important;grid-template-columns:1fr!important;row-gap:15px!important;align-items:start!important;}
+html.lm-hsform form.hs-form>fieldset.form-columns-1{grid-column:1 / -1!important;margin:0!important;}
 html.lm-hsform form.hs-form>fieldset.form-columns-2,
 html.lm-hsform form.hs-form>fieldset.form-columns-3,
 html.lm-hsform form.hs-form>fieldset.form-columns-0,
@@ -132,9 +135,10 @@ html.lm-hsform form.hs-form>fieldset.form-columns-1:has(.hs-fieldtype-file){grid
 html.lm-hsform form.hs-form>.lm-hs-divider{margin:16px 0 2px!important;}
 html.lm-hsform form.hs-form>.lm-hs-divider:first-child{margin-top:0!important;}
 
-/* internal grid for the already-paired (name/email) + any 3-col rows */
-.lm-hsform fieldset.form-columns-2{display:grid!important;grid-template-columns:1fr 1fr!important;column-gap:18px!important;}
-.lm-hsform fieldset.form-columns-3{display:grid!important;grid-template-columns:1fr 1fr 1fr!important;column-gap:18px!important;}
+/* HubSpot pairs some fields itself (name/email as form-columns-2). Stack those
+   too, otherwise the form is single-column apart from two stray paired rows. */
+.lm-hsform fieldset.form-columns-2{display:grid!important;grid-template-columns:1fr!important;row-gap:15px!important;}
+.lm-hsform fieldset.form-columns-3{display:grid!important;grid-template-columns:1fr!important;row-gap:15px!important;}
 .lm-hsform fieldset.form-columns-2>.hs-form-field,.lm-hsform fieldset.form-columns-3>.hs-form-field{width:100%!important;float:none!important;padding:0!important;}
 
 /* Single column on narrow screens. NOTE: this @media is evaluated against the
@@ -142,14 +146,8 @@ html.lm-hsform form.hs-form>.lm-hs-divider:first-child{margin-top:0!important;}
    shrinking with the viewport), NOT the page width — so the breakpoint must sit
    below the desktop iframe width or it collapses the grid on desktop too. */
 @media (max-width:600px){
-  html.lm-hsform form.hs-form{grid-template-columns:1fr!important;row-gap:16px!important;}
-  .lm-hsform fieldset.form-columns-2,.lm-hsform fieldset.form-columns-3{grid-template-columns:1fr!important;row-gap:16px!important;}
-  /* One column means nothing to align against — drop the reserved label box so
-     single-line labels don't carry dead space on mobile. Selector must mirror
-     the :not() chain above or it loses on specificity (both are !important). */
-  .lm-hsform .hs-form-field:not(.hs-fieldtype-booleancheckbox):not(.hs-fieldtype-file):not(.hs-fieldtype-textarea)>label{
-    min-height:0!important;display:block!important;
-  }
+  html.lm-hsform form.hs-form{row-gap:16px!important;}
+  .lm-hsform fieldset.form-columns-2,.lm-hsform fieldset.form-columns-3{row-gap:16px!important;}
 }
 
 /* errors */

@@ -433,10 +433,9 @@ export const WP_REDIRECTS: Redirect[] = [
   { source: "/allegany-limestone-8th-grade-trip-2027", destination: "/register/allegany-limestone-8th-grade-trip-2027/", permanent: true },
   { source: "/soces", destination: "/register/soces/", permanent: true },
   { source: "/blog/category/:path*", destination: "/blog/", permanent: true },
-  // --- Launch QC (post-cutover): thank-you stubs -> real page (were 410'd, breaking form redirects) ---
-  { source: "/thank-you-page", destination: "/thank-you/", permanent: true },
-  { source: "/thank-you-page-2", destination: "/thank-you/", permanent: true },
-  { source: "/thank-you-page-landmark-tours-plus", destination: "/thank-you/", permanent: true },
+  // NOTE: the /thank-you-page* URLs are deliberately NOT redirected. They are
+  // REWRITTEN in next.config.ts so the browser stays on the exact URL the
+  // HubSpot form is configured to send people to. See THANK_YOU_REWRITES.
   // --- Launch QC: broken internal blog links (old WP paths that 404'd) -> live pages ---
   { source: "/contact", destination: "/contact-us/", permanent: true },
   { source: "/charleston-sc", destination: "/usa-trips/charleston/", permanent: true },
