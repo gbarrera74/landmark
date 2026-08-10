@@ -106,7 +106,7 @@ export default function Itin_usa_trips__washington_d_c__scouts() {
         eyebrow="Washington, D.C. · 3 Day / 2 Night"
         title={<>Scout Trips to Washington, D.C.</>}
         subtitle="Give your scout troop three unforgettable days in the nation's capital, connecting landmarks and museums with leadership, service, and civic pride."
-        image="/images/landmark/dc-hero.jpg"
+        image="/images/landmark/scouts-dc-capitol-group.jpg"
         breadcrumb={[
         { label: "Destinations", href: "/destinations/" },
         { label: "Washington, D.C.", href: "/usa-trips/washington-dc/" },

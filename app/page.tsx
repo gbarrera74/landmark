@@ -23,7 +23,7 @@ const TOP_TOURS = [
     location: 'Washington, D.C.',
     title: 'History in the Nation’s Capital',
     blurb: 'Get ready for an unforgettable journey through the history, landmarks, and legacy of Washington, D.C.!',
-    img: '/images/landmark/mlk-memorial-washington-dc.jpg',
+    img: '/images/landmark/dc-fdr-memorial-group.jpg',
     alt: 'Martin Luther King Jr. Memorial in Washington, D.C.',
     href: '/usa-trips/washington-dc/8th-grade-washington-dc-trip-itinerary/',
   },
@@ -32,7 +32,7 @@ const TOP_TOURS = [
     location: 'New York City',
     title: 'The Art of New York',
     blurb: 'Immerse yourself in the vibrant world of art and creativity across New York City’s iconic galleries and museums!',
-    img: '/images/landmark/broadway-sign-nyc.jpg',
+    img: '/images/landmark/nyc-top-of-the-rock-group.jpg',
     alt: 'Broadway signs in New York City',
     href: '/usa-trips/new-york-city/art-focused-tour-nyc/',
   },
@@ -41,14 +41,14 @@ const TOP_TOURS = [
     location: 'Boston',
     title: 'Freedom Trail Adventures',
     blurb: 'Step back in time and walk the paths of revolution in the historic heart of Boston exploring iconic landmarks!',
-    img: '/images/landmark/ethical-culture-boston.jpg',
+    img: '/images/landmark/boston-fenway-group.jpg',
     alt: 'Historic Boston landmark',
     href: '/usa-trips/boston/historic-boston/',
   },
 ]
 
 const DESTINATIONS = [
-  { name: 'Washington, D.C.', href: '/usa-trips/washington-dc/', img: '/images/landmark/fall-in-washington-dc.jpeg' },
+  { name: 'Washington, D.C.', href: '/usa-trips/washington-dc/', img: '/images/landmark/dc-lincoln-memorial-group.jpg' },
   // Was broadway-sign-nyc.jpg, which also fronts the "Art of New York" card in
   // TOP_TOURS above — the same photo appeared twice on the homepage. This is the
   // NYC hub's own hero, so the card now previews the page it links to.
@@ -56,7 +56,7 @@ const DESTINATIONS = [
   // Same duplicate-on-one-page issue as NYC above: this photo also fronts the
   // "Freedom Trail Adventures" card in TOP_TOURS. Use the Boston hub's own hero.
   { name: 'Boston', href: '/usa-trips/boston/', img: '/images/landmark/boston-skyline-hero.jpg' },
-  { name: 'Atlanta', href: '/usa-trips/atlanta/', img: '/images/landmark/atlanta-skyline.jpg' },
+  { name: 'Atlanta', href: '/usa-trips/atlanta/', img: '/images/landmark/atlanta-centennial-park-group.jpg' },
 ]
 
 // New: international educational journeys (global expansion)

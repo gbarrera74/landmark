@@ -33,7 +33,7 @@ export default function Japan() {
         eyebrow="Asia · Japan"
         title={<>Educational Tours to <em>Japan</em></>}
         subtitle="Students walk from ancient temples to neon skylines, seeing how Japan weaves tradition and innovation into everyday life."
-        image="/images/landmark/intl-japan.webp"
+        image="/images/landmark/japan-hero-fuji-pagoda.jpg"
         breadcrumb={[{ label: 'Destinations', href: '/destinations/' }, { label: 'Asia', href: '/asia/' }, { label: "Japan" }]}
       />
 

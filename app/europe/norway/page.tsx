@@ -20,7 +20,7 @@ const HIGHLIGHTS = [
   "A world leader in renewable energy",
 ]
 const TRIPS = [
-  { title: "10 Day Norway School Trip", duration: "10 Day / 9 Night", img: '/images/landmark/norway-1.jpg', href: "/europe/norway/10-day-norway-school-trip/" },
+  { title: "10 Day Norway School Trip", duration: "10 Day / 9 Night", img: '/images/landmark/norway-10day-hilltop-group.jpg', href: "/europe/norway/10-day-norway-school-trip/" },
 ]
 
 const STEPS = [
@@ -51,7 +51,7 @@ export default function Norway() {
         city="Norway"
         lead={INTRO_P1}
         highlights={HIGHLIGHTS}
-        image="/images/landmark/norway-1.jpg"
+        image="/images/landmark/norway-10day-hilltop-group.jpg"
         imageAlt="A dramatic Norwegian fjord"
         tripCount={TRIPS.length}
       />

@@ -20,8 +20,8 @@ const HIGHLIGHTS = [
   "Colonial life and self-governance",
 ]
 const TRIPS = [
-  { title: "Williamsburg School Trip", duration: "3 Day / 2 Night", img: '/images/landmark/williamsburg-1.jpg', href: "/usa-trips/williamsburg/williamsburg-school-trip/" },
-  { title: "Williamsburg Field Trip", duration: "2 Day / 1 Night", img: '/images/landmark/williamsburg-2.jpg', href: "/usa-trips/williamsburg/williamsburg-field-trip/" },
+  { title: "Williamsburg School Trip", duration: "3 Day / 2 Night", img: '/images/landmark/williamsburg-school-great-bridge.jpg', href: "/usa-trips/williamsburg/williamsburg-school-trip/" },
+  { title: "Williamsburg Field Trip", duration: "2 Day / 1 Night", img: '/images/landmark/williamsburg-field-jamestown-group.jpg', href: "/usa-trips/williamsburg/williamsburg-field-trip/" },
 ]
 
 const STEPS = [
@@ -46,7 +46,7 @@ export default function Williamsburg() {
         city="Williamsburg"
         lead={INTRO_P1}
         highlights={HIGHLIGHTS}
-        image="/images/landmark/williamsburg-1.jpg"
+        image="/images/landmark/williamsburg-school-great-bridge.jpg"
         imageAlt="Colonial Williamsburg's historic district"
         tripCount={TRIPS.length}
       />

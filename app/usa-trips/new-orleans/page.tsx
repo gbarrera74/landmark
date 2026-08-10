@@ -20,9 +20,9 @@ const HIGHLIGHTS = [
   "Culture, resilience, and history",
 ]
 const TRIPS = [
-  { title: "New Orleans Student Tour", duration: "2 Day / 1 Night", img: '/images/landmark/new-orleans-1.jpg', href: "/usa-trips/new-orleans/new-orleans-student-tour/" },
-  { title: "3 Day New Orleans School Trip", duration: "3 Day / 2 Night", img: '/images/landmark/new-orleans-2.jpg', href: "/usa-trips/new-orleans/3-day-new-orleans-school-trip/" },
-  { title: "New Orleans Field Trip", duration: "4 Day / 3 Night", img: '/images/landmark/new-orleans-3.jpg', href: "/usa-trips/new-orleans/new-orleans-field-trip/" },
+  { title: "New Orleans Student Tour", duration: "2 Day / 1 Night", img: '/images/landmark/nola-student-mardi-gras-world.jpg', href: "/usa-trips/new-orleans/new-orleans-student-tour/" },
+  { title: "3 Day New Orleans School Trip", duration: "3 Day / 2 Night", img: '/images/landmark/nola-3day-st-louis-cathedral.jpg', href: "/usa-trips/new-orleans/3-day-new-orleans-school-trip/" },
+  { title: "New Orleans Field Trip", duration: "4 Day / 3 Night", img: '/images/landmark/nola-field-dillard-university.jpg', href: "/usa-trips/new-orleans/new-orleans-field-trip/" },
 ]
 
 const STEPS = [
@@ -38,7 +38,7 @@ export default function NewOrleans() {
         eyebrow="New Orleans, LA · The Big Easy"
         title={<>Educational Field Trips in <em>New Orleans</em></>}
         subtitle="From the French Quarter to the National WWII Museum and jazz-filled riverfront, students trace history, culture, and resilience firsthand."
-        image="/images/landmark/new-orleans-hero.jpg"
+        image="/images/landmark/nola-hero-mississippi-sunset.jpg"
         breadcrumb={[{ label: 'Destinations', href: '/destinations/' }, { label: "New Orleans" }]}
       />
 
@@ -47,7 +47,7 @@ export default function NewOrleans() {
         city="New Orleans"
         lead={INTRO_P1}
         highlights={HIGHLIGHTS}
-        image="/images/landmark/new-orleans-1.jpg"
+        image="/images/landmark/nola-student-mardi-gras-world.jpg"
         imageAlt="The French Quarter in New Orleans"
         tripCount={TRIPS.length}
       />

@@ -21,7 +21,7 @@ const HIGHLIGHTS = [
 ]
 
 const TRIPS = [
-  { title: "New Mexico School Trip", duration: "4 Day / 3 Night", img: '/images/landmark/new-mexico-1.jpg', href: "/usa-trips/new-mexico/new-mexico-school-trip/" },
+  { title: "New Mexico School Trip", duration: "4 Day / 3 Night", img: '/images/landmark/new-mexico-school-santa-fe-college.jpg', href: "/usa-trips/new-mexico/new-mexico-school-trip/" },
 ]
 
 const STEPS = [
@@ -46,7 +46,7 @@ export default function NewMexico() {
         city="Santa Fe &amp; Albuquerque"
         lead={INTRO_P1}
         highlights={HIGHLIGHTS}
-        image="/images/landmark/new-mexico-1.jpg"
+        image="/images/landmark/new-mexico-school-santa-fe-college.jpg"
         imageAlt="Students exploring the high desert of New Mexico"
         tripCount={TRIPS.length}
       />
