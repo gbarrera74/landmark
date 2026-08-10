@@ -20,8 +20,8 @@ const HIGHLIGHTS = [
   "Media, technology, and storytelling",
 ]
 const TRIPS = [
-  { title: "Los Angeles School Trip", duration: "5 Day / 4 Night", img: '/images/landmark/los-angeles-1.jpg', href: "/usa-trips/los-angeles/los-angeles-school-trip/" },
-  { title: "Los Angeles Field Trip", duration: "4 Day / 3 Night", img: '/images/landmark/los-angeles-2.jpg', href: "/usa-trips/los-angeles/los-angeles-field-trip/" },
+  { title: "Los Angeles School Trip", duration: "5 Day / 4 Night", img: '/images/landmark/los-angeles-school-griffith.jpg', href: "/usa-trips/los-angeles/los-angeles-school-trip/" },
+  { title: "Los Angeles Field Trip", duration: "4 Day / 3 Night", img: '/images/landmark/los-angeles-field-santa-monica-pier.jpg', href: "/usa-trips/los-angeles/los-angeles-field-trip/" },
 ]
 
 const STEPS = [

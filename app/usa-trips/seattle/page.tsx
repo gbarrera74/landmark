@@ -20,7 +20,7 @@ const HIGHLIGHTS = [
   "Innovation and the tech industry",
 ]
 const TRIPS = [
-  { title: "Seattle School Trip", duration: "4 Day / 3 Night", img: '/images/landmark/seattle-1.jpg', href: "/usa-trips/seattle/seattle-school-trip/" },
+  { title: "Seattle School Trip", duration: "4 Day / 3 Night", img: '/images/landmark/seattle-school-chihuly-garden.jpg', href: "/usa-trips/seattle/seattle-school-trip/" },
 ]
 
 const STEPS = [
@@ -45,7 +45,7 @@ export default function Seattle() {
         city="Seattle"
         lead={INTRO_P1}
         highlights={HIGHLIGHTS}
-        image="/images/landmark/seattle-1.jpg"
+        image="/images/landmark/seattle-school-chihuly-garden.jpg"
         imageAlt="The Seattle skyline and waterfront"
         tripCount={TRIPS.length}
       />

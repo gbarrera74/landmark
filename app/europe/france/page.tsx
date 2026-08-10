@@ -33,7 +33,7 @@ export default function France() {
         eyebrow="Europe · France"
         title={<>Educational Tours to <em>France</em></>}
         subtitle="From the halls of the Louvre to the streets of the Revolution, France immerses students in art, history, and living language."
-        image="/images/landmark/intl-france.jpg"
+        image="/images/landmark/france-hero-paris-rooftops.jpg"
         breadcrumb={[{ label: 'Destinations', href: '/destinations/' }, { label: 'Europe', href: '/europe/' }, { label: "France" }]}
       />
 

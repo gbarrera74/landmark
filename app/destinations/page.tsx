@@ -20,7 +20,7 @@ export default function Destinations() {
         eyebrow="Landmark Educational Tours"
         title={<>Explore Our <em>Destinations</em></>}
         subtitle="Every Landmark destination in one place: customizable, safe, curriculum-aligned educational trips across the U.S. and around the world."
-        image="/images/landmark/dc-hero.jpg"
+        image="/images/landmark/destinations-hero-national-mall.jpg"
         breadcrumb={[{ label: "Destinations" }]}
       />
 

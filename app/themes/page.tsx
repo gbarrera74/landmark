@@ -19,7 +19,7 @@ const THEMES = [
   { title: "Spanish Immersion", href: "/usa-trips/chicago/chicago-spanish-immersion-school-trip/", img: "/images/landmark/chicago-3.jpg" },
   { title: "French Immersion", href: "/canada/quebec-city/", img: "/images/landmark/quebec-hero.jpg" },
   { title: "YMCA / Summer Camp", href: "/usa-trips/new-york-city/ymca-summer-camp/", img: "/images/landmark/murray-high-school-nyc.jpg" },
-  { title: "African American History", href: "/usa-trips/washington-dc/african-american-history-dc-student-tour/", img: "/images/landmark/dc-nmaahc.jpg" },
+  { title: "African American History", href: "/usa-trips/washington-dc/african-american-history-dc-student-tour/", img: "/images/landmark/themes-hero-boston-old-state-house.jpg" },
   { title: "Scouts", href: "/usa-trips/washington-dc/scouts/", img: "/images/landmark/dc-hero.jpg" },
   { title: "Yellowstone School Trip", href: "/yellowstone-national-park-school-trip/", img: "/images/landmark/yellowstone-grand-prismatic.jpg" },
   { title: "Yellowstone Field Trip", href: "/yellowstone-national-park-field-trip/", img: "/images/landmark/yellowstone-falls.jpg" },
@@ -33,7 +33,7 @@ export default function Themes() {
         eyebrow="Landmark Educational Tours"
         title={<>Top Tour <em>Themes</em></>}
         subtitle="Curriculum-focused programs built around what your students are studying, from civics and the arts to language immersion and the outdoors."
-        image="/images/landmark/dc-nmaahc.jpg"
+        image="/images/landmark/themes-hero-boston-old-state-house.jpg"
         breadcrumb={[{ label: 'Themes' }]}
       />
       <section className="ile-section ile-section--white" aria-labelledby="themes-h">

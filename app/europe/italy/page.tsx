@@ -64,7 +64,7 @@ export default function Italy() {
         city="Italy"
         lead={INTRO_P1}
         highlights={HIGHLIGHTS}
-        image="/images/landmark/intl-italy-group.jpg"
+        image="/images/landmark/italy-intro-colosseum-group.jpg"
         imageAlt="A Landmark student group inside the Colosseum in Rome, Italy"
         tripCount={TRIPS.length}
       />

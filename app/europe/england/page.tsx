@@ -33,7 +33,7 @@ export default function England() {
         eyebrow="Europe · England"
         title={<>Educational Tours to <em>England</em></>}
         subtitle="Explore royal castles, historic cathedrals, and literary landmarks that bring centuries of English history and culture to life for students."
-        image="/images/landmark/intl-england.webp"
+        image="/images/landmark/england-hero-big-ben-thames.jpg"
         breadcrumb={[{ label: 'Destinations', href: '/destinations/' }, { label: 'Europe', href: '/europe/' }, { label: "England" }]}
       />
 
