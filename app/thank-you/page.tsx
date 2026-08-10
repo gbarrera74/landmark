@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import PageHero from '@/components/PageHero'
 import CtaBand from '@/components/CtaBand'
+import ThankYouConversion from '@/components/ThankYouConversion'
 
 export const metadata: Metadata = {
   title: 'Thank You',
@@ -11,6 +12,9 @@ export const metadata: Metadata = {
 export default function ThankYou() {
   return (
     <>
+      {/* Google Ads conversion. See the component for why this is sent
+          explicitly rather than left to a GA4 URL-matching rule. */}
+      <ThankYouConversion />
       <PageHero
         eyebrow="We got it"
         title={<>Thank <em>you</em></>}
