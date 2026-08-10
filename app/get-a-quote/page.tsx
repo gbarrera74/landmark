@@ -1,5 +1,6 @@
 import PageHero from '@/components/PageHero'
 import HubSpotForm from '@/components/HubSpotForm'
+import ScrollToQuoteForm from '@/components/ScrollToQuoteForm'
 import HubSpotMeetings from '@/components/HubSpotMeetings'
 import JsonLd from '@/lib/seo/JsonLd'
 import PageFaq from '@/components/PageFaq'
@@ -22,6 +23,7 @@ const PROCESS = [
 export default function GetAQuotePage() {
   return (
     <>
+      <ScrollToQuoteForm />
       <PageHero
         eyebrow="Get Started"
         title={<>Tell Us About Your <em>Trip</em></>}
@@ -49,7 +51,7 @@ export default function GetAQuotePage() {
         </div>
       </section>
 
-      <section className="ile-section ile-section--white">
+      <section id="quote-form" className="ile-section ile-section--white">
         <div className="ile-container">
           <div className="lm-form-card lm-form-card--quote">
             <h2 className="lm-h2-amber" style={{ textAlign: 'center' }}>REQUEST YOUR FREE QUOTE</h2>
