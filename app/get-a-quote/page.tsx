@@ -2,6 +2,8 @@ import PageHero from '@/components/PageHero'
 import HubSpotForm from '@/components/HubSpotForm'
 import HubSpotMeetings from '@/components/HubSpotMeetings'
 import JsonLd from '@/lib/seo/JsonLd'
+import PageFaq from '@/components/PageFaq'
+import { PAGE_FAQS } from '@/lib/seo/pageFaqs'
 import { breadcrumb } from '@/lib/seo/schemas'
 
 const TRUST = [
@@ -88,6 +90,8 @@ export default function GetAQuotePage() {
           </div>
         </div>
       </section>
+      <PageFaq items={PAGE_FAQS['/get-a-quote/']} id="quote-faq" heading="Questions about quotes" tone="white" />
+
 
       <JsonLd data={breadcrumb([
         { name: 'Home', path: '/' },

@@ -3,6 +3,8 @@ import Link from 'next/link'
 import PageHero from '@/components/PageHero'
 import BrochureBand from '@/components/BrochureBand'
 import JsonLd from '@/lib/seo/JsonLd'
+import PageFaq from '@/components/PageFaq'
+import { PAGE_FAQS } from '@/lib/seo/pageFaqs'
 import { breadcrumb } from '@/lib/seo/schemas'
 
 const STEPS = [
@@ -150,6 +152,8 @@ export default function UnitedStates() {
           </div>
         </div>
       </section>
+      <PageFaq items={PAGE_FAQS['/usa-trips/']} id="usa-faq" heading="U.S. school trips: common questions" tone="white" />
+
 
       <BrochureBand />
 

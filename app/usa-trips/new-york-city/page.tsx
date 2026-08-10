@@ -4,6 +4,8 @@ import PageHero from '@/components/PageHero'
 import DestinationIntro from '@/components/DestinationIntro'
 import BrochureBand from '@/components/BrochureBand'
 import JsonLd from '@/lib/seo/JsonLd'
+import PageFaq from '@/components/PageFaq'
+import { PAGE_FAQS } from '@/lib/seo/pageFaqs'
 import { breadcrumb, destinationGraph } from '@/lib/seo/schemas'
 
 const ArrowR = (
@@ -110,6 +112,8 @@ export default function NewYorkCity() {
           </div>
         </div>
       </section>
+      <PageFaq items={PAGE_FAQS['/usa-trips/new-york-city/']} id="nyc-faq" heading="New York City school trips: common questions" tone="white" />
+
 
       <BrochureBand />
 
