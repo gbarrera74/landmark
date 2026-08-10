@@ -85,7 +85,6 @@ export default function Footer() {
           <h3>Explore</h3>
           <div className="ilef-links">
             <Link href="/themes/">Themes</Link>
-            <Link href="/plan-a-trip/">Plan a Trip</Link>
             <Link href="/get-a-quote/">Get a Quote</Link>
             <Link href="/blog/">Blog</Link>
             <Link href="/faq/">FAQ</Link>

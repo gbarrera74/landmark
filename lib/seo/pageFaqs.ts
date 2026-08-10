@@ -208,10 +208,10 @@ export const PAGE_FAQS: Record<string, Faq[]> = {
       q: 'What happens after I accept a quote?',
       a: `Your Travel Consultant sends a personalized trip agreement confirming the terms and the payment schedule. Once that is signed, we set up your group's portal and share registration instructions for your travelers. ${PAYMENT}`,
     },
-    ...HUB_COMMON.slice(2),
-  ],
-
-  '/plan-a-trip/': [
+    // Carried over when /plan-a-trip/ was retired into this page (2026-08-10).
+    // That page answered the "how does this work" half of the decision while
+    // this one answered the "what will it cost" half; the merged page has to
+    // cover both or the retirement loses content that was ranking.
     {
       q: 'What does the trip planning process look like?',
       a: 'Trip organizers contact Landmark to request a private group tour. A Travel Consultant collects the basics — dates, destination, passenger breakdown — then personalizes an itinerary to match what the group wants, and provides a quote that mirrors it. You can customize practically anything, and all of it is free until you agree to proceed.',
@@ -221,7 +221,6 @@ export const PAGE_FAQS: Record<string, Faq[]> = {
       a: 'That is common, and it is what the Travel Consultants are for. They will suggest what belongs on the itinerary for your destination, grade level, and time frame rather than expecting you to arrive with a plan.',
     },
     { q: 'How are hotel rooms assigned?', a: ROOMING },
-    { q: 'How do groups pay for a trip?', a: PAYMENT },
     ...HUB_COMMON,
   ],
 
