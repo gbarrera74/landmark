@@ -11,7 +11,7 @@ const ArrowR = (
 )
 
 const DAYS = [
-  { title: "Day 1: Street Hues Seattle Urban Tour & Ferris wheel ride on the Great Seattle Wheel", acts: ["Travel to Seattle", "Welcome to Seattle! Meet your Landmark Leader!", "Street Hues Seattle Urban Tour", "Lunch Allocation", "Visit the Seattle Art Museum", "Group sit-down dinner", "Ferris wheel ride on the Great Seattle Wheel", "Check-in to Hotel Accommodations with Overnight Security (three nights)"] },
+  { title: "Day 1: Street Hues Seattle Urban Tour & Ferris wheel ride on the Great Seattle Wheel", acts: ["Travel to Seattle", "Welcome to Seattle! Meet your Tour Director!", "Street Hues Seattle Urban Tour", "Lunch Allocation", "Visit the Seattle Art Museum", "Group sit-down dinner", "Ferris wheel ride on the Great Seattle Wheel", "Check-in to Hotel Accommodations with Overnight Security (three nights)"] },
   { title: "Day 2: Space Needle- Admission + Chihuly Garden and Glass & MoPOP Museum", acts: ["Breakfast at the hotel", "Visit the Space Needle- Admission + Chihuly Garden and Glass", "Lunch Allocation", "Visit MoPOP Museum", "Visit the Henry Art Gallery", "Visit the Kerry Park", "Group sit-down dinner", "Return to Hotel Accommodations"] },
   { title: "Day 3: Tacoma Art Museum & Hiking at Rainier National Park", acts: ["Breakfast at the hotel", "Guided Tour of Tacoma Art Museum", "Boxed Picnic Lunch", "Visit Paradise Visitor Center or Henry M. Jackson Memorial", "Hike in Mount Rainier National Park- Nisqually Vista Trail", "Group sit-down dinner", "Return to Hotel Accommodations"] },
   { title: "Day 4: Seattle Japanese Garden & Departure Home", acts: ["Breakfast at the hotel", "Visit the Seattle Japanese Garden", "Boxed Sandwich Lunch", "Visit the Seattle Asian Art Museum", "Departure Home"] },
@@ -31,7 +31,7 @@ const INCLUSIONS = [
   ["Hotel Accommodations", "Convenient and student-friendly lodging."],
   ["Attractions", "Access to top-rated sites and experiences."],
   ["Meals", "Delicious and well-balanced dining options."],
-  ["Tour Manager", "Professional support throughout your journey."],
+  ["Tour Director", "Professional support throughout your journey."],
   ["Restaurant & Driver Gratuities", "Taken care of for your convenience."],
 ]
 
@@ -160,7 +160,7 @@ export default function Itin_usa_trips__seattle__seattle_school_trip() {
         name: "Seattle School Trip",
         description: "Explore Seattle's science, technology, and culture through hands-on museums, iconic landmarks, and inspiring real-world learning for student groups.",
         path: "/usa-trips/seattle/seattle-school-trip/",
-        days: [{ name: "Day 1: Street Hues Seattle Urban Tour & Ferris wheel ride on the Great Seattle Wheel", description: "Travel to Seattle; Welcome to Seattle! Meet your Landmark Leader!; Street Hues Seattle Urban Tour; Lunch Allocation; Visit the Seattle Art Museum; Group sit-down dinner; Ferris wheel ride on the Great Seattle Wheel; Check-in to Hotel Accommodations with Overnight Security (three nights)" }, { name: "Day 2: Space Needle- Admission + Chihuly Garden and Glass & MoPOP Museum", description: "Breakfast at the hotel; Visit the Space Needle- Admission + Chihuly Garden and Glass; Lunch Allocation; Visit MoPOP Museum; Visit the Henry Art Gallery; Visit the Kerry Park; Group sit-down dinner; Return to Hotel Accommodations" }, { name: "Day 3: Tacoma Art Museum & Hiking at Rainier National Park", description: "Breakfast at the hotel; Guided Tour of Tacoma Art Museum; Boxed Picnic Lunch; Visit Paradise Visitor Center or Henry M. Jackson Memorial; Hike in Mount Rainier National Park- Nisqually Vista Trail; Group sit-down dinner; Return to Hotel Accommodations" }, { name: "Day 4: Seattle Japanese Garden & Departure Home", description: "Breakfast at the hotel; Visit the Seattle Japanese Garden; Boxed Sandwich Lunch; Visit the Seattle Asian Art Museum; Departure Home" }],
+        days: [{ name: "Day 1: Street Hues Seattle Urban Tour & Ferris wheel ride on the Great Seattle Wheel", description: "Travel to Seattle; Welcome to Seattle! Meet your Tour Director!; Street Hues Seattle Urban Tour; Lunch Allocation; Visit the Seattle Art Museum; Group sit-down dinner; Ferris wheel ride on the Great Seattle Wheel; Check-in to Hotel Accommodations with Overnight Security (three nights)" }, { name: "Day 2: Space Needle- Admission + Chihuly Garden and Glass & MoPOP Museum", description: "Breakfast at the hotel; Visit the Space Needle- Admission + Chihuly Garden and Glass; Lunch Allocation; Visit MoPOP Museum; Visit the Henry Art Gallery; Visit the Kerry Park; Group sit-down dinner; Return to Hotel Accommodations" }, { name: "Day 3: Tacoma Art Museum & Hiking at Rainier National Park", description: "Breakfast at the hotel; Guided Tour of Tacoma Art Museum; Boxed Picnic Lunch; Visit Paradise Visitor Center or Henry M. Jackson Memorial; Hike in Mount Rainier National Park- Nisqually Vista Trail; Group sit-down dinner; Return to Hotel Accommodations" }, { name: "Day 4: Seattle Japanese Garden & Departure Home", description: "Breakfast at the hotel; Visit the Seattle Japanese Garden; Boxed Sandwich Lunch; Visit the Seattle Asian Art Museum; Departure Home" }],
       })} />
     </>
   )

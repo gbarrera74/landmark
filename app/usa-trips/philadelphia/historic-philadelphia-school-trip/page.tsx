@@ -11,7 +11,7 @@ const ArrowR = (
 )
 
 const DAYS = [
-  { title: "Day 1: Arrival & Franklin Institute", acts: ["Travel to Philadelphia", "Arrival in Philly!", "Meet your Landmark Leaders!", "Lunch Allocation", "Visit the Franklin Institute", "Visit Independence Hall, Liberty Bell, and the U.S. Mint", "Visit Museum of Illusions", "Group sit-down dinner", "Check-in to Hotel Accommodations with on-site security"] },
+  { title: "Day 1: Arrival & Franklin Institute", acts: ["Travel to Philadelphia", "Arrival in Philly!", "Meet your Tour Directors!", "Lunch Allocation", "Visit the Franklin Institute", "Visit Independence Hall, Liberty Bell, and the U.S. Mint", "Visit Museum of Illusions", "Group sit-down dinner", "Check-in to Hotel Accommodations with on-site security"] },
   { title: "Day 2: University of Pennsylvania & Rocky Statue", acts: ["Hotel Breakfast", "Visit and Tour University of Pennsylvania", "Picnic on Penn’s Campus", "Visit Eastern State Penitentiary", "Photo Opportunity At The Rocky Statue", "Dinner and Games at Dave & Buster’s", "Return to Hotel Accommodations"] },
   { title: "Day 3: Philadelphia Museum of Art & Departure", acts: ["Hotel Breakfast", "Visit the Philadelphia Museum of Art", "Lunch at Reading Terminal Market", "Visit and Tour Temple University", "Depart for Home", "*Boxed Sandwich Dinner or Similar Delivered to Temple University for Students to eat en route"] },
 ]
@@ -30,7 +30,7 @@ const INCLUSIONS = [
   ["Hotel Accommodations", "Convenient and student-friendly lodging."],
   ["Attractions", "Access to top-rated sites and experiences."],
   ["Meals", "Delicious and well-balanced dining options."],
-  ["Tour Manager", "Professional support throughout your journey."],
+  ["Tour Director", "Professional support throughout your journey."],
   ["Restaurant & Driver Gratuities", "Taken care of for your convenience."],
 ]
 
@@ -179,7 +179,7 @@ export default function Itin_usa_trips__philadelphia_tours__historic_philadelphi
         name: "Historic Philadelphia School Trip",
         description: "Trace the birthplace of American democracy across three days of hands-on history, iconic landmarks, and world-class museums.",
         path: "/usa-trips/philadelphia/historic-philadelphia-school-trip/",
-        days: [{ name: "Day 1: Arrival & Franklin Institute", description: "Travel to Philadelphia; Arrival in Philly!; Meet your Landmark Leaders!; Lunch Allocation; Visit the Franklin Institute; Visit Independence Hall, Liberty Bell, and the U.S. Mint; Visit Museum of Illusions; Group sit-down dinner; Check-in to Hotel Accommodations with on-site security" }, { name: "Day 2: University of Pennsylvania & Rocky Statue", description: "Hotel Breakfast; Visit and Tour University of Pennsylvania; Picnic on Penn’s Campus; Visit Eastern State Penitentiary; Photo Opportunity At The Rocky Statue; Dinner and Games at Dave & Buster’s; Return to Hotel Accommodations" }, { name: "Day 3: Philadelphia Museum of Art & Departure", description: "Hotel Breakfast; Visit the Philadelphia Museum of Art; Lunch at Reading Terminal Market; Visit and Tour Temple University; Depart for Home; *Boxed Sandwich Dinner or Similar Delivered to Temple University for Students to eat en route" }],
+        days: [{ name: "Day 1: Arrival & Franklin Institute", description: "Travel to Philadelphia; Arrival in Philly!; Meet your Tour Directors!; Lunch Allocation; Visit the Franklin Institute; Visit Independence Hall, Liberty Bell, and the U.S. Mint; Visit Museum of Illusions; Group sit-down dinner; Check-in to Hotel Accommodations with on-site security" }, { name: "Day 2: University of Pennsylvania & Rocky Statue", description: "Hotel Breakfast; Visit and Tour University of Pennsylvania; Picnic on Penn’s Campus; Visit Eastern State Penitentiary; Photo Opportunity At The Rocky Statue; Dinner and Games at Dave & Buster’s; Return to Hotel Accommodations" }, { name: "Day 3: Philadelphia Museum of Art & Departure", description: "Hotel Breakfast; Visit the Philadelphia Museum of Art; Lunch at Reading Terminal Market; Visit and Tour Temple University; Depart for Home; *Boxed Sandwich Dinner or Similar Delivered to Temple University for Students to eat en route" }],
       })} />
     </>
   )

@@ -11,7 +11,7 @@ const ArrowR = (
 )
 
 const DAYS = [
-  { title: "Day 1: Arrival & Ice Skating", acts: ["Travel to Montreal", "Arrival in Montreal!", "Meet your Landmark Leaders!", "Check into Hotel Accommodations", "Landmark Leader Led Walking Orientation of Old Montreal", "Group sit-down dinner", "Evening Activity: Ice Skating at Patin Patin, Vieux-Port de Montréal", "Return to Hotel Accommodations with on-site security"] },
+  { title: "Day 1: Arrival & Ice Skating", acts: ["Travel to Montreal", "Arrival in Montreal!", "Meet your Tour Directors!", "Check into Hotel Accommodations", "Tour Director Led Walking Orientation of Old Montreal", "Group sit-down dinner", "Evening Activity: Ice Skating at Patin Patin, Vieux-Port de Montréal", "Return to Hotel Accommodations with on-site security"] },
   { title: "Day 2: Notre Dame Basilica & Montreal Science Centre", acts: ["Group Breakfast", "Visit the Notre Dame Basilica", "Take a Curling Lesson with the Town Of Mount Royal Curling Club", "Self-Expense Lunch: Food Court at Centre Eaton, Underground City", "Admission to Montreal Science Centre", "Group Exploration/Shopping in Old Montreal", "Evening Activity and Dinner: Erablière Charbonneau", "Return to Hotel Accommodations"] },
   { title: "Day 3: Mount Royal & Departure", acts: ["Group Breakfast", "Tour the Bell Centre", "Drive up Mount Royal, Viewing Point of Montreal", "Student Expense Lunch at Time Out Market Montréal", "Visit the Biodome, Group Photo at the Biodome!", "Depart for Home: Dinner: Student Expense En Route"] },
 ]
@@ -30,7 +30,7 @@ const INCLUSIONS = [
   ["Hotel Accommodations", "Convenient and student-friendly lodging."],
   ["Attractions", "Access to top-rated sites and experiences."],
   ["Meals", "Delicious and well-balanced dining options."],
-  ["Tour Manager", "Professional support throughout your journey."],
+  ["Tour Director", "Professional support throughout your journey."],
   ["Restaurant & Driver Gratuities", "Taken care of for your convenience."],
 ]
 
@@ -181,7 +181,7 @@ export default function Itin_international__canada__montreal__3_day_montreal_sch
         name: "3 Day Montreal School Trip",
         description: "Explore Old Montreal, world class museums, and French Canadian culture on an immersive three day educational adventure built for student groups.",
         path: "/canada/montreal/3-day-montreal-school-trip/",
-        days: [{ name: "Day 1: Arrival & Ice Skating", description: "Travel to Montreal; Arrival in Montreal!; Meet your Landmark Leaders!; Check into Hotel Accommodations; Landmark Leader Led Walking Orientation of Old Montreal; Group sit-down dinner; Evening Activity: Ice Skating at Patin Patin, Vieux-Port de Montréal; Return to Hotel Accommodations with on-site security" }, { name: "Day 2: Notre Dame Basilica & Montreal Science Centre", description: "Group Breakfast; Visit the Notre Dame Basilica; Take a Curling Lesson with the Town Of Mount Royal Curling Club; Self-Expense Lunch: Food Court at Centre Eaton, Underground City; Admission to Montreal Science Centre; Group Exploration/Shopping in Old Montreal; Evening Activity and Dinner: Erablière Charbonneau; Return to Hotel Accommodations" }, { name: "Day 3: Mount Royal & Departure", description: "Group Breakfast; Tour the Bell Centre; Drive up Mount Royal, Viewing Point of Montreal; Student Expense Lunch at Time Out Market Montréal; Visit the Biodome, Group Photo at the Biodome!; Depart for Home: Dinner: Student Expense En Route" }],
+        days: [{ name: "Day 1: Arrival & Ice Skating", description: "Travel to Montreal; Arrival in Montreal!; Meet your Tour Directors!; Check into Hotel Accommodations; Tour Director Led Walking Orientation of Old Montreal; Group sit-down dinner; Evening Activity: Ice Skating at Patin Patin, Vieux-Port de Montréal; Return to Hotel Accommodations with on-site security" }, { name: "Day 2: Notre Dame Basilica & Montreal Science Centre", description: "Group Breakfast; Visit the Notre Dame Basilica; Take a Curling Lesson with the Town Of Mount Royal Curling Club; Self-Expense Lunch: Food Court at Centre Eaton, Underground City; Admission to Montreal Science Centre; Group Exploration/Shopping in Old Montreal; Evening Activity and Dinner: Erablière Charbonneau; Return to Hotel Accommodations" }, { name: "Day 3: Mount Royal & Departure", description: "Group Breakfast; Tour the Bell Centre; Drive up Mount Royal, Viewing Point of Montreal; Student Expense Lunch at Time Out Market Montréal; Visit the Biodome, Group Photo at the Biodome!; Depart for Home: Dinner: Student Expense En Route" }],
       })} />
     </>
   )

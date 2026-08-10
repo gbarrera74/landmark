@@ -11,7 +11,7 @@ const ArrowR = (
 )
 
 const DAYS = [
-  { title: "Day 1: Arrival & Explore Oslo, Norway", acts: ["International Flight to Oslo, Norway", "Meet Motorcoach Shuttle and Leader & Tour Manager", "Check into Hotel Accommodations in Oslo, Norway", "Group sit-down dinner", "Return to Hotel Accommodations"], options: { label: "Optional points of interest in Oslo", items: ["The Vigeland Sculpture Park", "Viking Ship Museum", "Akershus Fortress", "Oslo Opera House", "Kon-Tiki Museum", "The Norwegian Museum of Cultural History", "Skiing Adventure", "Fjord Tour", "University of Oslo"] } },
+  { title: "Day 1: Arrival & Explore Oslo, Norway", acts: ["International Flight to Oslo, Norway", "Meet Motorcoach Shuttle and Leader & Tour Director", "Check into Hotel Accommodations in Oslo, Norway", "Group sit-down dinner", "Return to Hotel Accommodations"], options: { label: "Optional points of interest in Oslo", items: ["The Vigeland Sculpture Park", "Viking Ship Museum", "Akershus Fortress", "Oslo Opera House", "Kon-Tiki Museum", "The Norwegian Museum of Cultural History", "Skiing Adventure", "Fjord Tour", "University of Oslo"] } },
   { title: "Day 2: Explore Oslo & Bergen, Norway", acts: ["Breakfast at the hotel", "Group sit-down lunch", "Domestic Flight from Oslo International Airport to Bergen, Norway", "Arrival Airport into Bergen, Norway", "Check into Hotel Accommodations", "Group sit-down dinner", "Return to Hotel Accommodations"], options: { label: "Optional points of interest in Oslo", items: ["The Vigeland Sculpture Park", "Viking Ship Museum", "Akershus Fortress", "Oslo Opera House", "Kon-Tiki Museum", "The Norwegian Museum of Cultural History", "Skiing Adventure", "Fjord Tour", "University of Oslo"] } },
   { title: "Day 3: Guided City Tour of Bergen & Souvenir Shopping", acts: ["Breakfast at the hotel", "Guided City Tour of Bergen with a Local Guide", "Group sit-down lunch", "Funicular Admission: Mount Floyen", "Group Exploration of City Center — Souvenir Shopping", "Group sit-down dinner", "Return to Hotel Accommodations"] },
   { title: "Day 4: Explore Flam, Norway", acts: ["Breakfast at the hotel", "Train Station Admission from Bergen, Norway to Flam, Norway (Flam Scenic Railway)", "Check into Hotel Accommodations", "Group sit-down lunch", "Group sit-down dinner", "Return to Hotel Accommodations"], options: { label: "Optional points of interest in Flam", items: ["Flam Railway Museum", "Fjord Tour to Gudvangen Viking Village", "FjordSafari — Guided Boat Tour", "Stegastein Viewpoint"] } },
@@ -37,7 +37,7 @@ const INCLUSIONS = [
   ["Hotel Accommodations", "Convenient and student-friendly lodging."],
   ["Attractions", "Access to top-rated sites and experiences."],
   ["Meals", "Delicious and well-balanced dining options."],
-  ["Tour Manager", "Professional support throughout your journey."],
+  ["Tour Director", "Professional support throughout your journey."],
   ["Restaurant & Driver Gratuities", "Taken care of for your convenience."],
 ]
 

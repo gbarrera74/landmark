@@ -11,7 +11,7 @@ const ArrowR = (
 )
 
 const DAYS = [
-  { title: "Day 1: Travel to LA & Santa Monica Pier", acts: ["Welcome to LA!", "Meet your Landmark Leader!", "Lunch at the Original Farmers Market", "Exploration of the Grove", "Visit the LA Brea Tar Pits", "Motorcoach to the Santa Monica Pier", "Dinner and Exploration of the Santa Monica Pier", "Check-in to Hotel Accommodations"] },
+  { title: "Day 1: Travel to LA & Santa Monica Pier", acts: ["Welcome to LA!", "Meet your Tour Director!", "Lunch at the Original Farmers Market", "Exploration of the Grove", "Visit the LA Brea Tar Pits", "Motorcoach to the Santa Monica Pier", "Dinner and Exploration of the Santa Monica Pier", "Check-in to Hotel Accommodations"] },
   { title: "Day 2: Spend the day at Disneyland", acts: ["Breakfast at the hotel", "Spend the day at Disneyland", "Lunch + Dinner Included", "Return to Hotel Accommodations"] },
   { title: "Day 3: Spend the day at Universal Studios", acts: ["Breakfast at the hotel", "Spend the day at Universal Studios", "Lunch + Dinner Included", "Return to Hotel Accommodations"] },
   { title: "Day 4: Getty Center & Departure Home", acts: ["Breakfast at the hotel", "Visit the Getty Center", "Lunch in Westwood Village", "Departure Home"] },
@@ -31,7 +31,7 @@ const INCLUSIONS = [
   ["Hotel Accommodations", "Convenient and student-friendly lodging."],
   ["Attractions", "Access to top-rated sites and experiences."],
   ["Meals", "Delicious and well-balanced dining options."],
-  ["Tour Manager", "Professional support throughout your journey."],
+  ["Tour Director", "Professional support throughout your journey."],
   ["Restaurant & Driver Gratuities", "Taken care of for your convenience."],
 ]
 
@@ -179,7 +179,7 @@ export default function Itin_usa_trips__los_angeles_tours__los_angeles_field_tri
         name: "Los Angeles Field Trip",
         description: "Students explore Los Angeles through iconic attractions, world-class museums, and hands-on cultural experiences that spark creativity and learning.",
         path: "/usa-trips/los-angeles/los-angeles-field-trip/",
-        days: [{ name: "Day 1: Travel to LA & Santa Monica Pier", description: "Welcome to LA!; Meet your Landmark Leader!; Lunch at the Original Farmers Market; Exploration of the Grove; Visit the LA Brea Tar Pits; Motorcoach to the Santa Monica Pier; Dinner and Exploration of the Santa Monica Pier; Check-in to Hotel Accommodations" }, { name: "Day 2: Spend the day at Disneyland", description: "Breakfast at the hotel; Spend the day at Disneyland; Lunch + Dinner Included; Return to Hotel Accommodations" }, { name: "Day 3: Spend the day at Universal Studios", description: "Breakfast at the hotel; Spend the day at Universal Studios; Lunch + Dinner Included; Return to Hotel Accommodations" }, { name: "Day 4: Getty Center & Departure Home", description: "Breakfast at the hotel; Visit the Getty Center; Lunch in Westwood Village; Departure Home" }],
+        days: [{ name: "Day 1: Travel to LA & Santa Monica Pier", description: "Welcome to LA!; Meet your Tour Director!; Lunch at the Original Farmers Market; Exploration of the Grove; Visit the LA Brea Tar Pits; Motorcoach to the Santa Monica Pier; Dinner and Exploration of the Santa Monica Pier; Check-in to Hotel Accommodations" }, { name: "Day 2: Spend the day at Disneyland", description: "Breakfast at the hotel; Spend the day at Disneyland; Lunch + Dinner Included; Return to Hotel Accommodations" }, { name: "Day 3: Spend the day at Universal Studios", description: "Breakfast at the hotel; Spend the day at Universal Studios; Lunch + Dinner Included; Return to Hotel Accommodations" }, { name: "Day 4: Getty Center & Departure Home", description: "Breakfast at the hotel; Visit the Getty Center; Lunch in Westwood Village; Departure Home" }],
       })} />
     </>
   )

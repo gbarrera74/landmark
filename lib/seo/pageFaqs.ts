@@ -21,7 +21,7 @@ import type { Faq } from '@/components/FaqAccordion'
 
 // Facts true of every Landmark trip, reused so the wording stays consistent.
 const PRIVATE_GROUP =
-  'Every Landmark trip is private to your group. No other group is merged with yours, the itinerary is entirely your own, and your tour manager is assigned exclusively to you for the whole trip.'
+  'Every Landmark trip is private to your group. No other group is merged with yours, the itinerary is entirely your own, and your Tour Director is assigned exclusively to you for the whole trip.'
 const CUSTOMIZE =
   'Yes. Every itinerary is built around your group, and our Travel Consultants customize the stops, pacing, and inclusions to your curriculum, grade level, dates, and budget. Planning is free until you decide to proceed with a trip.'
 const LEAD_TIME =
@@ -29,13 +29,13 @@ const LEAD_TIME =
 const GROUP_MIN =
   'Most vendors require a minimum of 10 travelers to qualify as a group, so that is the practical minimum we plan around. Beyond that, group size is largely a question of what your budget supports.'
 const GRATUITIES =
-  'All tips and gratuities are included in the trip cost. Travelers can tip beyond that if they wish, but nothing further is required.'
+  'Gratuities for your Landmark Tour Director, and for any step-on guides, are not included in the trip cost and should be budgeted for separately.'
 const SAFETY =
-  'Safety is our first priority. Students receive safety bracelets and a safety briefing at their first meeting with their Landmark Leader, groups move in chaperone groups or on the buddy system, and the group does not leave an attraction until two separate headcounts have been completed — one by a Landmark Leader and a final one by the head chaperone. Overnight security at the hotel is available on request.'
+  'Safety is our first priority. Students receive safety bracelets and a safety briefing at their first meeting with their Tour Director, groups move in chaperone groups or on the buddy system, and the group does not leave an attraction until two separate headcounts have been completed — one by a Tour Director and a final one by the head chaperone. Overnight security at the hotel is available on request.'
 const ROOMING =
   'By default we place students in quads and adult chaperones in singles, though you can choose a different arrangement with your Travel Consultant. You submit the rooming list and decide who rooms together. We do our best to keep a group on the same floor or wing, subject to the hotel’s layout and availability.'
 const DIETARY =
-  'Travelers record dietary restrictions and allergies when they create their account on our portal. Landmark collects those before departure and passes them to the restaurants on your itinerary, and Landmark Leaders confirm them again at sit-down meals. For meal vouchers or cash allocations, students report their own restrictions at the counter.'
+  'Travelers record dietary restrictions and allergies when they create their account on our portal. Landmark collects those before departure and passes them to the restaurants on your itinerary, and Tour Directors confirm them again at sit-down meals. For meal vouchers or cash allocations, students report their own restrictions at the counter.'
 const PAYMENT =
   'Travelers pay through the Landmark portal, where each traveler has their own login and payments run through Stripe. Organizers can also choose to pay by school check.'
 
@@ -66,7 +66,7 @@ function destinationFaqs(o: {
     { q: `Can we customize our ${o.place} itinerary?`, a: CUSTOMIZE },
     { q: `Is our ${o.place} trip private to our group?`, a: PRIVATE_GROUP },
     { q: `How far in advance should we book a ${o.place} trip?`, a: LEAD_TIME },
-    { q: `What is included in the cost of a ${o.place} trip?`, a: `A Landmark trip is quoted as a package: the private group tour, your custom itinerary, transportation, hotels, attractions, meals, and a professional tour manager. ${GRATUITIES} Your written quote itemizes exactly what that trip includes before you commit to anything.` },
+    { q: `What is included in the cost of a ${o.place} trip?`, a: `A Landmark trip is quoted as a package: the private group tour, your custom itinerary, transportation, hotels, attractions, meals, and a professional Tour Director. ${GRATUITIES} Your Travel Consultant will walk you through exactly what your trip includes before you commit to anything.` },
     { q: `How do you keep students safe in ${o.place}?`, a: SAFETY },
   ]
 }
@@ -165,7 +165,7 @@ export const PAGE_FAQS: Record<string, Faq[]> = {
       q: 'How far in advance should we book an Italy trip?',
       a: `${LEAD_TIME} For Italy and other international destinations we recommend starting considerably earlier, because every traveler needs a valid passport and international air is easier to secure well ahead of the date.`,
     },
-    { q: 'What is included in the cost of an Italy trip?', a: `A Landmark trip is quoted as a package: the private group tour, your custom itinerary, transportation, hotels, attractions, meals, and a professional tour manager. ${GRATUITIES} Your written quote itemizes exactly what the trip includes — including how international air is handled — before you commit.` },
+    { q: 'What is included in the cost of an Italy trip?', a: `A Landmark trip is quoted as a package: the private group tour, your custom itinerary, transportation, hotels, attractions, meals, and a professional Tour Director. ${GRATUITIES} Your Travel Consultant will confirm exactly what the trip includes — including how international air is handled — before you commit.` },
     { q: 'How do you keep students safe in Italy?', a: SAFETY },
   ],
 
@@ -202,7 +202,7 @@ export const PAGE_FAQS: Record<string, Faq[]> = {
     },
     {
       q: 'What is included in the quote?',
-      a: `The quote mirrors the itinerary it is built from, so it shows exactly what your trip includes: the private group tour, transportation, hotels, attractions, meals, and a professional tour manager. ${GRATUITIES}`,
+      a: `The quote is built from your itinerary and covers: the private group tour, transportation, hotels, attractions, meals, and a professional Tour Director. ${GRATUITIES}`,
     },
     {
       q: 'What happens after I accept a quote?',
@@ -247,7 +247,7 @@ export const PAGE_FAQS: Record<string, Faq[]> = {
       a: 'Most domestic programs run between 2 days / 1 night and 5 days / 4 nights, with longer formats available in destinations like Washington D.C. and Boston. The right length usually comes down to how far your group is traveling and how many school days you can use.',
     },
     ...HUB_COMMON,
-    { q: 'What is included in the cost of a domestic trip?', a: `A Landmark trip is quoted as a package: the private group tour, your custom itinerary, transportation, hotels, attractions, meals, and a professional tour manager. ${GRATUITIES} Your written quote itemizes exactly what is included before you commit.` },
+    { q: 'What is included in the cost of a domestic trip?', a: `A Landmark trip is quoted as a package: the private group tour, your custom itinerary, transportation, hotels, attractions, meals, and a professional Tour Director. ${GRATUITIES} Your Travel Consultant will confirm exactly what is included before you commit.` },
     { q: 'How are dietary restrictions handled?', a: DIETARY },
   ],
 

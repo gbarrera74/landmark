@@ -24,7 +24,7 @@ export default function Internship() {
       </section>
       <section className="ile-section ile-section--cream" aria-labelledby="landmark-internship-s0">
         <div className="ile-container ilp-prose lm-content-prose">
-          <h2 id="landmark-internship-s0" className="lm-h2-amber">Tour Manager Internship Details</h2>
+          <h2 id="landmark-internship-s0" className="lm-h2-amber">Tour Director Internship Details</h2>
 
             <ul className="lm-content-list">
               <li>Key Responsibilities:</li>
