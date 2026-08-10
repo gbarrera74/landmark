@@ -3,6 +3,8 @@ import Link from 'next/link'
 import PageHero from '@/components/PageHero'
 import BrochureBand from '@/components/BrochureBand'
 import JsonLd from '@/lib/seo/JsonLd'
+import PageFaq from '@/components/PageFaq'
+import { PAGE_FAQS } from '@/lib/seo/pageFaqs'
 import { breadcrumb, itemList } from '@/lib/seo/schemas'
 
 const ArrowR = (
@@ -57,6 +59,8 @@ export default function Themes() {
           </div>
         </div>
       </section>
+      <PageFaq items={PAGE_FAQS['/themes/']} id="themes-faq" heading="Themed trips: common questions" tone="white" />
+
       <BrochureBand />
       <JsonLd data={breadcrumb([{ name: 'Home', path: '/' }, { name: 'Themes', path: '/themes/' }])} />
       <JsonLd data={itemList('Educational Trip Themes', THEMES.map((t) => ({ name: t.title, path: t.href })))} />

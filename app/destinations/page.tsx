@@ -3,6 +3,8 @@ import Link from 'next/link'
 import PageHero from '@/components/PageHero'
 import BrochureBand from '@/components/BrochureBand'
 import JsonLd from '@/lib/seo/JsonLd'
+import PageFaq from '@/components/PageFaq'
+import { PAGE_FAQS } from '@/lib/seo/pageFaqs'
 import { breadcrumb, itemList } from '@/lib/seo/schemas'
 
 const STEPS = [
@@ -194,6 +196,8 @@ export default function Destinations() {
           </div>
         </div>
       </section>
+      <PageFaq items={PAGE_FAQS['/destinations/']} id="dest-faq" heading="Choosing a destination" tone="white" />
+
 
       <BrochureBand />
 

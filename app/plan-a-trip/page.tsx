@@ -2,6 +2,8 @@ import Link from 'next/link'
 import PageHero from '@/components/PageHero'
 import HubSpotMeetings from '@/components/HubSpotMeetings'
 import JsonLd from '@/lib/seo/JsonLd'
+import PageFaq from '@/components/PageFaq'
+import { PAGE_FAQS } from '@/lib/seo/pageFaqs'
 import { breadcrumb } from '@/lib/seo/schemas'
 
 const PROCESS = [
@@ -70,6 +72,8 @@ export default function PlanATripPage() {
           </div>
         </div>
       </section>
+      <PageFaq items={PAGE_FAQS['/plan-a-trip/']} id="plan-faq" heading="Questions about planning" tone="white" />
+
 
       <JsonLd data={breadcrumb([
         { name: 'Home', path: '/' },
