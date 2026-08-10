@@ -84,6 +84,35 @@ export default function TrackingScripts() {
         }}
       />
 
+      {/* ── Form-conversion dedupe guard ──────────────────────────────────
+          THREE independent things can push `hubspotFormSubmit` for a single
+          submission, and Google Ads would count each one as a conversion:
+
+            1. A Custom HTML tag inside GTM-K6Z2H62D, which listens for the
+               HubSpot postMessage with eventName "onFormSubmit".
+            2. The postMessage listener further down this file, which listens
+               for the same message with eventName "onFormSubmitted".
+            3. The onFormSubmitted callback in HubSpotForm.tsx.
+
+          We cannot edit the GTM tag from here, so deduping has to happen on
+          the dataLayer itself. Everything routes through this one function,
+          which refuses to push a second `hubspotFormSubmit` once the array
+          already contains one — including the one GTM pushed, since GTM
+          writes into the same array.
+
+          Deduping per page view (rather than on a timer) is deliberate: a
+          single visitor submitting twice on one page view is one lead worth
+          one conversion, not two.
+
+          Defined inline at parse time, not inside the interaction gate, so it
+          exists before HubSpotForm can call it. */}
+      <script
+        dangerouslySetInnerHTML={{
+          __html:
+            "(function(){window.__lmFormConv=function(id){try{var dl=window.dataLayer=window.dataLayer||[];for(var i=0;i<dl.length;i++){var e=dl[i];if(e&&(e.event==='hubspotFormSubmit'||(e[0]==='event'&&e[1]==='hubspotFormSubmit')))return false}dl.push({event:'hubspotFormSubmit',hsFormId:id||''});return true}catch(e){return false}}})()",
+        }}
+      />
+
       {activated && (
         <>
           {/* Google Tag Manager */}
@@ -133,11 +162,9 @@ export default function TrackingScripts() {
               window.dataLayer = window.dataLayer || [];
               window.addEventListener('message', function(e){
                 var d = e && e.data;
-                if (!d || d.type !== 'hsFormCallback' || d.eventName !== 'onFormSubmitted') return;
-                window.dataLayer.push({
-                  event: 'hubspotFormSubmit',
-                  hsFormId: (d.data && d.data.formGuid) || d.id || ''
-                });
+                if (!d || d.type !== 'hsFormCallback') return;
+                if (d.eventName !== 'onFormSubmitted' && d.eventName !== 'onFormSubmit') return;
+                if (window.__lmFormConv) window.__lmFormConv((d.data && d.data.formGuid) || d.id || '');
               });
             })();
           `}</Script>

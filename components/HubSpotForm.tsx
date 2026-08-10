@@ -15,6 +15,8 @@ import { enhanceQuoteForm } from '@/lib/hubspotFormEnhance'
 declare global {
   interface Window {
     hbspt?: { forms: { create: (opts: Record<string, unknown>) => void } }
+    /** Deduped `hubspotFormSubmit` dataLayer push. Defined inline in TrackingScripts. */
+    __lmFormConv?: (id?: string) => boolean
   }
 }
 
@@ -55,6 +57,24 @@ export default function HubSpotForm({
           if (!sectioned) return
           const container = document.getElementById(targetId)
           if (container) enhanceQuoteForm(container)
+        },
+        // Google Ads / GA4 conversion signal.
+        //
+        // This is the PRIMARY path, and it exists because the postMessage
+        // route is unreliable here. Both the GTM Custom HTML tag and the
+        // listener in TrackingScripts wait for HubSpot to postMessage a
+        // `hsFormCallback` to the top window. Since the 2026-07-28 cutover
+        // these forms render through HubSpot's new editor, which puts the
+        // form in its own iframe -- and form conversions stopped being
+        // recorded on exactly that date while the leads themselves kept
+        // arriving in HubSpot normally.
+        //
+        // onFormSubmitted is invoked by the embed API directly in this
+        // window, so it does not depend on a message crossing frames. The
+        // postMessage listeners stay in place as a fallback; __lmFormConv
+        // guarantees only the first one to arrive is counted.
+        onFormSubmitted() {
+          if (window.__lmFormConv) window.__lmFormConv(formId)
         },
       })
       // Fallback: some embed versions don't fire onFormReady for iframe forms.
