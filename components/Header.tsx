@@ -230,7 +230,7 @@ export default function Header() {
 
           <div className="ileh-cta-group">
             <a href={PORTAL_URL} className="ileh-login" target="_blank" rel="noopener noreferrer">Login</a>
-            <Link href="/get-a-quote/" className="ileh-cta">Get a Quote</Link>
+            <Link href="/get-a-quote/#quote-form" className="ileh-cta">Get a Quote</Link>
           </div>
 
           <button
@@ -279,7 +279,7 @@ export default function Header() {
           )
         })}
         <div className="ileh-m-cta">
-          <Link href="/get-a-quote/" className="ile-btn ile-btn--primary" onClick={() => setMobileOpen(false)}>Get a Quote</Link>
+          <Link href="/get-a-quote/#quote-form" className="ile-btn ile-btn--primary" onClick={() => setMobileOpen(false)}>Get a Quote</Link>
           <a href={PORTAL_URL} className="ile-btn ile-btn--ghost" target="_blank" rel="noopener noreferrer">Login to Portal</a>
         </div>
       </div>
