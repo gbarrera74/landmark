@@ -11,7 +11,7 @@ const ArrowR = (
 )
 
 const DAYS = [
-  { title: "Day 1: Travel Day & Guided Tour of Milan", acts: ["Optional Transportation: Shuttle from your school departure location to the departure airport", "Travel to Italy", "Meet your Landmark Leader in the Malpensa Airport arrival area", "Lunch: Student expense at leisure or opt into a scheduled lunch option", "Guided tour of Milan with a local guide", "Optional Admission: Castello Sforzesco (subject to availability at deposit)", "Optional Admission: The Last Supper (subject to availability at deposit)", "Return to hotel accommodations", "Seated dinner with a 3-course meal & water or similar"] },
+  { title: "Day 1: Travel Day & Guided Tour of Milan", acts: ["Optional Transportation: Shuttle from your school departure location to the departure airport", "Travel to Italy", "Meet your Tour Director in the Malpensa Airport arrival area", "Lunch: Student expense at leisure or opt into a scheduled lunch option", "Guided tour of Milan with a local guide", "Optional Admission: Castello Sforzesco (subject to availability at deposit)", "Optional Admission: The Last Supper (subject to availability at deposit)", "Return to hotel accommodations", "Seated dinner with a 3-course meal & water or similar"] },
   { title: "Day 2: Verona & Florence", acts: ["Breakfast at the hotel", "Travel by motorcoach to Verona, Italy", "Exploration and two-hour guided tour of Verona", "Lunch: Student expense at leisure or opt into a scheduled lunch option", "Travel by motorcoach to Florence, Italy", "Hotel accommodations"] },
   { title: "Day 3: Walking Tour of Florence & Pizza Making at a Tuscan Villa", acts: ["Breakfast at the hotel", "Guided walking tour of Florence with a local guide", "Skip-the-line admission to the Accademia", "End the guided tour with admission to the Cupola of the Duomo", "Optional Admission: Galileo Museum (subject to availability at deposit)", "Travel by motorcoach to a Tuscan villa", "Dinner and a pizza-making class at the Tuscan villa", "Return to hotel accommodations"] },
   { title: "Day 4: Group Exploration of Assisi & Rome", acts: ["Breakfast at the hotel", "Travel by motorcoach to Assisi", "Group exploration of Assisi", "Scheduled light lunch at an olive oil tasting room or similar", "Travel by motorcoach to Rome", "Dinner at hotel accommodations with a three-course meal or similar", "Return to hotel accommodations"] },
@@ -35,7 +35,7 @@ const INCLUSIONS = [
   ["Hotel Accommodations", "Convenient and student-friendly lodging."],
   ["Attractions", "Access to top-rated sites and experiences."],
   ["Meals", "Delicious and well-balanced dining options."],
-  ["Tour Manager", "Professional support throughout your journey."],
+  ["Tour Director", "Professional support throughout your journey."],
   ["Restaurant & Driver Gratuities", "Taken care of for your convenience."],
 ]
 

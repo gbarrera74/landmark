@@ -11,7 +11,7 @@ const ArrowR = (
 )
 
 const DAYS = [
-  { title: "Day 1: Arrival & Dillard University", acts: ["Travel to New Orleans, LA", "Welcome to New Orleans! Meet your Landmark Leader!", "Lunch Included", "Visit and Tour Dillard University", "Check into Hotel Accommodations", "Group sit-down dinner", "Return to Hotel Accommodations"] },
+  { title: "Day 1: Arrival & Dillard University", acts: ["Travel to New Orleans, LA", "Welcome to New Orleans! Meet your Tour Director!", "Lunch Included", "Visit and Tour Dillard University", "Check into Hotel Accommodations", "Group sit-down dinner", "Return to Hotel Accommodations"] },
   { title: "Day 2: Laurel Valley Plantation & Zam’s Swamp Tour", acts: ["Hotel Breakfast", "Guided Walking Tour of Laurel Valley Plantation in Thibodaux, LA", "Lunch Included", "Swamp Tour with Zam’s Swamp Tours", "Visit the Riverwalk Outlets, Dinner: Cash Allocation Provided", "Return to Hotel Accommodations"] },
   { title: "Day 3: Xavier University & Southern University at New Orleans", acts: ["Hotel Breakfast", "Visit and Tour Xavier University", "Lunch Included", "Visit and Tour Southern University at New Orleans", "Take the Steamboat Natchez Cruise: Evening Jazz Cruise + Dinner", "Return to Hotel Accommodations"] },
   { title: "Day 4: Downtown New Orleans Guided Walking Tour & Departure", acts: ["Hotel Breakfast", "Downtown New Orleans Guided Walking Tour", "Lunch Included", "Depart for Home"] },
@@ -31,7 +31,7 @@ const INCLUSIONS = [
   ["Hotel Accommodations", "Convenient and student-friendly lodging."],
   ["Attractions", "Access to top-rated sites and experiences."],
   ["Meals", "Delicious and well-balanced dining options."],
-  ["Tour Manager", "Professional support throughout your journey."],
+  ["Tour Director", "Professional support throughout your journey."],
   ["Restaurant & Driver Gratuities", "Taken care of for your convenience."],
 ]
 
@@ -180,7 +180,7 @@ export default function Itin_usa_trips__new_orleans_tours__new_orleans_field_tri
         name: "New Orleans Field Trip",
         description: "A four day educational journey through New Orleans culture, history, and HBCU campuses built for student groups.",
         path: "/usa-trips/new-orleans/new-orleans-field-trip/",
-        days: [{ name: "Day 1: Arrival & Dillard University", description: "Travel to New Orleans, LA; Welcome to New Orleans! Meet your Landmark Leader!; Lunch Included; Visit and Tour Dillard University; Check into Hotel Accommodations; Group sit-down dinner; Return to Hotel Accommodations" }, { name: "Day 2: Laurel Valley Plantation & Zam’s Swamp Tour", description: "Hotel Breakfast; Guided Walking Tour of Laurel Valley Plantation in Thibodaux, LA; Lunch Included; Swamp Tour with Zam’s Swamp Tours; Visit the Riverwalk Outlets, Dinner: Cash Allocation Provided; Return to Hotel Accommodations" }, { name: "Day 3: Xavier University & Southern University at New Orleans", description: "Hotel Breakfast; Visit and Tour Xavier University; Lunch Included; Visit and Tour Southern University at New Orleans; Take the Steamboat Natchez Cruise: Evening Jazz Cruise + Dinner; Return to Hotel Accommodations" }, { name: "Day 4: Downtown New Orleans Guided Walking Tour & Departure", description: "Hotel Breakfast; Downtown New Orleans Guided Walking Tour; Lunch Included; Depart for Home" }],
+        days: [{ name: "Day 1: Arrival & Dillard University", description: "Travel to New Orleans, LA; Welcome to New Orleans! Meet your Tour Director!; Lunch Included; Visit and Tour Dillard University; Check into Hotel Accommodations; Group sit-down dinner; Return to Hotel Accommodations" }, { name: "Day 2: Laurel Valley Plantation & Zam’s Swamp Tour", description: "Hotel Breakfast; Guided Walking Tour of Laurel Valley Plantation in Thibodaux, LA; Lunch Included; Swamp Tour with Zam’s Swamp Tours; Visit the Riverwalk Outlets, Dinner: Cash Allocation Provided; Return to Hotel Accommodations" }, { name: "Day 3: Xavier University & Southern University at New Orleans", description: "Hotel Breakfast; Visit and Tour Xavier University; Lunch Included; Visit and Tour Southern University at New Orleans; Take the Steamboat Natchez Cruise: Evening Jazz Cruise + Dinner; Return to Hotel Accommodations" }, { name: "Day 4: Downtown New Orleans Guided Walking Tour & Departure", description: "Hotel Breakfast; Downtown New Orleans Guided Walking Tour; Lunch Included; Depart for Home" }],
       })} />
     </>
   )

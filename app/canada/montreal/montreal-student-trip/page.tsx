@@ -11,7 +11,7 @@ const ArrowR = (
 )
 
 const DAYS = [
-  { title: "Day 1: Arrival & Ice Skating", acts: ["Travel to Montreal", "Arrival in Montreal!", "Meet your Landmark Leaders!", "Check into Hotel Accommodations", "Landmark Leader Led Walking Orientation of Old Montréal", "Group sit-down dinner", "Evening Activity: Ice Skating", "Return to Hotel Accommodations with on-site security"] },
+  { title: "Day 1: Arrival & Ice Skating", acts: ["Travel to Montreal", "Arrival in Montreal!", "Meet your Tour Directors!", "Check into Hotel Accommodations", "Tour Director Led Walking Orientation of Old Montréal", "Group sit-down dinner", "Evening Activity: Ice Skating", "Return to Hotel Accommodations with on-site security"] },
   { title: "Day 2: Notre Dame Basilica & la Sucreire de la Montagne", acts: ["Group Breakfast", "Visit the Notre Dame Basilica", "Take a French Cultures Class", "Self-Expense Lunch- Underground City", "Spend part of the early after practicing your french a la Ville souterraine", "Brief city sightseeing tour that will end in the Village of Lachine", "Visit Parks Canada’s Fur Trade Interpretation Centre", "Dinner and Dancing at la Sucrerie de la Montagne", "Return to Hotel Accommodations"] },
   { title: "Day 3: Biodôme de Montréal & Departure", acts: ["Group Breakfast", "Visit Parc Olympique and the Biodôme de Montréal", "Lunch on your own at either Place Jacques Cartier or Centre Eaton", "Student Expense Lunch at Time Out Market Montréal", "Group Exploration/Shopping in Old Montréal", "Depart for Home"] },
 ]
@@ -30,7 +30,7 @@ const INCLUSIONS = [
   ["Hotel Accommodations", "Convenient and student-friendly lodging."],
   ["Attractions", "Access to top-rated sites and experiences."],
   ["Meals", "Delicious and well-balanced dining options."],
-  ["Tour Manager", "Professional support throughout your journey."],
+  ["Tour Director", "Professional support throughout your journey."],
   ["Restaurant & Driver Gratuities", "Taken care of for your convenience."],
 ]
 
@@ -181,7 +181,7 @@ export default function Itin_international__canada__montreal__montreal_student_t
         name: "Montreal Student Trip",
         description: "Explore Old Montreal, immerse in French-Canadian culture, and enjoy hands-on learning across three unforgettable days built for student groups.",
         path: "/canada/montreal/montreal-student-trip/",
-        days: [{ name: "Day 1: Arrival & Ice Skating", description: "Travel to Montreal; Arrival in Montreal!; Meet your Landmark Leaders!; Check into Hotel Accommodations; Landmark Leader Led Walking Orientation of Old Montréal; Group sit-down dinner; Evening Activity: Ice Skating; Return to Hotel Accommodations with on-site security" }, { name: "Day 2: Notre Dame Basilica & la Sucreire de la Montagne", description: "Group Breakfast; Visit the Notre Dame Basilica; Take a French Cultures Class; Self-Expense Lunch- Underground City; Spend part of the early after practicing your french a la Ville souterraine; Brief city sightseeing tour that will end in the Village of Lachine; Visit Parks Canada’s Fur Trade Interpretation Centre; Dinner and Dancing at la Sucrerie de la Montagne; Return to Hotel Accommodations" }, { name: "Day 3: Biodôme de Montréal & Departure", description: "Group Breakfast; Visit Parc Olympique and the Biodôme de Montréal; Lunch on your own at either Place Jacques Cartier or Centre Eaton; Student Expense Lunch at Time Out Market Montréal; Group Exploration/Shopping in Old Montréal; Depart for Home" }],
+        days: [{ name: "Day 1: Arrival & Ice Skating", description: "Travel to Montreal; Arrival in Montreal!; Meet your Tour Directors!; Check into Hotel Accommodations; Tour Director Led Walking Orientation of Old Montréal; Group sit-down dinner; Evening Activity: Ice Skating; Return to Hotel Accommodations with on-site security" }, { name: "Day 2: Notre Dame Basilica & la Sucreire de la Montagne", description: "Group Breakfast; Visit the Notre Dame Basilica; Take a French Cultures Class; Self-Expense Lunch- Underground City; Spend part of the early after practicing your french a la Ville souterraine; Brief city sightseeing tour that will end in the Village of Lachine; Visit Parks Canada’s Fur Trade Interpretation Centre; Dinner and Dancing at la Sucrerie de la Montagne; Return to Hotel Accommodations" }, { name: "Day 3: Biodôme de Montréal & Departure", description: "Group Breakfast; Visit Parc Olympique and the Biodôme de Montréal; Lunch on your own at either Place Jacques Cartier or Centre Eaton; Student Expense Lunch at Time Out Market Montréal; Group Exploration/Shopping in Old Montréal; Depart for Home" }],
       })} />
     </>
   )

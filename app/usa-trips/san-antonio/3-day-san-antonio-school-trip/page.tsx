@@ -11,7 +11,7 @@ const ArrowR = (
 )
 
 const DAYS = [
-  { title: "Day 1: Arrival & Alamo City Ghost Tour", acts: ["Travel to San Antonio, TX", "Tour Texas State University: San Marcos", "Lunch on Campus: Student Expense", "Welcome to San Antonio! Meet your Landmark Leader!", "Visit the Alamo , UNESCO World Heritage Sight, and learn about Spanish Missionaries", "Free Time along the RiverWalk", "Group sit-down dinner", "Alamo City Ghost Tour", "Check-in to Hotel Accommodations with on-site security (Nightly)"] },
+  { title: "Day 1: Arrival & Alamo City Ghost Tour", acts: ["Travel to San Antonio, TX", "Tour Texas State University: San Marcos", "Lunch on Campus: Student Expense", "Welcome to San Antonio! Meet your Tour Director!", "Visit the Alamo , UNESCO World Heritage Sight, and learn about Spanish Missionaries", "Free Time along the RiverWalk", "Group sit-down dinner", "Alamo City Ghost Tour", "Check-in to Hotel Accommodations with on-site security (Nightly)"] },
   { title: "Day 2: Seaworld", acts: ["Hotel Breakfast", "Visit Seaworld", "Group sit-down dinner", "Return to Hotel Accommodations"] },
   { title: "Day 3: Natural Bridge Caverns & Departure", acts: ["Hotel Breakfast", "Visit the Natural Bridge Caverns", "Lunch Included", "San Antonio Missions National Historical Park", "Depart for Home", "*Dinner en route Travelers Expense"] },
 ]
@@ -30,7 +30,7 @@ const INCLUSIONS = [
   ["Hotel Accommodations", "Convenient and student-friendly lodging."],
   ["Attractions", "Access to top-rated sites and experiences."],
   ["Meals", "Delicious and well-balanced dining options."],
-  ["Tour Manager", "Professional support throughout your journey."],
+  ["Tour Director", "Professional support throughout your journey."],
   ["Restaurant & Driver Gratuities", "Taken care of for your convenience."],
 ]
 
@@ -179,7 +179,7 @@ export default function Itin_usa_trips__san_antonio_tours__3_day_san_antonio_sch
         name: "3 Day San Antonio School Trip",
         description: "Discover the Alamo, SeaWorld, and the River Walk on a three day journey through the history and culture of San Antonio.",
         path: "/usa-trips/san-antonio/3-day-san-antonio-school-trip/",
-        days: [{ name: "Day 1: Arrival & Alamo City Ghost Tour", description: "Travel to San Antonio, TX; Tour Texas State University: San Marcos; Lunch on Campus: Student Expense; Welcome to San Antonio! Meet your Landmark Leader!; Visit the Alamo , UNESCO World Heritage Sight, and learn about Spanish Missionaries; Free Time along the RiverWalk; Group sit-down dinner; Alamo City Ghost Tour; Check-in to Hotel Accommodations with on-site security (Nightly)" }, { name: "Day 2: Seaworld", description: "Hotel Breakfast; Visit Seaworld; Group sit-down dinner; Return to Hotel Accommodations" }, { name: "Day 3: Natural Bridge Caverns & Departure", description: "Hotel Breakfast; Visit the Natural Bridge Caverns; Lunch Included; San Antonio Missions National Historical Park; Depart for Home; *Dinner en route Travelers Expense" }],
+        days: [{ name: "Day 1: Arrival & Alamo City Ghost Tour", description: "Travel to San Antonio, TX; Tour Texas State University: San Marcos; Lunch on Campus: Student Expense; Welcome to San Antonio! Meet your Tour Director!; Visit the Alamo , UNESCO World Heritage Sight, and learn about Spanish Missionaries; Free Time along the RiverWalk; Group sit-down dinner; Alamo City Ghost Tour; Check-in to Hotel Accommodations with on-site security (Nightly)" }, { name: "Day 2: Seaworld", description: "Hotel Breakfast; Visit Seaworld; Group sit-down dinner; Return to Hotel Accommodations" }, { name: "Day 3: Natural Bridge Caverns & Departure", description: "Hotel Breakfast; Visit the Natural Bridge Caverns; Lunch Included; San Antonio Missions National Historical Park; Depart for Home; *Dinner en route Travelers Expense" }],
       })} />
     </>
   )

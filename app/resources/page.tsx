@@ -21,7 +21,7 @@ const RESOURCES = [
   },
   {
     title: 'Travel Safety & Support',
-    body: 'How we keep students safe on the road — plus travel protection you can add to any trip for peace of mind before you depart.',
+    body: 'How we keep students safe on the road — plus the travel protection included on Landmark Educational Tours trips, and how to use it.',
     href: '/travel-safety-support/',
     cta: 'Safety & protection',
     icon: (<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" /></svg>),
@@ -91,7 +91,7 @@ export default function Resources() {
             <div className="ilm-intro-body">
               <span className="ile-eyebrow">Free Download</span>
               <h2 className="lm-h2-amber">The 2026&ndash;2027 Travel Brochure</h2>
-              <p>Forty-four pages of destinations, sample itineraries, trip inclusions, and everything our team can build for your group &mdash; plus a look at the Landmark Leaders who travel alongside your students.</p>
+              <p>Forty-four pages of destinations, sample itineraries, trip inclusions, and everything our team can build for your group &mdash; plus a look at the Tour Directors who travel alongside your students.</p>
               <p className="lm-after-grid">
                 <a href={BROCHURE_PDF} className="ile-btn ile-btn--primary" target="_blank" rel="noopener noreferrer" download>
                   Download the Brochure (PDF) {ArrowR}

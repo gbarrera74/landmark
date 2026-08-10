@@ -11,7 +11,7 @@ const ArrowR = (
 )
 
 const DAYS = [
-  { title: "Day 1: Arrival & Mardi Gras World", acts: ["Travel to New Orleans, LA", "Welcome to New Orleans! Meet your Landmark Leader!", "Visit Mardi Gras World with Mask Making Workshop", "Visit the Vue Orleans Observation Deck", "Dinner Allocation- St Roch Market", "Check-in to Hotel Accommodations with onsite security"] },
+  { title: "Day 1: Arrival & Mardi Gras World", acts: ["Travel to New Orleans, LA", "Welcome to New Orleans! Meet your Tour Director!", "Visit Mardi Gras World with Mask Making Workshop", "Visit the Vue Orleans Observation Deck", "Dinner Allocation- St Roch Market", "Check-in to Hotel Accommodations with onsite security"] },
   { title: "Day 2: French Quarter & Departure", acts: ["Hotel Breakfast", "French Quarter Exploration", "Stop By Café Du Monde And Taste Test The Famous Beignets", "Hands-on Cajun Cooking Class and Lunch at the National Food & Beverage Foundation", "Depart for Home"] },
 ]
 
@@ -29,7 +29,7 @@ const INCLUSIONS = [
   ["Hotel Accommodations", "Convenient and student-friendly lodging."],
   ["Attractions", "Access to top-rated sites and experiences."],
   ["Meals", "Delicious and well-balanced dining options."],
-  ["Tour Manager", "Professional support throughout your journey."],
+  ["Tour Director", "Professional support throughout your journey."],
   ["Restaurant & Driver Gratuities", "Taken care of for your convenience."],
 ]
 
@@ -178,7 +178,7 @@ export default function Itin_usa_trips__new_orleans_tours__new_orleans_student_t
         name: "New Orleans Student Tour",
         description: "Spend two immersive days exploring the French Quarter, Cajun cooking, and jazz heritage that make the Crescent City unforgettable for student groups.",
         path: "/usa-trips/new-orleans/new-orleans-student-tour/",
-        days: [{ name: "Day 1: Arrival & Mardi Gras World", description: "Travel to New Orleans, LA; Welcome to New Orleans! Meet your Landmark Leader!; Visit Mardi Gras World with Mask Making Workshop; Visit the Vue Orleans Observation Deck; Dinner Allocation- St Roch Market; Check-in to Hotel Accommodations with onsite security" }, { name: "Day 2: French Quarter & Departure", description: "Hotel Breakfast; French Quarter Exploration; Stop By Café Du Monde And Taste Test The Famous Beignets; Hands-on Cajun Cooking Class and Lunch at the National Food & Beverage Foundation; Depart for Home" }],
+        days: [{ name: "Day 1: Arrival & Mardi Gras World", description: "Travel to New Orleans, LA; Welcome to New Orleans! Meet your Tour Director!; Visit Mardi Gras World with Mask Making Workshop; Visit the Vue Orleans Observation Deck; Dinner Allocation- St Roch Market; Check-in to Hotel Accommodations with onsite security" }, { name: "Day 2: French Quarter & Departure", description: "Hotel Breakfast; French Quarter Exploration; Stop By Café Du Monde And Taste Test The Famous Beignets; Hands-on Cajun Cooking Class and Lunch at the National Food & Beverage Foundation; Depart for Home" }],
       })} />
     </>
   )

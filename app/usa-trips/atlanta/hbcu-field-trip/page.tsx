@@ -11,7 +11,7 @@ const ArrowR = (
 )
 
 const DAYS = [
-  { title: "Day 1: Arrival & Skyview Atlanta", acts: ["Sample Flight to Atlanta, GA", "Arrival in Atlanta, GA and meet your Landmark Leader", "Group sit-down dinner", "Ferris Wheel Ride on SkyView Atlanta", "Check into Hotel Accommodations with onsite security"] },
+  { title: "Day 1: Arrival & Skyview Atlanta", acts: ["Sample Flight to Atlanta, GA", "Arrival in Atlanta, GA and meet your Tour Director", "Group sit-down dinner", "Ferris Wheel Ride on SkyView Atlanta", "Check into Hotel Accommodations with onsite security"] },
   { title: "Day 2: Alabama State University & Tuskegee University", acts: ["Hotel Breakfast", "Drive to Alabama State", "Guided Tour of ASU with Admissions Sessions", "Sit-down Lunch at ASU", "Visit the Legacy Museum", "Guided Tour of Tuskegee with Admissions Sessions", "Meet Motor Coach and head to Atlanta", "Dinner and games at Dave & Buster’s", "Return to Hotel Accommodations with onsite security"] },
   { title: "Day 3: Georgia Tech University & Clark Atlanta University", acts: ["Hotel Breakfast", "Visit Georgia Tech University-Scavenger Hunt", "Guided Tour of Clark Atlanta University with Admissions Sessions", "Boxed Sandwich Lunch", "Visit Martin Luther King, Jr. National Historic Site", "Roller Skating at Cascade Skating", "Group sit-down dinner", "Return to Hotel Accommodations with onsite security"] },
   { title: "Day 4: Morris Brown College & Departure", acts: ["Hotel Breakfast", "Guided Tour of Morris Brown College with Admissions Sessions", "Lunch Included", "Sample Flight Departure Home"] },
@@ -31,7 +31,7 @@ const INCLUSIONS = [
   ["Hotel Accommodations", "Convenient and student-friendly lodging."],
   ["Attractions", "Access to top-rated sites and experiences."],
   ["Meals", "Delicious and well-balanced dining options."],
-  ["Tour Manager", "Professional support throughout your journey."],
+  ["Tour Director", "Professional support throughout your journey."],
   ["Restaurant & Driver Gratuities", "Taken care of for your convenience."],
 ]
 
@@ -181,7 +181,7 @@ export default function Itin_usa_trips__atlanta__hbcu_field_trip() {
         name: "HBCU Field Trip",
         description: "Take students across historic HBCU campuses in Atlanta and Alabama for guided tours, admissions sessions, and unforgettable cultural experiences.",
         path: "/usa-trips/atlanta/hbcu-field-trip/",
-        days: [{ name: "Day 1: Arrival & Skyview Atlanta", description: "Sample Flight to Atlanta, GA; Arrival in Atlanta, GA and meet your Landmark Leader; Group sit-down dinner; Ferris Wheel Ride on SkyView Atlanta; Check into Hotel Accommodations with onsite security" }, { name: "Day 2: Alabama State University & Tuskegee University", description: "Hotel Breakfast; Drive to Alabama State; Guided Tour of ASU with Admissions Sessions; Sit-down Lunch at ASU; Visit the Legacy Museum; Guided Tour of Tuskegee with Admissions Sessions; Meet Motor Coach and head to Atlanta; Dinner and games at Dave & Buster’s; Return to Hotel Accommodations with onsite security" }, { name: "Day 3: Georgia Tech University & Clark Atlanta University", description: "Hotel Breakfast; Visit Georgia Tech University-Scavenger Hunt; Guided Tour of Clark Atlanta University with Admissions Sessions; Boxed Sandwich Lunch; Visit Martin Luther King, Jr. National Historic Site; Roller Skating at Cascade Skating; Group sit-down dinner; Return to Hotel Accommodations with onsite security" }, { name: "Day 4: Morris Brown College & Departure", description: "Hotel Breakfast; Guided Tour of Morris Brown College with Admissions Sessions; Lunch Included; Sample Flight Departure Home" }],
+        days: [{ name: "Day 1: Arrival & Skyview Atlanta", description: "Sample Flight to Atlanta, GA; Arrival in Atlanta, GA and meet your Tour Director; Group sit-down dinner; Ferris Wheel Ride on SkyView Atlanta; Check into Hotel Accommodations with onsite security" }, { name: "Day 2: Alabama State University & Tuskegee University", description: "Hotel Breakfast; Drive to Alabama State; Guided Tour of ASU with Admissions Sessions; Sit-down Lunch at ASU; Visit the Legacy Museum; Guided Tour of Tuskegee with Admissions Sessions; Meet Motor Coach and head to Atlanta; Dinner and games at Dave & Buster’s; Return to Hotel Accommodations with onsite security" }, { name: "Day 3: Georgia Tech University & Clark Atlanta University", description: "Hotel Breakfast; Visit Georgia Tech University-Scavenger Hunt; Guided Tour of Clark Atlanta University with Admissions Sessions; Boxed Sandwich Lunch; Visit Martin Luther King, Jr. National Historic Site; Roller Skating at Cascade Skating; Group sit-down dinner; Return to Hotel Accommodations with onsite security" }, { name: "Day 4: Morris Brown College & Departure", description: "Hotel Breakfast; Guided Tour of Morris Brown College with Admissions Sessions; Lunch Included; Sample Flight Departure Home" }],
       })} />
     </>
   )

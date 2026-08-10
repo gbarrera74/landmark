@@ -11,7 +11,7 @@ const ArrowR = (
 )
 
 const DAYS = [
-  { title: "Day 1: Arrival & Group Dinner", acts: ["Travel to Chicago", "Arrival in Chicago and Meet Landmark Leader", "Group sit-down dinner", "Check-in to hotel accommodations"] },
+  { title: "Day 1: Arrival & Group Dinner", acts: ["Travel to Chicago", "Arrival in Chicago and Meet Tour Director", "Group sit-down dinner", "Check-in to hotel accommodations"] },
   { title: "Day 2: Navy Pier & Skydeck Chicago at Willis Tower", acts: ["Hotel Breakfast", "Architecture River Cruise", "Lunch at Navy Pier and Group Exploration", "Group sit-down dinner", "Visit the Skydeck Chicago at Willis Tower", "Return to hotel accommodations"] },
   { title: "Day 3: Shedd Aquarium & Cubs Game at Wrigley Field", acts: ["Hotel Breakfast", "Visit the Shedd Aquarium", "Lunch at the museum", "Return to Hotel", "Dinner at Wrigley Field", "Attend a Chicago Cubs game at Wrigley Field", "Boxed sandwich lunch", "Return to hotel accommodations"] },
   { title: "Day 4: Art Institute of Chicago Museum & Magnificent Mile", acts: ["Hotel Breakfast", "Guided Walking Tour: Buckingham Fountain, Millennium Park, and the Cloud Gate", "Visit the Art Institute of Chicago Museum", "Lunch: City Cruise Experience on Lake Michigan", "Explore the Magnificent Mile", "Group sit-down dinner", "Visit 360 Chicago + Tilt Admission", "Return to hotel accommodations"] },
@@ -32,7 +32,7 @@ const INCLUSIONS = [
   ["Hotel Accommodations", "Convenient and student-friendly lodging."],
   ["Attractions", "Access to top-rated sites and experiences."],
   ["Meals", "Delicious and well-balanced dining options."],
-  ["Tour Manager", "Professional support throughout your journey."],
+  ["Tour Director", "Professional support throughout your journey."],
   ["Restaurant & Driver Gratuities", "Taken care of for your convenience."],
 ]
 
@@ -181,7 +181,7 @@ export default function Itin_usa_trips__chicago_tours__the_windy_city_tour() {
         name: "The Windy City Tour",
         description: "Discover Chicago's iconic skyline, world-class museums, and vibrant culture on a five-day adventure built for student groups.",
         path: "/usa-trips/chicago/the-windy-city-tour/",
-        days: [{ name: "Day 1: Arrival & Group Dinner", description: "Travel to Chicago; Arrival in Chicago and Meet Landmark Leader; Group sit-down dinner; Check-in to hotel accommodations" }, { name: "Day 2: Navy Pier & Skydeck Chicago at Willis Tower", description: "Hotel Breakfast; Architecture River Cruise; Lunch at Navy Pier and Group Exploration; Group sit-down dinner; Visit the Skydeck Chicago at Willis Tower; Return to hotel accommodations" }, { name: "Day 3: Shedd Aquarium & Cubs Game at Wrigley Field", description: "Hotel Breakfast; Visit the Shedd Aquarium; Lunch at the museum; Return to Hotel; Dinner at Wrigley Field; Attend a Chicago Cubs game at Wrigley Field; Boxed sandwich lunch; Return to hotel accommodations" }, { name: "Day 4: Art Institute of Chicago Museum & Magnificent Mile", description: "Hotel Breakfast; Guided Walking Tour: Buckingham Fountain, Millennium Park, and the Cloud Gate; Visit the Art Institute of Chicago Museum; Lunch: City Cruise Experience on Lake Michigan; Explore the Magnificent Mile; Group sit-down dinner; Visit 360 Chicago + Tilt Admission; Return to hotel accommodations" }, { name: "Day 5: Departure", description: "Hotel Breakfast; Depart for Home" }],
+        days: [{ name: "Day 1: Arrival & Group Dinner", description: "Travel to Chicago; Arrival in Chicago and Meet Tour Director; Group sit-down dinner; Check-in to hotel accommodations" }, { name: "Day 2: Navy Pier & Skydeck Chicago at Willis Tower", description: "Hotel Breakfast; Architecture River Cruise; Lunch at Navy Pier and Group Exploration; Group sit-down dinner; Visit the Skydeck Chicago at Willis Tower; Return to hotel accommodations" }, { name: "Day 3: Shedd Aquarium & Cubs Game at Wrigley Field", description: "Hotel Breakfast; Visit the Shedd Aquarium; Lunch at the museum; Return to Hotel; Dinner at Wrigley Field; Attend a Chicago Cubs game at Wrigley Field; Boxed sandwich lunch; Return to hotel accommodations" }, { name: "Day 4: Art Institute of Chicago Museum & Magnificent Mile", description: "Hotel Breakfast; Guided Walking Tour: Buckingham Fountain, Millennium Park, and the Cloud Gate; Visit the Art Institute of Chicago Museum; Lunch: City Cruise Experience on Lake Michigan; Explore the Magnificent Mile; Group sit-down dinner; Visit 360 Chicago + Tilt Admission; Return to hotel accommodations" }, { name: "Day 5: Departure", description: "Hotel Breakfast; Depart for Home" }],
       })} />
     </>
   )

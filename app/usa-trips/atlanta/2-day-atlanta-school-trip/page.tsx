@@ -11,7 +11,7 @@ const ArrowR = (
 )
 
 const DAYS = [
-  { title: "Day 1: Arrival & National Center for Civil Rights", acts: ["Travel to Atlanta, GA", "Arrival in Atlanta, GA and meet your Landmark Leader", "Visit the Georgia Aquarium", "Sit-down Lunch at CNN Food Court", "Visit the World of Coca-Cola", "Visit the National Center for Civil Rights", "Group sit-down dinner", "Evening Activity: Roller Skating", "Check into Hotel Accommodations"] },
+  { title: "Day 1: Arrival & National Center for Civil Rights", acts: ["Travel to Atlanta, GA", "Arrival in Atlanta, GA and meet your Tour Director", "Visit the Georgia Aquarium", "Sit-down Lunch at CNN Food Court", "Visit the World of Coca-Cola", "Visit the National Center for Civil Rights", "Group sit-down dinner", "Evening Activity: Roller Skating", "Check into Hotel Accommodations"] },
   { title: "Day 2: Atlanta Zoo & Depart", acts: ["Hotel Breakfast", "Visit the Fernbank Museum", "Visit Martin Luther King, Jr. National Historic Site", "Explore and lunch at Ponce City Market", "Visit the Atlanta Zoo", "Depart for Home"] },
 ]
 
@@ -29,7 +29,7 @@ const INCLUSIONS = [
   ["Hotel Accommodations", "Convenient and student-friendly lodging."],
   ["Attractions", "Access to top-rated sites and experiences."],
   ["Meals", "Delicious and well-balanced dining options."],
-  ["Tour Manager", "Professional support throughout your journey."],
+  ["Tour Director", "Professional support throughout your journey."],
   ["Restaurant & Driver Gratuities", "Taken care of for your convenience."],
 ]
 
@@ -179,7 +179,7 @@ export default function Itin_usa_trips__atlanta__2_day_atlanta_school_trip() {
         name: "2 Day Atlanta School Trip",
         description: "Discover Atlanta's civil rights history, dynamic museums, and lively attractions on a two day journey built for student groups.",
         path: "/usa-trips/atlanta/2-day-atlanta-school-trip/",
-        days: [{ name: "Day 1: Arrival & National Center for Civil Rights", description: "Travel to Atlanta, GA; Arrival in Atlanta, GA and meet your Landmark Leader; Visit the Georgia Aquarium; Sit-down Lunch at CNN Food Court; Visit the World of Coca-Cola; Visit the National Center for Civil Rights; Group sit-down dinner; Evening Activity: Roller Skating; Check into Hotel Accommodations" }, { name: "Day 2: Atlanta Zoo & Depart", description: "Hotel Breakfast; Visit the Fernbank Museum; Visit Martin Luther King, Jr. National Historic Site; Explore and lunch at Ponce City Market; Visit the Atlanta Zoo; Depart for Home" }],
+        days: [{ name: "Day 1: Arrival & National Center for Civil Rights", description: "Travel to Atlanta, GA; Arrival in Atlanta, GA and meet your Tour Director; Visit the Georgia Aquarium; Sit-down Lunch at CNN Food Court; Visit the World of Coca-Cola; Visit the National Center for Civil Rights; Group sit-down dinner; Evening Activity: Roller Skating; Check into Hotel Accommodations" }, { name: "Day 2: Atlanta Zoo & Depart", description: "Hotel Breakfast; Visit the Fernbank Museum; Visit Martin Luther King, Jr. National Historic Site; Explore and lunch at Ponce City Market; Visit the Atlanta Zoo; Depart for Home" }],
       })} />
     </>
   )

@@ -11,7 +11,7 @@ const ArrowR = (
 )
 
 const DAYS = [
-  { title: "Day 1: Arrival", acts: ["Travel to San Antonio, TX", "Welcome to San Antonio!", "Meet your Landmark Leader!", "Lunch/Dinner Included", "Check-in to Hotel Accommodations with on-site security (Nightly)"] },
+  { title: "Day 1: Arrival", acts: ["Travel to San Antonio, TX", "Welcome to San Antonio!", "Meet your Tour Director!", "Lunch/Dinner Included", "Check-in to Hotel Accommodations with on-site security (Nightly)"] },
   { title: "Day 2: San Fernando Cathedral & The Alamo Mission", acts: ["Hotel Breakfast", "Visit San Fernando Cathedral", "Explore the Spanish Governor’s Palace", "Lunch Included", "Visit the Scobee Education and Challenge Center", "Explore the Alamo Mission", "Dinner: Student Expense", "Riverwalk Exploration", "Return to Hotel Accommodations"] },
   { title: "Day 3: Hemisfair and Tower of Americas & Alamo Ghost Hunt", acts: ["Hotel Breakfast", "Free Exploration of the San Antonio Mission San Juan and Mission Espada", "Lunch Included", "Explore the Hemisfair and Tower of Americas", "*Optional Activities: San Antonio Japanese Tea Garden or Buckhorn Saloon & Museum", "Group sit-down dinner", "Enjoy the Alamo Ghost Hunt", "Return to Hotel Accommodations"] },
   { title: "Day 4: Historic Market Square & GO RIO Riverwalk Boat Tour", acts: ["Hotel Breakfast", "Visit and Explore Historic Market Square", "Lunch Included", "Canopy Combo (Explorer Course and Zip Lines) * Weather permitting", "Enjoy the GO RIO Riverwalk Boat Tour", "Return to Hotel Accommodations", "Dinner & Activity: Pizza Party"] },
@@ -32,7 +32,7 @@ const INCLUSIONS = [
   ["Hotel Accommodations", "Convenient and student-friendly lodging."],
   ["Attractions", "Access to top-rated sites and experiences."],
   ["Meals", "Delicious and well-balanced dining options."],
-  ["Tour Manager", "Professional support throughout your journey."],
+  ["Tour Director", "Professional support throughout your journey."],
   ["Restaurant & Driver Gratuities", "Taken care of for your convenience."],
 ]
 
@@ -181,7 +181,7 @@ export default function Itin_usa_trips__san_antonio_tours__intro_to_san_antonio_
         name: "Intro to San Antonio Tour",
         description: "Spend five days discovering San Antonio's landmarks, missions, and River Walk on an immersive educational adventure for student groups.",
         path: "/usa-trips/san-antonio/intro-to-san-antonio-tour/",
-        days: [{ name: "Day 1: Arrival", description: "Travel to San Antonio, TX; Welcome to San Antonio!; Meet your Landmark Leader!; Lunch/Dinner Included; Check-in to Hotel Accommodations with on-site security (Nightly)" }, { name: "Day 2: San Fernando Cathedral & The Alamo Mission", description: "Hotel Breakfast; Visit San Fernando Cathedral; Explore the Spanish Governor’s Palace; Lunch Included; Visit the Scobee Education and Challenge Center; Explore the Alamo Mission; Dinner: Student Expense; Riverwalk Exploration; Return to Hotel Accommodations" }, { name: "Day 3: Hemisfair and Tower of Americas & Alamo Ghost Hunt", description: "Hotel Breakfast; Free Exploration of the San Antonio Mission San Juan and Mission Espada; Lunch Included; Explore the Hemisfair and Tower of Americas; *Optional Activities: San Antonio Japanese Tea Garden or Buckhorn Saloon & Museum; Group sit-down dinner; Enjoy the Alamo Ghost Hunt; Return to Hotel Accommodations" }, { name: "Day 4: Historic Market Square & GO RIO Riverwalk Boat Tour", description: "Hotel Breakfast; Visit and Explore Historic Market Square; Lunch Included; Canopy Combo (Explorer Course and Zip Lines) * Weather permitting; Enjoy the GO RIO Riverwalk Boat Tour; Return to Hotel Accommodations; Dinner & Activity: Pizza Party" }, { name: "Day 5: Departure", description: "Hotel Breakfast; Depart for Home; *Lunch/Dinner en route" }],
+        days: [{ name: "Day 1: Arrival", description: "Travel to San Antonio, TX; Welcome to San Antonio!; Meet your Tour Director!; Lunch/Dinner Included; Check-in to Hotel Accommodations with on-site security (Nightly)" }, { name: "Day 2: San Fernando Cathedral & The Alamo Mission", description: "Hotel Breakfast; Visit San Fernando Cathedral; Explore the Spanish Governor’s Palace; Lunch Included; Visit the Scobee Education and Challenge Center; Explore the Alamo Mission; Dinner: Student Expense; Riverwalk Exploration; Return to Hotel Accommodations" }, { name: "Day 3: Hemisfair and Tower of Americas & Alamo Ghost Hunt", description: "Hotel Breakfast; Free Exploration of the San Antonio Mission San Juan and Mission Espada; Lunch Included; Explore the Hemisfair and Tower of Americas; *Optional Activities: San Antonio Japanese Tea Garden or Buckhorn Saloon & Museum; Group sit-down dinner; Enjoy the Alamo Ghost Hunt; Return to Hotel Accommodations" }, { name: "Day 4: Historic Market Square & GO RIO Riverwalk Boat Tour", description: "Hotel Breakfast; Visit and Explore Historic Market Square; Lunch Included; Canopy Combo (Explorer Course and Zip Lines) * Weather permitting; Enjoy the GO RIO Riverwalk Boat Tour; Return to Hotel Accommodations; Dinner & Activity: Pizza Party" }, { name: "Day 5: Departure", description: "Hotel Breakfast; Depart for Home; *Lunch/Dinner en route" }],
       })} />
     </>
   )

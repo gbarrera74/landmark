@@ -11,7 +11,7 @@ const ArrowR = (
 )
 
 const DAYS = [
-  { title: "Day 1: Arrival & Walking Orientation of Old Montréal", acts: ["Travel to Montreal", "Arrival in Montreal!", "Meet your Landmark Leaders!", "Landmark Leader Led Walking Orientation of Old Montréal", "Group sit-down dinner and dancing at Sugar Shack", "Return to Hotel Accommodations"] },
+  { title: "Day 1: Arrival & Walking Orientation of Old Montréal", acts: ["Travel to Montreal", "Arrival in Montreal!", "Meet your Tour Directors!", "Tour Director Led Walking Orientation of Old Montréal", "Group sit-down dinner and dancing at Sugar Shack", "Return to Hotel Accommodations"] },
   { title: "Day 2: Curling Lesson & Departure", acts: ["Group Breakfast", "Visit the Notre Dame Basilica", "Visit  Biodôme de Montréal", "Group exploration at Marché Jean-Talon", "Exploration Lunch at Time Out Market", "Take a Curling Lesson", "Depart for Home"] },
 ]
 
@@ -29,7 +29,7 @@ const INCLUSIONS = [
   ["Hotel Accommodations", "Convenient and student-friendly lodging."],
   ["Attractions", "Access to top-rated sites and experiences."],
   ["Meals", "Delicious and well-balanced dining options."],
-  ["Tour Manager", "Professional support throughout your journey."],
+  ["Tour Director", "Professional support throughout your journey."],
   ["Restaurant & Driver Gratuities", "Taken care of for your convenience."],
 ]
 
@@ -180,7 +180,7 @@ export default function Itin_international__canada__montreal__2_day_montreal_sch
         name: "2 Day Montreal School Trip",
         description: "Explore Old Montreal, French-Canadian culture, and iconic landmarks on an immersive two-day educational adventure for student groups.",
         path: "/canada/montreal/2-day-montreal-school-trip/",
-        days: [{ name: "Day 1: Arrival & Walking Orientation of Old Montréal", description: "Travel to Montreal; Arrival in Montreal!; Meet your Landmark Leaders!; Landmark Leader Led Walking Orientation of Old Montréal; Group sit-down dinner and dancing at Sugar Shack; Return to Hotel Accommodations" }, { name: "Day 2: Curling Lesson & Departure", description: "Group Breakfast; Visit the Notre Dame Basilica; Visit  Biodôme de Montréal; Group exploration at Marché Jean-Talon; Exploration Lunch at Time Out Market; Take a Curling Lesson; Depart for Home" }],
+        days: [{ name: "Day 1: Arrival & Walking Orientation of Old Montréal", description: "Travel to Montreal; Arrival in Montreal!; Meet your Tour Directors!; Tour Director Led Walking Orientation of Old Montréal; Group sit-down dinner and dancing at Sugar Shack; Return to Hotel Accommodations" }, { name: "Day 2: Curling Lesson & Departure", description: "Group Breakfast; Visit the Notre Dame Basilica; Visit  Biodôme de Montréal; Group exploration at Marché Jean-Talon; Exploration Lunch at Time Out Market; Take a Curling Lesson; Depart for Home" }],
       })} />
     </>
   )

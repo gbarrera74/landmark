@@ -28,9 +28,9 @@ const DAYS = [
 const WHY = [
   { label: "100% Custom Itineraries", text: "No catalog trips. We start with your curriculum goals, grade level, group size, and budget, then design the trip around them. Unlimited revisions until it's exactly right." },
   { label: "Travel Consultant & Account Manager", text: "You'll work with the same Landmark Travel Consultant from the first conversation through the post-trip debrief. Your dedicated Account Manager knows your school, your faculty leads, and the parents asking questions." },
-  { label: "Duty of Care, Done Right", text: "24/7 emergency hotline. Vetted hotels. Background-checked tour managers. Comprehensive travel protection. The protocols Heads of School ask about, covered." },
+  { label: "Duty of Care, Done Right", text: "24/7 emergency hotline. Vetted hotels. Background-checked Tour Directors. Comprehensive travel protection. The protocols Heads of School ask about, covered." },
   { label: "Fully Accredited", text: "SYTA Member #13443, IATA #22576046, ABA #84360, BBB Accredited, CST 2168995-50, ETOA Member. The compliance documentation your business office needs, already filed." },
-  { label: "Landmark Leaders Travel With You", text: "Our trip managers are not contracted strangers, they're our employees. Friendly, knowledgeable, and on the ground with your group every day. Your chaperones get to enjoy the trip too." },
+  { label: "Tour Directors Travel With You", text: "Our trip managers are not contracted strangers, they're our employees. Friendly, knowledgeable, and on the ground with your group every day. Your chaperones get to enjoy the trip too." },
   { label: "Faith & Mission Alignment", text: "For schools with religious affiliations or faith-based traditions, we build itineraries that honor your mission. Worship arrangements, heritage destinations, and service learning, coordinated quietly and respectfully." },
 ]
 
@@ -41,7 +41,7 @@ const INCLUSIONS = [
   ["Hotel Accommodations", "Convenient and student-friendly lodging"],
   ["Attractions", "Access to top-rated sites and experiences"],
   ["Meals", "Delicious and well-balanced dining options"],
-  ["Tour Manager", "Professional support throughout your journey"],
+  ["Tour Director", "Professional support throughout your journey"],
   ["Restaurant & Driver Gratuities", "Taken care of for your convenience"],
 ]
 

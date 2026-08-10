@@ -11,7 +11,7 @@ const ArrowR = (
 )
 
 const DAYS = [
-  { title: "Day 1: Arrival & St. Louis Cemetery", acts: ["Travel to New Orleans, LA", "Welcome to New Orleans! Meet your Landmark Leader!", "Lunch: Meal Allocation Provided For St. Roch Market", "Visit and tour St. Louis Cemetery", "Group sit-down dinner", "Check-in to Hotel Accommodations"] },
+  { title: "Day 1: Arrival & St. Louis Cemetery", acts: ["Travel to New Orleans, LA", "Welcome to New Orleans! Meet your Tour Director!", "Lunch: Meal Allocation Provided For St. Roch Market", "Visit and tour St. Louis Cemetery", "Group sit-down dinner", "Check-in to Hotel Accommodations"] },
   { title: "Day 2: New Orleans Jazz Museum & Sounds of New Orleans Music Tour", acts: ["Hotel Breakfast", "Visit Louisiana State University To Attend A Master Class", "Lunch Included", "Visit The New Orleans Jazz Museum", "Meet Your Local Guides For A Student-Focused Sounds Of New Orleans Music Walking Tour", "Dinner and Evening Activity", "Return to Hotel Accommodations"] },
   { title: "Day 3: Master Class at Louisiana State University & Departure", acts: ["Hotel Breakfast", "Visit Louisiana State University To Attend A Master Class", "Lunch Included", "Depart for Home"] },
 ]
@@ -30,7 +30,7 @@ const INCLUSIONS = [
   ["Hotel Accommodations", "Convenient and student-friendly lodging."],
   ["Attractions", "Access to top-rated sites and experiences."],
   ["Meals", "Delicious and well-balanced dining options."],
-  ["Tour Manager", "Professional support throughout your journey."],
+  ["Tour Director", "Professional support throughout your journey."],
   ["Restaurant & Driver Gratuities", "Taken care of for your convenience."],
 ]
 
@@ -179,7 +179,7 @@ export default function Itin_usa_trips__new_orleans_tours__3_day_new_orleans_sch
         name: "3 Day New Orleans School Trip",
         description: "A three day journey through New Orleans jazz, cemeteries, and Creole culture built for student groups of every grade.",
         path: "/usa-trips/new-orleans/3-day-new-orleans-school-trip/",
-        days: [{ name: "Day 1: Arrival & St. Louis Cemetery", description: "Travel to New Orleans, LA; Welcome to New Orleans! Meet your Landmark Leader!; Lunch: Meal Allocation Provided For St. Roch Market; Visit and tour St. Louis Cemetery; Group sit-down dinner; Check-in to Hotel Accommodations" }, { name: "Day 2: New Orleans Jazz Museum & Sounds of New Orleans Music Tour", description: "Hotel Breakfast; Visit Louisiana State University To Attend A Master Class; Lunch Included; Visit The New Orleans Jazz Museum; Meet Your Local Guides For A Student-Focused Sounds Of New Orleans Music Walking Tour; Dinner and Evening Activity; Return to Hotel Accommodations" }, { name: "Day 3: Master Class at Louisiana State University & Departure", description: "Hotel Breakfast; Visit Louisiana State University To Attend A Master Class; Lunch Included; Depart for Home" }],
+        days: [{ name: "Day 1: Arrival & St. Louis Cemetery", description: "Travel to New Orleans, LA; Welcome to New Orleans! Meet your Tour Director!; Lunch: Meal Allocation Provided For St. Roch Market; Visit and tour St. Louis Cemetery; Group sit-down dinner; Check-in to Hotel Accommodations" }, { name: "Day 2: New Orleans Jazz Museum & Sounds of New Orleans Music Tour", description: "Hotel Breakfast; Visit Louisiana State University To Attend A Master Class; Lunch Included; Visit The New Orleans Jazz Museum; Meet Your Local Guides For A Student-Focused Sounds Of New Orleans Music Walking Tour; Dinner and Evening Activity; Return to Hotel Accommodations" }, { name: "Day 3: Master Class at Louisiana State University & Departure", description: "Hotel Breakfast; Visit Louisiana State University To Attend A Master Class; Lunch Included; Depart for Home" }],
       })} />
     </>
   )

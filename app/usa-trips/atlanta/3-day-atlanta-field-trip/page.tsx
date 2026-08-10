@@ -11,7 +11,7 @@ const ArrowR = (
 )
 
 const DAYS = [
-  { title: "Day 1: Arrival & Skyview Atlanta", acts: ["Sample Flight to Atlanta, GA", "Arrival in Atlanta, GA and meet your Landmark Leader", "Group sit-down dinner", "Ferris Wheel Ride on SkyView Atlanta", "Check-in to Hotel Accommodations with onsite security"] },
+  { title: "Day 1: Arrival & Skyview Atlanta", acts: ["Sample Flight to Atlanta, GA", "Arrival in Atlanta, GA and meet your Tour Director", "Group sit-down dinner", "Ferris Wheel Ride on SkyView Atlanta", "Check-in to Hotel Accommodations with onsite security"] },
   { title: "Day 2: Clark University & Martin Luther King, Jr. National Historic Site", acts: ["Hotel Breakfast", "Guided Tour of Clark Atlanta University with Admissions Session", "Boxed Sandwich Lunch", "Guided Tour of Morris Brown College with Admissions Session", "Visit Martin Luther King, Jr. National Historic Site", "Group sit-down dinner", "Roller Skating at Cascade Skating", "Return to Hotel Accommodations"] },
   { title: "Day 3: Atlanta History Center & Departure", acts: ["Hotel Breakfast", "Visit the Atlanta History Center", "Visit the World of Coca-Cola", "Sit-down Lunch at CNN Food Court", "Guided Tour of Morehouse College with Admissions Session", "Guided Tour of Spelman College with Admissions Session", "Meet your motorcoach and depart for the airport", "Sample Flight Departure Home"] },
 ]
@@ -30,7 +30,7 @@ const INCLUSIONS = [
   ["Hotel Accommodations", "Convenient and student-friendly lodging."],
   ["Attractions", "Access to top-rated sites and experiences."],
   ["Meals", "Delicious and well-balanced dining options."],
-  ["Tour Manager", "Professional support throughout your journey."],
+  ["Tour Director", "Professional support throughout your journey."],
   ["Restaurant & Driver Gratuities", "Taken care of for your convenience."],
 ]
 
@@ -180,7 +180,7 @@ export default function Itin_usa_trips__atlanta__3_day_atlanta_field_trip() {
         name: "3 Day Atlanta Field Trip",
         description: "Discover Atlanta's civil rights legacy, historic HBCUs, and standout science and culture stops on a three day student adventure.",
         path: "/usa-trips/atlanta/3-day-atlanta-field-trip/",
-        days: [{ name: "Day 1: Arrival & Skyview Atlanta", description: "Sample Flight to Atlanta, GA; Arrival in Atlanta, GA and meet your Landmark Leader; Group sit-down dinner; Ferris Wheel Ride on SkyView Atlanta; Check-in to Hotel Accommodations with onsite security" }, { name: "Day 2: Clark University & Martin Luther King, Jr. National Historic Site", description: "Hotel Breakfast; Guided Tour of Clark Atlanta University with Admissions Session; Boxed Sandwich Lunch; Guided Tour of Morris Brown College with Admissions Session; Visit Martin Luther King, Jr. National Historic Site; Group sit-down dinner; Roller Skating at Cascade Skating; Return to Hotel Accommodations" }, { name: "Day 3: Atlanta History Center & Departure", description: "Hotel Breakfast; Visit the Atlanta History Center; Visit the World of Coca-Cola; Sit-down Lunch at CNN Food Court; Guided Tour of Morehouse College with Admissions Session; Guided Tour of Spelman College with Admissions Session; Meet your motorcoach and depart for the airport; Sample Flight Departure Home" }],
+        days: [{ name: "Day 1: Arrival & Skyview Atlanta", description: "Sample Flight to Atlanta, GA; Arrival in Atlanta, GA and meet your Tour Director; Group sit-down dinner; Ferris Wheel Ride on SkyView Atlanta; Check-in to Hotel Accommodations with onsite security" }, { name: "Day 2: Clark University & Martin Luther King, Jr. National Historic Site", description: "Hotel Breakfast; Guided Tour of Clark Atlanta University with Admissions Session; Boxed Sandwich Lunch; Guided Tour of Morris Brown College with Admissions Session; Visit Martin Luther King, Jr. National Historic Site; Group sit-down dinner; Roller Skating at Cascade Skating; Return to Hotel Accommodations" }, { name: "Day 3: Atlanta History Center & Departure", description: "Hotel Breakfast; Visit the Atlanta History Center; Visit the World of Coca-Cola; Sit-down Lunch at CNN Food Court; Guided Tour of Morehouse College with Admissions Session; Guided Tour of Spelman College with Admissions Session; Meet your motorcoach and depart for the airport; Sample Flight Departure Home" }],
       })} />
     </>
   )

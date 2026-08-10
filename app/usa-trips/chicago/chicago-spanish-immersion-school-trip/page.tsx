@@ -11,7 +11,7 @@ const ArrowR = (
 )
 
 const DAYS = [
-  { title: "Day 1: Arrival & Pilsen Neighborhood Mural Walking Tour", acts: ["Travel to Chicago", "Arrival in Chicago and Meet Landmark Leader", "Exploration for Lunch and Shopping in Pilsen Neighborhood- Student Expense", "Guided Pilsen Neighborhood Mural Walking Tour", "Explore Navy Pier + Shops", "Group sit-down dinner", "Attend an Evening Show", "Check-in to hotel accommodations"] },
+  { title: "Day 1: Arrival & Pilsen Neighborhood Mural Walking Tour", acts: ["Travel to Chicago", "Arrival in Chicago and Meet Tour Director", "Exploration for Lunch and Shopping in Pilsen Neighborhood- Student Expense", "Guided Pilsen Neighborhood Mural Walking Tour", "Explore Navy Pier + Shops", "Group sit-down dinner", "Attend an Evening Show", "Check-in to hotel accommodations"] },
   { title: "Day 2: John Hancock 360 Tour & Departure", acts: ["Hotel Breakfast", "John Hancock 360 Tour + Tilt Admission", "Group Exploration of the Magnificent Mile- Student Expense", "Visit Millenium Park and Buckingham Fountain", "Lunch Voucher", "Guided Docent Tour of the National Museum of Mexican Art", "Depart for Home"] },
 ]
 
@@ -29,7 +29,7 @@ const INCLUSIONS = [
   ["Hotel Accommodations", "Convenient and student-friendly lodging."],
   ["Attractions", "Access to top-rated sites and experiences."],
   ["Meals", "Delicious and well-balanced dining options."],
-  ["Tour Manager", "Professional support throughout your journey."],
+  ["Tour Director", "Professional support throughout your journey."],
   ["Restaurant & Driver Gratuities", "Taken care of for your convenience."],
 ]
 
@@ -180,7 +180,7 @@ export default function Itin_usa_trips__chicago_tours__chicago_spanish_immersion
         name: "Chicago Spanish Immersion School Trip",
         description: "A two-day Spanish immersion adventure through Chicago's vibrant Latino neighborhoods, cultural landmarks, and interactive language experiences for student groups.",
         path: "/usa-trips/chicago/chicago-spanish-immersion-school-trip/",
-        days: [{ name: "Day 1: Arrival & Pilsen Neighborhood Mural Walking Tour", description: "Travel to Chicago; Arrival in Chicago and Meet Landmark Leader; Exploration for Lunch and Shopping in Pilsen Neighborhood- Student Expense; Guided Pilsen Neighborhood Mural Walking Tour; Explore Navy Pier + Shops; Group sit-down dinner; Attend an Evening Show; Check-in to hotel accommodations" }, { name: "Day 2: John Hancock 360 Tour & Departure", description: "Hotel Breakfast; John Hancock 360 Tour + Tilt Admission; Group Exploration of the Magnificent Mile- Student Expense; Visit Millenium Park and Buckingham Fountain; Lunch Voucher; Guided Docent Tour of the National Museum of Mexican Art; Depart for Home" }],
+        days: [{ name: "Day 1: Arrival & Pilsen Neighborhood Mural Walking Tour", description: "Travel to Chicago; Arrival in Chicago and Meet Tour Director; Exploration for Lunch and Shopping in Pilsen Neighborhood- Student Expense; Guided Pilsen Neighborhood Mural Walking Tour; Explore Navy Pier + Shops; Group sit-down dinner; Attend an Evening Show; Check-in to hotel accommodations" }, { name: "Day 2: John Hancock 360 Tour & Departure", description: "Hotel Breakfast; John Hancock 360 Tour + Tilt Admission; Group Exploration of the Magnificent Mile- Student Expense; Visit Millenium Park and Buckingham Fountain; Lunch Voucher; Guided Docent Tour of the National Museum of Mexican Art; Depart for Home" }],
       })} />
     </>
   )

@@ -36,7 +36,7 @@ export const HOW_TO_REGISTER_HTML = `
 export const FAQ_ITEMS: { q: string; a: string }[] = [
   {
     q: 'How are dietary restrictions dealt with?',
-    a: 'When registering your students on the portal, there will be an opportunity to include dietary restrictions. Landmark will notify all meal vendors prior to the group&rsquo;s visit, and the Landmark Leaders will reconfirm with the restaurant before and during the meal. There will be a few instances in which students are given meal vouchers and can decide which meal vendors they want to eat at &mdash; at that point, students are also encouraged to communicate their own dietary restrictions.',
+    a: 'When registering your students on the portal, there will be an opportunity to include dietary restrictions. Landmark will notify all meal vendors prior to the group&rsquo;s visit, and the Tour Directors will reconfirm with the restaurant before and during the meal. There will be a few instances in which students are given meal vouchers and can decide which meal vendors they want to eat at &mdash; at that point, students are also encouraged to communicate their own dietary restrictions.',
   },
   {
     q: 'Can I get in touch with my traveler on the trip?',
@@ -44,11 +44,11 @@ export const FAQ_ITEMS: { q: string; a: string }[] = [
   },
   {
     q: 'What about safety on the trip?',
-    a: 'Safety is our top priority. Students are given safety bracelets upon their first interaction with their Landmark Leader, along with the first of multiple safety briefings. During free exploration, groups always travel in chaperone groups or follow the buddy system (depending on the age of the group and at the discretion of the trip organizer). The group will not leave an attraction until at least two formal head counts are done &mdash; one by a Landmark Leader and a final one conducted by the head chaperone.',
+    a: 'Safety is our top priority. Students are given safety bracelets upon their first interaction with their Tour Director, along with the first of multiple safety briefings. During free exploration, groups always travel in chaperone groups or follow the buddy system (depending on the age of the group and at the discretion of the trip organizer). The group will not leave an attraction until at least two formal head counts are done &mdash; one by a Tour Director and a final one conducted by the head chaperone.',
   },
   {
     q: 'What if my child loses an item on the trip?',
-    a: 'Landmark Leaders do their best to inform students on the safest ways to travel. They are also the last to leave any dining room or meeting location to ensure all belongings have been collected, while frequently reminding students to check for their wallet, keys, phone, and bags. Have the student notify the Landmark Leader and they will contact whoever they can to attempt to track down the item.',
+    a: 'Tour Directors do their best to inform students on the safest ways to travel. They are also the last to leave any dining room or meeting location to ensure all belongings have been collected, while frequently reminding students to check for their wallet, keys, phone, and bags. Have the student notify the Tour Director and they will contact whoever they can to attempt to track down the item.',
   },
 ]
 
