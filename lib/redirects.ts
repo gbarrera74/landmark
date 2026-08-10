@@ -173,7 +173,11 @@ export const WP_REDIRECTS: Redirect[] = [
   { source: "/our-take-on-the-top-hbcu-campuses-in-the-u-s", destination: "/blog/our-take-on-the-top-hbcu-campuses-in-the-u-s/", permanent: true },
   { source: "/philadelphia-historical-sites-for-students", destination: "/blog/philadelphia-historical-sites-for-students/", permanent: true },
   { source: "/pilsen-murals-walking-tour", destination: "/blog/pilsen-murals-walking-tour/", permanent: true },
-  { source: "/plan-a-group-tour", destination: "/plan-a-trip/", permanent: true },
+  // /plan-a-trip/ was retired 2026-08-10: /get-a-quote/ carries the same
+  // "How our process works" section AND the same michaelaruffino booking
+  // calendar, so the page was a duplicate of a page we want to rank.
+  { source: "/plan-a-group-tour", destination: "/get-a-quote/", permanent: true },
+  { source: "/plan-a-trip", destination: "/get-a-quote/", permanent: true },
   // /private-school-field-trip/ was a thinner duplicate of the class-trips page:
   // 7 of its 14 sentences were verbatim copies and the rest were the same pitch
   // reworded. Over 3 months it drew 0 clicks on 6 impressions (vs 92 for
