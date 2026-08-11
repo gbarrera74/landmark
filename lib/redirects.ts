@@ -508,4 +508,15 @@ export const WP_REDIRECTS: Redirect[] = [
   { source: "/usa-trips/new-york-tours/:path*", destination: "/usa-trips/new-york-city/", permanent: true },
   { source: "/art-student-tour-of-nyc", destination: "/usa-trips/new-york-city/art-focused-tour-nyc/", permanent: true },
   { source: "/discover/washington-dc-school-trip", destination: "/usa-trips/washington-dc/", permanent: true },
+
+  // --- Third post-cutover sweep (2026-08-11) ---
+  // WordPress oEmbed artifact: every WP post and page also answered at
+  // <url>/embed/, and those URLs are still linked from off-site (the hit that
+  // surfaced this arrived with a visitcanada.com referrer). Next serves nothing
+  // at /embed, so strip the suffix and send the request to the real page.
+  // The /international/canada case is listed FIRST so it reaches /canada/ in one
+  // hop — the generic rule alone would land on /international/canada/ and chain
+  // through the rule above it.
+  { source: "/international/canada/embed", destination: "/canada/", permanent: true },
+  { source: "/:path*/embed", destination: "/:path*/", permanent: true },
 ]
