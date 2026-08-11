@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from 'next/link'
 import PageHero from '@/components/PageHero'
+import DestinationIntro from '@/components/DestinationIntro'
 import BrochureBand from '@/components/BrochureBand'
 import JsonLd from '@/lib/seo/JsonLd'
 import { breadcrumb } from '@/lib/seo/schemas'
@@ -11,8 +12,18 @@ const ArrowR = (
 
 const INTRO_P1 =
   "Rolling green hills. Ancient castles. Storied traditions. Educational Trips to Ireland immerse students in a land shaped by centuries of resilience while connecting them to rich traditions of literature, music, and folklore. Walking through medieval castles transforms history into something tangible and unforgettable."
-const INTRO_P2 =
-  "We design our student trips to Ireland for genuine engagement, not passive sightseeing. Students explore ancient monastic sites, hear the stories behind Ireland’s fight for independence, and experience the living traditions of Irish music and storytelling firsthand. Landmark Educational Tours partners with schools to make sure every detail supports safety and curriculum objectives. Ireland offers a rich blend of history and heritage, encouraging students to see themselves as part of a broader, global story. When learners return home, they carry perspective, confidence, and motivation. Book your educational trip to Ireland today."
+
+const HIGHLIGHTS = [
+  "The Book of Kells at Trinity College",
+  "The Giant's Causeway and the Antrim Coast",
+  "Blarney Castle and the Rock of Cashel",
+  "The Ring of Kerry and the Cliffs of Moher",
+  "Newgrange, older than Stonehenge",
+]
+
+const TRIPS = [
+  { title: "Historic Ireland", duration: "9 Day / 8 Night", img: '/images/landmark/ireland-historic-blarney-castle.jpg', href: "/europe/ireland/historic-ireland/" },
+]
 
 const STEPS = [
   { title: 'Contact', body: 'Our Travel Consultants are waiting to build your next trip! Contact our office to get the process started.' },
@@ -38,14 +49,39 @@ export default function Ireland() {
       />
 
       {/* Intro */}
-      <section className="ile-section ile-section--white">
+      <DestinationIntro
+        city="Ireland"
+        lead={INTRO_P1}
+        highlights={HIGHLIGHTS}
+        image="/images/landmark/ireland-intro-cliffs-of-moher.jpg"
+        imageAlt="The Cliffs of Moher rising above the Atlantic on Ireland's western coast"
+        tripCount={TRIPS.length}
+      />
+
+      {/* Trips */}
+      <section className="ile-section ile-section--cream" aria-labelledby="ireland-trips-h">
         <div className="ile-container">
-          <div className="ilp-prose ilp-prose--center">
-            <p>{INTRO_P1}</p>
-            <p>{INTRO_P2}</p>
+          <div className="ile-center lm-narrow">
+            <span className="ile-eyebrow">Tours &amp; Itineraries</span>
+            <h2 id="ireland-trips-h" className="lm-h2-amber">IRELAND TRIPS</h2>
+            <p className="ile-lead lm-center-lead">Every Ireland program is fully customizable to your group, grade level, subject focus, and budget.</p>
           </div>
-          <div className="ile-center" style={{ marginTop: 32 }}>
-            <Link href="/get-a-quote/" className="ile-btn ile-btn--primary">Get a Quote</Link>
+          <div className="ilm-blog-grid">
+            {TRIPS.map((t) => (
+              <Link href={t.href} className="ilm-post" key={t.title}>
+                <div className="ilm-post-img lm-trip-media">
+                  <img src={t.img} alt="" loading="lazy" />
+                  <span className="lm-tour-badge">{t.duration}</span>
+                </div>
+                <div className="ilm-post-body">
+                  <h3>{t.title}</h3>
+                  <span className="ilm-post-more">View Itinerary {ArrowR}</span>
+                </div>
+              </Link>
+            ))}
+          </div>
+          <div className="ile-center lm-after-grid">
+            <Link href="/destinations/" className="ile-btn ile-btn--ghost">Explore All International Trips</Link>
           </div>
         </div>
       </section>
