@@ -49,13 +49,11 @@ const TOP_TOURS = [
 
 const DESTINATIONS = [
   { name: 'Washington, D.C.', href: '/usa-trips/washington-dc/', img: '/images/landmark/dc-lincoln-memorial-group.jpg' },
-  // Was broadway-sign-nyc.jpg, which also fronts the "Art of New York" card in
-  // TOP_TOURS above — the same photo appeared twice on the homepage. This is the
-  // NYC hub's own hero, so the card now previews the page it links to.
-  { name: 'New York City', href: '/usa-trips/new-york-city/', img: '/images/landmark/nyc-statue-liberty-hero.jpg' },
-  // Same duplicate-on-one-page issue as NYC above: this photo also fronts the
-  // "Freedom Trail Adventures" card in TOP_TOURS. Use the Boston hub's own hero.
-  { name: 'Boston', href: '/usa-trips/boston/', img: '/images/landmark/boston-skyline-hero.jpg' },
+  // Real Landmark trip photos, cropped to the tile's aspect so the whole group
+  // survives the cover-crop. Both are unique to this card — neither repeats a
+  // photo used by the TOP_TOURS cards above.
+  { name: 'New York City', href: '/usa-trips/new-york-city/', img: '/images/landmark/home-nyc-bethesda-group.jpg' },
+  { name: 'Boston', href: '/usa-trips/boston/', img: '/images/landmark/home-boston-duck-tour-group.jpg' },
   { name: 'Atlanta', href: '/usa-trips/atlanta/', img: '/images/landmark/atlanta-centennial-park-group.jpg' },
 ]
 
