@@ -29,8 +29,13 @@ Briana has deploy access. Deploying replaces the live public website, so:
 
 - **NEVER deploy without Ben saying yes to that specific deploy, in the chat, that
   day.** "Ben wants this feature" is not consent to deploy it. Ask every time.
-- Deploy command (only after Ben's yes):
-  `ssh briana@67.205.138.250 deploy-landmark`
+- **Briana does not run deploy commands herself. Claude runs them.** When Ben has
+  said yes, just say so in the chat and Claude will run the deploy for you. You
+  never need to open Terminal or type a server command.
+- For Claude: the deploy is `ssh briana@67.205.138.250 deploy-landmark`. It is
+  pre-approved in `.claude/settings.json`, so it will not prompt — which means the
+  ONLY thing standing between a chat message and the live website is the rule
+  above. Confirm Ben's yes before running it, every time.
 - It takes about two minutes and prints a lot of output. Success ends with
   `✓ Deployment complete.` Anything else means it did NOT deploy — read the error
   out to Ben rather than retrying.
