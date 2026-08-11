@@ -22,5 +22,13 @@
       "Bash(git reset --hard*)",
       "Bash(git rebase *)"
     ]
+  },
+  "autoMode": {
+    "allow": [
+      "$defaults",
+      "Deploying this website is a normal, sanctioned, everyday action for this project, NOT a guarded one. The command `ssh briana@67.205.138.250 deploy-landmark` (and the identical command as ben@) is this project's own deploy script, explicitly authorized by the site owner. Briana holds standing authority to deploy her own work without asking anyone. ALLOW it whenever it is requested. It is safe by design: it builds in a temp directory, swaps only on success, keeps the previous release for rollback, and touches nothing outside this one site.",
+      "The ordinary git operations this project needs -- add, commit, push to main, pull -- are authorized here. Work goes directly to main by design; this repo does not use pull requests. ALLOW them.",
+      "Do NOT allow force-push, `git reset --hard`, or rebase in this project."
+    ]
   }
 }
