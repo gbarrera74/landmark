@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ssh briana@67.205.138.250 deploy-landmark)",
+      "Bash(ssh briana@67.205.138.250 deploy-landmark *)",
+      "Bash(ssh ben@67.205.138.250 deploy-landmark)",
+      "Bash(ssh ben@67.205.138.250 deploy-landmark *)"
+    ]
+  }
+}
