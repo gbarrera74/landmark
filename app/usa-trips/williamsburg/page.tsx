@@ -46,9 +46,9 @@ export default function Williamsburg() {
         city="Williamsburg"
         lead={INTRO_P1}
         highlights={HIGHLIGHTS}
-        image="/images/landmark/williamsburg-school-great-bridge.jpg"
+        image="/images/landmark/williamsburg-intro-governors-palace.jpg"
         wideImage
-        imageAlt="Colonial Williamsburg's historic district"
+        imageAlt="A Landmark student group seated in front of the Governor's Palace in Colonial Williamsburg"
         tripCount={TRIPS.length}
       />
 
