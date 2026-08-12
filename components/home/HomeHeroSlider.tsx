@@ -54,7 +54,10 @@ const SLIDES: Slide[] = [
   },
 ]
 
-const INTERVAL = 6500
+/* 5s per slide (Ben asked for 3-5s, 2026-08-12). The 0.9s crossfade eats into
+   that, so ~4.1s of settled reading time — about right for the longest subhead
+   and the shortest that still reads as deliberate rather than restless. */
+const INTERVAL = 5000
 
 export default function HomeHeroSlider() {
   const [active, setActive] = useState(0)
@@ -137,12 +140,6 @@ export default function HomeHeroSlider() {
         ))}
       </div>
 
-      {/* The hero filled the whole viewport with no cue that the page continued,
-          so visitors landing on the homepage did not realise they could scroll. */}
-      <div className="ilm-scroll" aria-hidden="true">
-        Scroll
-        <span />
-      </div>
     </section>
   )
 }

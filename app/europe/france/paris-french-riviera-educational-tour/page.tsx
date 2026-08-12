@@ -12,7 +12,7 @@ const ArrowR = (
 
 const DAYS = [
   { title: "Day 1: Departure", acts: ["Depart the Cayman Islands for Paris"] },
-  { title: "Day 2: Arrival in Paris", acts: ["Meet your local French guide and Landmark Leader", "Guided walking tour of Paris", "Group dinner", "Return to Hotel Accommodations"] },
+  { title: "Day 2: Arrival in Paris", acts: ["Meet your local French guide and Landmark Tour Director", "Guided walking tour of Paris", "Group dinner", "Return to Hotel Accommodations"] },
   { title: "Day 3: Versailles & the Seine", acts: ["Breakfast at the hotel", "Visit the Palace of Versailles", "Packed lunch", "One-hour cruise on the River Seine", "French-speaking macaron workshop", "Group dinner", "Return to Hotel Accommodations"] },
   { title: "Day 4: The Louvre & Travel to Nice", acts: ["Breakfast at the hotel", "Visit the Louvre Museum", "Travel to Nice", "Group dinner", "Return to Hotel Accommodations"] },
   { title: "Day 5: Saint-Paul-de-Vence", acts: ["Breakfast at the hotel", "Guided trip to Saint-Paul-de-Vence", "Introduction to pétanque", "Group dinner", "Return to Hotel Accommodations"] },
@@ -36,7 +36,7 @@ const INCLUSIONS = [
   ["Hotel Accommodations", "Convenient and student-friendly lodging."],
   ["Attractions", "Access to top-rated sites and experiences."],
   ["Meals", "Delicious and well-balanced dining options."],
-  ["Tour Director", "A Landmark Tour Manager and a local French guide throughout."],
+  ["Tour Director", "A Landmark Tour Director and a local French guide throughout."],
   ["Restaurant & Driver Gratuities", "Taken care of for your convenience."],
 ]
 
