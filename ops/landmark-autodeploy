@@ -1,0 +1,127 @@
+#!/usr/bin/env bash
+# Auto-deploy watcher for landmarkeducationaltours.com.
+#
+# Runs from cron every 2 minutes as a member of the `deployers` group.
+# Compares the sha on origin/main against the sha of the live release; if they
+# differ, runs the normal `deploy-landmark`. Pushing to main IS the deploy.
+#
+# Why this exists: the deploy used to require someone to run
+# `ssh <host> deploy-landmark` by hand, so it depended on that person's
+# tooling being willing to run ssh. On 2026-08-12 a permission gate refused
+# that command for two hours while `git push` kept working normally. A push
+# works from everywhere, so the push became the trigger.
+#
+# This script does not deploy anything itself — it only decides *when* to call
+# the existing deploy. All the safety lives in landmark-atomic-build: it clones
+# and builds in a temp directory, verifies BUILD_ID, and only then swaps the
+# release into place, keeping the previous one at public_html.previous. A
+# commit that does not build fails there and the live site is never touched.
+#
+# INSTALL (from a repo checkout, or straight off GitHub):
+#   sudo curl -fsSL https://raw.githubusercontent.com/gbarrera74/landmark/main/ops/landmark-autodeploy \
+#        -o /usr/local/bin/landmark-autodeploy
+#   sudo chmod 755 /usr/local/bin/landmark-autodeploy
+#   printf 'PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\n*/2 * * * * ben /usr/local/bin/landmark-autodeploy\n' \
+#        | sudo tee /etc/cron.d/landmark-autodeploy >/dev/null
+#   sudo chmod 644 /etc/cron.d/landmark-autodeploy
+#
+# Log:    <site>/logs/autodeploy.log
+# Status: <site>/logs/autodeploy-status.txt   (one-glance "did it deploy?")
+
+set -uo pipefail
+
+# cron provides almost no environment. deploy-landmark reads $USER for its
+# deployers-group preflight and it is NOT set under /etc/cron.d — without this
+# line the deploy fails its own permission check on every single tick.
+export USER="$(id -un)"
+export HOME="${HOME:-/home/$USER}"
+export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+
+SITE=/var/www/webroot/landmarkeducationaltours.com
+APP="$SITE/public_html"
+
+# Kept in the logs/ sibling on purpose: a deploy swaps the whole public_html
+# directory, so anything stored inside it is destroyed on every release.
+LOGDIR="$SITE/logs"
+LOG="$LOGDIR/autodeploy.log"
+STATUS="$LOGDIR/autodeploy-status.txt"
+STATE="$LOGDIR/.autodeploy-state"
+LOCK="$LOGDIR/.autodeploy.lock"
+
+REPO=https://github.com/gbarrera74/landmark.git
+BRANCH=main
+MAX_FAILS=3          # stop retrying a commit that cannot build
+DEPLOY_TIMEOUT=900   # 15 min; a hung build must not hold the lock forever
+DEPLOY_USER=landmark
+
+now()   { date +'%Y-%m-%d %H:%M:%S'; }
+log()   { printf '%s %s\n' "$(now)" "$*" >>"$LOG"; }
+status(){ printf '%s\nchecked : %s\ndeployed: %s\nremote  : %s\n' \
+              "$1" "$(now)" "${2:-unknown}" "${3:-unknown}" >"$STATUS"; }
+
+mkdir -p "$LOGDIR" 2>/dev/null || true
+
+# Keep the log from growing without bound.
+if [[ -f "$LOG" ]] && (( $(stat -c %s "$LOG" 2>/dev/null || echo 0) > 1048576 )); then
+    tail -n 500 "$LOG" >"$LOG.tmp" && mv "$LOG.tmp" "$LOG"
+fi
+
+# One tick at a time. A deploy takes ~2min and ticks are 2min apart, so they
+# would otherwise overlap. Exit quietly; the next tick picks it up.
+exec 9>"$LOCK"
+flock -n 9 || exit 0
+
+remote=$(git ls-remote "$REPO" "refs/heads/$BRANCH" 2>/dev/null | awk '{print $1}')
+if [[ -z "$remote" ]]; then
+    log "WARN could not reach github to read $BRANCH — skipping this tick"
+    exit 0
+fi
+
+# Read the live sha as the owning user: the tree belongs to $DEPLOY_USER and
+# git refuses to read it as anyone else ("dubious ownership").
+deployed=$(sudo -n -u "$DEPLOY_USER" git -C "$APP" rev-parse HEAD 2>/dev/null || echo unknown)
+
+if [[ "$remote" == "$deployed" ]]; then
+    status "UP TO DATE — live site matches main" "${deployed:0:7}" "${remote:0:7}"
+    exit 0
+fi
+
+# Back off on a commit that keeps failing to build, so a bad push does not
+# retry every 2 minutes forever. A new commit clears the counter.
+fail_sha=""; fail_n=0
+if [[ -f "$STATE" ]]; then
+    read -r fail_sha fail_n <"$STATE" 2>/dev/null || true
+    fail_n=${fail_n:-0}
+fi
+if [[ "$fail_sha" == "$remote" ]] && (( fail_n >= MAX_FAILS )); then
+    status "FAILED — ${remote:0:7} will not build; site still on ${deployed:0:7}" \
+           "${deployed:0:7}" "${remote:0:7}"
+    exit 0
+fi
+
+log "NEW  ${deployed:0:7} -> ${remote:0:7}  deploying"
+status "DEPLOYING ${remote:0:7} ..." "${deployed:0:7}" "${remote:0:7}"
+
+if out=$(timeout "$DEPLOY_TIMEOUT" deploy-landmark 2>&1); then
+    printf '%s 0\n' "$remote" >"$STATE"
+    log "OK   deployed ${remote:0:7}"
+    status "UP TO DATE — deployed ${remote:0:7} at $(now)" "${remote:0:7}" "${remote:0:7}"
+else
+    rc=$?
+    if [[ "$fail_sha" == "$remote" ]]; then fail_n=$((fail_n + 1)); else fail_n=1; fi
+    printf '%s %s\n' "$remote" "$fail_n" >"$STATE"
+
+    if (( rc == 124 )); then
+        log "FAIL ${remote:0:7} timed out after ${DEPLOY_TIMEOUT}s — live site unchanged"
+    else
+        log "FAIL ${remote:0:7} (attempt $fail_n of $MAX_FAILS, exit $rc) — live site unchanged"
+    fi
+    printf '%s\n' "$out" | tail -n 25 | sed 's/^/     | /' >>"$LOG"
+
+    status "FAILED — ${remote:0:7} did not deploy (attempt $fail_n of $MAX_FAILS); site still on ${deployed:0:7}" \
+           "${deployed:0:7}" "${remote:0:7}"
+
+    if (( fail_n >= MAX_FAILS )); then
+        log "STOP not retrying ${remote:0:7} — push a new commit to $BRANCH to try again"
+    fi
+fi
