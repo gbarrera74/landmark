@@ -18,7 +18,7 @@ export default function CentralSouthAmerica() {
         eyebrow="Destinations · Central & South America"
         title={<>Central & South America <em>Destinations</em></>}
         subtitle="Rainforests, volcanoes, and vibrant cultures: safe, fully customized educational trips across Central and South America, curriculum-aligned and expertly guided."
-        image="/images/landmark/intl-costa-rica.webp"
+        image="/images/landmark/csa-hero-san-jose.jpg"
         breadcrumb={[{ label: "Destinations", href: "/destinations/" }, { label: "Central & South America" }]}
       />
 
@@ -27,7 +27,7 @@ export default function CentralSouthAmerica() {
           <div className="ile-center lm-narrow"><p className="ile-lead lm-center-lead">Guided, curriculum-aligned student programs across Central and South America, handled end to end.</p></div>
           <div className="lm-dest-grid" style={{ marginTop: 8 }}>
             <Link href="/central-south-america/costa-rica/" className="lm-dest" key="Costa Rica" aria-label="Costa Rica educational tours">
-              <img src="/images/landmark/intl-costa-rica.webp" alt="" loading="lazy" />
+              <img src="/images/landmark/csa-costa-rica-arenal.jpg" alt="" loading="lazy" />
               <span className="lm-dest-label">Costa Rica <span aria-hidden="true">&rarr;</span></span>
             </Link>
           </div>
