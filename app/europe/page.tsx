@@ -18,7 +18,7 @@ export default function Europe() {
         eyebrow="Destinations · Europe"
         title={<>Europe <em>Destinations</em></>}
         subtitle="From ancient Rome to the Norwegian fjords: immersive, safe, fully customized educational trips across Europe, curriculum-aligned and expertly guided."
-        image="/images/landmark/intl-italy.webp"
+        image="/images/landmark/europe-hero-ponte-vecchio.jpg"
         breadcrumb={[{ label: "Destinations", href: "/destinations/" }, { label: "Europe" }]}
       />
 
@@ -27,7 +27,7 @@ export default function Europe() {
           <div className="ile-center lm-narrow"><p className="ile-lead lm-center-lead">Guided, curriculum-aligned student programs across Europe, handled end to end.</p></div>
           <div className="lm-dest-grid" style={{ marginTop: 8 }}>
             <Link href="/europe/italy/" className="lm-dest" key="Italy" aria-label="Italy educational tours">
-              <img src="/images/landmark/intl-italy.webp" alt="" loading="lazy" />
+              <img src="/images/landmark/europe-italy-vatican.jpg" alt="" loading="lazy" />
               <span className="lm-dest-label">Italy <span aria-hidden="true">&rarr;</span></span>
             </Link>
             <Link href="/europe/ireland/" className="lm-dest" key="Ireland" aria-label="Ireland educational tours">
@@ -35,11 +35,11 @@ export default function Europe() {
               <span className="lm-dest-label">Ireland <span aria-hidden="true">&rarr;</span></span>
             </Link>
             <Link href="/europe/england/" className="lm-dest" key="England" aria-label="England educational tours">
-              <img src="/images/landmark/intl-england.webp" alt="" loading="lazy" />
+              <img src="/images/landmark/europe-england-london-eye.jpg" alt="" loading="lazy" />
               <span className="lm-dest-label">England <span aria-hidden="true">&rarr;</span></span>
             </Link>
             <Link href="/europe/france/" className="lm-dest" key="France" aria-label="France educational tours">
-              <img src="/images/landmark/intl-france.jpg" alt="" loading="lazy" />
+              <img src="/images/landmark/europe-france-saint-paul-de-vence.jpg" alt="" loading="lazy" />
               <span className="lm-dest-label">France <span aria-hidden="true">&rarr;</span></span>
             </Link>
             <Link href="/europe/norway/" className="lm-dest" key="Norway" aria-label="Norway educational tours">
