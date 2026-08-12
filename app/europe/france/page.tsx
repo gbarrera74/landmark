@@ -53,6 +53,7 @@ export default function France() {
         lead={INTRO_P1}
         highlights={HIGHLIGHTS}
         image="/images/landmark/france-intro-louvre.jpg"
+        wideImage
         imageAlt="The glass pyramid and courtyard of the Louvre Museum in Paris at dusk"
         tripCount={TRIPS.length}
       />

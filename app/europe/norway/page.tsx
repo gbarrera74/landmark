@@ -52,6 +52,7 @@ export default function Norway() {
         lead={INTRO_P1}
         highlights={HIGHLIGHTS}
         image="/images/landmark/norway-10day-hilltop-group.jpg"
+        wideImage
         imageAlt="A dramatic Norwegian fjord"
         tripCount={TRIPS.length}
       />

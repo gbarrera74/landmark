@@ -55,6 +55,7 @@ export default function CostaRica() {
         lead={INTRO_P1}
         highlights={HIGHLIGHTS}
         image="/images/landmark/costa-rica-intro-arenal-group.jpg"
+        wideImage
         imageAlt="A Landmark student group at a rainforest waterfall in Costa Rica"
         tripCount={TRIPS.length}
       />

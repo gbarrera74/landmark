@@ -46,6 +46,7 @@ export default function Seattle() {
         lead={INTRO_P1}
         highlights={HIGHLIGHTS}
         image="/images/landmark/seattle-school-chihuly-garden.jpg"
+        wideImage
         imageAlt="The Seattle skyline and waterfront"
         tripCount={TRIPS.length}
       />

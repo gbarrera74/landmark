@@ -47,6 +47,7 @@ export default function Savannah() {
         lead={INTRO_P1}
         highlights={HIGHLIGHTS}
         image="/images/landmark/savannah-field-eton-square.jpg"
+        wideImage
         imageAlt="Historic squares in Savannah, Georgia"
         tripCount={TRIPS.length}
       />

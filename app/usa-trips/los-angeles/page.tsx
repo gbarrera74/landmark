@@ -47,6 +47,7 @@ export default function LosAngeles() {
         lead={INTRO_P1}
         highlights={HIGHLIGHTS}
         image="/images/landmark/la-hollywood-sign.jpg"
+        wideImage
         imageAlt="The Hollywood sign above the palm-lined streets of Los Angeles"
         tripCount={TRIPS.length}
       />

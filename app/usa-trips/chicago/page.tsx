@@ -54,6 +54,7 @@ export default function Chicago() {
         lead={INTRO_P1}
         highlights={HIGHLIGHTS}
         image="/images/landmark/chicago-spanish-pilsen-murals.jpg"
+        wideImage
         imageAlt="The Chicago Theatre marquee on a Chicago educational tour"
         tripCount={TRIPS.length}
       />

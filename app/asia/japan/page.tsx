@@ -50,6 +50,7 @@ export default function Japan() {
         lead={INTRO_P1}
         highlights={HIGHLIGHTS}
         image="/images/landmark/japan-intro-chidorigafuchi.jpg"
+        wideImage
         imageAlt="Cherry blossoms and boats along the Chidorigafuchi moat in Tokyo, Japan"
         tripCount={0}
       />

@@ -54,6 +54,7 @@ export default function England() {
         lead={INTRO_P1}
         highlights={HIGHLIGHTS}
         image="/images/landmark/england-intro-westminster-abbey.jpg"
+        wideImage
         imageAlt="Westminster Abbey and a red telephone box on a London street"
         tripCount={TRIPS.length}
       />

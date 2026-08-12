@@ -47,6 +47,7 @@ export default function Charleston() {
         lead={INTRO_P1}
         highlights={HIGHLIGHTS}
         image="/images/landmark/charleston-field-rainbow-row.jpg"
+        wideImage
         imageAlt="Historic Charleston, South Carolina"
         tripCount={TRIPS.length}
       />

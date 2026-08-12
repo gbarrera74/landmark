@@ -50,6 +50,7 @@ export default function Orlando() {
         lead={INTRO_P1}
         highlights={HIGHLIGHTS}
         image="/images/landmark/orlando-extended-magic-kingdom.jpg"
+        wideImage
         imageAlt="A space shuttle launch at the Kennedy Space Center near Orlando"
         tripCount={TRIPS.length}
       />

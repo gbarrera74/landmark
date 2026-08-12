@@ -47,6 +47,7 @@ export default function Williamsburg() {
         lead={INTRO_P1}
         highlights={HIGHLIGHTS}
         image="/images/landmark/williamsburg-school-great-bridge.jpg"
+        wideImage
         imageAlt="Colonial Williamsburg's historic district"
         tripCount={TRIPS.length}
       />

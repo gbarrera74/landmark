@@ -48,6 +48,7 @@ export default function NewOrleans() {
         lead={INTRO_P1}
         highlights={HIGHLIGHTS}
         image="/images/landmark/nola-student-mardi-gras-world.jpg"
+        wideImage
         imageAlt="The French Quarter in New Orleans"
         tripCount={TRIPS.length}
       />

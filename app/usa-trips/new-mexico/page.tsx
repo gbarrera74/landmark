@@ -47,6 +47,7 @@ export default function NewMexico() {
         lead={INTRO_P1}
         highlights={HIGHLIGHTS}
         image="/images/landmark/new-mexico-school-santa-fe-college.jpg"
+        wideImage
         imageAlt="Students exploring the high desert of New Mexico"
         tripCount={TRIPS.length}
       />

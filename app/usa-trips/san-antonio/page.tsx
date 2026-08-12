@@ -48,6 +48,7 @@ export default function SanAntonio() {
         lead={INTRO_P1}
         highlights={HIGHLIGHTS}
         image="/images/landmark/san-antonio-intro-tower.jpg"
+        wideImage
         imageAlt="The River Walk in San Antonio, Texas"
         tripCount={TRIPS.length}
       />

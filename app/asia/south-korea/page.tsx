@@ -53,6 +53,7 @@ export default function SouthKorea() {
         lead={INTRO_P1}
         highlights={HIGHLIGHTS}
         image="/images/landmark/korea-intro-gamcheon.jpg"
+        wideImage
         imageAlt="The hillside houses of Gamcheon Culture Village in Busan, South Korea"
         tripCount={TRIPS.length}
       />

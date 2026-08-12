@@ -48,6 +48,7 @@ export default function MackinacIsland() {
         lead={INTRO_P1}
         highlights={HIGHLIGHTS}
         image="/images/landmark/mackinac-school-tipton-overlook.jpg"
+        wideImage
         imageAlt="Historic Fort Mackinac on Mackinac Island"
         tripCount={TRIPS.length}
       />
