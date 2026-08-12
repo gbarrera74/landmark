@@ -49,9 +49,9 @@ export default function Orlando() {
         city="Orlando"
         lead={INTRO_P1}
         highlights={HIGHLIGHTS}
-        image="/images/landmark/orlando-extended-magic-kingdom.jpg"
+        image="/images/landmark/orlando-intro-epcot.jpg"
         wideImage
-        imageAlt="A space shuttle launch at the Kennedy Space Center near Orlando"
+        imageAlt="Two Landmark travelers in front of Spaceship Earth at EPCOT, Walt Disney World"
         tripCount={TRIPS.length}
       />
 
