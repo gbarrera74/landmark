@@ -27,11 +27,11 @@ export default function Asia() {
           <div className="ile-center lm-narrow"><p className="ile-lead lm-center-lead">Guided, curriculum-aligned student programs across Asia, handled end to end.</p></div>
           <div className="lm-dest-grid" style={{ marginTop: 8 }}>
             <Link href="/asia/japan/" className="lm-dest" key="Japan" aria-label="Japan educational tours">
-              <img src="/images/landmark/intl-japan.webp" alt="" loading="lazy" />
+              <img src="/images/landmark/asia-japan-imperial-palace.jpg" alt="" loading="lazy" />
               <span className="lm-dest-label">Japan <span aria-hidden="true">&rarr;</span></span>
             </Link>
             <Link href="/asia/south-korea/" className="lm-dest" key="South Korea" aria-label="South Korea educational tours">
-              <img src="/images/landmark/intl-south-korea.webp" alt="" loading="lazy" />
+              <img src="/images/landmark/asia-south-korea-bukchon.jpg" alt="" loading="lazy" />
               <span className="lm-dest-label">South Korea <span aria-hidden="true">&rarr;</span></span>
             </Link>
           </div>
