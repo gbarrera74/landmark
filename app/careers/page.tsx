@@ -6,7 +6,17 @@ import BrochureBand from '@/components/BrochureBand'
 import JsonLd from '@/lib/seo/JsonLd'
 import { breadcrumb } from '@/lib/seo/schemas'
 
-const APPLY = 'mailto:Hello@landmarkeducationaltours.com?subject=Application%20%E2%80%94%20Trip%20Manager'
+/* Careers CTAs point at the contact form, not a mailto: link.
+   A mailto: only opens anything if the visitor has a desktop mail client
+   registered — on webmail (Gmail in a browser) clicking it does nothing at all,
+   with no error. All three buttons here were mailto: and all three appeared
+   dead to anyone without a mail client (reported by Tara 2026-08-12).
+   The address is still offered, but as VISIBLE text people can read and copy,
+   so it works even when the mailto: does not. Resumes have to go by email —
+   the contact form takes no attachments. */
+const APPLY = '/contact-us/'
+const APPLY_EMAIL = 'Hello@landmarkeducationaltours.com'
+const APPLY_MAILTO = 'mailto:Hello@landmarkeducationaltours.com?subject=Application%20%E2%80%94%20Trip%20Manager'
 
 const PERKS = [
   { title: 'Employee-Owned', text: 'We’re an employee-owned company — you share in the success you help create.', icon: (<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" /><circle cx="9" cy="7" r="4" /><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" /></svg>) },
@@ -87,6 +97,9 @@ export default function Careers() {
               </ul>
               <p style={{ color: 'var(--lm-ink-muted)', fontSize: 15, lineHeight: 1.7 }}>Travel with our groups and bring each itinerary to life — the on-the-ground role that makes every Landmark trip run smoothly.</p>
               <a href={APPLY} className="ile-btn ile-btn--primary" style={{ marginTop: 8 }}>Apply for this role</a>
+              <p style={{ color: 'var(--lm-ink-muted)', fontSize: 14, lineHeight: 1.7, marginTop: 14 }}>
+                Or send your resume to <a href={APPLY_MAILTO}>{APPLY_EMAIL}</a>
+              </p>
             </div>
           </div>
         </div>
@@ -101,6 +114,9 @@ export default function Careers() {
           <div className="lm-after-grid">
             <a href={APPLY} className="ile-btn ile-btn--ghost">Send Your Resume {ArrowR}</a>
           </div>
+          <p style={{ color: 'var(--lm-ink-muted)', fontSize: 14, lineHeight: 1.7, marginTop: 18 }}>
+            Prefer email? Send your resume to <a href={APPLY_MAILTO}>{APPLY_EMAIL}</a>
+          </p>
         </div>
       </section>
 

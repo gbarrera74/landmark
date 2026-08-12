@@ -1251,11 +1251,10 @@ select.ilm-input { appearance: none; -webkit-appearance: none; cursor: pointer;
 .lm-welcome-pills svg { width: 16px; height: 16px; color: var(--lm-primary); flex-shrink: 0; }
 
 /* ── Hero slider ── */
-/* 86svh, not 100svh: a full-viewport hero gave no hint the page continued, so
-   visitors landing on the homepage did not realise they could scroll. Leaving a
-   sliver of the next section visible (plus the .ilm-scroll cue) reads as "there
-   is more below" without shrinking the hero enough to lose its impact. */
-.lm-hero { position: relative; min-height: 86svh; overflow: hidden; background: var(--lm-primary-900); }
+/* Full-viewport hero, restored per Ben 2026-08-12. It had been cut to 86svh with
+   a "Scroll" cue underneath on the theory that a full-height hero hides the fact
+   the page continues; that treatment and its cue were both removed. */
+.lm-hero { position: relative; min-height: 100svh; overflow: hidden; background: var(--lm-primary-900); }
 .lm-hero-slide {
   position: absolute; inset: 0; display: flex; align-items: center;
   opacity: 0; visibility: hidden;
