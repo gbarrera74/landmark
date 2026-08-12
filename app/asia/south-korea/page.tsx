@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from 'next/link'
 import PageHero from '@/components/PageHero'
+import DestinationIntro from '@/components/DestinationIntro'
 import BrochureBand from '@/components/BrochureBand'
 import JsonLd from '@/lib/seo/JsonLd'
 import { breadcrumb } from '@/lib/seo/schemas'
@@ -11,8 +12,17 @@ const ArrowR = (
 
 const INTRO_P1 =
   "Educational trips to South Korea offer students an unforgettable opportunity to experience history where it began. At Landmark Educational Tours, we design South Korea field trips that connect classroom lessons to powerful, real-world moments. From walking through ancient palaces and exploring bustling modern cities to learning about the nation’s resilience through periods of conflict and rapid growth, students will gain a deeper understanding of tradition, innovation, and global perspective."
-const INTRO_P2 =
-  "Our team works closely with schools and administrators to plan every part of the trip, providing a secure, well-coordinated, and enriching experience suited to any grade level or group size. We manage travel logistics, accommodations, and guided programming so educators can focus their energy on student engagement. Let us bring your curriculum to life with an educational trip to South Korea that inspires curiosity, confidence, and a lasting love of learning."
+const HIGHLIGHTS = [
+  "Gyeongbokgung Palace and Bukchon Hanok Village",
+  "The Korean Demilitarized Zone",
+  "Gamcheon Culture Village and the Busan coast",
+  "Traditional hanbok and Korean markets",
+  "Onward travel to Shanghai and Beijing",
+]
+
+const TRIPS = [
+  { title: "Cultural & Language Immersion Experience: Seoul to Beijing", duration: "15 Day / 14 Night", img: '/images/landmark/korea-seoul-beijing-yonggungsa.jpg', href: "/asia/south-korea/cultural-language-immersion-seoul-to-beijing/" },
+]
 
 const STEPS = [
   { title: 'Contact', body: 'Our Travel Consultants are waiting to build your next trip! Contact our office to get the process started.' },
@@ -38,14 +48,39 @@ export default function SouthKorea() {
       />
 
       {/* Intro */}
-      <section className="ile-section ile-section--white">
+      <DestinationIntro
+        city="South Korea"
+        lead={INTRO_P1}
+        highlights={HIGHLIGHTS}
+        image="/images/landmark/korea-intro-gamcheon.jpg"
+        imageAlt="The hillside houses of Gamcheon Culture Village in Busan, South Korea"
+        tripCount={TRIPS.length}
+      />
+
+      {/* Trips */}
+      <section className="ile-section ile-section--cream" aria-labelledby="korea-trips-h">
         <div className="ile-container">
-          <div className="ilp-prose ilp-prose--center">
-            <p>{INTRO_P1}</p>
-            <p>{INTRO_P2}</p>
+          <div className="ile-center lm-narrow">
+            <span className="ile-eyebrow">Tours &amp; Itineraries</span>
+            <h2 id="korea-trips-h" className="lm-h2-amber">SOUTH KOREA TRIPS</h2>
+            <p className="ile-lead lm-center-lead">Every South Korea program is fully customizable to your group, grade level, subject focus, and budget.</p>
           </div>
-          <div className="ile-center" style={{ marginTop: 32 }}>
-            <Link href="/get-a-quote/" className="ile-btn ile-btn--primary">Get a Quote</Link>
+          <div className="ilm-blog-grid">
+            {TRIPS.map((t) => (
+              <Link href={t.href} className="ilm-post" key={t.title}>
+                <div className="ilm-post-img lm-trip-media">
+                  <img src={t.img} alt="" loading="lazy" />
+                  <span className="lm-tour-badge">{t.duration}</span>
+                </div>
+                <div className="ilm-post-body">
+                  <h3>{t.title}</h3>
+                  <span className="ilm-post-more">View Itinerary {ArrowR}</span>
+                </div>
+              </Link>
+            ))}
+          </div>
+          <div className="ile-center lm-after-grid">
+            <Link href="/destinations/" className="ile-btn ile-btn--ghost">Explore All International Trips</Link>
           </div>
         </div>
       </section>

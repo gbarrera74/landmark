@@ -51,6 +51,7 @@ const ROUTES: { path: string; priority: number; changeFrequency: 'weekly' | 'mon
   { path: '/europe/norway/', priority: 0.8, changeFrequency: 'monthly' },
   { path: '/europe/norway/10-day-norway-school-trip/', priority: 0.6, changeFrequency: 'monthly' },
   { path: '/asia/south-korea/', priority: 0.8, changeFrequency: 'monthly' },
+  { path: '/asia/south-korea/cultural-language-immersion-seoul-to-beijing/', priority: 0.6, changeFrequency: 'monthly' },
   { path: '/landmark-internship/', priority: 0.7, changeFrequency: 'monthly' },
   { path: '/private-school-class-trips/', priority: 0.7, changeFrequency: 'monthly' },
   { path: '/resources/', priority: 0.7, changeFrequency: 'monthly' },
