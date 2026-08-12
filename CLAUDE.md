@@ -29,19 +29,50 @@ Briana has full deploy authority. She does not need anyone's permission.
 ### For Claude
 - Work directly on `main`. No feature branches, no pull requests — Briana reviews
   the change in the preview, and that IS the review.
-- Before deploying: commit, push to `main`, THEN run the deploy. A deploy ships
-  whatever is on `main`, so an unpushed change will not go live.
 - Start the preview with the `landmark-dev` config (port 3057). Always show her the
   actual page the change affects, not just a description of what you did.
-- Deploy with `ssh briana@67.205.138.250 deploy-landmark` — pre-approved in
-  `.claude/settings.json`. Do NOT ask Ben; that is Briana's call.
-- It takes about two minutes. Success ends with `✓ Deployment complete.` Anything
-  else means it did NOT deploy — read the error out rather than retrying blindly.
-- **Check the live page afterwards.** A deploy reporting success is not proof: on
-  2026-08-10 a deploy reported success while the site served the previous day's
-  build for hours. Load the real page and confirm before saying it is done.
-- If something goes wrong, `git revert` the commit and deploy again. The server also
-  keeps the previous build for rollback.
+
+#### Deploying: pushing to main IS the deploy
+Since 2026-08-12 a cron job on the server checks `origin/main` every 2 minutes and
+deploys by itself when main is ahead of the live site. Nobody runs `ssh` anymore.
+(Watcher script: `ops/landmark-autodeploy` in this repo; installed on the server at
+`/usr/local/bin/landmark-autodeploy` via `/etc/cron.d/landmark-autodeploy`.)
+
+To deploy: **commit, push to `main`, then wait and verify.** That is the whole job.
+
+- ⚠️ **Push equals publish.** Anything that lands on `main` goes public within about
+  ten minutes, with no human approving it in between. Never push unfinished or
+  unreviewed work, and never push work Briana has not confirmed in the preview.
+  Run `git log origin/main..HEAD` before pushing so you know exactly what is about
+  to go live. If unrelated work is sitting in the tree, commit only the files for
+  the change she approved.
+- **It takes roughly ten minutes**, not two. A real deploy on 2026-08-12 took
+  9 minutes 38 seconds — the server has 3.6GB RAM with little free, so the Next
+  build is slow. Do not assume it failed and push again; you will just queue
+  another ten-minute build.
+- **There is no "✓ Deployment complete." message anymore**, because no human runs
+  the deploy. Verify two ways instead:
+  1. **Load the real live page** and confirm the change is actually there. This is
+     the one that counts. (On 2026-08-10 a deploy reported success while the site
+     served the previous day's build for hours.)
+  2. The server writes a one-line status you can read over ssh at
+     `/var/www/webroot/landmarkeducationaltours.com/logs/autodeploy-status.txt`
+     (full log alongside it at `autodeploy.log`).
+- **A failed deploy does NOT break the live site** — and this is the most likely
+  confusing failure. The build happens in a temp directory and only swaps in on
+  success, so a commit that does not build just means the site quietly stays on the
+  previous version and the change never appears. Nothing looks broken; the change
+  simply is not there. If a change has not shown up after ~10 minutes, suspect a
+  failed build and read the status file. The watcher gives up after 3 failed
+  attempts on the same commit; pushing a new commit makes it try again.
+- Run `npm run build` locally before pushing. It catches the errors that would
+  otherwise fail silently on the server.
+- If something goes wrong, `git revert` the commit and push again — the revert
+  deploys itself the same way. The server also keeps the previous build at
+  `public_html.previous` for rollback.
+- **Emergency fallback only:** if the cron watcher ever stops running, a deploy can
+  still be triggered by hand with `ssh briana@67.205.138.250 deploy-landmark`. This
+  is not the normal path — do not reach for it unless pushes have stopped deploying.
 
 ## Repo
 - Lives at `~/landmark-site` (in HOME, NOT Documents/Desktop — those sync to iCloud
