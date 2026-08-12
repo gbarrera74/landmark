@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from 'next/link'
 import PageHero from '@/components/PageHero'
+import DestinationIntro from '@/components/DestinationIntro'
 import BrochureBand from '@/components/BrochureBand'
 import JsonLd from '@/lib/seo/JsonLd'
 import { breadcrumb } from '@/lib/seo/schemas'
@@ -11,8 +12,18 @@ const ArrowR = (
 
 const INTRO_P1 =
   "England tells a story of monarchy, literature, and lasting global influence. Through our thoughtfully designed Educational Trips in England, students encounter centuries of royal history and the literary voices that shaped the English language. Visiting iconic landmarks becomes a catalyst for meaningful reflection and cultural discovery."
-const INTRO_P2 =
-  "Our educational tours in England weave together history, literature, and tradition into one cohesive learning journey. From touring historic castles and cathedrals to walking in the footsteps of literary legends, each stop invites students to think critically about how the past continues to shape the present. Landmark Educational Tours handles the coordination so that educators can focus on facilitating meaningful discussions. Educational Trips in England leave students empowered with a broader worldview and a deeper appreciation for history and culture."
+const HIGHLIGHTS = [
+  "Shakespeare's Globe and a West End performance",
+  "Westminster Abbey and Poets' Corner",
+  "The British Museum and the British Library",
+  "Shakespeare's Stratford-upon-Avon",
+  "The colleges of Oxford and Georgian Bath",
+]
+
+const TRIPS = [
+  { title: "England School Trip", duration: "8 Day / 7 Night", img: '/images/landmark/england-school-trip-buckingham.jpg', href: "/europe/england/england-school-trip/" },
+  { title: "England Theatre, Literature & Culture", duration: "8 Day / 7 Night", img: '/images/landmark/england-theatre-trafalgar-square.jpg', href: "/europe/england/england-theatre-literature-culture/" },
+]
 
 const STEPS = [
   { title: 'Contact', body: 'Our Travel Consultants are waiting to build your next trip! Contact our office to get the process started.' },
@@ -38,14 +49,39 @@ export default function England() {
       />
 
       {/* Intro */}
-      <section className="ile-section ile-section--white">
+      <DestinationIntro
+        city="England"
+        lead={INTRO_P1}
+        highlights={HIGHLIGHTS}
+        image="/images/landmark/england-intro-westminster-abbey.jpg"
+        imageAlt="Westminster Abbey and a red telephone box on a London street"
+        tripCount={TRIPS.length}
+      />
+
+      {/* Trips */}
+      <section className="ile-section ile-section--cream" aria-labelledby="england-trips-h">
         <div className="ile-container">
-          <div className="ilp-prose ilp-prose--center">
-            <p>{INTRO_P1}</p>
-            <p>{INTRO_P2}</p>
+          <div className="ile-center lm-narrow">
+            <span className="ile-eyebrow">Tours &amp; Itineraries</span>
+            <h2 id="england-trips-h" className="lm-h2-amber">ENGLAND TRIPS</h2>
+            <p className="ile-lead lm-center-lead">Every England program is fully customizable to your group, grade level, subject focus, and budget.</p>
           </div>
-          <div className="ile-center" style={{ marginTop: 32 }}>
-            <Link href="/get-a-quote/" className="ile-btn ile-btn--primary">Get a Quote</Link>
+          <div className="ilm-blog-grid">
+            {TRIPS.map((t) => (
+              <Link href={t.href} className="ilm-post" key={t.title}>
+                <div className="ilm-post-img lm-trip-media">
+                  <img src={t.img} alt="" loading="lazy" />
+                  <span className="lm-tour-badge">{t.duration}</span>
+                </div>
+                <div className="ilm-post-body">
+                  <h3>{t.title}</h3>
+                  <span className="ilm-post-more">View Itinerary {ArrowR}</span>
+                </div>
+              </Link>
+            ))}
+          </div>
+          <div className="ile-center lm-after-grid">
+            <Link href="/destinations/" className="ile-btn ile-btn--ghost">Explore All International Trips</Link>
           </div>
         </div>
       </section>
