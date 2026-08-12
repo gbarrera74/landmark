@@ -12,7 +12,7 @@ const ArrowR = (
 
 const DAYS = [
   { title: "Day 1: Departure", acts: ["Depart to Seoul, South Korea"] },
-  { title: "Day 2: Arrival in Seoul", acts: ["Arrival at ICN Airport", "Meet your local tour guide and Landmark Leader", "Return to Hotel Accommodations"] },
+  { title: "Day 2: Arrival in Seoul", acts: ["Arrival at ICN Airport", "Meet your local tour guide and Landmark Tour Director", "Return to Hotel Accommodations"] },
   { title: "Day 3: Seoul", acts: ["Breakfast at the hotel", "Visit Gwangjang Market", "See the Guard Changing Ceremony at Gwanghwamun", "Wear a traditional Korean hanbok", "Visit Gyeongbokgung Palace", "Visit Bukchon Hanok Village", "Visit the National Folk Museum of Korea", "Explore Insadong", "Lunch included", "Return to Hotel Accommodations"] },
   { title: "Day 4: The DMZ", acts: ["Breakfast at the hotel", "Full-day tour of the Korean Demilitarized Zone", "Visit Imjingak Park", "Walk to Freedom Bridge", "Visit the 3rd Infiltration Tunnel", "Visit the DMZ Exhibition Hall", "View North Korea from Dora Observatory", "Lunch included", "Return to Hotel Accommodations"] },
   { title: "Day 5: Travel to Busan", acts: ["Breakfast at the hotel", "Travel to Busan", "Return to Hotel Accommodations"] },
@@ -30,7 +30,7 @@ const DAYS = [
 
 const WHY = [
   { label: "Two Countries, One Trip", text: "Seoul, Busan, Shanghai, and Beijing across fifteen days." },
-  { label: "Language in Practice", text: "A local guide and a Landmark Leader travel with the group throughout." },
+  { label: "Language in Practice", text: "A local guide and a Landmark Tour Director travel with the group throughout." },
   { label: "Living History", text: "Gyeongbokgung Palace, the DMZ, the Forbidden City, and the Great Wall." },
   { label: "Hands-On Culture", text: "Wear a hanbok, practice calligraphy, and visit a hutong family." },
 ]
@@ -42,12 +42,12 @@ const INCLUSIONS = [
   ["Hotel Accommodations", "Convenient and student-friendly lodging."],
   ["Attractions", "Access to top-rated sites and experiences."],
   ["Meals", "Meals as specified in the itinerary."],
-  ["Tour Director", "A Landmark Leader and a local guide throughout."],
+  ["Tour Director", "A Landmark Tour Director and a local guide throughout."],
   ["Taxes & Gratuities", "Taken care of for your convenience."],
 ]
 
 const DESC_P1 = "Embark on an unforgettable fifteen-day journey from Seoul to Beijing! This itinerary pairs South Korea and China in a single trip, taking students from the palaces and markets of Seoul to the Korean Demilitarized Zone, down the coast to Busan, and on to Shanghai and Beijing. Along the way they walk the Great Wall, stand in Tiananmen Square, and explore the Forbidden City."
-const DESC_P2 = "This is a cultural and language immersion experience as much as a sightseeing trip. Students wear a traditional Korean hanbok, practice Chinese brush calligraphy, and spend time with a family in a Beijing hutong. A local guide and a Landmark Leader travel with the group from start to finish, adding context at every stop. Landmark Educational Tours coordinates every detail, from international flights to on-the-ground logistics, so educators can focus on the learning."
+const DESC_P2 = "This is a cultural and language immersion experience as much as a sightseeing trip. Students wear a traditional Korean hanbok, practice Chinese brush calligraphy, and spend time with a family in a Beijing hutong. A local guide and a Landmark Tour Director travel with the group from start to finish, adding context at every stop. Landmark Educational Tours coordinates every detail, from international flights to on-the-ground logistics, so educators can focus on the learning."
 
 const sampleTab = (
   <>
