@@ -519,4 +519,16 @@ export const WP_REDIRECTS: Redirect[] = [
   // through the rule above it.
   { source: "/international/canada/embed", destination: "/canada/", permanent: true },
   { source: "/:path*/embed", destination: "/:path*/", permanent: true },
+
+  // --- Fourth post-cutover sweep (2026-08-12) ---
+  // Legacy "<city>-tours" URLs again, but San Francisco is NOT like the
+  // Washington DC / New York cases above: there is no /usa-trips/san-francisco/
+  // page (verified 404), so pointing at the city would just swap one 404 for
+  // another. Send the whole branch to the hub instead.
+  { source: "/usa-trips/san-francisco-tours/:path*", destination: "/usa-trips/", permanent: true },
+
+  // Elementor MetForm artifact — the old WordPress form plugin exposed its
+  // actions under /blog/metform-form/*. The real destination still exists:
+  // /get-a-quote/ returns 200, and /quote/ and /plan-a-trip/ already point there.
+  { source: "/blog/metform-form/:path*", destination: "/get-a-quote/", permanent: true },
 ]
