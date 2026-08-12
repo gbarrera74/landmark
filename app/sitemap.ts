@@ -36,6 +36,7 @@ const ROUTES: { path: string; priority: number; changeFrequency: 'weekly' | 'mon
   { path: '/europe/france/', priority: 0.8, changeFrequency: 'monthly' },
   { path: '/europe/ireland/', priority: 0.8, changeFrequency: 'monthly' },
   { path: '/europe/ireland/historic-ireland/', priority: 0.6, changeFrequency: 'monthly' },
+  { path: '/europe/france/paris-french-riviera-educational-tour/', priority: 0.6, changeFrequency: 'monthly' },
   { path: '/europe/england/england-school-trip/', priority: 0.6, changeFrequency: 'monthly' },
   { path: '/europe/england/england-theatre-literature-culture/', priority: 0.6, changeFrequency: 'monthly' },
   { path: '/europe/italy/', priority: 0.8, changeFrequency: 'monthly' },
