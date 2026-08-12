@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from 'next/link'
 import PageHero from '@/components/PageHero'
+import DestinationIntro from '@/components/DestinationIntro'
 import BrochureBand from '@/components/BrochureBand'
 import JsonLd from '@/lib/seo/JsonLd'
 import { breadcrumb } from '@/lib/seo/schemas'
@@ -11,8 +12,14 @@ const ArrowR = (
 
 const INTRO_P1 =
   "Japan tells a story of tradition, innovation, and cultural harmony. Through our thoughtfully designed Educational Trips in Japan, students encounter centuries-old customs alongside cutting-edge technology, discovering how the past and future coexist in daily life. Visiting historic temples and modern city centers becomes a catalyst for meaningful reflection and cultural discovery."
-const INTRO_P2 =
-  "Our educational tours in Japan blend history, innovation, and cultural immersion into one cohesive learning journey. From participating in traditional customs to exploring centers of technological advancement, each stop invites students to think critically about how honor, discipline, and progress shape a society. Landmark Educational Tours handles the coordination so that educators can focus on facilitating meaningful discussions. Educational Trips in Japan leave students empowered with a broader worldview and a deeper appreciation for global culture."
+
+const HIGHLIGHTS = [
+  "Historic temples and shrines",
+  "Cherry blossom season in Tokyo",
+  "Traditional customs and etiquette",
+  "Centers of modern technology and design",
+  "Everyday life in Japan's cities",
+]
 
 const STEPS = [
   { title: 'Contact', body: 'Our Travel Consultants are waiting to build your next trip! Contact our office to get the process started.' },
@@ -38,17 +45,14 @@ export default function Japan() {
       />
 
       {/* Intro */}
-      <section className="ile-section ile-section--white">
-        <div className="ile-container">
-          <div className="ilp-prose ilp-prose--center">
-            <p>{INTRO_P1}</p>
-            <p>{INTRO_P2}</p>
-          </div>
-          <div className="ile-center" style={{ marginTop: 32 }}>
-            <Link href="/get-a-quote/" className="ile-btn ile-btn--primary">Get a Quote</Link>
-          </div>
-        </div>
-      </section>
+      <DestinationIntro
+        city="Japan"
+        lead={INTRO_P1}
+        highlights={HIGHLIGHTS}
+        image="/images/landmark/japan-intro-chidorigafuchi.jpg"
+        imageAlt="Cherry blossoms and boats along the Chidorigafuchi moat in Tokyo, Japan"
+        tripCount={0}
+      />
 
       {/* International-only: Travel, Handled */}
       <section className="ile-section ile-section--white" aria-labelledby="japan-handled-h">
