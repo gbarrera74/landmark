@@ -45,9 +45,9 @@ export default function Seattle() {
         city="Seattle"
         lead={INTRO_P1}
         highlights={HIGHLIGHTS}
-        image="/images/landmark/seattle-school-chihuly-garden.webp"
+        image="/images/landmark/seattle-intro-waterfront.webp"
         wideImage
-        imageAlt="The Seattle skyline and waterfront"
+        imageAlt="The Seattle waterfront on Elliott Bay, with the Great Wheel and the Space Needle"
         tripCount={TRIPS.length}
       />
 
