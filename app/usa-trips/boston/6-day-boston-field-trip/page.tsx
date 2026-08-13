@@ -38,7 +38,7 @@ const INCLUSIONS = [
 ]
 
 const RELATED = [
-  { title: "3 Day Boston Field Trip", img: "/images/landmark/boston-duck-boat-tour.jpeg", href: "/usa-trips/boston/3-day-boston-field-trip/" },
+  { title: "3 Day Boston Field Trip", img: "/images/landmark/boston-duck-boat-tour.webp", href: "/usa-trips/boston/3-day-boston-field-trip/" },
   { title: "Boston & Newport School Trip", img: "/images/landmark/newport-mansion.jpg", href: "/usa-trips/boston/boston-and-newport-school-trip/" },
   { title: "Boston & Salem School Trip", img: "/images/landmark/salem-massachusetts.jpg", href: "/usa-trips/boston/boston-and-salem-school-trip/" },
 ]

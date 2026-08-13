@@ -35,7 +35,7 @@ const INCLUSIONS = [
 
 const RELATED = [
   { title: "3 Day New Orleans School Trip", img: "/images/landmark/new-orleans-2.jpg", href: "/usa-trips/new-orleans/3-day-new-orleans-school-trip/" },
-  { title: "New Orleans Field Trip", img: "/images/landmark/new-orleans-3.jpg", href: "/usa-trips/new-orleans/new-orleans-field-trip/" },
+  { title: "New Orleans Field Trip", img: "/images/landmark/new-orleans-3.webp", href: "/usa-trips/new-orleans/new-orleans-field-trip/" },
 ]
 
 const DESC_P1 = "Embark on an exciting two-day educational adventure in New Orleans, designed to inspire students of all grade levels! Discover the vibrant history, iconic landmarks, and rich cultural traditions of the Crescent City with visits to the French Quarter, Jackson Square, and the historic St. Louis Cathedral. From exploring the stories of resilience at the National WWII Museum to experiencing the rhythms of jazz and Creole cuisine, this immersive trip promises a hands-on learning experience that will leave students inspired and excited about history, music, and the unique culture of New Orleans."
@@ -102,7 +102,7 @@ export default function Itin_usa_trips__new_orleans_tours__new_orleans_student_t
         eyebrow="New Orleans · 2 Day / 1 Night"
         title={<>New Orleans Student Tour</>}
         subtitle="Spend two immersive days exploring the French Quarter, Cajun cooking, and jazz heritage that make the Crescent City unforgettable for student groups."
-        image="/images/landmark/new-orleans-1.jpg"
+        image="/images/landmark/new-orleans-1.webp"
         breadcrumb={[
         { label: "Destinations", href: "/destinations/" },
         { label: "New Orleans", href: "/usa-trips/new-orleans/" },

@@ -38,7 +38,7 @@ const INCLUSIONS = [
 ]
 
 const RELATED = [
-  { title: "7 Day Costa Rica School Trip", img: "/images/landmark/costa-rica-1.jpg", href: "/central-south-america/costa-rica/7-day-costa-rica-school-trip/" },
+  { title: "7 Day Costa Rica School Trip", img: "/images/landmark/costa-rica-1.webp", href: "/central-south-america/costa-rica/7-day-costa-rica-school-trip/" },
 ]
 
 const DESC_P1 = "Embark on an exciting six-day educational adventure in Costa Rica, designed to inspire students with hands-on experiences in biodiversity, conservation, and cultural immersion! Discover lush rainforests, active volcanoes, and breathtaking coastlines while engaging in eco-adventures like zip-lining, wildlife observation, and hiking through national parks. From participating in sustainability initiatives to connecting with local communities, this trip promises an immersive, hands-on learning experience that will leave students excited about environmental science, global citizenship, and the natural wonders of Costa Rica."

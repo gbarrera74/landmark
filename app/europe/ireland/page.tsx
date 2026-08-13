@@ -53,7 +53,7 @@ export default function Ireland() {
         city="Ireland"
         lead={INTRO_P1}
         highlights={HIGHLIGHTS}
-        image="/images/landmark/ireland-intro-cliffs-of-moher.jpg"
+        image="/images/landmark/ireland-intro-cliffs-of-moher.webp"
         wideImage
         imageAlt="The Cliffs of Moher rising above the Atlantic on Ireland's western coast"
         tripCount={TRIPS.length}

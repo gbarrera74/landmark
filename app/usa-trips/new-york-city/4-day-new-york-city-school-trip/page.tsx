@@ -105,7 +105,7 @@ export default function Itin_usa_trips__new_york_city_tours__4_day_new_york_city
         eyebrow="New York City · 4 Day / 3 Night"
         title={<>4 Day New York City School Trip</>}
         subtitle="Explore the Big Apple over four days as students discover iconic landmarks, world-class museums, Broadway, and vibrant neighborhoods."
-        image="/images/landmark/emms-nyc.jpg"
+        image="/images/landmark/emms-nyc.webp"
         breadcrumb={[
         { label: "Destinations", href: "/destinations/" },
         { label: "New York City", href: "/usa-trips/new-york-city/" },

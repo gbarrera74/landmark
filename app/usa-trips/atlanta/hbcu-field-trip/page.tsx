@@ -105,7 +105,7 @@ export default function Itin_usa_trips__atlanta__hbcu_field_trip() {
         eyebrow="Atlanta · 4 Day / 3 Night"
         title={<>HBCU Field Trip</>}
         subtitle="Take students across historic HBCU campuses in Atlanta and Alabama for guided tours, admissions sessions, and unforgettable cultural experiences."
-        image="/images/landmark/hbcu-campus-building.jpg"
+        image="/images/landmark/hbcu-campus-building.webp"
         breadcrumb={[
         { label: "Destinations", href: "/destinations/" },
         { label: "Atlanta", href: "/usa-trips/atlanta/" },

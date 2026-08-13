@@ -62,7 +62,7 @@ export default function AboutLandmark() {
         eyebrow="Our passion for travel is indescribable"
         title={<>About <em>Landmark</em></>}
         subtitle="We are an employee-owned team crafting educational group journeys that inspire, educate, and connect travelers of every age."
-        image="/images/landmark/emms-nyc.jpg"
+        image="/images/landmark/emms-nyc.webp"
         // Near-square photo (1100x1080) in a wide hero band: the default centre
         // crop cut every face off the top. Hold the crop high on the faces.
         imagePosition="center 28%"

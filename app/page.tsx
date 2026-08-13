@@ -72,17 +72,17 @@ const THEMED_INTRO =
   'From STEM and civics in Washington, D.C. to French immersion in Quebec City and the Broadway stage in New York, every Landmark theme is crafted around your subject and your students: hands-on, age-appropriate, and unforgettable.'
 
 const THEMED = [
-  { location: 'Washington, D.C.', theme: 'AP History', img: '/images/landmark/fdr-memorial-dc.jpg', href: '/usa-trips/washington-dc/4-day-washington-dc-school-trip/' },
+  { location: 'Washington, D.C.', theme: 'AP History', img: '/images/landmark/fdr-memorial-dc.webp', href: '/usa-trips/washington-dc/4-day-washington-dc-school-trip/' },
   { location: 'Quebec City, Canada', theme: 'French Immersion', img: '/images/landmark/quebec-city-french-immersion-bridge.jpg', href: '/canada/quebec-city/5-day-quebec-city-itinerary/' },
   { location: 'New York City, New York', theme: 'Performing Arts', img: '/images/landmark/murray-high-school-nyc.jpg', href: '/usa-trips/new-york-city/nyc-performing-arts-tour/' },
 ]
 
 const GALLERY = [
-  { img: '/images/landmark/smithsonian-national-museum-american-history.jpg', alt: 'Students at the Smithsonian National Museum of American History', cls: ' ilm-gallery-item--wide' },
+  { img: '/images/landmark/smithsonian-national-museum-american-history.webp', alt: 'Students at the Smithsonian National Museum of American History', cls: ' ilm-gallery-item--wide' },
   { img: '/images/landmark/independence-hall.jpeg', alt: 'Independence Hall in Philadelphia', cls: '' },
-  { img: '/images/landmark/boston-duck-boat-tour.jpeg', alt: 'Students on a Boston Duck Boat tour', cls: ' ilm-gallery-item--tall' },
-  { img: '/images/landmark/emms-nyc.jpg', alt: 'Student group exploring New York City', cls: ' ilm-gallery-item--wide' },
-  { img: '/images/landmark/traveler-highlight-img-3406.jpg', alt: 'Travelers enjoying an educational field trip', cls: '' },
+  { img: '/images/landmark/boston-duck-boat-tour.webp', alt: 'Students on a Boston Duck Boat tour', cls: ' ilm-gallery-item--tall' },
+  { img: '/images/landmark/emms-nyc.webp', alt: 'Student group exploring New York City', cls: ' ilm-gallery-item--wide' },
+  { img: '/images/landmark/traveler-highlight-img-3406.webp', alt: 'Travelers enjoying an educational field trip', cls: '' },
 ]
 
 const PARTNERS = [
@@ -112,7 +112,7 @@ const POSTS_INTRO =
 
 const POSTS = [
   { title: 'Colonial Williamsburg Field Trip', href: '/blog/colonial-williamsburg-field-trip/', img: '/images/landmark/jamestown-settlement-va.jpg', alt: 'Jamestown Settlement in Virginia' },
-  { title: 'Williamsburg School Trip', href: '/blog/williamsburg-school-trip/', img: '/images/landmark/williamsburg-brick-building.jpg', alt: 'Historic brick building in Colonial Williamsburg' },
+  { title: 'Williamsburg School Trip', href: '/blog/williamsburg-school-trip/', img: '/images/landmark/williamsburg-brick-building.webp', alt: 'Historic brick building in Colonial Williamsburg' },
   { title: 'Top 10 things to do on a Seattle Field Trip', href: '/blog/top-10-things-to-do-on-a-seattle-field-trip/', img: '/images/landmark/seattle-skyline-sunset.jpg', alt: 'Seattle skyline at sunset' },
 ]
 

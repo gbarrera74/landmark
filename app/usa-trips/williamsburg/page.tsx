@@ -37,7 +37,7 @@ export default function Williamsburg() {
         eyebrow="Williamsburg, VA · The Colonial Capital"
         title={<>Educational Field Trips in <em>Williamsburg</em></>}
         subtitle="Walk the streets of Colonial Williamsburg, tour the Governor's Palace, and let students experience the birthplace of American independence firsthand."
-        image="/images/landmark/williamsburg-brick-building.jpg"
+        image="/images/landmark/williamsburg-brick-building.webp"
         breadcrumb={[{ label: 'Destinations', href: '/destinations/' }, { label: "Williamsburg" }]}
       />
 

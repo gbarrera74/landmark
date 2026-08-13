@@ -36,7 +36,7 @@ const INCLUSIONS = [
 
 const RELATED = [
   { title: "Civics Focused Washington, DC School Trip", img: "/images/landmark/thomas-jefferson-memorial.jpg", href: "/usa-trips/washington-dc/washington-dc-civics-student-tour/" },
-  { title: "Class Trip Programs for Middle School Students", img: "/images/landmark/dc-capitol.jpg", href: "/usa-trips/washington-dc/class-trip-programs-for-middle-school-students/" },
+  { title: "Class Trip Programs for Middle School Students", img: "/images/landmark/dc-capitol.webp", href: "/usa-trips/washington-dc/class-trip-programs-for-middle-school-students/" },
   { title: "African American History Washington, DC School Trip", img: "/images/landmark/dc-nmaahc.jpg", href: "/usa-trips/washington-dc/african-american-history-dc-student-tour/" },
 ]
 
@@ -104,7 +104,7 @@ export default function Itin_usa_trips__washington_dc__stem_washington_dc_school
         eyebrow="Washington, D.C. · 3 Day / 2 Night"
         title={<>STEM &amp; STEAM Focused Washington, DC School Trip</>}
         subtitle="A three-day STEM and STEAM immersion in Washington, DC where students explore real spacecraft, science labs, and the Smithsonian's greatest discoveries."
-        image="/images/landmark/dc-spy-museum.jpg"
+        image="/images/landmark/dc-spy-museum.webp"
         breadcrumb={[
         { label: "Destinations", href: "/destinations/" },
         { label: "Washington, D.C.", href: "/usa-trips/washington-dc/" },

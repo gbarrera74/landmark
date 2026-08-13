@@ -104,7 +104,7 @@ export default function Itin_usa_trips__washington_d_c__class_trip_programs_for_
         eyebrow="Washington, D.C. · 3 Day / 2 Night"
         title={<>Class Trip Programs for Middle School Students</>}
         subtitle="A three day educational journey through the nation's capital, blending iconic memorials, the U.S. Capitol, and Smithsonian museums for middle school groups."
-        image="/images/landmark/dc-capitol.jpg"
+        image="/images/landmark/dc-capitol.webp"
         breadcrumb={[
         { label: "Destinations", href: "/destinations/" },
         { label: "Washington, D.C.", href: "/usa-trips/washington-dc/" },

@@ -35,8 +35,8 @@ const INCLUSIONS = [
 ]
 
 const RELATED = [
-  { title: "New Orleans Student Tour", img: "/images/landmark/new-orleans-1.jpg", href: "/usa-trips/new-orleans/new-orleans-student-tour/" },
-  { title: "New Orleans Field Trip", img: "/images/landmark/new-orleans-3.jpg", href: "/usa-trips/new-orleans/new-orleans-field-trip/" },
+  { title: "New Orleans Student Tour", img: "/images/landmark/new-orleans-1.webp", href: "/usa-trips/new-orleans/new-orleans-student-tour/" },
+  { title: "New Orleans Field Trip", img: "/images/landmark/new-orleans-3.webp", href: "/usa-trips/new-orleans/new-orleans-field-trip/" },
 ]
 
 const DESC_P1 = "Embark on an exciting three-day educational adventure in New Orleans, designed to inspire students of all grade levels! Explore the city’s vibrant culture and rich history with visits to iconic landmarks like the French Quarter, Jackson Square, and St. Louis Cathedral. From discovering the stories of resilience at the National WWII Museum to experiencing the rhythm of jazz and Creole traditions, this immersive trip promises a hands-on learning experience that will leave students excited about history, music, and the unique cultural heritage of New Orleans."

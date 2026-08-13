@@ -24,7 +24,7 @@ export default function Testimonials() {
         eyebrow="Testimonials"
         title={<>What Educators <em>Say</em></>}
         subtitle="Hear directly from the teachers and group leaders who have traveled with Landmark Educational Tours."
-        image="/images/landmark/traveler-highlight-img-3406.jpg"
+        image="/images/landmark/traveler-highlight-img-3406.webp"
         breadcrumb={[{ label: 'Testimonials' }]}
       />
       <section className="ile-section ile-section--cream">

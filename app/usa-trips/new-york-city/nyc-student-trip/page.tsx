@@ -35,7 +35,7 @@ const INCLUSIONS = [
 ]
 
 const RELATED = [
-  { title: "4 Day New York City School Trip", img: "/images/landmark/emms-nyc.jpg", href: "/usa-trips/new-york-city/4-day-new-york-city-school-trip/" },
+  { title: "4 Day New York City School Trip", img: "/images/landmark/emms-nyc.webp", href: "/usa-trips/new-york-city/4-day-new-york-city-school-trip/" },
   { title: "5 Day New York City Field Trip", img: "/images/landmark/murray-high-school-nyc.jpg", href: "/usa-trips/new-york-city/5-day-new-york-city-field-trip/" },
   { title: "Art-Focused Tour of NYC", img: "/images/landmark/nyc-brooklyn-day.jpg", href: "/usa-trips/new-york-city/art-focused-tour-nyc/" },
 ]
@@ -104,7 +104,7 @@ export default function Itin_usa_trips__new_york_city_tours__nyc_student_trip() 
         eyebrow="New York City · 3 Day / 2 Night"
         title={<>New York City Student Trip</>}
         subtitle="Explore New York City with your students through iconic landmarks, world-class culture, and unforgettable behind the scenes experiences."
-        image="/images/landmark/emms-nyc.jpg"
+        image="/images/landmark/emms-nyc.webp"
         breadcrumb={[
         { label: "Destinations", href: "/destinations/" },
         { label: "New York City", href: "/usa-trips/new-york-city/" },

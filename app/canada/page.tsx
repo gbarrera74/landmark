@@ -35,7 +35,7 @@ export default function Canada() {
         eyebrow="Destinations · Canada"
         title={<>Educational Tours to <em>Canada</em></>}
         subtitle="French heritage and walled cities just across the northern border: safe, guided, curriculum-aligned student trips to Quebec City and Montreal."
-        image="/images/landmark/canada-hero-quebec-skyline.jpg"
+        image="/images/landmark/canada-hero-quebec-skyline.webp"
         breadcrumb={[{ label: "Destinations", href: "/destinations/" }, { label: "Canada" }]}
       />
 

@@ -55,7 +55,7 @@ export default function Destinations() {
               <span className="lm-dest-label">Philadelphia, PA <span aria-hidden="true">&rarr;</span></span>
             </Link>
             <Link href="/usa-trips/williamsburg/" className="lm-dest" key="Williamsburg, VA" aria-label="Williamsburg, VA educational tours">
-              <img src="/images/landmark/williamsburg-brick-building.jpg" alt="" loading="lazy" />
+              <img src="/images/landmark/williamsburg-brick-building.webp" alt="" loading="lazy" />
               <span className="lm-dest-label">Williamsburg, VA <span aria-hidden="true">&rarr;</span></span>
             </Link>
             <Link href="/usa-trips/new-orleans/" className="lm-dest" key="New Orleans, LA" aria-label="New Orleans, LA educational tours">

@@ -28,7 +28,7 @@ export default function GetAQuotePage() {
         eyebrow="Get Started"
         title={<>Tell Us About Your <em>Trip</em></>}
         subtitle="Share a few details and a Landmark Travel Consultant will build a custom, no-obligation quote for your group."
-        image="/images/landmark/hero-nyc.jpg"
+        image="/images/landmark/hero-nyc.webp"
         breadcrumb={[{ label: 'Get a Quote' }]}
       />
 

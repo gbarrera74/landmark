@@ -36,7 +36,7 @@ const INCLUSIONS = [
 
 const RELATED = [
   { title: "HBCU Campus Tours", img: "/images/landmark/dc-howard-university.jpg", href: "/usa-trips/washington-dc/hbcu-campus-tours/" },
-  { title: "Class Trip Programs for Middle School Students", img: "/images/landmark/dc-capitol.jpg", href: "/usa-trips/washington-dc/class-trip-programs-for-middle-school-students/" },
+  { title: "Class Trip Programs for Middle School Students", img: "/images/landmark/dc-capitol.webp", href: "/usa-trips/washington-dc/class-trip-programs-for-middle-school-students/" },
   { title: "African American History Washington, DC School Trip", img: "/images/landmark/dc-nmaahc.jpg", href: "/usa-trips/washington-dc/african-american-history-dc-student-tour/" },
 ]
 

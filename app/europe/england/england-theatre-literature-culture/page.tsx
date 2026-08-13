@@ -40,7 +40,7 @@ const INCLUSIONS = [
 ]
 
 const RELATED = [
-  { title: "England School Trip", img: "/images/landmark/england-school-trip-buckingham.jpg", href: "/europe/england/england-school-trip/" },
+  { title: "England School Trip", img: "/images/landmark/england-school-trip-buckingham.webp", href: "/europe/england/england-school-trip/" },
 ]
 
 const DESC_P1 = "Embark on an unforgettable eight-day journey through England's theatre, literature, history, and culture! Built around two live West End performances and a hands-on workshop at Shakespeare's Globe, this itinerary takes students from London's most famous landmarks to Stratford-upon-Avon and Oxford. Along the way they stand in Poets' Corner, explore the treasures of the British Library, and walk the streets that shaped English writing."

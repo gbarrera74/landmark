@@ -36,7 +36,7 @@ const INCLUSIONS = [
 ]
 
 const RELATED = [
-  { title: "New Orleans Student Tour", img: "/images/landmark/new-orleans-1.jpg", href: "/usa-trips/new-orleans/new-orleans-student-tour/" },
+  { title: "New Orleans Student Tour", img: "/images/landmark/new-orleans-1.webp", href: "/usa-trips/new-orleans/new-orleans-student-tour/" },
   { title: "3 Day New Orleans School Trip", img: "/images/landmark/new-orleans-2.jpg", href: "/usa-trips/new-orleans/3-day-new-orleans-school-trip/" },
 ]
 
@@ -104,7 +104,7 @@ export default function Itin_usa_trips__new_orleans_tours__new_orleans_field_tri
         eyebrow="New Orleans · 4 Day / 3 Night"
         title={<>New Orleans Field Trip</>}
         subtitle="A four day educational journey through New Orleans culture, history, and HBCU campuses built for student groups."
-        image="/images/landmark/new-orleans-3.jpg"
+        image="/images/landmark/new-orleans-3.webp"
         breadcrumb={[
         { label: "Destinations", href: "/destinations/" },
         { label: "New Orleans", href: "/usa-trips/new-orleans/" },

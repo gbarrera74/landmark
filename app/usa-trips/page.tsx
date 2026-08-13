@@ -20,7 +20,7 @@ export default function UnitedStates() {
         eyebrow="Destinations · United States"
         title={<>United States <em>Destinations</em></>}
         subtitle="From coast to coast: customizable, curriculum-aligned student trips to the cities and landmarks that shaped America."
-        image="/images/landmark/hero-nyc.jpg"
+        image="/images/landmark/hero-nyc.webp"
         breadcrumb={[{ label: "Destinations", href: "/destinations/" }, { label: "United States" }]}
       />
 
@@ -35,9 +35,9 @@ export default function UnitedStates() {
               <span className="lm-dest-label">Washington, D.C. <span aria-hidden="true">&rarr;</span></span>
             </Link>
             <Link href="/usa-trips/new-york-city/" className="lm-dest" key="New York, NY" aria-label="New York, NY educational tours">
-              {/* Was hero-nyc.jpg — the same photo as this page's own hero, so the
+              {/* Was hero-nyc.webp — the same photo as this page's own hero, so the
                   Broadway shot appeared twice. Use the NYC hub's hero instead. */}
-              <img src="/images/landmark/nyc-statue-liberty-hero.jpg" alt="" loading="lazy" />
+              <img src="/images/landmark/nyc-statue-liberty-hero.webp" alt="" loading="lazy" />
               <span className="lm-dest-label">New York, NY <span aria-hidden="true">&rarr;</span></span>
             </Link>
             <Link href="/usa-trips/atlanta/" className="lm-dest" key="Atlanta, GA" aria-label="Atlanta, GA educational tours">
@@ -57,7 +57,7 @@ export default function UnitedStates() {
               <span className="lm-dest-label">Philadelphia, PA <span aria-hidden="true">&rarr;</span></span>
             </Link>
             <Link href="/usa-trips/williamsburg/" className="lm-dest" key="Williamsburg, VA" aria-label="Williamsburg, VA educational tours">
-              <img src="/images/landmark/williamsburg-brick-building.jpg" alt="" loading="lazy" />
+              <img src="/images/landmark/williamsburg-brick-building.webp" alt="" loading="lazy" />
               <span className="lm-dest-label">Williamsburg, VA <span aria-hidden="true">&rarr;</span></span>
             </Link>
             <Link href="/usa-trips/new-orleans/" className="lm-dest" key="New Orleans, LA" aria-label="New Orleans, LA educational tours">

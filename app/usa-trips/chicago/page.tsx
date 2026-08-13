@@ -44,7 +44,7 @@ export default function Chicago() {
         eyebrow="Chicago, IL · The Windy City"
         title={<>Educational Field Trips in <em>Chicago</em></>}
         subtitle="From lakefront museums to riverfront architecture tours, Chicago turns lessons into vivid, hands-on discoveries for student groups of every grade level."
-        image="/images/landmark/chicago-hero-skyline-lake.jpg"
+        image="/images/landmark/chicago-hero-skyline-lake.webp"
         breadcrumb={[{ label: 'Destinations', href: '/destinations/' }, { label: "Chicago" }]}
       />
 

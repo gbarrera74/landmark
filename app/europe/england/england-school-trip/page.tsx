@@ -109,7 +109,7 @@ export default function Itin_europe__england__england_school_trip() {
         eyebrow="England · 8 Day / 7 Night"
         title={<>England School Trip</>}
         subtitle="Eight days across England, from London's landmarks and the West End to Stratford-upon-Avon, Bath, and Oxford."
-        image="/images/landmark/england-school-trip-buckingham.jpg"
+        image="/images/landmark/england-school-trip-buckingham.webp"
         breadcrumb={[
           { label: "Destinations", href: "/destinations/" },
           { label: "Europe", href: "/europe/" },

@@ -21,7 +21,7 @@ const HIGHLIGHTS = [
 ]
 
 const TRIPS = [
-  { title: "England School Trip", duration: "8 Day / 7 Night", img: '/images/landmark/england-school-trip-buckingham.jpg', href: "/europe/england/england-school-trip/" },
+  { title: "England School Trip", duration: "8 Day / 7 Night", img: '/images/landmark/england-school-trip-buckingham.webp', href: "/europe/england/england-school-trip/" },
   { title: "England Theatre, Literature & Culture", duration: "8 Day / 7 Night", img: '/images/landmark/england-theatre-trafalgar-square.jpg', href: "/europe/england/england-theatre-literature-culture/" },
 ]
 
@@ -44,7 +44,7 @@ export default function England() {
         eyebrow="Europe · England"
         title={<>Educational Tours to <em>England</em></>}
         subtitle="Explore royal castles, historic cathedrals, and literary landmarks that bring centuries of English history and culture to life for students."
-        image="/images/landmark/england-hero-big-ben-thames.jpg"
+        image="/images/landmark/england-hero-big-ben-thames.webp"
         breadcrumb={[{ label: 'Destinations', href: '/destinations/' }, { label: 'Europe', href: '/europe/' }, { label: "England" }]}
       />
 
@@ -53,7 +53,7 @@ export default function England() {
         city="England"
         lead={INTRO_P1}
         highlights={HIGHLIGHTS}
-        image="/images/landmark/england-intro-westminster-abbey.jpg"
+        image="/images/landmark/england-intro-westminster-abbey.webp"
         wideImage
         imageAlt="Westminster Abbey and a red telephone box on a London street"
         tripCount={TRIPS.length}

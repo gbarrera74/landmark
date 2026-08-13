@@ -36,7 +36,7 @@ const INCLUSIONS = [
 ]
 
 const RELATED = [
-  { title: "Intro to San Antonio Tour", img: "/images/landmark/san-antonio-1.jpg", href: "/usa-trips/san-antonio/intro-to-san-antonio-tour/" },
+  { title: "Intro to San Antonio Tour", img: "/images/landmark/san-antonio-1.webp", href: "/usa-trips/san-antonio/intro-to-san-antonio-tour/" },
   { title: "3 Day San Antonio School Trip", img: "/images/landmark/san-antonio-2.jpg", href: "/usa-trips/san-antonio/3-day-san-antonio-school-trip/" },
 ]
 
