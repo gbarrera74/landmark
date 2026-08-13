@@ -47,9 +47,9 @@ export default function MackinacIsland() {
         city="Mackinac Island"
         lead={INTRO_P1}
         highlights={HIGHLIGHTS}
-        image="/images/landmark/mackinac-school-tipton-overlook.webp"
+        image="/images/landmark/mackinac-intro-round-island-lighthouse.webp"
         wideImage
-        imageAlt="Historic Fort Mackinac on Mackinac Island"
+        imageAlt="The Round Island Lighthouse in the Straits of Mackinac"
         tripCount={TRIPS.length}
       />
 
