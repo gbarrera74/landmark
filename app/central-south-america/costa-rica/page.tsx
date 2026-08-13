@@ -23,7 +23,7 @@ const HIGHLIGHTS = [
 ]
 const TRIPS = [
   { title: "7 Day Costa Rica School Trip", duration: "7 Day / 6 Night", img: '/images/landmark/costa-rica-7day-rafting.jpg', href: "/central-south-america/costa-rica/7-day-costa-rica-school-trip/" },
-  { title: "6 Day Costa Rica School Trip", duration: "6 Day / 5 Night", img: '/images/landmark/costa-rica-6day-planting.jpg', href: "/central-south-america/costa-rica/6-day-costa-rica-school-trip/" },
+  { title: "6 Day Costa Rica School Trip", duration: "6 Day / 5 Night", img: '/images/landmark/costa-rica-6day-planting.webp', href: "/central-south-america/costa-rica/6-day-costa-rica-school-trip/" },
 ]
 
 const STEPS = [

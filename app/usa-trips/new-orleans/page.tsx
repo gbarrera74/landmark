@@ -20,9 +20,9 @@ const HIGHLIGHTS = [
   "Culture, resilience, and history",
 ]
 const TRIPS = [
-  { title: "New Orleans Student Tour", duration: "2 Day / 1 Night", img: '/images/landmark/nola-student-mardi-gras-world.jpg', href: "/usa-trips/new-orleans/new-orleans-student-tour/" },
+  { title: "New Orleans Student Tour", duration: "2 Day / 1 Night", img: '/images/landmark/nola-student-mardi-gras-world.webp', href: "/usa-trips/new-orleans/new-orleans-student-tour/" },
   { title: "3 Day New Orleans School Trip", duration: "3 Day / 2 Night", img: '/images/landmark/nola-3day-st-louis-cathedral.jpg', href: "/usa-trips/new-orleans/3-day-new-orleans-school-trip/" },
-  { title: "New Orleans Field Trip", duration: "4 Day / 3 Night", img: '/images/landmark/nola-field-dillard-university.jpg', href: "/usa-trips/new-orleans/new-orleans-field-trip/" },
+  { title: "New Orleans Field Trip", duration: "4 Day / 3 Night", img: '/images/landmark/nola-field-dillard-university.webp', href: "/usa-trips/new-orleans/new-orleans-field-trip/" },
 ]
 
 const STEPS = [
@@ -47,7 +47,7 @@ export default function NewOrleans() {
         city="New Orleans"
         lead={INTRO_P1}
         highlights={HIGHLIGHTS}
-        image="/images/landmark/nola-student-mardi-gras-world.jpg"
+        image="/images/landmark/nola-student-mardi-gras-world.webp"
         wideImage
         imageAlt="The French Quarter in New Orleans"
         tripCount={TRIPS.length}

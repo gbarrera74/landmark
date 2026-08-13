@@ -21,7 +21,7 @@ const HIGHLIGHTS = [
 ]
 const TRIPS = [
   { title: "Savannah Field Trip", duration: "3 Day / 2 Night", img: '/images/landmark/savannah-field-eton-square.jpg', href: "/usa-trips/savannah/savannah-field-trip/" },
-  { title: "Savannah School Trip", duration: "2 Day / 1 Night", img: '/images/landmark/savannah-school-forsyth-fountain.jpg', href: "/usa-trips/savannah/savannah-school-trip/" },
+  { title: "Savannah School Trip", duration: "2 Day / 1 Night", img: '/images/landmark/savannah-school-forsyth-fountain.webp', href: "/usa-trips/savannah/savannah-school-trip/" },
 ]
 
 const STEPS = [

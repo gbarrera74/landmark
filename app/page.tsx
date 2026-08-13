@@ -54,7 +54,7 @@ const DESTINATIONS = [
   // photo used by the TOP_TOURS cards above.
   { name: 'New York City', href: '/usa-trips/new-york-city/', img: '/images/landmark/home-nyc-bethesda-group.jpg' },
   { name: 'Boston', href: '/usa-trips/boston/', img: '/images/landmark/home-boston-duck-tour-group.jpg' },
-  { name: 'Atlanta', href: '/usa-trips/atlanta/', img: '/images/landmark/atlanta-centennial-park-group.jpg' },
+  { name: 'Atlanta', href: '/usa-trips/atlanta/', img: '/images/landmark/atlanta-centennial-park-group.webp' },
 ]
 
 // New: international educational journeys (global expansion)

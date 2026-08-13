@@ -26,7 +26,7 @@ const HIGHLIGHTS = [
 ]
 
 const TRIPS = [
-  { title: "Chicago Student Tour", duration: "3 Day / 2 Night", img: '/images/landmark/chicago-student-the-bean.jpg', href: "/usa-trips/chicago/chicago-student-tour/" },
+  { title: "Chicago Student Tour", duration: "3 Day / 2 Night", img: '/images/landmark/chicago-student-the-bean.webp', href: "/usa-trips/chicago/chicago-student-tour/" },
   { title: "The Windy City Tour", duration: "5 Day / 4 Night", img: '/images/landmark/chicago-windy-city-360.jpg', href: "/usa-trips/chicago/the-windy-city-tour/" },
   { title: "Chicago Spanish Immersion School Trip", duration: "3 Day / 2 Night", img: '/images/landmark/chicago-spanish-pilsen-murals.jpg', href: "/usa-trips/chicago/chicago-spanish-immersion-school-trip/" },
 ]

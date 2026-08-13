@@ -22,12 +22,12 @@ const HIGHLIGHTS = [
 ]
 
 const TRIPS = [
-  { title: '3 Day Boston Field Trip', duration: '3 Day / 2 Night', img: '/images/landmark/boston-3day-field-trip.jpg', href: '/usa-trips/boston/3-day-boston-field-trip/' },
+  { title: '3 Day Boston Field Trip', duration: '3 Day / 2 Night', img: '/images/landmark/boston-3day-field-trip.webp', href: '/usa-trips/boston/3-day-boston-field-trip/' },
   { title: '6 Day Boston Field Trip', duration: '6 Day / 5 Night', img: '/images/landmark/boston-6day-field-trip.jpg', href: '/usa-trips/boston/6-day-boston-field-trip/' },
-  { title: 'Boston & Newport School Trip', duration: '4 Day / 3 Night', img: '/images/landmark/boston-newport-trip.jpg', href: '/usa-trips/boston/boston-and-newport-school-trip/' },
+  { title: 'Boston & Newport School Trip', duration: '4 Day / 3 Night', img: '/images/landmark/boston-newport-trip.webp', href: '/usa-trips/boston/boston-and-newport-school-trip/' },
   { title: 'Boston & Salem School Trip', duration: '4 Day / 3 Night', img: '/images/landmark/boston-salem-witch-museum.png', href: '/usa-trips/boston/boston-and-salem-school-trip/' },
   { title: 'Boston School Trip', duration: '3 Day / 2 Night', img: '/images/landmark/ethical-culture-boston.jpg', href: '/usa-trips/boston/boston-school-trip/' },
-  { title: 'Historic Boston', duration: '2 Day / 1 Night', img: '/images/landmark/boston-historic-boston.jpg', href: '/usa-trips/boston/historic-boston/' },
+  { title: 'Historic Boston', duration: '2 Day / 1 Night', img: '/images/landmark/boston-historic-boston.webp', href: '/usa-trips/boston/historic-boston/' },
 ]
 
 const STEPS = [

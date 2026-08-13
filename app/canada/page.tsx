@@ -62,11 +62,11 @@ export default function Canada() {
           </div>
           <div className="lm-intl-grid" style={{ marginTop: 8 }}>
             <Link href="/canada/quebec-city/" className="lm-dest" key="Quebec City" aria-label="Quebec City educational tours">
-              <img src="/images/landmark/canada-quebec-city-students.jpg" alt="" loading="lazy" />
+              <img src="/images/landmark/canada-quebec-city-students.webp" alt="" loading="lazy" />
               <span className="lm-dest-label">Quebec City <span aria-hidden="true">&rarr;</span></span>
             </Link>
             <Link href="/canada/montreal/" className="lm-dest" key="Montreal" aria-label="Montreal educational tours">
-              <img src="/images/landmark/canada-montreal-bonjour-group.jpg" alt="" loading="lazy" />
+              <img src="/images/landmark/canada-montreal-bonjour-group.webp" alt="" loading="lazy" />
               <span className="lm-dest-label">Montreal <span aria-hidden="true">&rarr;</span></span>
             </Link>
           </div>

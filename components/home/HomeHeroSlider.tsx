@@ -23,7 +23,7 @@ type Slide = {
    international educational journeys, with the U.S. business still featured. */
 const SLIDES: Slide[] = [
   {
-    img: '/images/landmark/home-hero-dc-capitol-group.jpg',
+    img: '/images/landmark/home-hero-dc-capitol-group.webp',
     title: 'Educational Travel,',
     accent: 'Customized for You.',
     sub: 'Safe, custom student trips across the U.S., Europe, Asia, and beyond.',

@@ -21,8 +21,8 @@ const HIGHLIGHTS = [
   "Great Lakes natural beauty",
 ]
 const TRIPS = [
-  { title: "Mackinac Island School Trip", duration: "2 Day / 1 Night", img: '/images/landmark/mackinac-school-tipton-overlook.jpg', href: "/usa-trips/mackinac-island/mackinac-island-school-trip/" },
-  { title: "Mackinac Island Field Trip", duration: "2 Day / 1 Night", img: '/images/landmark/mackinac-field-lake-huron.jpg', href: "/usa-trips/mackinac-island/mackinac-island-field-trip/" },
+  { title: "Mackinac Island School Trip", duration: "2 Day / 1 Night", img: '/images/landmark/mackinac-school-tipton-overlook.webp', href: "/usa-trips/mackinac-island/mackinac-island-school-trip/" },
+  { title: "Mackinac Island Field Trip", duration: "2 Day / 1 Night", img: '/images/landmark/mackinac-field-lake-huron.webp', href: "/usa-trips/mackinac-island/mackinac-island-field-trip/" },
 ]
 
 const STEPS = [
@@ -47,7 +47,7 @@ export default function MackinacIsland() {
         city="Mackinac Island"
         lead={INTRO_P1}
         highlights={HIGHLIGHTS}
-        image="/images/landmark/mackinac-school-tipton-overlook.jpg"
+        image="/images/landmark/mackinac-school-tipton-overlook.webp"
         wideImage
         imageAlt="Historic Fort Mackinac on Mackinac Island"
         tripCount={TRIPS.length}
