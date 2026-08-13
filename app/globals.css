@@ -250,9 +250,18 @@ p { margin: 0; }
   font-family: var(--font-head);
 }
 .ileh-bar {
+  /* Must outrank .ileh-mobile, which is a SIBLING of this bar inside .ileh-wrap.
+     The wrap's own z-index:1000 ranks the whole header against the page, not its
+     children against each other — so without this the fixed mobile panel (z-index
+     990, positioned) painted straight over the bar and buried the close button.
+     The X was always rendered and correctly shaped; it was simply underneath the
+     menu it was meant to close (reported 2026-08-12: "no way to close out of it"). */
+  position: relative;
+  z-index: 1001;
   transition: background 0.4s var(--lm-ease), box-shadow 0.4s var(--lm-ease), padding 0.4s var(--lm-ease);
   background: transparent;
 }
+
 .ileh-wrap.is-scrolled .ileh-bar {
   background: rgba(255,255,255,0.96);
   -webkit-backdrop-filter: blur(14px);
@@ -391,6 +400,10 @@ p { margin: 0; }
 /* ── Logo recolor: white over hero, brand rust when scrolled / on light ── */
 .ileh-logo img { filter: brightness(0) invert(1); transition: filter 0.25s ease; }
 .ileh-wrap.is-scrolled .ileh-logo img { filter: none; }
+/* The mobile menu's backdrop is cream, so the white-over-hero logo vanished into
+   it — the header looked empty with the menu open. Must live here, after the
+   invert above, rather than beside the other header rules further up the file. */
+.ileh-wrap.is-menu-open .ileh-logo img { filter: none; }
 .ilef-logo { filter: brightness(0) invert(1); }
 
 /* ── Mobile mega subgroups ── */
@@ -1278,7 +1291,13 @@ select.ilm-input { appearance: none; -webkit-appearance: none; cursor: pointer;
   color: #fff;
   font-family: var(--font-head);
   font-weight: 700;
-  font-size: clamp(40px, 6.4vw, 76px);
+  /* Cap 64px, not 76px: at 76 the longest headline ("Educational Travel,
+     Customized for You.") could not fit "Educational Travel," on one line
+     inside the 640px copy column, so it wrapped to four lines and stood 316px
+     tall — oversized, and it crowded the header on short laptop screens.
+     64px fits two lines at 133px. Widening the column instead would have
+     pushed the amber text onto the bright side of the photo. */
+  font-size: clamp(40px, 6.4vw, 64px);
   line-height: 1.04;
   letter-spacing: -0.02em;
   text-shadow: 0 2px 40px rgba(0,0,0,0.45);
@@ -1286,8 +1305,13 @@ select.ilm-input { appearance: none; -webkit-appearance: none; cursor: pointer;
 }
 .lm-hero-accent { color: var(--lm-secondary); }
 /* Keep hero copy stacked on the left, inside the dark gradient (avoids amber
-   text landing on the bright right side of the photo). */
-.lm-hero-slide .ilm-hero-content { max-width: 520px; }
+   text landing on the bright right side of the photo).
+   640px, not 520px: at 520 the 76px headline could not fit "Educational" and
+   "Travel," on one line, so it wrapped to FOUR lines and stood 316px tall —
+   which read as oversized and crowded the header on short laptop screens
+   (reported 2026-08-12). 640px puts it back to two lines at 158px without
+   pushing the copy out of the dark side of the gradient. */
+.lm-hero-slide .ilm-hero-content { max-width: 640px; }
 .lm-hero-slide .ilm-hero-sub { max-width: 34ch; }
 .lm-hero-arrow {
   position: absolute; top: 50%; transform: translateY(-50%); z-index: 4;

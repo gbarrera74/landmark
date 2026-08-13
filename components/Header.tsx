@@ -151,7 +151,7 @@ export default function Header() {
   }, [mobileOpen])
 
   return (
-    <header className={`ileh-wrap${scrolled ? ' is-scrolled' : ''}`}>
+    <header className={`ileh-wrap${scrolled ? ' is-scrolled' : ''}${mobileOpen ? ' is-menu-open' : ''}`}>
       <div className="lmh-utility">
         <div className="lmh-utility-inner">
           <div className="lmh-utility-contact">
