@@ -1,0 +1,42 @@
+{
+ "slug": "marist-school",
+ "title": "Marist School",
+ "subtitle": "New York, NY · January 14–17, 2027",
+ "portal": "https://secureportal.landmarkeducationaltours.com/site/public/landmark/login/LSGCJKYKIQ",
+ "destination": "New York City",
+ "dates": "January 14–17, 2027",
+ "accountManager": "Angela",
+ "bodyHtml": "<p>Families are currently viewing Marist School&rsquo;s sample itinerary. This version provides a general overview of the experiences and activities the trip organizers hope to include. As departure nears, the school or designated trip organizer will share the most up-to-date and finalized itinerary, reflecting any adjustments, confirmed reservations, and timing updates.</p><h3>Day 1: Arrival in New York City</h3><ul><li>Depart for New York City</li><li>Arrive in New York City &mdash; welcome to NYC!</li><li>Return to hotel accommodations</li></ul><h3>Day 2: Harlem &amp; a Broadway Show</h3><ul><li>Sit-down breakfast</li><li>Self-guided Harlem walk tracing the steps of <em>Invisible Man</em>, stopping along the way to read passages &mdash; with stops at Riverside Church, Grant&rsquo;s Tomb, the Harlem YMCA, the Schomburg Center for Research in Black Culture, and Langston Hughes&rsquo;s house</li><li>Family-style lunch</li><li>Guided tour of The Studio Museum in Harlem</li><li>Dinner <em>(student expense)</em></li><li>Watch a Broadway show</li><li>Return to hotel accommodations</li></ul><h3>Day 3: The Brooklyn Bridge, Hudson Yards &amp; MoMA</h3><ul><li>Sit-down breakfast</li><li>Walk across the Brooklyn Bridge into Manhattan</li><li>Walk from downtown up through Wall Street and Canal Street</li><li>Explore Chelsea Market, Little Island, and the High Line / Hudson Yards neighborhood</li><li>Lunch <em>(student expense)</em></li><li>Visit the Edge observatory in Hudson Yards</li><li>Visit the Museum of Modern Art (MoMA)</li><li>Dinner <em>(student expense)</em></li><li>Watch a Broadway show</li><li>Return to hotel accommodations</li></ul><h3>Day 4: Sunday Mass at St. Patrick&rsquo;s Cathedral</h3><ul><li>Sit-down breakfast</li><li>Attend Sunday Mass at St. Patrick&rsquo;s Cathedral</li><li>Lunch <em>(student expense)</em></li><li>Depart for home</li></ul>",
+ "enrollmentEnds": "September 30, 2026",
+ "deposit": "$150.00",
+ "introHeading": "Marist School, get ready for an unforgettable New York City adventure in 2027! 🗽",
+ "introText": "From the stoops of Harlem to the top of Hudson Yards, this trip brings the literature, art and history of New York City to life at every turn. Students will trace the steps of Invisible Man past Riverside Church, Grant’s Tomb and the Schomburg Center, tour The Studio Museum in Harlem, walk the Brooklyn Bridge into Manhattan, take in the Museum of Modern Art and the Edge observatory, and see two Broadway shows. It’s the perfect blend of education, exploration, and fun—an experience your students will be talking about long after the trip ends.",
+ "heroImage": "/images/landmark/nyc-brooklyn-bridge-hero.webp",
+ "photos": [
+  {
+   "src": "/register/marist-nyc-brooklyn-bridge-1024x768.webp",
+   "alt": "Marist School students on the Brooklyn Bridge with the Manhattan skyline behind them"
+  },
+  {
+   "src": "/register/marist-nyc-riverside-church-1024x768.webp",
+   "alt": "Riverside Church in Harlem on a bright autumn day"
+  },
+  {
+   "src": "/register/marist-nyc-harlem-brownstones-1024x768.webp",
+   "alt": "A row of Harlem brownstones on the self-guided walking route"
+  },
+  {
+   "src": "/register/marist-nyc-moma-gallery-1024x768.webp",
+   "alt": "Students’ view of a gallery wall at the Museum of Modern Art"
+  },
+  {
+   "src": "/register/marist-nyc-moma-collection-1024x768.webp",
+   "alt": "Paintings on display in the Museum of Modern Art"
+  },
+  {
+   "src": "/register/marist-nyc-hudson-yards-vessel-1024x768.webp",
+   "alt": "Students looking up at the Vessel in Hudson Yards"
+  }
+ ],
+ "importedAt": "2026-08-12"
+}
