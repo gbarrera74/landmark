@@ -46,9 +46,9 @@ export default function Charleston() {
         city="Charleston"
         lead={INTRO_P1}
         highlights={HIGHLIGHTS}
-        image="/images/landmark/charleston-field-rainbow-row.webp"
+        image="/images/landmark/charleston-intro-broad-street.webp"
         wideImage
-        imageAlt="Historic Charleston, South Carolina"
+        imageAlt="Historic Broad Street in Charleston, South Carolina, with St. Michael's Church steeple and palmetto trees"
         tripCount={TRIPS.length}
       />
 
