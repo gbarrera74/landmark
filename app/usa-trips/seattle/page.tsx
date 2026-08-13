@@ -36,7 +36,7 @@ export default function Seattle() {
         eyebrow="Seattle, WA · The Emerald City"
         title={<>Educational Field Trips in <em>Seattle</em></>}
         subtitle="Groups explore Seattle's tech innovation, waterfront markets, and Pacific Northwest culture through hands-on museum visits and guided landmark discovery."
-        image="/images/landmark/seattle-skyline-sunset.jpg"
+        image="/images/landmark/seattle-skyline-sunset.webp"
         breadcrumb={[{ label: 'Destinations', href: '/destinations/' }, { label: "Seattle" }]}
       />
 

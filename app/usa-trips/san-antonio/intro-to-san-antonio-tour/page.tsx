@@ -37,8 +37,8 @@ const INCLUSIONS = [
 ]
 
 const RELATED = [
-  { title: "3 Day San Antonio School Trip", img: "/images/landmark/san-antonio-2.jpg", href: "/usa-trips/san-antonio/3-day-san-antonio-school-trip/" },
-  { title: "San Antonio Field Trip", img: "/images/landmark/san-antonio-3.jpg", href: "/usa-trips/san-antonio/san-antonio-field-trip/" },
+  { title: "3 Day San Antonio School Trip", img: "/images/landmark/san-antonio-2.webp", href: "/usa-trips/san-antonio/3-day-san-antonio-school-trip/" },
+  { title: "San Antonio Field Trip", img: "/images/landmark/san-antonio-3.webp", href: "/usa-trips/san-antonio/san-antonio-field-trip/" },
 ]
 
 const DESC_P1 = "Embark on an exciting five-day educational adventure in San Antonio, designed to inspire students of all grade levels! Discover the rich history, iconic landmarks, and cultural treasures of this vibrant city with visits to the Alamo, San Antonio Missions, and the historic River Walk. From exploring the city’s colonial heritage to engaging in hands-on learning experiences, this trip promises an immersive journey that will leave students excited about history, culture, and the unique spirit of San Antonio."

@@ -37,7 +37,7 @@ const INCLUSIONS = [
 const RELATED = [
   { title: "Civics Focused Washington, DC School Trip", img: "/images/landmark/thomas-jefferson-memorial.jpg", href: "/usa-trips/washington-dc/washington-dc-civics-student-tour/" },
   { title: "Class Trip Programs for Middle School Students", img: "/images/landmark/dc-capitol.webp", href: "/usa-trips/washington-dc/class-trip-programs-for-middle-school-students/" },
-  { title: "African American History Washington, DC School Trip", img: "/images/landmark/dc-nmaahc.jpg", href: "/usa-trips/washington-dc/african-american-history-dc-student-tour/" },
+  { title: "African American History Washington, DC School Trip", img: "/images/landmark/dc-nmaahc.webp", href: "/usa-trips/washington-dc/african-american-history-dc-student-tour/" },
 ]
 
 const DESC_P1 = "Spark curiosity with a three-day STEM and STEAM adventure in Washington, D.C.! Students go behind the science at the Smithsonian's world-renowned museums, standing beneath real spacecraft at the National Air and Space Museum, exploring earth science and biodiversity at the National Museum of Natural History, and uncovering the engineering and technology of intelligence at the International Spy Museum. From the Space Shuttle Discovery at the Steven F. Udvar-Hazy Center to hands-on innovation exhibits, this trip turns classroom concepts in science, technology, engineering, and math into unforgettable, real-world discovery."

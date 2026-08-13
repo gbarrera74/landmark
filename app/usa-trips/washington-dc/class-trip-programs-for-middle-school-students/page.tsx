@@ -37,7 +37,7 @@ const INCLUSIONS = [
 const RELATED = [
   { title: "HBCU Campus Tours", img: "/images/landmark/dc-howard-university.jpg", href: "/usa-trips/washington-dc/hbcu-campus-tours/" },
   { title: "Civics Focused Washington, DC School Trip", img: "/images/landmark/thomas-jefferson-memorial.jpg", href: "/usa-trips/washington-dc/washington-dc-civics-student-tour/" },
-  { title: "African American History Washington, DC School Trip", img: "/images/landmark/dc-nmaahc.jpg", href: "/usa-trips/washington-dc/african-american-history-dc-student-tour/" },
+  { title: "African American History Washington, DC School Trip", img: "/images/landmark/dc-nmaahc.webp", href: "/usa-trips/washington-dc/african-american-history-dc-student-tour/" },
 ]
 
 const DESC_P1 = "Set out on a memorable educational journey through Washington, D.C., tailored specifically for middle school students! Dive into the stories behind the city’s historic landmarks, walk through thought-provoking memorials, and explore the dynamic exhibits of the Smithsonian museums. With hands-on activities and visits to the U.S. Capitol, Arlington National Cemetery, and other iconic sites, this trip offers a perfect blend of learning and excitement that will ignite curiosity and inspire a love for history and civic engagement."

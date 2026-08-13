@@ -33,7 +33,7 @@ const INCLUSIONS = [
 ]
 
 const RELATED = [
-  { title: "Charleston School Trip", img: "/images/landmark/charleston-2.jpg", href: "/usa-trips/charleston/charleston-school-trip/" },
+  { title: "Charleston School Trip", img: "/images/landmark/charleston-2.webp", href: "/usa-trips/charleston/charleston-school-trip/" },
 ]
 
 const DESC_P1 = "Set out on an unforgettable educational journey through Charleston, South Carolina, thoughtfully designed for school groups! Students will step into America’s past while exploring cobblestone streets, historic homes, waterfront landmarks, and engaging museums that bring history, culture, and coastal life to life. From hands-on learning experiences to guided explorations of Charleston’s role in American history, this field trip blends education and discovery in a way that feels both meaningful and exciting. With its rich heritage, preserved architecture, and unique coastal setting, Charleston offers students an immersive learning environment that extends far beyond the classroom, encouraging curiosity, reflection, and a deeper connection to the stories that shaped the nation."
@@ -93,7 +93,7 @@ export default function Itin_usa_trips__charleston_sc__charleston_field_trip() {
         eyebrow="Charleston · 3 Day / 2 Night"
         title={<>Charleston Field Trip</>}
         subtitle="Students explore Charleston's cobblestone streets, historic homes, and waterfront landmarks on an immersive educational journey through the Lowcountry."
-        image="/images/landmark/charleston-1.jpg"
+        image="/images/landmark/charleston-1.webp"
         breadcrumb={[
         { label: "Destinations", href: "/destinations/" },
         { label: "Charleston", href: "/usa-trips/charleston/" },

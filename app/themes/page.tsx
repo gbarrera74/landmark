@@ -15,14 +15,14 @@ const THEMES = [
   { title: "HBCU Campus Tours", href: "/usa-trips/washington-dc/hbcu-campus-tours/", img: "/images/landmark/dc-howard-university.jpg" },
   { title: "US History & Civics", href: "/usa-trips/washington-dc/washington-dc-civics-student-tour/", img: "/images/landmark/thomas-jefferson-memorial.jpg" },
   { title: "The Crucible: Salem, MA", href: "/usa-trips/boston/boston-and-salem-school-trip/", img: "/images/landmark/salem-massachusetts.jpg" },
-  { title: "Performing Arts", href: "/usa-trips/new-york-city/nyc-performing-arts-tour/", img: "/images/landmark/broadway-sign-nyc.jpg" },
-  { title: "Spanish Immersion", href: "/usa-trips/chicago/chicago-spanish-immersion-school-trip/", img: "/images/landmark/chicago-3.jpg" },
+  { title: "Performing Arts", href: "/usa-trips/new-york-city/nyc-performing-arts-tour/", img: "/images/landmark/broadway-sign-nyc.webp" },
+  { title: "Spanish Immersion", href: "/usa-trips/chicago/chicago-spanish-immersion-school-trip/", img: "/images/landmark/chicago-3.webp" },
   { title: "French Immersion", href: "/canada/quebec-city/", img: "/images/landmark/quebec-hero.jpg" },
   { title: "YMCA / Summer Camp", href: "/usa-trips/new-york-city/ymca-summer-camp/", img: "/images/landmark/murray-high-school-nyc.jpg" },
   { title: "African American History", href: "/usa-trips/washington-dc/african-american-history-dc-student-tour/", img: "/images/landmark/themes-hero-boston-old-state-house.webp" },
   { title: "Scouts", href: "/usa-trips/washington-dc/scouts/", img: "/images/landmark/dc-hero.jpg" },
   { title: "Yellowstone School Trip", href: "/yellowstone-national-park-school-trip/", img: "/images/landmark/yellowstone-grand-prismatic.jpg" },
-  { title: "Yellowstone Field Trip", href: "/yellowstone-national-park-field-trip/", img: "/images/landmark/yellowstone-falls.jpg" },
+  { title: "Yellowstone Field Trip", href: "/yellowstone-national-park-field-trip/", img: "/images/landmark/yellowstone-falls.webp" },
   { title: "Private School Trips", href: "/private-school-class-trips/", img: "/images/landmark/philadelphia-students.jpg" },
 ]
 

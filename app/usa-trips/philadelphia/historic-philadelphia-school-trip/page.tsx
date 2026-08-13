@@ -103,7 +103,7 @@ export default function Itin_usa_trips__philadelphia_tours__historic_philadelphi
         eyebrow="Philadelphia · 3 Day / 2 Night"
         title={<>Historic Philadelphia School Trip</>}
         subtitle="Trace the birthplace of American democracy across three days of hands-on history, iconic landmarks, and world-class museums."
-        image="/images/landmark/philadelphia-3.jpg"
+        image="/images/landmark/philadelphia-3.webp"
         breadcrumb={[
         { label: "Destinations", href: "/destinations/" },
         { label: "Philadelphia", href: "/usa-trips/philadelphia/" },

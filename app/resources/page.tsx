@@ -86,7 +86,7 @@ export default function Resources() {
         <div className="ile-container">
           <div className="ilm-intro-grid">
             <div className="ilm-intro-media">
-              <img src="/images/landmark/brochure-cover-2027.png" alt="The Landmark Educational Tours 2026-2027 travel brochure cover" />
+              <img src="/images/landmark/brochure-cover-2027.webp" alt="The Landmark Educational Tours 2026-2027 travel brochure cover" />
             </div>
             <div className="ilm-intro-body">
               <span className="ile-eyebrow">Free Download</span>

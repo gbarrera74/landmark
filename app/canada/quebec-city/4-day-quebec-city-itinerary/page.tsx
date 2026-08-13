@@ -36,8 +36,8 @@ const INCLUSIONS = [
 ]
 
 const RELATED = [
-  { title: "3 Day Quebec City Trip Itinerary", img: "/images/landmark/quebec-1.jpg", href: "/canada/quebec-city/3-day-quebec-city-itinerary/" },
-  { title: "5 Day Quebec City Trip Itinerary", img: "/images/landmark/quebec-1.jpg", href: "/canada/quebec-city/5-day-quebec-city-itinerary/" },
+  { title: "3 Day Quebec City Trip Itinerary", img: "/images/landmark/quebec-1.webp", href: "/canada/quebec-city/3-day-quebec-city-itinerary/" },
+  { title: "5 Day Quebec City Trip Itinerary", img: "/images/landmark/quebec-1.webp", href: "/canada/quebec-city/5-day-quebec-city-itinerary/" },
   { title: "3 Day Quebec City Winter Itinerary", img: "/images/landmark/quebec-winter.jpg", href: "/canada/quebec-city/3-day-quebec-city-winter-itinerary/" },
 ]
 
@@ -105,7 +105,7 @@ export default function Itin_international__canada__quebec_city__4_day_quebec_ci
         eyebrow="Quebec City · 4 Day / 3 Night"
         title={<>4 Day Quebec City Trip Itinerary</>}
         subtitle="Spend four days exploring Old Quebec, the Plains of Abraham, and Montmorency Falls on an immersive French-Canadian adventure built for student groups."
-        image="/images/landmark/quebec-1.jpg"
+        image="/images/landmark/quebec-1.webp"
         breadcrumb={[
         { label: "Destinations", href: "/destinations/" },
         { label: "Canada", href: "/canada/" },

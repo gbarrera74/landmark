@@ -35,8 +35,8 @@ const INCLUSIONS = [
 ]
 
 const RELATED = [
-  { title: "4 Day Quebec City Trip Itinerary", img: "/images/landmark/quebec-1.jpg", href: "/canada/quebec-city/4-day-quebec-city-itinerary/" },
-  { title: "5 Day Quebec City Trip Itinerary", img: "/images/landmark/quebec-1.jpg", href: "/canada/quebec-city/5-day-quebec-city-itinerary/" },
+  { title: "4 Day Quebec City Trip Itinerary", img: "/images/landmark/quebec-1.webp", href: "/canada/quebec-city/4-day-quebec-city-itinerary/" },
+  { title: "5 Day Quebec City Trip Itinerary", img: "/images/landmark/quebec-1.webp", href: "/canada/quebec-city/5-day-quebec-city-itinerary/" },
   { title: "3 Day Quebec City Winter Itinerary", img: "/images/landmark/quebec-winter.jpg", href: "/canada/quebec-city/3-day-quebec-city-winter-itinerary/" },
 ]
 
@@ -104,7 +104,7 @@ export default function Itin_international__canada__quebec_city__3_day_quebec_ci
         eyebrow="Quebec City · 3 Day / 2 Night"
         title={<>3 Day Quebec City Trip Itinerary</>}
         subtitle="Spend three days exploring Quebec City's fortified old town, iconic Château Frontenac, and French-Canadian culture on an immersive student adventure."
-        image="/images/landmark/quebec-1.jpg"
+        image="/images/landmark/quebec-1.webp"
         breadcrumb={[
         { label: "Destinations", href: "/destinations/" },
         { label: "Canada", href: "/canada/" },

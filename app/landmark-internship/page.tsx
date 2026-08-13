@@ -12,7 +12,7 @@ export default function Internship() {
         eyebrow="Embark with Landmark"
         title={<>Landmark <em>Internship</em></>}
         subtitle="Grow your career while helping bring learning to life through hands, on educational travel with our internship program."
-        image="/images/landmark/boston-skyline-hero.jpg"
+        image="/images/landmark/boston-skyline-hero.webp"
         breadcrumb={[{ label: "Landmark Internship" }]}
       />
       <section className="ile-section ile-section--white">

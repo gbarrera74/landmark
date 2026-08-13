@@ -109,7 +109,7 @@ export default function Itin_europe__england__england_theatre_literature_culture
         eyebrow="England · 8 Day / 7 Night"
         title={<>England Theatre, Literature &amp; Culture</>}
         subtitle="Eight days of theatre, literature, and history, with two West End performances, Shakespeare's Globe, the Tower of London, Stratford-upon-Avon, and Oxford."
-        image="/images/landmark/england-theatre-trafalgar-square.jpg"
+        image="/images/landmark/england-theatre-trafalgar-square.webp"
         breadcrumb={[
           { label: "Destinations", href: "/destinations/" },
           { label: "Europe", href: "/europe/" },

@@ -38,7 +38,7 @@ const INCLUSIONS = [
 
 const RELATED = [
   { title: "Chicago Student Tour", img: "/images/landmark/chicago-1.jpg", href: "/usa-trips/chicago/chicago-student-tour/" },
-  { title: "Chicago Spanish Immersion School Trip", img: "/images/landmark/chicago-3.jpg", href: "/usa-trips/chicago/chicago-spanish-immersion-school-trip/" },
+  { title: "Chicago Spanish Immersion School Trip", img: "/images/landmark/chicago-3.webp", href: "/usa-trips/chicago/chicago-spanish-immersion-school-trip/" },
 ]
 
 const DESC_P1 = "Embark on an exciting five-day educational adventure in Chicago, designed to captivate students of all grade levels! Discover the rich history, iconic landmarks, and cultural treasures of the Windy City with visits to Millennium Park, the Willis Tower, and Navy Pier. From exploring world-class museums and taking a scenic architecture boat tour to experiencing the vibrant culture and history of Chicago, this trip promises an immersive, hands-on learning experience that will leave students inspired and excited about art, science, and urban innovation."

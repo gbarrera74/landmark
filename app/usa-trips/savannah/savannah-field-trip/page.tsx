@@ -33,7 +33,7 @@ const INCLUSIONS = [
 ]
 
 const RELATED = [
-  { title: "Savannah School Trip", img: "/images/landmark/savannah-2.jpg", href: "/usa-trips/savannah/savannah-school-trip/" },
+  { title: "Savannah School Trip", img: "/images/landmark/savannah-2.webp", href: "/usa-trips/savannah/savannah-school-trip/" },
 ]
 
 const DESC_P1 = "Step into an enriching educational experience with a Savannah field trip designed to take learning beyond the classroom. This thoughtfully organized trip introduces students to a city shaped by history and culture through guided visits and engaging activities at preserved sites. Exploring real locations helps students see how classroom lessons connect to the stories and places around them. By blending exploration with academic enrichment, a Savannah field trip encourages curiosity, supports critical thinking, and deepens students’ understanding of the past, while creating fun and memorable learning moments in one of Georgia’s most historic destinations."

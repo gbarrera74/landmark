@@ -37,7 +37,7 @@ const INCLUSIONS = [
 const RELATED = [
   { title: "HBCU Campus Tours", img: "/images/landmark/dc-howard-university.jpg", href: "/usa-trips/washington-dc/hbcu-campus-tours/" },
   { title: "Class Trip Programs for Middle School Students", img: "/images/landmark/dc-capitol.webp", href: "/usa-trips/washington-dc/class-trip-programs-for-middle-school-students/" },
-  { title: "African American History Washington, DC School Trip", img: "/images/landmark/dc-nmaahc.jpg", href: "/usa-trips/washington-dc/african-american-history-dc-student-tour/" },
+  { title: "African American History Washington, DC School Trip", img: "/images/landmark/dc-nmaahc.webp", href: "/usa-trips/washington-dc/african-american-history-dc-student-tour/" },
 ]
 
 const DESC_P1 = "Embark on an unforgettable three-day educational journey in Washington, D.C., designed to immerse students in the heart of American democracy! Explore the foundations of government through visits to the U.S. Capitol, Supreme Court, and National Archives, where history and law come to life. From touring iconic monuments and participating in civic-focused activities to engaging with the stories of leadership and decision-making, this trip promises an inspiring, hands-on learning experience that will ignite a passion for civic engagement and understanding."

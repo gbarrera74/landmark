@@ -40,7 +40,7 @@ const INCLUSIONS = [
 ]
 
 const RELATED = [
-  { title: "England Theatre, Literature & Culture", img: "/images/landmark/england-theatre-trafalgar-square.jpg", href: "/europe/england/england-theatre-literature-culture/" },
+  { title: "England Theatre, Literature & Culture", img: "/images/landmark/england-theatre-trafalgar-square.webp", href: "/europe/england/england-theatre-literature-culture/" },
 ]
 
 const DESC_P1 = "Embark on an unforgettable eight-day educational adventure across England, designed for students of all grade levels! From the landmarks of London to the streets of Stratford-upon-Avon, Georgian Bath, and the colleges of Oxford, this trip brings English history, literature, and theatre to life. Students tour Shakespeare's Globe, attend a West End performance, walk through the British Museum and British Library, and see the places where some of the world's best-known writers lived and worked."

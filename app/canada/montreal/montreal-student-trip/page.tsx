@@ -35,7 +35,7 @@ const INCLUSIONS = [
 ]
 
 const RELATED = [
-  { title: "2 Day Montreal School Trip", img: "/images/landmark/montreal-1.jpg", href: "/canada/montreal/2-day-montreal-school-trip/" },
+  { title: "2 Day Montreal School Trip", img: "/images/landmark/montreal-1.webp", href: "/canada/montreal/2-day-montreal-school-trip/" },
   { title: "3 Day Montreal School Trip", img: "/images/landmark/montreal-2.jpg", href: "/canada/montreal/3-day-montreal-school-trip/" },
 ]
 

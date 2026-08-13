@@ -103,7 +103,7 @@ export default function Itin_usa_trips__boston__boston_school_trip() {
         eyebrow="Boston · 2 Day / 1 Night"
         title={<>Boston School Trip</>}
         subtitle="Walk the Freedom Trail, tour the USS Constitution, and bring the American Revolution to life for your students."
-        image="/images/landmark/ethical-culture-boston.jpg"
+        image="/images/landmark/ethical-culture-boston.webp"
         breadcrumb={[
         { label: "Destinations", href: "/destinations/" },
         { label: "Boston", href: "/usa-trips/boston/" },

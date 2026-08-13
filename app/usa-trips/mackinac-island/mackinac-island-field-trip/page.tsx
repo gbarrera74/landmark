@@ -33,7 +33,7 @@ const INCLUSIONS = [
 ]
 
 const RELATED = [
-  { title: "Mackinac Island School Trip", img: "/images/landmark/mackinac-1.jpg", href: "/usa-trips/mackinac-island/mackinac-island-school-trip/" },
+  { title: "Mackinac Island School Trip", img: "/images/landmark/mackinac-1.webp", href: "/usa-trips/mackinac-island/mackinac-island-school-trip/" },
 ]
 
 const DESC_P1 = "Embark on an enriching educational journey to Mackinac Island, carefully planned for school groups seeking a one-of-a-kind learning experience. This distinctive field trip allows students to explore an island where the past is preserved and learning happens through discovery. Guided visits to historic locations and interactive educational activities help students connect classroom concepts to authentic settings and lived history. Combining hands-on exploration with academic enrichment, a Mackinac Island field trip fosters curiosity, thoughtful engagement, and a deeper appreciation for learning, while offering memorable experiences in one of the nation’s most unique destinations."

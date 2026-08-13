@@ -20,7 +20,7 @@ export default function Destinations() {
         eyebrow="Landmark Educational Tours"
         title={<>Explore Our <em>Destinations</em></>}
         subtitle="Every Landmark destination in one place: customizable, safe, curriculum-aligned educational trips across the U.S. and around the world."
-        image="/images/landmark/destinations-hero-national-mall.jpg"
+        image="/images/landmark/destinations-hero-national-mall.webp"
         breadcrumb={[{ label: "Destinations" }]}
       />
 
@@ -81,7 +81,7 @@ export default function Destinations() {
           </div>
           <div className="lm-dest-grid" style={{ marginTop: 8 }}>
             <Link href="/usa-trips/chicago/" className="lm-dest" key="Chicago, IL" aria-label="Chicago, IL educational tours">
-              <img src="/images/landmark/chicago-hero.jpg" alt="" loading="lazy" />
+              <img src="/images/landmark/chicago-hero.webp" alt="" loading="lazy" />
               <span className="lm-dest-label">Chicago, IL <span aria-hidden="true">&rarr;</span></span>
             </Link>
             <Link href="/usa-trips/mackinac-island/" className="lm-dest" key="Mackinac Island, MI" aria-label="Mackinac Island, MI educational tours">
@@ -121,7 +121,7 @@ export default function Destinations() {
               <span className="lm-dest-label">Los Angeles, CA <span aria-hidden="true">&rarr;</span></span>
             </Link>
             <Link href="/usa-trips/seattle/" className="lm-dest" key="Seattle, WA" aria-label="Seattle, WA educational tours">
-              <img src="/images/landmark/seattle-skyline-sunset.jpg" alt="" loading="lazy" />
+              <img src="/images/landmark/seattle-skyline-sunset.webp" alt="" loading="lazy" />
               <span className="lm-dest-label">Seattle, WA <span aria-hidden="true">&rarr;</span></span>
             </Link>
           </div>

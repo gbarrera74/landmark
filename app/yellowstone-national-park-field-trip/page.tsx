@@ -85,7 +85,7 @@ export default function YellowstoneField() {
         eyebrow="yellowstone national park field trip"
         title={<>Yellowstone National Park <em>Field Trip</em></>}
         subtitle="Explore geysers, hot springs, and wildlife on an unforgettable Yellowstone adventure built for curious students."
-        image="/images/landmark/yellowstone-falls.jpg"
+        image="/images/landmark/yellowstone-falls.webp"
         breadcrumb={[{ label: 'Themes', href: '/themes/' }, { label: "Yellowstone National Park Field Trip" }]}
       />
       <section className="ile-section ile-section--white">

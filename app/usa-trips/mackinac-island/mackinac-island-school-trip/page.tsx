@@ -95,7 +95,7 @@ export default function Itin_usa_trips__mackinac_island_tours__mackinac_island_s
         eyebrow="Mackinac Island · 2 Day / 1 Night"
         title={<>Mackinac Island School Trip</>}
         subtitle="Explore historic Mackinac Island on a customizable educational field trip that connects students to real places and living traditions."
-        image="/images/landmark/mackinac-1.jpg"
+        image="/images/landmark/mackinac-1.webp"
         breadcrumb={[
         { label: "Destinations", href: "/destinations/" },
         { label: "Mackinac Island", href: "/usa-trips/mackinac-island/" },

@@ -45,7 +45,7 @@ export default function UnitedStates() {
               <span className="lm-dest-label">Atlanta, GA <span aria-hidden="true">&rarr;</span></span>
             </Link>
             <Link href="/usa-trips/boston/" className="lm-dest" key="Boston, MA" aria-label="Boston, MA educational tours">
-              <img src="/images/landmark/boston-skyline-hero.jpg" alt="" loading="lazy" />
+              <img src="/images/landmark/boston-skyline-hero.webp" alt="" loading="lazy" />
               <span className="lm-dest-label">Boston, MA <span aria-hidden="true">&rarr;</span></span>
             </Link>
             <Link href="/usa-trips/orlando/" className="lm-dest" key="Orlando, FL" aria-label="Orlando, FL educational tours">
@@ -83,7 +83,7 @@ export default function UnitedStates() {
           </div>
           <div className="lm-dest-grid" style={{ marginTop: 8 }}>
             <Link href="/usa-trips/chicago/" className="lm-dest" key="Chicago, IL" aria-label="Chicago, IL educational tours">
-              <img src="/images/landmark/chicago-hero.jpg" alt="" loading="lazy" />
+              <img src="/images/landmark/chicago-hero.webp" alt="" loading="lazy" />
               <span className="lm-dest-label">Chicago, IL <span aria-hidden="true">&rarr;</span></span>
             </Link>
             <Link href="/usa-trips/mackinac-island/" className="lm-dest" key="Mackinac Island, MI" aria-label="Mackinac Island, MI educational tours">
@@ -123,7 +123,7 @@ export default function UnitedStates() {
               <span className="lm-dest-label">Los Angeles, CA <span aria-hidden="true">&rarr;</span></span>
             </Link>
             <Link href="/usa-trips/seattle/" className="lm-dest" key="Seattle, WA" aria-label="Seattle, WA educational tours">
-              <img src="/images/landmark/seattle-skyline-sunset.jpg" alt="" loading="lazy" />
+              <img src="/images/landmark/seattle-skyline-sunset.webp" alt="" loading="lazy" />
               <span className="lm-dest-label">Seattle, WA <span aria-hidden="true">&rarr;</span></span>
             </Link>
           </div>

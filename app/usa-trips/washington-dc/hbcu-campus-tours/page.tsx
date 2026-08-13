@@ -41,7 +41,7 @@ const INCLUSIONS = [
 const RELATED = [
   { title: "Class Trip Programs for Middle School Students", img: "/images/landmark/dc-capitol.webp", href: "/usa-trips/washington-dc/class-trip-programs-for-middle-school-students/" },
   { title: "Civics Focused Washington, DC School Trip", img: "/images/landmark/thomas-jefferson-memorial.jpg", href: "/usa-trips/washington-dc/washington-dc-civics-student-tour/" },
-  { title: "African American History Washington, DC School Trip", img: "/images/landmark/dc-nmaahc.jpg", href: "/usa-trips/washington-dc/african-american-history-dc-student-tour/" },
+  { title: "African American History Washington, DC School Trip", img: "/images/landmark/dc-nmaahc.webp", href: "/usa-trips/washington-dc/african-american-history-dc-student-tour/" },
 ]
 
 const DESC_P1 = "Embark on an unforgettable four-day educational adventure in Washington, DC, designed for students of all grade levels! Discover the rich history, iconic landmarks, and cultural treasures of the nation’s capital. From touring historic monuments and visiting world-famous museums to experiencing the heart of American democracy, this trip promises an immersive, hands-on learning experience that will leave students inspired and excited about history, government, and culture."

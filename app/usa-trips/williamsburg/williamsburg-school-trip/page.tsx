@@ -33,7 +33,7 @@ const INCLUSIONS = [
 ]
 
 const RELATED = [
-  { title: "Williamsburg Field Trip", img: "/images/landmark/williamsburg-2.jpg", href: "/usa-trips/williamsburg/williamsburg-field-trip/" },
+  { title: "Williamsburg Field Trip", img: "/images/landmark/williamsburg-2.webp", href: "/usa-trips/williamsburg/williamsburg-field-trip/" },
 ]
 
 const DESC_P1 = "Take students on an immersive educational journey to Williamsburg, where history becomes a hands-on learning experience. Designed especially for school groups, Williamsburg field trips allow students to step into early American life through interactive programs, guided explorations, and thoughtfully preserved historic settings. From costumed interpreters and working trades to engaging demonstrations and walkable historic areas, students gain a deeper understanding of colonial America in a way that feels active, personal, and memorable. This experience blends curriculum-based learning with discovery, helping students connect classroom lessons to real places and stories that shaped the nation."

@@ -35,9 +35,9 @@ const INCLUSIONS = [
 ]
 
 const RELATED = [
-  { title: "3 Day Quebec City Trip Itinerary", img: "/images/landmark/quebec-1.jpg", href: "/canada/quebec-city/3-day-quebec-city-itinerary/" },
-  { title: "4 Day Quebec City Trip Itinerary", img: "/images/landmark/quebec-1.jpg", href: "/canada/quebec-city/4-day-quebec-city-itinerary/" },
-  { title: "5 Day Quebec City Trip Itinerary", img: "/images/landmark/quebec-1.jpg", href: "/canada/quebec-city/5-day-quebec-city-itinerary/" },
+  { title: "3 Day Quebec City Trip Itinerary", img: "/images/landmark/quebec-1.webp", href: "/canada/quebec-city/3-day-quebec-city-itinerary/" },
+  { title: "4 Day Quebec City Trip Itinerary", img: "/images/landmark/quebec-1.webp", href: "/canada/quebec-city/4-day-quebec-city-itinerary/" },
+  { title: "5 Day Quebec City Trip Itinerary", img: "/images/landmark/quebec-1.webp", href: "/canada/quebec-city/5-day-quebec-city-itinerary/" },
 ]
 
 const DESC_P1 = "Embark on an exciting three-day educational adventure in Quebec City, designed to immerse students in the magic of winter! Experience the charm of this UNESCO World Heritage Site with visits to Old Quebec, the iconic Château Frontenac, and the historic Plains of Abraham. From exploring the breathtaking Montmorency Falls in its frozen splendor to engaging in traditional winter activities like tobogganing, ice skating, or visiting the famous Quebec Winter Carnival, this trip promises a hands-on, immersive learning experience that will leave students inspired by history, culture, and the beauty of winter in Quebec City."

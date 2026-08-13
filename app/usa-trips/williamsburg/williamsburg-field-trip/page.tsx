@@ -91,7 +91,7 @@ export default function Itin_usa_trips__williamsburg_tours__williamsburg_field_t
         eyebrow="Williamsburg · 2 Day / 1 Night"
         title={<>Williamsburg Field Trip</>}
         subtitle="Students step into early American life in Williamsburg through interactive programs, guided explorations, and thoughtfully preserved historic settings."
-        image="/images/landmark/williamsburg-2.jpg"
+        image="/images/landmark/williamsburg-2.webp"
         breadcrumb={[
         { label: "Destinations", href: "/destinations/" },
         { label: "Williamsburg", href: "/usa-trips/williamsburg/" },

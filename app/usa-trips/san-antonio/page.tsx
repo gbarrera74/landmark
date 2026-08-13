@@ -20,7 +20,7 @@ const HIGHLIGHTS = [
   "Texas independence and heritage",
 ]
 const TRIPS = [
-  { title: "Intro to San Antonio Tour", duration: "5 Day / 4 Night", img: '/images/landmark/san-antonio-intro-tower.jpg', href: "/usa-trips/san-antonio/intro-to-san-antonio-tour/" },
+  { title: "Intro to San Antonio Tour", duration: "5 Day / 4 Night", img: '/images/landmark/san-antonio-intro-tower.webp', href: "/usa-trips/san-antonio/intro-to-san-antonio-tour/" },
   { title: "3 Day San Antonio School Trip", duration: "3 Day / 2 Night", img: '/images/landmark/san-antonio-3day-mission.webp', href: "/usa-trips/san-antonio/3-day-san-antonio-school-trip/" },
   { title: "San Antonio Field Trip", duration: "4 Day / 3 Night", img: '/images/landmark/san-antonio-field-riverwalk-boats.webp', href: "/usa-trips/san-antonio/san-antonio-field-trip/" },
 ]
@@ -47,7 +47,7 @@ export default function SanAntonio() {
         city="San Antonio"
         lead={INTRO_P1}
         highlights={HIGHLIGHTS}
-        image="/images/landmark/san-antonio-intro-tower.jpg"
+        image="/images/landmark/san-antonio-intro-tower.webp"
         wideImage
         imageAlt="The River Walk in San Antonio, Texas"
         tripCount={TRIPS.length}

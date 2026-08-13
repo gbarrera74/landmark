@@ -22,7 +22,7 @@ const HIGHLIGHTS = [
 
 const TRIPS = [
   { title: "England School Trip", duration: "8 Day / 7 Night", img: '/images/landmark/england-school-trip-buckingham.webp', href: "/europe/england/england-school-trip/" },
-  { title: "England Theatre, Literature & Culture", duration: "8 Day / 7 Night", img: '/images/landmark/england-theatre-trafalgar-square.jpg', href: "/europe/england/england-theatre-literature-culture/" },
+  { title: "England Theatre, Literature & Culture", duration: "8 Day / 7 Night", img: '/images/landmark/england-theatre-trafalgar-square.webp', href: "/europe/england/england-theatre-literature-culture/" },
 ]
 
 const STEPS = [

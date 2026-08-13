@@ -36,7 +36,7 @@ const INCLUSIONS = [
 
 const RELATED = [
   { title: "The Windy City Tour", img: "/images/landmark/chicago-2.jpg", href: "/usa-trips/chicago/the-windy-city-tour/" },
-  { title: "Chicago Spanish Immersion School Trip", img: "/images/landmark/chicago-3.jpg", href: "/usa-trips/chicago/chicago-spanish-immersion-school-trip/" },
+  { title: "Chicago Spanish Immersion School Trip", img: "/images/landmark/chicago-3.webp", href: "/usa-trips/chicago/chicago-spanish-immersion-school-trip/" },
 ]
 
 const DESC_P1 = "Embark on an exciting three-day educational adventure in Chicago, designed to inspire students of all grade levels! Explore the Windy City’s rich history, iconic landmarks, and vibrant culture with visits to Millennium Park, the Willis Tower, and Navy Pier. From discovering world-class museums and learning about Chicago’s legendary architecture to engaging in hands-on experiences at innovative attractions, this trip promises an immersive, fun-filled learning experience that will leave students inspired and excited about history, science, and the arts."

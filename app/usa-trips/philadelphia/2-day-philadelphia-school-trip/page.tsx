@@ -35,7 +35,7 @@ const INCLUSIONS = [
 
 const RELATED = [
   { title: "Philadelphia Student Tour", img: "/images/landmark/philadelphia-1.jpg", href: "/usa-trips/philadelphia/philadelphia-student-tour/" },
-  { title: "Historic Philadelphia School Trip", img: "/images/landmark/philadelphia-3.jpg", href: "/usa-trips/philadelphia/historic-philadelphia-school-trip/" },
+  { title: "Historic Philadelphia School Trip", img: "/images/landmark/philadelphia-3.webp", href: "/usa-trips/philadelphia/historic-philadelphia-school-trip/" },
 ]
 
 const DESC_P1 = "Embark on an exciting two-day educational adventure in Philadelphia, designed to inspire students of all grade levels! Discover the city’s rich history and iconic landmarks with visits to Independence Hall, the Liberty Bell, and the Betsy Ross House. From walking the historic streets of Old City to engaging with interactive exhibits at the National Constitution Center, this immersive trip promises a hands-on learning experience that will leave students excited about the birthplace of American democracy and the vibrant culture of Philadelphia."
