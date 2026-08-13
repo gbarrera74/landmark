@@ -527,6 +527,23 @@ export const WP_REDIRECTS: Redirect[] = [
   // another. Send the whole branch to the hub instead.
   { source: "/usa-trips/san-francisco-tours/:path*", destination: "/usa-trips/", permanent: true },
 
+  // --- Fifth post-cutover sweep (2026-08-13) ---
+  // Legacy WordPress landing pages with no 1:1 successor -> nearest live hub.
+  { source: "/top-school-trip-destinations", destination: "/destinations/", permanent: true },
+  { source: "/our-tours", destination: "/usa-trips/", permanent: true },
+
+  // WP author archives. Same class as /tag/* and /category/* above — no Next
+  // equivalent exists, so the whole branch goes to the blog index rather than
+  // adding a rule per author as each one surfaces in the 404 log.
+  { source: "/author/:path*", destination: "/blog/", permanent: true },
+
+  // WordPress appends "__trashed" to the slug of a trashed page, and those URLs
+  // stay linked from off-site. This is the trashed twin of the /usa-trips-2/*
+  // rule above; note it needs its OWN entry because "/usa-trips-2/:path*" does
+  // not match "/usa-trips-2__trashed/..." — the suffix is part of the segment.
+  // There is no Miami page to land on, so the branch goes to the hub.
+  { source: "/usa-trips-2__trashed/:path*", destination: "/usa-trips/", permanent: true },
+
   // Elementor MetForm artifact — the old WordPress form plugin exposed its
   // actions under /blog/metform-form/*. The real destination still exists:
   // /get-a-quote/ returns 200, and /quote/ and /plan-a-trip/ already point there.
