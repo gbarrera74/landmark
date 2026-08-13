@@ -21,7 +21,7 @@ const HIGHLIGHTS = [
 ]
 
 const TRIPS = [
-  { title: "Paris & the French Riviera Educational Tour", duration: "9 Day / 8 Night", img: '/images/landmark/france-paris-riviera-versailles.jpg', href: "/europe/france/paris-french-riviera-educational-tour/" },
+  { title: "Paris & the French Riviera Educational Tour", duration: "9 Day / 8 Night", img: '/images/landmark/france-paris-riviera-versailles.webp', href: "/europe/france/paris-french-riviera-educational-tour/" },
 ]
 
 const STEPS = [
@@ -52,7 +52,7 @@ export default function France() {
         city="France"
         lead={INTRO_P1}
         highlights={HIGHLIGHTS}
-        image="/images/landmark/france-intro-louvre.jpg"
+        image="/images/landmark/france-intro-louvre.webp"
         wideImage
         imageAlt="The glass pyramid and courtyard of the Louvre Museum in Paris at dusk"
         tripCount={TRIPS.length}

@@ -106,7 +106,7 @@ export default function Itin_europe__france__paris_french_riviera_educational_to
         eyebrow="France · 9 Day / 8 Night"
         title={<>Paris &amp; the French Riviera Educational Tour</>}
         subtitle="Nine days in France, from Versailles, the Louvre, and a Seine cruise in Paris to Saint-Paul-de-Vence, Monaco, and Disneyland Paris."
-        image="/images/landmark/france-paris-riviera-versailles.jpg"
+        image="/images/landmark/france-paris-riviera-versailles.webp"
         breadcrumb={[
           { label: "Destinations", href: "/destinations/" },
           { label: "Europe", href: "/europe/" },

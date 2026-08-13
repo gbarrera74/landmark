@@ -21,7 +21,7 @@ const HIGHLIGHTS = [
 ]
 
 const TRIPS = [
-  { title: "Cultural & Language Immersion Experience: Seoul to Beijing", duration: "15 Day / 14 Night", img: '/images/landmark/korea-seoul-beijing-yonggungsa.jpg', href: "/asia/south-korea/cultural-language-immersion-seoul-to-beijing/" },
+  { title: "Cultural & Language Immersion Experience: Seoul to Beijing", duration: "15 Day / 14 Night", img: '/images/landmark/korea-seoul-beijing-yonggungsa.webp', href: "/asia/south-korea/cultural-language-immersion-seoul-to-beijing/" },
 ]
 
 const STEPS = [
@@ -52,7 +52,7 @@ export default function SouthKorea() {
         city="South Korea"
         lead={INTRO_P1}
         highlights={HIGHLIGHTS}
-        image="/images/landmark/korea-intro-gamcheon.jpg"
+        image="/images/landmark/korea-intro-gamcheon.webp"
         wideImage
         imageAlt="The hillside houses of Gamcheon Culture Village in Busan, South Korea"
         tripCount={TRIPS.length}

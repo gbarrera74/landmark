@@ -112,7 +112,7 @@ export default function Itin_asia__south_korea__cultural_language_immersion_seou
         eyebrow="South Korea & China · 15 Day / 14 Night"
         title={<>Cultural &amp; Language Immersion Experience: Seoul to Beijing</>}
         subtitle="Fifteen days from Seoul to Beijing, taking in Gyeongbokgung Palace, the DMZ, Busan, Shanghai, the Forbidden City, and the Great Wall."
-        image="/images/landmark/korea-seoul-beijing-yonggungsa.jpg"
+        image="/images/landmark/korea-seoul-beijing-yonggungsa.webp"
         breadcrumb={[
           { label: "Destinations", href: "/destinations/" },
           { label: "Asia", href: "/asia/" },
