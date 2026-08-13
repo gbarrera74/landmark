@@ -22,7 +22,7 @@ const HIGHLIGHTS = [
   "A nation built on sustainability",
 ]
 const TRIPS = [
-  { title: "7 Day Costa Rica School Trip", duration: "7 Day / 6 Night", img: '/images/landmark/costa-rica-7day-rafting.jpg', href: "/central-south-america/costa-rica/7-day-costa-rica-school-trip/" },
+  { title: "7 Day Costa Rica School Trip", duration: "7 Day / 6 Night", img: '/images/landmark/costa-rica-7day-rafting.webp', href: "/central-south-america/costa-rica/7-day-costa-rica-school-trip/" },
   { title: "6 Day Costa Rica School Trip", duration: "6 Day / 5 Night", img: '/images/landmark/costa-rica-6day-planting.webp', href: "/central-south-america/costa-rica/6-day-costa-rica-school-trip/" },
 ]
 
@@ -45,7 +45,7 @@ export default function CostaRica() {
         eyebrow="Central & South America · Costa Rica"
         title={<>Educational Tours to <em>Costa Rica</em></>}
         subtitle="Explore active volcanoes, cloud forests, and conservation projects while students discover what it means to live sustainably in one of Earth's most biodiverse nations."
-        image="/images/landmark/costa-rica-hero-la-fortuna.jpg"
+        image="/images/landmark/costa-rica-hero-la-fortuna.webp"
         breadcrumb={[{ label: 'Destinations', href: '/destinations/' }, { label: 'Central & South America', href: '/central-south-america/' }, { label: "Costa Rica" }]}
       />
 
@@ -54,7 +54,7 @@ export default function CostaRica() {
         city="Costa Rica"
         lead={INTRO_P1}
         highlights={HIGHLIGHTS}
-        image="/images/landmark/costa-rica-intro-arenal-group.jpg"
+        image="/images/landmark/costa-rica-intro-arenal-group.webp"
         wideImage
         imageAlt="A Landmark student group at a rainforest waterfall in Costa Rica"
         tripCount={TRIPS.length}

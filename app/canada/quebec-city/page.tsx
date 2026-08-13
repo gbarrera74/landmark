@@ -23,9 +23,9 @@ const HIGHLIGHTS = [
 const TRIPS = [
   { title: "3 Day Quebec City Trip Itinerary", duration: "3 Day / 2 Night", img: "/images/landmark/quebec-3day-winter-selfie.webp", href: "/canada/quebec-city/3-day-quebec-city-itinerary/" },
   { title: "4 Day Quebec City Trip Itinerary", duration: "4 Day / 3 Night", img: "/images/landmark/quebec-itin-2b.jpg", href: "/canada/quebec-city/4-day-quebec-city-itinerary/" },
-  { title: "5 Day Quebec City Trip Itinerary", duration: "5 Day / 4 Night", img: "/images/landmark/quebec-5day-montmorency-bridge.jpg", href: "/canada/quebec-city/5-day-quebec-city-itinerary/" },
+  { title: "5 Day Quebec City Trip Itinerary", duration: "5 Day / 4 Night", img: "/images/landmark/quebec-5day-montmorency-bridge.webp", href: "/canada/quebec-city/5-day-quebec-city-itinerary/" },
   { title: "3 Day Quebec City Winter Itinerary", duration: "3 Day / 2 Night", img: "/images/landmark/quebec-3day-winter-montmorency.webp", href: "/canada/quebec-city/3-day-quebec-city-winter-itinerary/" },
-  { title: "4 Day Quebec City Winter Itinerary", duration: "4 Day / 3 Night", img: "/images/landmark/quebec-4day-winter-maple-taffy.jpg", href: "/canada/quebec-city/4-day-quebec-city-winter-itinerary/" },
+  { title: "4 Day Quebec City Winter Itinerary", duration: "4 Day / 3 Night", img: "/images/landmark/quebec-4day-winter-maple-taffy.webp", href: "/canada/quebec-city/4-day-quebec-city-winter-itinerary/" },
   { title: "5 Day Quebec City Winter Itinerary", duration: "5 Day / 4 Night", img: "/images/landmark/quebec-5day-winter-bonhomme.webp", href: "/canada/quebec-city/5-day-quebec-city-winter-itinerary/" },
 ]
 

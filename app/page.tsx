@@ -23,7 +23,7 @@ const TOP_TOURS = [
     location: 'Washington, D.C.',
     title: 'History in the Nation’s Capital',
     blurb: 'Get ready for an unforgettable journey through the history, landmarks, and legacy of Washington, D.C.!',
-    img: '/images/landmark/dc-fdr-memorial-group.jpg',
+    img: '/images/landmark/dc-fdr-memorial-group.webp',
     alt: 'Martin Luther King Jr. Memorial in Washington, D.C.',
     href: '/usa-trips/washington-dc/8th-grade-washington-dc-trip-itinerary/',
   },
@@ -32,7 +32,7 @@ const TOP_TOURS = [
     location: 'New York City',
     title: 'The Art of New York',
     blurb: 'Immerse yourself in the vibrant world of art and creativity across New York City’s iconic galleries and museums!',
-    img: '/images/landmark/nyc-top-of-the-rock-group.jpg',
+    img: '/images/landmark/nyc-top-of-the-rock-group.webp',
     alt: 'Broadway signs in New York City',
     href: '/usa-trips/new-york-city/art-focused-tour-nyc/',
   },
@@ -41,19 +41,19 @@ const TOP_TOURS = [
     location: 'Boston',
     title: 'Freedom Trail Adventures',
     blurb: 'Step back in time and walk the paths of revolution in the historic heart of Boston exploring iconic landmarks!',
-    img: '/images/landmark/boston-fenway-group.jpg',
+    img: '/images/landmark/boston-fenway-group.webp',
     alt: 'Historic Boston landmark',
     href: '/usa-trips/boston/historic-boston/',
   },
 ]
 
 const DESTINATIONS = [
-  { name: 'Washington, D.C.', href: '/usa-trips/washington-dc/', img: '/images/landmark/dc-lincoln-memorial-group.jpg' },
+  { name: 'Washington, D.C.', href: '/usa-trips/washington-dc/', img: '/images/landmark/dc-lincoln-memorial-group.webp' },
   // Real Landmark trip photos, cropped to the tile's aspect so the whole group
   // survives the cover-crop. Both are unique to this card — neither repeats a
   // photo used by the TOP_TOURS cards above.
-  { name: 'New York City', href: '/usa-trips/new-york-city/', img: '/images/landmark/home-nyc-bethesda-group.jpg' },
-  { name: 'Boston', href: '/usa-trips/boston/', img: '/images/landmark/home-boston-duck-tour-group.jpg' },
+  { name: 'New York City', href: '/usa-trips/new-york-city/', img: '/images/landmark/home-nyc-bethesda-group.webp' },
+  { name: 'Boston', href: '/usa-trips/boston/', img: '/images/landmark/home-boston-duck-tour-group.webp' },
   { name: 'Atlanta', href: '/usa-trips/atlanta/', img: '/images/landmark/atlanta-centennial-park-group.webp' },
 ]
 

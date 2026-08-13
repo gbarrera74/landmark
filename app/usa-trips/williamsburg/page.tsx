@@ -20,7 +20,7 @@ const HIGHLIGHTS = [
   "Colonial life and self-governance",
 ]
 const TRIPS = [
-  { title: "Williamsburg School Trip", duration: "3 Day / 2 Night", img: '/images/landmark/williamsburg-school-great-bridge.jpg', href: "/usa-trips/williamsburg/williamsburg-school-trip/" },
+  { title: "Williamsburg School Trip", duration: "3 Day / 2 Night", img: '/images/landmark/williamsburg-school-great-bridge.webp', href: "/usa-trips/williamsburg/williamsburg-school-trip/" },
   { title: "Williamsburg Field Trip", duration: "2 Day / 1 Night", img: '/images/landmark/williamsburg-field-jamestown-group.jpg', href: "/usa-trips/williamsburg/williamsburg-field-trip/" },
 ]
 

@@ -106,7 +106,7 @@ export default function Itin_europe__ireland__historic_ireland() {
         eyebrow="Ireland · 9 Day / 8 Night"
         title={<>Historic Ireland</>}
         subtitle="Nine days across Ireland, from the Book of Kells and the Giant's Causeway to Blarney Castle, the Ring of Kerry, and the Cliffs of Moher."
-        image="/images/landmark/ireland-historic-blarney-castle.jpg"
+        image="/images/landmark/ireland-historic-blarney-castle.webp"
         breadcrumb={[
           { label: "Destinations", href: "/destinations/" },
           { label: "Europe", href: "/europe/" },

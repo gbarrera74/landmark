@@ -22,9 +22,9 @@ const HIGHLIGHTS = [
   "Historic districts and curated exhibits",
 ]
 const TRIPS = [
-  { title: "Philadelphia Student Tour", duration: "2 Day / 1 Night", img: '/images/landmark/philly-liberty-bell-group.jpg', href: "/usa-trips/philadelphia/philadelphia-student-tour/" },
-  { title: "2 Day Philadelphia School Trip", duration: "2 Day / 1 Night", img: '/images/landmark/philly-2day-constitution.jpg', href: "/usa-trips/philadelphia/2-day-philadelphia-school-trip/" },
-  { title: "Historic Philadelphia School Trip", duration: "3 Day / 2 Night", img: '/images/landmark/philly-historic-independence-hall.jpg', href: "/usa-trips/philadelphia/historic-philadelphia-school-trip/" },
+  { title: "Philadelphia Student Tour", duration: "2 Day / 1 Night", img: '/images/landmark/philly-liberty-bell-group.webp', href: "/usa-trips/philadelphia/philadelphia-student-tour/" },
+  { title: "2 Day Philadelphia School Trip", duration: "2 Day / 1 Night", img: '/images/landmark/philly-2day-constitution.webp', href: "/usa-trips/philadelphia/2-day-philadelphia-school-trip/" },
+  { title: "Historic Philadelphia School Trip", duration: "3 Day / 2 Night", img: '/images/landmark/philly-historic-independence-hall.webp', href: "/usa-trips/philadelphia/historic-philadelphia-school-trip/" },
 ]
 
 const STEPS = [

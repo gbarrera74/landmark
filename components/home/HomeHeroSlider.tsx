@@ -37,7 +37,7 @@ const SLIDES: Slide[] = [
     focus: '60% 8%',
   },
   {
-    img: '/images/landmark/home-hero-italy-colosseum.jpg',
+    img: '/images/landmark/home-hero-italy-colosseum.webp',
     title: 'The World Is',
     accent: 'Their Classroom.',
     sub: 'Now journeying beyond the U.S.: Italy, France, Ireland, Japan, South Korea, and more.',
@@ -45,7 +45,7 @@ const SLIDES: Slide[] = [
     href: '/destinations/',
   },
   {
-    img: '/images/landmark/home-hero-nyc-times-square-group.jpg',
+    img: '/images/landmark/home-hero-nyc-times-square-group.webp',
     title: 'Where History',
     accent: 'Comes Alive.',
     sub: 'From Washington, D.C. to Tokyo, we design every detail around your students.',

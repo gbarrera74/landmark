@@ -27,8 +27,8 @@ const HIGHLIGHTS = [
 
 const TRIPS = [
   { title: "Chicago Student Tour", duration: "3 Day / 2 Night", img: '/images/landmark/chicago-student-the-bean.webp', href: "/usa-trips/chicago/chicago-student-tour/" },
-  { title: "The Windy City Tour", duration: "5 Day / 4 Night", img: '/images/landmark/chicago-windy-city-360.jpg', href: "/usa-trips/chicago/the-windy-city-tour/" },
-  { title: "Chicago Spanish Immersion School Trip", duration: "3 Day / 2 Night", img: '/images/landmark/chicago-spanish-pilsen-murals.jpg', href: "/usa-trips/chicago/chicago-spanish-immersion-school-trip/" },
+  { title: "The Windy City Tour", duration: "5 Day / 4 Night", img: '/images/landmark/chicago-windy-city-360.webp', href: "/usa-trips/chicago/the-windy-city-tour/" },
+  { title: "Chicago Spanish Immersion School Trip", duration: "3 Day / 2 Night", img: '/images/landmark/chicago-spanish-pilsen-murals.webp', href: "/usa-trips/chicago/chicago-spanish-immersion-school-trip/" },
 ]
 
 const STEPS = [
@@ -53,7 +53,7 @@ export default function Chicago() {
         city="Chicago"
         lead={INTRO_P1}
         highlights={HIGHLIGHTS}
-        image="/images/landmark/chicago-spanish-pilsen-murals.jpg"
+        image="/images/landmark/chicago-spanish-pilsen-murals.webp"
         wideImage
         imageAlt="The Chicago Theatre marquee on a Chicago educational tour"
         tripCount={TRIPS.length}

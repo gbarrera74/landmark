@@ -26,7 +26,7 @@ const TRIPS = [
   { title: 'Atlanta & Beyond', duration: '3 Day / 2 Night', img: '/images/landmark/atlanta-beyond-olympic-rings.webp', href: '/usa-trips/atlanta/atlantabeyond/' },
   { title: '3 Day Atlanta Field Trip', duration: '3 Day / 2 Night', img: '/images/landmark/atlanta-3day-clark-atlanta.webp', href: '/usa-trips/atlanta/3-day-atlanta-field-trip/' },
   { title: '2 Day Atlanta School Trip', duration: '2 Day / 1 Night', img: '/images/landmark/atlanta-2day-civil-human-rights.webp', href: '/usa-trips/atlanta/2-day-atlanta-school-trip/' },
-  { title: 'Atlanta & AL HBCU Field Trip', duration: '5 Day / 4 Night', img: '/images/landmark/atlanta-hbcu-spelman.jpg', href: '/usa-trips/atlanta/atlanta-and-alabama-hbcu-field-trip/' },
+  { title: 'Atlanta & AL HBCU Field Trip', duration: '5 Day / 4 Night', img: '/images/landmark/atlanta-hbcu-spelman.webp', href: '/usa-trips/atlanta/atlanta-and-alabama-hbcu-field-trip/' },
   { title: 'HBCU Field Trip', duration: '4 Day / 3 Night', img: '/images/landmark/atlanta-hbcu-morris-brown.webp', href: '/usa-trips/atlanta/hbcu-field-trip/' },
 ]
 

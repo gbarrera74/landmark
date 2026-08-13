@@ -24,7 +24,7 @@ const HIGHLIGHTS = [
 const TRIPS = [
   { title: "Orlando Student Trip", duration: "3 Day / 2 Night", img: '/images/landmark/orlando-student-animal-kingdom.webp', href: "/usa-trips/orlando/orlando-student-tour/" },
   { title: "Orlando Extended Student Tour", duration: "5 Day / 4 Night", img: '/images/landmark/orlando-extended-magic-kingdom.jpg', href: "/usa-trips/orlando/orlando-student-tour-extended/" },
-  { title: "Disney Educational Tour", duration: "5 Day / 4 Night", img: '/images/landmark/orlando-disney-kennedy-space.jpg', href: "/usa-trips/orlando/disney-educational-tours/" },
+  { title: "Disney Educational Tour", duration: "5 Day / 4 Night", img: '/images/landmark/orlando-disney-kennedy-space.webp', href: "/usa-trips/orlando/disney-educational-tours/" },
 ]
 
 const STEPS = [

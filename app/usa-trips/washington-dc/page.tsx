@@ -26,11 +26,11 @@ const TRIPS = [
   // 8th grade leads the list — it is the flagship DC program (Michaela, 7/30).
   { title: '8th Grade Washington, DC Trip Itinerary', duration: '3 Day / 2 Night', img: '/images/landmark/dc-washington-monument-group.webp', href: '/usa-trips/washington-dc/8th-grade-washington-dc-trip-itinerary/' },
   { title: 'HBCU Campus Tours', duration: '7 Day / 6 Night', img: '/images/landmark/dc-hbcu-howard-group.webp', href: '/usa-trips/washington-dc/hbcu-campus-tours/' },
-  { title: 'Class Trip Programs for Middle School Students', duration: '3 Day / 2 Night', img: '/images/landmark/dc-white-house-tour-group.jpg', href: '/usa-trips/washington-dc/class-trip-programs-for-middle-school-students/' },
+  { title: 'Class Trip Programs for Middle School Students', duration: '3 Day / 2 Night', img: '/images/landmark/dc-white-house-tour-group.webp', href: '/usa-trips/washington-dc/class-trip-programs-for-middle-school-students/' },
   { title: 'Civics Focused Washington, DC School Trip', duration: '3 Day / 2 Night', img: '/images/landmark/dc-jefferson-memorial-website.webp', href: '/usa-trips/washington-dc/washington-dc-civics-student-tour/' },
   { title: 'STEM / STEAM Focused DC Trip', duration: '3 Day / 2 Night', img: '/images/landmark/dc-spy-museum.jpg', href: '/usa-trips/washington-dc/stem-washington-dc-school-trip/' },
   { title: 'African American History Washington, DC School Trip', duration: '3 Day / 2 Night', img: '/images/landmark/dc-nmaahc-group.webp', href: '/usa-trips/washington-dc/african-american-history-dc-student-tour/' },
-  { title: '4 Day Washington, DC School Trip', duration: '4 Day / 3 Night', img: '/images/landmark/dc-mount-vernon-group.jpg', href: '/usa-trips/washington-dc/4-day-washington-dc-school-trip/' },
+  { title: '4 Day Washington, DC School Trip', duration: '4 Day / 3 Night', img: '/images/landmark/dc-mount-vernon-group.webp', href: '/usa-trips/washington-dc/4-day-washington-dc-school-trip/' },
   { title: 'Presidential Inauguration 2029 School Trip', duration: '4 Day / 3 Night', img: '/images/landmark/dc-white-house-solo.webp', href: '/usa-trips/washington-dc/2029-presidential-inauguration-class-trips/' },
   { title: '5 Day Washington, DC School Trip', duration: '5 Day / 4 Night', img: '/images/landmark/dc-5day-smithsonian-zoo.webp', href: '/usa-trips/washington-dc/5-day-washington-dc-school-trip/' },
 ]

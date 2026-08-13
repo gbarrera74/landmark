@@ -22,7 +22,7 @@ const HIGHLIGHTS = [
 ]
 
 const TRIPS = [
-  { title: "Historic Ireland", duration: "9 Day / 8 Night", img: '/images/landmark/ireland-historic-blarney-castle.jpg', href: "/europe/ireland/historic-ireland/" },
+  { title: "Historic Ireland", duration: "9 Day / 8 Night", img: '/images/landmark/ireland-historic-blarney-castle.webp', href: "/europe/ireland/historic-ireland/" },
 ]
 
 const STEPS = [
