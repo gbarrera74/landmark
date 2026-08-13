@@ -47,9 +47,9 @@ export default function SanAntonio() {
         city="San Antonio"
         lead={INTRO_P1}
         highlights={HIGHLIGHTS}
-        image="/images/landmark/san-antonio-intro-tower.webp"
+        image="/images/landmark/san-antonio-intro-alamo.webp"
         wideImage
-        imageAlt="The River Walk in San Antonio, Texas"
+        imageAlt="The Alamo in San Antonio, Texas, with the Texas flag flying beside it"
         tripCount={TRIPS.length}
       />
 
