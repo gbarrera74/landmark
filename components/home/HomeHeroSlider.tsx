@@ -23,18 +23,19 @@ type Slide = {
    international educational journeys, with the U.S. business still featured. */
 const SLIDES: Slide[] = [
   {
-    img: '/images/landmark/home-hero-dc-capitol-group.webp',
+    img: '/images/landmark/home-hero-dc-capitol-steps.webp',
     title: 'Educational Travel,',
     accent: 'Customized for You.',
     sub: 'Safe, custom student trips across the U.S., Europe, Asia, and beyond.',
     cta: 'Get a Quote',
     href: '/get-a-quote/',
-    // This 4:3 photo cannot fit entirely in the hero band: the statue's head
-    // (y~60) through the seated students (y~1120) needs ~1060px of a 929px
-    // band. Bias hard to the top so the memorial's head is kept whole and the
-    // trim comes off the pavement below the front row instead — Michaela's
-    // note was specifically that MLK was cut off.
-    focus: '60% 8%',
+    // This 4:3 photo is taller than the hero band, so something must be
+    // trimmed. Keep it centred: the students are the point, and centring holds
+    // every face clear of the bottom edge even on a short, wide window where
+    // the crop bites hardest. The cost is the top of the dome, which clips —
+    // that is the deliberate trade. Do not raise this to show more dome; 20%
+    // and 8% both start cutting the front row's faces off.
+    focus: '60% 50%',
   },
   {
     img: '/images/landmark/home-hero-italy-colosseum.webp',
