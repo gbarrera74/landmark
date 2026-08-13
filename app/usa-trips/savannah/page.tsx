@@ -46,9 +46,9 @@ export default function Savannah() {
         city="Savannah"
         lead={INTRO_P1}
         highlights={HIGHLIGHTS}
-        image="/images/landmark/savannah-field-eton-square.jpg"
+        image="/images/landmark/savannah-intro-wormsloe.webp"
         wideImage
-        imageAlt="Historic squares in Savannah, Georgia"
+        imageAlt="The live oak avenue draped in Spanish moss at Wormsloe Historic Site near Savannah, Georgia"
         tripCount={TRIPS.length}
       />
 

@@ -53,9 +53,9 @@ export default function Chicago() {
         city="Chicago"
         lead={INTRO_P1}
         highlights={HIGHLIGHTS}
-        image="/images/landmark/chicago-spanish-pilsen-murals.webp"
+        image="/images/landmark/chicago-intro-fusion-skyline.webp"
         wideImage
-        imageAlt="The Chicago Theatre marquee on a Chicago educational tour"
+        imageAlt="A Landmark student group by Lake Michigan with the Chicago skyline behind them"
         tripCount={TRIPS.length}
       />
 

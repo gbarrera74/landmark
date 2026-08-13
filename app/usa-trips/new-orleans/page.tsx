@@ -47,9 +47,9 @@ export default function NewOrleans() {
         city="New Orleans"
         lead={INTRO_P1}
         highlights={HIGHLIGHTS}
-        image="/images/landmark/nola-student-mardi-gras-world.webp"
+        image="/images/landmark/nola-intro-french-quarter.webp"
         wideImage
-        imageAlt="The French Quarter in New Orleans"
+        imageAlt="Wrought-iron balconies hung with ferns on a French Quarter corner in New Orleans"
         tripCount={TRIPS.length}
       />
 
