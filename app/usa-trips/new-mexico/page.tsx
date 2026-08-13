@@ -46,9 +46,9 @@ export default function NewMexico() {
         city="Santa Fe &amp; Albuquerque"
         lead={INTRO_P1}
         highlights={HIGHLIGHTS}
-        image="/images/landmark/new-mexico-school-santa-fe-college.webp"
+        image="/images/landmark/new-mexico-intro-unm.webp"
         wideImage
-        imageAlt="Students exploring the high desert of New Mexico"
+        imageAlt="A Landmark student group at the University of New Mexico sign in Albuquerque"
         tripCount={TRIPS.length}
       />
 
