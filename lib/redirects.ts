@@ -544,6 +544,13 @@ export const WP_REDIRECTS: Redirect[] = [
   // There is no Miami page to land on, so the branch goes to the hub.
   { source: "/usa-trips-2__trashed/:path*", destination: "/usa-trips/", permanent: true },
 
+  // --- Sixth post-cutover sweep (2026-08-14) ---
+  // Real page, wrong depth: something off-site links the bare root-level slug.
+  // The page lives under the Washington DC hub and returns 200 there. Unlike the
+  // rules above this is a live page being missed, not a retired URL, so it maps
+  // 1:1 rather than to a hub.
+  { source: "/class-trip-programs-for-middle-school-students", destination: "/usa-trips/washington-dc/class-trip-programs-for-middle-school-students/", permanent: true },
+
   // Elementor MetForm artifact — the old WordPress form plugin exposed its
   // actions under /blog/metform-form/*. The real destination still exists:
   // /get-a-quote/ returns 200, and /quote/ and /plan-a-trip/ already point there.
