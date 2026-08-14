@@ -23,7 +23,7 @@ const HIGHLIGHTS = [
   "World-class museums and the arts",
 ]
 const TRIPS = [
-  { title: '4 Day New York City School Trip', duration: '4 Day / 3 Night', img: '/images/landmark/emms-nyc.webp', href: '/usa-trips/new-york-city/4-day-new-york-city-school-trip/' },
+  { title: '4 Day New York City School Trip', duration: '4 Day / 3 Night', img: '/images/landmark/nyc-4day-times-square-group.webp', href: '/usa-trips/new-york-city/4-day-new-york-city-school-trip/' },
   { title: '5 Day New York City Field Trip', duration: '5 Day / 4 Night', img: '/images/landmark/nyc-today-show-group.webp', href: '/usa-trips/new-york-city/5-day-new-york-city-field-trip/' },
   { title: 'Art-Focused Tour of NYC', duration: '3 Day / 2 Night', img: '/images/landmark/nyc-outside-theater-group.webp', href: '/usa-trips/new-york-city/art-focused-tour-nyc/' },
   // Broadway shot is the aptest image for this trip and collides with nothing on
