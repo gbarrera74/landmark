@@ -544,6 +544,27 @@ export const WP_REDIRECTS: Redirect[] = [
   // There is no Miami page to land on, so the branch goes to the hub.
   { source: "/usa-trips-2__trashed/:path*", destination: "/usa-trips/", permanent: true },
 
+  // --- Sixth post-cutover sweep (2026-08-14) ---
+  // Real page, wrong depth: something off-site links the bare root-level slug.
+  // The page lives under the Washington DC hub and returns 200 there. Unlike the
+  // rules above this is a live page being missed, not a retired URL, so it maps
+  // 1:1 rather than to a hub.
+  { source: "/class-trip-programs-for-middle-school-students", destination: "/usa-trips/washington-dc/class-trip-programs-for-middle-school-students/", permanent: true },
+
+  // --- Seventh post-cutover sweep (2026-08-17) ---
+  // The legacy "<city>-tours" shape again, this time Orlando. Same handling as
+  // San Francisco above: the branch goes to the city hub, which is live (200).
+  { source: "/usa-trips/orlando-tours/:path*", destination: "/usa-trips/orlando/", permanent: true },
+
+  // Retired WordPress article with no direct successor. Sent to the itinerary
+  // post rather than to /blog/ or the Quebec City destination page: that post
+  // carries a dedicated "Sweet Endings: A Visit to the Sugar Shack" section (8
+  // sugar/maple mentions vs 3 in the Montreal post, which is also the wrong
+  // city), so all three concepts in the dead slug — sugar shack, Quebec City,
+  // school trip — are actually satisfied. A 301 to substantially equivalent
+  // content passes signal; a 301 to a hub tends to be treated as a soft 404.
+  { source: "/the-sugar-shack-experience-on-your-quebec-city-school-trip", destination: "/blog/3-day-quebec-city-school-trip-itinerary/", permanent: true },
+
   // Elementor MetForm artifact — the old WordPress form plugin exposed its
   // actions under /blog/metform-form/*. The real destination still exists:
   // /get-a-quote/ returns 200, and /quote/ and /plan-a-trip/ already point there.
