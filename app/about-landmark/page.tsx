@@ -62,10 +62,11 @@ export default function AboutLandmark() {
         eyebrow="Our passion for travel is indescribable"
         title={<>About <em>Landmark</em></>}
         subtitle="We are an employee-owned team crafting educational group journeys that inspire, educate, and connect travelers of every age."
-        image="/images/landmark/emms-nyc.webp"
-        // Near-square photo (1100x1080) in a wide hero band: the default centre
-        // crop cut every face off the top. Hold the crop high on the faces.
-        imagePosition="center 28%"
+        image="/images/landmark/about-hero-texas-state-capitol.webp"
+        // The hero band is ~2.9:1 but the photo is 1.5:1, so only the middle
+        // ~52% of its height survives. Holding the crop high keeps the whole
+        // dome and its spire in frame and drops the lawn instead.
+        imagePosition="center 12%"
         breadcrumb={[{ label: "About Landmark" }]}
       />
 
@@ -74,7 +75,7 @@ export default function AboutLandmark() {
         <div className="ile-container">
           <div className="ilm-intro-grid">
             <div className="ilm-intro-media">
-              <img src="/images/landmark/intl-italy-group.jpg" alt="A Landmark student group on tour" />
+              <img src="/images/landmark/about-who-we-are-philadelphia-group.webp" alt="A Landmark student group in Philadelphia" />
             </div>
             <div className="ilm-intro-body">
               <span className="ile-eyebrow">Who We Are</span>

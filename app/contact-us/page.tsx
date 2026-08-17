@@ -15,7 +15,11 @@ export default function ContactUsPage() {
         eyebrow="We&rsquo;re Here to Help"
         title={<>Contact <em>Us</em></>}
         subtitle="Questions about a trip, a quote, or how it all works? Reach out and a real person will get back to you."
-        image="/images/landmark/boston-students.jpg"
+        image="/images/landmark/contact-hero-times-square-group.webp"
+        // Wide group shot (spans 17%-87% of the frame) in a hero band that runs
+        // from 2.9:1 down to 0.85:1. X 55% centres the crop on the group rather
+        // than the frame; Y 62% keeps every face clear of the top edge.
+        imagePosition="55% 62%"
         breadcrumb={[{ label: 'Contact Us' }]}
       />
 

@@ -77,7 +77,7 @@ export default function Resources() {
         eyebrow="Resources"
         title={<>Everything You Need to <em>Plan With Confidence</em></>}
         subtitle="Guides, answers, and tools for teachers and trip organizers — from the first idea to the day your group departs."
-        image="/images/landmark/philadelphia-hero.jpg"
+        image="/images/landmark/resources-hero-atlanta-piedmont-park.webp"
         breadcrumb={[{ label: 'Resources' }]}
       />
 

@@ -55,7 +55,7 @@ export default function BlogListing({ page }: { page: number }) {
         eyebrow="The Landmark Blog"
         title={<>Travel Inspiration &amp; <em>Trip Ideas</em></>}
         subtitle="Destination guides, planning tips, and classroom-to-landmark ideas for educators leading student groups."
-        image="/images/landmark/hero-nyc.webp"
+        image="/images/landmark/blog-hero-jefferson-memorial-tidal-basin.webp"
         breadcrumb={page === 1 ? [{ label: 'Blog' }] : [{ label: 'Blog', href: '/blog/' }, { label: `Page ${page}` }]}
       />
       <section className="ile-section ile-section--cream">

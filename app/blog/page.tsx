@@ -26,7 +26,7 @@ export default function BlogIndex() {
         eyebrow="The Landmark Blog"
         title={<>Travel Inspiration &amp; <em>Trip Ideas</em></>}
         subtitle="Destination guides, planning tips, and classroom-to-landmark ideas for educators leading student groups. Filter by destination or trip type."
-        image="/images/landmark/hero-nyc.webp"
+        image="/images/landmark/blog-hero-jefferson-memorial-tidal-basin.webp"
         breadcrumb={[{ label: 'Blog' }]}
       />
       <section className="ile-section ile-section--cream">
