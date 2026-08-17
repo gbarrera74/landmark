@@ -24,7 +24,10 @@ export default function Testimonials() {
         eyebrow="Testimonials"
         title={<>What Educators <em>Say</em></>}
         subtitle="Hear directly from the teachers and group leaders who have traveled with Landmark Educational Tours."
-        image="/images/landmark/traveler-highlight-img-3406.webp"
+        image="/images/landmark/testimonials-hero-empire-state-sunset.webp"
+        // The hero band shows only ~52% of this photo's height, and a centre
+        // crop clips the tip of the Empire State spire. Hold it higher.
+        imagePosition="center 35%"
         breadcrumb={[{ label: 'Testimonials' }]}
       />
       <section className="ile-section ile-section--cream">
