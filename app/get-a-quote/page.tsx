@@ -28,7 +28,11 @@ export default function GetAQuotePage() {
         eyebrow="Get Started"
         title={<>Tell Us About Your <em>Trip</em></>}
         subtitle="Share a few details and a Landmark Travel Consultant will build a custom, no-obligation quote for your group."
-        image="/images/landmark/hero-nyc.webp"
+        image="/images/landmark/get-a-quote-hero-fdr-memorial-group.webp"
+        // Group sits left of frame centre and runs wider than the hero band can
+        // show once it goes portrait. X 35% centres the crop on the group so the
+        // loss is even at both ends; Y 55% keeps heads and feet in on desktop.
+        imagePosition="35% 55%"
         breadcrumb={[{ label: 'Get a Quote' }]}
       />
 
