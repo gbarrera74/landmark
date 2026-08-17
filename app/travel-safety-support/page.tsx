@@ -32,7 +32,7 @@ export default function TravelSafety() {
         eyebrow="Our travel outlook"
         title={<>Travel Safety &amp; <em>Support</em></>}
         subtitle="Traveler safety comes first, so your group can explore the world with confidence and peace of mind."
-        image="/images/landmark/montreal-students.jpg"
+        image="/images/landmark/travel-safety-hero-plane-window-sunset.webp"
         breadcrumb={[{ label: "Travel Safety & Support" }]}
       />
 
