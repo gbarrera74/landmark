@@ -36,7 +36,11 @@ export default function FAQ() {
         eyebrow="We're here to help"
         title={<>Frequently Asked <em>Questions</em></>}
         subtitle="Find answers about planning, traveling, and staying safe on your Landmark group tour."
-        image="/images/landmark/dc-students.jpg"
+        image="/images/landmark/faq-hero-chicago-cloud-gate-dusk.webp"
+        // Cloud Gate sits left of frame centre, so once the hero band goes
+        // portrait on phones the default crop clips its left edge. Nudging X
+        // left keeps the sculpture whole; the wide band is unaffected.
+        imagePosition="15% center"
         breadcrumb={[{ label: 'FAQ' }]}
       />
       <section className="ile-section ile-section--white">
