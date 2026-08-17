@@ -551,6 +551,11 @@ export const WP_REDIRECTS: Redirect[] = [
   // 1:1 rather than to a hub.
   { source: "/class-trip-programs-for-middle-school-students", destination: "/usa-trips/washington-dc/class-trip-programs-for-middle-school-students/", permanent: true },
 
+  // --- Seventh post-cutover sweep (2026-08-17) ---
+  // The legacy "<city>-tours" shape again, this time Orlando. Same handling as
+  // San Francisco above: the branch goes to the city hub, which is live (200).
+  { source: "/usa-trips/orlando-tours/:path*", destination: "/usa-trips/orlando/", permanent: true },
+
   // Elementor MetForm artifact — the old WordPress form plugin exposed its
   // actions under /blog/metform-form/*. The real destination still exists:
   // /get-a-quote/ returns 200, and /quote/ and /plan-a-trip/ already point there.
