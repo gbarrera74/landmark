@@ -480,6 +480,9 @@ export const WP_REDIRECTS: Redirect[] = [
   //
   // WP taxonomy/date archives have no Next equivalent -> the blog index.
   { source: "/tag/:path*", destination: "/blog/", permanent: true },
+  // 404 log 2026-08-18: the /blog/-prefixed variant of the rule above. The root
+  // /tag/* rule does not cover it because the segment sits under /blog/.
+  { source: "/blog/tag/:path*", destination: "/blog/", permanent: true },
   { source: "/:year(20\\d{2})/:path*", destination: "/blog/", permanent: true },
 
   // Legacy trip paths — BOTH segments changed at cutover ("usa-trips-2" ->
@@ -564,6 +567,20 @@ export const WP_REDIRECTS: Redirect[] = [
   // school trip — are actually satisfied. A 301 to substantially equivalent
   // content passes signal; a 301 to a hub tends to be treated as a soft 404.
   { source: "/the-sugar-shack-experience-on-your-quebec-city-school-trip", destination: "/blog/3-day-quebec-city-school-trip-itinerary/", permanent: true },
+
+  // --- Eighth sweep (2026-08-18): generalise the "<city>-tours" family ---
+  // This shape has now produced real-user 404s four times (Washington DC, New
+  // York, San Francisco, Orlando, Seattle), each patched individually. It does
+  // not converge, so this covers the whole family.
+  //
+  // GATED on the real city list rather than a blanket /usa-trips/:city-tours/*.
+  // A blanket rule would 301 into a 404 for any city we do not have a page for
+  // — exactly the trap the Go Blue /springbreak rule documents. Cities without
+  // a page (san-francisco, miami) deliberately do NOT match here and keep their
+  // own hub redirects above, which still win because they are listed earlier.
+  //
+  // Keep this list in sync with app/usa-trips/*/ when a city page is added.
+  { source: "/usa-trips/:city(atlanta|boston|charleston|chicago|los-angeles|mackinac-island|new-mexico|new-orleans|new-york-city|orlando|philadelphia|san-antonio|savannah|seattle|washington-dc|williamsburg)-tours/:path*", destination: "/usa-trips/:city/", permanent: true },
 
   // Elementor MetForm artifact — the old WordPress form plugin exposed its
   // actions under /blog/metform-form/*. The real destination still exists:
