@@ -103,7 +103,7 @@ export default function Itin_usa_trips__chicago_tours__chicago_student_tour() {
         eyebrow="Chicago · 3 Day / 2 Night"
         title={<>Chicago Student Tour</>}
         subtitle="Give students an immersive three day adventure through Chicago's iconic landmarks, world class museums, and legendary architecture."
-        image="/images/landmark/chicago-1.jpg"
+        image="/images/landmark/chicago-student-the-bean.webp"
         breadcrumb={[
         { label: "Destinations", href: "/destinations/" },
         { label: "Chicago", href: "/usa-trips/chicago/" },

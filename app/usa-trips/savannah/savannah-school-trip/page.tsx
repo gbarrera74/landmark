@@ -91,7 +91,7 @@ export default function Itin_usa_trips__savannah_tours__savannah_school_trip() {
         eyebrow="Savannah · 2 Day / 1 Night"
         title={<>Savannah School Trip</>}
         subtitle="Bring learning to life with a customizable Savannah journey through preserved historic sites and interactive experiences built for student groups."
-        image="/images/landmark/savannah-2.webp"
+        image="/images/landmark/savannah-school-forsyth-fountain.webp"
         breadcrumb={[
         { label: "Destinations", href: "/destinations/" },
         { label: "Savannah", href: "/usa-trips/savannah/" },

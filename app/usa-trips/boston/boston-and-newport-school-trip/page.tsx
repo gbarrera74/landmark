@@ -105,7 +105,7 @@ export default function Itin_usa_trips__boston__boston_and_newport_school_trip()
         eyebrow="Boston · 4 Day / 3 Night"
         title={<>Boston &amp; Newport School Trip</>}
         subtitle="A four day journey through Boston's founding history and Newport's Gilded Age mansions built for curious student groups."
-        image="/images/landmark/newport-mansion.jpg"
+        image="/images/landmark/boston-newport-trip.webp"
         breadcrumb={[
         { label: "Destinations", href: "/destinations/" },
         { label: "Boston", href: "/usa-trips/boston/" },

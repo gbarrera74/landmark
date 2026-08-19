@@ -103,7 +103,7 @@ export default function Itin_usa_trips__san_antonio_tours__3_day_san_antonio_sch
         eyebrow="San Antonio · 3 Day / 2 Night"
         title={<>3 Day San Antonio School Trip</>}
         subtitle="Discover the Alamo, SeaWorld, and the River Walk on a three day journey through the history and culture of San Antonio."
-        image="/images/landmark/san-antonio-2.webp"
+        image="/images/landmark/san-antonio-3day-mission.webp"
         breadcrumb={[
         { label: "Destinations", href: "/destinations/" },
         { label: "San Antonio", href: "/usa-trips/san-antonio/" },

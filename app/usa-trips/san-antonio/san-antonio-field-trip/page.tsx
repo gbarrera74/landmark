@@ -106,7 +106,7 @@ export default function Itin_usa_trips__san_antonio_tours__san_antonio_field_tri
         eyebrow="San Antonio · 4 Day / 3 Night"
         title={<>San Antonio Field Trip</>}
         subtitle="A four-day educational journey through San Antonio's historic missions, iconic Alamo, and scenic River Walk for student groups."
-        image="/images/landmark/san-antonio-3.webp"
+        image="/images/landmark/san-antonio-field-riverwalk-boats.webp"
         breadcrumb={[
         { label: "Destinations", href: "/destinations/" },
         { label: "San Antonio", href: "/usa-trips/san-antonio/" },

@@ -28,9 +28,9 @@ const TRIPS = [
   { title: 'Art-Focused Tour of NYC', duration: '3 Day / 2 Night', img: '/images/landmark/nyc-outside-theater-group.webp', href: '/usa-trips/new-york-city/art-focused-tour-nyc/' },
   // Broadway shot is the aptest image for this trip and collides with nothing on
   // this page (the hub hero is the Statue of Liberty). Pages whose HERO is that
-  // same photo use nyc-radio-city.jpg for this card instead.
+  // same photo use nyc-radio-city-group.webp for this card instead.
   { title: 'NYC Performing Arts Tour', duration: '3 Day / 2 Night', img: '/images/landmark/nyc-broadway-show-group.webp', href: '/usa-trips/new-york-city/nyc-performing-arts-tour/' },
-  { title: 'New York City Student Trip', duration: '3 Day / 2 Night', img: '/images/landmark/nyc-radio-city.jpg', href: '/usa-trips/new-york-city/nyc-student-trip/' },
+  { title: 'New York City Student Trip', duration: '3 Day / 2 Night', img: '/images/landmark/nyc-radio-city-group.webp', href: '/usa-trips/new-york-city/nyc-student-trip/' },
   { title: 'YMCA Summer Camp', duration: 'Summer Program', img: '/images/landmark/nyc-ferry-to-statue-of-liberty.webp', href: '/usa-trips/new-york-city/ymca-summer-camp/' },
 ]
 

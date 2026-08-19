@@ -103,7 +103,7 @@ export default function Itin_usa_trips__orlando_schooltrips__orlando_student_tou
         eyebrow="Orlando · 3 Day / 2 Night"
         title={<>Orlando Student Trip</>}
         subtitle="Give your students three action packed days in Orlando exploring Disney, Universal Studios, and hands on STEM learning at the Kennedy Space Center."
-        image="/images/landmark/orlando-eye.jpg"
+        image="/images/landmark/orlando-student-animal-kingdom.webp"
         breadcrumb={[
         { label: "Destinations", href: "/destinations/" },
         { label: "Orlando", href: "/usa-trips/orlando/" },

@@ -105,7 +105,7 @@ export default function Itin_usa_trips__san_antonio_tours__intro_to_san_antonio_
         eyebrow="San Antonio · 5 Day / 4 Night"
         title={<>Intro to San Antonio Tour</>}
         subtitle="Spend five days discovering San Antonio's landmarks, missions, and River Walk on an immersive educational adventure for student groups."
-        image="/images/landmark/san-antonio-1.webp"
+        image="/images/landmark/san-antonio-intro-tower.webp"
         breadcrumb={[
         { label: "Destinations", href: "/destinations/" },
         { label: "San Antonio", href: "/usa-trips/san-antonio/" },

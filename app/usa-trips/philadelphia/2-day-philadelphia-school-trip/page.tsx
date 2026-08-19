@@ -102,7 +102,7 @@ export default function Itin_usa_trips__philadelphia_tours__2_day_philadelphia_s
         eyebrow="Philadelphia · 2 Day / 1 Night"
         title={<>2 Day Philadelphia School Trip</>}
         subtitle="Spend two days exploring the birthplace of American democracy with iconic landmarks, world-class museums, and hands-on history for student groups."
-        image="/images/landmark/philadelphia-2.jpg"
+        image="/images/landmark/philly-2day-constitution.webp"
         breadcrumb={[
         { label: "Destinations", href: "/destinations/" },
         { label: "Philadelphia", href: "/usa-trips/philadelphia/" },

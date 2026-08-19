@@ -106,7 +106,7 @@ export default function Itin_international__costa_rica__7_day_costa_rica_school_
         eyebrow="Costa Rica · 7 Day / 6 Night"
         title={<>7 Day Costa Rica School Trip</>}
         subtitle="A seven day journey through Costa Rica's rainforests, volcanoes, and wildlife, blending outdoor adventure with hands on lessons in conservation and culture."
-        image="/images/landmark/costa-rica-1.webp"
+        image="/images/landmark/costa-rica-7day-rafting.webp"
         breadcrumb={[
         { label: "Destinations", href: "/destinations/" },
         { label: "Central & South America", href: "/central-south-america/" },

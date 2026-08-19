@@ -105,7 +105,7 @@ export default function Itin_usa_trips__orlando_schooltrips__orlando_student_tou
         eyebrow="Orlando · 5 Day / 4 Night"
         title={<>Orlando Extended Student Tour</>}
         subtitle="A five day Orlando adventure pairing Walt Disney World and Universal Studios with immersive group activities students will remember forever."
-        image="/images/landmark/orlando-2.jpg"
+        image="/images/landmark/orlando-extended-magic-kingdom.webp"
         breadcrumb={[
         { label: "Destinations", href: "/destinations/" },
         { label: "Orlando", href: "/usa-trips/orlando/" },

@@ -104,7 +104,7 @@ export default function Itin_international__canada__quebec_city__3_day_quebec_ci
         eyebrow="Quebec City · 3 Day / 2 Night"
         title={<>3 Day Quebec City Trip Itinerary</>}
         subtitle="Spend three days exploring Quebec City's fortified old town, iconic Château Frontenac, and French-Canadian culture on an immersive student adventure."
-        image="/images/landmark/quebec-1.webp"
+        image="/images/landmark/quebec-3day-winter-selfie.webp"
         breadcrumb={[
         { label: "Destinations", href: "/destinations/" },
         { label: "Canada", href: "/canada/" },

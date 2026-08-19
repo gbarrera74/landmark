@@ -103,7 +103,7 @@ export default function Itin_international__canada__montreal__3_day_montreal_sch
         eyebrow="Montreal · 3 Day / 2 Night"
         title={<>3 Day Montreal School Trip</>}
         subtitle="Explore Old Montreal, world class museums, and French Canadian culture on an immersive three day educational adventure built for student groups."
-        image="/images/landmark/montreal-2.jpg"
+        image="/images/landmark/montreal-3day-stpaul-group.webp"
         breadcrumb={[
         { label: "Destinations", href: "/destinations/" },
         { label: "Canada", href: "/canada/" },

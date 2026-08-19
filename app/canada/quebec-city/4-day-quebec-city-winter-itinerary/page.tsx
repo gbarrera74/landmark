@@ -105,7 +105,7 @@ export default function Itin_international__canada__quebec_city__4_day_quebec_ci
         eyebrow="Quebec City · 4 Day / 3 Night"
         title={<>4 Day Quebec City Winter Itinerary</>}
         subtitle="Give students four unforgettable days exploring historic Old Quebec, iconic landmarks, and thrilling winter activities in Canada's oldest fortified city."
-        image="/images/landmark/quebec-winter.jpg"
+        image="/images/landmark/quebec-4day-winter-maple-taffy.webp"
         breadcrumb={[
         { label: "Destinations", href: "/destinations/" },
         { label: "Canada", href: "/canada/" },

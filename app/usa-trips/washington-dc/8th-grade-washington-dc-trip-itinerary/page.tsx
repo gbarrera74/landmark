@@ -106,7 +106,7 @@ export default function Itin_usa_trips__washington_d_c__8th_grade_washington_dc_
         eyebrow="Washington, D.C. · 3 Day / 2 Night"
         title={<>8th Grade Washington, DC Trip Itinerary</>}
         subtitle="Give your 8th graders three days exploring the nation's capital, from Smithsonian museums and national memorials to Mount Vernon."
-        image="/images/landmark/mlk-memorial-washington-dc.webp"
+        image="/images/landmark/dc-washington-monument-group.webp"
         breadcrumb={[
         { label: "Destinations", href: "/destinations/" },
         { label: "Washington, D.C.", href: "/usa-trips/washington-dc/" },

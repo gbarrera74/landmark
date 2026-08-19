@@ -104,7 +104,7 @@ export default function Itin_usa_trips__new_york_city_tours__nyc_performing_arts
         eyebrow="New York City · 3 Day / 2 Night"
         title={<>NYC Performing Arts Tour</>}
         subtitle="Immerse your student performers in the magic of Broadway with backstage access, hands-on workshops, and a world-class show in the heart of Times Square."
-        image="/images/landmark/broadway-sign-nyc.webp"
+        image="/images/landmark/nyc-broadway-show-group.webp"
         breadcrumb={[
         { label: "Destinations", href: "/destinations/" },
         { label: "New York City", href: "/usa-trips/new-york-city/" },

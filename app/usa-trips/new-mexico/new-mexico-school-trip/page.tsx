@@ -103,7 +103,7 @@ export default function Itin_usa_trips__new_mexico_tours__new_mexico_school_trip
         eyebrow="New Mexico · 4 Day / 3 Night"
         title={<>New Mexico School Trip</>}
         subtitle="Explore the Land of Enchantment as students connect with Native American heritage, Spanish colonial history, art, and stunning desert landscapes."
-        image="/images/landmark/new-mexico-1.jpg"
+        image="/images/landmark/new-mexico-school-santa-fe-college.webp"
         breadcrumb={[
         { label: "Destinations", href: "/destinations/" },
         { label: "New Mexico", href: "/usa-trips/new-mexico/" },

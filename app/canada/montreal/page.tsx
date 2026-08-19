@@ -20,8 +20,8 @@ const HIGHLIGHTS = [
   "A vibrant bilingual city",
 ]
 const TRIPS = [
-  { title: "2 Day Montreal School Trip", duration: "2 Day / 1 Night", img: "/images/landmark/montreal-olympic.jpg", href: "/canada/montreal/2-day-montreal-school-trip/" },
-  { title: "3 Day Montreal School Trip", duration: "3 Day / 2 Night", img: "/images/landmark/montreal-stpaul.jpg", href: "/canada/montreal/3-day-montreal-school-trip/" },
+  { title: "2 Day Montreal School Trip", duration: "2 Day / 1 Night", img: "/images/landmark/montreal-2day-olympic-stadium-group.webp", href: "/canada/montreal/2-day-montreal-school-trip/" },
+  { title: "3 Day Montreal School Trip", duration: "3 Day / 2 Night", img: "/images/landmark/montreal-3day-stpaul-group.webp", href: "/canada/montreal/3-day-montreal-school-trip/" },
   { title: "Montreal Student Trip", duration: "3 Day / 2 Night", img: "/images/landmark/montreal-skyline.jpg", href: "/canada/montreal/montreal-student-trip/" },
 ]
 

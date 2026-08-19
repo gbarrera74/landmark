@@ -106,7 +106,7 @@ export default function Itin_usa_trips__washington_d_c__5_day_washington_dc_scho
         eyebrow="Washington, D.C. · 5 Day / 4 Night"
         title={<>5 Day Washington, DC School Trip</>}
         subtitle="Give students five immersive days exploring the monuments, museums, and living history at the heart of the nation's capital."
-        image="/images/landmark/washington-monument-jill.webp"
+        image="/images/landmark/dc-5day-smithsonian-zoo.webp"
         breadcrumb={[
         { label: "Destinations", href: "/destinations/" },
         { label: "Washington, D.C.", href: "/usa-trips/washington-dc/" },

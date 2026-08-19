@@ -93,7 +93,7 @@ export default function Itin_usa_trips__charleston_sc__charleston_field_trip() {
         eyebrow="Charleston · 3 Day / 2 Night"
         title={<>Charleston Field Trip</>}
         subtitle="Students explore Charleston's cobblestone streets, historic homes, and waterfront landmarks on an immersive educational journey through the Lowcountry."
-        image="/images/landmark/charleston-1.webp"
+        image="/images/landmark/charleston-field-rainbow-row.webp"
         breadcrumb={[
         { label: "Destinations", href: "/destinations/" },
         { label: "Charleston", href: "/usa-trips/charleston/" },

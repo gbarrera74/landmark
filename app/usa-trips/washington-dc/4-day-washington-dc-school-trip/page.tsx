@@ -105,7 +105,7 @@ export default function Itin_usa_trips__washington_d_c__4_day_washington_dc_scho
         eyebrow="Washington, D.C. · 4 Day / 3 Night"
         title={<>4 Day Washington, DC School Trip</>}
         subtitle="Explore the nation's capital over four days of monuments, museums, and hands-on lessons in American history and government."
-        image="/images/landmark/fall-in-washington-dc.jpeg"
+        image="/images/landmark/dc-mount-vernon-group.webp"
         breadcrumb={[
         { label: "Destinations", href: "/destinations/" },
         { label: "Washington, D.C.", href: "/usa-trips/washington-dc/" },

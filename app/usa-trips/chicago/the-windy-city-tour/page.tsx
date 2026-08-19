@@ -105,7 +105,7 @@ export default function Itin_usa_trips__chicago_tours__the_windy_city_tour() {
         eyebrow="Chicago · 5 Day / 4 Night"
         title={<>The Windy City Tour</>}
         subtitle="Discover Chicago's iconic skyline, world-class museums, and vibrant culture on a five-day adventure built for student groups."
-        image="/images/landmark/chicago-2.jpg"
+        image="/images/landmark/chicago-windy-city-360.webp"
         breadcrumb={[
         { label: "Destinations", href: "/destinations/" },
         { label: "Chicago", href: "/usa-trips/chicago/" },

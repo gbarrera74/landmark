@@ -104,7 +104,7 @@ export default function Itin_usa_trips__chicago_tours__chicago_spanish_immersion
         eyebrow="Chicago · 2 Day / 1 Night"
         title={<>Chicago Spanish Immersion School Trip</>}
         subtitle="A two-day Spanish immersion adventure through Chicago's vibrant Latino neighborhoods, cultural landmarks, and interactive language experiences for student groups."
-        image="/images/landmark/chicago-3.webp"
+        image="/images/landmark/chicago-spanish-pilsen-murals.webp"
         breadcrumb={[
         { label: "Destinations", href: "/destinations/" },
         { label: "Chicago", href: "/usa-trips/chicago/" },

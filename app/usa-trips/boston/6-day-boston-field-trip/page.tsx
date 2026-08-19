@@ -107,7 +107,7 @@ export default function Itin_usa_trips__boston__6_day_boston_field_trip() {
         eyebrow="Boston · 6 Day / 5 Night"
         title={<>6 Day Boston Field Trip</>}
         subtitle="A six-day journey through Boston's revolutionary history, world-class museums, and iconic university campuses built for student groups."
-        image="/images/landmark/boston-waterfront-highrise.jpg"
+        image="/images/landmark/boston-6day-field-trip.webp"
         breadcrumb={[
         { label: "Destinations", href: "/destinations/" },
         { label: "Boston", href: "/usa-trips/boston/" },

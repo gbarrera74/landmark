@@ -104,7 +104,7 @@ export default function Itin_usa_trips__philadelphia_tours__philadelphia_student
         eyebrow="Philadelphia · 2 Day / 1 Night"
         title={<>Philadelphia Student Tour</>}
         subtitle="Spend two days exploring the birthplace of American democracy, from Independence Hall and the Liberty Bell to the historic streets of Old City."
-        image="/images/landmark/philadelphia-1.jpg"
+        image="/images/landmark/philly-liberty-bell-group.webp"
         breadcrumb={[
         { label: "Destinations", href: "/destinations/" },
         { label: "Philadelphia", href: "/usa-trips/philadelphia/" },

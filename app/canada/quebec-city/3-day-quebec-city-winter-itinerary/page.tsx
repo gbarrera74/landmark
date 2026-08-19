@@ -104,7 +104,7 @@ export default function Itin_international__canada__quebec_city__3_day_quebec_ci
         eyebrow="Quebec City · 3 Day / 2 Night"
         title={<>3 Day Quebec City Winter Itinerary</>}
         subtitle="A three day winter journey through historic Quebec City, blending French Canadian culture, iconic landmarks, and hands-on seasonal adventure for student groups."
-        image="/images/landmark/quebec-winter.jpg"
+        image="/images/landmark/quebec-3day-winter-montmorency.webp"
         breadcrumb={[
         { label: "Destinations", href: "/destinations/" },
         { label: "Canada", href: "/canada/" },

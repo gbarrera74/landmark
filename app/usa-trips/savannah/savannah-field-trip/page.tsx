@@ -91,7 +91,7 @@ export default function Itin_usa_trips__savannah_tours__savannah_field_trip() {
         eyebrow="Savannah · 3 Day / 2 Night"
         title={<>Savannah Field Trip</>}
         subtitle="Take students beyond the classroom with a customizable Savannah journey through preserved historic sites, guided tours, and hands on learning."
-        image="/images/landmark/savannah-1.webp"
+        image="/images/landmark/savannah-field-eton-academy-group.webp"
         breadcrumb={[
         { label: "Destinations", href: "/destinations/" },
         { label: "Savannah", href: "/usa-trips/savannah/" },

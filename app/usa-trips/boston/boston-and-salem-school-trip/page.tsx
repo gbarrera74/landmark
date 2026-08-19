@@ -107,7 +107,7 @@ export default function Itin_usa_trips__boston__boston_and_salem_school_trip() {
         eyebrow="Boston · 4 Day / 3 Night"
         title={<>Boston &amp; Salem School Trip</>}
         subtitle="Blend Boston's revolutionary landmarks with Salem's haunted history on a four day journey students will remember."
-        image="/images/landmark/salem-massachusetts.jpg"
+        image="/images/landmark/boston-salem-witch-museum.webp"
         breadcrumb={[
         { label: "Destinations", href: "/destinations/" },
         { label: "Boston", href: "/usa-trips/boston/" },

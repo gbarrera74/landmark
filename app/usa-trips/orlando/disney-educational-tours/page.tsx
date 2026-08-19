@@ -92,7 +92,7 @@ export default function Itin_usa_trips__orlando_schooltrips__disney_educational_
         eyebrow="Orlando · 5 Day / 4 Night"
         title={<>Disney Educational Tour</>}
         subtitle="Spark curiosity at Walt Disney World with hands-on STEM workshops and behind-the-scenes learning built for student groups."
-        image="/images/landmark/orlando-skyline.jpg"
+        image="/images/landmark/orlando-disney-kennedy-space.webp"
         breadcrumb={[
         { label: "Destinations", href: "/destinations/" },
         { label: "Orlando", href: "/usa-trips/orlando/" },

@@ -103,7 +103,7 @@ export default function Itin_usa_trips__los_angeles_tours__los_angeles_field_tri
         eyebrow="Los Angeles · 4 Day / 3 Night"
         title={<>Los Angeles Field Trip</>}
         subtitle="Students explore Los Angeles through iconic attractions, world-class museums, and hands-on cultural experiences that spark creativity and learning."
-        image="/images/landmark/los-angeles-2.jpg"
+        image="/images/landmark/los-angeles-field-santa-monica-pier.webp"
         breadcrumb={[
         { label: "Destinations", href: "/destinations/" },
         { label: "Los Angeles", href: "/usa-trips/los-angeles/" },

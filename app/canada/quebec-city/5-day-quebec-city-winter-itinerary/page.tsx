@@ -106,7 +106,7 @@ export default function Itin_international__canada__quebec_city__5_day_quebec_ci
         eyebrow="Quebec City · 5 Day / 4 Night"
         title={<>5 Day Quebec City Winter Itinerary</>}
         subtitle="Give students five winter days in Quebec City exploring historic landmarks, French-Canadian culture, and snowy outdoor adventures."
-        image="/images/landmark/quebec-winter.jpg"
+        image="/images/landmark/quebec-5day-winter-bonhomme.webp"
         breadcrumb={[
         { label: "Destinations", href: "/destinations/" },
         { label: "Canada", href: "/canada/" },

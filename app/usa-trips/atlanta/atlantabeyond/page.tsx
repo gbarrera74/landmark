@@ -104,7 +104,7 @@ export default function Itin_usa_trips__atlanta__atlantabeyond() {
         eyebrow="Atlanta · 3 Day / 2 Night"
         title={<>Atlanta &amp; Beyond</>}
         subtitle="Discover Atlanta's Civil Rights legacy, world-class museums, and iconic attractions on a customizable tour built for student groups."
-        image="/images/landmark/atlanta-skyline-night.jpg"
+        image="/images/landmark/atlanta-beyond-olympic-rings.webp"
         breadcrumb={[
         { label: "Destinations", href: "/destinations/" },
         { label: "Atlanta", href: "/usa-trips/atlanta/" },

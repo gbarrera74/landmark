@@ -105,7 +105,7 @@ export default function Itin_usa_trips__washington_d_c__2029_presidential_inaugu
         eyebrow="Washington, D.C. · 4 Day / 3 Night"
         title={<>Presidential Inauguration 2029 School Trip</>}
         subtitle="Witness the historic 2029 Presidential Inauguration and explore Washington D.C. landmarks on this four day student journey through American democracy."
-        image="/images/landmark/dc-war-memorial.webp"
+        image="/images/landmark/dc-white-house-solo.webp"
         breadcrumb={[
         { label: "Destinations", href: "/destinations/" },
         { label: "Washington, D.C.", href: "/usa-trips/washington-dc/" },

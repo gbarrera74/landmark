@@ -104,7 +104,7 @@ export default function Itin_usa_trips__boston__3_day_boston_field_trip() {
         eyebrow="Boston · 3 Day / 2 Night"
         title={<>3 Day Boston Field Trip</>}
         subtitle="Trace Boston's revolutionary roots across three days of hands-on history, iconic landmarks, and student-friendly exploration."
-        image="/images/landmark/boston-duck-boat-tour.webp"
+        image="/images/landmark/boston-3day-field-trip.webp"
         breadcrumb={[
         { label: "Destinations", href: "/destinations/" },
         { label: "Boston", href: "/usa-trips/boston/" },

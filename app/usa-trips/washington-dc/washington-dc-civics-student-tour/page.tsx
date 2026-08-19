@@ -104,7 +104,7 @@ export default function Itin_usa_trips__washington_d_c__washington_dc_civics_stu
         eyebrow="Washington, D.C. · 3 Day / 2 Night"
         title={<>Civics Focused Washington, DC School Trip</>}
         subtitle="A three day civics immersion in Washington, DC where students step inside the institutions that shape American democracy."
-        image="/images/landmark/thomas-jefferson-memorial.jpg"
+        image="/images/landmark/dc-jefferson-memorial-website.webp"
         breadcrumb={[
         { label: "Destinations", href: "/destinations/" },
         { label: "Washington, D.C.", href: "/usa-trips/washington-dc/" },

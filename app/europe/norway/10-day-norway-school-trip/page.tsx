@@ -121,7 +121,8 @@ export default function Itin_international__norway__10_day_norway_school_trip() 
         eyebrow="Norway · 10 Day / 9 Night"
         title={<>10 Day Norway School Trip</>}
         subtitle="Ten days across Oslo, Bergen, and Norway's fjords, where students explore Viking heritage, glaciers, and sustainability up close."
-        image="/images/landmark/norway-1.jpg"
+        image="/images/landmark/norway-10day-bergen-bryggen.webp"
+        imagePosition="center 58%"
         breadcrumb={[
         { label: "Destinations", href: "/destinations/" },
         { label: "Europe", href: "/europe/" },

@@ -104,7 +104,7 @@ export default function Itin_usa_trips__new_york_city_tours__ymca_summer_camp() 
         eyebrow="New York City · Summer Program"
         title={<>YMCA Summer Camp</>}
         subtitle="A three day New York City summer camp adventure packed with iconic landmarks, hands on learning, and team building for student groups."
-        image="/images/landmark/murray-high-school-nyc.jpg"
+        image="/images/landmark/nyc-ferry-to-statue-of-liberty.webp"
         breadcrumb={[
         { label: "Destinations", href: "/destinations/" },
         { label: "New York City", href: "/usa-trips/new-york-city/" },

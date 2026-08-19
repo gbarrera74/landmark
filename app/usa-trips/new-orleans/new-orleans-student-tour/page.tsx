@@ -102,7 +102,7 @@ export default function Itin_usa_trips__new_orleans_tours__new_orleans_student_t
         eyebrow="New Orleans · 2 Day / 1 Night"
         title={<>New Orleans Student Tour</>}
         subtitle="Spend two immersive days exploring the French Quarter, Cajun cooking, and jazz heritage that make the Crescent City unforgettable for student groups."
-        image="/images/landmark/new-orleans-1.webp"
+        image="/images/landmark/nola-student-mardi-gras-world.webp"
         breadcrumb={[
         { label: "Destinations", href: "/destinations/" },
         { label: "New Orleans", href: "/usa-trips/new-orleans/" },

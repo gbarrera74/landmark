@@ -91,7 +91,7 @@ export default function Itin_usa_trips__williamsburg_tours__williamsburg_school_
         eyebrow="Williamsburg · 3 Day / 2 Night"
         title={<>Williamsburg School Trip</>}
         subtitle="Bring early American history to life for students with interactive programs and guided explorations through colonial Williamsburg."
-        image="/images/landmark/williamsburg-1.jpg"
+        image="/images/landmark/williamsburg-school-great-bridge.webp"
         breadcrumb={[
         { label: "Destinations", href: "/destinations/" },
         { label: "Williamsburg", href: "/usa-trips/williamsburg/" },

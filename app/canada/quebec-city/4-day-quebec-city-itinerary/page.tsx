@@ -105,7 +105,7 @@ export default function Itin_international__canada__quebec_city__4_day_quebec_ci
         eyebrow="Quebec City · 4 Day / 3 Night"
         title={<>4 Day Quebec City Trip Itinerary</>}
         subtitle="Spend four days exploring Old Quebec, the Plains of Abraham, and Montmorency Falls on an immersive French-Canadian adventure built for student groups."
-        image="/images/landmark/quebec-1.webp"
+        image="/images/landmark/quebec-4day-montmorency-bridge.webp"
         breadcrumb={[
         { label: "Destinations", href: "/destinations/" },
         { label: "Canada", href: "/canada/" },

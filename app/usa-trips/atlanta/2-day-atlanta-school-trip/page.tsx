@@ -103,7 +103,7 @@ export default function Itin_usa_trips__atlanta__2_day_atlanta_school_trip() {
         eyebrow="Atlanta · 2 Day / 1 Night"
         title={<>2 Day Atlanta School Trip</>}
         subtitle="Discover Atlanta's civil rights history, dynamic museums, and lively attractions on a two day journey built for student groups."
-        image="/images/landmark/atlanta-downtown.jpg"
+        image="/images/landmark/atlanta-2day-civil-human-rights.webp"
         breadcrumb={[
         { label: "Destinations", href: "/destinations/" },
         { label: "Atlanta", href: "/usa-trips/atlanta/" },

@@ -91,7 +91,7 @@ export default function Itin_usa_trips__mackinac_island_tours__mackinac_island_f
         eyebrow="Mackinac Island · 2 Day / 1 Night"
         title={<>Mackinac Island Field Trip</>}
         subtitle="Give students a hands-on field trip to historic Mackinac Island, where preserved sites and interactive activities bring classroom lessons to life."
-        image="/images/landmark/mackinac-2.jpg"
+        image="/images/landmark/mackinac-field-lake-huron.webp"
         breadcrumb={[
         { label: "Destinations", href: "/destinations/" },
         { label: "Mackinac Island", href: "/usa-trips/mackinac-island/" },

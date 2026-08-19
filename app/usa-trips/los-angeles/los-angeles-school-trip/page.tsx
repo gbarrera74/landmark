@@ -106,7 +106,7 @@ export default function Itin_usa_trips__los_angeles_tours__los_angeles_school_tr
         eyebrow="Los Angeles · 5 Day / 4 Night"
         title={<>Los Angeles School Trip</>}
         subtitle="Discover the creativity, science, and entertainment of Los Angeles on an unforgettable student journey through the city's iconic landmarks."
-        image="/images/landmark/los-angeles-1.jpg"
+        image="/images/landmark/los-angeles-school-griffith.webp"
         breadcrumb={[
         { label: "Destinations", href: "/destinations/" },
         { label: "Los Angeles", href: "/usa-trips/los-angeles/" },

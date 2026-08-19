@@ -114,7 +114,7 @@ export default function Itin_usa_trips__washington_d_c__hbcu_campus_tours() {
         eyebrow="Washington, D.C. · 7 Day / 6 Night"
         title={<>HBCU Campus Tours</>}
         subtitle="Take students on a multi-day journey through historic HBCU campuses and the landmarks of the nation's capital."
-        image="/images/landmark/dc-howard-university.jpg"
+        image="/images/landmark/dc-hbcu-howard-group.webp"
         breadcrumb={[
         { label: "Destinations", href: "/destinations/" },
         { label: "Washington, D.C.", href: "/usa-trips/washington-dc/" },

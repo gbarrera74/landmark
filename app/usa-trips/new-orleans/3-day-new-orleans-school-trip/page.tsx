@@ -103,7 +103,7 @@ export default function Itin_usa_trips__new_orleans_tours__3_day_new_orleans_sch
         eyebrow="New Orleans · 3 Day / 2 Night"
         title={<>3 Day New Orleans School Trip</>}
         subtitle="A three day journey through New Orleans jazz, cemeteries, and Creole culture built for student groups of every grade."
-        image="/images/landmark/new-orleans-2.jpg"
+        image="/images/landmark/nola-3day-st-louis-cathedral.webp"
         breadcrumb={[
         { label: "Destinations", href: "/destinations/" },
         { label: "New Orleans", href: "/usa-trips/new-orleans/" },

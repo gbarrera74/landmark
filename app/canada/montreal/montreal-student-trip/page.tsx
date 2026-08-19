@@ -103,7 +103,7 @@ export default function Itin_international__canada__montreal__montreal_student_t
         eyebrow="Montreal · 3 Day / 2 Night"
         title={<>Montreal Student Trip</>}
         subtitle="Explore Old Montreal, immerse in French-Canadian culture, and enjoy hands-on learning across three unforgettable days built for student groups."
-        image="/images/landmark/montreal-hero.jpg"
+        image="/images/landmark/montreal-skyline.jpg"
         breadcrumb={[
         { label: "Destinations", href: "/destinations/" },
         { label: "Canada", href: "/canada/" },

@@ -91,7 +91,7 @@ export default function Itin_usa_trips__charleston_sc__charleston_school_trip() 
         eyebrow="Charleston · 2 Day / 1 Night"
         title={<>Charleston School Trip</>}
         subtitle="Students explore Charleston's historic streets, preserved landmarks, and engaging museums while connecting classroom lessons to the real places that shaped America."
-        image="/images/landmark/charleston-2.webp"
+        image="/images/landmark/charleston-school-pineapple-fountain.webp"
         breadcrumb={[
         { label: "Destinations", href: "/destinations/" },
         { label: "Charleston", href: "/usa-trips/charleston/" },

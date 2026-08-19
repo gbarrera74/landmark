@@ -104,7 +104,7 @@ export default function Itin_usa_trips__atlanta__3_day_atlanta_field_trip() {
         eyebrow="Atlanta · 3 Day / 2 Night"
         title={<>3 Day Atlanta Field Trip</>}
         subtitle="Discover Atlanta's civil rights legacy, historic HBCUs, and standout science and culture stops on a three day student adventure."
-        image="/images/landmark/atlanta-aerial.jpg"
+        image="/images/landmark/atlanta-3day-clark-atlanta.webp"
         breadcrumb={[
         { label: "Destinations", href: "/destinations/" },
         { label: "Atlanta", href: "/usa-trips/atlanta/" },

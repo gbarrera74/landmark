@@ -106,7 +106,7 @@ export default function Itin_usa_trips__washington_d_c__african_american_history
         eyebrow="Washington, D.C. · 3 Day / 2 Night"
         title={<>African American History Washington, DC School Trip</>}
         subtitle="Trace three days of African American history across Washington, D.C., from the MLK Memorial to the Smithsonian and Frederick Douglass's home."
-        image="/images/landmark/dc-nmaahc.webp"
+        image="/images/landmark/dc-nmaahc-group.webp"
         breadcrumb={[
         { label: "Destinations", href: "/destinations/" },
         { label: "Washington, D.C.", href: "/usa-trips/washington-dc/" },

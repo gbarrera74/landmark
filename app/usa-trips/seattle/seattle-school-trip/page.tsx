@@ -105,7 +105,7 @@ export default function Itin_usa_trips__seattle__seattle_school_trip() {
         eyebrow="Seattle · 4 Day / 3 Night"
         title={<>Seattle School Trip</>}
         subtitle="Explore Seattle's science, technology, and culture through hands-on museums, iconic landmarks, and inspiring real-world learning for student groups."
-        image="/images/landmark/seattle-1.jpg"
+        image="/images/landmark/seattle-school-chihuly-garden.webp"
         breadcrumb={[
         { label: "Destinations", href: "/destinations/" },
         { label: "Seattle", href: "/usa-trips/seattle/" },

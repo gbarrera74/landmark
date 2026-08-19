@@ -104,7 +104,7 @@ export default function Itin_usa_trips__boston__historic_boston() {
         eyebrow="Boston · 3 Day / 2 Night"
         title={<>Historic Boston</>}
         subtitle="Walk the Freedom Trail and explore revolutionary landmarks on a three day Boston tour built for student groups."
-        image="/images/landmark/boston-old-state-house.jpg"
+        image="/images/landmark/boston-historic-boston.webp"
         breadcrumb={[
         { label: "Destinations", href: "/destinations/" },
         { label: "Boston", href: "/usa-trips/boston/" },
