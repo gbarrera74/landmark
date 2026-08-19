@@ -25,7 +25,7 @@ const HIGHLIGHTS = [
 const TRIPS = [
   // 8th grade leads the list — it is the flagship DC program (Michaela, 7/30).
   { title: '8th Grade Washington, DC Trip Itinerary', duration: '3 Day / 2 Night', img: '/images/landmark/dc-washington-monument-group.webp', href: '/usa-trips/washington-dc/8th-grade-washington-dc-trip-itinerary/' },
-  { title: 'HBCU Campus Tours', duration: '7 Day / 6 Night', img: '/images/landmark/dc-hbcu-howard-group.webp', href: '/usa-trips/washington-dc/hbcu-campus-tours/' },
+  { title: 'HBCU Campus Tours', duration: '7 Day / 6 Night', img: '/images/landmark/dc-hbcu-morgan-state-group.webp', href: '/usa-trips/washington-dc/hbcu-campus-tours/' },
   { title: 'Class Trip Programs for Middle School Students', duration: '3 Day / 2 Night', img: '/images/landmark/dc-white-house-tour-group.webp', href: '/usa-trips/washington-dc/class-trip-programs-for-middle-school-students/' },
   { title: 'Civics Focused Washington, DC School Trip', duration: '3 Day / 2 Night', img: '/images/landmark/dc-jefferson-memorial-website.webp', href: '/usa-trips/washington-dc/washington-dc-civics-student-tour/' },
   { title: 'STEM / STEAM Focused DC Trip', duration: '3 Day / 2 Night', img: '/images/landmark/dc-spy-museum.webp', href: '/usa-trips/washington-dc/stem-washington-dc-school-trip/' },
