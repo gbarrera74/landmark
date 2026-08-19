@@ -22,7 +22,7 @@ const HIGHLIGHTS = [
 const TRIPS = [
   { title: "New Orleans Student Tour", duration: "2 Day / 1 Night", img: '/images/landmark/nola-student-mardi-gras-world.webp', href: "/usa-trips/new-orleans/new-orleans-student-tour/" },
   { title: "3 Day New Orleans School Trip", duration: "3 Day / 2 Night", img: '/images/landmark/nola-3day-st-louis-cathedral.webp', href: "/usa-trips/new-orleans/3-day-new-orleans-school-trip/" },
-  { title: "New Orleans Field Trip", duration: "4 Day / 3 Night", img: '/images/landmark/nola-field-dillard-university.webp', href: "/usa-trips/new-orleans/new-orleans-field-trip/" },
+  { title: "New Orleans Field Trip", duration: "4 Day / 3 Night", img: '/images/landmark/nola-field-city-of-new-orleans-group.webp', href: "/usa-trips/new-orleans/new-orleans-field-trip/" },
 ]
 
 const STEPS = [

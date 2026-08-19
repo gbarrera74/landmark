@@ -104,7 +104,10 @@ export default function Itin_usa_trips__new_orleans_tours__new_orleans_field_tri
         eyebrow="New Orleans · 4 Day / 3 Night"
         title={<>New Orleans Field Trip</>}
         subtitle="A four day educational journey through New Orleans culture, history, and HBCU campuses built for student groups."
-        image="/images/landmark/nola-field-dillard-university.webp"
+        image="/images/landmark/nola-field-city-of-new-orleans-group.webp"
+        // Group sits low, under a dark dock roof that fills the top of the frame.
+        // Holding the crop at 83% keeps the whole group head-to-toe in the wide band.
+        imagePosition="center 83%"
         breadcrumb={[
         { label: "Destinations", href: "/destinations/" },
         { label: "New Orleans", href: "/usa-trips/new-orleans/" },
