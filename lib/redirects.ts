@@ -480,6 +480,9 @@ export const WP_REDIRECTS: Redirect[] = [
   //
   // WP taxonomy/date archives have no Next equivalent -> the blog index.
   { source: "/tag/:path*", destination: "/blog/", permanent: true },
+  // 404 log 2026-08-18: the /blog/-prefixed variant of the rule above. The root
+  // /tag/* rule does not cover it because the segment sits under /blog/.
+  { source: "/blog/tag/:path*", destination: "/blog/", permanent: true },
   { source: "/:year(20\\d{2})/:path*", destination: "/blog/", permanent: true },
 
   // Legacy trip paths — BOTH segments changed at cutover ("usa-trips-2" ->
