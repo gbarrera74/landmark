@@ -582,6 +582,20 @@ export const WP_REDIRECTS: Redirect[] = [
   // Keep this list in sync with app/usa-trips/*/ when a city page is added.
   { source: "/usa-trips/:city(atlanta|boston|charleston|chicago|los-angeles|mackinac-island|new-mexico|new-orleans|new-york-city|orlando|philadelphia|san-antonio|savannah|seattle|washington-dc|williamsburg)-tours/:path*", destination: "/usa-trips/:city/", permanent: true },
 
+  // --- Ninth sweep (2026-08-19) ---
+  // /school-trip-destinations/<city>/* — the other legacy WP destination tree.
+  // Six specific entries for Boston and Washington DC were already here, but the
+  // bare /school-trip-destinations/orlando/ 404'd twice today because only the
+  // deep children had been mapped. Same gated approach as the <city>-tours rule
+  // directly above: cities we actually have a page for, so this can never 301
+  // into a 404. Keep in sync with app/usa-trips/*/.
+  { source: "/school-trip-destinations/:city(atlanta|boston|charleston|chicago|los-angeles|mackinac-island|new-mexico|new-orleans|new-york-city|orlando|philadelphia|san-antonio|savannah|seattle|washington-dc|williamsburg)/:path*", destination: "/usa-trips/:city/", permanent: true },
+
+  // Base slug of the two suffixed variants already mapped above (-2 and
+  // -fall-promo). The un-suffixed original was simply never added; 404'd twice
+  // today.
+  { source: "/international/canada/3-day-classic-quebec-city-spring-to-fall-school-trip", destination: "/canada/quebec-city/", permanent: true },
+
   // Elementor MetForm artifact — the old WordPress form plugin exposed its
   // actions under /blog/metform-form/*. The real destination still exists:
   // /get-a-quote/ returns 200, and /quote/ and /plan-a-trip/ already point there.
