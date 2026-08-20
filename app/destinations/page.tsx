@@ -31,43 +31,43 @@ export default function Destinations() {
           </div>
           <div className="lm-dest-grid" style={{ marginTop: 8 }}>
             <Link href="/usa-trips/washington-dc/" className="lm-dest" key="Washington, D.C." aria-label="Washington, D.C. educational tours">
-              <img src="/images/landmark/dc-students.jpg" alt="" loading="lazy" />
+              <img src="/images/landmark/dc-washington-monument-group.webp" alt="" loading="lazy" />
               <span className="lm-dest-label">Washington, D.C. <span aria-hidden="true">&rarr;</span></span>
             </Link>
             <Link href="/usa-trips/new-york-city/" className="lm-dest" key="New York, NY" aria-label="New York, NY educational tours">
-              <img src="/images/landmark/nyc-students.jpg" alt="" loading="lazy" />
+              <img src="/images/landmark/nyc-4day-times-square-group.webp" alt="" loading="lazy" />
               <span className="lm-dest-label">New York, NY <span aria-hidden="true">&rarr;</span></span>
             </Link>
             <Link href="/usa-trips/atlanta/" className="lm-dest" key="Atlanta, GA" aria-label="Atlanta, GA educational tours">
-              <img src="/images/landmark/atlanta-students.jpg" alt="" loading="lazy" />
+              <img src="/images/landmark/atlanta-beyond-olympic-rings.webp" alt="" loading="lazy" />
               <span className="lm-dest-label">Atlanta, GA <span aria-hidden="true">&rarr;</span></span>
             </Link>
             <Link href="/usa-trips/boston/" className="lm-dest" key="Boston, MA" aria-label="Boston, MA educational tours">
-              <img src="/images/landmark/boston-students.jpg" alt="" loading="lazy" />
+              <img src="/images/landmark/boston-historic-boston.webp" alt="" loading="lazy" />
               <span className="lm-dest-label">Boston, MA <span aria-hidden="true">&rarr;</span></span>
             </Link>
             <Link href="/usa-trips/orlando/" className="lm-dest" key="Orlando, FL" aria-label="Orlando, FL educational tours">
-              <img src="/images/landmark/orlando-hero.jpg" alt="" loading="lazy" />
+              <img src="/images/landmark/orlando-student-animal-kingdom.webp" alt="" loading="lazy" />
               <span className="lm-dest-label">Orlando, FL <span aria-hidden="true">&rarr;</span></span>
             </Link>
             <Link href="/usa-trips/philadelphia/" className="lm-dest" key="Philadelphia, PA" aria-label="Philadelphia, PA educational tours">
-              <img src="/images/landmark/philadelphia-students.jpg" alt="" loading="lazy" />
+              <img src="/images/landmark/philly-historic-independence-hall.webp" alt="" loading="lazy" />
               <span className="lm-dest-label">Philadelphia, PA <span aria-hidden="true">&rarr;</span></span>
             </Link>
             <Link href="/usa-trips/williamsburg/" className="lm-dest" key="Williamsburg, VA" aria-label="Williamsburg, VA educational tours">
-              <img src="/images/landmark/williamsburg-brick-building.webp" alt="" loading="lazy" />
+              <img src="/images/landmark/williamsburg-school-great-bridge.webp" alt="" loading="lazy" />
               <span className="lm-dest-label">Williamsburg, VA <span aria-hidden="true">&rarr;</span></span>
             </Link>
             <Link href="/usa-trips/new-orleans/" className="lm-dest" key="New Orleans, LA" aria-label="New Orleans, LA educational tours">
-              <img src="/images/landmark/new-orleans-hero.jpg" alt="" loading="lazy" />
+              <img src="/images/landmark/nola-student-mardi-gras-world.webp" alt="" loading="lazy" />
               <span className="lm-dest-label">New Orleans, LA <span aria-hidden="true">&rarr;</span></span>
             </Link>
             <Link href="/usa-trips/charleston/" className="lm-dest" key="Charleston, SC" aria-label="Charleston, SC educational tours">
-              <img src="/images/landmark/charleston-hero.jpg" alt="" loading="lazy" />
+              <img src="/images/landmark/charleston-field-rainbow-row.webp" alt="" loading="lazy" />
               <span className="lm-dest-label">Charleston, SC <span aria-hidden="true">&rarr;</span></span>
             </Link>
             <Link href="/usa-trips/savannah/" className="lm-dest" key="Savannah, GA" aria-label="Savannah, GA educational tours">
-              <img src="/images/landmark/savannah-hero.jpg" alt="" loading="lazy" />
+              <img src="/images/landmark/savannah-field-eton-academy-group.webp" alt="" loading="lazy" />
               <span className="lm-dest-label">Savannah, GA <span aria-hidden="true">&rarr;</span></span>
             </Link>
           </div>
@@ -81,11 +81,11 @@ export default function Destinations() {
           </div>
           <div className="lm-dest-grid" style={{ marginTop: 8 }}>
             <Link href="/usa-trips/chicago/" className="lm-dest" key="Chicago, IL" aria-label="Chicago, IL educational tours">
-              <img src="/images/landmark/chicago-hero.webp" alt="" loading="lazy" />
+              <img src="/images/landmark/chicago-student-the-bean.webp" alt="" loading="lazy" />
               <span className="lm-dest-label">Chicago, IL <span aria-hidden="true">&rarr;</span></span>
             </Link>
             <Link href="/usa-trips/mackinac-island/" className="lm-dest" key="Mackinac Island, MI" aria-label="Mackinac Island, MI educational tours">
-              <img src="/images/landmark/mackinac-hero.jpg" alt="" loading="lazy" />
+              <img src="/images/landmark/mackinac-school-tipton-overlook.webp" alt="" loading="lazy" />
               <span className="lm-dest-label">Mackinac Island, MI <span aria-hidden="true">&rarr;</span></span>
             </Link>
           </div>
@@ -99,11 +99,11 @@ export default function Destinations() {
           </div>
           <div className="lm-dest-grid" style={{ marginTop: 8 }}>
             <Link href="/usa-trips/san-antonio/" className="lm-dest" key="San Antonio, TX" aria-label="San Antonio, TX educational tours">
-              <img src="/images/landmark/san-antonio-hero.jpg" alt="" loading="lazy" />
+              <img src="/images/landmark/san-antonio-intro-tower.webp" alt="" loading="lazy" />
               <span className="lm-dest-label">San Antonio, TX <span aria-hidden="true">&rarr;</span></span>
             </Link>
             <Link href="/usa-trips/new-mexico/" className="lm-dest" key="New Mexico" aria-label="New Mexico educational tours">
-              <img src="/images/landmark/new-mexico-hero.jpg" alt="" loading="lazy" />
+              <img src="/images/landmark/new-mexico-school-santa-fe-college.webp" alt="" loading="lazy" />
               <span className="lm-dest-label">New Mexico <span aria-hidden="true">&rarr;</span></span>
             </Link>
           </div>
@@ -117,11 +117,11 @@ export default function Destinations() {
           </div>
           <div className="lm-dest-grid" style={{ marginTop: 8 }}>
             <Link href="/usa-trips/los-angeles/" className="lm-dest" key="Los Angeles, CA" aria-label="Los Angeles, CA educational tours">
-              <img src="/images/landmark/los-angeles-hero.jpg" alt="" loading="lazy" />
+              <img src="/images/landmark/los-angeles-school-griffith.webp" alt="" loading="lazy" />
               <span className="lm-dest-label">Los Angeles, CA <span aria-hidden="true">&rarr;</span></span>
             </Link>
             <Link href="/usa-trips/seattle/" className="lm-dest" key="Seattle, WA" aria-label="Seattle, WA educational tours">
-              <img src="/images/landmark/seattle-skyline-sunset.webp" alt="" loading="lazy" />
+              <img src="/images/landmark/seattle-school-chihuly-garden.webp" alt="" loading="lazy" />
               <span className="lm-dest-label">Seattle, WA <span aria-hidden="true">&rarr;</span></span>
             </Link>
           </div>
@@ -135,27 +135,27 @@ export default function Destinations() {
           </div>
           <div className="lm-intl-grid" style={{ marginTop: 8 }}>
             <Link href="/canada/" className="lm-dest" key="Canada" aria-label="Canada educational tours">
-              <img src="/images/landmark/quebec-students.jpg" alt="" loading="lazy" />
+              <img src="/images/landmark/quebec-4day-montmorency-bridge.webp" alt="" loading="lazy" />
               <span className="lm-dest-label">Canada <span aria-hidden="true">&rarr;</span></span>
             </Link>
             <Link href="/europe/italy/" className="lm-dest" key="Italy" aria-label="Italy educational tours">
-              <img src="/images/landmark/intl-italy.webp" alt="" loading="lazy" />
+              <img src="/images/landmark/italy-amalfi.jpg" alt="" loading="lazy" />
               <span className="lm-dest-label">Italy <span aria-hidden="true">&rarr;</span></span>
             </Link>
             <Link href="/central-south-america/costa-rica/" className="lm-dest" key="Costa Rica" aria-label="Costa Rica educational tours">
-              <img src="/images/landmark/intl-costa-rica.webp" alt="" loading="lazy" />
+              <img src="/images/landmark/costa-rica-7day-rafting.webp" alt="" loading="lazy" />
               <span className="lm-dest-label">Costa Rica <span aria-hidden="true">&rarr;</span></span>
             </Link>
             <Link href="/europe/norway/" className="lm-dest" key="Norway" aria-label="Norway educational tours">
-              <img src="/images/landmark/intl-norway.webp" alt="" loading="lazy" />
+              <img src="/images/landmark/norway-10day-fjord-group.webp" alt="" loading="lazy" />
               <span className="lm-dest-label">Norway <span aria-hidden="true">&rarr;</span></span>
             </Link>
             <Link href="/europe/england/" className="lm-dest" key="England" aria-label="England educational tours">
-              <img src="/images/landmark/intl-england.webp" alt="" loading="lazy" />
+              <img src="/images/landmark/england-school-trip-buckingham.webp" alt="" loading="lazy" />
               <span className="lm-dest-label">England <span aria-hidden="true">&rarr;</span></span>
             </Link>
             <Link href="/europe/france/" className="lm-dest" key="France" aria-label="France educational tours">
-              <img src="/images/landmark/intl-france.jpg" alt="" loading="lazy" />
+              <img src="/images/landmark/france-paris-riviera-versailles.webp" alt="" loading="lazy" />
               <span className="lm-dest-label">France <span aria-hidden="true">&rarr;</span></span>
             </Link>
             <Link href="/europe/ireland/" className="lm-dest" key="Ireland" aria-label="Ireland educational tours">
@@ -167,7 +167,7 @@ export default function Destinations() {
               <span className="lm-dest-label">Japan <span aria-hidden="true">&rarr;</span></span>
             </Link>
             <Link href="/asia/south-korea/" className="lm-dest" key="South Korea" aria-label="South Korea educational tours">
-              <img src="/images/landmark/intl-south-korea.webp" alt="" loading="lazy" />
+              <img src="/images/landmark/korea-seoul-beijing-yonggungsa.webp" alt="" loading="lazy" />
               <span className="lm-dest-label">South Korea <span aria-hidden="true">&rarr;</span></span>
             </Link>
           </div>
