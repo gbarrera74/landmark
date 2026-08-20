@@ -12,7 +12,7 @@ const ArrowR = (
 
 const DAYS = [
   { title: "Day 1: Arrival & Smithsonian Museums", acts: ["Travel to Washington, D.C.", "Explore Smithsonian museums along the National Mall", "Enjoy a Texas-style BBQ dinner", "Hotel check-in with on-site security"] },
-  { title: "Day 2: Arlington & National Landmarks", acts: ["Breakfast at the hotel", "Guided tour of Arlington National Cemetery (Changing of the Guard, Kennedy gravesite)", "Visit the U.S. Capitol, Library of Congress, and National Archives Museum", "Picnic lunch on the Capitol lawn", "Evening memorial visits and dinner"] },
+  { title: "Day 2: Arlington & National Landmarks", acts: ["Breakfast at the hotel", "Guided tour of Arlington National Cemetery (Changing of the Guard, Kennedy gravesite)", "Picnic lunch on the Capitol lawn", "Visit the U.S. Capitol, Library of Congress, and National Archives Museum", "Evening memorial visits and dinner"] },
   { title: "Day 3: Mount Vernon & Departure", acts: ["Breakfast at the hotel", "Tour George Washington’s Mount Vernon Estate (mansion, gardens, and exhibits)", "Lunch at Mount Vernon’s food court", "Depart for home with dinner stop en route (at students’ expense)"] },
 ]
 
@@ -182,7 +182,7 @@ export default function Itin_usa_trips__washington_d_c__8th_grade_washington_dc_
         name: "8th Grade Washington, DC Trip Itinerary",
         description: "Give your 8th graders three days exploring the nation's capital, from Smithsonian museums and national memorials to Mount Vernon.",
         path: "/usa-trips/washington-dc/8th-grade-washington-dc-trip-itinerary/",
-        days: [{ name: "Day 1: Arrival & Smithsonian Museums", description: "Travel to Washington, D.C.; Explore Smithsonian museums along the National Mall; Enjoy a Texas-style BBQ dinner; Hotel check-in with on-site security" }, { name: "Day 2: Arlington & National Landmarks", description: "Breakfast at the hotel; Guided tour of Arlington National Cemetery (Changing of the Guard, Kennedy gravesite); Visit the U.S. Capitol, Library of Congress, and National Archives Museum; Picnic lunch on the Capitol lawn; Evening memorial visits and dinner" }, { name: "Day 3: Mount Vernon & Departure", description: "Breakfast at the hotel; Tour George Washington’s Mount Vernon Estate (mansion, gardens, and exhibits); Lunch at Mount Vernon’s food court; Depart for home with dinner stop en route (at students’ expense)" }],
+        days: [{ name: "Day 1: Arrival & Smithsonian Museums", description: "Travel to Washington, D.C.; Explore Smithsonian museums along the National Mall; Enjoy a Texas-style BBQ dinner; Hotel check-in with on-site security" }, { name: "Day 2: Arlington & National Landmarks", description: "Breakfast at the hotel; Guided tour of Arlington National Cemetery (Changing of the Guard, Kennedy gravesite); Picnic lunch on the Capitol lawn; Visit the U.S. Capitol, Library of Congress, and National Archives Museum; Evening memorial visits and dinner" }, { name: "Day 3: Mount Vernon & Departure", description: "Breakfast at the hotel; Tour George Washington’s Mount Vernon Estate (mansion, gardens, and exhibits); Lunch at Mount Vernon’s food court; Depart for home with dinner stop en route (at students’ expense)" }],
       })} />
     </>
   )
